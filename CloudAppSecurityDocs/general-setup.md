@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 
 
 ---
@@ -38,7 +38,7 @@ ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
   
 -   Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
   
--   **ExpressRoute**  
+-   ExpressRoute  
   
      Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
     공용 피어링에 대한 자세한 내용은 [Express 경로 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
@@ -103,9 +103,10 @@ Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메�
 > [!NOTE] 
 > 문자 메시지를 통해 전송되는 최대 경고 수는 하루에 전화 번호당 10개입니다. 일 수는 UTC 표준 시간대에 따라 계산됩니다. 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![알림 설정](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
+  
+3. 완료되면 **저장**을 클릭합니다.  
   
 ##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> 필요에 따라 데이터 구성  
 실제 사무실 IP 주소 등 알려진 IP 주소를 쉽게 식별하려면 로그 및 경고를 표시 및 조사하는 방법에 태그를 지정하고 적절하게 분류 및 사용자 지정할 수 있도록 IP 주소 범위를 설정해야 합니다.   
@@ -251,6 +252,6 @@ Cloud App Security는 인증, 프로비전 및 라이선싱 관련 활동을 위
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
