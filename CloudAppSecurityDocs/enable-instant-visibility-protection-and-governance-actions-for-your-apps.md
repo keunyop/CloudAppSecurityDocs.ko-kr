@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
   
 Cloud App Security는 클라우드 공급자가 제공하는 API를 활용하며, 각 서비스에는 자체 프레임워크 및 API 제한 사항이 있습니다. Cloud App Security는 서비스와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 서비스에서 API에 적용하는 다양한 제한 사항(예: 제한, API 제한, 동적 시간 이동 API 창 등)을 고려하여 Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
-  
-**ExpressRoute**  
-  
-Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
-공용 피어링에 대한 자세한 내용은 [ExpressRoute 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
   
 ## <a name="how-it-works"></a>작동 방식  
 Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한을 허용하는 시스템 관리자 권한으로 배포됩니다.  
@@ -71,10 +66,9 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
      토큰을 제거할 수 있습니다.  
   
 다음 표에서는 앱 커넥터에서 지원되는 기능을 클라우드 앱별로 보여 줍니다.  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**계정 나열**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**그룹**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**권한**|✔|✔|공급자가 지원하지 않음|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 |ServiceNow|Eureka 이상|관리자 +RestAPI 역할|  
 |Salesforce||관리자|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
+공용 피어링에 대한 자세한 내용은 [ExpressRoute 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
+  
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
