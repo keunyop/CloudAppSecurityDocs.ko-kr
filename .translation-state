@@ -6549,9 +6549,9 @@
       "ArchiveFileCommit": "4502115caa48a45c067fa5762d0e288ace518510",
       "ArchiveFileDateTime": "2016-11-03T13:00:57.6671785Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ko-kr\\live\\ht\\data-protection-policies.9283ea52b7bca46e511f7c792246a6207518a10e.ko-kr.xlf",
+      "BilingualFileCommit": "32d5e32e26628395b102bca01845493ddf0e15dc",
+      "BilingualDateTime": "2016-11-10T08:48:14.5717983Z",
       "BilingualException": null
     },
     "c7e6f441932135ca20d4c6747c5e4ab7eb58331f": {
@@ -11852,9 +11852,9 @@
       "ArchiveFileCommit": "fe6d8f83d9b4aa78636327ace1b03e4649baca78",
       "ArchiveFileDateTime": "2016-11-10T01:24:19.239382Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ko-kr\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.ko-kr.xlf",
+      "BilingualFileCommit": "32d5e32e26628395b102bca01845493ddf0e15dc",
+      "BilingualDateTime": "2016-11-10T08:48:14.5717983Z",
       "BilingualException": null
     },
     "e67fecd17b26314720a34691f83464c59a244ea6": {
@@ -12982,9 +12982,9 @@
       "ArchiveFileCommit": "fe6d8f83d9b4aa78636327ace1b03e4649baca78",
       "ArchiveFileDateTime": "2016-11-10T01:24:19.239382Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ko-kr\\live\\ht\\anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.ko-kr.xlf",
+      "BilingualFileCommit": "32d5e32e26628395b102bca01845493ddf0e15dc",
+      "BilingualDateTime": "2016-11-10T08:48:14.5717983Z",
       "BilingualException": null
     },
     "6f4a84503654560407fdaabd68577ad3d864ac8d": {
