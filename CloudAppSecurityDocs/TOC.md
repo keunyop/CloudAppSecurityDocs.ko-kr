@@ -1,5 +1,5 @@
 # [이해 및 탐색](what-is-cloud-app-security.md)
-## [Cloud App Discover란?](what-is-cloud-app-security.md)
+## [CAS란 무엇인가요?](what-is-cloud-app-security.md)
 ## [릴리스 정보](release-notes.md)
 # [시작](getting-started-with-cloud-app-security.md)
 ## [일반 설정](general-setup.md)
@@ -7,7 +7,6 @@
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Cloud Discovery 데이터 작업](working-with-cloud-discovery-data.md)
-# [배포](deploy.md)
 ## [앱에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업 사용](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Microsoft Cloud App Security에 Box 연결](connect-box-to-microsoft-cloud-app-security.md)
 ### [Microsoft Cloud App Security에 Google Apps 연결](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -28,15 +27,17 @@
 # [사용](daily-activities-to-protect-your-cloud-environment.md)
 ## [조사](investigate.md)
 ### [기본 제공 보고서 참조](built-in-report-reference.md)
-### [파일 필터](file-filters.md)
-### [활동 필터](activity-filters.md)
+### [파일](file-filters.md)
+### [활동](activity-filters.md)
 ### [경고](monitor-alerts.md)
+### [Azure Information Protection과 통합](azip-integration.md)
 ## [제어](control.md)
-## [거버넌스 작업](governance-actions.md)
+### [응용 프로그램 사용 권한 관리](manage-app-permissions.md)
+## [거버넌스 로그](governance-actions.md)
 # [문제 해결](troubleshooting.md)
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

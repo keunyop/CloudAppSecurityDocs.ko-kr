@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
 로그 파일의 처리가 완료되면 완료되었다는 메일을 받게 됩니다. 
   
 9. 로그 파일의 처리 상태를 업데이트하기 위해 알림 배너가 포털 맨 위의 상태 표시줄에 나타납니다.  
-  
 ![로그 파일 처리 메뉴 모음](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. 이제 상태 표시줄의 링크를 클릭하거나 설정 코그로 이동하고 **Cloud Discovery 설정**을 선택하여 보고서를 볼 수 있습니다.   
+10. 로그를 업로드하는 데 성공하고 나면 로그 파일 처리가 완료되었다는 내용의 알림이 표시됩니다. 이제 상태 표시줄의 링크를 클릭하거나 설정 코그로 이동하고 **Cloud Discovery 설정**을 선택하여 보고서를 볼 수 있습니다.   
   
      ![Discovery 설정 탭](./media/discovery-settings-tab.png)
 11. 그런 다음 **스냅숏 보고서 관리**를 선택하고 스냅숏 보고서를 선택합니다.
  
 ![스냅숏 보고서 관리](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

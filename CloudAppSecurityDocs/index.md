@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
+ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
 
 ---
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>일반 설정</h3>
-                    <p>Cloud App Security에 대한 기본 구성 단계를 수행합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Cloud Discovery 설정</h3>
                     <p>Cloud Discovery 기능을 사용하여 조직에서 클라우드 앱 사용 및 섀도 IT를 파악합니다.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>자동 로그 업로드 설정</h3>
-                    <p>연속 Cloud Discovery 보고서를 위해 자동 로그 업로드를 설정합니다.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>배포 게스트 클러스터에</p>
-                </div>
-                <p class="description column-two-thirds">API 연결의 표시를 향상시키고 앱을 관리하는 정책을 배포합니다.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>API 커넥터를 사용하도록 설정</h3>
-                    <p>API 커넥터를 사용하여 Office 365, Google Apps, Box, Dropbox 등의 앱을 자세히 파악합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Cloud App Security에 Office 365 연결</h3>
-                    <p>앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Cloud App Security를 연결합니다.</p>
+                    <h3>앱 연결</h3>
+                    <p>가시성과 제어 성능을 높이려면 응용 프로그램을 Cloud App Security에 연결합니다.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>정책을 사용하여 클라우드 앱 제어</h3>
-                    <p>조직의 클라우드 사용을 제어하고 관리하는 정책을 설정합니다.</p>
+                    <p>조직에서 클라우드 응용 프로그램의 사용을 모니터링하고 관리하는 정책을 설정합니다.</p>
                   </a>
                 </li>
               </ul>
@@ -241,6 +203,6 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

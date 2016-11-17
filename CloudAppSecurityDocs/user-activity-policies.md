@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
 4.  이 정책을 트리거할 작업이나 기타 메트릭을 설정하려면 **활동 필터**를 사용합니다.  
   
 5.  **활동 일치 매개 변수**에서 단일 활동이 필터와 일치할 경우 정책 위반을 트리거할지 또는 지정된 개수의 **반복 활동**이 검색될 때만 위반을 검색할지를 선택합니다.  
-    **반복 활동**을 선택할 경우 활동 수, 시간 프레임 및 특정 앱 내에서 사용자의 위반 수를 계산할지 또는 모든 앱에서 동일한 사용자의 위반 수를 계산할지 여부 등 경고를 트리거할 활동을 설정합니다.  
+    **반복 활동**을 선택하면 **응용 프로그램당 활동이 일치하는 그룹**을 설정할 수 있습니다. 그러면 같은 응용 프로그램에서 반복되는 활동이 발생한 경우에만 정책 일치가 트리거됩니다(예: Box에서 5번 다운로드).  
   
 6.  일치 항목이 발견될 때 수행할 **작업**을 구성합니다.  
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

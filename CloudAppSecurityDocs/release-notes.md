@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>릴리스 정보
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security 릴리스 83
+릴리스 날짜: 2016년 10월 30일
+
+**새로운 기능**
+-   [활동 로그](activity-filters.md)와 [파일 로그](file-filters.md)에서 필터링을 간소화하기 위해 유사한 필터를 통합했습니다. 활동 필터 사용: 활동 개체, IP 주소 및 사용자. 파일 필터 공동 작업자를 사용하여 원하는 것을 정확하게 찾습니다.
+-   활동 로그 서랍의 **원본**에서 **원시 데이터 보기** 링크를 클릭하여 활동 로그를 생성하는 데 사용된 원시 데이터를 다운로드하면 응용 프로그램 이벤트의 드릴다운에 도움이 됩니다. 
+-   Okta의 추가 로그인 활동에 대한 지원이 추가되었습니다. [비공개 미리 보기]
+-   Salesforce의 추가 로그인 활동에 대 한 지원이 추가되었습니다. 
+
+**향상된 기능**
+-   Cloud Discovery 스냅숏 보고서 및 문제 해결의 사용 편의성이 향상되었습니다.
+-   여러 응용 프로그램에서 경고 목록의 가시성이 향상되었습니다.
+-   새 Cloud Discovery 연속 보고서를 만들 때의 사용 편의성이 향상되었습니다.
+-   거버넌스 로그의 사용 편의성이 향상되었습니다.
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security 릴리스 82
 릴리스 날짜: 2016년 10월 9일
@@ -198,6 +215,6 @@ ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
