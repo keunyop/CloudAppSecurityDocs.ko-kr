@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
-ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
+ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
+ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
     <section id="hero-content">
       <h1>Cloud App Security 설명서</h1>
       <h2>조직이 향상된 활동 가시성 및 중요한 회사 데이터의 보호 강화를 통해 제어를 유지하는 동시에 클라우드 응용 프로그램의 혜택을 이용할 수 있도록 Cloud App Security를 설정하고 사용하는 방법을 알아봅니다. </h2>
-      <h3>Cloud App Security를 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">제품 사이트를 방문 &rarr;하세요.</a></h3>
+      <h3>Cloud App Security를 처음 사용하시나요? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">제품 사이트를 방문 &rarr;하세요.</a></h3>
     </section>
     <aside class="alert section-border">
         <p>실습할 준비가 되셨나요?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">지금 구입</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">지금 구입</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -195,14 +195,14 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
         <aside class="alert alert-social">
       <p>Cloud App Security에 대한 최신 정보 <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Cloud App Security 공식 사이트</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security 공식 사이트</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
