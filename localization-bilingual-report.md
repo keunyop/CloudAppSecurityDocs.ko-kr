@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [CloudAppSecurityDocs\file-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/file-filters.md) | InSyncHandedBackSuccess | [Details](#95dab01c101b6e6171c7985b6571ddb6b4ff592327)
 
 ## Item Details
-##### <a name='95dab01c101b6e6171c7985b6571ddb6b4ff592327'></a> Source: [CloudAppSecurityDocs\file-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/file-filters.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [CloudAppSecurityDocs\file-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ko-kr/blob/036defeb4c4ddc31f6c2c1cb2f98c442ed16db74/CloudAppSecurityDocs/file-filters.md)
-* Handoff File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/9200517402753c1702a15785400dadf364a4dc4f/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ko-kr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf)
-* Handoff Datetime: 2016-10-31 19:56:52
-* Handoff Reason: Include
-* Archive File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/4502115caa48a45c067fa5762d0e288ace518510/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ko-kr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf)
-* Archive Datetime: 2016-11-03 13:00:57
-* Handback File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/bacaf5834730b089f2920f933710c70f41aaa8e7/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ko-kr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf)
-* Handback Datetime: 2016-11-18 08:37:37
-* Bilingual File: [file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/bacaf5834730b089f2920f933710c70f41aaa8e7/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ko-kr/live/ht/file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf)
-* Bilingual Datetime: 2016-11-18 08:38:39
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
