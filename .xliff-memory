@@ -507,8 +507,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:57.6671785Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ko-kr\\live\\95dab01c101b6e6171c7985b6571ddb6b4ff5923.640531528fc05e10902dc01a6ef7c6678a224be0.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ko-kr\\live\\ht\\file-filters.9e3bd07111b91fd128d2565e14937c0a6ac16bf3.ko-kr.xlf",
+      "LocXliffCommit": "bacaf5834730b089f2920f933710c70f41aaa8e7"
     },
     "CloudAppSecurityDocs\\general-setup.md.28f90338e7cad5e977be93d9737fe963b5464158.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\general-setup.md",
