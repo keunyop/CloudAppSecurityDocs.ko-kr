@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ddfce677376f370e332938059e741af613853db
-ms.openlocfilehash: 1fda4411d17acf90338263df9df147ed0075881c
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
 
 
 ---
 
-# <a name="azure-information-protection-integration-private-preview"></a>Azure Information Protection 통합 - **비공개 미리 보기**
+# <a name="azure-information-protection-integration---private-preview"></a>Azure Information Protection 통합 - **비공개 미리 보기**
 
 Cloud App Security를 사용하면 파일을 조사하고 Azure Information Protection 파일 레이블을 기반으로 정책을 설정하여 클라우드에 있는 중요한 데이터를 더 잘 파악하고 제어할 수 있습니다. 그러려면 Cloud App Security에서 콘텐츠 검사를 사용하도록 설정된 파일을 검색하도록 정책을 설정합니다. 또한 Cloud App Security 비공개 미리 보기의 일부로서 기밀 파일과 관련된 활동에 관한 알림을 트리거할 수도 있습니다. Azure Information Protection 통합을 이용하여 다음을 수행할 수 있습니다.
 -   클라우드 응용 프로그램을 통해 중요 한 데이터 표시를 계측합니다.
@@ -29,7 +29,7 @@ Cloud App Security를 사용하면 파일을 조사하고 Azure Information Prot
 
 > [!NOTE] 기본적으로, 콘텐츠 검사를 사용하도록 설정된 파일을 검색하는 파일 정책이 있는 경우에만 파일의 레이블을 검색합니다. 파일 정책 없이 모든 파일에서 레이블을 검색하려면 자동 검색을 사용합니다.
 
-## <a name="terminology-overview"></a>용어 개요:
+## <a name="terminology-overview"></a>용어 개요
 -   Azure Information Protection 분류 레이블- 최종 사용자의 설정에 따라 조직에서 자동으로, 정책을 기반으로 또는 수동으로 추가된 특성입니다.
 -   외부- 조직 외부에 있는 사람이 설정한 태그입니다.
 -   파일 태그- Cloud App Security에 표시되는 분류 레이블입니다. 이 필드는 파일 표에 있는 각 파일에 대해 표시되며 필터에 사용할 수 있습니다.
@@ -63,7 +63,7 @@ Cloud App Security를 사용하면 파일을 조사하고 Azure Information Prot
 
 ![파일 태그 모든 필터](./media/azip-file-tags-all-filter.png)
 
-## <a name="enable-automatic-scan-coming-soon"></a>자동 검색 사용(서비스 예정)
+## <a name="enable-automatic-scan"></a>자동 검색 사용
 Office 365에서 새 파일의 파일 태그를 자동으로 검색하려면:
 
 1. Office 365에서 **일반 설정** 페이지로 이동합니다.
@@ -72,7 +72,7 @@ Office 365에서 새 파일의 파일 태그를 자동으로 검색하려면:
 ![azure information protection 사용](./media/enable-azip.png)
  
 
-## <a name="internal-and-external-tags-coming-soon"></a>내부 및 외부 태그(서비스 예정)
+## <a name="internal-and-external-tags"></a>내부 및 외부 태그
 기본적으로 Cloud App Security에서는 조직에 정의된 분류 레이블과 다른 조직에서 정의된 외부 레이블을 검색합니다. 
 
 무시하려면 **Azure 보안 설정**에서 **다른 테넌트의 Azure Information Protection 분류 레이블 무시**를 선택합니다.
@@ -119,6 +119,6 @@ Office 365에서 새 파일의 파일 태그를 자동으로 검색하려면:
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

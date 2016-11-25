@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>릴리스 정보
+
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security 릴리스 84
+2016 년 11 월 13 일 출시
+
+**새로운 기능**
+-   이제 Cloud App Security에서는 향상된 통합 및 자동 프로비저닝이 포함된 Microsoft Azure Information Protection을 지원합니다. 태그 보안 분류를 사용하여 파일을 필터링하고 파일 정책을 설정한 다음 보려는 분류 레이블을 설정할 수 있습니다. 또한 레이블은 분류가 조직의 사용자에 의해 설정되었는지 다른 테넌트의 사용자(외부)에 의해 설정되었는지를 나타냅니다. Azure Information Protection 분류 레이블을 기반으로 활동 정책을 설정하고 Office 365에서 분류 레이블의 자동 검색을 사용하도록 설정할 수도 있습니다. 이 훌륭한 새 기능을 활용하는 방법에 관한 자세한 내용은 [Azure Information Protection와의 통합](azip-integration.md)을 참조하세요.
+ 
+**향상된 기능**
+-   Cloud App Security 활동 로그가 다음과 같이 향상되었습니다. 
+   -    보안 및 규정 준수 센터의 Office 365 이벤트가 이제 Cloud App Security와 통합되어 **활동 로그**에 표시됩니다.
+   -    모든 Cloud App Security 활동은 Cloud App Security 활동 로그에 관리자 활동으로 등록됩니다.
+-   파일 관련 경고의 조사를 돕기 위해, 파일 정책에서 발생하는 각 경고에서 이제 해당 파일에서 수행한 활동의 목록을 볼 수 있습니다.
+-   비정상 검색 엔진의 이동 불가능 알고리즘이 작은 테넌트를 더 잘 지원하도록 개선되었습니다. 
+ 
+**사소하게 향상된 기능**
+-    **활동 내보내기 제한**이 10,000개로 올라갔습니다. 
+-   클라우드 검색 수동 업로드 프로세스에서 **스냅숏 보고서**를 만들 때 이제 로그 처리에 걸리는 예상 시간이 더 정확하게 표시됩니다. 
+-   파일 정책에서 **공동 작업자 제거** 거버넌스 작업이 이제 그룹에도 적용됩니다.
+-   **응용 프로그램 권한** 페이지에서도 여러 기능이 사소하게 향상되었습니다. 
+-   Office 365에 연결하는 응용 프로그램에 대해 권한이 부여된 사용자가 10,000명을 넘을 경우, 이전에는 목록이 느리게 로드되었습니다. 이 문제가 해결되었습니다.
+-   **응용 프로그램 카탈로그**에 지불 카드 업계와 관련된 특성이 더 추가되었습니다.
+
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security 릴리스 83
 릴리스 날짜: 2016년 10월 30일
@@ -215,6 +238,6 @@ ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
