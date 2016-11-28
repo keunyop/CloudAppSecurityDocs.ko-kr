@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
 
 
 ---
@@ -50,7 +50,7 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 ![Cloud App Security 아키텍처](./media/architecture.png)  
 
 > [!NOTE]  
-> Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 레코드의 메타데이터와 식별된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터는 Cloud App Security 데이터베이스에 저장되지 않습니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
+> Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 데이터는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft 보안 센터](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
 Cloud App Security에서는 다음과 같이 데이터를 유지합니다.
 >- 활동 로그: 180일
 >- 검색 데이터: 90일
@@ -87,6 +87,6 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

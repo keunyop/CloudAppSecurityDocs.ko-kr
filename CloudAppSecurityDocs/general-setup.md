@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
-ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 57d01e08546885881da38835961cf6384c1c788e
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
   
 -   Cloud App Security 라이선스를 구입하면 정품 인증 정보와 Cloud App Security 포털에 대한 링크가 포함된 메일을 받게 됩니다.  
   
--   Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 전역 관리자, 준수 관리자 또는 보안 관리자여야 합니다. Office 365 포털, Azure 클래식 포털 또는 Windows PowerShell용 Azure AD 모듈을 통해 역할을 할당하는지에 관계없이 관리자 역할이 할당된 사용자가 조직이 구독한 모든 클라우드 앱에서 동일한 권한을 가진다는 것을 이해하는 것이 중요합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
+-   Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 전역 관리자, 준수 관리자 또는 보안 관리자여야 합니다. Office 365 포털, Azure 클래식 포털 또는 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx)용 Azure AD 모듈을 통해 역할을 할당하는지에 관계없이 관리자 역할이 할당된 사용자가 조직이 구독한 모든 클라우드 앱에서 동일한 권한을 가진다는 것을 이해하는 것이 중요합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
   
 -   Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
   
@@ -252,6 +252,6 @@ Cloud App Security는 인증, 프로비전 및 라이선싱 관련 활동을 위
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

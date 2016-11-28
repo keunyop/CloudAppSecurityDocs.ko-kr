@@ -14,8 +14,8 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42cd06942ef90bc40a191bc12ddc12a18388430d
-ms.openlocfilehash: d07f8cfebd5654036078d474656a6e73e24d93d0
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 5defb9bde515be712bc64ce84be42b2120935ed8
 
 
 ---
@@ -39,7 +39,7 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 ![Cloud App Security 대시보드](./media/dashboard.png "dashboard")  
 
 ## <a name="handle-your-alerts"></a>경고 처리  
-경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어, 알 수 없는 위치에서 로그인하는 관리자가 표시될 수 있습니다. 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
+경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어 한 관리자가 그린란드에서 로그인한다고 표시되는데 조직의 누구도 이전에 그린란드에서 로그인한 적이 없는 경우, 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
 
 모든 경고를 검토하고 정책을 수정하기 위한 도구로 사용하는 것이 좋습니다. 무해한 이벤트가 기존 정책에 대한 위반으로 간주되는 경우 불필요한 경고 수를 줄이기 위해 정책을 구체화합니다.  
 
@@ -66,7 +66,7 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### <a name="questionable-violations"></a>의심스러운 위반
     의심스러운 위반에는 추가 조사가 필요합니다.  
@@ -130,6 +130,6 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
