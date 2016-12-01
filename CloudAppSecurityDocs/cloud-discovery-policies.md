@@ -88,6 +88,6 @@ Cloud App Security는 Cloud Discovery의 모든 로그에서 변칙을 검색합
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
