@@ -14,8 +14,8 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
 
 응용 프로그램 사용 권한 탭에 액세스하려면:
 
-1. Cloud App Security 포털에서 **조사**를 클릭하고 [사용 권한 앱]에서 **Office 365**를 선택합니다. 
+1. Cloud App Security 포털에서 **조사**를 클릭하고 **연결된 앱**에서 **Office 365**를 선택합니다. 
 > [!Note]
 > 응용 프로그램 사용 권한을 관리하려면 먼저 Cloud App Security을 Office 365에 연결해야 합니다.
 
@@ -115,6 +115,6 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

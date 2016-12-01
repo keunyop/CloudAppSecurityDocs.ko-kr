@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
-ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 8a0e20692fbfe0054f8c5816bfe29fd1ac737820
 
 
 ---
@@ -145,7 +145,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>거버넌스 로그</h3>
+                    <h3>거버넌스</h3>
                     <p>거버넌스 로그는 수동 작업 및 자동 작업을 포함하여 Cloud App Security에서 실행하도록 설정한 각 작업에 대한 상태 레코드를 가져오는 데 사용됩니다.</p>
                   </a>
                 </li>
@@ -196,13 +196,13 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
         <aside class="alert alert-social">
       <p>Cloud App Security에 대한 최신 정보 <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security 공식 사이트</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
