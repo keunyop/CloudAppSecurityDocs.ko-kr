@@ -1,11 +1,11 @@
 ---
-title: "Azure Inforamtion Protection 통합 | Microsoft 문서"
+title: "Azure Information Protection 통합 | Microsoft 문서"
 description: "이 문서에서는 Cloud App Security에서 Azure Information Protection 태그를 활용하여 조직의 클라우드 응용 프로그램 사용을 상세히 제어하는 방법에 관한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,21 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
 
 
 ---
 
-# <a name="azure-information-protection-integration---private-preview"></a>Azure Information Protection 통합 - **비공개 미리 보기**
+# <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
-Cloud App Security를 사용하면 파일을 조사하고 Azure Information Protection 파일 레이블을 기반으로 정책을 설정하여 클라우드에 있는 중요한 데이터를 더 잘 파악하고 제어할 수 있습니다. 그러려면 Cloud App Security에서 콘텐츠 검사를 사용하도록 설정된 파일을 검색하도록 정책을 설정합니다. 또한 Cloud App Security 비공개 미리 보기의 일부로서 기밀 파일과 관련된 활동에 관한 알림을 트리거할 수도 있습니다. Azure Information Protection 통합을 이용하여 다음을 수행할 수 있습니다.
+Cloud App Security를 사용하면 파일을 조사하고 Azure Information Protection 파일 레이블을 기반으로 정책을 설정하여 클라우드에 있는 중요한 데이터를 더 잘 파악하고 제어할 수 있습니다. 그러려면 Cloud App Security에서 콘텐츠 검사를 사용하도록 설정된 파일을 검색하도록 정책을 설정합니다. 또한 기밀 파일에 관한 활동에 대한 경고를 트리거할 수도 있습니다. Azure Information Protection 통합을 이용하여 다음을 수행할 수 있습니다.
 -   클라우드 응용 프로그램을 통해 중요 한 데이터 표시를 계측합니다.
 -   정책을 만들고 기밀 데이터를 연결된 클라우드 응용 프로그램에 업로드할 경우 위반 알림을 표시하거나 중요한 데이터를 외부에서 공유하지 못하도록 격리/차단합니다.
 -   감사 내역 조사 및 정책을 위반하는 파일 수정 
 
-> [!NOTE] 기본적으로, 콘텐츠 검사를 사용하도록 설정된 파일을 검색하는 파일 정책이 있는 경우에만 파일의 레이블을 검색합니다. 파일 정책 없이 모든 파일에서 레이블을 검색하려면 자동 검색을 사용합니다.
+> [!NOTE] 
+> 기본적으로, 콘텐츠 검사를 사용하도록 설정된 파일을 검색하는 파일 정책이 있는 경우에만 파일의 레이블을 검색합니다. 파일 정책 없이 모든 파일에서 레이블을 검색하려면 자동 검색을 사용합니다.
 
 ## <a name="terminology-overview"></a>용어 개요
 -   Azure Information Protection 분류 레이블- 최종 사용자의 설정에 따라 조직에서 자동으로, 정책을 기반으로 또는 수동으로 추가된 특성입니다.
@@ -62,6 +63,13 @@ Cloud App Security를 사용하면 파일을 조사하고 Azure Information Prot
 또는 파일 태그가 하나라도 지정된 파일을 검색하려면:
 
 ![파일 태그 모든 필터](./media/azip-file-tags-all-filter.png)
+
+## <a name="how-it-works"></a>작동 방식
+Cloud App Security를 Azure Information Protection과 연결하자마자 Cloud App Security는 다음과 같이 파일을 검색합니다.
+1. 테넌트에서 사용되는 모든 분류 레이블 목록을 검색합니다. 이 작업은 목록을 최신 상태로 유지하기 위해 매시간 수행됩니다.
+2. 파일에서 분류 레이블을 검색합니다. 두 가지 방법으로 수행될 수 있습니다. a. 파일 정책의 일부로 콘텐츠를 검색하는 파일은 분류 레이블에 대한 검색 큐에도 추가됩니다.
+    b. 파일 정책을 설정하지 않고도 모든 파일을 검색 큐에 추가하려면 새 파일이나 수정된 파일을 모두 검색하는 자동 검색(아래 참조)을 사용하도록 설정합니다.
+3. 외부 레이블은 특정 파일에 표시된 경우에만 분류 레이블 목록에 추가됩니다. 단, **다른 테넌트의 Azure Information Protection 분류 레이블 무시** 확인란을 선택한 경우에는 추가되지 않습니다(아래 참조).
 
 ## <a name="enable-automatic-scan"></a>자동 검색 사용
 Office 365에서 새 파일의 파일 태그를 자동으로 검색하려면:
@@ -119,6 +127,6 @@ Office 365에서 새 파일의 파일 태그를 자동으로 검색하려면:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

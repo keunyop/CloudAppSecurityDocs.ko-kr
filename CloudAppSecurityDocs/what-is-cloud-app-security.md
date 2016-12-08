@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/17/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입
 |-------|---|:---|
 |![검색](./media/discovery-icon.png)|검색|Cloud App Security로 섀도 IT를 파악합니다. 클라우드 환경에서 응용 프로그램, 활동, 사용자, 데이터 및 파일을 검색하여 가시성을 확보합니다. 클라우드에 연결되어 있는 타사 응용 프로그램을 검색합니다.|
 |![조사](./media/investigate-icon.png)|조사|클라우드 범죄 조사 도구를 사용하여 네트워크에서 위험한 응용 프로그램, 특정 사용자 및 파일을 심층 분석하며 클라우드 응용 프로그램을 조사합니다. 클라우드에서 수집한 데이터에서 패턴을 찾습니다. 클라우드를 모니터링하는 보고서를 생성합니다.|
-|![컨트롤](./media/protect-icon.png)|컨트롤|네트워크 클라우드 트래픽의 제어를 최대화하기 위한 정책 및 경고를 설정하여 위험을 완화합니다. Cloud App Security를 통해 사용자가 안전하고 권한 있는 클라우드 앱 대안으로 마이그레이션할 수 있습니다.|
+|![컨트롤](./media/control-icon.png)|컨트롤|네트워크 클라우드 트래픽의 제어를 최대화하기 위한 정책 및 경고를 설정하여 위험을 완화합니다. Cloud App Security를 통해 사용자가 안전하고 권한 있는 클라우드 앱 대안으로 마이그레이션할 수 있습니다.|
 |![보호](./media/protect-icon.png)|보호|Cloud App Security를 통해 응용 프로그램에 권한을 부여 또는 취소하고, 데이터 손실 방지 기능을 적용하고, 사용 권한 및 공유를 제어하고, 사용자 지정 보고서 및 경고를 생성할 수 있습니다.|
 
 
@@ -54,7 +54,7 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 Cloud App Security에서는 다음과 같이 데이터를 유지합니다.
 >- 활동 로그: 180일
 >- 검색 데이터: 90일
->- 경고: 무제한
+>- 경고: 180일
 
 이러한 원본의 데이터를 수집한 후 Cloud App Security에서 데이터에 대한 정교한 분석을 실행 합니다. 비정상적인 활동이 있으면 즉시 알리고, 클라우드 환경에 대한 심층적인 정보를 제공합니다. Cloud App Security에서 정책을 구성한 다음 클라우드 환경에 있는 모든 항목을 보호하는 데 사용할 수 있습니다.  
 
@@ -87,6 +87,6 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 Office 365 연결 | Microsoft 문서"
+title: "Office 365 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 >- Exchange Online의 사용자 활동을 기록하기 전에 각 사용자 사서함에 대해 Exchange 사서함 감사 로깅을 켜야 합니다. [Exchange 사서함 활동](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)을 참조하세요.
 >- Office 앱을 사용하는 경우 Office 365의 일부인 그룹도 특정 Office 앱에 만들어집니다. 예를 들어 SharePoint를 사용하면 Office 365 그룹이 SharePoint에 만들어집니다.
  
-1.  Office 365 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추를 클릭하고 **Office 365**를 선택합니다.  
+1.  **연결된 앱** 페이지에서 더하기 단추를 클릭하고 **Office 365**를 선택합니다.  
 
 2.  Office 365 팝업에서 Office 365 연결을 클릭합니다.
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

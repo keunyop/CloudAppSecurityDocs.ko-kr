@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>릴리스 정보
 
+
+## <a name="cloud-app-security-release-85"></a>Cloud App Security 릴리스 85
+2016년 11월 27일 출시
+
+**새로운 기능**
+- 승인된 앱과 연결된 앱을 구분했습니다. 승인 및 미승인은 이제 검색된 앱과 앱 카탈로그의 모든 앱에 적용할 수 있는 태그입니다. 연결된 앱은 가시성과 제어력을 높이기 위해 API 커넥터를 사용하여 연결한 앱입니다. 이제 앱에 승인 또는 미승인으로 태그 지정하거나 사용 가능한 경우 앱 커넥터를 사용하여 앱을 연결할 수 있습니다. 
+ 
+- 이 변경의 일부로 승인 앱 페이지가 커넥터에 대한 상태 데이터를 표시하는 새로 디자인된 **연결된 앱** 페이지로 바뀌었습니다. 
+ 
+- 로그 수집기는 **원본** 아래의 **설정** 메뉴에서 별도의 줄로 더 쉽게 액세스할 수 있습니다. 
+- 활동 정책 필터를 만들 때 동일한 사용자가 동일한 대상 개체에 대해 수행하는 경우 반복되는 활동을 무시하도록 선택하여 가양성을 줄일 수 있습니다. 예를 들어 같은 사용자가 동일한 파일을 여러 번 다운로드하려고 하는 경우 경고가 트리거되지 않습니다. 
+- 활동 서랍이 향상되었습니다. 이제 활동 서랍에서 활동 개체를 클릭할 때 드릴다운하여 자세한 정보를 확인할 수 있습니다.
+
+**향상된 기능**
+- 비정상 감지 엔진이 개선되었습니다. 예를 들어 불가능한 이동 경고의 경우 이제 IP 정보가 경고 설명에 제공됩니다.
+- 복잡한 필터가 개선되어 동일한 필터를 두 번 이상 추가하여 필터링된 결과를 미세 조정할 수 있습니다. 
+- Dropbox에서 파일 및 폴더 작업이 분리되어 더 알아보기 쉬워졌습니다. 
+  
+**버그 수정**
+- 가양성을 생성하던 시스템 경고 메커니즘의 버그가 수정되었습니다.
 
 ## <a name="cloud-app-security-release-84"></a>Cloud App Security 릴리스 84
 2016 년 11 월 13 일 출시
@@ -238,6 +258,6 @@ ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

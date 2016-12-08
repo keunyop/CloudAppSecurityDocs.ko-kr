@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
+ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
+ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
 
  ![고급 파일 로그 필터](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a> 파일 필터 
+###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> 파일 필터 
  
 Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수준, 파일 형식)를 기반으로 모든 파일 형식을 모니터링할 수 있습니다. 
  
@@ -38,7 +38,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 
 다음은 적용할 수 있는 파일 필터 목록입니다. 대부분의 필터는 매우 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
 > [!NOTE] 
-> 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 예를 들어 **malware** 또는 **virus**를 검색하는 경우 virus_malware_file.exe를 찾지만 malwarevirusfile.exe는 찾지 않습니다. **malware.exe**를 검색하는 경우 파일 이름에 malware 또는 exe가 포함된 모든 파일을 찾지만 **"malware.exe"**(따옴표 포함)를 검색하는 경우 정확하게 "malware.exe"가 포함된 파일만 찾습니다.  **같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다. 
+> 파일 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 따옴표로 묶인 단어는 AND처럼 작동합니다. 예를 들어 **"malware"** **"virus"**를 검색하는 경우 virus_malware_file.exe는 찾지만 malwarevirusfile.exe 및 malware.exe는 찾지 않습니다. 단어 사이의 공백은 OR처럼 작동합니다. 예를 들어 하는 경우처럼 또는 예를 들어 **malware** **virus**를 검색하는 경우 이름에 malware나 virus가 있는 파일을 모두 찾으므로 malware-virus.exe와 virus.exe를 모두 찾습니다.   **같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다. 
 
 -   액세스 수준 – 공유 액세스 수준(공개, 외부, 내부 또는 전용)입니다.  외부 파일에 대한 자세한 내용은 [일반 설정, 포털 설정](getting-started-with-cloud-app-security.md)을 참조하세요. 내부는 [일반 설정](General-setup.md)에서 설정한 내부 도메인 내의 모든 파일입니다. 외부는 설정한 내부 도메인에 속하지 않는 위치에 저장된 모든 파일입니다. 공유는 공유 수준이 개인보다 위인 파일입니다. 여기에는 내부 공유(내부 도메인 내에서 공유되는 파일), 외부 공유(내부 도메인에 나열되지 않는 도메인에서 공유되는 파일), 링크를 통한 공개(링크를 통해 모든 사용자와 공유할 수 있는 파일) 및 공개(인터넷을 검색하여 찾을 수 있는 파일)가 포함됩니다. 
 
@@ -67,7 +67,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 -   파일 ID - 특정 파일 ID를 검색합니다. 소유자/위치/이름을 사용하지 않고 중요한 특정 파일을 추적할 수 있는 고급 기능입니다.  
   
--   파일 이름 - 클라우드 앱에 정의된 이름의 파일 이름 또는 하위 문자열입니다(예: 이름에 암호가 포함된 모든 파일).  
+-   파일 이름 - 클라우드 앱에 정의된 이름의 파일 이름 또는 하위 문자열입니다(예: 이름에 암호가 포함된 모든 파일).   
   
 -   파일 태그 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
 
@@ -97,45 +97,20 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 ![필터에 적용](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>거버넌스 작업  
+## <a name="working-with-the-file-drawer"></a>파일 서랍 사용
+
+파일 로그에서 파일 자체를 클릭하여 각 파일에 관한 자세한 정보를 볼 수 있습니다. 그러면 파일에서 수행할 다음 추가 작업을 제공하는 파일 서랍이 열립니다.
+
+- URL: 파일 위치로 이동합니다.
+- 파일 식별자: 파일 식별자를 클릭하면 파일 ID, 암호화 키를 비롯한 파일에 관한 원시 데이터 정보가 포함된 팝업이 열립니다.
+- 소유자: 이 파일의 소유자에 대한 사용자 페이지를 보려면 소유자를 클릭합니다.
+- 일치 정책: 이 파일과 일치하는 정책의 목록을 보려면 일치 정책 링크를 클릭합니다.
+- 분류 레이블: 이 파일에 있는 Azure Information Protection 분류 레이블 목록을 보려면 분류 레이블을 클릭합니다. 그런 다음 이 레이블과 일치하는 모든 파일을 기준으로 필터링할 수 있습니다.    
+
+![파일 서랍](./media/file-drawer.png "File drawer")  
   
--   알림  
-  
-    -   경고 - 심각도 수준에 따라 시스템에서 경고가 트리거되고 메일 및 텍스트 메시지를 통해 전파될 수 있습니다.  
-  
-    -   사용자 메일 알림 - 메일 메시지를 사용자 지정할 수 있으며 위반하는 모든 파일 소유자에게 전송됩니다.  
-  
-    -   참조 관리자 - 사용자 디렉터리 통합에 따라 정책을 위반하는 사용자의 관리자에게 메일 알림을 보낼 수도 있습니다.  
-  
--   특정 사용자에게 알림 - 이러한 알림을 받을 특정 메일 주소 목록입니다.  
-  
--   마지막 파일 편집자에게 알림 - 파일을 수정한 마지막 사용자에게 알림을 보냅니다.  
-  
--   앱의 거버넌스 작업  
-  
-     앱별로 세부적인 작업을 적용할 수 있습니다. 특정 작업은 앱 용어에 따라 달라집니다.  
-  
-    -   공유 변경  
-  
-        -   공용 공유 제거 – 명명된 공동 작업자에게만 액세스를 허용합니다(예: Google Apps에 대한 공용 액세스 제거 및 Box에 대한 직접 공유 링크 제거).  
-  
-        -   외부 사용자 제거 – 회사 사용자에게만 액세스를 허용합니다.  
-  
-        -   비공개로 설정 - 소유자만 파일에 액세스할 수 있습니다. 모든 공유가 제거됩니다.  
-  
-        -   공동 작업자 제거 – 파일에서 특정 공동 작업자를 제거합니다.  
-  
-    -   격리  
-  
-        -   사용자 격리에 넣기 – 파일을 사용자 제어 격리 폴더로 이동하여 셀프 서비스를 허용합니다.  
-  
-        -   관리자 격리에 넣기 – 파일이 관리자 드라이브의 격리로 이동하고 관리자가 승인해야 합니다.  
-  
--   휴지통 – 파일을 휴지통 폴더로 이동합니다.
-  
-![policy_create 경고](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+사용할 수 있는 거버넌스 작업 목록은 [파일 거버넌스 작업](governance-actions.md#file-governance-actions)을 참조하세요.
+
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -144,6 +119,6 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 Salesforce 연결 | Microsoft 문서"
+title: "Salesforce 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Salesforce를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
          ![salesforce manageusers 프로필](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Cloud App Security를 배포하는 데 사용할 프로필을 선택하고 **편집**을 클릭합니다.  
+    -   Cloud App Security를 배포하는 데 사용할 프로필을 선택하고 **편집**을 클릭합니다. 이 프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
   
          ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
     5.  **Save**을 클릭합니다.  
   
-4.  Cloud App Security 콘솔에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+4.  Cloud App Security 콘솔에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-5.  Box 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **Salesforce**를 차례로 클릭합니다.  
+5.  **앱 커넥터** 페이지에서 더하기 단추, **Salesforce**를 차례로 클릭합니다.  
   
      ![salesforce 연결](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ SalesForce를 연결한 후 SalesForce EventMonitoring 라이선스에 따라 �
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

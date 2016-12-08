@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
+ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
+ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
   
 4.  로그 파일을 업로드할 **데이터 원본**을 선택합니다.  
   
-5.  업로드할 **트래픽 로그를 선택**합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다.  
+5.  업로드할 **트래픽 로그를 선택**합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다. 압축된 파일도 지원됩니다.  
   
 6.  **만들기**를 클릭합니다.  
   
@@ -68,6 +68,6 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 Box 연결 | Microsoft 문서"
+title: "Box 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -45,13 +45,13 @@ ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
     > [!NOTE]  
     >  기존 Adallom 고객이고 콘솔 URL이 Cloud App Security가 아닌 Adallom에 연결된 경우 앱 일련 번호 bwahmilhdlpbqy2ongkl119o3lrkoshc를 사용합니다.  
   
-2.  Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+2.  Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-3.  Box 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추를 클릭하고 **Box**를 선택합니다.  
+3.  **앱 커넥터** 페이지에서 더하기 기호 단추, **Box**를 차례로 클릭합니다.  
   
      ![box 연결](./media/connect-box.png "connect box")  
   
-4.  **Box 설정** 페이지의 **API** 탭에서 **이 링크를 따름**을 클릭합니다.  
+4.  **Box 설정** 팝업에서 **이 링크를 따름**을 클릭합니다.  
   
 5.  Box 로그온 페이지가 열립니다. Cloud App Security에서 팀의 Box 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
   
@@ -77,6 +77,6 @@ Box를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

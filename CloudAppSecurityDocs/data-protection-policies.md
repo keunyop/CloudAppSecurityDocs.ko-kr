@@ -1,11 +1,11 @@
 ---
-title: "데이터 보호 정책 | Microsoft 문서"
+title: "파일 정책 | Microsoft 문서"
 description: "이 항목에서는 조직의 클라우드 앱 사용에서 데이터 및 파일을 모니터링하고 제어하는 데이터 정책을 설정하는 절차에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,13 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
 
 
 ---
 
-# <a name="data-protection-policies"></a>데이터 보호 정책
-    
-## <a name="file-policies"></a>파일 정책  
+# <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  
 Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수준, 파일 형식)를 기반으로 모든 파일 형식을 모니터링할 수 있습니다. 
  
@@ -71,12 +69,13 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 4.  **위험 형식** 내에서 가장 적합한 위험 형식에 정책을 연결합니다. 이 필드는 참조용이며 나중에 위험 형식에 따라 특정 정책과 경고를 검색하는 데 도움이 됩니다.  정책을 만드는 데 선택한 범주에 따라 위험이 미리 선택되어 있을 수도 있습니다. 기본적으로 파일 정책은 DLP로 설정됩니다.  
   
 5.  이 정책을 트리거할 검색된 앱을 설정하려면 **이 정책이 적용될 파일에 대한 필터 만들기**를 클릭합니다. 작업하려는 가장 정확한 파일 집합에 도달할 때까지 정책 필터의 범위를 좁힙니다. 가양성을 방지하기 위해 최대한 범위를 제한합니다. 예를 들어 공용 사용 권한을 제거하려면 "공용" 필터를 추가하고, 외부 사용자를 제거하려면 "외부" 필터를 사용합니다.  
-  
+> [!NOTE] 
+> 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 예를 들어 **malware** 또는 **virus**를 검색하는 경우 virus_malware_file.exe를 찾지만 malwarevirusfile.exe는 찾지 않습니다. **malware.exe**를 검색하는 경우 파일 이름에 malware 또는 exe가 포함된 모든 파일을 찾지만 **"malware.exe"**(따옴표 포함)를 검색하는 경우 정확하게 "malware.exe"가 포함된 파일만 찾습니다. **같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다.  
 6.  Box, SharePoint, Dropbox, OneDrive의 경우 앱이나 특정 폴더의 모든 파일에 대해 파일 정책을 적용할 수 있습니다. **적용 대상**에서 **선택한 폴더** 또는 **선택한 폴더를 제외한 모든 파일**을 선택하면 클라우드 앱에 로그온하도록 리디렉션되며, 관련 폴더를 추가합니다.  
   
-7.  **콘텐츠 검사 방법**을 선택합니다. 기본 제공 DLP를 사용하면 콘텐츠를 기준으로 파일을 필터링할 수 있습니다. 파일에서 콘텐츠를 검색하려면 **기본 제공 DLP**를 선택합니다. 콘텐츠 검사를 사용하도록 설정한 경우 사전 설정 식을 사용하거나 고유한 하위 문자열 또는 정규식으로 다른 사용자 지정 식을 검색할 수 있습니다.  
+7.  **콘텐츠 검사 방법**을 선택합니다. 기본 제공 DLP를 사용하면 콘텐츠를 기준으로 파일을 필터링할 수 있습니다. 파일에서 콘텐츠를 검색하려면 **기본 제공 DLP**를 선택합니다. 콘텐츠 검사를 사용하도록 설정한 경우 사전 설정 식을 사용하거나 고유한 하위 문자열 또는 [정규식](working-with-the-regex-engine.md)으로 다른 사용자 지정 식을 검색할 수 있습니다.  
     또한 정규식을 지정하여 결과에서 파일을 제외할 수 있습니다. 정책에서 제외하려는 내부 분류 키워드 표준이 있는 경우에 매우 유용합니다.  
-    또한 파일이 위반으로 간주되기 전에 일치하려는 최소 콘텐츠 위반 수를 결정할 수 있습니다. 예를 들어 파일 콘텐츠 내에 10개 이상의 신용 카드 번호가 있는 파일에 대한 경고를 수신하려는 경우 10을 선택할 수 있습니다.  
+    파일이 위반으로 간주되기 전에 일치하려는 최소 콘텐츠 위반 수를 설정할 수 있습니다. 예를 들어 파일 콘텐츠 내에 10개 이상의 신용 카드 번호가 있는 파일에 대한 경고를 수신하려는 경우 10을 선택할 수 있습니다.  
     콘텐츠를 선택한 식과 일치시키는 경우 위반 알림 및 로그에서 일치 항목 자체를 마스킹하도록 선택할 수 있습니다. 선택하면 위반 텍스트가 "X" 문자로 바뀝니다. 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다.  
   
 8.  일치 항목이 검색될 때 Cloud App Security에서 수행하려는 **거버넌스** 작업을 선택합니다.  
@@ -113,9 +112,9 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
     > [!NOTE]  
     >  확장은 Cloud App Security Technical Preview 버전에서만 사용할 수 있습니다.  
   
-    -   향상된 DLP 또는 맬웨어 방지 기능을 위해 콘텐츠 검사는 타사 엔진을 통해 수행할 수 있습니다.  
+    -  향상된 DLP 또는 맬웨어 방지 기능을 위해 콘텐츠 검사는 타사 엔진을 통해 수행할 수 있습니다.  
   
-    -   사용자 지정 암호화 제어 또는 다른 유형의 파일 처리(예: 사용자 지정 워터마크)를 적용하기 위해 거버넌스 작업은 타사 엔진을 통해 수행할 수 있습니다.  
+    -  사용자 지정 암호화 제어 또는 다른 유형의 파일 처리(예: 사용자 지정 워터마크)를 적용하기 위해 [거버넌스 작업](governance-actions.md)은 타사 엔진을 통해 수행할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
@@ -125,6 +124,6 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

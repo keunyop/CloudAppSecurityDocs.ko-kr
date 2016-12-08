@@ -1,11 +1,11 @@
 ---
-title: "사용자 활동 정책 | Microsoft 문서"
-description: "이 항목에서는 사용자 활동 정책을 만들고 사용하기 위한 지침을 제공합니다."
+title: "활동 정책 | Microsoft 문서"
+description: "이 항목에서는 활동 정책을 만들고 사용하기 위한 지침을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>사용자 활동 정책
+# <a name="activity-policies"></a>활동 정책
 활동 정책을 통해 앱 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 이러한 정책을 사용하면 다양한 사용자가 수행하는 특정 활동을 모니터링하거나 한 가지 특정 활동 유형의 예기치 않게 높은 비율을 팔로우할 수 있습니다.  
   
 활동 검색 정책을 설정하면 경고를 생성하기 시작합니다. 경고는 정책을 만든 후에 수행되는 활동에 대해서만 생성됩니다.
@@ -133,6 +133,6 @@ ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

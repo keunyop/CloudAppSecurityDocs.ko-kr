@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 ServiceNow 연결 | Microsoft 문서"
+title: "ServiceNow 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
      ![servicenow 계정](./media/servicenow-account.png "servicenow account")  
   
-4.  Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+4.  Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-5.  ServiceNow 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **ServiceNow**를 차례로 클릭합니다.  
+5.  **앱 커넥터** 페이지에서 더하기 단추, **ServiceNow**를 차례로 클릭합니다.  
   
      ![servicenow 연결](./media/connect-servicenow.png "connect servicenow")  
   
-6.  ServiceNow 설정 페이지의 API 탭에서 해당 상자에 ServiceNow 사용자 이름, 암호 및 인스턴스 URL을 추가합니다.  
+6.  팝업에서 해당 상자에 ServiceNow 사용자 이름, 암호 및 인스턴스 URL을 추가합니다.  
   
 7.  **연결**을 클릭합니다.  
   
@@ -62,6 +62,6 @@ ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

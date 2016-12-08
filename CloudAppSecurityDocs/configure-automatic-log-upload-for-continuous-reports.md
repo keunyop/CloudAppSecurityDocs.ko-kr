@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
   
 1.  자동화된 업로드 설정 페이지로 이동합니다.  
-    Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon"), **Cloud Discovery 설정**을 차례로 클릭하고 **자동으로 로그 업로드** 탭을 선택합니다.  
+    Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon"), **로그 수집기**를 차례로 클릭합니다.  
   
 3.  로그를 업로드하려는 각 방화벽 또는 프록시에 대해 일치하는 데이터 원본을 만듭니다.  
   
@@ -77,7 +77,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
   > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**하고 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
-### <a name="step-2-onpremises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
+### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
 > [!NOTE] 
 > 다음 단계에서는 Hyper-V에서의 배포에 관해 설명합니다. VM 하이퍼바이저의 배포 단계는 약간 다릅니다.  
@@ -114,7 +114,7 @@ sudo network_config
 
 이 시점에서 로그 수집기가 네트워크에 연결되어야 하며 Cloud App Security 포털에 액세스할 수 있어야 합니다.  
 
-### <a name="step-3-onpremises-configuration-of-the-log-collection"></a>3단계 – 로그 수집의 온-프레미스 구성 
+### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>3단계 – 로그 수집의 온-프레미스 구성 
 처음으로 로그 수집기에 로그인하고 다음과 같이 포털에서 로그 수집기의 구성을 가져옵니다. 
 
 1.  포털에서 제공된 대화형 관리자 자격 증명을 사용하여 SSH를 통해 로그 수집기에 로그인합니다. (처음으로 콘솔에 로그인하는 경우 암호를 변경해야 하며 암호를 변경한 후에는 다시 로그인해야 합니다. 터미널 세션을 사용하는 경우 터미널 세션을 다시 시작해야 할 수 있습니다. )
@@ -133,7 +133,7 @@ sudo network_config
   
       d. 구성하려는 로그 수집기의 이름을 입력합니다. 예를 들면 다음과 같습니다.``` CloudAppSecurityLogCollector01  ```
 
-### <a name="step-4-onpremises-configuration-of-your-network-appliances"></a>4 단계 - 네트워크 장치의 온-프레미스 구성
+### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>4 단계 - 네트워크 장치의 온-프레미스 구성
 
 대화 상자의 지침에 따라 FTP 디렉터리의 전용 Syslog 포트로 로그를 주기적으로 내보내도록 네트워크 방화벽 및 프록시를 구성합니다. 예를 들면 다음과 같습니다.  
   
@@ -141,7 +141,7 @@ sudo network_config
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-### <a name="step-5-verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>5 단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
+### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>5 단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
 거버넌스 로그로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인합니다.  
   
@@ -158,6 +158,6 @@ sudo network_config
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

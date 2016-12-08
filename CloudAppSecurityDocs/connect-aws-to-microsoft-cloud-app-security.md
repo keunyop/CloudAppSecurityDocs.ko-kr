@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 AWS 연결 | Microsoft 문서"
+title: "AWS 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 AWS 앱을 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -96,13 +96,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
     3.  모든 영역에 대해 11단계를 반복하되 글로벌 서비스를 포함하도록 다른 영역을 설정하지 마세요.  
   
-11. Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+11. Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-12. AWS 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **AWS**를 차례로 클릭합니다.  
+12. **앱 커넥터** 페이지에서 더하기 기호, **AWS**를 차례로 클릭합니다.  
   
      ![AWS 연결](./media/connect-aws.png "connect AWS")  
   
-13. Amazon 웹 서비스 비교 설정 페이지에서 csv 파일의 **액세스 키** 및 **비밀 키**를 API 페이지의 필드에 붙여넣고 **액세스 키 업데이트**를 클릭합니다.  
+13. 팝업에서 csv 파일의 **액세스 키** 및 **비밀 키**를 API 페이지의 필드에 붙여넣고 **액세스 키 업데이트**를 클릭합니다.  
   
 14. **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.  
   
@@ -118,6 +118,6 @@ AWS를 연결한 후 연결 전 7일에 대한 이벤트를 받게 됩니다.
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

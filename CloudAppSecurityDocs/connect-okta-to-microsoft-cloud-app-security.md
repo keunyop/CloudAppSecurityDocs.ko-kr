@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud App Security에 Okta 연결 | Microsoft 문서"
+title: "Okta 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Okta를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
   
          ![okta 토큰 값](./media/okta-token-value.png "okta token value")  
   
-3.  Cloud App Security 콘솔에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+3.  Cloud App Security 콘솔에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-4.  Okta 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **Okta**를 차례로 클릭합니다.  
+4.  **앱 커넥터 페이지** 페이지에서 더하기 단추, **Okta**를 차례로 클릭합니다.  
   
      ![okta 연결](./media/connect-okta.png "connect okta")  
   
-5.  API 페이지의 **도메인** 필드에 Okta 도메인을 입력하고 **토큰** 필드에 토큰을 붙여넣습니다.  
+5.  팝업이 열리면 **도메인** 필드에 Okta 도메인을 입력하고 **토큰** 필드에 토큰을 붙여넣습니다.  
   
 6.  **연결**을 클릭하여 Cloud App Security에서 Okta에 대한 토큰을 만듭니다.  
   
@@ -73,6 +73,6 @@ Okta를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다.
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

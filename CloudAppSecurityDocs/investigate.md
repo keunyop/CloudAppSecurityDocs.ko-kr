@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
 |응용 프로그램 대시보드: 타사 앱|Google Apps 등의 현재 배포된 타사 응용 프로그램을 드릴다운하고 정책 정의|  
 |사용자 대시보드|그룹, 위치, 최근 활동, 관련 경고, 사용된 브라우저 등 클라우드에서 사용자 프로필의 전체 개요|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> 앱 사용 권한 부여 또는 취소  
-클라우드를 이해하는 첫 번째 단계는 앱에 사용 권한을 부여하는 것입니다. 앱에 사용 권한을 부여한 후 사용 권한이 부여되지 않은 앱을 필터링하고 동일한 유형의 사용 권한 앱으로 마이그레이션을 시작할 수 있습니다.  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> 앱에 승인 또는 미승인 권한으로 태그 지정  
+클라우드를 이해하는 중요한 단계는 앱에 승인 또는 미승인 태그를 지정하는 것입니다. 앱에 사용 권한을 부여한 후 사용 권한이 부여되지 않은 앱을 필터링하고 동일한 유형의 사용 권한 앱으로 마이그레이션을 시작할 수 있습니다.  
 
--   Cloud App Security 콘솔에서 **검색**, **검색 대시보드**를 차례로 선택합니다.  
+-   Cloud App Security 콘솔에서 앱 카탈로그 또는 검색된 앱으로 이동합니다.  
 
--   검색된 앱 목록에서 사용 권한을 부여하려는 앱이 표시되는 행의 끝에 있는 세 점 ![사용 권한 부여 세 점](./media/sanction-three-dots.png "Sanction three dots")을 선택하고 **사용 권한으로 표시**를 선택합니다.  
+-   앱 목록에서 승인 태그를 지정하려는 앱이 표시되는 행에서 ![승인된 점으로 태그 지정](./media/sanction-three-dots.png "Tag as sanctioned dots") 행의 끝에 있는 세 점을 선택하고 **승인됨으로 표시**를 선택합니다.  
 
-     ![사용 권한으로 표시](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![승인됨으로 태그 지정](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Cloud App Security API 통합을 사용하여 모니터링하려는 각 앱에 대해 Cloud App Security의 전용 관리 서비스 계정을 만드는 것이 좋습니다.  
 
 ## <a name="use-the-investigation-tools"></a>조사 도구 사용  
 
@@ -160,6 +158,6 @@ ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
