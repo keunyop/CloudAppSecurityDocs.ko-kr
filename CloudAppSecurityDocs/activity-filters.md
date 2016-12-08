@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 -   등록된 ISP – 활동을 수행한 ISP입니다.   
 
--  소스 - 활동이 검색된 원본을 기준으로 검색합니다(예: 응용 프로그램 커넥터). 
+-  원본 - 활동이 검색된 원본을 기준으로 검색합니다. 원본은 다음 중 하나일 수 있습니다.
+  - 앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
+  - 앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
+  
 
 -   사용자 – 활동을 수행한 사용자입니다. 도메인, 그룹, 이름 또는 조직을 기준으로 필터링할 수 있습니다. 특정 사용자 없이 활동을 필터링하려면 '설정되지 않음' 연산자를 사용할 수 있습니다.  
     -   사용자 도메인 - 특정 사용자 도메인을 검색합니다.
@@ -94,34 +97,9 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 ![활동 서랍](./media/activity-drawer.png "activity drawer")  
   
+사용할 수 있는 거버넌스 작업 목록은 [파일 일치 매개 변수](governance-actions.md#activity-match-parameters)를 참조하세요.
 
 
-## <a name="activity-match-parameters"></a>활동 일치 매개 변수  
-정책과 일치하는 데 필요한 활동 반복량을 지정합니다(예: 사용자가 2분 시간 프레임 내에 로그인 시도를 10회 실패할 경우 경고하는 정책 설정).  
-기본 설정 **활동 일치 매개 변수**는 모든 활동 필터를 충족하는 모든 단일 활동에 대해 일치를 발생시킵니다.   
-**반복 활동**을 사용하여 반복 활동 수와 활동이 계산되는 시간 프레임 기간을 설정하고 동일한 사용자가 동일한 클라우드 앱에서 모든 활동을 수행하도록 지정할 수 있습니다.  
-  
-### <a name="actions"></a>작업  
-알림  
-  
--   경고 - 심각도 수준에 따라 시스템에서 경고가 트리거되고 메일 및 텍스트 메시지를 통해 전파될 수 있습니다.  
-  
--   사용자 메일 알림 - 메일 메시지를 사용자 지정할 수 있으며 위반하는 모든 파일 소유자에게 전송됩니다.  
-  
--   참조 관리자 - 사용자 디렉터리 통합에 따라 정책을 위반하는 사용자의 관리자에게 메일 알림을 보낼 수도 있습니다.  
-  
--   추가 사용자에게 알림 - 이러한 알림을 받을 특정 메일 주소 목록입니다.  
-  
-앱의 거버넌스 작업  
-  
--   앱별로 세부적인 작업을 적용할 수 있습니다. 특정 작업은 앱 용어에 따라 달라집니다.  
-  
--   사용자 일시 중단 – 응용 프로그램에서 사용자를 일시 중단합니다.  
-  
--   암호 철회 – 사용자 암호를 해지하고 다음 로그인 시 새 암호를 설정하도록 강제합니다.  
-  
-     ![활동 정책 ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -130,6 +108,6 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
