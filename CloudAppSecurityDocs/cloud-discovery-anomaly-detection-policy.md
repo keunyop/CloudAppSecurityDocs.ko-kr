@@ -14,8 +14,8 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 481ca3d68e5e7aea006eeff443ec521a374e6e11
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 132b4d296b26dd187418734b40d08ecb243692da
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 481ca3d68e5e7aea006eeff443ec521a374e6e11
 -   민감도 – 정책에서 트리거할 경고 수를 설정할 수 있습니다.  
   
 ### <a name="activity-filters"></a>활동 필터  
-활동 필터 목록은 [활동 필터](activity-filters.md)를 참조하세요.  
+활동 필터 목록은 [활동](activity-filters.md)을 참조하세요.  
   
 ### <a name="apply-to"></a>적용 대상  
 모니터링되는 사용을 다음 두 가지 방법으로 필터링할 수 있습니다.  
@@ -69,6 +69,6 @@ ms.openlocfilehash: 481ca3d68e5e7aea006eeff443ec521a374e6e11
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

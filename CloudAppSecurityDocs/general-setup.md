@@ -1,11 +1,11 @@
 ---
-title: "일반 설정 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security를 시작 및 실행하는 첫 번째 단계에 대해 설명합니다."
+title: "포털 사용자 지정 | Microsoft 문서"
+description: "이 항목에서는 포털을 사용자 지정하는 첫 번째 단계를 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,44 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>일반 설정
-다음 절차에서는 클라우드 환경에서 작동하도록 [!INCLUDE[Adallom1](./includes/adallom1_md.md)]를 설정하기 위한 지침을 제공합니다.  
-  
-## <a name="prerequisites"></a>필수 구성 요소  
-  
--   조직에서 제품을 사용하려면 Cloud App Security에 대한 라이선스가 있어야 합니다. 자세한 내용은 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) 및 [라이선싱 리소스](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)를 참조하세요.  
-  
-     테넌트 정품 인증 지원에 대한 자세한 내용은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요.  
-  
-> [!NOTE] 
-> Cloud App Security에는 Office 365 라이선스가 필요하지 않습니다.  
-  
--   Cloud App Security 라이선스를 구입하면 정품 인증 정보와 Cloud App Security 포털에 대한 링크가 포함된 메일을 받게 됩니다.  
-  
--   Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 전역 관리자, 준수 관리자 또는 보안 관리자여야 합니다. Office 365 포털, Azure 클래식 포털 또는 Windows PowerShell용 Azure AD 모듈을 통해 역할을 할당하는지에 관계없이 관리자 역할이 할당된 사용자가 조직이 구독한 모든 클라우드 앱에서 동일한 권한을 가진다는 것을 이해하는 것이 중요합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
-  
--   Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
-  
--   ExpressRoute  
-  
-     Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
-    공용 피어링에 대한 자세한 내용은 [Express 경로 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
+# <a name="customize-the-portal"></a>포털 사용자 지정
+다음 절차에서는 Cloud App Security 포털을 사용자 지정하기 위한 지침을 제공합니다.
   
 ## <a name="set-up-the-portal"></a>포털 설정  
   
-1.  Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동합니다.  
-  
-     또는 관리 센터 아이콘 ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 admin centers icon"), **Cloud App Security**를 차례로 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수 있습니다.  
-  
-     ![O365에서 액세스](./media/access-from-o365.png "Access from O365")  
-  
-2.  Cloud App Security 포털 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon")을 클릭하고 **일반 설정**을 선택하여 다음을 구성합니다.  
+1.  Cloud App Security 포털 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon")을 클릭하고 **일반 설정**을 선택하여 다음을 구성합니다.  
   
 3.  **조직 정보**  
   
@@ -91,7 +65,7 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
   
 ![관리자 액세스 관리](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a> 관리자 설정 사용자 지정  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> 관리자 설정 사용자 지정  
 Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메뉴 모음에서 사용자 이름을 클릭하고 **사용자 설정**을 선택하여 다음을 설정합니다.  
   
 1.  **계정 설정**을 클릭합니다. 여기서 사용자에게 표시되는 포털 언어를 사용자 지정할 수 있습니다. 기본 언어로 포털을 표시하도록 설정하거나 다른 언어를 설정할 수 있습니다.  
@@ -108,7 +82,7 @@ Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메�
   
 3. 완료되면 **저장**을 클릭합니다.  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> 필요에 따라 데이터 구성  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> 필요에 따라 데이터 구성  
 실제 사무실 IP 주소 등 알려진 IP 주소를 쉽게 식별하려면 로그 및 경고를 표시 및 조사하는 방법에 태그를 지정하고 적절하게 분류 및 사용자 지정할 수 있도록 IP 주소 범위를 설정해야 합니다.   
 각 IP 범위 그룹을 IP 범주의 사전 설정 목록에 따라 분류하거나 직접 만든 IP 태그를 사용하여 태그를 지정할 수 있습니다. 또한 이 설정을 통해 내부 네트워크 지식에 따라 공용 지리적 위치 정보를 재정의할 수 있습니다.  
   
@@ -152,7 +126,7 @@ IPv4 및 IPv6이 지원됩니다.
   
      ![newipaddress 범위](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a> 환경 개인 설정  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> 환경 개인 설정  
 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon")을 클릭하고 **메일 설정**을 선택하여 Cloud App Security에서 관련 위반에 대한 경고 및 알림을 최종 사용자에게 보내도록 요청하는 관리자에게 보내는 메일 알림에 대한 매개 변수를 설정합니다.  
   
 ![메일 설정 메뉴](./media/mail-setting-menu.png "mail setting menu")  
@@ -241,9 +215,14 @@ IPv4 및 IPv6이 지원됩니다.
      **테스트 전자 메일 보내기**를 클릭하여 자신에게 테스트 메일을 보낸 다음 직접 만든 템플릿의 예를 확인합니다.  
      포털에 로그인할 때 사용한 계정으로 메일이 전송됩니다. 테스트 메일에서 메타데이터 필드, 템플릿, 메일 제목, 메일 본문의 제목 및 콘텐츠를 볼 수 있습니다.  
   
-## <a name="single-signon"></a>Single Sign-On  
+## <a name="single-sign-on"></a>Single Sign-On  
 Cloud App Security는 인증, 프로비전 및 라이선싱 관련 활동을 위해 Azure Active Directory와 결합되어 있습니다. Single Sign-On을 관리하는 방법에 대한 자세한 내용은 [Azure Active Directory 페더레이션 호환성 목록: Single Sign-On을 구현하는 데 사용할 수 있는 타사 ID 공급자](https://msdn.microsoft.com/library/azure/jj679342.aspx)를 참조하세요.  
-  
+
+
+> [!NOTE] 
+> ExpressRoute를 사용할 경우, Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
+    공용 피어링에 대한 자세한 내용은 [ExpressRoute 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
+    
 ## <a name="see-also"></a>참고 항목  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -252,6 +231,6 @@ Cloud App Security는 인증, 프로비전 및 라이선싱 관련 활동을 위
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

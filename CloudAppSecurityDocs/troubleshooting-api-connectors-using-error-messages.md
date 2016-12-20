@@ -1,11 +1,11 @@
 ---
-title: "오류 메시지를 사용하여 API 커넥터 문제 해결 | Microsoft 문서"
-description: "이 항목에서는 API 커넥터 오류 메시지 목록과 각각에 대한 권장 해결 방법을 제공합니다."
+title: "오류 메시지를 사용하여 앱 커넥터 문제 해결 | Microsoft 문서"
+description: "이 항목에서는 API 앱 커넥터 오류 메시지 목록과 각각에 대한 권장 해결 방법을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,20 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
 
 
 ---
 
-# <a name="troubleshooting-api-connectors-using-error-messages"></a>오류 메시지를 사용하여 API 커넥터 문제 해결
+
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
+
+API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 앱 커넥터 대화 상자에 앱 커넥터 오류가 표시될 수 있습니다.
+
+
 |오류 메시지|관련 앱|설명|해결 방법|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: 서버에서 반환함: 400 잘못된 요청: {"error":{"code":"AF20012","message":"지정된 테넌트 ID(Tenant_ID 위치)가 시스템에서 잘못 구성되었습니다."|Office 365 |할당된 Office 365 라이선스가 없습니다. |테넌트에 하나 이상의 Office 365 라이선스를 할당하세요.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"잘못된 새로 고침 토큰"}|상자|Box 새로 고침 토큰이 잘못되었습니다.|프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
 |BoxRestException: 응답을 구문 분석하지 못했습니다.|상자|내부 오류|지금 테스트 링크를 다시 클릭하여 Box에 대한 연결을 테스트하세요.|
@@ -59,6 +64,6 @@ ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

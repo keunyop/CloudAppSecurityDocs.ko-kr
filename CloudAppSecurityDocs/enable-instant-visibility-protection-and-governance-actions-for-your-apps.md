@@ -1,11 +1,11 @@
 ---
-title: "앱에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업 사용 | Microsoft 문서"
-description: "이 항목에서 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하도록 설정하는 프로세스에 대해 설명합니다."
+title: "앱 연결 | Microsoft 문서"
+description: "이 항목에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
-ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
 
 
 ---
 
-# <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>앱에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업 사용
+# <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
   
 Cloud App Security는 클라우드 공급자가 제공하는 API를 활용하며, 각 서비스에는 자체 프레임워크 및 API 제한 사항이 있습니다. Cloud App Security는 서비스와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 서비스에서 API에 적용하는 다양한 제한 사항(예: 제한, API 제한, 동적 시간 이동 API 창 등)을 고려하여 Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
@@ -97,6 +97,8 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 -   콘솔:  
   
      104.42.231.28  
+
+- Cloud App Security API 통합을 사용하여 연결하려는 각 앱에 대해 Cloud App Security의 전용 관리 서비스 계정을 만드는 것이 좋습니다.  
   
 > [!NOTE]  
 >  URL 및 IP 주소가 변경된 경우 업데이트를 가져오려면 [Office 365 URL 및 IP 주소 범위](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 설명된 대로 RSS를 구독합니다.  
@@ -129,6 +131,6 @@ Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microso
    
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

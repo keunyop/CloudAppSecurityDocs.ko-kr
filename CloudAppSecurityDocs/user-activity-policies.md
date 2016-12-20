@@ -1,11 +1,11 @@
 ---
-title: "사용자 활동 정책 | Microsoft 문서"
-description: "이 항목에서는 사용자 활동 정책을 만들고 사용하기 위한 지침을 제공합니다."
+title: "활동 정책 | Microsoft 문서"
+description: "이 항목에서는 활동 정책을 만들고 사용하기 위한 지침을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>사용자 활동 정책
+# <a name="activity-policies"></a>활동 정책
 활동 정책을 통해 앱 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 이러한 정책을 사용하면 다양한 사용자가 수행하는 특정 활동을 모니터링하거나 한 가지 특정 활동 유형의 예기치 않게 높은 비율을 팔로우할 수 있습니다.  
   
 활동 검색 정책을 설정하면 경고를 생성하기 시작합니다. 경고는 정책을 만든 후에 수행되는 활동에 대해서만 생성됩니다.
@@ -42,7 +42,7 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
 4.  이 정책을 트리거할 작업이나 기타 메트릭을 설정하려면 **활동 필터**를 사용합니다.  
   
 5.  **활동 일치 매개 변수**에서 단일 활동이 필터와 일치할 경우 정책 위반을 트리거할지 또는 지정된 개수의 **반복 활동**이 검색될 때만 위반을 검색할지를 선택합니다.  
-    **반복 활동**을 선택할 경우 활동 수, 시간 프레임 및 특정 앱 내에서 사용자의 위반 수를 계산할지 또는 모든 앱에서 동일한 사용자의 위반 수를 계산할지 여부 등 경고를 트리거할 활동을 설정합니다.  
+    **반복 활동**을 선택하면 **응용 프로그램당 활동이 일치하는 그룹**을 설정할 수 있습니다. 그러면 같은 응용 프로그램에서 반복되는 활동이 발생한 경우에만 정책 일치가 트리거됩니다(예: Box에서 5번 다운로드).  
   
 6.  일치 항목이 발견될 때 수행할 **작업**을 구성합니다.  
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

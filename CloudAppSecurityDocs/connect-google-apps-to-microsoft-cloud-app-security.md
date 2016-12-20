@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Cloud App Security에 Google Apps 연결 | Microsoft 문서"
+title: "Google Apps 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Google apps를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Google Apps 연결
-이 섹션에서는 커넥터 API를 사용하여 기존 Google Apps 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 섹션에서는 커넥터 API를 사용하여 기존 Google Apps 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
+
+  
   
 ## <a name="configure-google-apps"></a>Google Apps 구성  
   
@@ -218,13 +220,13 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 ## <a name="configure-cloud-app-security"></a>Cloud App Security 구성  
   
-1.  Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.  
+1.  Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-2.  Google Apps 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결**을 클릭하고 **Google Apps**를 선택합니다.  
+2.  **연결된 앱** 페이지 더하기 기호를 클릭하고 **Google Apps**를 선택합니다.  
   
      ![google apps 연결](./media/connect-google-apps.png "connect google apps")  
   
-3.  Google Apps 설정 페이지에서 다음을 입력합니다.  
+3.  팝업에서 다음을 입력합니다.  
   
      ![Cloud App Security의 Google Apps 구성](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ Google Apps를 연결한 후 Cloud App Security에서 전체 검색을 수행합
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

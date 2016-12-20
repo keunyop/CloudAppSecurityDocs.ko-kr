@@ -1,5 +1,5 @@
 ---
-title: "Cloud Discovery 데이터 작업 | Microsoft 문서"
+title: "Cloud Discovery 사용자 지정 | Microsoft 문서"
 description: "이 항목에서는 앱 위험 점수 작업을 포함하여 Cloud Discovery 데이터로 작업하는 방법에 대한 지침을 제공합니다."
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9bf05e43966ff39dacc58a082c7b8eb3627eda
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
 
 
 ---
 
-# <a name="working-with-cloud-discovery-data"></a>Cloud Discovery 데이터 작업
+# <a name="customize-cloud-discovery"></a>Cloud Discovery 사용자 지정
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery 대시보드 검토
 
 Cloud Discovery 대시보드는 조직에서 클라우드 앱이 어떻게 사용되는지를 효과적으로 파악할 수 있도록 설계되었습니다. 이 대시보드에서는 사용되고 있는 앱의 종류, 미해결 경고 및 조직에서 앱의 위험 수준을 한눈에 파악할 수 있습니다. 또한 최고의 앱 사용자를 확인할 수 있으며 앱 본사 위치 지도를 제공합니다. Cloud Discovery 대시보드는 가장 관심 있는 항목에 따라 데이터를 필터링할 수 있는 많은 옵션을 제공하여 특정 뷰를 생성할 수 있으며, 이해하기 쉬운 그래픽을 통해 한눈에 볼 수 있는 전체 사진을 제공합니다.
@@ -132,6 +132,6 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

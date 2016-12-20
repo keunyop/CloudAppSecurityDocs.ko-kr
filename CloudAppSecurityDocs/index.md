@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
     <section id="hero-content">
       <h1>Cloud App Security 설명서</h1>
       <h2>조직이 향상된 활동 가시성 및 중요한 회사 데이터의 보호 강화를 통해 제어를 유지하는 동시에 클라우드 응용 프로그램의 혜택을 이용할 수 있도록 Cloud App Security를 설정하고 사용하는 방법을 알아봅니다. </h2>
-      <h3>Cloud App Security를 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">제품 사이트를 방문 &rarr;하세요.</a></h3>
+      <h3>Cloud App Security를 처음 사용하시나요? <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">제품 사이트를 방문 &rarr;하세요.</a></h3>
     </section>
     <aside class="alert section-border">
         <p>실습할 준비가 되셨나요?</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">지금 구입</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">지금 구입</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>일반 설정</h3>
-                    <p>Cloud App Security에 대한 기본 구성 단계를 수행합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Cloud Discovery 설정</h3>
                     <p>Cloud Discovery 기능을 사용하여 조직에서 클라우드 앱 사용 및 섀도 IT를 파악합니다.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>자동 로그 업로드 설정</h3>
-                    <p>연속 Cloud Discovery 보고서를 위해 자동 로그 업로드를 설정합니다.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>배포 게스트 클러스터에</p>
-                </div>
-                <p class="description column-two-thirds">API 연결의 표시를 향상시키고 앱을 관리하는 정책을 배포합니다.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>API 커넥터를 사용하도록 설정</h3>
-                    <p>API 커넥터를 사용하여 Office 365, Google Apps, Box, Dropbox 등의 앱을 자세히 파악합니다.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Cloud App Security에 Office 365 연결</h3>
-                    <p>앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Cloud App Security를 연결합니다.</p>
+                    <h3>앱 연결</h3>
+                    <p>가시성과 제어 성능을 높이려면 응용 프로그램을 Cloud App Security에 연결합니다.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>정책을 사용하여 클라우드 앱 제어</h3>
-                    <p>조직의 클라우드 사용을 제어하고 관리하는 정책을 설정합니다.</p>
+                    <p>조직에서 클라우드 응용 프로그램의 사용을 모니터링하고 관리하는 정책을 설정합니다.</p>
                   </a>
                 </li>
               </ul>
@@ -183,7 +145,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>거버넌스 로그</h3>
+                    <h3>거버넌스</h3>
                     <p>거버넌스 로그는 수동 작업 및 자동 작업을 포함하여 Cloud App Security에서 실행하도록 설정한 각 작업에 대한 상태 레코드를 가져오는 데 사용됩니다.</p>
                   </a>
                 </li>
@@ -233,14 +195,14 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
         <aside class="alert alert-social">
       <p>Cloud App Security에 대한 최신 정보 <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Cloud App Security 공식 사이트</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security 공식 사이트</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security 보조 지원</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
