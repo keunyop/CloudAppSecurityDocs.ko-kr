@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
@@ -30,13 +30,9 @@ Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 프레임워크  
 
-|       |   |   |
-|-------|---|:---|
-|![검색](./media/discovery-icon.png)|검색|Cloud App Security로 섀도 IT를 파악합니다. 클라우드 환경에서 응용 프로그램, 활동, 사용자, 데이터 및 파일을 검색하여 가시성을 확보합니다. 클라우드에 연결되어 있는 타사 응용 프로그램을 검색합니다.|
-|![조사](./media/investigate-icon.png)|조사|클라우드 범죄 조사 도구를 사용하여 네트워크에서 위험한 응용 프로그램, 특정 사용자 및 파일을 심층 분석하며 클라우드 응용 프로그램을 조사합니다. 클라우드에서 수집한 데이터에서 패턴을 찾습니다. 클라우드를 모니터링하는 보고서를 생성합니다.|
-|![컨트롤](./media/control-icon.png)|컨트롤|네트워크 클라우드 트래픽의 제어를 최대화하기 위한 정책 및 경고를 설정하여 위험을 완화합니다. Cloud App Security를 통해 사용자가 안전하고 권한 있는 클라우드 앱 대안으로 마이그레이션할 수 있습니다.|
-|![보호](./media/protect-icon.png)|보호|Cloud App Security를 통해 응용 프로그램에 권한을 부여 또는 취소하고, 데이터 손실 방지 기능을 적용하고, 사용 권한 및 공유를 제어하고, 사용자 지정 보고서 및 경고를 생성할 수 있습니다.|
 
+**클라우드 검색** 조직의 모든 클라우드 사용을 검색합니다. 섀도 IT 보고 및 제어: - 모든 장치에서 네트워크의 모든 클라우드 앱 검색 - 특정 앱, 사용자, 원본 IP 주소 등 조사 및 자세히 알아보기 - 앱을 차단, 사용 권한 부여 및 보호하여 클라우드 사용 관리 및 제어 위험 평가: - 13,000개 이상의 클라우드 앱에 대한 클라우드 위험 파악 - 60개 이상의 보안 및 준수 위험 요소 기반 위험한 클라우드 사용 경고: - 비정상적인 사용자 사용 패턴, 새 앱 및 인기 앱에 대한 경고 받기 **정보 보호** 클라우드의 데이터를 모니터링 및 제어합니다. 클라우드 파악 - 공유 수준 및 민감도 수준을 비롯한 가시성 확보 - 노출 및 위험 수치화 - 데이터에 대한 모든 타사 앱 액세스 검색 DLP 정책 적용 및 공유 제어 - 세부적인 DLP 정책을 사용하여 클라우드의 데이터 관리 - Microsoft 및 타사 DLP 엔진을 활용하여 분류 경고 및 조사 - 정책 위반 식별 - 문제 및 관련 활동 조사 - 격리 및 사용 권한 제거를 비롯한 업데이트 관리 자동화 **위협 방지** 비정상적인 사용 및 보안 문제를 검색합니다. 네트워크 클라우드 트래픽의 제어를 최대화하기 위한 정책 및 경고를 설정하여 위험을 완화합니다. Cloud App Security를 통해 사용자가 안전하고 권한 있는 클라우드 앱 대안으로 마이그레이션할 수 있습니다.
+동작 분석: 의심스러운 활동 기본 검색 - 20개 이상의 위험 요소를 기반으로 하는 비정상 감지 엔진 고급 조사: - 고급 문제 조사 도구 - 사용자, 파일, 활동 및 위치 기반 - 결과에 따라 검색 사용자 지정 위협 인텔리전스 - Microsoft의 업계 최고 위협 인텔리전스 피드 활용 - Microsoft 고객 기반 전체에서 엄청난 양의 신호로 주고받는 고유한 정보
 
 ## <a name="architecture"></a>아키텍처  
 
@@ -50,7 +46,7 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 ![Cloud App Security 아키텍처](./media/architecture.png)  
 
 > [!NOTE]  
-> Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 데이터는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft 보안 센터](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
+> Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 콘텐츠는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft 보안 센터](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
 Cloud App Security에서는 다음과 같이 데이터를 유지합니다.
 >- 활동 로그: 180일
 >- 검색 데이터: 90일
@@ -66,7 +62,7 @@ Cloud Discovery에 대한 자세한 내용은 [Cloud Discovery 설정](set-up-cl
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>응용 프로그램 사용 권한 부여 및 취소  
 
-Cloud App Security을 사용하면 *클라우드 응용 프로그램 카탈로그*를 통해 조직에 있는 응용 프로그램의 권한을 부여 또는 취소할 수 있습니다. Microsoft 분석가 팀은 산업 표준에 따라 순위 및 점수가 매겨진 13,000개 이상의 클라우드 앱을 포함하는 광범위한 카탈로그를 작성했으며 계속 확장하고 있습니다. 클라우드 응용 프로그램 카탈로그를 사용하여 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 응용 프로그램의 위험을 평가할 수 있습니다. 그리고 다양한 매개 변수의 점수와 가중치를 조직의 요구에 맞게 사용자 지정합니다. 이러한 점수를 기준으로 Cloud App Security에서 환경에 영향을 줄 수 있는 50개 이상의 위험 요소에 따라 응용 프로그램의 위험도를 확인할 수 있습니다.  
+Cloud App Security를 사용하면 *클라우드 응용 프로그램 카탈로그*를 통해 조직에 있는 응용 프로그램의 권한을 부여 또는 취소할 수 있습니다. Microsoft 분석가 팀은 산업 표준에 따라 순위 및 점수가 매겨진 13,000개 이상의 클라우드 앱을 포함하는 광범위한 카탈로그를 작성했으며 계속 확장하고 있습니다. 클라우드 응용 프로그램 카탈로그를 사용하여 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 응용 프로그램의 위험을 평가할 수 있습니다. 그리고 다양한 매개 변수의 점수와 가중치를 조직의 요구에 맞게 사용자 지정합니다. 이러한 점수를 기준으로 Cloud App Security에서 환경에 영향을 줄 수 있는 50개 이상의 위험 요소에 따라 응용 프로그램의 위험도를 확인할 수 있습니다.  
 
 ### <a name="app-connectors"></a>응용 프로그램 커넥터  
 응용 프로그램 커넥터에서는 클라우드 응용 프로그램 공급자의 API를 사용하여 Cloud App Security 클라우드를 다른 클라우드 응용 프로그램과 통합합니다. 응용 프로그램 커넥터는 제어 및 보호를 확장합니다. 또한 Cloud App Security 분석을 위해 클라우드 응용 프로그램에서 직접 정보에 액세스할 수 있도록 합니다.  
@@ -87,6 +83,6 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

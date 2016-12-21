@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
-ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
 
 
 ---
@@ -115,7 +115,7 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
 2.  페이지 맨 위에 있는 필터를 사용하여 검색 결과를 의심스러운 영역으로 제한할 수 있습니다. 예를 들어 활동 로그 페이지에서 **활동**를 클릭하고 **관리자 로그온**을 선택합니다. 그런 다음 **IP 주소**에서 **범주**를 선택하고 관리자, 회사 및 VPN IP 주소와 같이 인식된 도메인에 대해 만든 IP 주소 범주에 포함하지 않을 값을 설정합니다.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![조사를 통해 파일 만들기](./media/create-file-from-investigation.png)  
   
 3.  콘솔의 오른쪽 위에서 **검색을 통한 새 정책**![](./media/new-policy-from-search-button.png)을 클릭합니다.  
   
@@ -142,7 +142,19 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
 >   
 >  [Cloud Discovery 정책](cloud-discovery-policies.md)  
   
+## <a name="enable-and-disable-policies"></a>정책 사용 및 사용 안 함
 
+정책을 만든 후 정책을 사용 또는 사용하지 않도록 설정할 수 있습니다. 이를 통해 정책을 만든 후 중지하기 위해 정책을 삭제하지 않아도 됩니다. 대신, 어떤 이유로 정책을 중지하려는 경우 다시 사용하도록 설정할 때까지 사용하지 않도록 설정하면 됩니다.
+
+- 정책을 사용하려면 **정책** 페이지에서 사용할 정책 행의 끝에 있는 세 개의 점을 클릭하고 **사용**을 선택합니다. 
+
+![정책 사용](./media/enable-policy.png)
+
+- 정책을 사용하지 않도록 설정하려면 **정책** 페이지에서 사용하지 않을 정책 행의 끝에 있는 세 개의 점을 클릭하고 **사용 안 함**을 선택합니다.
+
+![정책 사용 안 함](./media/disable-policy.png)
+
+새 정책을 만들면 기본적으로 사용하도록 설정됩니다.
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
@@ -151,6 +163,6 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

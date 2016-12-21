@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ Cloud App Security를 Azure Information Protection과 연결하자마자 Cloud A
 새 파일의 파일 태그를 자동으로 검색하려면 다음과 같이 합니다.
 
 1. Cloud App Security에서 **일반 설정** 페이지로 이동합니다.
-2. Azure 보안 설정에서 **파일에서 자동으로 Azure Information Protection 분류 레이블 검색**을 선택합니다. 이 설정을 사용하도록 선택하면 파일 정책에 따라 콘텐츠를 검색한 파일만이 아니라 Office 365에 추가된 모든 새 파일에서도 파일 태그를 검색합니다.
+2. Azure Information Protection에서 **파일에서 자동으로 Azure Information Protection 분류 레이블 검색**을 선택합니다. 이 설정을 사용하도록 선택하면 파일 정책에 따라 콘텐츠를 검색한 파일만이 아니라 Office 365에 추가된 모든 새 파일에서도 파일 태그를 검색합니다.
 
 ![azure information protection 사용](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> 자동 검색에서는 다시 수정되지 않는 한 기존 파일을 검색하지 않습니다. 기존 파일에서 Azure Information Protection 분류 레이블을 검색하려면 필터 없이 새 **파일 정책**을 만들고 **콘텐츠 검사** 옵션을 선택하고 정책을 저장합니다.
 
 ## <a name="internal-and-external-tags"></a>내부 및 외부 태그
 기본적으로 Cloud App Security에서는 조직에 정의된 분류 레이블과 다른 조직에서 정의된 외부 레이블을 검색합니다. 
@@ -128,6 +130,6 @@ Cloud App Security를 Azure Information Protection과 연결하자마자 Cloud A
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

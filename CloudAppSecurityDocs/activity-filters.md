@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>활동
+데이터 보호를 제공하기 위해 Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. 활동을 기준으로 정책을 만든 다음 경고를 받을 활동을 정의할 수 있습니다. 특정 파일에 대해 수행된 활동을 검색할 수도 있습니다. 활동의 유형과 각 활동에 대해 가져오는 정보는 앱과 앱이 제공할 수 있는 데이터 종류에 따라 다릅니다. 
+
+예를 들어 다음과 같이 **활동** 로그를 사용하여 조직에서 오래된 운영 체제나 브라우저를 사용하는 사용자를 찾을 수 있습니다. Office 365, Google Apps, Box, Dropbox, Okta, Amazon 웹 서비스 또는 Salesforce를 Cloud App Security에 연결한 후 **활동 로그** 페이지에서 고급 필터를 사용하여 **사용자 에이전트 태그**를 선택합니다. 그런 다음 **오래된 브라우저** 또는 **오래된 운영 체제**를 선택합니다. 조직 외부와 공유되는 **기밀** 파일이 있는 경우 **검색을 통한 새 정책**을 클릭하여 오래된 브라우저와 운영 체제를 검색하는 활동 정책을 만들고 사용자에게 자동으로 알릴 수 있습니다.
+
+ ![활동 오래된 브라우저 예제](media/activity-outdated-example.png)
+
+ 
+
 활동 로그를 필터링하여 특정 활동을 찾을 수 있습니다. 기본 필터는 활동 필터링을 시작하기에 좋은 도구를 제공합니다.
 
  ![기본 활동 로그 필터](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
   
 -   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 MCAS를 SIEM에 연결할 때(SIEM 에이전트 사용) 매우 유용하며, MCAS 포털 내에서 경고를 자세히 조사할 수 있습니다.  
   
--   활동 개체 – 파일, 폴더 또는 사이트 URL, 대상 개체(파일/폴더)를 검색합니다.
+-   활동 개체 - 활동이 수행된 대상 개체를 검색합니다. 이 필터는 파일, 폴더, 사용자 또는 앱 개체에 적용됩니다.
+    - 활동 개체 ID - 개체의 ID(파일, 폴더, 사용자 또는 앱 ID)입니다.
     - 파일, 폴더 또는 사이트 URL - 특정 문자열로 시작되는 파일, 폴더 및 URL을 선택할 수 있습니다.
     - 대상 개체(파일/폴더) - 특정 파일 또는 폴더를 선택할 수 있습니다. 
     
@@ -95,7 +104,7 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 - 위치:Bing 지도에서 위치를 보려면 위치를 클릭합니다.
 - IP 주소 범주 및 태그: 이 활동에서 찾을 수 있는 IP 태그의 목록을 보려면 IP 태그를 클릭합니다. 그 후에 이 태그와 일치하는 모든 활동을 필터링할 수 있습니다.    
 
-![활동 서랍](./media/activity-drawer.png "activity drawer")  
+![활동 서랍](./media/activity-drawer.png "활동 서랍")  
   
 사용할 수 있는 거버넌스 작업 목록은 [파일 일치 매개 변수](governance-actions.md#activity-match-parameters)를 참조하세요.
 
@@ -108,6 +117,6 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
