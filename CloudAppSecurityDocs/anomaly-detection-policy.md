@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
-ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a0d8975ae20830fe1b9d4ce3c1a54858038eebd3
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
 # <a name="anomaly-detection-policy"></a>변칙 검색 정책
 이 문서에서는 정책에 대한 참조 정보를 제공하며 각 정책에 대해 구성할 수 있는 필드와 각 정책 형식에 대해 설명합니다.  
  
-Cloud App Security에는 새 사용자, 활동, 장치 또는 위치에 대해 비정상으로 플래그를 지정하지 않는 7일 간의 초기 학습 기간이 있습니다. 그다음에는 각 세션을 지난 달 동안 검색된 활동, 사용자가 활성 상태인 경우, IP 주소, 장치 등과 이러한 활동의 위험 점수와 비교합니다. 정책에서 민감도 슬라이더를 사용하여 경고가 트리거되는 최소 위험 점수를 설정합니다. 변칙 정책을 만들 때 1주일 동안 기본 민감도 임계값을 사용하는 것이 좋습니다. Cloud App Security에서는 받은 경고 수에 따라 변경하기 전에 민감도를 변경할 때 다양한 위험 점수에 대해 더 많거나 더 적은 경고를 전송합니다.
+Cloud App Security에는 새 사용자, 활동, 장치 또는 위치에 대해 비정상으로 플래그를 지정하지 않는 7일간의 초기 학습 기간이 있습니다. 그다음에는 각 세션을 지난 달 동안 검색된 활동, 사용자가 활성 상태인 경우, IP 주소, 장치 등과 이러한 활동의 위험 점수와 비교합니다. 정책에서 민감도 슬라이더를 사용하여 경고가 트리거되는 최소 위험 점수를 설정합니다. 변칙 정책을 만들 때 1주일 동안 기본 민감도 임계값을 사용하는 것이 좋습니다. Cloud App Security에서는 받은 경고 수에 따라 변경하기 전에 민감도를 변경할 때 다양한 위험 점수에 대해 더 많거나 더 적은 경고를 전송합니다.
   
 ![민감도 슬라이더](./media/sensitivity-slider.png)
 ## <a name="anomaly-detection-policy-reference"></a>변칙 검색 정책 참조  
@@ -60,6 +60,8 @@ Cloud App Security에는 새 사용자, 활동, 장치 또는 위치에 대해 �
   
 -   장치 및 사용자 에이전트 - 다른 사용자가 사용한 적이 없거나, 이 특정 사용자가 사용한 적이 없거나, 전혀 사용한 적이 없는 사용자 에이전트 또는 장치를 사용하여 사용자가 수행한 활동입니다.  
   
+-   활동 속도 - 사용자가 짧은 시간 내에 수행하는 반복적인 활동입니다. 
+
 ### <a name="sensitivity"></a>민감도  
 정책에 따라 트리거되는 경고 수를 제어하는 방법에는 다음 두 가지가 있습니다.  
   
@@ -76,6 +78,6 @@ Cloud App Security에는 새 사용자, 활동, 장치 또는 위치에 대해 �
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

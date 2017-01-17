@@ -1,11 +1,13 @@
-# [이해 및 탐색](what-is-cloud-app-security.md)
+# 이해 및 탐색
 ## [CAS란 무엇인가요?](what-is-cloud-app-security.md)
 ## [릴리스 정보](release-notes.md)
-# [배포](getting-started-with-cloud-app-security.md)
+# 배포 게스트 클러스터에
+## [시작](getting-started-with-cloud-app-security.md)
 ## [포털 사용자 지정](general-setup.md)
 ## [Cloud Discovery 배포](set-up-cloud-discovery.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
+### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
 ### [Cloud Discovery 사용자 지정](working-with-cloud-discovery-data.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box 연결](connect-box-to-microsoft-cloud-app-security.md)
@@ -16,29 +18,33 @@
 ### [Okta 연결](connect-okta-to-microsoft-cloud-app-security.md)
 ### [ServiceNow 연결](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Salesforce 연결](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [사용](daily-activities-to-protect-your-cloud-environment.md)
+# Windows Server Update Services와 함께
+## [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)
 ## [조사](investigate.md)
 ### [기본 제공 보고서 참조](built-in-report-reference.md)
 ### [파일](file-filters.md)
 ### [활동](activity-filters.md)
 ### [경고](monitor-alerts.md)
-### [Azure Information Protection과 통합](azip-integration.md)
 ## [제어](control.md)
 ### [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)
 #### [Cloud Discovery 정책](cloud-discovery-policies.md)
 ##### [Cloud Discovery 변칙 검색 정책](cloud-discovery-anomaly-detection-policy.md)
 #### [활동 정책](user-activity-policies.md)
-##### [변칙 검색 정책](anomaly-detection-policy.md)
+#### [변칙 검색 정책](anomaly-detection-policy.md)
 #### [파일 정책](data-protection-policies.md)
 ##### [콘텐츠 검사](content-inspection.md)
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
+#### [정책 템플릿 참조](policy-template-reference.md)
 ### [응용 프로그램 사용 권한 관리](manage-app-permissions.md)
 ## [제어](governance-actions.md)
-# [문제 해결](troubleshooting.md)
+## 통합
+### [Azure Information Protection 통합](azip-integration.md)
+### [SIEM 통합](siem.md)
+# 문제 해결
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

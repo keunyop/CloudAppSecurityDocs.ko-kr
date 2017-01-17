@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: a4e45ff982c6f53e442ae65803695a2c858145cb
 
 
 ---
 
 # <a name="release-notes"></a>릴리스 정보
+
+## <a name="cloud-app-security-release-87"></a>Cloud App Security 릴리스 87
+2016년 12월 25일 출시
+
+**새로운 기능**
+-   사용자 개인 정보를 보호하는 한편 Cloud Discovery를 사용할 수 있도록 [데이터 익명화](cloud-discovery-anonymizer.md)를 구현하는 중입니다. 데이터 익명화는 사용자 이름 정보를 암호화하여 수행됩니다.
+-   Cloud App Security에서 추가 어플라이언스로 차단 스크립트를 내보내는 기능을 구현하는 중입니다. 스크립트를 사용하면 미승인 앱에 대한 트래픽을 차단하여 섀도 IT를 손쉽게 줄일 수 있습니다. 이제 이 옵션을 다음에 사용할 수 있습니다. 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   부모로부터 권한을 상속하여 파일 또는 폴더에 대해 설정된 고유한 권한을 삭제하도록 하는 새로운 파일 거버넌스 작업이 추가되었습니다. 이 파일 거버넌스 작업을 사용하면 부모 폴더로부터 상속하도록 파일 또는 폴더의 권한을 변경할 수 있습니다. 
+-   외부라고 하는 새로운 사용자 그룹이 추가되었습니다. 이는 내부 도메인에 속하지 않은 모든 사용자를 포함하기 위해 Cloud App Security에 의해 미리 구성된 기본 사용자 그룹입니다. 이 사용자 그룹을 필터로서 사용할 수 있습니다. 예를 들면 외부 사용자가 수행한 활동을 찾을 수 있습니다.
+-   이제 Cloud Discovery 기능은 Sophos Cyberoam 어플라이언스를 지원합니다.
+ 
+**버그 수정**
+-   SharePoint Online 및 비즈니스용 OneDrive 파일이 파일 정책 보고서 및 파일 페이지에 비공개 대신 내부로 표시되었습니다. 이 문제는 수정되었습니다.
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Cloud App Security 릴리스 86
+2016년 12월 13일 출시
+
+**새로운 기능**
+- 모든 Cloud App Security 독립형 라이선스는 일반 설정으로(정책을 만들지 않고) Azure Information Protection 검사를 수행할 수 있는 기능을 제공합니다. 
+ 
+**향상된 기능**
+- 이제 파일 이름용 파일 필터와 파일 및 정책용 MIME 형식 필터에 "or"를 사용할 수 있습니다. 예를 들어 PII가 포함된 정책을 만들 때 "password" OR "driver"를 입력할 수 있습니다. 그러면 파일 이름에 "password" 또는 "driver"가 포함된 파일이 검색됩니다. 
+- 기본적으로 DLP 콘텐츠 검사 정책을 실행하면 위반 결과의 데이터가 마스킹됩니다. 이제 위반 항목의 마지막 4자를 마스크 해제할 수 있습니다. 
+
+**사소하게 향상된 기능**
+- 규칙 전달, 대리자 사서함 권한의 추가 및 제거와 관련된 새로운 Office 365(Exchange) 사서함 관련 이벤트.
+- Azure Active Directory에서 새 앱에 대한 승인 허용을 감사하는 새 이벤트. 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Cloud App Security 릴리스 85
@@ -57,7 +94,7 @@ ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 -   비정상 검색 엔진의 이동 불가능 알고리즘이 작은 테넌트를 더 잘 지원하도록 개선되었습니다. 
  
 **사소하게 향상된 기능**
--    **활동 내보내기 제한**이 10,000개로 올라갔습니다. 
+-   **활동 내보내기 제한**이 10,000개로 올라갔습니다. 
 -   클라우드 검색 수동 업로드 프로세스에서 **스냅숏 보고서**를 만들 때 이제 로그 처리에 걸리는 예상 시간이 더 정확하게 표시됩니다. 
 -   파일 정책에서 **공동 작업자 제거** 거버넌스 작업이 이제 그룹에도 적용됩니다.
 -   **응용 프로그램 권한** 페이지에서도 여러 기능이 사소하게 향상되었습니다. 
@@ -258,6 +295,6 @@ ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

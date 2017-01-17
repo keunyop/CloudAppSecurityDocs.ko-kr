@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
+ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
 
 
 ---
@@ -28,6 +28,10 @@ Cloud Discovery는 50개 이상의 특성을 기준으로 순위 및 점수가 �
 3.  Cloud App Security 클라우드 분석가 팀에 의한 연속 분석(미사용 암호화 같은 특성)
 4.  클라우드 앱 카탈로그의 변경 내용에 대한 고객 제출 요청에 따른 고객 기반 수정 요청. 모든 요청은 클라우드 분석가 팀에서 검토하고 해당 결과에 따라 업데이트됩니다.
   
+## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
+
+Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 보호할 수 있습니다. Cloud App Security 포털에 데이터 로그를 업로드하면 로그가 삭제되고 모든 사용자 이름 정보가 암호화된 사용자 이름으로 교체됩니다. 이러한 방식으로 모든 클라우드 활동이 익명으로 유지됩니다. 자세한 내용은 [Cloud Discovery 익명화](cloud-discovery-anonymizer.md)를 참조하세요.
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>스냅숏 및 연속 위험 평가 보고서 
 
 두 가지 유형의 보고서를 생성할 수 있습니다. 
@@ -50,7 +54,7 @@ Cloud Discovery는 50개 이상의 특성을 기준으로 순위 및 점수가 �
 >[!NOTE]
 >연속 보고서 데이터는 하루에 두 번 분석됩니다.
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Cloud Discovery에 트래픽 로그 사용
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Cloud Discovery에 트래픽 로그 사용
 Cloud Discovery에서는 트래픽 로그의 데이터를 활용합니다. 로그가 더 자세할수록 더 명확하게 파악할 수 있습니다. Cloud Discovery에는 다음과 같은 특성이 있는 웹 트래픽 데이터가 필요합니다.
 - 트랜잭션 날짜
 - 원본 IP
@@ -86,6 +90,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Microsoft Forefront Threat Management Gateway(W3C)
 - Palo Alto series Firewall
 - Sophos SG
+- Sophos Cyberoam
 - Squid(Common)
 - Squid(Native)
 - Websense - Web Security Solutions - Investigative detail report(CSV)
@@ -108,19 +113,19 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 |Cisco Scansfe|**예**|아니요|**예**|**예**|**예**|**예**|
 |Dell SonicWall|**예**|**예**|아니요|**예**|**예**|**예**|
 |Fortigate|아니요|**예**|아니요|**예**|**예**|**예**|
-|Juniper SRX|아니요|**예**|아니요|**예**|**예**|**예**|
+|Juniper SRX|아니요|**예**|아니요|**예**\*|**예**|**예**|
 |McAfee SWG|**예**|아니요|아니요|**예**|**예**|**예**|
 |Meraki|**예**|**예**|아니요|**예**|아니요|아니요|
 |MS TMG|**예**|아니요|**예**|**예**|**예**|**예**|
-|PAN|**예**|**예**|**예**|**예**|**예**|**예**|
+|Palo Alto 네트워크|**예**|**예**|**예**|**예**\*|**예**|**예**|
 |Sophos|**예**|**예**|**예**|**예**|**예**|아니요|
 |Websense - Investigative detail report(CSV)|**예**|아니요|아니요|**예**|아니요|아니요|
 |Websense - Internet activity log(CEF)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Zscaler|**예**|아니요|**예**|아니요|**예**|아니요|
 
+\* Cloud Discovery는 IPv6을 지원합니다.
 
- 
-자세한 내용은  항목을 참조하세요. 
+## <a name="see-also"></a>참고 항목
  
 [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +136,6 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
