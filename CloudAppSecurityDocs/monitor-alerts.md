@@ -1,11 +1,11 @@
 ---
-title: "경고 모니터링 | Microsoft 문서"
+title: "Cloud App Security에서 경고 작업 | Microsoft 문서"
 description: "이 항목에서는 모든 경고에 대해 목록 및 설명을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
-
-
+ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-# <a name="monitor-alerts"></a>경고 모니터링
+# <a name="alerts"></a>경고
 경고를 보려면
 
 Cloud App Security 포털에서 경고를 클릭합니다.
@@ -37,7 +34,7 @@ Cloud App Security 포털에서 경고를 클릭합니다.
 |----|----|----|
 |새 위치|ALERT_GEOLOCATION_NEW_COUNTRY|검색이 시작된 이후(최대 6개월) 새 위치가 검색되었습니다. 이 경고는 전체 조직의 각 국가에 대해 한 번만 표시됩니다. |
 |새 관리자|ALERT_ADMIN_USER|특정 앱에 대해 새 관리자가 검색되었습니다. 이는 한 응용 프로그램에서 관리자이면서 이제 다른 응용 프로그램에서도 관리자인 사람일 수 있습니다. 이 경고는 특정 관리 유형과 관련되므로 관리 유형이 변경될 때마다 표시됩니다. 사용자가 관리자 권한을 잃었다가 다시 얻게 되면 이 경고가 표시됩니다.|
-|비활성 계정|ALERT_ZOMBIE_USER|사용자가 응용 프로그램별로 60일 동안 비활성 상태인 경우입니다. 예를 들어 Box에서는 활성 상태이지만 60일 동안 Google Apps를 터치하지 않은 경우 사용자는 Google Apps에서 비활성으로 간주됩니다. 이러한 사용자에게는 태그가 추가되어 비활성 계정을 검색할 수 있습니다.|
+|비활성 계정|ALERT_ZOMBIE_USER|사용자가 응용 프로그램별로 60일 동안 비활성 상태인 경우입니다. 예를 들어 Box에서는 활성 상태이지만 60일 동안 G Suite를 터치하지 않은 경우 사용자는 G Suite에서 비활성으로 간주됩니다. 이러한 사용자에게는 태그가 추가되어 비활성 계정을 검색할 수 있습니다.|
 |예기치 않은 관리자 위치|ALERT_NEW_ADMIN_LOCATION|검색이 시작된 이후(최대 6개월) 관리자에 대해 새 위치가 검색되었습니다. 이 경고는 전체 조직 모든 관리자의 각 국가에 대해 한 번만 표시됩니다. |
 |손상된 계정|ALERT_COMPROMISED_ACCOUNT|응용 프로그램에서 위반이 발생한 경우 위반한 계정 목록이 게시되면 Cloud App Security에서 해당 목록을 다운로드하여 사용자 목록(내부 사용자, 외부 사용자, 개인 계정 등)과 비교합니다. |
 
@@ -60,8 +57,3 @@ Cloud App Security 포털에서 경고를 클릭합니다.
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "파일 | Microsoft 문서"
+title: "Cloud App Security에서 사용할 수 있는 파일 데이터 및 필터 이해 | Microsoft 문서"
 description: "이 참조 항목에서는 Cloud App Security에서 사용되는 파일 형식 및 파일 필터에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,27 +13,24 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
-
-
+ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="files"></a>파일
 
 
-데이터 보호를 제공하기 위해 Cloud App Security에서는 연결된 앱의 모든 파일을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 OneDrive 및 Salesforce에 저장된 모든 파일 등과 같은 모든 파일을 검색합니다. 그런 다음 Cloud App Security는 파일이 수정될 때마다 각 파일을 다시 검색합니다. 이러한 수정의 예로 콘텐츠, 메타데이터, 공유 권한 수정 등을 들 수 있습니다. 검색 시간은 앱에 저장된 파일의 수에 따라 달라집니다. **파일** 페이지에서 데이터를 제어하고 만들 정책을 파악할 수 있습니다. 또한 **파일** 페이지에서 파일을 필터링하여 어떤 종류의 데이터가 클라우드 앱에 저장되어 있는지 조사할 수도 있습니다. 
+데이터 보호를 제공하기 위해 Cloud App Security에서는 연결된 앱의 모든 파일을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 OneDrive 및 Salesforce에 저장된 모든 파일 등과 같은 모든 파일을 검색합니다. 그런 다음 Cloud App Security는 파일이 수정될 때마다 각 파일을 다시 검색합니다. 이러한 수정의 예로 콘텐츠, 메타데이터, 공유 권한 수정 등을 들 수 있습니다. 검색 시간은 앱에 저장된 파일의 수에 따라 달라집니다. 또한 **파일** 페이지에서 파일을 필터링하여 어떤 종류의 데이터가 클라우드 앱에 저장되어 있는지 조사할 수도 있습니다. 
 
-예를 들어 다음과 같이 **파일** 페이지를 사용하여 **기밀**로 레이블이 지정된 외부와 공유하는 파일을 보호할 수 있습니다. Office 365, Google Apps, Box, Dropbox 또는 Salesforce를 Cloud App Security에 연결한 후 Azure Inforamtion Protection을 사용하여 조사할 수 있습니다. 그런 다음 **파일** 페이지에서 **기밀**로 레이블이 지정된 파일을 필터링합니다. 조직 외부와 공유되는 **기밀** 파일이 있으면 잘못된 액세스 수준이 적용된 **기밀** 파일을 검색하는 파일 정책을 만들고 파일을 격리하여 조직의 데이터 손실을 방지하는 **사용자 격리에 넣기**와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
+예를 들어 다음과 같이 **파일** 페이지를 사용하여 **기밀**로 레이블이 지정된 외부 공유 파일을 보호할 수 있습니다. 앱을 Cloud App Security에 연결한 후 Azure Information Protection과 통합할 수 있습니다. 그런 다음 **파일** 페이지에서 **기밀**로 레이블이 지정된 파일을 필터링합니다. 도메인을 제외하기 위해 **협력자** 필터를 필터링하여 조직 외부에서 공유되는 **기밀** 파일이 있으면 잘못된 액세스 수준이 적용된 **기밀** 파일을 검색하는 파일 정책을 만들고, 조직의 데이터 손실을 방지하기 위해 **외부 협력자 제거** 및 **정책 일치 다이제스트를 파일 소유자에게 보내기**와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
 
  ![파일 필터 기밀](media/file-filter-confidential.png)
 
-다음은 **파일** 페이지를 사용하여 권한이 없는 도메인 또는 개인 계정과 공유되는 파일을 보호할 수 있는 다른 예입니다. Office 365, Google Apps, Box 또는 Dropbox를 Cloud App Security에 연결한 후 **파일** 페이지에서 액세스 수준이 **내부** 또는 **개인**인 파일을 필터링합니다. 외부 도메인 또는 개인 계정과 공유되는 **기밀** 파일이 있으면 잘못된 액세스 수준이 적용된 **기밀** 파일을 검색하는 파일 정책을 만들고 **검색을 통한 새 정책**을 클릭하고 조직의 데이터 손실을 방지하는 **외부 사용자 제거**와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
+다음은 **파일** 페이지를 활용할 수 있는 또 다른 예입니다. 조직에서 지난 6개월간 수정되지 않은 파일을 공개적으로 또는 외부적으로 공유하는 사용자가 없는지 확인하려면, 앱을 Cloud App Security에 연결한 후 **파일** 페이지에서 액세스 수준이 **외부** 또는 **공개**인 파일을 필터링하고 **마지막 수정** 날짜를 6개월 이전으로 설정합니다. **New policy from search**(검색을 통한 새 정책)를 클릭하여 스러스트 부실 공개 파일을 탐지하는 파일 정책을 만들고, 조직의 데이터 손실을 방지하기 위해 **Remove external users**(외부 사용자 제거)와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
 
- ![파일 필터 권한 없음](media/file-filter-unauth.png)
+ ![파일 필터 부실 외부](media/file-example-stale-external.png)
 
-특정 파일을 찾을 수 있도록 파일 로그를 필터링할 수 있습니다. 기본 필터는 파일 필터링을 시작하기에 좋은 도구를 제공합니다.
+기본 필터는 파일 필터링을 시작하기에 좋은 도구를 제공합니다.
 
  ![기본 파일 로그 필터](media/file-log-filter-basic.png)
 
@@ -41,7 +38,7 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 
  ![고급 파일 로그 필터](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> 파일 필터 
+###  <a name="Filefilters"></a> 파일 필터 
  
 Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수준, 파일 형식)를 기반으로 모든 파일 형식을 모니터링할 수 있습니다. 
  
@@ -84,7 +81,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 -   파일 이름 - 클라우드 앱에 정의된 이름의 파일 이름 또는 하위 문자열입니다(예: 이름에 암호가 포함된 모든 파일).   
   
--   파일 태그 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
+-   분류 레이블 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
 
 -   파일 형식 – Cloud App Security는 서비스에서 받은 MIME 형식을 모두 사용하고 파일을 검색하여 실제 파일 형식을 확인합니다. 이 검색은 데이터 검색과 관련된 파일(문서, 이미지, 프레젠테이션, 스프레드시트, 텍스트 및 zip/보관 파일)에 대해 수행됩니다. 필터는 파일/폴더 형식을 기준으로 작동합니다(예: ...인 모든 폴더 또는 ...인 모든 스프레드시트 파일).
 
@@ -132,8 +129,3 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

@@ -4,14 +4,15 @@
 # 배포 게스트 클러스터에
 ## [시작](getting-started-with-cloud-app-security.md)
 ## [포털 사용자 지정](general-setup.md)
+### [사용자 그룹](user-groups.md)
+### [IP 태그 및 범위](ip-tags.md)
 ## [Cloud Discovery 배포](set-up-cloud-discovery.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
-### [Cloud Discovery 사용자 지정](working-with-cloud-discovery-data.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box 연결](connect-box-to-microsoft-cloud-app-security.md)
-### [Google Apps 연결](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [G Suite 연결](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Office 365 연결](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Dropbox 연결](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -20,6 +21,7 @@
 ### [Salesforce 연결](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Windows Server Update Services와 함께
 ## [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)
+## [Cloud Discovery 사용](working-with-cloud-discovery-data.md)
 ## [조사](investigate.md)
 ### [기본 제공 보고서 참조](built-in-report-reference.md)
 ### [파일](file-filters.md)
@@ -36,7 +38,8 @@
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
 #### [정책 템플릿 참조](policy-template-reference.md)
 ### [응용 프로그램 사용 권한 관리](manage-app-permissions.md)
-## [제어](governance-actions.md)
+### [연결된 앱 제어](governance-actions.md)
+### [검색된 앱 제어](governance-discovery.md)
 ## 통합
 ### [Azure Information Protection 통합](azip-integration.md)
 ### [SIEM 통합](siem.md)
@@ -44,7 +47,3 @@
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO2-->
-
-

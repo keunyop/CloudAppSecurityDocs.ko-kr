@@ -1,11 +1,11 @@
 ---
-title: "파일 정책 | Microsoft 문서"
+title: "클라우드 앱에서 파일을 모니터링하고 보호하기 위한 정책 만들기 | Microsoft 문서"
 description: "이 항목에서는 조직의 클라우드 앱 사용에서 데이터 및 파일을 모니터링하고 제어하는 데이터 정책을 설정하는 절차에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
-
-
+ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  
 Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수준, 파일 형식)를 기반으로 모든 파일 형식을 모니터링할 수 있습니다. 
  
 **지원되는 파일 형식** 
 
-Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된 파일, 다양한 서식 있는 텍스트, XML, HTML 등 100가지 이상의 모든 일반적인 파일 형식에서 텍스트를 추출하여 콘텐츠 검사를 수행합니다.
+Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된 파일, 다양한 서식 있는 텍스트, XML, HTML 등&100;가지 이상의 모든 일반적인 파일 형식에서 텍스트를 추출하여 콘텐츠 검사를 수행합니다.
 
 엔진은 각 정책 아래에 다음 세 가지 측면을 결합합니다.  
   
@@ -50,7 +47,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
     특정 외부 도메인이 소유한 계정(예: 경쟁업체 도메인)과 공유된 파일에 대한 경고를 수신합니다. 공유를 제한하려는 외부 도메인을 선택합니다.  
   
 -   마지막 기간 동안 수정되지 공유 파일 격리:  
-    최근에 수정하지 않은 공유 파일을 격리하기 위해 경고를 수신하거나 자동화된 작업을 켜도록 선택합니다. 지정한 날짜 범위 동안 수정되지 않은 모든 개인 파일을 제외합니다. Google Apps에서는 정책 만들기 페이지의 '파일 격리' 확인란을 사용하여 이러한 파일을 격리하도록 선택할 수 있습니다.  
+    최근에 수정하지 않은 공유 파일을 격리하기 위해 경고를 수신하거나 자동화된 작업을 켜도록 선택합니다. 지정한 날짜 범위 동안 수정되지 않은 모든 개인 파일을 제외합니다. G Suite에서는 정책 만들기 페이지의 '파일 격리' 확인란을 사용하여 이러한 파일을 격리하도록 선택할 수 있습니다.  
   
 -   권한 없는 사용자와 공유:  
     조직의 권한 없는 사용자 그룹과 공유되는 파일에 대한 경고를 수신합니다. 공유가 금지된 사용자를 선택합니다.  
@@ -76,7 +73,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 7.  **콘텐츠 검사 방법**을 선택합니다. 기본 제공 DLP를 사용하면 콘텐츠를 기준으로 파일을 필터링할 수 있습니다. 파일에서 콘텐츠를 검색하려면 **기본 제공 DLP**를 선택합니다. 콘텐츠 검사를 사용하도록 설정한 경우 사전 설정 식을 사용하거나 고유한 하위 문자열 또는 [정규식](working-with-the-regex-engine.md)으로 다른 사용자 지정 식을 검색할 수 있습니다.  
     또한 정규식을 지정하여 결과에서 파일을 제외할 수 있습니다. 정책에서 제외하려는 내부 분류 키워드 표준이 있는 경우에 매우 유용합니다.  
     파일이 위반으로 간주되기 전에 일치하려는 최소 콘텐츠 위반 수를 설정할 수 있습니다. 예를 들어 파일 콘텐츠 내에 10개 이상의 신용 카드 번호가 있는 파일에 대한 경고를 수신하려는 경우 10을 선택할 수 있습니다.  
-    콘텐츠를 선택한 식과 일치시키는 경우 위반 알림 및 로그에서 일치 항목 자체를 마스킹하도록 선택할 수 있습니다. 선택하면 위반 텍스트가 "X" 문자로 바뀝니다. 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다.  위반 텍스트의 마지막 4자를 마스크 해제하는 옵션을 선택할 수도 있습니다. 기본적으로 위반 텍스트는 위반 전후의 40자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 이 옵션을 선택하면 위반 자체의 마지막 4자가 마스크 해제됩니다.
+    콘텐츠가 선택한 식에 대해 일치하면 위반 텍스트가 "X" 문자로 바뀝니다. 기본적으로 위반 텍스트는 위반 전후의 40자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 식의 컨텍스트에서 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다. **Unmask the last 4 characters of a violation**(위반의 마지막 4자 마스크 해제) 옵션을 선택하여 위반 자체의 마지막 4자를 마스크 해제할 수 있습니다.
   
 8.  일치 항목이 검색될 때 Cloud App Security에서 수행하려는 **거버넌스** 작업을 선택합니다.  
   
@@ -88,7 +85,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 >   
 >  지침을 보려면 필터 섹션에서 **결과 편집 및 미리 보기** 단추를 사용할 수 있습니다.  
   
-![파일 정책 편집 및 결과 미리 보기](./media/file-policy-edit-and-preview-results.png "파일 정책 편집 및 결과 미리 보기")  
+ ![파일 정책 편집 및 결과 미리 보기](./media/file-policy-edit-and-preview-results.png "파일 정책 편집 및 결과 미리 보기")  
   
 10. 정책을 위반하는 것으로 의심되는 파일인 파일 정책 일치를 보려면 **제어**, **정책**을 차례로 클릭합니다. 맨 위에 있는 **형식** 필터를 사용하여 파일 정책만 표시하도록 결과를 필터링합니다. 각 정책의 일치 항목에 대한 자세한 내용을 보려면 정책을 클릭하세요. 그러면 정책에 대해 지금 일치 중 파일이 표시됩니다. 정책과 일치하는 파일의 최대 6개월 이전 기록을 보려면 **기록** 탭을 클릭합니다.     
   
@@ -120,8 +117,3 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
