@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 142f2ba21ddeae5878cfa5d2e0b744c4581a1d65
-ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
-
-
+ms.openlocfilehash: e49247479374db0127dd8c7e4ea042b718e51b8d
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
 
@@ -26,7 +24,7 @@ ms.openlocfilehash: dd43677f5437c5733a7cee55b67c8d39445d51a4
 
 클라우드로 전환하면 직원들의 유연성이 증가하고 IT 비용이 감소하지만, 조직의 보안 유지 면에서는 새로운 복잡성과 문제도 발생합니다. 클라우드 응용 프로그램의 모든 이점을 얻으려면 IT 팀에서 제어를 유지하는 동시에 액세스를 허용하는 적절한 균형 지점을 찾아 중요한 데이터를 보호해야 합니다.  
 
-Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입니다. 조직이 클라우드 응용 프로그램의 기능을 모두 활용하는 방향으로 발전할 수 있게 도우면서도 활동에 대한 가시성을 향상시켜 제어를 유지하는 포괄적인 솔루션입니다. 또한 클라우드 응용 프로그램에서 중요한 데이터의 보호를 강화하는 데에도 도움이 됩니다. 섀도 IT를 찾는 데 유용한 도구를 사용하여 위험 평가, 정책 적용, 활동 조사 및 위협을 중지합니다. 조직은 중요한 데이터의 제어를 유지하면서도 더 안전하게 클라우드로 이동할 수 있습니다.  
+Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입니다. 조직이 클라우드 응용 프로그램의 기능을 모두 활용하는 방향으로 발전할 수 있게 도우면서도 활동에 대한 가시성을 향상시켜 제어를 유지하는 포괄적인 솔루션입니다. 또한 클라우드 응용 프로그램에서 중요한 데이터의 보호를 강화하는 데에도 도움이 됩니다. 섀도 IT를 찾는 데 유용한 도구를 사용하여 위험 평가, 정책 적용, 활동 조사 및 위협을 중지합니다. 조직은 중요한 데이터의 제어를 유지하면서도 더 안전하게 클라우드로 이동할 수 있습니다. 
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 프레임워크  
 
@@ -45,9 +43,12 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 -   배포가 쉬운 응용 프로그램 커넥터를 사용하여 API를 활용하고 연결하는 응용 프로그램의 가시성과 거버넌스를 확보합니다.  
 -   정책을 설정한 후 지속적으로 미세 조정하여 연속 제어를 돕습니다.  
 
-![Cloud App Security 아키텍처](./media/architecture.png)  
+![Cloud App Security 아키텍처 다이어그램](./media/architecture.png)  
 
-### <a name="data-retention"></a>데이터 보존  
+### <a name="data-retention--compliance"></a>데이터 보존 및 규정 준수
+
+Cloud App Security는 ISO, HIPAA, CSA STAR, EU 모델 조항 등에 대한 Microsoft 규정 준수로 공식 인증되었습니다. 인증의 전체 목록을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하고 Cloud App Security를 선택하세요.  
+
 Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 콘텐츠는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
 Cloud App Security에서는 보안 데이터를 다음과 같이 유지합니다. 
  
@@ -83,9 +84,3 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 [Cloud App Security 시작](getting-started-with-cloud-app-security.md)에서 기본적인 사항을 읽으세요.    
 기술 지원을 받으려면 [Cloud App Security 보조 지원](http://support.microsoft.com/oas/default.aspx?prid=16031) 페이지를 방문하세요.   
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.   
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

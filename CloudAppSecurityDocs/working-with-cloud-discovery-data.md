@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 사용자 지정 | Microsoft 문서"
+title: "Cloud Discovery 데이터를 사용하여 위험한 행동 감지 | Microsoft 문서"
 description: "이 항목에서는 앱 위험 점수 작업을 포함하여 Cloud Discovery 데이터로 작업하는 방법에 대한 지침을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
-
-
+ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
-# <a name="customize-cloud-discovery"></a>Cloud Discovery 사용자 지정
+# <a name="working-with-cloud-discovery"></a>Cloud Discovery 사용
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery 대시보드 검토
 
 Cloud Discovery 대시보드는 조직에서 클라우드 앱이 어떻게 사용되는지를 효과적으로 파악할 수 있도록 설계되었습니다. 이 대시보드에서는 사용되고 있는 앱의 종류, 미해결 경고 및 조직에서 앱의 위험 수준을 한눈에 파악할 수 있습니다. 또한 최고의 앱 사용자를 확인할 수 있으며 앱 본사 위치 지도를 제공합니다. Cloud Discovery 대시보드는 가장 관심 있는 항목에 따라 데이터를 필터링할 수 있는 많은 옵션을 제공하여 특정 뷰를 생성할 수 있으며, 이해하기 쉬운 그래픽을 통해 한눈에 볼 수 있는 전체 사진을 제공합니다.
@@ -42,7 +39,7 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
 
 
 ## <a name="customize-the-risk-score"></a>위험 점수 사용자 지정  
-Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 안정성과 관련해서 중요한 데이터를 제공합니다. 포털 내에서 검색된 각 앱은 엔터프라이즈의 이 특정 앱 사용 성숙도에 대한 Cloud App Security의 평가를 나타내는 총점과 함께 표시됩니다. 지정된 모든 앱의 총점은 Cloud App Security에서 안정성을 평가할 때 고려하는 다음 세 가지 하위 범주와 관련된 하위 점수 3개의 가중 평균입니다.  
+Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 안정성과 관련해서 중요한 데이터를 제공합니다. 포털 내에서 검색된 각 앱은 엔터프라이즈의 이 특정 앱 사용 성숙도에 대한 Cloud App Security의 평가를 나타내는 총점과 함께 표시됩니다. 지정된 모든 앱의 총점은 Cloud App Security에서 안정성을 평가할 때 고려하는 다음 세 가지 하위 범주와 관련된 하위 점수&3;개의 가중 평균입니다.  
   
 -   **일반** - 이 범주는 도메인, 창립 연도, 인기도 등 앱을 생산하는 회사에 대한 기본 사항을 가리킵니다. 이러한 필드는 가장 기본적인 수준에서 회사의 안정성을 나타냅니다.  
   
@@ -60,7 +57,7 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 3.  또한 점수를 계산할 때 특정 값을 사용할 수 없거나 적용할 수 없는지 여부를 설정할 수 있습니다. 포함할 경우 해당 없음 값에는 점수에 대한 음의 기여도가 포함됩니다.  
   
-     ![점수](./media/score.png "score")  
+     ![점수](./media/score.png "점수")  
   
 ## <a name="manage-continuous-reports"></a>연속 보고서 관리  
 사용자 지정 연속 보고서는 조직의 Cloud Discovery 로그 데이터를 모니터링할 때 더 많은 세분성을 제공합니다. 사용자 지정 보고서를 만들어 특정 지리적 위치, 네트워크 및 사이트 또는 조직 구성 단위를 기준으로 필터링할 수 있습니다. 기본적으로 다음과 같은 보고서만 Cloud Discovery 보고서 선택기에 표시 됩니다.  
@@ -98,7 +95,7 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 4.  사용자 별칭 또는 IP 주소를 추가합니다. 사용자 또는 IP 주소가 제외된 이유에 대한 정보를 추가하는 것이 좋습니다.  
   
-     ![사용자 제외](./media/exclude-user.png "exclude user")  
+     ![사용자 제외](./media/exclude-user.png "사용자 제외")  
   
 ## <a name="deleting-cloud-discovery-data"></a>클라우드 검색 데이터 삭제  
 다양한 이유로 클라우드 검색 데이터를 삭제할 수 있습니다. 다음과 같은 경우 삭제하는 것이 좋습니다.  
@@ -119,19 +116,17 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 3.  **삭제** 단추를 클릭합니다.  
   
-     ![데이터 삭제](./media/delete-data.png "delete data")  
+     ![데이터 삭제](./media/delete-data.png "데이터 삭제")  
   
     > [!NOTE]  
     >  삭제 프로세스는 몇 분 정도 걸리며 즉시 적용되지 않습니다.  
 
+
+
+ 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

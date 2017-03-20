@@ -1,11 +1,11 @@
 ---
-title: "활동 | Microsoft 문서"
+title: "클라우드 앱 활동 보기 | Microsoft 문서"
 description: "이 항목에서는 활동 정책에 적용할 수 있는 활동, 필터 및 일치 매개 변수 목록을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 6f465f1a322168e86208042deea405a756be6e57
-
-
+ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
+ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+translationtype: HT
 ---
 # <a name="activities"></a>활동
 Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. **활동 로그**를 필터링하여 특정 활동을 찾을 수 있습니다. 활동을 기준으로 정책을 만든 다음 경고를 받을 활동 및 조치를 정의할 수 있습니다. 특정 파일에 대해 수행된 활동을 검색할 수도 있습니다. 활동의 유형과 각 활동에 대해 가져오는 정보는 앱과 앱이 제공할 수 있는 데이터 종류에 따라 다릅니다. 
@@ -42,7 +40,7 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 ## <a name="activity-filters"></a>활동 필터
 다음은 적용할 수 있는 활동 필터 목록입니다. 대부분의 필터는 매우 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
   
--   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 MCAS를 SIEM에 연결할 때(SIEM 에이전트 사용) 매우 유용하며, MCAS 포털 내에서 경고를 자세히 조사할 수 있습니다.  
+-   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 SIEM 에이전트 사용하여 Cloud App Security를 SIEM에 연결할 때 매우 유용하며, Cloud App Security 포털 내에서 경고를 자세히 조사할 수 있습니다.  
   
 -   활동 개체 - 활동이 수행된 대상 개체를 검색합니다. 이 필터는 파일, 폴더, 사용자 또는 앱 개체에 적용됩니다.
     - 활동 개체 ID - 개체의 ID(파일, 폴더, 사용자 또는 앱 ID)입니다.
@@ -73,7 +71,7 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
     - IP 범주 - 활동을 수행한 IP 주소 범주입니다(예: 관리 IP 주소 범위의 모든 활동). 범주는 관련 IP 주소를 포함하도록 구성해야 합니다. 단, 미리 구성되며 두 개의 IP 태그(Anonymous proxy 및 Tor)를 포함하는 "Risky"(위험) 범주는 예외입니다. IP 범주를 구성하는 방법을 알아보려면 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.  
     - IP 태그 - 활동을 수행한 IP 주소의 태그입니다(예: 익명 프록시 IP 주소의 모든 활동). Cloud App Security는 구성할 수 없는 기본 제공 IP 태그의 집합을 만듭니다. 또한 자체 IP 태그를 구성할 수 있습니다. IP 태그 구성에 대한 자세한 내용은 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.
    기본 제공 IP 태그는 다음과 같습니다.
-    - Microsoft 앱(그중 14개)
+    - Microsoft 앱(그중&14;개)
     - 익명 프록시
     - 봇넷
     - Darknet 검색 IP
@@ -94,15 +92,19 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 -   등록된 ISP – 활동을 수행한 ISP입니다.   
 
 -  원본 - 활동이 검색된 원본을 기준으로 검색합니다. 원본은 다음 중 하나일 수 있습니다.
-  - 앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
-  - 앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
+  -    앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
+  -    앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
   
 
 -   사용자 – 활동을 수행한 사용자입니다. 도메인, 그룹, 이름 또는 조직을 기준으로 필터링할 수 있습니다. 특정 사용자 없이 활동을 필터링하려면 '설정되지 않음' 연산자를 사용할 수 있습니다.  
     -   사용자 도메인 - 특정 사용자 도메인을 검색합니다.
-    -   사용자 그룹 – Cloud App Security로 클라우드 응용 프로그램에서 자동으로 가져온 특정 사용자 그룹입니다(예: Office 365 관리자가 수행한 모든 활동).
-    -   사용자 이름 - 특정 사용자 이름을 검색합니다.
     -   사용자 조직 – 활동을 수행한 사용자의 조직 구성 단위(예: EMEA_marketing 사용자가 수행한 모든 활동).  
+    -   사용자 그룹 – 연결된 앱에서 가져올 수 있는 특정 사용자 그룹(예: Office 365 관리자)입니다.  
+    -   사용자 이름 - 특정 사용자 이름을 검색합니다. 특정 사용자 그룹의 사용자 목록을 보려면 **Activity drawer**(활동 서랍)에서 사용자 그룹의 이름을 클릭합니다. 그러면 그룹의 모든 사용자를 나열하는 [계정] 페이지로 이동됩니다. 여기에서 그룹의 특정 사용자에 대한 계정 정보로 다운할 수 있습니다.
+       -  **사용자 그룹** 및 **사용자 이름** 필터를 추가로 필터링하려면 **As** 필터를 사용하여 다음 중 하나일 수 있는 사용자 역할을 선택합니다.
+            - 활동 개체만 - 선택한 사용자 또는 사용자 그룹이 해당 활동을 수행하지 않았고 활동의 개체임을 나타냅니다.
+            - 행위자만 - 사용자 또는 사용자 그룹이 활동을 수행했음을 나타냅니다.
+            - 모든 역할 - 사용자 또는 사용자 그룹이 활동을 수행한 사람 또는 활동의 개체로 활동에 참여했음을 나타냅니다.
 
 -   사용자 에이전트 – 활동을 수행한 사용자 에이전트입니다.  
   
@@ -131,8 +133,3 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Jan17_HO2-->
-
-
