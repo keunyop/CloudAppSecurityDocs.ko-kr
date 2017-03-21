@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
-
-
+ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>클라우드 환경을 보호하는 일상적인 활동
 Cloud App Security를 실행하고 나면 데이터 스트림을 구성하고, 사람들의 사용을 허용할 응용 프로그램 권한을 부여하고, 클라우드 환경을 모니터링할 정책을 설정해야 합니다. 그러고 나면 Cloud App Security를 사용하여 클라우드를 제어 및 보호하고 위험을 관리할 수 있습니다.  
 
@@ -36,7 +33,7 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
 매일 대시보드에서 어떤 경고가 새로 트리거되었는지 확인하는 것이 좋습니다. 여기서 클라우드 환경의 상태를 감시하여 클라우드 환경 전체에서 발생하는 상황을 파악할 수도 있습니다.  
 
-![Cloud App Security 대시보드](./media/dashboard.png "dashboard")  
+![Cloud App Security 대시보드](./media/dashboard.png "대시보드")  
 
 ## <a name="handle-your-alerts"></a>경고 처리  
 경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어 한 관리자가 그린란드에서 로그인한다고 표시되는데 조직의 누구도 이전에 그린란드에서 로그인한 적이 없는 경우, 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
@@ -47,7 +44,7 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
      대시보드의 이 섹션에서는 의심스러운 활동이나 설정된 정책의 위반을 완전히 파악할 수 있습니다. 그러고 나면 클라우드 환경에 대해 정의한 보안 상태를 보호하는 데 도움이 됩니다.  
 
-     ![경고](./media/alerts.png "alerts")  
+     ![경고](./media/alerts.png "경고")  
 
 2.   각 경고에 대해 위반의 특성 및 필요한 응답을 조사하고 결정해야 합니다.  
 
@@ -109,11 +106,11 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
      예를 들어 정책이 규정 준수 위반을 찾도록 설정된 상태에서 누군가가 신용 카드 번호를 OneDrive의 파일에 저장할 경우 정책에 일치 항목이 포함됩니다.  
 
-     ![PCI 일치](./media/pci-matches.png "pci matches")  
+     ![PCI 일치](./media/pci-matches.png "pci 일치")  
 
 -   일치 항목을 클릭하여 정책을 위반한 실제 파일을 확인합니다.  
 
-     ![PCI 콘텐츠 일치](./media/pci-content-matches.png "pci content matches")  
+     ![PCI 콘텐츠 일치](./media/pci-content-matches.png "pci 콘텐츠 일치")  
 
      파일 자체를 선택하여 파일에 대한 정보를 가져올 수 있습니다.  
 
@@ -121,15 +118,9 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
      **일치 항목**을 클릭하면 실제 신용 카드 번호를 볼 수 있습니다.  
 
-     ![콘텐츠 ccn 일치](./media/content-matches-ccn.png "content matches ccn")  
+     ![콘텐츠 일치 ccn](./media/content-matches-ccn.png "콘텐츠 일치 ccn")  
 
 ## <a name="next-steps"></a>다음 단계  
 경고를 조사하는 방법에 대한 자세한 내용은 [조사](investigate.md)를 참조하세요.  
 기술 지원을 받으려면 [Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

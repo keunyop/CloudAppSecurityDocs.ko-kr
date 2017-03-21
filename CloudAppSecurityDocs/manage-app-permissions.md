@@ -1,11 +1,11 @@
 ---
-title: "응용 프로그램 사용 권한 관리 | Microsoft 문서"
+title: "사용 권한을 얻는 타사 클라우드 앱 제어 | Microsoft 문서"
 description: "이 문서에서는 타사 응용 프로그램 사용 권한을 제어, 금지 및 허용하는 방법에 관한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
-
-
+ms.openlocfilehash: 3866ae5606fd2add90338ac58a49edf646aa87c5
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="manage-app-permissions"></a>응용 프로그램 사용 권한 관리
 조직의 비즈니스 사용자가 설치하는 타사 생산성 응용 프로그램 중에는 사용자 정보와 데이터의 사용 권한을 요청하고 사용자 대신 Office 365 등의 다른 클라우드 응용 프로그램에 로그인하는 것도 많습니다.  사용자가 이러한 응용 프로그램을 설치할 때, 응용 프로그램에 사용 권한을 부여하는 내용을 포함한 메시지의 세부 정보를 검토하지 않고 승인을 클릭하는 경우도 많습니다.  이 문제는 IT 직원이 응용 프로그램의 생산성 향상 효과와 보안 위험을 신중하게 비교하지 못하기 때문에 발생합니다. 타사 응용 프로그램의 사용 권한을 승인하면 조직에 보안 위험이 생길 수 있으므로, 사용자가 부여하는 응용 프로그램 사용 권한을 모니터링하면 사용자와 응용 프로그램을 보호하는 데 필요한 정보를 얻고 상황을 통제할 수 있습니다. 클라우드 앱 보안 응용 프로그램 사용 권한을 활용하면 사용자가 설치한 응용 프로그램 중에서 Office 365 데이터에 액세스할 수 있는 것이 무엇이고, 응용 프로그램에 어떤 사용 권한이 있으며, 이러한 응용 프로그램에 Office 365 계정 액세스 권한을 부여한 사용자가 누구인지 확인할 수 있습니다. 응용 프로그램 사용 권한은 사용자의 액세스를 허용할 응용 프로그램과 금지할 응용 프로그램을 결정하는 데 유용합니다.
 
@@ -113,8 +110,3 @@ ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

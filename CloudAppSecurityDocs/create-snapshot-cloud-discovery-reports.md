@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 스냅숏 보고서 만들기 | Microsoft 문서"
+title: "Cloud Discovery 클라우드 앱 사용의 스냅숏 보고서 만들기 | Microsoft 문서"
 description: "이 문서에서는 로그를 수동으로 업로드하여 Cloud Discovery 앱의 스냅숏 보고서를 만드는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 189662f6122239a6db6533180265548297a5c795
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Cloud App Security에서 구문 분석하도록 해야 합니다.
 아직 로그가 없는데 로그가 어떤 모양일지 샘플을 보고 싶다면 아래 절차에 따라 샘플로그 파일을 다운로드하여 로그가 어떤 모양일지 확인하세요.
@@ -71,8 +68,3 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
