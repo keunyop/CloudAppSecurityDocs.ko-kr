@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>조사
@@ -79,6 +79,8 @@ translationtype: HT
     -   누군가가 해고되었는데 여전히 앱에 대한 액세스 권한이 있고, 이 액세스 권한을 사용하여 정보를 훔칠 수 있나요?  
 
     -   특정 앱에 대한 사용자 권한을 해지하거나 특정 사용자가 다단계 인증을 수행하도록 요구하려고 하나요?  
+    
+    -   또한 사용자 계정 행 끝의 코그를 클릭하고 **사용자 일시 중단** 또는 **Remove user's collaborations**(사용자의 공동 작업 제거) 등 수행할 작업을 선택하여 사용자 계정으로 드릴다운할 수 있습니다. 사용자를 Azure Active Directory에서 가져온 경우 **Azure AD account settings**(Azure AD 계정 설정)를 클릭하여 그룹 관리, MFA, 사용자 로그인 세부 정보, 로그인 차단 기능 등과 같은 고급 사용자 관리 기능에 쉽게 액세스할 수도 있습니다.
 
 4.  **조사**로 이동한 다음 앱을 선택합니다. 응용 프로그램 대시보드가 열리며 정보와 활용 방법을 제공합니다. 위쪽에 있는 탭을 사용하여 다음을 확인할 수 있습니다.  
 
@@ -113,7 +115,7 @@ translationtype: HT
     -   사용되었지만 조직의 정책을 준수하지 않는 클라우드 앱이 있나요?  
 
 ## <a name="use-reports-to-investigate-risk"></a>보고서를 사용하여 위험 조사  
-클라우드 환경에 대한 제어 권한을 얻으려는 경우 찾으려는 사항에 따라 특정 가정을 합니다. 즉, 클라우드에 대해 아직 잘 모릅니다. 이러한 가정에 따라 정책을 만듭니다.
+클라우드 환경에 대한 제어 권한을 얻으려는 경우 찾으려는 사항에 따라 특정 가정을 합니다. 즉, 클라우드에 대해 아직 잘 모른다고 가정합니다. 이러한 가정에 따라 정책을 만듭니다.
 
 클라우드 환경에서 Cloud App Security가 실행된 후 기본 제공 보고서(및 사용자 지정 보고서)를 사용하여 클라우드의 사용 상황을 파악합니다. 이를 기반으로 예외를 포함하도록 정책을 조정하여, 궁극적으로 정책에서 가양성이 극소수만 잡히도록 합니다.  
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fdaacd43a21ec1cd8d0bf8fdee08e4918af47e68
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="file-policies"></a>파일 정책  
@@ -65,7 +65,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
   
 4.  **위험 형식** 내에서 가장 적합한 위험 형식에 정책을 연결합니다. 이 필드는 참조용이며 나중에 위험 형식에 따라 특정 정책과 경고를 검색하는 데 도움이 됩니다.  정책을 만드는 데 선택한 범주에 따라 위험이 미리 선택되어 있을 수도 있습니다. 기본적으로 파일 정책은 DLP로 설정됩니다.  
   
-5.  이 정책을 트리거할 검색된 앱을 설정하려면 **이 정책이 적용될 파일에 대한 필터 만들기**를 클릭합니다. 작업하려는 가장 정확한 파일 집합에 도달할 때까지 정책 필터의 범위를 좁힙니다. 가양성을 방지하기 위해 최대한 범위를 제한합니다. 예를 들어 공용 사용 권한을 제거하려면 "공용" 필터를 추가하고, 외부 사용자를 제거하려면 "외부" 필터를 사용합니다.  
+5.  이 정책을 트리거할 검색된 앱을 설정하려면 **이 정책이 적용될 파일에 대한 필터 만들기**를 클릭합니다. 작업하려는 가장 정확한 파일 집합에 도달할 때까지 정책 필터의 범위를 좁힙니다. 가양성을 방지하기 위해 최대한 범위를 제한합니다. 예를 들어 공용 사용 권한을 제거하려면 **공용** 필터를 추가하고, 외부 사용자를 제거하려면 "외부" 필터를 사용합니다.  
 > [!NOTE] 
 > 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 예를 들어 **malware** 또는 **virus**를 검색하는 경우 virus_malware_file.exe를 찾지만 malwarevirusfile.exe는 찾지 않습니다. **malware.exe**를 검색하는 경우 파일 이름에 malware 또는 exe가 포함된 모든 파일을 찾지만 **"malware.exe"**(따옴표 포함)를 검색하는 경우 정확하게 "malware.exe"가 포함된 파일만 찾습니다. **같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다.  
 6.  Box, SharePoint, Dropbox, OneDrive의 경우 앱이나 특정 폴더의 모든 파일에 대해 파일 정책을 적용할 수 있습니다. **적용 대상**에서 **선택한 폴더** 또는 **선택한 폴더를 제외한 모든 파일**을 선택하면 클라우드 앱에 로그온하도록 리디렉션되며, 관련 폴더를 추가합니다.  

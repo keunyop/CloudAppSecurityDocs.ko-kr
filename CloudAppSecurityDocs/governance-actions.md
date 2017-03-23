@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
@@ -103,10 +103,10 @@ translationtype: HT
 **위치**|**대상 개체 유형**|**거버넌스 작업**|**설명**|**관련된 커넥터** 
 ---------|---------|---------|---------|---------
 |계정|파일|사용자의 공동 작업 제거|퇴사하는 사용자의 경우에 적합하도록 모든 파일에 대한 특정 사용자의 공동 작업을 모두 제거합니다.|Box, G Suite|
-|계정|계정|사용자 일시 중단 해제|사용자 일시 중단을 해제합니다.|G Suite, Box, Office|
+|계정|계정|사용자 일시 중단 해제|사용자 일시 중단을 해제합니다.|G Suite, Box, Office, Salesforce|
 |계정|계정|계정 설정|특정 앱의 계정 설정 페이지(예: Salesforce 내부)로 이동합니다.|모든 앱(OneDrive 및 SharePoint) 설정은 Office 내에서 구성합니다.|
 |계정 |파일|모든 파일 소유권 이전|계정에서 한 사용자의 모든 파일을 선택한 새 사용자가 소유하도록 이전합니다. 이전 소유자는 편집자가 됩니다. 소유권을 이전하고 나면 admin@gtest1.adallom.com이 편집자가 되며 더 이상 공유 설정을 변경할 수 없게 됩니다. 새 소유자는 소유권 변경에 대한 메일 알림을 받게 됩니다.|G Suite|
-|계정, 활동 정책|계정|사용자 일시 중단|사용자에게 액세스 권한과 로그인 권한이 없도록 설정합니다. 사용자가 로그인한 경우 이 작업이 설정되면 사용자가 즉시 잠깁니다.|G Suite, Box, Office|
+|계정, 활동 정책|계정|사용자 일시 중단|사용자에게 액세스 권한과 로그인 권한이 없도록 설정합니다. 사용자가 로그인한 경우 이 작업이 설정되면 사용자가 즉시 잠깁니다.|G Suite, Box, Office, Salesforce|
 |활동 정책, 계정|계정|암호 철회|사용자 계정의 암호를 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 암호를 철회하는 활동 정책을 설정합니다.|G Suite|
 |활동 정책, 계정|계정|관리자 권한 철회|관리자 계정의 권한을 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 관리자 권한을 철회하는 활동 정책을 설정합니다.|G Suite|
 |앱 대시보드 > 앱 사용 권한|사용 권한|앱 금지 취소|Google 및 Salesforce: 앱에서 금지를 제거하고 사용자가 Google 또는 Salesforce를 사용하여 타사 앱에 사용 권한을 부여하도록 허용합니다. Office 365: Office에 대한 타사 앱의 사용 권한을 복원합니다.|G Suite, Salesforce, Office|
@@ -140,6 +140,7 @@ translationtype: HT
 |설정 > 클라우드 검색 설정 > 데이터 뷰 관리|클라우드 검색|사용자 지정 클라우드 검색 필터 데이터 뷰 만들기|검색 결과를 더 세부적으로 보기 위한 새로운 데이터 뷰를 만듭니다. 예: 특정 IP 범위.|검색|
 |설정 > 클라우드 검색 설정 > 데이터 삭제|클라우드 검색|클라우드 검색 데이터 삭제|검색 원본에서 수집된 모든 데이터를 삭제합니다.|검색|
 |설정 > 클라우드 검색 설정 > 수동으로 로그 업로드/자동으로 로그 업로드|클라우드 검색|클라우드 검색 데이터 구문 분석|모든 로그 데이터가 구문 분석되었다는 알림입니다.|검색|
+
 
 
 ## <a name="see-also"></a>참고 항목  

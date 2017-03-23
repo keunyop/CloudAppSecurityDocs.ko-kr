@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e913b589babc66ef5aff5f05af9fb5de22f308d1
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
@@ -24,7 +24,7 @@ translationtype: HT
 예를 들어 격리하려는 데이터 위반 위협이 있는 경우 조직에서 위험한 클라우드 앱을 사용할 수 없도록 차단하는 대신 다른 유형의 정책을 적용해야 합니다.  
   
 ## <a name="policy-types"></a>정책 유형  
-**정책** 페이지를 볼 때 다양한 정책 및 템플릿을 유형과 아이콘으로 구분하여 사용 가능한 정책을 확인할 수 있습니다. 사용 가능한 정책은 데이터 원본과 조직의 Cloud App Security에서 사용하도록 설정한 항목에 따라 다릅니다. 예를 들어, Cloud Discovery 로그를 업로드한 경우에는 Cloud Discoery와 관련된 정책이 표시됩니다.
+**정책** 페이지를 볼 때 다양한 정책 및 템플릿을 유형과 아이콘으로 구분하여 사용 가능한 정책을 확인할 수 있습니다. 사용 가능한 정책은 데이터 원본과 조직의 Cloud App Security에서 사용하도록 설정한 항목에 따라 다릅니다. 예를 들어, Cloud Discovery 로그를 업로드한 경우에는 Cloud Discovery와 관련된 정책이 표시됩니다.
 
 다음 유형의 정책을 만들 수 있습니다.  
   

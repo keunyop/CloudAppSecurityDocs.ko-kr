@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activities"></a>활동
@@ -42,11 +42,11 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
   
 -   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 SIEM 에이전트 사용하여 Cloud App Security를 SIEM에 연결할 때 매우 유용하며, Cloud App Security 포털 내에서 경고를 자세히 조사할 수 있습니다.  
   
--   활동 개체 - 활동이 수행된 대상 개체를 검색합니다. 이 필터는 파일, 폴더, 사용자 또는 앱 개체에 적용됩니다.
+-   활동 개체 - 활동이 수행된 대상 개체를 검색합니다. 이 필터는 파일, 폴더, 사용자 또는 앱 개체에 적용됩니다. 
     - 활동 개체 ID - 개체의 ID(파일, 폴더, 사용자 또는 앱 ID)입니다.
     - 파일, 폴더 또는 사이트 URL - 특정 문자열로 시작되는 파일, 폴더 및 URL을 선택할 수 있습니다.
     - 대상 개체(파일/폴더) - 특정 파일 또는 폴더를 선택할 수 있습니다. 
-    - 항목 - 활동 개체의 이름 또는 ID를 기준으로 검색할 수 있습니다(예: 사용자 이름, 파일, 매개 변수, 사이트). 
+    - 항목 - 활동 개체의 이름 또는 ID를 기준으로 검색할 수 있습니다(예: 사용자 이름, 파일, 매개 변수, 사이트). **Activity object Item**(활동 개체 항목) 필터에서 특정 항목을 **포함**하거나, 특정 항목과 **같거나**, 특정 항목으로 **시작**하는 항목을 필터링할지 여부를 선택할 수 있습니다.
     
 -   활동 유형 - 응용 프로그램 활동을 검색합니다.
 

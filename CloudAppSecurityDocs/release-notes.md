@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,35 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23870c7ba734acc3095f1dcd097f19954fee5e79
-ms.sourcegitcommit: 064afc7148de42c0e81763f96ec13fb2c92f02a9
+ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="release-notes"></a>릴리스 정보
 
+## <a name="cloud-app-security-release-93"></a>Cloud App Security 릴리스 93
+릴리스 날짜: 2017년 3월 20일
+
+**새로운 기능:**
+-    이제 Cloud App Security 익명화를 사용하여 사용자 지정 암호화 키를 구성할 수 있습니다. 자세한 내용은 [Cloud Discovery 익명화](cloud-discovery-anonymizer.md)를 참조하세요.
+-    사용자 및 계정 관리를 보다 효율적으로 제어하기 위해 이제 각 사용자 옆의 코그를 클릭하여 **계정** 페이지 내에서 각 사용자 및 계정에 대한 Azure AD 계정 설정에 직접 액세스할 수 있습니다. 이를 통해 고급 사용자 관리 기능 그룹 관리, MFA 구성, 사용자 로그인에 대한 세부 정보 및 로그인을 차단할 수 있는 기능에 쉽게 액세스할 수 있습니다. 
+-    이제 Cloud App Security API를 통해 비사용 권한 앱에 대한 차단 스크립트를 내보낼 수 있습니다. Cloud App Security의 API에 대해 자세히 알아보려면 메뉴 모음에서 물음표를 클릭한 다음 **API documentation**(API 설명서)을 클릭합니다.
+-    ServiceNow에 대한 Cloud App Security 앱 커넥터가 제네바, 헬싱키, 이스탄불에서 도입된 OAuth 토큰도 지원하도록 확장되었습니다. 따라서 ServiceNow에 대해 배포하는 사용자에 따라 달라지지 않는 더 강력한 API 연결을 제공합니다. 자세한 내용은 [Microsoft Cloud App Security에 ServiceNow 연결](connect-servicenow-to-microsoft-cloud-app-security.md). 기존 고객은 ServiceNow 앱 커넥터 페이지에서 설정을 업데이트할 수 있습니다.
+-    타사 DLP 스캐너를 추가로 구성한 경우 이제 DLP 검색 상태에 각 커넥터 상태가 개별적으로 표시되므로 더 쉽게 확인할 수 있습니다.
+-    이제 Cloud App Security에서 Office 365 감사 로그에서 지원되는 Microsoft 팀 활동도 지원합니다. 이 기능은 점진적으로 출시될 예정입니다.
+-    Exchange Online 가장 이벤트의 경우 이제 사용된 권한 수준 즉, 위임, 관리자 또는 위임된 관리자별로 필터링할 수 있습니다. **활동 개체** > **항목**을 검색하여 **활동 로그**에서 관심 있는 가장 수준을 표시하는 이벤트를 검색할 수 있습니다.
+-    App Permissions(앱 사용 권한) 탭의 앱 서랍에서 이제 각 앱의 **게시자**를 볼 수 있습니다. 또한 게시자를 필터로 사용하여 동일한 게시자의 앱을 추가로 확인할 수도 있습니다.
+-    이제 위험한 IP 주소가 일반 **위치** 위험 요소 아래에서 가중 위험 요소가 아닌 독립 위험 요소로 표시됩니다. 
+-    파일에 대해 Azure ID 보호 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
+ 
+**추가 Salesforce 지원:**
+-    이제 Cloud App Security에서 Salesforce 사용자를 일시 중단 및 일시 중단 해제할 수 있습니다. 이 작업은 Salesforce 커넥터의 **계정** 탭에서 특정 사용자의 행 끝에 있는 코그를 클릭하고 **일시 중단** 또는 **Unsuspend**(일시 중단 해제)를 선택하여 수행할 수 있고 정책의 일부인 거버넌스 작업으로 적용할 수도 있습니다. Cloud App Security에서 수행하는 일시 중단 및 일시 중단 해제 활동은 모두 [거버넌스 로그](governance-actions.md)에 기록됩니다. 
+-    Salesforce 콘텐츠 공유에 대한 가시성 향상: 이제 공개적으로 공유한 파일, 그룹과 공유한 파일, 전체 Salesforce 도메인과 공유한 파일 등을 비롯해 어떤 파일을 누구와 공유했는지 확인할 수 있습니다. 향상된 가시성은 현재 연결된 Salesforce 앱과 새 Salesforce 앱에 소급해서 출시되며, 이 기능이 처음으로 업데이트되는 데 어느 정도 시간이 걸릴 수 있습니다.
+-    다음 Salesforce 이벤트의 적용 범위를 개선했으며 **사용자 관리** 활동과 구분했습니다. 
+    - 사용 권한 편집
+    - 사용자 만들기
+    - 역할 변경
+    - 암호 다시 설정
 
 ## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security 릴리스 90, 91, 92
 릴리스된 날짜: 2017년 2월
@@ -54,8 +77,8 @@ translationtype: HT
 2017년 1월 22일 출시
 
 **새로운 기능**
--    Cloud App Security에서 Office 365 보안 및 준수 센터 DLP 이벤트를 보는 기능을 배포하기 시작했습니다. Office 365 보안 및 준수 센터에서 DLP 정책을 구성한 경우 정책 일치가 검색되면 Cloud App Security 활동 로그에서 해당 정책을 볼 수 있습니다. 활동 로그의 정보에는 일치를 트리거한 파일 또는 메일이나 일치한 정책 또는 경고가 포함됩니다. "보안 이벤트" 활동을 사용하면 Cloud App Security 활동 로그에서 Office 365 DLP 정책 일치를 볼 수 있습니다. 이 기능을 사용하여 다음과 같이 할 수 있습니다.
-    -    Office365 DLP 엔진에서 들어오는 모든 DLP 일치를 확인합니다.
+-    Cloud App Security에서 Office 365 보안 및 준수 센터 DLP 이벤트를 보는 기능을 배포하기 시작했습니다. Office 365 보안 및 준수 센터에서 DLP 정책을 구성한 경우 정책 일치가 검색되면 Cloud App Security 활동 로그에서 해당 정책을 볼 수 있습니다. 활동 로그의 정보에는 일치를 트리거한 파일 또는 메일이나 일치한 정책 또는 경고가 포함됩니다. **보안 이벤트** 활동을 사용하면 Cloud App Security 활동 로그에서 Office 365 DLP 정책 일치를 볼 수 있습니다. 이 기능을 사용하여 다음과 같이 할 수 있습니다.
+    -    Office 365 DLP 엔진에서 들어오는 모든 DLP 일치를 확인합니다.
     -    특정 파일, SharePoint 사이트 또는 정책에 대한 Office 365 DLP 정책 일치에 대해 경고합니다.
     -    더 폭넓은 컨텍스트(예: DLP 정책 일치를 트리거한 파일을 액세스하거나 다운로드한 외부 사용자)로 DLP 일치를 조사합니다.
  

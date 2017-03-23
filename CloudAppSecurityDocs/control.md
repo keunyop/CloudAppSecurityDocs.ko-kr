@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="control"></a>컨트롤
@@ -64,7 +64,7 @@ Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 �
 
 2.   **범주**에서 **생산성**을 기준으로 앱을 필터링합니다.  
 
-3.   사용 중인 각 응용 프로그램의 **점수**를 검사하여 안전한지 확인하고, 안전하지 않을 경우 이유를 확인합니다.  
+3.   사용 중인 각 앱의 **점수**를 검사하여 안전한지 확인하고, 안전하지 않을 경우 이유를 확인합니다.  
 
 4.   전체 조직에 대한 엔터프라이즈 라이선스를 구입하기로 한 경우에는 **사용자** 열도 확인할 수 있습니다. 그리고 사용자들 사이에서 이미 인기 있는 응용 프로그램, 신뢰할 수 있는지 여부, 보안 기능을 확인한 후에 결정을 내릴 수 있습니다.  
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5c5d77a83d3eba40250ece02cfce4aa8f80d345d
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>클라우드 검색 변칙 검색 정책
@@ -60,7 +60,7 @@ translationtype: HT
 
 6. **만들기**를 클릭합니다.
 
-7. 모든 정책과 마찬가지로 **Policies**(정책) 페이지에서 행의 끝에 있는 점 세 개를 클릭하여 정책에 대해 **Edit**(편집), **Disable**(사용 안 함), **Enable**(사용)을 선택할 수 있습니다. 기본적으로 정책을 만들면 사용하도록 설정됩니다.
+7. 모든 정책과 마찬가지로 **정책** 페이지에서 행의 끝에 있는 점 세 개를 클릭하여 정책에 대해 **편집**, **사용 안 함**, **사용**을 선택할 수 있습니다. 기본적으로 정책을 만들면 사용하도록 설정됩니다.
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   

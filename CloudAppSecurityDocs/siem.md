@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 866e9bcd9d9526d077365e4e4462567b20e3302f
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: ab0164181826368c2dae7836e9b8189bb907f790
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="siem-integration--public-preview-"></a>SIEM 통합 -공개 미리 보기- 
@@ -50,7 +50,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 **다음**을 클릭합니다.
   ![원격 Syslog 설정](./media/siem2.png)
 
-6. SIEM 서버로 내보낼 데이터 형식, **경고** 및 **활동**을 선택합니다. 슬라이더를 사용하여 사용 여부를 설정합니다. 기본적으로 모든 항목이 선택되어 있습니다. **Apply to**(적용 대상) 드롭다운을 사용하여 특정 경고와 활동만 SIEM 서버로 보내도록 필터를 설정할 수 있습니다.
+6. SIEM 서버로 내보낼 데이터 형식, **경고** 및 **활동**을 선택합니다. 슬라이더를 사용하여 사용 여부를 설정합니다. 기본적으로 모든 항목이 선택되어 있습니다. **적용 대상** 드롭다운을 사용하여 특정 경고와 활동만 SIEM 서버로 보내도록 필터를 설정할 수 있습니다.
 **Edit and preview results**(결과 편집 및 미리 보기)를 클릭하여 필터가 예상대로 작동하는지 확인할 수 있습니다. **다음**을 클릭합니다. 
 
   ![데이터 형식 설정](./media/siem3.png)
