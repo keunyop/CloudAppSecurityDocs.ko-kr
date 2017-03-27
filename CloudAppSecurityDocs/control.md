@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>컨트롤
 클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후 거버넌스 작업을 사용하여 조직의 보호를 도울 수 있습니다.  
+
+## <a name="use-policies-to-assess-risk"></a>정책을 사용하여 위험 평가  
+미해결 경고를 살펴본 후 정책 센터로 이동하여 경고를 트리거하지 않은 정책 위반을 검토합니다.  
+
+-   Cloud App Security 대시보드에서 **제어**를 클릭한 다음 **정책**을 클릭합니다.  
+
+-   특정 정책을 선택하여 경고를 트리거하지 않은 정책 일치 항목의 **지금 위반 중** 목록을 확인합니다.  
+
+-   한 번에 하나씩 위반을 클릭하고 각각에 대해 수행할 작업을 결정합니다. 거버넌스 작업에 대한 자세한 내용을 보려면 다음 그림을 참조하세요.  
+
+     예를 들어 정책이 규정 준수 위반을 찾도록 설정된 상태에서 누군가가 신용 카드 번호를 OneDrive의 파일에 저장할 경우 정책에 일치 항목이 포함됩니다.  
+
+     ![PCI 일치](./media/pci-matches.png "pci 일치")  
+
+-   일치 항목을 클릭하여 정책을 위반한 실제 파일을 확인합니다.  
+
+     ![PCI 콘텐츠 일치](./media/pci-content-matches.png "pci 콘텐츠 일치")  
+
+     파일 자체를 선택하여 파일에 대한 정보를 가져올 수 있습니다.  
+
+     **공동 작업자**를 클릭하여 이 파일에 대한 액세스 권한이 있는 사용자를 볼 수 있습니다.  
+
+     **일치 항목**을 클릭하면 실제 신용 카드 번호를 볼 수 있습니다.  
+
+     ![콘텐츠 일치 ccn](./media/content-matches-ccn.png "콘텐츠 일치 ccn")  
 
 ## <a name="apply-governance-actions"></a>거버넌스 작업 적용  
 정책 내, 내부 경고 및 **파일** 로그에서 거버넌스 작업을 적용할 수 있습니다.  
