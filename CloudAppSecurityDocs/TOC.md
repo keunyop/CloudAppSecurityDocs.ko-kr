@@ -35,7 +35,7 @@
 ##### [Cloud Discovery 변칙 검색 정책](cloud-discovery-anomaly-detection-policy.md)
 #### [활동 정책](user-activity-policies.md)
 #### [변칙 검색 정책](anomaly-detection-policy.md)
-##### [파일 정책](data-protection-policies.md)
+#### [파일 정책](data-protection-policies.md)
 ##### [콘텐츠 검사](content-inspection.md)
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
 #### [정책 템플릿 참조](policy-template-reference.md)
