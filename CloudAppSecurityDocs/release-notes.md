@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>릴리스 정보
@@ -23,6 +23,7 @@ translationtype: HT
 릴리스 날짜: 2017년 3월 20일
 
 **새로운 기능:**
+-   이제 가져온 사용자 그룹을 포함 또는 제외하는 정책을 적용할 수 있습니다. 
 -    이제 Cloud App Security 익명화를 사용하여 사용자 지정 암호화 키를 구성할 수 있습니다. 자세한 내용은 [Cloud Discovery 익명화](cloud-discovery-anonymizer.md)를 참조하세요.
 -    사용자 및 계정 관리를 보다 효율적으로 제어하기 위해 이제 각 사용자 옆의 코그를 클릭하여 **계정** 페이지 내에서 각 사용자 및 계정에 대한 Azure AD 계정 설정에 직접 액세스할 수 있습니다. 이를 통해 고급 사용자 관리 기능 그룹 관리, MFA 구성, 사용자 로그인에 대한 세부 정보 및 로그인을 차단할 수 있는 기능에 쉽게 액세스할 수 있습니다. 
 -    이제 Cloud App Security API를 통해 비사용 권한 앱에 대한 차단 스크립트를 내보낼 수 있습니다. Cloud App Security의 API에 대해 자세히 알아보려면 메뉴 모음에서 물음표를 클릭한 다음 **API documentation**(API 설명서)을 클릭합니다.
@@ -32,7 +33,7 @@ translationtype: HT
 -    Exchange Online 가장 이벤트의 경우 이제 사용된 권한 수준 즉, 위임, 관리자 또는 위임된 관리자별로 필터링할 수 있습니다. **활동 개체** > **항목**을 검색하여 **활동 로그**에서 관심 있는 가장 수준을 표시하는 이벤트를 검색할 수 있습니다.
 -    App Permissions(앱 사용 권한) 탭의 앱 서랍에서 이제 각 앱의 **게시자**를 볼 수 있습니다. 또한 게시자를 필터로 사용하여 동일한 게시자의 앱을 추가로 확인할 수도 있습니다.
 -    이제 위험한 IP 주소가 일반 **위치** 위험 요소 아래에서 가중 위험 요소가 아닌 독립 위험 요소로 표시됩니다. 
--    파일에 대해 Azure ID 보호 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
+-    파일에 대해 Azure Information Protection 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
  
 **추가 Salesforce 지원:**
 -    이제 Cloud App Security에서 Salesforce 사용자를 일시 중단 및 일시 중단 해제할 수 있습니다. 이 작업은 Salesforce 커넥터의 **계정** 탭에서 특정 사용자의 행 끝에 있는 코그를 클릭하고 **일시 중단** 또는 **Unsuspend**(일시 중단 해제)를 선택하여 수행할 수 있고 정책의 일부인 거버넌스 작업으로 적용할 수도 있습니다. Cloud App Security에서 수행하는 일시 중단 및 일시 중단 해제 활동은 모두 [거버넌스 로그](governance-actions.md)에 기록됩니다. 
