@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
@@ -127,6 +127,7 @@ translationtype: HT
 |파일|파일|사용자 격리에서 복원|사용자를 격리 상태에서 복원합니다.|상자|
 |파일|파일|자신에게 읽기 권한 부여|파일에 액세스하여 파일에 위반이 있는지를 파악할 수 있도록 자신에게 파일에 대한 읽기 권한을 부여합니다.|G Suite|
 |파일|파일|편집자에게 공유 허용|Google Drive에서 파일의 기본 편집자 권한은 공유도 허용합니다. 이 거버넌스 작업은 편집자의 공유 권한 제거와 반대이며, 편집자가 파일을 공유할 수 있도록 합니다.|G Suite|
+|파일|파일|보호|Microsoft Rights Management를 통해 조직 템플릿을 적용하여 파일을 보호합니다.|Office 365|
 |파일|파일|내 자신의 읽기 권한 철회|내 자신의 파일에 대한 읽기 권한을 철회하며, 이 작업은 파일에 위반이 있는지를 파악하기 위해 자신에게 사용 권한을 부여한 후에 유용합니다.|G Suite|
 |파일, 파일 정책|파일|파일 소유권 이전|소유자를 변경합니다. 정책에서 특정 소유자를 선택합니다.|G Suite|
 |파일, 파일 정책|파일|협력자 제거|파일에서 특정 협력자를 제거합니다.|G Suite, Box, One Drive, SharePoint|

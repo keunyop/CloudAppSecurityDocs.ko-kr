@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>릴리스 정보
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security 릴리스 94
+릴리스 날짜: 2017년 4월 2일
+
+**새로운 기능:**
+-    Cloud App Security는 이제 Azure RMS와 통합되었습니다. Cloud App Security 포털에서 직접 Microsoft Rights Management를 통해 Office 365 OneDrive 및 Sharepoint Online의 파일을 보호할 수 있습니다. **파일** 페이지에서 이를 수행할 수 있습니다. 자세한 내용은 [Azure Information Protection과 통합](azip-integration.md)을 참조하세요. 추가 응용 프로그램에 대한 지원은 향후 버전에서 사용할 수 있습니다.
+-    지금까지는 로봇 및 크롤러 작업이 네트워크에서 수행될 때 네트워크상의 사용자가 작업을 수행하지 않았기 때문에 특히 식별하기가 어려웠습니다. 사용자도 모르게 봇 및 크롤러가 컴퓨터에서 악성 도구를 실행할 수 있습니다. 이제, 로봇 및 크롤러가 네트워크에서 작업을 수행할 때 Cloud App Security가 이를 표시하는 도구를 제공합니다. 새 사용자 에이전트 태그를 사용하여 활동 로그에 있는 작업을 필터링할 수 있습니다. 사용자 에이전트 태그를 통해 로봇에서 수행한 모든 작업을 필터링할 수 있으며, 이러한 유형의 작업이 감지될 때마다 경고를 생성하는 정책을 만드는 데 사용자 에이전트 태그를 사용할 수 있습니다. 변칙 검색 경고에 포함되는 위험 작업이 향후 릴리스에 포함되면 업데이트됩니다. 
+-    새로운 통합 앱 권한 페이지를 통해 사용자가 타사 앱에 부여한 권한을 더욱 쉽게 조사할 수 있습니다. 이제 **조사** > **앱 사용 권한**을 클릭하여 사용자가 타사 앱에 부여한 모든 권한 목록을 확인할 수 있습니다. 즉, 연결된 앱별 앱 사용 권한 페이지를 통해 다양한 앱과 부여된 권한을 자세히 비교할 수 있습니다.  자세한 내용은 [앱 사용 권한 관리](manage-app-permissions.md)를 참조하세요.
+-    더욱 쉽게 조사할 수 있도록 테이블 서랍에서 바로 데이터를 필터링할 수 있습니다.
+이제 조사 프로세스에서 훨씬 더 쉽게 피벗할 수 있는 새로운 상황별 작업을 통해 **활동 로그**의 **파일** 테이블 및 **앱 사용 권한** 페이지 기능이 향상되었습니다. 또한 구성 페이지에 대한 빠른 링크 및 한 번의 클릭을 통해 데이터를 복사하는 기능도 추가되었습니다. 자세한 내용은 [파일 및 활동 서랍 작업](file-filters.md)에 대한 정보를 참조하세요.
+-    Office 365 활동 로그 및 경고 롤아웃에 대한 Microsoft Teams 지원이 완료되었습니다.
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security 릴리스 93
 릴리스 날짜: 2017년 3월 20일

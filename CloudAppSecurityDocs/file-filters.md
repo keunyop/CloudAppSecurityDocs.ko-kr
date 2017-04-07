@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="files"></a>파일
@@ -118,6 +118,9 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 - 소유자: 이 파일의 소유자에 대한 사용자 페이지를 보려면 소유자를 클릭합니다.
 - 일치 정책: 이 파일과 일치하는 정책의 목록을 보려면 일치 정책 링크를 클릭합니다.
 - 분류 레이블: 이 파일에 있는 Azure Information Protection 분류 레이블 목록을 보려면 분류 레이블을 클릭합니다. 그런 다음 이 레이블과 일치하는 모든 파일을 기준으로 필터링할 수 있습니다.    
+
+파일 서랍의 필드는 추가 파일에 대한 상황별 링크 및 서랍에서 직접 수행할 수 있는 드릴다운을 제공합니다. 예를 들어 **소유자** 필드 옆으로 커서를 이동하면 필터에 추가 아이콘(![필터에 추가](./media/add-to-filter-icon.png))을 사용하여 현재 페이지의 필터에 소유자를 즉시 추가할 수 있습니다. 또한 설정 톱니 아이콘(![설정 아이콘](./media/contextual-settings-icon.png))을 사용하면 **분류 레이블**과 같은 필드 중 하나의 구성을 수정하는 데 필요한 설정 페이지가 표시되므로 바로 작업할 수 있습니다.
+
 
 ![파일 서랍](./media/file-drawer.png "파일 서랍")  
   

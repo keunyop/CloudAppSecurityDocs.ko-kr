@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
@@ -107,6 +107,32 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
 [거버넌스 작업](governance-actions.md)에 대해 자세히 알아보세요.
 
 [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)에 대해 자세히 알아보고 Azure Information Protection [빠른 시작 자습서](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)를 확인하세요.
+
+
+## <a name="integration-with-azure-rights-management"></a>Azure 권한 관리와 통합
+
+조직에는 Cloud App Security와 Azure RMS 간에 통합할 수 있도록 사용이 허가되고 활성화된 Azure 권한 관리가 있어야 합니다.  이러한 두 가지 별도의 단계는 [Azure 권한 관리 활성화](https://docs.microsoft.com/information-protection/deploy-use/activate-service)에서 찾아볼 수 있습니다.
+
+Cloud App Security는 현재 일반 보호 수준만 지원합니다. Office, PDF 및 이미지 파일에 대한 기본 보호는 향후 버전에서 사용할 수 있습니다. 
+
+이 기능은 현재 SharePoint Online 및 비즈니스용 OneDrive에 저장된 파일에서 사용할 수 있습니다. 향후 버전에서는 더 많은 클라우드 앱이 지원됩니다.
+
+Cloud App Security가 Office 365 서비스에 연결되면 Cloud App Security RMS 통합 기능을 사용할 수 있게 됩니다. 그러면 다음과 같이 Cloud App Security 포털에서 직접 RMS를 통해 문서를 보호할 수 있습니다.
+
+1. **파일** 페이지에서, 보호하려는 파일을 선택한 후 파일의 행 끝부분에 있는 점 세 개를 클릭하고 **보호**를 선택합니다. 
+![앱 보호](./media/protect-app.png)
+2. 파일을 보호하는 데 사용할 조직의 템플릿 중 하나를 선택하라는 메시지가 표시되면 **보호**를 클릭합니다. 
+![보호 템플릿](./media/protect-template.png)
+3. 템플릿을 선택하고 보호를 클릭하면 Cloud App Security가 템플릿을 적용하고 원본 파일을 보호합니다. 보호된 파일은 원본 파일과 파일 이름이 동일하지만, 새로운 ".pfile" 파일 확장명을 갖습니다.
+> [!NOTE]
+>     파일에 전사적 RMS 템플릿을 적용하는 것이 좋습니다. 그러면 파일의 원래 소유자를 비롯하여 조직의 모든 사용자가 이러한 파일에 액세스할 수 있게 됩니다. 파일이 보호되면 파일의 소유자, 파일의 공유 정책 및 파일에 이미 액세스할 수 있는 사용자 목록이 변경되지 않습니다.
+
+4. 사용자가 보호된 파일에 액세스하려는 경우 장치에 RMS 공유 앱이 설치되어 있어야 합니다. 자세한 내용은 [Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)를 참조하세요.
+
+5. **거버넌스 로그**에서 이전에 수행한 보호 작업의 행 끝부분에 있는 **되돌리기** 단추를 클릭하여 언제든지 이 작업을 되돌릴 수 있습니다. 
+
+
+
 
  
 ## <a name="see-also"></a>참고 항목  

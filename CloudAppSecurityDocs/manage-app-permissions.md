@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>응용 프로그램 사용 권한 관리
@@ -27,11 +27,7 @@ translationtype: HT
 
 응용 프로그램 사용 권한 탭에 액세스하려면:
 
-1. Cloud App Security 포털에서 **조사**를 클릭하고 **연결된 앱**에서 **Office 365**를 선택합니다. 
-> [!Note]
-> 응용 프로그램 사용 권한을 관리하려면 먼저 Cloud App Security을 Office 365에 연결해야 합니다.
-
-2. 그런 다음 Office 365 대시보드에서 **응용 프로그램 사용 권한** 탭을 클릭합니다.
+Cloud App Security 포털에서 **조사**, **앱 사용 권한**을 차례로 클릭합니다.
 
 
  ![응용 프로그램 사용 권한](./media/app-permissions.png)
