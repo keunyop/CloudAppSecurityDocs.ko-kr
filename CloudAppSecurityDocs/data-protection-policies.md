@@ -23,7 +23,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
  
 **지원되는 파일 형식** 
 
-Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된 파일, 다양한 서식 있는 텍스트, XML, HTML 등&100;가지 이상의 모든 일반적인 파일 형식에서 텍스트를 추출하여 콘텐츠 검사를 수행합니다.
+Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된 파일, 다양한 서식 있는 텍스트, XML, HTML 등 100가지 이상의 모든 일반적인 파일 형식에서 텍스트를 추출하여 콘텐츠 검사를 수행합니다.
 
 엔진은 각 정책 아래에 다음 세 가지 측면을 결합합니다.  
   

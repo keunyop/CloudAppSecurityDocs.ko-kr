@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
+ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
@@ -86,8 +86,11 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
 
 ![cloud app security의 azure information protection 태그](./media/azip-tags-in-cas.png)
 
-> ![참고] 파일에 대해 Azure ID 보호 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
-> **정책 1 - 상자에서 외부 공유된 기밀 데이터:**
+> [!Note]
+> 파일에 대해 Azure ID 보호 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
+
+
+**정책 1 - 상자에서 외부 공유된 기밀 데이터:**
 
 1.    파일 정책을 만듭니다.
 2.    정책의 이름, 심각도 및 범주를 설정합니다.

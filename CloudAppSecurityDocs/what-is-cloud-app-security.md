@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 041c22aea7ab20682cab199af2a0f17129cade3e
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
 translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
@@ -50,8 +50,8 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 Cloud App Security는 ISO, HIPAA, CSA STAR, EU 모델 조항 등에 대한 Microsoft 규정 준수로 공식 인증되었습니다. 인증의 전체 목록을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하고 Cloud App Security를 선택하세요.  
 
 Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 콘텐츠는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
-Cloud App Security에서는 다음과 같이 데이터를 유지합니다.
-
+Cloud App Security에서는 다음과 같이 데이터를 유지합니다. 
+ 
 - 활동 로그: 180일 
 - 검색 데이터: 90일 
 - 경고: 180일 
