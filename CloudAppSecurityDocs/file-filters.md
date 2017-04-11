@@ -1,11 +1,11 @@
 ---
-title: "파일 | Microsoft 문서"
+title: "Cloud App Security에서 사용할 수 있는 파일 데이터 및 필터 이해 | Microsoft 문서"
 description: "이 참조 항목에서는 Cloud App Security에서 사용되는 파일 형식 및 파일 필터에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
-ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
-
-
+ms.openlocfilehash: 8f5d78ec5a748dbf0ba3c2895c5f84c4d6cb0a87
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="files"></a>파일
 
-특정 파일을 찾을 수 있도록 파일 로그를 필터링할 수 있습니다. 기본 필터는 파일 필터링을 시작하기에 좋은 도구를 제공합니다.
+
+데이터 보호를 제공하기 위해 Cloud App Security에서는 연결된 앱의 모든 파일을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 OneDrive 및 Salesforce에 저장된 모든 파일 등과 같은 모든 파일을 검색합니다. 그런 다음 Cloud App Security는 파일이 수정될 때마다 각 파일을 다시 검색합니다. 이러한 수정의 예로 콘텐츠, 메타데이터, 공유 권한 수정 등을 들 수 있습니다. 검색 시간은 앱에 저장된 파일의 수에 따라 달라집니다. 또한 **파일** 페이지에서 파일을 필터링하여 어떤 종류의 데이터가 클라우드 앱에 저장되어 있는지 조사할 수도 있습니다. 
+
+예를 들어 다음과 같이 **파일** 페이지를 사용하여 **기밀**로 레이블이 지정된 외부 공유 파일을 보호할 수 있습니다. 앱을 Cloud App Security에 연결한 후 Azure Information Protection과 통합할 수 있습니다. 그런 다음 **파일** 페이지에서 **기밀**로 레이블이 지정된 파일을 필터링합니다. 도메인을 제외하기 위해 **협력자** 필터를 필터링하여 조직 외부에서 공유되는 **기밀** 파일이 있으면 잘못된 액세스 수준이 적용된 **기밀** 파일을 검색하는 파일 정책을 만들고, 조직의 데이터 손실을 방지하기 위해 **외부 협력자 제거** 및 **정책 일치 다이제스트를 파일 소유자에게 보내기**와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
+
+ ![파일 필터 기밀](media/file-filter-confidential.png)
+
+다음은 **파일** 페이지를 활용할 수 있는 또 다른 예입니다. 조직에서 지난 6개월간 수정되지 않은 파일을 공개적으로 또는 외부적으로 공유하는 사용자가 없는지 확인하려면, 앱을 Cloud App Security에 연결한 후 **파일** 페이지에서 액세스 수준이 **외부** 또는 **공개**인 파일을 필터링하고 **마지막 수정** 날짜를 6개월 이전으로 설정합니다. **New policy from search**(검색을 통한 새 정책)를 클릭하여 스러스트 부실 공개 파일을 탐지하는 파일 정책을 만들고, 조직의 데이터 손실을 방지하기 위해 **Remove external users**(외부 사용자 제거)와 같은 자동 거버넌스 작업을 적용할 수 있습니다.
+
+ ![파일 필터 부실 외부](media/file-example-stale-external.png)
+
+기본 필터는 파일 필터링을 시작하기에 좋은 도구를 제공합니다.
 
  ![기본 파일 로그 필터](media/file-log-filter-basic.png)
 
@@ -30,7 +38,7 @@ ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
  ![고급 파일 로그 필터](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> 파일 필터 
+###  <a name="Filefilters"></a> 파일 필터 
  
 Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수준, 파일 형식)를 기반으로 모든 파일 형식을 모니터링할 수 있습니다. 
  
@@ -38,7 +46,11 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 
 다음은 적용할 수 있는 파일 필터 목록입니다. 대부분의 필터는 매우 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
 > [!NOTE] 
-> 파일 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 따옴표로 묶인 단어는 AND처럼 작동합니다. 예를 들어 **"malware"** **"virus"**를 검색하는 경우 virus_malware_file.exe는 찾지만 malwarevirusfile.exe 및 malware.exe는 찾지 않습니다. 단어 사이의 공백은 OR처럼 작동합니다. 예를 들어 하는 경우처럼 또는 예를 들어 **malware** **virus**를 검색하는 경우 이름에 malware나 virus가 있는 파일을 모두 찾으므로 malware-virus.exe와 virus.exe를 모두 찾습니다.   **같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다. 
+> 파일 정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 **전체 단어**만 검색합니다. 
+> - 단어 사이의 공백은 OR처럼 작동합니다. 예를 들어 **malware** **virus**를 검색하는 경우 이름에 malware나 virus가 있는 파일을 모두 찾으므로 malware-virus.exe와 virus.exe를 모두 찾습니다.  
+> - 문자열을 검색하려면 단어를 따옴표로 묶습니다. 이 경우 AND처럼 작동합니다. 예를 들어 **"malware"** **"virus"**를 검색하는 경우 virus_malware_file.exe는 찾지만 malwarevirusfile.exe 및 malware.exe는 찾지 않습니다. 그러나 정확한 문자열을 검색합니다. 즉, **"malware virus"**를 검색하는 경우 **"virus"** 또는 **"virus_malware"**를 찾지 않습니다.
+
+>**같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다. 
 
 -   액세스 수준 – 공유 액세스 수준(공개, 외부, 내부 또는 전용)입니다.  외부 파일에 대한 자세한 내용은 [일반 설정, 포털 설정](getting-started-with-cloud-app-security.md)을 참조하세요. 내부는 [일반 설정](General-setup.md)에서 설정한 내부 도메인 내의 모든 파일입니다. 외부는 설정한 내부 도메인에 속하지 않는 위치에 저장된 모든 파일입니다. 공유는 공유 수준이 개인보다 위인 파일입니다. 여기에는 내부 공유(내부 도메인 내에서 공유되는 파일), 외부 공유(내부 도메인에 나열되지 않는 도메인에서 공유되는 파일), 링크를 통한 공개(링크를 통해 모든 사용자와 공유할 수 있는 파일) 및 공개(인터넷을 검색하여 찾을 수 있는 파일)가 포함됩니다. 
 
@@ -69,12 +81,12 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 -   파일 이름 - 클라우드 앱에 정의된 이름의 파일 이름 또는 하위 문자열입니다(예: 이름에 암호가 포함된 모든 파일).   
   
--   파일 태그 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
+-   분류 레이블 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
 
 -   파일 형식 – Cloud App Security는 서비스에서 받은 MIME 형식을 모두 사용하고 파일을 검색하여 실제 파일 형식을 확인합니다. 이 검색은 데이터 검색과 관련된 파일(문서, 이미지, 프레젠테이션, 스프레드시트, 텍스트 및 zip/보관 파일)에 대해 수행됩니다. 필터는 파일/폴더 형식을 기준으로 작동합니다(예: ...인 모든 폴더 또는 ...인 모든 스프레드시트 파일).
 
 
- ![policy_file 필터 휴지통](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file 필터 휴지통](./media/policy_file-filters-trash.png "policy_file 필터 휴지통")  
 
   
 -   휴지통 – 휴지통 폴더의 파일을 제외/포함합니다. 이러한 파일도 여전히 공유될 수 있으며 위험을 발생시킵니다.  
@@ -95,7 +107,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 **적용 대상** 필터를 모든 파일, 선택한 폴더 또는 선택한 폴더를 제외한 모든 파일로 설정하여 특정 파일에 대해 실행할 정책을 설정한 다음 관련된 폴더나 파일을 선택할 수도 있습니다.  
   
-![필터에 적용](./media/apply-to-filter.png "apply to filter")  
+![필터에 적용](./media/apply-to-filter.png "필터에 적용")  
   
 ## <a name="working-with-the-file-drawer"></a>파일 서랍 사용
 
@@ -107,7 +119,10 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 - 일치 정책: 이 파일과 일치하는 정책의 목록을 보려면 일치 정책 링크를 클릭합니다.
 - 분류 레이블: 이 파일에 있는 Azure Information Protection 분류 레이블 목록을 보려면 분류 레이블을 클릭합니다. 그런 다음 이 레이블과 일치하는 모든 파일을 기준으로 필터링할 수 있습니다.    
 
-![파일 서랍](./media/file-drawer.png "File drawer")  
+파일 서랍의 필드는 추가 파일에 대한 상황별 링크 및 서랍에서 직접 수행할 수 있는 드릴다운을 제공합니다. 예를 들어 **소유자** 필드 옆으로 커서를 이동하면 필터에 추가 아이콘(![필터에 추가](./media/add-to-filter-icon.png))을 사용하여 현재 페이지의 필터에 소유자를 즉시 추가할 수 있습니다. 또한 설정 톱니 아이콘(![설정 아이콘](./media/contextual-settings-icon.png))을 사용하면 **분류 레이블**과 같은 필드 중 하나의 구성을 수정하는 데 필요한 설정 페이지가 표시되므로 바로 작업할 수 있습니다.
+
+
+![파일 서랍](./media/file-drawer.png "파일 서랍")  
   
 사용할 수 있는 거버넌스 작업 목록은 [파일 거버넌스 작업](governance-actions.md#file-governance-actions)을 참조하세요.
 
@@ -117,8 +132,3 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서"
+title: "Cloud App Security에서 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서"
 description: "이 항목에서는 자동 Cloud Discovery 보고서를 만들기 위해 로그를 업로드하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
-
-
+ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. FTP 로그는 파일이 로그 수집기로 FTP 전송을 완료한 후 Cloud App Security에 업로드되며 Syslog의 경우 로그 수집기가 수신한 로그를 20분마다 디스크에 쓴 다음 파일을 Cloud App Security에 업로드합니다.
 
@@ -44,7 +41,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
   
-### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
   
 1.  자동화된 업로드 설정 페이지로 이동합니다.  
     Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon"), **로그 수집기**를 차례로 클릭합니다.  
@@ -77,7 +74,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
   > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**하고 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
-### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
 > [!NOTE] 
 > 다음 단계에서는 Hyper-V에서의 배포에 관해 설명합니다. VM 하이퍼바이저의 배포 단계는 약간 다릅니다.  
@@ -114,7 +111,7 @@ sudo network_config
 
 이 시점에서 로그 수집기가 네트워크에 연결되어야 하며 Cloud App Security 포털에 액세스할 수 있어야 합니다.  
 
-### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>3단계 – 로그 수집의 온-프레미스 구성 
+### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>3단계 – 로그 수집의 온-프레미스 구성 
 처음으로 로그 수집기에 로그인하고 다음과 같이 포털에서 로그 수집기의 구성을 가져옵니다. 
 
 1.  포털에서 제공된 대화형 관리자 자격 증명을 사용하여 SSH를 통해 로그 수집기에 로그인합니다. (처음으로 콘솔에 로그인하는 경우 암호를 변경해야 하며 암호를 변경한 후에는 다시 로그인해야 합니다. 터미널 세션을 사용하는 경우 터미널 세션을 다시 시작해야 할 수 있습니다. )
@@ -156,8 +153,3 @@ sudo network_config
     
       
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

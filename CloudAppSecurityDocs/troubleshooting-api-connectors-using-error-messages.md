@@ -1,11 +1,11 @@
 ---
-title: "오류 메시지를 사용하여 앱 커넥터 문제 해결 | Microsoft 문서"
+title: "Cloud App Security에서 오류 메시지를 사용하여 앱 커넥터 문제 해결 | Microsoft 문서"
 description: "이 항목에서는 API 앱 커넥터 오류 메시지 목록과 각각에 대한 권장 해결 방법을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
-
-
+ms.openlocfilehash: e9fa0b4d0527c6322da14cdf16cc8509ec37c1ed
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
 
 API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 앱 커넥터 대화 상자에 앱 커넥터 오류가 표시될 수 있습니다.
@@ -46,9 +42,9 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 |IgniteException|Office 365|도메인 또는 사용자가 잘못되었습니다.|설정을 다시 설정하고 프로세스에 따라 Office 365를 Cloud App Security에 다시 연결합니다.|
 |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: 자격 증명의 유효성을 검사하는 동안 오류가 발생했습니다. AADSTS70008: 제공된 인증 코드 또는 새로 고침 토큰이 만료되었습니다. 이 사용자 및 리소스에 대해 새로운 대화형 권한 부여 요청을 보냅니다.|Office 365|도메인 또는 사용자가 잘못되었습니다.|설정을 다시 설정하고 프로세스에 따라 Office 365를 Cloud App Security에 다시 연결합니다.|
 |HttpRequestFailure: 서버에서 반환함: 400 잘못된 요청|Office 365|내부 오류|몇 분 후에 지금 테스트 링크를 다시 클릭하세요. 그래도 작동하지 않으면 프로세스에 따라 Office 365를 Cloud App Security에 다시 연결하세요.|
-|GoogleJsonResponseException: 401 권한 없음|Google Apps|액세스가 거부되었습니다. 활동 레코드를 읽을 수 있는 권한이 없습니다. Google Apps에 로그인한 사용자는 관리 사용자여야 합니다.|프로세스에 따라 관리자 계정을 사용하여 Google Apps를 Cloud App Security에 다시 연결하세요.|
-|GoogleJsonResponseException: 403 사용할 수 없음|Google Apps|Google Apps API를 실행하는 동안 문제가 발생했습니다.|Google Apps에 대해 Cloud App Security 앱 커넥터를 배포한 경우 다음을 확인하세요. Unlimited를 클릭한 경우 Google Apps 계정이 실제로 무제한인지 확인하세요. 그렇지 않으면 앱 커넥터를 다시 실행하고 무제한 계정에 대한 옵션을 선택 취소하세요. 설정하는 동안 정의한 범위가 올바른지 확인하세요. 새 배포가 아닌 경우 이 오류가 표시되면 오늘의 API 제한에 도달하여 Google Apps 이벤트가 내일 갱신될 수 있습니다.|
-|TokenResponseException: 400 잘못된 요청|Google Apps|Google Apps에 대한 연결이 완료되지 않았거나 만료되었습니다.|프로세스에 따라 Google Apps를 Cloud App Security에 다시 연결하세요.|
+|GoogleJsonResponseException: 401 권한 없음|G Suite|액세스가 거부되었습니다. 활동 레코드를 읽을 수 있는 권한이 없습니다. G Suite에 로그인한 사용자는 관리 사용자여야 합니다.|프로세스에 따라 관리자 계정을 사용하여 G Suite를 Cloud App Security에 다시 연결하세요.|
+|GoogleJsonResponseException: 403 사용할 수 없음|G Suite|G Suite API를 실행하는 동안 문제가 발생했습니다.|G Suite에 대해 Cloud App Security 앱 커넥터를 배포한 경우 다음을 확인하세요. Unlimited를 클릭한 경우 G Suite 계정이 실제로 무제한인지 확인하세요. 그렇지 않으면 앱 커넥터를 다시 실행하고 무제한 계정에 대한 옵션을 선택 취소하세요. 설정하는 동안 정의한 범위가 올바른지 확인하세요. 새 배포가 아닌 경우 이 오류가 표시되면 오늘의 API 제한에 도달하여 G Suite 이벤트가 내일 갱신될 수 있습니다.|
+|TokenResponseException: 400 잘못된 요청|G Suite|G Suite에 대한 연결이 완료되지 않았거나 만료되었습니다.|프로세스에 따라 G Suite를 Cloud App Security에 다시 연결하세요.|
 |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: 서버에서 반환함: 403 사용할 수 없음|ServiceNow|사용 권한이 올바르지 않습니다.|프로세스에 따라 관리자 계정을 사용하여 ServiceNow를 Cloud App Security에 다시 연결하세요.|
 |HttpRequestFailure: 서버에서 반환함: 401 권한 없음|Exchange Online|사용자 또는 암호가 올바르지 않습니다.|사용자 이름 및 암호가 올바른지 확인하고 프로세스에 따라 Exchange Online을 Cloud App Security에 다시 연결하세요.|
 |HttpRequestFailure: 서버에서 반환함: 404 찾을 수 없음|Exchange Online|Exchange Online에 로그인하는 데 사용하는 사용자에게 Exchange Online의 기본 사서함이 없습니다(예: Azure AD에 존재하지 않는 사용자 또는 Azure AD에 존재하지만 Exchange Online 라이선스가 없는 사용자).|프로세스에 따라 새 관리자 계정을 사용하여 Exchange Online을 Cloud App Security에 다시 연결하세요.|
@@ -62,8 +58,3 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

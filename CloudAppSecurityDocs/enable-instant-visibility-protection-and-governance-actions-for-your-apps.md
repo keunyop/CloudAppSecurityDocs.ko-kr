@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 |**사용자 작업**|✔*|✔|✔|✔ - Google Unlimited 필요|부분|Salesforce Shield에서 지원됨|✔|해당 없음|  
 |**관리 활동**|✔|✔|✔|✔|부분|✔|✔|✔|  
 |**정기적인 파일 검색**|✔|✔|해당 없음|✔|✔|✔|✔|서비스 예정|  
-|**근 실시간 파일 검색**|서비스 예정|✔|해당 없음|✔ - Google Unlimited 필요|||서비스 예정||  
+|**근 실시간 파일 검색**|✔|✔|해당 없음|✔ - Google Unlimited 필요|||서비스 예정||  
 |**제어권 공유**|✔|✔|해당 없음|✔|해당 없음||✔||  
 |**격리**|✔|✔|해당 없음|서비스 예정|||서비스 예정||  
 |**앱 사용 권한 보기**|✔|공급자가 지원하지 않음|해당 없음|✔||✔|공급자가 지원하지 않음||  
 |**앱 사용 권한 취소**|✔||해당 없음|✔||✔|해당 없음||  
   
-\* Office 365 앱 커넥터에는 Exchange Online에 대한 관리자 활동이 포함되어 있습니다. Exchange Online에 대한 사용자 활동을 추가하려면 Exchange Online 커넥터를 별도로 배포해야 합니다.  
   
 ## <a name="prerequisites"></a>필수 구성 요소  
 일부 앱의 경우 Cloud App Security에서 로그를 수집할 수 있게 하고 Cloud App Security 콘솔에 대한 액세스를 제공하기 위해 허용 목록에 다음 IP 주소를 추가해야 할 수 있습니다.  
@@ -131,6 +130,6 @@ Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microso
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

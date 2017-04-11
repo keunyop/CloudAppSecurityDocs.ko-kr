@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 문제 해결 | Microsoft 문서"
+title: "Cloud App Security에서 Cloud Discovery 오류 문제 해결 | Microsoft 문서"
 description: "이 항목에서는 Cloud Discovery에서 자주 발생하는 오류 목록 및 각각에 대한 권장 해결 방법을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 2d0b2cebdfa15cccc5888660da498446d620b64f
-
-
+ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="troubleshooting-cloud-discovery"></a>Cloud Discovery 문제 해결
 ## <a name="log-parsing-errors"></a>로그 구문 분석 오류
 
@@ -48,8 +45,3 @@ ms.openlocfilehash: 2d0b2cebdfa15cccc5888660da498446d620b64f
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "조사 | Microsoft 문서"
+title: "Cloud App Security를 사용하여 클라우드 앱 위험 및 의심스러운 활동 조사 | Microsoft 문서"
 description: "이 항목에서는 Cloud App Security를 사용하여 경고, 문제 및 의심스러운 활동을 조사하는 프로세스에 대해 간략하게 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="investigate"></a>조사
-클라우드 환경에서 Cloud App Security를 실행한 후 클라우드 환경에서 발생하는 사항을 자세히 파악하기 위해 Cloud App Security의 도구의 사용 방법을 알아보고 조사하는 단계가 필요합니다. 그런 다음 특정 환경 및 사용 방법에 따라 위험으로부터 조직을 보호하기 위한 요구 사항을 식별할 수 있습니다.  
+클라우드 환경에서 Cloud App Security를 실행한 후 클라우드 환경에서 발생하는 사항을 자세히 파악하기 위해 Cloud App Security의 도구의 사용 방법을 알아보고 조사하는 단계가 필요합니다. 그런 다음 특정 환경 및 사용 방법에 따라 위험으로부터 조직을 보호하기 위한 요구 사항을 식별할 수 있습니다.
 
 이 항목에서는 조사를 수행하여 클라우드 환경을 보다 잘 이해하는 방법을 설명합니다.  
 
@@ -34,17 +31,17 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 |응용 프로그램 대시보드: 전체|위치별 응용 프로그램 사용 현황, 사용자 수당 사용량 그래프 개요|  
 |응용 프로그램 대시보드: 정보 활용|파일 형식 및 파일 공유 수준별로 세분화된 앱에 저장된 데이터 분석|  
 |응용 프로그램 대시보드: 파일|파일 드릴다운, 소유자, 공유 수준 등에 따른 필터링, 거버넌스 작업 수행(예: 격리)|  
-|응용 프로그램 대시보드: 타사 앱|Google Apps 등의 현재 배포된 타사 응용 프로그램을 드릴다운하고 정책 정의|  
+|응용 프로그램 대시보드: 타사 앱|G Suite 등의 현재 배포된 타사 앱을 드릴다운하고 정책 정의|  
 |사용자 대시보드|그룹, 위치, 최근 활동, 관련 경고, 사용된 브라우저 등 클라우드에서 사용자 프로필의 전체 개요|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> 앱에 승인 또는 미승인 권한으로 태그 지정  
+##  <a name="sanctionapp"></a> 앱에 승인 또는 미승인 권한으로 태그 지정  
 클라우드를 이해하는 중요한 단계는 앱에 승인 또는 미승인 태그를 지정하는 것입니다. 앱에 사용 권한을 부여한 후 사용 권한이 부여되지 않은 앱을 필터링하고 동일한 유형의 사용 권한 앱으로 마이그레이션을 시작할 수 있습니다.  
 
 -   Cloud App Security 콘솔에서 앱 카탈로그 또는 검색된 앱으로 이동합니다.  
 
--   앱 목록에서 승인 태그를 지정하려는 앱이 표시되는 행에서 ![승인된 점으로 태그 지정](./media/sanction-three-dots.png "Tag as sanctioned dots") 행의 끝에 있는 세 점을 선택하고 **승인됨으로 표시**를 선택합니다.  
+-   앱 목록에서 승인 태그를 지정하려는 앱이 표시되는 행에서 ![승인됨으로 태그 지정 점](./media/sanction-three-dots.png "승인됨으로 태그 지정 점") 행의 끝에 있는 세 점을 선택하고 **승인됨으로 표시**를 선택합니다.  
 
-     ![승인됨으로 태그 지정](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![승인됨으로 태그 지정](./media/mark-as-sanctioned.png "승인됨으로 태그 지정")  
 
 
 ## <a name="use-the-investigation-tools"></a>조사 도구 사용  
@@ -82,10 +79,12 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
     -   누군가가 해고되었는데 여전히 앱에 대한 액세스 권한이 있고, 이 액세스 권한을 사용하여 정보를 훔칠 수 있나요?  
 
     -   특정 앱에 대한 사용자 권한을 해지하거나 특정 사용자가 다단계 인증을 수행하도록 요구하려고 하나요?  
+    
+    -   또한 사용자 계정 행 끝의 코그를 클릭하고 **사용자 일시 중단** 또는 **Remove user's collaborations**(사용자의 공동 작업 제거) 등 수행할 작업을 선택하여 사용자 계정으로 드릴다운할 수 있습니다. 사용자를 Azure Active Directory에서 가져온 경우 **Azure AD account settings**(Azure AD 계정 설정)를 클릭하여 그룹 관리, MFA, 사용자 로그인 세부 정보, 로그인 차단 기능 등과 같은 고급 사용자 관리 기능에 쉽게 액세스할 수도 있습니다.
 
 4.  **조사**로 이동한 다음 앱을 선택합니다. 응용 프로그램 대시보드가 열리며 정보와 활용 방법을 제공합니다. 위쪽에 있는 탭을 사용하여 다음을 확인할 수 있습니다.  
 
-     ![응용 프로그램 대시보드](./media/investigate-app.png "investigate app")  
+     ![앱 대시보드](./media/investigate-app.png "앱 조사")  
 
     -   사용자가 앱에 연결하는 데 사용 중인 장치 종류는 무엇인가요?  
 
@@ -116,7 +115,7 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
     -   사용되었지만 조직의 정책을 준수하지 않는 클라우드 앱이 있나요?  
 
 ## <a name="use-reports-to-investigate-risk"></a>보고서를 사용하여 위험 조사  
-클라우드 환경에 대한 제어 권한을 얻으려는 경우 찾으려는 사항에 따라 특정 가정을 합니다. 즉, 클라우드에 대해 아직 잘 모릅니다. 이러한 가정에 따라 정책을 만듭니다.
+클라우드 환경에 대한 제어 권한을 얻으려는 경우 찾으려는 사항에 따라 특정 가정을 합니다. 즉, 클라우드에 대해 아직 잘 모른다고 가정합니다. 이러한 가정에 따라 정책을 만듭니다.
 
 클라우드 환경에서 Cloud App Security가 실행된 후 기본 제공 보고서(및 사용자 지정 보고서)를 사용하여 클라우드의 사용 상황을 파악합니다. 이를 기반으로 예외를 포함하도록 정책을 조정하여, 궁극적으로 정책에서 가양성이 극소수만 잡히도록 합니다.  
 
@@ -135,7 +134,7 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 5.  필터를 추가하려면 **활동 필터**에서 **+**를 선택합니다. 아래의 **IP 태그**로 스크롤한 다음 **익명** 및 **Tor**를 선택합니다.  
 
-     ![위험한 IP에 대한 정책의 예](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![위험한 IP에 대한 정책의 예](./media/example-policy-risky-ips.png "정책의 예 위험한 ip")  
 
 이제 정책이 구현되었으며 정책이 위반되었다는 경고가 표시됩니다.  
 
@@ -155,9 +154,3 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 조직의 클라우드 응용 프로그램 제어 방법을 알아보려면 [제어](control.md)를 참조하세요.   
 기술 지원을 받으려면 [Cloud App Security 보조 지원](http://support.microsoft.com/oas/default.aspx?prid=16031) 페이지를 방문하세요.  
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

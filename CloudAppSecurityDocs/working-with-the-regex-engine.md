@@ -1,11 +1,11 @@
 ---
-title: "RegEx 엔진 작업 | Microsoft 문서"
+title: "콘텐츠 검사 정책에 RegEx 엔진 사용 | Microsoft 문서"
 description: "이 항목에서는 Cloud App Security 정책에서 패턴 일치에 RegEx를 사용하는 지침을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
+ms.sourcegitcommit: 3bacec2f1e5b7bd34175ab5975f7be74792007e4
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>RegEx 엔진 작업
  
 Cloud App Security의 콘텐츠 검사 정책은 패턴 일치에 RegEx를 활용합니다. 파일 정책의 일부로 콘텐츠 검사를 적용할 수 있습니다. 정규식을 테스트하려면 다음 웹 사이트를 사용할 수 있습니다.  
@@ -67,8 +64,3 @@ Cloud App Security의 콘텐츠 검사 정책은 패턴 일치에 RegEx를 활�
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

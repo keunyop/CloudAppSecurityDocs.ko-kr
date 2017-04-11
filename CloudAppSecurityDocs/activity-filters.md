@@ -1,11 +1,11 @@
 ---
-title: "활동 | Microsoft 문서"
+title: "클라우드 앱 활동 보기 | Microsoft 문서"
 description: "이 항목에서는 활동 정책에 적용할 수 있는 활동, 필터 및 일치 매개 변수 목록을 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 4/2/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,28 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
-
-
+ms.openlocfilehash: c8f22fc1c949a265b3a53cc4a534550be9601d10
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
 # <a name="activities"></a>활동
-활동 로그를 필터링하여 특정 활동을 찾을 수 있습니다. 기본 필터는 활동 필터링을 시작하기에 좋은 도구를 제공합니다.
+Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. 
+
+> [!NOTE] 
+> Cloud App Security에 의해 모니터링되는 Office 365 활동의 전체 목록은 [Office 365 보안 및 준수 센터에서 감사 로그 검색](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)을 참조하세요.
+
+**활동 로그**를 필터링하여 특정 활동을 찾을 수 있습니다. 활동을 기준으로 정책을 만든 다음 경고를 받을 활동 및 조치를 정의할 수 있습니다. 특정 파일에 대해 수행된 활동을 검색할 수도 있습니다. 활동의 유형과 각 활동에 대해 가져오는 정보는 앱과 앱이 제공할 수 있는 데이터 종류에 따라 다릅니다. 
+
+예를 들어 다음과 같이 **활동 로그**를 사용하여 조직에서 오래된 운영 체제나 브라우저를 사용하는 사용자를 찾을 수 있습니다. **활동 로그** 페이지에서 앱을 Cloud App Security에 연결한 후 고급 필터를 사용하여 **사용자 에이전트 태그**를 선택합니다. 그런 다음 **오래된 브라우저** 또는 **오래된 운영 체제**를 선택합니다.
+
+ ![활동 오래된 브라우저 예제](media/activity-example-outdated.png)
+
+조직 외부에서 액세스하는 **기밀** 파일이 있는지를 확인하려면 **분류 레이블**을 검색하고 **기밀** 레이블을 선택하도록 **활동 개체** 필터를 설정합니다. **범주**를 검색하고 사무실 IP 주소를 제외하도록 **IP 주소** 필터를 설정합니다. IP 범주는 **설정** 메뉴에서 구성할 수 있습니다. 정의한 필터를 기반으로 활동 정책을 만들고 자동으로 사용자에게 알리려면 **New policy from search**(검색을 통한 새 정책)를 클릭할 수 있습니다.
+
+ ![활동 기밀 파일 외부 예제](media/activity-example-ip.png)
+
+ 
+기본 필터는 활동 필터링을 시작하기에 좋은 도구를 제공합니다.
 
  ![기본 활동 로그 필터](media/activity-log-filter-basic.png)
 
@@ -31,11 +45,13 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 ## <a name="activity-filters"></a>활동 필터
 다음은 적용할 수 있는 활동 필터 목록입니다. 대부분의 필터는 매우 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
   
--   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 MCAS를 SIEM에 연결할 때(SIEM 에이전트 사용) 매우 유용하며, MCAS 포털 내에서 경고를 자세히 조사할 수 있습니다.  
+-   활동 ID - 해당 ID로 특정 활동만 검색합니다. 이 필터는 SIEM 에이전트 사용하여 Cloud App Security를 SIEM에 연결할 때 매우 유용하며, Cloud App Security 포털 내에서 경고를 자세히 조사할 수 있습니다.  
   
--   활동 개체 – 파일, 폴더 또는 사이트 URL, 대상 개체(파일/폴더)를 검색합니다.
+-   활동 개체 - 활동이 수행된 대상 개체를 검색합니다. 이 필터는 파일, 폴더, 사용자 또는 앱 개체에 적용됩니다. 
+    - 활동 개체 ID - 개체의 ID(파일, 폴더, 사용자 또는 앱 ID)입니다.
     - 파일, 폴더 또는 사이트 URL - 특정 문자열로 시작되는 파일, 폴더 및 URL을 선택할 수 있습니다.
     - 대상 개체(파일/폴더) - 특정 파일 또는 폴더를 선택할 수 있습니다. 
+    - 항목 - 활동 개체의 이름 또는 ID를 기준으로 검색할 수 있습니다(예: 사용자 이름, 파일, 매개 변수, 사이트). **Activity object Item**(활동 개체 항목) 필터에서 특정 항목을 **포함**하거나, 특정 항목과 **같거나**, 특정 항목으로 **시작**하는 항목을 필터링할지 여부를 선택할 수 있습니다.
     
 -   활동 유형 - 응용 프로그램 활동을 검색합니다.
 
@@ -57,9 +73,21 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
   
 -   IP 주소 - 활동을 수행한 원시 IP 주소, 범주 또는 태그입니다.  
     - 원시 IP 주소 - 설정되거나 설정되지 않은 원시 IP 주소와 같거나 같지 않은 활동, 특정 시퀀스로 시작하거나 시작하지 않는 원시 IP 주소의 활동을 검색할 수 있습니다. 
-    - IP 범주 - 활동을 수행한 IP 주소 범주입니다(예: 관리 IP 주소 범위의 모든 활동). IP 범주에 대한 자세한 내용은 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.  
-    - IP 태그 - 활동을 수행한 IP 주소의 태그입니다(예: 익명 프록시 IP 주소의 모든 활동). IP 태그에 대한 자세한 내용은 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.
-  
+    - IP 범주 - 활동을 수행한 IP 주소 범주입니다(예: 관리 IP 주소 범위의 모든 활동). 범주는 관련 IP 주소를 포함하도록 구성해야 합니다. 단, 미리 구성되며 두 개의 IP 태그(Anonymous proxy 및 Tor)를 포함하는 "Risky"(위험) 범주는 예외입니다. IP 범주를 구성하는 방법을 알아보려면 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.  
+    - IP 태그 - 활동을 수행한 IP 주소의 태그입니다(예: 익명 프록시 IP 주소의 모든 활동). Cloud App Security는 구성할 수 없는 기본 제공 IP 태그의 집합을 만듭니다. 또한 자체 IP 태그를 구성할 수 있습니다. IP 태그 구성에 대한 자세한 내용은 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.
+   기본 제공 IP 태그는 다음과 같습니다.
+    - Microsoft 앱(그중 14개)
+    - 익명 프록시
+    - 봇넷
+    - Darknet 검색 IP
+    - 맬웨어 C&C 서버
+    - 원격 연결 분석기
+    - 위성 공급자
+    - 스마트 프록시 및 액세스 프록시(고의로 제외)
+    - Tor 종료 노드
+    - Zscaler
+
+
 -   가장된 활동 - 다른 사용자의 이름으로 수행된 활동만 검색합니다.  
 
 -   위치 – 활동을 수행한 국가입니다.  
@@ -69,15 +97,19 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 -   등록된 ISP – 활동을 수행한 ISP입니다.   
 
 -  원본 - 활동이 검색된 원본을 기준으로 검색합니다. 원본은 다음 중 하나일 수 있습니다.
-  - 앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
-  - 앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
+  -    앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
+  -    앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
   
 
 -   사용자 – 활동을 수행한 사용자입니다. 도메인, 그룹, 이름 또는 조직을 기준으로 필터링할 수 있습니다. 특정 사용자 없이 활동을 필터링하려면 '설정되지 않음' 연산자를 사용할 수 있습니다.  
     -   사용자 도메인 - 특정 사용자 도메인을 검색합니다.
-    -   사용자 그룹 – Cloud App Security로 클라우드 응용 프로그램에서 자동으로 가져온 특정 사용자 그룹입니다(예: Office 365 관리자가 수행한 모든 활동).
-    -   사용자 이름 - 특정 사용자 이름을 검색합니다.
     -   사용자 조직 – 활동을 수행한 사용자의 조직 구성 단위(예: EMEA_marketing 사용자가 수행한 모든 활동).  
+    -   사용자 그룹 – 연결된 앱에서 가져올 수 있는 특정 사용자 그룹(예: Office 365 관리자)입니다.  
+    -   사용자 이름 - 특정 사용자 이름을 검색합니다. 특정 사용자 그룹의 사용자 목록을 보려면 **Activity drawer**(활동 서랍)에서 사용자 그룹의 이름을 클릭합니다. 그러면 그룹의 모든 사용자를 나열하는 [계정] 페이지로 이동됩니다. 여기에서 그룹의 특정 사용자에 대한 계정 정보로 다운할 수 있습니다.
+       -  **사용자 그룹** 및 **사용자 이름** 필터를 추가로 필터링하려면 **As** 필터를 사용하여 다음 중 하나일 수 있는 사용자 역할을 선택합니다.
+            - 활동 개체만 - 선택한 사용자 또는 사용자 그룹이 해당 활동을 수행하지 않았고 활동의 개체임을 나타냅니다.
+            - 행위자만 - 사용자 또는 사용자 그룹이 활동을 수행했음을 나타냅니다.
+            - 모든 역할 - 사용자 또는 사용자 그룹이 활동을 수행한 사람 또는 활동의 개체로 활동에 참여했음을 나타냅니다.
 
 -   사용자 에이전트 – 활동을 수행한 사용자 에이전트입니다.  
   
@@ -95,9 +127,12 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 - 위치:Bing 지도에서 위치를 보려면 위치를 클릭합니다.
 - IP 주소 범주 및 태그: 이 활동에서 찾을 수 있는 IP 태그의 목록을 보려면 IP 태그를 클릭합니다. 그 후에 이 태그와 일치하는 모든 활동을 필터링할 수 있습니다.    
 
-![활동 서랍](./media/activity-drawer.png "activity drawer")  
+활동 서랍의 필드는 추가 작업에 대한 상황별 링크 및 서랍에서 직접 수행할 수 있는 드릴다운을 제공합니다. 예를 들어 IP 주소 범주 옆으로 커서를 이동하면 필터에 추가 아이콘(![필터에 추가](./media/add-to-filter-icon.png))을 사용하여 현재 페이지의 필터에 IP 주소를 즉시 추가할 수 있습니다. 또한 설정 톱니 아이콘(![설정 아이콘](./media/contextual-settings-icon.png))을 사용하면 **사용자 그룹**과 같은 필드 중 하나의 구성을 수정하는 데 필요한 설정 페이지가 표시되므로 바로 작업할 수 있습니다.
+
+
+![활동 서랍](./media/activity-drawer.png "활동 서랍")  
   
-사용할 수 있는 거버넌스 작업 목록은 [파일 일치 매개 변수](governance-actions.md#activity-match-parameters)를 참조하세요.
+사용할 수 있는 거버넌스 작업 목록은 [활동 거버넌스 작업](governance-actions.md#activity-governance-actions)을 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목  
@@ -106,8 +141,3 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO1-->
-
-

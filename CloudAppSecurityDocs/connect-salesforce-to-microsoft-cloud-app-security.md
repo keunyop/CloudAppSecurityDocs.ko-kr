@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
+ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
+ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
 
 
 ---
@@ -42,25 +42,25 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
     -   **사용자 관리**에서 **프로필** 페이지로 이동합니다.  
   
-         ![salesforce manageusers 프로필](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![salesforce manageusers 프로필](./media/salesforce-manageusers-profiles.png "salesforce manageusers 프로필")  
   
     -   Cloud App Security를 배포하는 데 사용할 프로필을 선택하고 **편집**을 클릭합니다. 이 프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
   
-         ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce edit profile")  
+         ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce 프로필 편집")  
   
     -   **API 사용** 확인란이 선택되었는지 확인합니다. 선택되지 않은 경우 사용자 계정에 추가하도록 Salesforce에 요청해야 할 수도 있습니다.  
   
-         ![salesforce api 사용](./media/salesforce-api-enabled.png "salesforce api enabled")  
+         ![salesforce api 사용](./media/salesforce-api-enabled.png "salesforce api 사용")  
   
 3.  조직에서 **Salesforce CRM 콘텐츠**가 사용으로 설정된 경우 현재 관리자 계정에서도 사용으로 설정되었는지 확인합니다.  
   
     1.  Salesforce 설정 페이지로 이동합니다.  
   
-         ![salesforce 설정](./media/salesforce-setup.png "salesforce setup")  
+         ![salesforce 설정](./media/salesforce-setup.png "salesforce 설정")  
   
     2.  측면 메뉴에서 **사용자 관리**를 선택하고 **사용자**를 클릭합니다.  
   
-         ![salesforce 메뉴 사용자](./media/salesforce-menu-users.png "salesforce menu users")  
+         ![salesforce 메뉴 사용자](./media/salesforce-menu-users.png "salesforce 메뉴 사용자")  
   
     3.  현재 관리 사용자를 전용 Cloud App Security 사용자로 선택합니다.  
   
@@ -68,7 +68,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
          선택되지 않은 경우 **편집**을 클릭하고 확인란을 선택합니다.  
   
-         ![salesforce crm 콘텐츠 사용자](./media/salesforce-crm-content-user.png "salesforce crm content user")  
+         ![salesforce crm 콘텐츠 사용자](./media/salesforce-crm-content-user.png "salesforce crm 콘텐츠 사용자")  
   
     5.  **Save**을 클릭합니다.  
   
@@ -76,13 +76,13 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
 5.  **앱 커넥터** 페이지에서 더하기 단추, **Salesforce**를 차례로 클릭합니다.  
   
-     ![salesforce 연결](./media/connect-salesforce.png "connect salesforce")  
+     ![salesforce 연결](./media/connect-salesforce.png "salesforce에 연결")  
   
 6.  Salesforce 설정 페이지의 API 탭에서 설치하려는 인스턴스에 따라 **이 링크를 따름**을 클릭합니다.  
   
 7.  Salesforce 로그온 페이지가 열립니다. Cloud App Security에서 팀의 Salesforce 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
   
-     ![salesforce 로그온](./media/salesforce-logon.png "salesforce logon")  
+     ![salesforce 로그온](./media/salesforce-logon.png "salesforce 로그온")  
   
 8.  Salesforce에서 팀 정보 및 활동 로그에 대한 Cloud App Security의 액세스와 팀 멤버로서의 작업 수행을 허용할지 여부를 묻는 메시지를 표시합니다. 계속하려면 **허용**을 클릭합니다.  
   
@@ -95,7 +95,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
      테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **완료**를 클릭합니다.  
   
   
-SalesForce를 연결한 후 SalesForce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다.
+Salesforce를 연결한 후 Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다.
   
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ SalesForce를 연결한 후 SalesForce EventMonitoring 라이선스에 따라 �
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

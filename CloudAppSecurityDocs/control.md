@@ -1,11 +1,11 @@
 ---
-title: "제어 | Microsoft 문서"
+title: "거버넌스 작업을 사용하여 클라우드 앱 사용을 제어하는 방법 | Microsoft 문서"
 description: "이 문서에서는 Cloud App Security에서 조직의 클라우드 앱 사용을 제어하기 위해 수행할 수 있는 거버넌스 작업에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,44 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
-
 # <a name="control"></a>컨트롤
 클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후 거버넌스 작업을 사용하여 조직의 보호를 도울 수 있습니다.  
+
+## <a name="use-policies-to-assess-risk"></a>정책을 사용하여 위험 평가  
+미해결 경고를 살펴본 후 정책 센터로 이동하여 경고를 트리거하지 않은 정책 위반을 검토합니다.  
+
+-   Cloud App Security 대시보드에서 **제어**를 클릭한 다음 **정책**을 클릭합니다.  
+
+-   특정 정책을 선택하여 경고를 트리거하지 않은 정책 일치 항목의 **지금 위반 중** 목록을 확인합니다.  
+
+-   한 번에 하나씩 위반을 클릭하고 각각에 대해 수행할 작업을 결정합니다. 거버넌스 작업에 대한 자세한 내용을 보려면 다음 그림을 참조하세요.  
+
+     예를 들어 정책이 규정 준수 위반을 찾도록 설정된 상태에서 누군가가 신용 카드 번호를 OneDrive의 파일에 저장할 경우 정책에 일치 항목이 포함됩니다.  
+
+     ![PCI 일치](./media/pci-matches.png "pci 일치")  
+
+-   일치 항목을 클릭하여 정책을 위반한 실제 파일을 확인합니다.  
+
+     ![PCI 콘텐츠 일치](./media/pci-content-matches.png "pci 콘텐츠 일치")  
+
+     파일 자체를 선택하여 파일에 대한 정보를 가져올 수 있습니다.  
+
+     **공동 작업자**를 클릭하여 이 파일에 대한 액세스 권한이 있는 사용자를 볼 수 있습니다.  
+
+     **일치 항목**을 클릭하면 실제 신용 카드 번호를 볼 수 있습니다.  
+
+     ![콘텐츠 일치 ccn](./media/content-matches-ccn.png "콘텐츠 일치 ccn")  
 
 ## <a name="apply-governance-actions"></a>거버넌스 작업 적용  
 정책 내, 내부 경고 및 **파일** 로그에서 거버넌스 작업을 적용할 수 있습니다.  
 
-언제든지 **설정** 코그 ![설정 아이콘](./media/settings-icon.png "settings icon")로 이동하고 **거버넌스 로그**를 선택하여 이전에 적용된 모든 거버넌스 작업의 상태를 검토하고 확인할 수 있습니다.  
+언제든지 **설정** 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")로 이동하고 **거버넌스 로그**를 선택하여 이전에 적용된 모든 거버넌스 작업의 상태를 검토하고 확인할 수 있습니다.  
 
-실패한 거버넌스 작업의 경우 **재시도** 아이콘 ![재시도 아이콘](./media/retry-icon.png "retry icon")을 클릭하여 다시 적용합니다.  
+실패한 거버넌스 작업의 경우 **재시도** 아이콘 ![재시도 아이콘](./media/retry-icon.png "재시도 아이콘")을 선택하여 다시 적용합니다.  
 
 정책, 위반 및 앱 유형에 따라 다양한 거버넌스 작업을 사용할 수 있습니다.  
 
@@ -42,7 +64,7 @@ ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
 >   
 >  지침을 보려면 **필터** 섹션에서 **결과 편집 및 미리 보기** 단추를 사용할 수 있습니다.  
 
-![파일 정책 편집 및 결과 미리 보기](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![파일 정책 결과 편집 및 미리 보기](./media/file-policy-edit-and-preview-results.png "파일 정책 결과 편집 및 미리 보기")  
 
 ## <a name="migration"></a>마이그레이션  
 Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알려주고 새로운 앱 채택을 모니터링할 도구를 제공하여 마이그레이션을 롤아웃할 수 있도록 도와줍니다. 또한 모든 사용자가 이미 사용 중인 앱을 확인할 수 있는 도구를 제공하여 조직에서 제공해야 하는 앱 유형을 파악할 수 있게 합니다.  
@@ -56,7 +78,7 @@ Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알�
 
     1.  **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
 
-    2.  화살표![화살표 아이콘](./media/arrow-icon.png "arrow icon")를 선택하고 **내보내기**를 선택합니다.  
+    2.  화살표 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")를 선택하고 **내보내기**를 선택합니다.  
 
 ### <a name="find-more-secure-alternatives"></a>더 안전한 대안 찾기  
 Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 수 있는 위험한 응용 프로그램 대신 조직에 적합한 대안을 찾을 수 있습니다.  
@@ -67,7 +89,7 @@ Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 �
 
 2.   **범주**에서 **생산성**을 기준으로 앱을 필터링합니다.  
 
-3.   사용 중인 각 응용 프로그램의 **점수**를 검사하여 안전한지 확인하고, 안전하지 않을 경우 이유를 확인합니다.  
+3.   사용 중인 각 앱의 **점수**를 검사하여 안전한지 확인하고, 안전하지 않을 경우 이유를 확인합니다.  
 
 4.   전체 조직에 대한 엔터프라이즈 라이선스를 구입하기로 한 경우에는 **사용자** 열도 확인할 수 있습니다. 그리고 사용자들 사이에서 이미 인기 있는 응용 프로그램, 신뢰할 수 있는지 여부, 보안 기능을 확인한 후에 결정을 내릴 수 있습니다.  
 
@@ -75,9 +97,3 @@ Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 �
 정책을 사용 및 설정하여 클라우드 응용 프로그램의 사용을 제어하는 방법을 알아보려면 [정책을 사용하여 클라우드 응용 프로그램 제어](control-cloud-apps-with-policies.md)를 참조하세요.   
 기술 지원을 받으려면 [Cloud App Security 보조 지원](http://support.microsoft.com/oas/default.aspx?prid=16031) 페이지를 방문하세요.   
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
