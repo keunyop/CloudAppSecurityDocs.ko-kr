@@ -1,11 +1,11 @@
 ---
-title: "정책을 사용하여 클라우드 앱 제어 | Microsoft 문서"
+title: "Cloud App Security에서 정책을 만들어 클라우드 앱 사용 제어 | Microsoft 문서"
 description: "이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
-ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
-
-
+ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
 
@@ -26,7 +24,7 @@ ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
 예를 들어 격리하려는 데이터 위반 위협이 있는 경우 조직에서 위험한 클라우드 앱을 사용할 수 없도록 차단하는 대신 다른 유형의 정책을 적용해야 합니다.  
   
 ## <a name="policy-types"></a>정책 유형  
-**정책** 페이지를 볼 때 다양한 정책 및 템플릿을 유형과 아이콘으로 구분하여 사용 가능한 정책을 확인할 수 있습니다. 사용 가능한 정책은 데이터 원본과 조직의 Cloud App Security에서 사용하도록 설정한 항목에 따라 다릅니다. 예를 들어, Cloud Discovery 로그를 업로드한 경우에는 Cloud Discoery와 관련된 정책이 표시됩니다.
+**정책** 페이지를 볼 때 다양한 정책 및 템플릿을 유형과 아이콘으로 구분하여 사용 가능한 정책을 확인할 수 있습니다. 사용 가능한 정책은 데이터 원본과 조직의 Cloud App Security에서 사용하도록 설정한 항목에 따라 다릅니다. 예를 들어, Cloud Discovery 로그를 업로드한 경우에는 Cloud Discovery와 관련된 정책이 표시됩니다.
 
 다음 유형의 정책을 만들 수 있습니다.  
   
@@ -115,7 +113,7 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
 2.  페이지 맨 위에 있는 필터를 사용하여 검색 결과를 의심스러운 영역으로 제한할 수 있습니다. 예를 들어 활동 로그 페이지에서 **활동**를 클릭하고 **관리자 로그온**을 선택합니다. 그런 다음 **IP 주소**에서 **범주**를 선택하고 관리자, 회사 및 VPN IP 주소와 같이 인식된 도메인에 대해 만든 IP 주소 범주에 포함하지 않을 값을 설정합니다.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![조사를 통해 파일 만들기](./media/create-file-from-investigation.png)  
   
 3.  콘솔의 오른쪽 위에서 **검색을 통한 새 정책**![](./media/new-policy-from-search-button.png)을 클릭합니다.  
   
@@ -142,15 +140,22 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
 >   
 >  [Cloud Discovery 정책](cloud-discovery-policies.md)  
   
+## <a name="enable-and-disable-policies"></a>정책 사용 및 사용 안 함
 
+정책을 만든 후 정책을 사용 또는 사용하지 않도록 설정할 수 있습니다. 이를 통해 정책을 만든 후 중지하기 위해 정책을 삭제하지 않아도 됩니다. 대신, 어떤 이유로 정책을 중지하려는 경우 다시 사용하도록 설정할 때까지 사용하지 않도록 설정하면 됩니다.
+
+- 정책을 사용하려면 **정책** 페이지에서 사용할 정책 행의 끝에 있는 세 개의 점을 클릭하고 **사용**을 선택합니다. 
+
+![정책 사용](./media/enable-policy.png)
+
+- 정책을 사용하지 않도록 설정하려면 **정책** 페이지에서 사용하지 않을 정책 행의 끝에 있는 세 개의 점을 클릭하고 **사용 안 함**을 선택합니다.
+
+![정책 사용 안 함](./media/disable-policy.png)
+
+새 정책을 만들면 기본적으로 사용하도록 설정됩니다.
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 정책 | Microsoft 문서"
+title: "Cloud App Security에서 Cloud Discovery 앱에 대한 정책 만들기 | Microsoft 문서"
 description: "이 항목에서는 Cloud Discovery 정책 작업에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
-
-
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-policies"></a>클라우드 검색 정책
     
 ## <a name="creating-an-app-discovery-policy"></a>앱 검색 정책 만들기  
@@ -29,7 +26,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
   
 2.  **정책 만들기**를 클릭하고 **앱 검색** 정책을 선택합니다.  
   
-     ![앱 검색 정책 메뉴](./media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![앱 검색 정책 메뉴](./media/app-discovery-policy-menu.png "앱 검색 정책 메뉴")  
   
 3.  정책에 이름과 설명을 지정합니다. 필요한 경우 템플릿을 기반으로 할 수 있습니다. 정책 템플릿에 대한 자세한 내용은 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)를 참조하세요.  
   
@@ -52,7 +49,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
 환경에서 100명이 넘는 사용자가 앱을 사용하며 서비스에서 특정 양의 데이터를 다운로드한 경우에만 검색된 특정 앱에 대해 경고를 트리거할 임계값을 맨 아래에서 설정합니다.   
 또한 수신하려는 일일 경고 제한을 설정할 수 있습니다.  
   
-![앱 검색 정책 예제](./media/app-discovery-policy-example.png "app discovery policy example")  
+![앱 검색 정책 예제](./media/app-discovery-policy-example.png "앱 검색 정책 예제")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>클라우드 검색 변칙 검색  
 Cloud App Security는 Cloud Discovery의 모든 로그에서 변칙을 검색합니다. 예를 들어 이전에 Dropbox를 사용한 적이 없는 사용자가 갑자가 Dropbox에 600GB를 업로드하거나 특정 앱에서 평소보다 많은 트랜잭션이 있는 경우입니다. 기본적으로는 변칙 검색 정책은 사용하도록 설정되어 있으므로 작동하기 위해 새 정책을 구성할 필요가 없지만 기본 정책에서 경고를 받으려는 변칙 유형을 미세 조정할 수 있습니다.  
@@ -61,7 +58,7 @@ Cloud App Security는 Cloud Discovery의 모든 로그에서 변칙을 검색합
   
 2.  **정책 만들기**를 클릭하고 **클라우드 검색 변칙 검색 정책**을 선택합니다.  
   
-     ![cloud discovery 변칙 검색 정책 메뉴](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![클라우드 검색 변칙 검색 정책 메뉴](./media/cloud-discovery-anomaly-detection-policy-menu.png "클라우드 검색 변칙 검색 정책 메뉴")  
   
 3.  정책에 이름과 설명을 지정합니다. 필요한 경우 템플릿을 기반으로 할 수 있습니다. 정책 템플릿에 대한 자세한 내용은 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)를 참조하세요.  
   
@@ -78,7 +75,7 @@ Cloud App Security는 Cloud Discovery의 모든 로그에서 변칙을 검색합
   
 9. **만들기**를 클릭합니다.  
   
-![새 검색 변칙 정책](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+![새 검색 변칙 정책](./media/new-discovery-anomaly-policy.png "새 검색 변칙 정책")  
   
 ## <a name="see-also"></a>참고 항목  
 [사용자 활동 정책](user-activity-policies.md)   
@@ -86,8 +83,3 @@ Cloud App Security는 Cloud Discovery의 모든 로그에서 변칙을 검색합
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

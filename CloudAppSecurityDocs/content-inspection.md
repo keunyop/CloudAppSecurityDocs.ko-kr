@@ -1,11 +1,11 @@
 ---
-title: "콘텐츠 검사 | Microsoft 문서"
+title: "Cloud App Security에서 콘텐츠 검사를 수행하는 방법 | Microsoft 문서"
 description: "이 문서에서는 클라우드의 데이터에 대해 DLP 콘텐츠 검사를 수행할 때 Cloud App Security에서 수행하는 프로세스에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>콘텐츠 검사
 이 문서에서는 클라우드의 데이터에 대해 DLP 콘텐츠 검사를 수행할 때 Cloud App Security에서 수행하는 프로세스에 대해 설명합니다. 
 
@@ -45,7 +42,7 @@ NRT 검색과 연속 검색의 파일 모두 검사를 위해 큐에 추가됩�
 
 - 메일 주소 
 - 신용 카드 번호 
-  - 모든 신용 카드 회사(Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  -    모든 신용 카드 회사(Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - 구분 기호 - 공백, 점 또는 대시
   - 이 검색에는 Luhn 유효성 검사도 포함됩니다.
 - SWIFT 코드
@@ -63,6 +60,15 @@ NRT 검색과 연속 검색의 파일 모두 검사를 위해 큐에 추가됩�
 - 여권 카드
 - 사회 보장 번호
 
+## <a name="supported-languages"></a>지원되는 언어
+
+Cloud App Security 콘텐츠 검사 엔진:
+-    모든 유니코드 문자 지원
+-    1, 000개가 넘는 파일 형식 포함
+-    여러 언어를 지원하며 특히, 유니코드 문자 집합을 사용하는 파일을 지원합니다. 해당 언어를 포괄할 정책을 정의해야 합니다. 예를 들어 키워드를 찾을 경우 사용하려는 언어 전체에 키워드를 포함해야 합니다.
+-    중국어 GB2312와 같이 비유니코드 인코딩을 사용하는 텍스트 기반 파일 형식에서, 유니코드 중국어 키워드에 대한 비교는 예상대로 작동하지 않습니다.
+-    타사 라이브러리를 사용하는 파일 형식의 경우 문자열과 단어의 일치가 예상대로 작동하지 않을 수 있습니다. 이는 콘텐츠 검사 시 언어와 문자 집합에 대해 Java 문자열을 반환하는 타사 라이브러리 파일을 사용하는 파일(예: 이진 파일 형식)에서 매우 흔한 일입니다.
+
 
 
 ## <a name="see-also"></a>참고 항목  
@@ -70,8 +76,3 @@ NRT 검색과 연속 검색의 파일 모두 검사를 위해 큐에 추가됩�
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

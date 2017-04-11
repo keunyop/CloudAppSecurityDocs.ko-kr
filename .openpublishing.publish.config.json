@@ -7,7 +7,7 @@
       "docset_name": "CloudAppSecurityDocs",
       "build_source_folder": "CloudAppSecurityDocs",
       "build_output_subfolder": "cloud-app-security",
-      "locale": "ko-kr",
+      "locale": "ko-KR",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -25,18 +25,21 @@
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CloudAppSecurityDocs.ko-kr",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ko-kr",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ko-KR",
       "branch": "master",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/Microsoft/CloudAppSecurityDocs-pr",
-      "branch": "live"
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "need_generate_pdf_url_template": false
