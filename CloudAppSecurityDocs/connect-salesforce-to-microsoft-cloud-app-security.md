@@ -1,11 +1,11 @@
 ---
-title: "Salesforce 연결 | Microsoft 문서"
+title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 Salesforce 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Salesforce를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Salesforce 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Salesforce 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
@@ -95,16 +91,23 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
      테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **완료**를 클릭합니다.  
   
   
-Salesforce를 연결한 후 Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다.
+Salesforce를 연결한 후 Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다. Cloud App Security API는 Salesforce에서 사용 가능한 API와 직접 통신합니다. Salesforce는 수신할 수 있는 API 호출 수를 제한하므로 Cloud App Security는 제한을 고려하고 준수합니다. Salesforce API는 사용 가능하고 남은 전체 API 호출을 비롯하여 API 카운터에 대한 필드를 사용하여 각 응답을 전송합니다. Cloud App Security는 이를 백분율로 계산하고 항상 사용 가능한 API 호출의 10%를 남깁니다. 
+
+> [!NOTE]
+> Cloud App Security 제한은 Salesforce를 통해 API 호출을 하는 다른 응용 프로그램의 호출이 아니라, Salesforce를 통한 고유한 API 호출에 대해서만 계산됩니다.
+> 제한으로 인해 API 호출을 제한하면 Cloud App Security에 수집되는 데이터 속도는 느려질 수 있지만 대개 하룻밤 동안 처리됩니다.
+
+
+Salesforce 이벤트는 Cloud App Security에서 다음과 같이 처리합니다. 
   
+- 15분마다 로그인 이벤트
+- 15분마다 감사 추적 설정
+- 이벤트 로그 모니터링은 Salesforce에서 24시간마다 내보냄(12:00 UTC) 
+
+
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

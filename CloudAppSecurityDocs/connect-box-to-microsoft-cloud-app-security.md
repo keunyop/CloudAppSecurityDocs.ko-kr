@@ -1,11 +1,11 @@
 ---
-title: "Box 연결 | Microsoft 문서"
+title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 Box 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Box 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
@@ -32,15 +29,15 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
     -   Box 관리 콘솔에서 설정 아이콘, **비즈니스 설정**을 차례로 클릭합니다.  
   
-         ![box 비즈니스 설정](./media/box-business-settings.png "box business settings")  
+         ![box 비즈니스 설정](./media/box-business-settings.png "box 비즈니스 설정")  
   
     -   **앱** 탭을 클릭합니다.  
   
-         ![box 앱](./media/box-apps.png "box apps")  
+         ![box 앱](./media/box-apps.png "box 앱")  
   
     -   **Unpublished Applications**(게시되지 않은 응용 프로그램)이 선택된 경우 **Except for**(제외) 텍스트 상자에서 Cloud App Security 앱 일련 번호 `nduj1o3yavu30dii7e03c3n7p49cj2qh`를 추가하고 **저장**을 클릭합니다.  
   
-         ![box 제외 설정](./media/box-settings-except-for.png "box settings except for")  
+         ![box 제외 설정](./media/box-settings-except-for.png "box 제외 설정")  
   
     > [!NOTE]  
     >  기존 Adallom 고객이고 콘솔 URL이 Cloud App Security가 아닌 Adallom에 연결된 경우 앱 일련 번호 bwahmilhdlpbqy2ongkl119o3lrkoshc를 사용합니다.  
@@ -49,7 +46,7 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
 3.  **앱 커넥터** 페이지에서 더하기 기호 단추, **Box**를 차례로 클릭합니다.  
   
-     ![box 연결](./media/connect-box.png "connect box")  
+     ![box 연결](./media/connect-box.png "box 연결")  
   
 4.  **Box 설정** 팝업에서 **이 링크를 따름**을 클릭합니다.  
   
@@ -75,8 +72,3 @@ Box를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: Deploy Microsoft Docs
+title: "클라우드 앱 사용 통찰력 및 제어를 위해 Cloud App Security 배포 | Microsoft 문서"
 description: "이 항목에서는 Cloud App Security 시작 및 실행에 대한 프로세스를 간략하게 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Cloud App Security 배포
-Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하도록 도우면서도 회사 리소스의 제어를 유지할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
+Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
 
 조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)의 라이선싱 리소스를 참조하세요.  
 
@@ -47,9 +44,9 @@ Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하도
 
 Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동합니다.  
   
-또는 관리 센터 아이콘 ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 admin centers icon"), **Cloud App Security**를 차례로 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수 있습니다.  
+또는 관리 센터 아이콘 ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘"), **Cloud App Security**를 차례로 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수 있습니다.  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![O365에서 액세스](./media/access-from-o365.png "O365에서 액세스")  
   
 
 
@@ -164,9 +161,3 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 정책 설정 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)    
 기술 지원을 받으려면 [Cloud App Security 보조 지원](http://support.microsoft.com/oas/default.aspx?prid=16031) 페이지를 방문하세요.   
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.   
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

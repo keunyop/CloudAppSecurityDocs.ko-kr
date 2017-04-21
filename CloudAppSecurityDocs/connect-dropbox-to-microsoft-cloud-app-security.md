@@ -1,11 +1,11 @@
 ---
-title: "Dropbox 연결 | Microsoft 문서"
+title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 Dropbox 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Dropbox 앱을 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
-
-
+ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Dropbox 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 Dropbox 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
  
@@ -32,9 +29,9 @@ Dropbox를 사용하면 로그인하지 않고 공유 링크에서 파일에 액
   
 2.  **앱 커넥터** 페이지에서 더하기 단추, **Dropbox**를 차례로 클릭합니다.  
   
-     ![dropbox 연결](./media/connect-dropbox.png "connect dropbox")  
+     ![dropbox 연결](./media/connect-dropbox.png "dropbox 연결")  
   
-3.  팝업에서 관리자 계정 전자 메일 주소를 입력합니다.  
+3.  팝업에서 관리자 계정 메일 주소를 입력합니다.  
   
 4.  **링크 생성**을 클릭합니다.  
   
@@ -61,8 +58,3 @@ Dropbox를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니�
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
