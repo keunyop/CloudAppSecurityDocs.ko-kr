@@ -1,11 +1,11 @@
 ---
-title: "앱 연결 | Microsoft 문서"
+title: "앱을 연결하여 Cloud App Security의 표시 유형 및 제어 향상 | Microsoft 문서"
 description: "이 항목에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
-ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
-
-
+ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
   
@@ -67,7 +64,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
   
 다음 표에서는 앱 커넥터에서 지원되는 기능을 클라우드 앱별로 보여 줍니다.  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**계정 나열**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**그룹**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -89,9 +86,26 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
   
 -   로그:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
+  
   
 -   콘솔:  
   
@@ -107,7 +121,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 |앱|라이선스 유형|사용자|  
 |---------|------------------|----------|  
 |상자|Enterprise|관리자로 Box에 연결하는 것이 좋습니다. 공동 관리자로 연결하면 일부 데이터만 표시됩니다. 공동 관리자로 연결하는 경우 모든 사용 권한을 선택해야 합니다.|  
-|Google Apps|Google Apps Unlimited 선호<br /><br /> Google Apps Enterprise(최소)|슈퍼 관리자|  
+|G Suite|G Suite Unlimited(기본)<br /><br /> G Suite Enterprise(최소)|슈퍼 관리자|  
 |Office 365||전역 관리자|  
 |AWS||새로 만든 사용자|  
 |Dropbox|Business/Enterprise|관리자|  
@@ -127,9 +141,5 @@ Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microso
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
+
    
-
-
-<!--HONumber=Jan17_HO2-->
-
-

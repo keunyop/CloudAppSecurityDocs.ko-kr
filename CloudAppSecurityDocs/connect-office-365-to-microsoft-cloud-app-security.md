@@ -1,11 +1,11 @@
 ---
-title: "Office 365 연결 | Microsoft 문서"
+title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 Office 365 연결 | Microsoft 문서"
 description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
-
-
+ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
@@ -56,8 +53,3 @@ ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
