@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 배포 | Microsoft 문서"
+title: "Cloud App Security와 함께 Cloud Discovery 배포 | Microsoft 문서"
 description: "이 항목에서는 Cloud Discovery 작업을 시작하기 위한 설정 절차에 대해 설명합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 98b16c96c31039248bdfbe57f980b3ae6a26a7de
-ms.openlocfilehash: 3c722ac79fa124193655ca053c713f3d6edc7017
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
 Cloud Discovery는 50개 이상의 특성을 기준으로 순위 및 점수가 매겨진 13,000개를 초과하는 클라우드 앱에 대한 Cloud App Security의 클라우드 앱 카탈로그에 대해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT 및 위험 섀도 IT를 지속적으로 파악합니다.
 **클라우드 앱 카탈로그**는 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 앱의 위험을 평가합니다. 클라우드 앱 카탈로그에서 네 개의 보완 프로세스를 실행하여 다음 항목에 대한 최신 정보를 제공합니다.
-1.  클라우드 앱에서 직접 자동화된 데이터 추출(SOC 2 준수와 같은 특성)
-2.  Cloud App Security의 알고리즘에 따라 데이터에 대한 자동화된 고급 데이터 추출(HTTP 보안 헤더와 같은 특성)
-3.  Cloud App Security 클라우드 분석가 팀에 의한 연속 분석(미사용 암호화 같은 특성)
-4.  클라우드 앱 카탈로그의 변경 내용에 대한 고객 제출 요청에 따른 고객 기반 수정 요청. 모든 요청은 클라우드 분석가 팀에서 검토하고 해당 결과에 따라 업데이트됩니다.
+1.    클라우드 앱에서 직접 자동화된 데이터 추출(SOC 2 준수와 같은 특성)
+2.    Cloud App Security의 알고리즘에 따라 데이터에 대한 자동화된 고급 데이터 추출(HTTP 보안 헤더와 같은 특성)
+3.    Cloud App Security 클라우드 분석가 팀에 의한 연속 분석(미사용 암호화 같은 특성)
+4.    클라우드 앱 카탈로그의 변경 내용에 대한 고객 제출 요청에 따른 고객 기반 수정 요청. 모든 요청은 클라우드 분석가 팀에서 검토하고 해당 결과에 따라 업데이트됩니다.
   
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 
@@ -84,7 +81,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Cisco ScanSafe
 - Cisco Merkai – URL 로그
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway(W3C)
@@ -121,7 +118,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 |Sophos|**예**|**예**|**예**|**예**|**예**|아니요|
 |Websense - Investigative detail report(CSV)|**예**|아니요|아니요|**예**|아니요|아니요|
 |Websense - Internet activity log(CEF)|**예**|**예**|**예**|**예**|**예**|**예**|
-|Zscaler|**예**|아니요|**예**|아니요|**예**|아니요|
+|Zscaler|**예**|아니요|**예**|아니요|**예**|**예**|
 
 \* Cloud Discovery는 IPv6을 지원합니다.
 
@@ -132,10 +129,3 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Cloud Discovery 데이터 작업](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Jan17_HO2-->
-
-
