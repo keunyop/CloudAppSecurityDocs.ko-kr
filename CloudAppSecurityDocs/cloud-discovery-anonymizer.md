@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72228b607c3006101f9f427b38de63b090cdb9a0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
+ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
 translationtype: HT
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
@@ -29,7 +29,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
 데이터 익명화 작동 방식:
 
-1.    데이터 익명화를 적용하는 방법에는 세 가지가 있습니다. 
+1.  데이터 익명화를 적용하는 방법에는 세 가지가 있습니다. 
     
     - [새 스냅숏 보고서](create-snapshot-cloud-discovery-reports.md)를 만들고 **Anonymize private information**(개인 정보 익명화)을 선택하여 특정 로그 파일의 데이터를 익명화하도록 설정할 수 있습니다.
  ![스냅숏 데이터 익명화](./media/anonymize-log.png)
@@ -48,20 +48,20 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
   ![익명화](./media/anonymizer1.png)
   
 
-2.    익명화를 선택하면 Cloud App Security는 트래픽 로그를 구문 분석하고 특정 데이터 특성을 추출합니다.
-3.    Cloud App Security는 사용자 이름을 암호화된 사용자 이름으로 교체합니다.
-4.    그런 다음 클라우드 사용량 데이터를 분석하고 익명화된 데이터를 기반으로 Cloud Discovery 보고서를 생성합니다.
+2.  익명화를 선택하면 Cloud App Security는 트래픽 로그를 구문 분석하고 특정 데이터 특성을 추출합니다.
+3.  Cloud App Security는 사용자 이름을 암호화된 사용자 이름으로 교체합니다.
+4.  그런 다음 클라우드 사용량 데이터를 분석하고 익명화된 데이터를 기반으로 Cloud Discovery 보고서를 생성합니다.
  ![Cloud Discovery 대시보드 익명화](./media/anonymize-dashboard.png)
  
 
-5.    비정상적인 사용량 경고 조사와 같은 특정 조사의 경우 포털에서 특정 사용자 이름을 확인하고 비즈니스 근거를 제공할 수 있습니다. 이 페이지는 알려진 사용자 이름의 암호화된 사용자 이름을 조회하는 데에도 사용할 수 있습니다. 
+5.  비정상적인 사용량 경고 조사와 같은 특정 조사의 경우 포털에서 특정 사용자 이름을 확인하고 비즈니스 근거를 제공할 수 있습니다. 이 페이지는 알려진 사용자 이름의 암호화된 사용자 이름을 조회하는 데에도 사용할 수 있습니다. 
 
     1. Settings(설정) 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택합니다.
     2. **Anonymize and resolve usernames**(사용자 이름 익명화 및 확인) 아래의 **Anonymization**(익명화) 탭에서 확인을 수행하는 근거를 입력합니다.
     3. **Enter username to resolve**(확인할 사용자 이름 입력) 아래에서 **From anonymized**(익명화된 항목에서)를 선택하고 익명화된 사용자 이름을 입력하거나, **To anonymized**(익명화된 항목으로)를 선택하고 확인할 원래 사용자 이름을 입력합니다. **Resolve**(확인)를 클릭합니다. 
 ![익명화](./media/anonymizer.png)
 
-6.    포털의 **거버넌스 로그**에서 작업 감사가 수행됩니다. 
+6.  포털의 **거버넌스 로그**에서 작업 감사가 수행됩니다. 
 ![익명화](./media/anonymize-gov-log.png)
 
 
