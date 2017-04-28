@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. FTP 로그는 파일이 로그 수집기로 FTP 전송을 완료한 후 Cloud App Security에 업로드되며 Syslog의 경우 로그 수집기가 수신한 로그를 20분마다 디스크에 쓴 다음 파일을 Cloud App Security에 업로드합니다.
 
 자동 로그 파일 수집을 설정하기 전에 로그가 예상 로그 유형과 일치하는지 확인하여 Cloud App Security에서 특정 파일을 구문 분석할 수 있도록 합니다. 
+
+>[!NOTE]
+>Cloud App Security는 로그가 원래 형식으로 전달된다고 가정하고 SIEM 서버에서 로그 수집기로 로그 전달을 지원합니다. 그러나 로그 수집기를 방화벽 및/또는 프록시와 직접 통합하는 것이 좋습니다.
+
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 - 하이퍼바이저: HyperV 또는 VMware
@@ -74,7 +78,7 @@ translationtype: HT
   > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**하고 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
 > [!NOTE] 
 > 다음 단계에서는 Hyper-V에서의 배포에 관해 설명합니다. VM 하이퍼바이저의 배포 단계는 약간 다릅니다.  

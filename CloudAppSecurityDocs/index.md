@@ -1,13 +1,14 @@
 ---
 layout: LandingPage
 description: "Cloud App Security 사용 방법을 알아봅니다."
-ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
-ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
+ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
 translationtype: HT
 ---
 # <a name="cloud-app-security-documentation"></a>Cloud App Security 설명서
 
-보안 메일, 문서 및 회사 외부에서 공유하는 중요한 데이터를 관리하고 보호하세요. 간단한 분류에서 포함된 레이블 및 사용 권한까지, Azure Information Protection으로 저장 위치나 공유하는 사람에 상관없이 언제나 데이터 보호를 향상하세요.
+Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공하세요.
+여러분이 클라우드에 있든지 없든지 간에, 직원들은 있습니다. 심층적 가시성, 포괄적인 컨트롤 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 승인되거나 승인되지 않은 클라우드 응용 프로그램에 온-프레미스 시스템의 보안을 가져오세요.
 
 <ul class="panelContent cardsFTitle">
     <li>

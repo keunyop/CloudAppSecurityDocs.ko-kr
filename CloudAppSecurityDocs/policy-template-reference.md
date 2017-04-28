@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>정책 템플릿
@@ -36,7 +36,7 @@ translationtype: HT
 |위험한 새 앱|위험 점수가 6 미만으로 검색되고 50명이 넘는 사용자의 총 일별 사용량이 50MB 이상인 새 앱이 검색될 때 경고합니다.|
 |공동 작업 앱 규정 준수 확인|SOC2 및 SSAE 16 규정을 준수하고 있지 않고, 50명이 넘는 사용자의 총 일별 사용량이 50MB 이상인 새 공동 작업 앱이 검색될 때 경고합니다.|
 |위험한 IP 주소에서 로그온|사용자가 위험한 IP 주소에서 권한 있는 앱에 로그온하려고 할 경우 발생하는 경고입니다. 기본적으로 위험한 IP 주소 범주에는 익명 프록시, TOR 또는 Botnet의 IP 주소 태그가 있는 주소가 포함되어 있습니다. IP 주소 범위 설정 페이지에서 이 범주에 더 많은 IP 주소를 추가할 수 있습니다.|
-|비관리 IP 주소에서 관리 활동|관리자 사용자가 특정 IP 주소 범위 범주에 포함되지 않는 IP 주소에서 관리 작업을 수행할 때 경고합니다. 설정 페이지로 이동하고 IP 주소 범위를 선택하여 위험한 IP 주소를 추가로 설정할 수 있습니다.|
+|회사 외 IP 주소에서 관리 활동|관리 사용자가 회사 IP 주소 범위 범주에 포함되지 않는 IP 주소에서 관리 작업을 수행할 때 경고합니다. 먼저 [설정] 페이지로 이동하고 **IP 주소 범위**를 설정하여 회사 IP 주소를 구성해야 합니다.|
 |분류되지 않은 IP 주소로부터의 사용자 로그온|사용자가 특정 IP 주소 범위 범주에 포함되지 않는 IP 주소에서 로그온할 때 경고합니다. 설정 페이지로 이동하고 IP 주소 범위를 선택하여 IP 주소를 범주화할 수 있습니다.|
 |클라우드(기본 제공 DLP 엔진)에서 PII를 포함하는 파일 검색됨|권한 있는 클라우드 앱의 기본 제공 DLP(데이터 손실 방지) 엔진에서 PII(개인 식별이 가능한 정보)를 포함하는 파일이 검색될 때 경고합니다.|
 |새 리소스 인사 관리 앱|새로 검색된 리소스 인사 관리 앱에서 50명이 넘는 사용자의 총 일별 사용량이 50MB 이상일 때 경고합니다.|
