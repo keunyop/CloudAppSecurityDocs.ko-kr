@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>파일 제어 및 보호  
@@ -27,10 +27,10 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 이 사용 사례는 Office 365, G Suite, Box, Dropbox 및 Salesforce에 적용됩니다.
 
 ### <a name="the-threat"></a>위협
-직원이 조직 외부에서 중요한 데이터가 포함된 회사 파일을 공유하고 있습니다. 이런 경우 모니터링되지 않은 데이터 누출될 수 있습니다. 조직 외부에서 회사 파일 공유가 잘못이 아니며 회사 정책을 위반한 것이 아닐 수도 지만, 그렇다고 해도 네트워크가 사용되는 방식과 외부적으로 공유하고 있는 데이터를 항상 파악할 수 있도록 공유 중인 항목을 모니터링하는 것이 중요합니다.
+클라우드 기술이 제공하는 가장 큰 이점은 다른 사람과 공유하는 기능입니다. 하지만 좋은 기능에는 책임이 따르므로 중요한 데이터가 외부에 공유되지 않도록 하기 위해서 중요한 데이터가 포함된 파일과 공유하는 사람이 누군지 알고 있어야 합니다. 클라우드 앱과 함께 제공된 도구를 사용하여 클라우드 앱에 저장되는 내용 또는 액세스하는 사람에 대해 알 수 없으므로 가능한 데이터 유출을 계속 모를 수 있습니다.
 
 ### <a name="the-solution"></a>해결 방법
-네트워크에서의 파일 공유에 대한 가시성을 확보하고, Cloud App Security의 다음 정책 및 거버넌스 작업에 따라 Cloud App Security에서 다음을 배포하여 거버넌스 작업을 배포합니다.
+이러한 두 매개 변수(민감도와 공유 수준)를 찾아 함께 놓으면 이러한 가능한 침해를 파악할 수 있습니다. Cloud App Security는 클라우드 앱에 저장된 파일을 모두 검색하고 공유 수준별로 자동으로 분류합니다. Cloud App Security에서 파일 정책을 구성하여 클라우드 앱에 저장된 중요한 데이터를 모두 검색할 수 있습니다. 외부와 공유되는 중요한 파일을 찾으면 수동 수정 작업을 수행하거나 Cloud App Security에서 자동으로 수행하도록 설정할 수 있습니다. 이렇게 하여 클릭 한 번으로 데이터 유출 위험을 없앨 수 있습니다.
 
 #### <a name="prerequisites"></a>필수 구성 요소
 
@@ -38,7 +38,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 
 #### <a name="setting-up-monitoring"></a>모니터링 설정
 
-1.    정책을 만들어 파일 제어
+1.    중요한 콘텐츠에 대해 외부와 공유되는 모든 파일을 검색하는 정책을 설정하여 앱 모니터링을 시작합니다.
 
     1. **정책** 페이지에서 [**파일 정책 만들기**](data-protection-policies.md)를 클릭합니다. 
     ![파일 정책 만들기](./media/create-file-policy.png)
@@ -66,7 +66,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 
 #### <a name="removing-the-risk"></a>위험 제거
 
-유효성을 검사하고, 정책을 미세 조정하여 의도한 대로 실행되고 있는지 확인한 후 다음을 수행합니다. 
+유효성을 검사하고 정책을 세밀하게 조정한 후 정책과 일치할 수 있는 가능한 거짓 긍정을 제거하세요. 그런 후 다음을 수행합니다. 
   1. 행의 끝부분에 있는 세 개의 점을 클릭하고 **사용자 격리에 넣기**와 같은 적절한 거버넌스 작업을 선택하여 [거버넌스 작업](governance-actions.md)을 즉시 수행할 수 있습니다.
 
  ![자동 거버넌스 외부](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 
 이 사용 사례에서는 Cloud App Security와 Azure Information Protection 간의 통합을 활용합니다. 조직 전체에 Azure Information Protection을 실행하고 있으며 시간을 할애하여 파일에 Azure Information Protection 레이블을 지정한 경우 Cloud App Security를 사용하면 레이블이 지정된 이후 해당 파일에 발생하는 상황을 모니터링하고 제어할 수 있습니다.
 
-## <a name="the-threat"></a>위협
+### <a name="the-threat"></a>위협
 
 데이터를 보호해야 한다는 것을 알고 있으며, 이미 Azure Information Protection에서 파일을 분류하느라 고생했습니다. 그런데 파일을 분류한 후 해당 파일이 어디에 있는지와 누가 보고 있는지 어떻게 알 수 있나요? 
 
-## <a name="the-solution"></a>해결 방법
- 이렇게 분류된 파일이 클라우드에 있을 때 Cloud App Security를 사용하여 해당 파일을 모니터링할 수 있습니다. 따라서 **기밀**(또는 다른 중요한 분류 유형)로 분류한 데이터가 부적절하게 공유되지 않는지 확인할 수 있습니다. 다음과 같은 정책 및 거버넌스 작업을 롤아웃함으로써 Azure Information Protection에서 분류한 파일을 Cloud App Security가 모니터링하고 관리할 수 있게 합니다.
+### <a name="the-solution"></a>해결 방법
+ 이렇게 분류된 파일이 클라우드에 있을 때 Cloud App Security를 사용하여 해당 파일을 모니터링할 수 있습니다. 그러면 **기밀** (또는 기타 중요한 분류)로 분류한 데이터가 부적절하게 공유되고 있지 않은지 확인할 수 있습니다. 다음 정책과 거버넌스 작업을 배포하여 Cloud App Security가 Azure Information Protection에서 파일을 모니터링하고 관리하도록 하세요.
 
-### <a name="prerequisites"></a>필수 구성 요소
+#### <a name="prerequisites"></a>필수 구성 요소
 
 - 하나 이상의 클라우드 앱을 Cloud App Security에 [연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)합니다.
 - [Azure Information Protection 통합 지침](azip-integration.md)에 따라 자동 검색을 사용하도록 설정합니다.
 
-### <a name="setting-up-monitoring"></a>모니터링 설정
+#### <a name="setting-up-monitoring"></a>모니터링 설정
 
-1. 정책을 만들어 데이터 제어    
+1. 원하는 분류 레이블을 사용하여 공개적으로 공유되는 파일을 모두 모니터링:    
     
     1. **정책** 페이지에서 [**파일 정책 만들기**](data-protection-policies.md)를 클릭합니다. 
 
@@ -116,7 +116,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
     3. 가양성을 찾은 경우 보고서 및 라이브 일치 항목에서 해당 가양성이 제외되도록 확인 표시를 사용하여 그 가양성을 표시합니다. 피드백 기능을 사용하여 추가하고 싶은 개선 사항을 Cloud App Security 팀에게 알릴 수 있습니다. 
 
 
-### <a name="validating-your-policy"></a>정책 유효성 검사
+#### <a name="validating-your-policy"></a>정책 유효성 검사
 
 1. 새 Word 문서를 만들고, Azure Information Protection 도구 모음을 사용하여 **기밀**과 같은 민감도 레이블을 설정합니다. 
 
@@ -129,7 +129,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 
 #### <a name="removing-the-risk"></a>위험 제거
 
-유효성을 검사하고, 정책을 미세 조정하여 의도한 대로 실행되고 있는지 확인한 후 다음을 수행합니다. 
+유효성을 검사하고 정책을 세밀하게 조정하여 정책과 일치할 수 있는 가능한 거짓 긍정을 제거한 후 다음을 수행하세요. 
 
 1. 행의 끝부분에 있는 세 개의 점을 클릭하고 **사용자 격리에 넣기**와 같은 적절한 거버넌스 작업을 선택하여 [거버넌스 작업](governance-actions.md)을 즉시 수행할 수 있습니다.
     

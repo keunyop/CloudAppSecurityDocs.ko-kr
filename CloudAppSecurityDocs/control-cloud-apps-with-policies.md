@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
@@ -139,7 +139,20 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
 >  [데이터 보호 정책](data-protection-policies.md)  
 >   
 >  [Cloud Discovery 정책](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>위험에 자동으로 대응하고 수정하기 위해 자동화된 작업 추가
+
+앱당 사용 가능한 거버넌스 작업 목록은 [연결된 앱 제어](governance-actions.md)를 참조하세요.
+
+또한 일치하는 항목이 검색되면 메일이나 문자 메시지로 알림을 보내도록 정책을 설정할 수 있습니다. 
+
+알림 기본 설정을 지정하려면 [포털 사용자 지정](general-setup.md)으로 이동합니다. 
+  
+> [!NOTE] 
+> 문자 메시지를 통해 전송되는 최대 경고 수는 하루에 전화 번호당 10개입니다. 일 수는 UTC 표준 시간대에 따라 계산됩니다. 
+
+
 ## <a name="enable-and-disable-policies"></a>정책 사용 및 사용 안 함
 
 정책을 만든 후 정책을 사용 또는 사용하지 않도록 설정할 수 있습니다. 이를 통해 정책을 만든 후 중지하기 위해 정책을 삭제하지 않아도 됩니다. 대신, 어떤 이유로 정책을 중지하려는 경우 다시 사용하도록 설정할 때까지 사용하지 않도록 설정하면 됩니다.
