@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
@@ -64,7 +64,7 @@ Cloud Discovery에서는 트래픽 로그의 데이터를 활용합니다. 로�
  
 Cloud Discovery에서는 로그에 포함되지 않은 특성을 표시하거나 분석할 수 없습니다.
 예를 들어 **Cisco ASA Firewall** 표준 로그 형식에는 **트랜잭션별로 업로드된 바이트의 크기**나 **사용자 이름**이 포함되지 않고 **대상 URL**도 포함되지 않지만 대상 IP만 포함됩니다.
-따라서 이러한 특성은 이러한 로그에 대한 Cloud Discovery 데이터에 표시되며 클라우드 앱에 대한 가시성이 제한됩니다. Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 합니다. 
+따라서 이러한 특성은 이러한 로그에 대한 Cloud Discovery 데이터에 표시되지 않으며 클라우드 앱에 대한 가시성이 제한됩니다. Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 합니다. 
  
 
 Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건을 충족해야 합니다.
@@ -79,7 +79,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Cisco ASA Firewall(Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 함)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – URL 로그
+- Cisco Meraki – URL 로그
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
