@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="release-notes"></a>릴리스 정보
@@ -26,7 +26,7 @@ translationtype: HT
 **업데이트**
 - **계정** 페이지는 위험을 더 쉽게 검색할 수 있는 향상된 기능으로 업데이트되었습니다. 이제 내부 및 외부 계정을 더 쉽게 필터링하고 사용자에게 관리자 권한이 있는지 여부를 한 눈에 확인할 수 있으며 앱당 각 계정에 대한 작업(권한 제거, 사용자의 공동 작업 제거, 사용자 일시 중단 등)을 간단히 수행할 수 있습니다. 또한 각 계정에 대해 가져온 [사용자 그룹](user-groups.md)이 표시됩니다. 
 
-- Microsoft 계정(Office 365 및 Azure Active Directory)의 경우 Cloud App Security가 프록시 주소, 별칭, SID 등과 같은 여러 사용자 ID를 단일 계정 아래에 그룹화합니다. 계정과 관련된 모든 별칭이 기본 메일 주소 아래에 표시됩니다. 사용자 ID 목록에 따라, 행위자가 사용자 ID인 작업의 경우 행위자가 기본 사용자 이름 UPN(사용자 계정 이름)으로 표시됩니다. UPN에 따라 그룹이 할당되고 정책이 적용됩니다. 그러면 예외 사항 및 그룹 기반 정책에 대해 활동에 대한 조사가 향상되고 모든 관련 활동이 동일한 세션으로 융합됩니다. 이 기능은 다음 달에 점진적으로 출시될 예정입니다.
+- Microsoft 회사 계정(Office 365 및 Azure Active Directory)의 경우 Cloud App Security가 프록시 주소, 별칭, SID 등과 같은 여러 사용자 ID를 단일 계정 아래에 그룹화합니다. 계정과 관련된 모든 별칭이 기본 메일 주소 아래에 표시됩니다. 사용자 ID 목록에 따라, 행위자가 사용자 ID인 작업의 경우 행위자가 기본 사용자 이름 UPN(사용자 계정 이름)으로 표시됩니다. UPN에 따라 그룹이 할당되고 정책이 적용됩니다. 그러면 예외 사항 및 그룹 기반 정책에 대해 활동에 대한 조사가 향상되고 모든 관련 활동이 동일한 세션으로 융합됩니다. 이 기능은 다음 달에 점진적으로 출시될 예정입니다.
 
 - 브라우저 사용 기본 제공 보고서에 가능한 위험 요소로 로봇 태그가 추가되었습니다. 이제 브라우저 사용이 오래된 항목으로 태그가 지정되는 것 외에도 로봇이 브라우저 사용을 수행한 시기를 확인할 수 있습니다. [기본 제공 보고서](built-in-report-reference.md)에 대해 자세히 알아보세요.
 

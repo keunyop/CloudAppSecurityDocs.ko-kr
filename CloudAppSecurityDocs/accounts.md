@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2016
+ms.date: 4/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,29 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d5ccc55fe0d9c3fea93446daebfcbd5bbed8c8d
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
+ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
+ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
 translationtype: HT
 ---
 # <a name="accounts"></a>계정
-Cloud App Security에서는 연결된 앱의 모든 계정을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security에서 앱과 연결된 모든 계정을 검색합니다. 계정 페이지에서 해당 계정, 구성원이 속한 그룹, 별칭 및 사용하는 앱을 조사할 수 있습니다. 
+Cloud App Security에서는 연결된 앱의 계정을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 연결된 앱과 관련된 계정 정보를 읽습니다. [계정] 페이지에서 해당 계정, 사용 권한, 계정이 속한 그룹, 계정 별칭 및 사용하는 앱을 조사할 수 있습니다. 또한 Cloud App Security가 활동이나 파일 공유 등의 연결된 앱 중 하나에서 이전에 보이지 않던 새 계정을 검색하는 경우 이 계정이 해당 앱의 계정 목록에 추가됩니다. 따라서 클라우드 앱을 조작하는 외부 사용자의 활동을 파악할 수 있습니다.
 
 
-**계정** 로그를 필터링하여 특정 계정을 찾고 여러 유형의 계정을 심층 분석할 수 있습니다. 예를 들어 작년 이후 액세스하지 않은 모든 외부 계정을 필터링할 수 있습니다. 계정을 기준으로 정책을 만든 다음 경고를 받을 활동 및 조치를 정의할 수 있습니다. 
+**계정** 페이지를 필터링하여 특정 계정을 찾고 여러 유형의 계정을 심층 분석할 수 있습니다. 예를 들어 작년 이후 액세스하지 않은 모든 외부 계정을 필터링할 수 있습니다. 
 
 **계정** 페이지에서 다음을 비롯하여 문제에 대해 계정을 쉽게 조사할 수 있습니다.  
 
 -   특정 서비스에서 오랫동안 활성화되지 않은 계정이 있는지 확인(해당 서비스에 대해 해당 사용자의 라이선스를 해지할 수 있음)  
 -   관리자 권한이 있는 사용자의 목록을 필터링할 수 있음  
 
--   활성화되어 있지만 더 이상 조직에 속하지 않는 사용자의 계정을 확인할 수 있음  
+-   더 이상 조직에 속하지 않지만 여전히 활성 계정을 갖고 있을 수 있는 사용자를 검색할 수 있음  
 
--   특정 앱에 대한 사용자 권한을 해지하거나(앱에 따라 다름) 특정 사용자가 다단계 인증을 수행하도록 요구할 수 있음
+-   앱 일시 중단 또는 계정 설정 페이지로 이동과 같은 계정에 대한 거버넌스 작업을 수행할 수 있음. 거버넌스 작업의 전체 목록은 [거버넌스 로그](governance-actions.md)를 참조하세요.
     
 -   각 사용자 그룹에 포함되는 계정을 확인할 수 있음  
 
 -   각 계정에서 액세스하는 앱 및 특정 계정에 대해 삭제된 앱을 확인할 수 있음
     
--   또한 사용자의 계정을 심층 분석하고 **사용자 일시 중단** 또는 **사용자의 공동 작업 제거** 같은 관련 거버넌스 작업을 선택할 수 있습니다. 사용자를 Azure Active Directory에서 가져온 경우 **Azure AD account settings**(Azure AD 계정 설정)를 클릭하여 그룹 관리, 다단계 인증, 사용자 로그인 세부 정보, 로그인 차단 기능 등과 같은 고급 사용자 관리 기능에 쉽게 액세스할 수도 있습니다.
 
 ![계정 화면](./media/accounts-page.png)
 
@@ -53,7 +52,7 @@ Cloud App Security에서는 연결된 앱의 모든 계정을 볼 수 있습니�
 
 - **Last seen**(마지막 확인): **last seen**(마지막 확인) 필터를 사용하면 유휴 상태이고 한동안 아무런 활동도 하지 않은 사용자의 계정을 찾을 수 있습니다.
 
-- **Organization/Department**(조직/부서): 특정 Azure Active Directory 또는 Office 365 조직 그룹의 구성원을 필터링할 수 있습니다.
+- **Organization/Department**(조직/부서): 연결된 앱에서 정의한 특정 조직 그룹의 구성원을 필터링할 수 있습니다.
 
 - **사용자 그룹**: Cloud App Security에서 사용자 그룹(기본 제공 사용자 그룹 및 가져온 사용자 그룹)의 구성원을 필터링할 수 있습니다.
 
