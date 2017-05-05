@@ -9,6 +9,7 @@
 ## [Cloud Discovery 배포](set-up-cloud-discovery.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
+### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box 연결](connect-box-to-microsoft-cloud-app-security.md)
