@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="customize-the-portal"></a>포털 사용자 지정
 다음 절차에서는 Cloud App Security 포털을 사용자 지정하기 위한 지침을 제공합니다.
@@ -89,7 +90,7 @@ API 커넥터를 사용하여 앱을 연결할 때 Cloud App Security를 사용�
 
 자세한 내용은 [사용자 그룹](user-groups.md)을 참조하세요.
 
-##  <a name="Adallom_mailsettings"></a> 환경 개인 설정  
+##  <a name="mailsettings"></a> 환경 개인 설정  
 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **메일 설정**을 선택하여 Cloud App Security에서 관련 위반에 대한 경고 및 알림을 최종 사용자에게 보내도록 요청하는 관리자에게 보내는 메일 알림에 대한 매개 변수를 설정합니다.  
   
 ![메일 설정 메뉴](./media/mail-setting-menu.png "메일 설정 메뉴")  
