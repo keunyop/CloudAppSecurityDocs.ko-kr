@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6a4b0e2c79fcb96a307d83a4077492138b73066
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 451d88f6403e62ed5cf68d5a932e5029f270df7a
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
-# <a name="import-user-groups-preview"></a>사용자 그룹 가져오기(미리 보기)
+# <a name="import-user-groups"></a>사용자 그룹 가져오기
 
 API 커넥터를 사용하여 앱을 연결할 때 Cloud App Security를 사용하면 Office 365 및 Azure Active Directory에서 사용자 그룹을 가져올 수 있습니다.
 사용자 그룹에는 다음과 같은 두 종류가 있습니다. 

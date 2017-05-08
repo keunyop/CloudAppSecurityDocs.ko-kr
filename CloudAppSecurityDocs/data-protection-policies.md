@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 26a89346868e4d8a5df450d30b69826b4791c1f8
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 04264ea25a987e2bfef60a0e77c0a227b650b740
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  
@@ -103,10 +104,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 -   작업 - 위반 항목이 발견될 때 자동으로 적용할 수 있는 거버넌스 작업 집합을 제공합니다.  이러한 작업은 공동 작업, 보안 작업 및 조사 작업으로 구분됩니다.
 
 -   Extensions  
-  
-    > [!NOTE]  
-    >  확장은 Cloud App Security Technical Preview 버전에서만 사용할 수 있습니다.  
-  
+   
     -  향상된 DLP 또는 맬웨어 방지 기능을 위해 콘텐츠 검사는 타사 엔진을 통해 수행할 수 있습니다.  
   
     -  사용자 지정 암호화 제어 또는 다른 유형의 파일 처리(예: 사용자 지정 워터마크)를 적용하기 위해 [거버넌스 작업](governance-actions.md)은 타사 엔진을 통해 수행할 수 있습니다.  
