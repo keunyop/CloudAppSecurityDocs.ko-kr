@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="release-notes"></a>릴리스 정보
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security 릴리스 96
+릴리스 날짜: 2017년 5월 8일
+
+새로운 기능:
+-    Cloud App Security 콘솔 내부에서 관리자에게 부여할 권한을 관리할 수 있는 보안 독자 권한을 점진적으로 계속 공개합니다. 기본적으로 모든 Azure Active Directory 및 Office 365 전역 관리자 및 보안 관리자는 포털의 모든 권한을 가지고 Azure Active Directory 및 Office 365의 모든 보안 독자는 Cloud App Security의 읽기 전용 권한을 가집니다. 자세한 내용은 [관리자 권한 관리](manage-admins.md)를 참조하세요.
+-    CSV 기반 로그용 사용자 정의 로그 파서에 대한 Cloud Discovery 지원이 완전히 공개되었습니다. Cloud App Security를 사용하면 특정 데이터에 어떤 열이 상호 연결되는지 설명하는 도구를 제공하여 이전에 지원되지 않는 어플라이언스에 대한 파서를 구성할 수 있습니다. 자세한 내용은 [사용자 지정 로그 파서](custom-log-parser.md)를 참조하세요.
+향상된 기능:
+-    이제 Cloud Discovery가 Juniper SSG 어플라이언스를 지원합니다.
+-    더 알아보기 쉽도록 Cisco ASA 로그에 대한 Cloud Discovery 지원이 향상되었습니다.
+-    이제 대량 작업을 더 쉽게 실행하고 Cloud App Security 포털 표에서 여러 레코드를 선택할 수 있습니다. 대량 작업을 개선하기 위해 페이지 길이가 증가했습니다.
+-    이제 Salesforce 데이터에 대한 **도메인별 아웃바운드 공유** 및 **공유 파일의 소유자** 기본 제공 보고서를 실행할 수 있습니다.
+-    활동 데이터에서 추출된 관심 정보를 추적할 수 있는 추가 Salesforce 활동의 공개를 시작하고 있습니다. 여기에는 계정, 리드, 기회 및 다양한 기타 관심 Salesforce 개체를 보고 편집하는 작업이 포함됩니다.
+-    Exchange를 통해 사용자 사서함 또는 사서함 폴더에 어떤 권한이 부여되었는지 모니터링할 수 있는 새로운 활동이 추가되었습니다. 다음 활동이 포함됩니다.
+    -    받는 사람 권한 추가
+    -    받는 사람 권한 제거
+    -    사서함 폴더 권한 추가
+    -    사서함 폴더 권한 제거
+    -    사서함 폴더 권한 설정
+
+    예를 들어 다른 사용자의 사서함에 대한 **SendAs** 권한이 부여된 사용자를 모니터링할 수 있고, 이에 따라 이름으로 메일을 보낼 수 있습니다.
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security 릴리스 95(배포 중)

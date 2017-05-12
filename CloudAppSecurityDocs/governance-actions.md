@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
@@ -105,7 +106,7 @@ translationtype: HT
 |계정|파일|사용자의 공동 작업 제거|퇴사하는 사용자의 경우에 적합하도록 모든 파일에 대한 특정 사용자의 공동 작업을 모두 제거합니다.|Box, G Suite|
 |계정|계정|사용자 일시 중단 해제|사용자 일시 중단을 해제합니다.|G Suite, Box, Office, Salesforce|
 |계정|계정|계정 설정|특정 앱의 계정 설정 페이지(예: Salesforce 내부)로 이동합니다.|모든 앱(OneDrive 및 SharePoint) 설정은 Office 내에서 구성합니다.|
-|계정 |파일|모든 파일 소유권 이전|계정에서 한 사용자의 모든 파일을 선택한 새 사용자가 소유하도록 이전합니다. 이전 소유자는 편집자가 됩니다. 소유권을 이전하고 나면 admin@gtest1.adallom.com이 편집자가 되며 더 이상 공유 설정을 변경할 수 없게 됩니다. 새 소유자는 소유권 변경에 대한 메일 알림을 받게 됩니다.|G Suite|
+|계정 |파일|모든 파일 소유권 이전|계정에서 한 사용자의 모든 파일을 선택한 새 사용자가 소유하도록 이전합니다. 이전 소유자가 편집자가 되고 더 이상 공유 설정을 변경할 수 없게 됩니다. 새 소유자는 소유권 변경에 대한 메일 알림을 받게 됩니다.|G Suite|
 |계정, 활동 정책|계정|사용자 일시 중단|사용자에게 액세스 권한과 로그인 권한이 없도록 설정합니다. 사용자가 로그인한 경우 이 작업이 설정되면 사용자가 즉시 잠깁니다.|G Suite, Box, Office, Salesforce|
 |활동 정책, 계정|계정|암호 철회|사용자 계정의 암호를 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 암호를 철회하는 활동 정책을 설정합니다.|G Suite|
 |활동 정책, 계정|계정|관리자 권한 철회|관리자 계정의 권한을 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 관리자 권한을 철회하는 활동 정책을 설정합니다.|G Suite|
