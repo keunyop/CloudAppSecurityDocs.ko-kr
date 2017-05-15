@@ -3,7 +3,10 @@
 ## [릴리스 정보](release-notes.md)
 # 배포 게스트 클러스터에
 ## [시작](getting-started-with-cloud-app-security.md)
-## [포털 사용자 지정](general-setup.md)
+## [기본 설정](general-setup.md)
+### [관리자 관리](manage-admins.md)
+#### [관리 설정](admin-settings.md)
+### [메일 설정](mail-settings.md)
 ### [사용자 그룹](user-groups.md)
 ### [IP 태그 및 범위](ip-tags.md)
 ## [Cloud Discovery 배포](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
+## [SIEM 통합 문제 해결](troubleshooting-siem.md)
