@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acae7c7da7e9f800ff95a89ab422143bb84b699c
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: dc103be5e26752cdfa7dd605ba45f4a7c347b032
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="discover"></a>검색
 
@@ -73,7 +74,7 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
   
 5.  포함할 데이터 원본을 선택합니다(모두 또는 특정).  
   
-6.  데이터에 대해 원하는 필터를 설정합니다. 이러한 필터는 **조직 구성 단위**, **IP 주소 태그** 또는 **IP 주소 범위**가 될 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](general-setup.md#IPtagsandRanges)을 참조하세요.  
+6.  데이터에 대해 원하는 필터를 설정합니다. 이러한 필터는 **조직 구성 단위**, **IP 주소 태그** 또는 **IP 주소 범위**가 될 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
   
     ![사용자 지정 연속 보고서 만들기](./media/create-custom-continuous-report.png) 
 

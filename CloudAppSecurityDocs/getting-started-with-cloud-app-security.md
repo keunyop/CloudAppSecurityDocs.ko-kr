@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security 배포
 Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
@@ -99,7 +100,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 정책을 사용하면 추세 모니터링, 보안 위협 파악, 사용자 지정 보고서 및 경고 생성에 도움이 됩니다. 정책을 사용하면 거버넌스 작업을 만들고 데이터 손실 방지 및 파일 공유 컨트롤을 설정할 수 있습니다.
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>4단계. [환경 개인 설정](general-setup.md#mailsettings).
+### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>4단계. [환경 개인 설정](mail-settings.md).
 권장 작업: 조직 정보 추가
 
 **메일 설정을 입력하려면**
@@ -126,7 +127,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 일부 기능은 사용자의 요구에 맞게 사용자 지정한 경우에 가장 잘 작동합니다. 고유한 메일 템플릿을 사용하여 사용자에게 더 나은 환경을 제공하고, 수신할 알림을 결정하고, 위험 점수 메트릭을 조직의 기본 설정에 맞게 사용자 지정합니다.
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>5단계. [필요에 따라 데이터 구성](general-setup.md#IPtagsandRanges).
+### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>5단계. [필요에 따라 데이터 구성](ip-tags.md).
 권장 작업: 중요한 설정 구성
 
 **IP 주소 태그를 만들려면**
