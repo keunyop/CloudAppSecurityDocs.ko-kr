@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
-ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
-translationtype: HT
+ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -135,7 +137,7 @@ Cloud App Security가 Office 365 서비스에 연결되면 Cloud App Security RM
 5. **거버넌스 로그**에서 이전에 수행한 보호 작업의 행 끝부분에 있는 **되돌리기** 단추를 클릭하여 언제든지 이 작업을 되돌릴 수 있습니다. 
 
 
-
+Cloud App Security와 Azure Information Protection이 함께 작동하는 방식에 관한 자세한 내용은 [사용자 실수로부터 데이터 보호](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)를 참조하세요.
 
  
 ## <a name="see-also"></a>참고 항목  

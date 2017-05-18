@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cae50c83705d91513525c9b90e462e44e07b97ed
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>파일 제어 및 보호  
 
@@ -136,6 +138,10 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 2. 완전하게 유효성을 검사한 후 자동 거버넌스 작업을 수행하도록 설정할 수 있습니다. 예를 들어 SharePoint 및 OneDrive에서**사용자 격리에 넣기**를 수행하고, G Suite 및 Box의 경우 **공용 액세스 제거**를 수행할 수 있습니다.
  
  ![자동 거버넌스 작업, 공용 액세스 제거](./media/gov-action-public-access.png)
+
+
+Azure Information Protection과 작동하는 Cloud App Security에 관한 자세한 내용은 [사용자 실수로부터 데이터 보호](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)를 참조하세요.
+
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   

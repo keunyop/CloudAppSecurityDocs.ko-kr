@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Cloud Discovery 문제 해결
 ## <a name="log-parsing-errors"></a>로그 구문 분석 오류
 
-거버넌스 로그를 사용하여 Cloud Discovery 로그 처리를 추적할 수 있습니다. 이 가이드에서는 표시될 수 있는 각 오류에 대해 수행할 해결 방법을 제공합니다.
+거버넌스 로그를 사용하여 Cloud Discovery 로그 처리를 추적할 수 있습니다. 이 문서에서는 표시될 수 있는 각 오류에 대해 수행할 해결 방법을 제공합니다.
 
 ### <a name="governance-log-errors"></a>거버넌스 로그 오류
 |오류|설명|해결 방법|
@@ -30,7 +32,7 @@ translationtype: HT
 |로그 형식이 일치하지 않음|업로드한 로그 형식이 이 데이터 원본에 예상되는 로그 형식과 일치하지 않습니다.|1. 로그가 손상되지 않았는지 확인합니다. <br /> 2. 업로드 페이지에 표시된 샘플 형식과 로그를 비교하여 일치시킵니다.|
 |트랜잭션이 90일 이상 오래됨|모든 트랜잭션이 90일 이상 오래되어 무시됩니다.|최근 이벤트와 함께 새 로그를 내보내고 다시 업로드하세요.|
 |카탈로그된 클라우드 앱에 대한 트랜잭션 없음|모든 인식된 클라우드 앱에 대한 트랜잭션이 로그에 없습니다.|로그에 아웃바운드 트래픽 정보가 포함되어 있는지 확인하세요.|
-|지원되지 않는 로그 유형|**데이터 원본 = 기타(지원되지 않음)**를 선택하면 로그가 구문 분석되지 않습니다. 대신 검토를 위해 Cloud App Security 기술 팀에 전송됩니다.|Cloud App Security 기술 팀은 각 데이터 원본마다 전용 파서를 작성합니다. 가장 많이 사용되는 데이터 원본은 [이미 지원](set-up-cloud-discovery.md)되고 있습니다. 지원되지 않는 데이터 원본의 각 업로드를 검토하고 새 데이터 원본 파서에 대한 파이프라인에 추가합니다. 새 파서 알림은 Cloud App Security 릴리스 정보의 일부로 게시됩니다.|
+|지원되지 않는 로그 유형|**데이터 원본 = 기타(지원되지 않음)**를 선택하면 로그가 구문 분석되지 않습니다. 대신 검토를 위해 Cloud App Security 기술 팀에 전송됩니다.|Cloud App Security 기술 팀은 각 데이터 원본마다 전용 파서를 작성합니다. 가장 많이 사용되는 데이터 원본은 [이미 지원](set-up-cloud-discovery.md)되고 있습니다. 지원되지 않는 데이터 원본의 각 업로드를 검토하고 새 데이터 원본 파서에 대한 파이프라인에 추가합니다. 새 파서 알림은 Cloud App Security [릴리스 정보](release-notes.md)의 일부로 게시됩니다.|
 ## <a name="log-collector-errors"></a>로그 수집기 오류
 
 |문제|해결 방법|

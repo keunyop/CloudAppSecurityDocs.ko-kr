@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
@@ -62,7 +64,7 @@ translationtype: HT
   
      ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")  
   
-8.  팝업에서 해당 상자에 ServiceNow 사용자 이름, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다.  
+8.  팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다.  
   
 9.  **연결**을 클릭합니다.  
   
@@ -92,7 +94,7 @@ ServiceNow를 Cloud App Security와 연결하려면 관리자 수준 권한이 �
 
     ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")   
 
-6.  ServiceNow 설정 페이지의 API 탭에서 해당 상자에 ServiceNow 사용자 이름, 암호 및 인스턴스 URL을 추가합니다.   
+6.  ServiceNow 설정 페이지의 API 탭에서 해당 상자에 ServiceNow 사용자 ID, 암호 및 인스턴스 URL을 추가합니다.   
 
 7.  **연결**을 클릭합니다.   
 
