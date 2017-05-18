@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a93e9ac3c98dbbe2fef09419afe58c158ec96337
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="files"></a>파일
 
@@ -60,7 +61,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 > - **OneDrive:** OneDrive는 외부 사용자가 OneDrive에 넣는 모든 파일의 소유자로 내부 사용자를 할당합니다. 그러면 이러한 파일은 조직의 소유로 간주되므로 Cloud App Security에서 이러한 파일을 검색하고 OneDrive의 다른 모든 파일에서처럼 정책을 적용합니다.
 > - **Google Drive:** Google Drive에서는 이런 파일을 외부 사용자가 소유한 것으로 간주하며, 조직에서 소유하지 않은 파일 및 데이터의 법적 제한 때문에 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다.
 > - **Box:** Box에서는 외부에서 소유한 파일을 개인 정보로 간주하므로 Box 전역 관리자가 파일의 내용을 볼 수 없습니다. 이러한 이유로 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다. 
-> - **Dropbox:** Dropbox에서는 외부에서 소유한 파일을 개인 정보로 간주하므로 Box 전역 관리자가 파일의 내용을 볼 수 없습니다. 이러한 이유로 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다.
+> - **Dropbox:** Dropbox에서는 외부에서 소유한 파일을 개인 정보로 간주하므로 Dropbox 전역 관리자가 파일의 내용을 볼 수 없습니다. 이러한 이유로 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다.
 
 -   앱 – 해당 앱 내의 파일만 검색합니다.  
   

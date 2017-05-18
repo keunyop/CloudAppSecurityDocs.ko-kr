@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,21 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 3be2a96cb9fe792917ce388ca52df9c03428f9fa
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
-  
+Cloud App Security는 Office 365 서비스의 최신 제공(Office 365의 vNext 릴리스 제품군)뿐만 아니라 레거시 Office 365 전용 플랫폼을 지원합니다.  Cloud App Security는 레거시 Microsoft Business Productivity Online Standard Suite를 지원하지 않습니다. 
+
+> [!NOTE]
+> 몇몇 경우에 vNext 서비스 릴리스는 관리 수준이 표준 Office 365 제공과 살짝 다릅니다.
+
+ 
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Cloud App Security에 Office 365를 연결하는 방법  
   
