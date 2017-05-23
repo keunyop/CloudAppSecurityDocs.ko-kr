@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 041c22aea7ab20682cab199af2a0f17129cade3e
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
-translationtype: HT
+ms.openlocfilehash: b4b60d1bb342e4cf33a980466f858ecda2af626f
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
 
@@ -66,7 +68,7 @@ Cloud Discovery에 대한 자세한 내용은 [Cloud Discovery 설정](set-up-cl
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>응용 프로그램 사용 권한 부여 및 취소  
 
-Cloud App Security를 사용하면 *클라우드 응용 프로그램 카탈로그*를 통해 조직에 있는 응용 프로그램의 권한을 부여 또는 취소할 수 있습니다. Microsoft 분석가 팀은 산업 표준에 따라 순위 및 점수가 매겨진 13,000개 이상의 클라우드 앱을 포함하는 광범위한 카탈로그를 작성했으며 계속 확장하고 있습니다. 클라우드 응용 프로그램 카탈로그를 사용하여 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 응용 프로그램의 위험을 평가할 수 있습니다. 그리고 다양한 매개 변수의 점수와 가중치를 조직의 요구에 맞게 사용자 지정합니다. 이러한 점수를 기준으로 Cloud App Security에서 환경에 영향을 줄 수 있는 50개 이상의 위험 요소에 따라 응용 프로그램의 위험도를 확인할 수 있습니다.  
+Cloud App Security를 사용하면 *클라우드 응용 프로그램 카탈로그*를 통해 조직에 있는 응용 프로그램의 권한을 부여 또는 취소할 수 있습니다. Microsoft 분석가 팀은 산업 표준에 따라 순위 및 점수가 매겨진 14,000개 이상의 클라우드 앱을 포함하는 광범위한 카탈로그를 작성했으며 계속 확장하고 있습니다. 클라우드 응용 프로그램 카탈로그를 사용하여 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 응용 프로그램의 위험을 평가할 수 있습니다. 그리고 다양한 매개 변수의 점수와 가중치를 조직의 요구에 맞게 사용자 지정합니다. 이러한 점수를 기준으로 Cloud App Security에서 환경에 영향을 줄 수 있는 50개 이상의 위험 요소에 따라 응용 프로그램의 위험도를 확인할 수 있습니다.  
 
 ### <a name="app-connectors"></a>응용 프로그램 커넥터  
 응용 프로그램 커넥터에서는 클라우드 응용 프로그램 공급자의 API를 사용하여 Cloud App Security 클라우드를 다른 클라우드 응용 프로그램과 통합합니다. 응용 프로그램 커넥터는 제어 및 보호를 확장합니다. 또한 Cloud App Security 분석을 위해 클라우드 응용 프로그램에서 직접 정보에 액세스할 수 있도록 합니다.  
