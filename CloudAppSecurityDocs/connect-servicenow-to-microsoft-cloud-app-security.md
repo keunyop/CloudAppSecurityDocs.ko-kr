@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 5/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
@@ -64,7 +64,9 @@ ms.lasthandoff: 05/15/2017
   
      ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")  
   
-8.  팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다.  
+8.  팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다. ServiceNow 포털에서 ServiceNow 사용자 ID를 찾으려면 **사용자**로 이동하고 표에서 이름을 찾습니다. ID는 사용자 ID 옆에 표시됩니다.
+
+![ServiceNow 사용자 ID](./media/servicenow-userid.png)
   
 9.  **연결**을 클릭합니다.  
   
