@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -73,7 +73,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
    ![일반 SIEM 설정](./media/siem1.png)
 
-5. **원격 syslog 호스트**의 IP 주소 및 **Syslog 포트 번호**를 입력합니다. 원격 Syslog 프로토콜로 TCP 또는 UDP를 선택합니다.
+5. **원격 syslog 호스트**의 IP 주소 또는 호스트 이름과 **Syslog 포트 번호**를 입력합니다. 원격 Syslog 프로토콜로 TCP 또는 UDP를 선택합니다.
 세부 정보가 없는 경우 보안 관리자와 작업하여 세부 정보를 가져올 수 있습니다.
 **다음**을 클릭합니다.
   ![원격 Syslog 설정](./media/siem2.png)
