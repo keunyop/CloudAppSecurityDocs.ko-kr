@@ -14,8 +14,10 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="investigate"></a>조사
 클라우드 환경에서 Cloud App Security를 실행한 후 클라우드 환경에서 발생하는 사항을 자세히 파악하기 위해 Cloud App Security의 도구의 사용 방법을 알아보고 조사하는 단계가 필요합니다. 그런 다음 특정 환경 및 사용 방법에 따라 위험으로부터 조직을 보호하기 위한 요구 사항을 식별할 수 있습니다.

@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 
 Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 보호할 수 있습니다. Cloud App Security 포털에 데이터 로그를 업로드하면 로그가 삭제되고 모든 사용자 이름 정보가 암호화된 사용자 이름으로 교체됩니다. 이러한 방식으로 모든 클라우드 활동이 익명으로 유지됩니다. 특정 보안 조사를 위해(예: 보안 위반 또는 의심스런 사용자 활동) 필요한 경우 관리자는 실제 사용자 이름을 확인할 수 있습니다. 관리자는 특정 사용자를 의심할 만한 이유가 있는 경우 알려진 사용자 이름의 암호화된 사용자 이름을 조회한 다음 암호화된 사용자 이름을 사용하여 조사를 시작할 수도 있습니다. 각 사용자 이름 변환에 대한 감사는 포털의 **거버넌스 로그**에서 수행됩니다.
 
 핵심 사항:
--    개인 정보는 저장되거나 표시되지 않습니다. 암호화된 정보만 표시됩니다.
--    비공개 데이터는 테넌트당 전용 키와 함께 AES-128을 사용하여 암호화됩니다.
--    사용자 이름 확인은 암호화된 특정 이름을 해독하여 임시로, 사용자 단위로 수행됩니다.
+-   개인 정보는 저장되거나 표시되지 않습니다. 암호화된 정보만 표시됩니다.
+-   비공개 데이터는 테넌트당 전용 키와 함께 AES-128을 사용하여 암호화됩니다.
+-   사용자 이름 확인은 암호화된 특정 이름을 해독하여 임시로, 사용자 단위로 수행됩니다.
 
 
 데이터 익명화 작동 방식:

@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>사용자 지정 로그 파서 사용
 Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud App Security에서 명시적으로 지원되지 않는 방화벽 또는 장치에서 로그가 생성된 경우에도 Cloud Discovery에 대해 해당 로그를 사용할 수 있습니다. 
@@ -26,7 +27,7 @@ Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사
 
  
 사용자 지정 CSV 파서를 구성하려면:
-1.    Cloud App Security 포털에서 **검색**, **새 스냅숏 보고서 만들기**를 차례로 클릭합니다.  
+1.  Cloud App Security 포털에서 **검색**, **새 스냅숏 보고서 만들기**를 차례로 클릭합니다.  
   
     ![새 스냅숏 보고서 만들기](./media/create-new-snapshot-report.png)
      

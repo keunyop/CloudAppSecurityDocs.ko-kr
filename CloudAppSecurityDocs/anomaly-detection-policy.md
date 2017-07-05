@@ -14,9 +14,10 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="anomaly-detection-policy"></a>변칙 검색 정책
 이 문서에서는 정책에 대한 참조 정보를 제공하며 각 정책에 대해 구성할 수 있는 필드와 각 정책 형식에 대해 설명합니다.  

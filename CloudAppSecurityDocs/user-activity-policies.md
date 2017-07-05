@@ -14,8 +14,10 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="activity-policies"></a>활동 정책
 활동 정책을 통해 앱 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 이러한 정책을 사용하면 다양한 사용자가 수행하는 특정 활동을 모니터링하거나 한 가지 특정 활동 유형의 예기치 않게 높은 비율을 팔로우할 수 있습니다.  

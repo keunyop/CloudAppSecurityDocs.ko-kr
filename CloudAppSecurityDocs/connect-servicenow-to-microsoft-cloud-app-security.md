@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/16/2017
   
 8.  팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다. ServiceNow 포털에서 ServiceNow 사용자 ID를 찾으려면 **사용자**로 이동하고 표에서 이름을 찾습니다. ID는 사용자 ID 옆에 표시됩니다.
 
-![ServiceNow 사용자 ID](./media/servicenow-userid.png)
+    ![ServiceNow 사용자 ID](./media/servicenow-userid.png)
   
 9.  **연결**을 클릭합니다.  
   

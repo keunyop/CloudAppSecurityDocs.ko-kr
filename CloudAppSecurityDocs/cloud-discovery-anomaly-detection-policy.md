@@ -14,8 +14,10 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>클라우드 검색 변칙 검색 정책
 이 문서에서는 정책에 대한 참조 정보를 제공하며 각 정책에 대해 구성할 수 있는 필드와 각 정책 형식에 대해 설명합니다.  
