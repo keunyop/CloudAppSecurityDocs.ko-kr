@@ -14,8 +14,10 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1083a743f2602bab6e55e96e1e7f7dd4c0b77bce
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="content-inspection"></a>콘텐츠 검사
 이 문서에서는 클라우드의 데이터에 대해 DLP 콘텐츠 검사를 수행할 때 Cloud App Security에서 수행하는 프로세스에 대해 설명합니다. 
@@ -42,7 +44,7 @@ NRT 검색과 연속 검색의 파일 모두 검사를 위해 큐에 추가됩�
 
 - 메일 주소 
 - 신용 카드 번호 
-  -    모든 신용 카드 회사(Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  - 모든 신용 카드 회사(Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
   - 구분 기호 - 공백, 점 또는 대시
   - 이 검색에는 Luhn 유효성 검사도 포함됩니다.
 - SWIFT 코드
@@ -63,11 +65,11 @@ NRT 검색과 연속 검색의 파일 모두 검사를 위해 큐에 추가됩�
 ## <a name="supported-languages"></a>지원되는 언어
 
 Cloud App Security 콘텐츠 검사 엔진:
--    모든 유니코드 문자 지원
--    1, 000개가 넘는 파일 형식 포함
--    여러 언어를 지원하며 특히, 유니코드 문자 집합을 사용하는 파일을 지원합니다. 해당 언어를 포괄할 정책을 정의해야 합니다. 예를 들어 키워드를 찾을 경우 사용하려는 언어 전체에 키워드를 포함해야 합니다.
--    중국어 GB2312와 같이 비유니코드 인코딩을 사용하는 텍스트 기반 파일 형식에서, 유니코드 중국어 키워드에 대한 비교는 예상대로 작동하지 않습니다.
--    타사 라이브러리를 사용하는 파일 형식의 경우 문자열과 단어의 일치가 예상대로 작동하지 않을 수 있습니다. 이는 콘텐츠 검사 시 언어와 문자 집합에 대해 Java 문자열을 반환하는 타사 라이브러리 파일을 사용하는 파일(예: 이진 파일 형식)에서 매우 흔한 일입니다.
+-   모든 유니코드 문자 지원
+-   1, 000개가 넘는 파일 형식 포함
+-   여러 언어를 지원하며 특히, 유니코드 문자 집합을 사용하는 파일을 지원합니다. 해당 언어를 포괄할 정책을 정의해야 합니다. 예를 들어 키워드를 찾을 경우 사용하려는 언어 전체에 키워드를 포함해야 합니다.
+-   중국어 GB2312와 같이 비유니코드 인코딩을 사용하는 텍스트 기반 파일 형식에서, 유니코드 중국어 키워드에 대한 비교는 예상대로 작동하지 않습니다.
+-   타사 라이브러리를 사용하는 파일 형식의 경우 문자열과 단어의 일치가 예상대로 작동하지 않을 수 있습니다. 이는 콘텐츠 검사 시 언어와 문자 집합에 대해 Java 문자열을 반환하는 타사 라이브러리 파일을 사용하는 파일(예: 이진 파일 형식)에서 매우 흔한 일입니다.
 
 
 

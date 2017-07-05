@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>파일 제어 및 보호  
 
@@ -40,7 +40,7 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
 
 #### <a name="setting-up-monitoring"></a>모니터링 설정
 
-1.    중요한 콘텐츠에 대해 외부와 공유되는 모든 파일을 검색하는 정책을 설정하여 앱 모니터링을 시작합니다.
+1.  중요한 콘텐츠에 대해 외부와 공유되는 모든 파일을 검색하는 정책을 설정하여 앱 모니터링을 시작합니다.
 
     1. **정책** 페이지에서 [**파일 정책 만들기**](data-protection-policies.md)를 클릭합니다. 
     ![파일 정책 만들기](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ Cloud App Security는 20개가 넘는 메타데이터 필터(예: 액세스 수�
     
     1. **정책** 페이지에서 [**파일 정책 만들기**](data-protection-policies.md)를 클릭합니다. 
 
-    2.    필터 섹션에서 **액세스 수준** 및 **마지막으로 수정한 날짜**에 대한 필터를 제거하여 클라우드의 모든 파일에 이 정책을 실행할 수 있습니다. 이러한 필터는 앞으로 수정되는 파일에만 적용됩니다. **분류 레이블** 및 **같음** 필터를 차례로 추가하고 조직의 분류 레이블을 선택합니다. 
+    2.  필터 섹션에서 **액세스 수준** 및 **마지막으로 수정한 날짜**에 대한 필터를 제거하여 클라우드의 모든 파일에 이 정책을 실행할 수 있습니다. 이러한 필터는 앞으로 수정되는 파일에만 적용됩니다. **분류 레이블** 및 **같음** 필터를 차례로 추가하고 조직의 분류 레이블을 선택합니다. 
     
     ![파일 정책 분류 레이블](./media/file-policy-class-label.png)
 
-    3.    이렇게 분류된 파일의 부적절한 공유를 모니터링하려면 방지할 액세스 수준이 포함된 필터를 추가합니다(예: **액세스 수준이 공용, 공용(인터넷)과 같음**).  정책을 시작하면 Cloud App Security에서 기존 파일 및 새로 추가한 파일을 모두 검색하는 데 시간이 걸립니다. 클라우드에 있는 데이터 양에 따라 검색을 완료하는 데 다소 시간이 걸릴 수 있습니다.
+    3.  이렇게 분류된 파일의 부적절한 공유를 모니터링하려면 방지할 액세스 수준이 포함된 필터를 추가합니다(예: **액세스 수준이 공용, 공용(인터넷)과 같음**).  정책을 시작하면 Cloud App Security에서 기존 파일 및 새로 추가한 파일을 모두 검색하는 데 시간이 걸립니다. 클라우드에 있는 데이터 양에 따라 검색을 완료하는 데 다소 시간이 걸릴 수 있습니다.
 
     ![파일 정책 필터, 공용](./media/file-policy-filter-public.png)
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 5/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 33f549807b37414aad8ac1eb71b3bba354a19e9e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.openlocfilehash: c4134370302fe8d35e6a3e2232d6ff8a65ad96f6
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="manage-your-alerts"></a>알림 관리  
 경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어 한 관리자가 그린란드에서 로그인한다고 표시되는데 조직의 누구도 이전에 그린란드에서 로그인한 적이 없는 경우, 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
