@@ -13,6 +13,7 @@
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](configure-automatic-log-upload-for-continuous-reports.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
+### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box 연결](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [Salesforce 연결](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Windows Server Update Services와 함께
 ## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
-## [검색](working-with-cloud-discovery-data.md)
+## 시나리오
+### [랜섬웨어로부터 조직 보호](use-case-ransomware.md)
+## 검색
+### [검색된 앱 사용](discovered-apps.md)
 ### [위험 점수 사용](risk-score.md)
 ## [조사](investigate.md)
 ### [활동](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [정책 템플릿 참조](policy-template-reference.md)
 ### [연결된 앱 제어](governance-actions.md)
 ### [검색된 앱 제어](governance-discovery.md)
-## 통합
+## 보안 확장을 사용하여 통합
 ### [Azure Information Protection 통합](azip-integration.md)
 ### [SIEM 통합](siem.md)
+### [외부 DLP 통합](icap-stunnel.md)
+### [API 토큰](api-tokens.md)
 # 문제 해결
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)

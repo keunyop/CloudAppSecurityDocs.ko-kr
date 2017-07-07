@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3c8c8917606f3c34055eef0334f010d8aab7998
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: a80fec6fe57d643655df2e57ef980b6395d4dcfc
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 #  <a name="IPtagsandRanges"></a> IP 범위 및 태그 사용
 
@@ -29,7 +31,7 @@ Cloud App Security는 다음 IP 주소에 대한 기본 제공 태그로 미리 
 - 오래된 운영 체제
 - 관리되는 장치
 - 익명 프록시
-- 봇넷
+- 봇넷(활동이 봇넷에 의해 수행된 경우 특정 봇넷에 대한 세부 정보 링크가 제공됨)
 - Tor
 - 규격 장치
 - 확인된 장치
@@ -37,7 +39,7 @@ Cloud App Security는 다음 IP 주소에 대한 기본 제공 태그로 미리 
 
 검색의 일부로 이러한 기본 제공 태그를 사용하려면 Cloud App Security API 설명서에서 해당 ID를 참조하세요. 
 
-
+기본 제공 IP 주소 태그 및 사용자 지정 IP 태그는 계층 구조로 고려되고, 사용자 지정 IP 태그가 기본 제공 IP 태그보다 우선합니다. 예를 들어 IP 주소를 위협 인텔리전스에 따라 **위험**으로 태그 지정하지만 **회사**로 식별하는 IP 태그가 있는 경우, 사용자 지정 범주 및 태그가 우선 순위로 적용됩니다.
 
 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **IP 주소 범위**를 선택합니다. **+IP 주소 범위 추가**를 클릭하고 다음을 설정합니다.  
   

@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -31,7 +33,7 @@ translationtype: HT
      ![google1](./media/google1.png "google1")  
   
 3.  **새 프로젝트** 화면에</br>
-    **Cloud App Security for Google**로 프로젝트 이름을 지정하고 **Create**(만들기)를 클릭합니다.  
+    **Microsoft Cloud App Security**로 프로젝트 이름을 지정하고 **만들기**를 클릭합니다.  
            ![google2](./media/google2.png "google2")  
   
 4.  프로젝트를 만든 후 도구 모음에서 Google Cloud Platform 옆에서 프로젝트를 선택하고 **API** 아래에서 **Go to APIs overview**(API 개요로 이동)를 클릭합니다.  
@@ -63,7 +65,7 @@ translationtype: HT
   
 8.  **자격 증명**, **OAuth 승인 화면**을 차례로 클릭합니다.  
   
-    -   **사용자에게 표시되는 제품 이름**에 **Cloud App Security for Google**을 입력합니다.  
+    -   **사용자에게 표시되는 제품 이름**에서 **Microsoft Cloud App Security**를 입력합니다.  
   
     -   다른 모든 필드는 선택 사항입니다.  
   
@@ -79,11 +81,11 @@ translationtype: HT
 
      ![google 서비스 계정 키](./media/google8.png "google8")  
   
-11. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름(예:**Service account 1**)을 입력한 다음 **Role**(역할)에서 **Project**(프로젝트)와 **Editor**(편집자)를 선택한 다음 **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다.  
+11. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름(예:**Service account 1**)을 입력한 다음 **Role**(역할)에서 **Project**(프로젝트)와 **Editor**(편집자)를 선택한 다음 **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
   
      ![google 서비스 계정 키 만들기](./media/google9.png "google9")  
   
-12.  P12 인증서 파일이 컴퓨터에 저장됩니다. 팝업에 나중에 사용할 수 있도록 **개인 키의 암호**를 저장하라는 메시지가 표시됩니다.  
+12.  P12 인증서 파일이 컴퓨터에 저장됩니다.  
         
 12. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
        ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite credentials service account")  
@@ -91,10 +93,6 @@ translationtype: HT
 13. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **편집**을 선택합니다.  
   
      ![google 편집](./media/google11.png "google 편집")  
-  
-14. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
-  
-     ![google 도메인 수준](./media/google12.png "google 도메인 수준")  
   
 15. 나중에 필요하므로 서비스에 할당된 **Service account ID**(서비스 계정 ID)를 복사합니다.  
   
@@ -107,7 +105,7 @@ translationtype: HT
 
 18. 다음을 입력합니다.
 
-    -   **응용 프로그램 이름**: Cloud App Security for Google  
+    -   **응용 프로그램 이름**: Microsoft Cloud App Security.  
   
     -   **짧은 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 응용 프로그램을 파악할 수 있으며 클라우드 응용 프로그램 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 응용 프로그램에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
   
@@ -116,18 +114,16 @@ translationtype: HT
     -   **Drive Integration**(드라이브 통합)에서 **Open URL:**(URL 열기:) 아래에 다음을 입력합니다.  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   **변경 내용 저장**을 클릭합니다.  
-  
+     
          ![google 드라이브 구성](./media/google15.png "googledriveconfig")  
   
 19. **사용 API** 목록에서 **Google Apps Marketplace SDK** 옆에 있는 설정 코그 설정을 클릭합니다. 
          ![google marketplace SDK 구성](./media/google16.png "googledriveconfig")  
-20. **구성** 탭을 선택합니다.  
+20. **구성** 탭을 선택합니다. 
   
     -   나중에 사용하기 위해 맨 위에 표시되는 **프로젝트 번호(앱 ID)**를 복사합니다.  
   
-    -   **응용 프로그램 이름**은 **Cloud App Security for Google**입니다.
+    -   **응용 프로그램 이름**은 **Microsoft Cloud App Security**로 표시되어야 합니다.
   
          **응용 프로그램 설명** 필드에 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다."라고 입력합니다.  
   

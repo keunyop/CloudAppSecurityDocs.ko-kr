@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 820c0964123b4501207cd9b56c8055dca5480868
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Cloud Discovery 문제 해결
 ## <a name="log-parsing-errors"></a>로그 구문 분석 오류
@@ -33,6 +33,7 @@ ms.lasthandoff: 05/10/2017
 |트랜잭션이 90일 이상 오래됨|모든 트랜잭션이 90일 이상 오래되어 무시됩니다.|최근 이벤트와 함께 새 로그를 내보내고 다시 업로드하세요.|
 |카탈로그된 클라우드 앱에 대한 트랜잭션 없음|모든 인식된 클라우드 앱에 대한 트랜잭션이 로그에 없습니다.|로그에 아웃바운드 트래픽 정보가 포함되어 있는지 확인하세요.|
 |지원되지 않는 로그 유형|**데이터 원본 = 기타(지원되지 않음)**를 선택하면 로그가 구문 분석되지 않습니다. 대신 검토를 위해 Cloud App Security 기술 팀에 전송됩니다.|Cloud App Security 기술 팀은 각 데이터 원본마다 전용 파서를 작성합니다. 가장 많이 사용되는 데이터 원본은 [이미 지원](set-up-cloud-discovery.md)되고 있습니다. 지원되지 않는 데이터 원본의 각 업로드를 검토하고 새 데이터 원본 파서에 대한 파이프라인에 추가합니다. 새 파서 알림은 Cloud App Security [릴리스 정보](release-notes.md)의 일부로 게시됩니다.|
+
 ## <a name="log-collector-errors"></a>로그 수집기 오류
 
 |문제|해결 방법|
@@ -40,6 +41,16 @@ ms.lasthandoff: 05/10/2017
 |FTP를 통해 로그 수집기에 연결할 수 없습니다.|1. SSH 자격 증명이 아니라 FTP 자격 증명을 사용하고 있는지 확인합니다. <br />2. 사용 중인 FTP 클라이언트가 SFTP로 설정되지 않았는지 확인합니다.|
 |수집기 구성을 업데이트하지 못했습니다.|1. 최신 액세스 토큰을 입력했는지 확인합니다. <br />2. 로그 수집기가 포트 443에서 아웃바운드 트래픽을 시작하도록 허용되는지 방화벽에서 확인합니다.|
 |수집기로 전송된 로그가 포털에 표시되지 않습니다.|1.  거버넌스 로그에서 실패한 구문 분석 작업이 있는지 확인합니다.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;그렇다면 위의 로그 구문 분석 오류 표를 사용하여 오류를 해결합니다.<br /> 2. 그렇지 않을 경우 포털에서 데이터 원본 및 로그 수집기 구성을 확인합니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. 데이터 원본 페이지에서 사용 중인 데이터 원본이 정확하게 구성되었는지 확인합니다. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. 로그 수집기 페이지에서 데이터 원본이 올바른 로그 수집기에 연결되어 있는지 확인합니다. <br /> 3. 온-프레미스 로그 수집기 컴퓨터의 로컬 구성을 확인합니다.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH를 통해 로그 수집기에 로그인하고 collector_config 유틸리티를 실행합니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 방화벽 또는 프록시가 정의한 프로토콜(Syslog/TCP, Syslog/UDP 또는 FTP)을 사용하여 로그를 로그 수집기로 보내고 있는지, 올바른 포트 및 디렉터리로 보내고 있는지 확인합니다.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. 컴퓨터에서 netstat를 실행하고 방화벽 또는 프록시에서 들어오는 연결을 받는지 확인합니다. <br /> 4.   로그 수집기가 포트 443에서 아웃바운드 트래픽을 시작하도록 허용되는지 확인합니다.|
+|로그 수집기 상태: 작성됨|로그 수집기 배포가 완료되지 않았습니다. 배포 가이드에 따라 온-프레미스 배포 단계를 완료합니다.|
+|로그 수집기 상태: 연결 끊김|지난 24시간 동안 연결된 데이터 원본에서 데이터가 수신되지 않았습니다.|어플라이언스에서 로그 내보내기 설정을 확인하고 제대로 설정되어 있는지 확인합니다.|
+
+
+
+## <a name="discovery-dashboard-errors"></a>검색 대시보드 오류
+
+|문제|해결 방법|
+|----|----|
+|검색 데이터가 성공적으로 업데이트 및 구문 분석되었으나 Cloud Discovery 대시보드가 비어 있습니다.|대시보드가 로그에 없는 데이터에서 필터링되어 표시할 데이터가 없습니다. Cloud Discovery 대시보드에서 다른 유형의 데이터를 표시하도록 필터를 변경하여 결과를 확인해 보세요.|
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   

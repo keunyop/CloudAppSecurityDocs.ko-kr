@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
-로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. FTP 로그는 파일이 로그 수집기로 FTP 전송을 완료한 후 Cloud App Security에 업로드되며 Syslog의 경우 로그 수집기가 수신한 로그를 20분마다 디스크에 쓴 다음 파일을 Cloud App Security에 업로드합니다.
+로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. 파일이 로그 수집기에 대한 FTP 전송을 완료한 후 FTP 로그가 Cloud App Security에 업로드되고, Syslog의 경우 로그 수집기는 수신한 로그를 디스크에 쓰고 파일 크기가 40KB를 초과하면 파일을 Cloud App Security에 업로드합니다.
+
+로그는 Cloud App Security에 업로드된 후 특정 시점에 마지막 20개 로그를 저장한 백업 디렉터리로 이동합니다. 새 로그가 도착하면 이전 로그가 삭제됩니다. 로그 수집기 디스크 공간이 가득 차면 로그 수집기는 사용 가능한 디스크 공간이 확보될 때까지 새 로그를 삭제합니다.
 
 자동 로그 파일 수집을 설정하기 전에 로그가 예상 로그 유형과 일치하는지 확인하여 Cloud App Security에서 특정 파일을 구문 분석할 수 있도록 합니다. 
 
@@ -80,7 +82,7 @@ ms.lasthandoff: 05/16/2017
   > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**하고 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
-###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
 > [!NOTE] 
 > 다음 단계에서는 Hyper-V에서의 배포에 관해 설명합니다. VM 하이퍼바이저의 배포 단계는 약간 다릅니다.  
@@ -146,11 +148,23 @@ sudo network_config
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>5 단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
+**로그 수집기** 표에서 수집기 상태를 확인하고 상태가 **연결됨**인지 확인합니다. **작성됨**인 경우에는 로그 수집기 연결 및 구문 분석이 완료되지 않은 것일 수 있습니다.
+
+![로그 수집기 상태](./media/log-collector-status.png)
+
 거버넌스 로그로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인합니다.  
   
 배포하는 동안 문제가 발생할 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 
+### <a name="optional---create-custom-continuous-reports"></a>선택 사항 - 사용자 지정 연속 보고서 만들기
 
+로그가 Cloud App Security에 업로드되고 보고서가 생성되고 있는지 확인한 후 사용자 지정 보고서를 만들 수 있습니다. 이제 Azure Active Directory 사용자 그룹을 기반으로 사용자 지정 검색 보고서를 만들 수 있습니다. 예를 들어 마케팅 부서의 클라우드 사용을 확인하려면 사용자 그룹 가져오기 기능을 사용하여 마케팅 그룹을 가져오고 이 그룹에 대한 사용자 지정 보고서를 만들면 됩니다. IP 주소 태그 또는 IP 주소 범위를 기반으로 보고서를 사용자 지정할 수도 있습니다.
+
+1. Cloud App Security 포털의 [설정] 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택하고 **연속 보고서 관리**를 선택합니다. 
+2. **보고서 만들기** 단추를 클릭하고 필드를 입력합니다.
+3. **필터** 아래에서 데이터 원본별, [가져온 사용자 그룹](user-groups.md)별 또는 [IP 주소 태그 및 범위](ip-tags.md)별로 데이터를 필터링할 수 있습니다. 
+
+![사용자 지정 연속 보고서](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>참고 항목  
 [Cloud Discovery 데이터 작업](working-with-cloud-discovery-data.md)   
