@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Salesforce 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Salesforce 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
@@ -44,10 +46,14 @@ translationtype: HT
   
          ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce 프로필 편집")  
   
-    -   **API 사용** 확인란이 선택되었는지 확인합니다. 선택되지 않은 경우 사용자 계정에 추가하도록 Salesforce에 요청해야 할 수도 있습니다.  
-  
-         ![salesforce api 사용](./media/salesforce-api-enabled.png "salesforce api 사용")  
-  
+    -   다음 확인란이 사용하도록 설정되었는지 확인합니다.   
+        - **API 사용**
+        - **모든 데이터 보기** 
+        - **Manage Salesforce CRM Content**(Salesforce CRM 콘텐츠 관리)
+        - **사용자 관리**
+        
+        이러한 확인란이 선택되지 않은 경우 계정에 확인란을 추가하려면 Salesforce에 연락해야 할 수 있습니다.  
+             
 3.  조직에서 **Salesforce CRM 콘텐츠**가 사용으로 설정된 경우 현재 관리자 계정에서도 사용으로 설정되었는지 확인합니다.  
   
     1.  Salesforce 설정 페이지로 이동합니다.  

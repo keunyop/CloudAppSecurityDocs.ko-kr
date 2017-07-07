@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>파일
 
@@ -83,7 +83,12 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 -   파일 이름 - 클라우드 앱에 정의된 이름의 파일 이름 또는 하위 문자열입니다(예: 이름에 암호가 포함된 모든 파일).   
   
--   분류 레이블 - Azure Information Protection에 의해 설정된 특정 태그를 사용하여 파일을 검색합니다. 그러려면 Azure Information Protection과 통합해야 합니다.
+-   분류 레이블 - 설정된 특정 태그를 사용하여 파일을 검색합니다. 태그는 다음 중 하나입니다.
+    - Azure Information Protection 태그. 그러려면 Azure Information Protection과 통합해야 합니다.
+    - Cloud App Security 태그. 이제 검색하는 파일에 대한 더 많은 정보를 제공합니다. Cloud App Security DLP가 검색한 각 파일에 대해 파일이 암호화되거나 손상되어 검사가 차단되었는지 알 수 있습니다. 예를 들어 다음과 같이 외부에서 공유되는 암호로 보호된 파일에 대해 경고하고 이를 격리하는 정책을 설정할 수 있습니다. 
+        - Azure RMS로 암호화 – 파일에 Azure RMS 암호가 설정되어 있어 해당 콘텐츠가 검사되지 않은 파일입니다.
+        - 암호로 암호화 – 파일이 사용자에 의해 암호로 보호되어 해당 콘텐츠가 검사되지 않은 파일입니다.
+        - 손상 파일 – 파일 콘텐츠를 읽을 수 없어 해당 콘텐츠가 검사되지 않은 파일입니다.
 
 -   파일 형식 – Cloud App Security는 서비스에서 받은 MIME 형식을 모두 사용하고 파일을 검색하여 실제 파일 형식을 확인합니다. 이 검색은 데이터 검색과 관련된 파일(문서, 이미지, 프레젠테이션, 스프레드시트, 텍스트 및 zip/보관 파일)에 대해 수행됩니다. 필터는 파일/폴더 형식을 기준으로 작동합니다(예: ...인 모든 폴더 또는 ...인 모든 스프레드시트 파일).
 
@@ -111,6 +116,9 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 ![필터에 적용](./media/apply-to-filter.png "필터에 적용")  
   
+>[!NOTE]
+> 필터를 지워야 하는 경우 언제든지 필터 지우기 아이콘 ![필터 지우기 아이콘](./media/clear-filters.png)을 클릭하여 필터를 지울 수 있습니다.
+
 ## <a name="working-with-the-file-drawer"></a>파일 서랍 사용
 
 파일 로그에서 파일 자체를 클릭하여 각 파일에 관한 자세한 정보를 볼 수 있습니다. 그러면 파일에서 수행할 다음 추가 작업을 제공하는 파일 서랍이 열립니다.

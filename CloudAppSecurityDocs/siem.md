@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 77f9d0175a35b95ed45632fce7644809912acb09
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -27,26 +27,13 @@ ms.lasthandoff: 05/16/2017
 
 ## <a name="siem-integration-architecture"></a>SIEM 통합 아키텍처
 
-SIEM 에이전트가 조직의 네트워크에 배포됩니다. 배포 및 구성되면 Cloud App Security RESTful API를 사용하여 구성된 데이터 유형(알림 및 활동)을 폴링합니다.
+SIEM 에이전트가 조직의 네트워크에 배포됩니다. 배포 및 구성되면 Cloud App Security RESTful API를 사용하여 구성된 데이터 유형(경고 및 활동)을 끌어옵니다.
 그러면 트래픽이 포트 443의 암호화된 HTTPS 채널을 통해 전송됩니다.
 
 SIEM 에이전트가 Cloud App Security에서 데이터를 검색하면 설정 중에 제공된 네트워크 구성(사용자 지정 포트가 있는 UDP 또는 TCP)을 사용하여 로컬 SIEM으로 Syslog 메시지를 전송합니다. 
 
 ![SIEM 통합 아키텍처](./media/siem-architecture.png)
 
-## <a name="sample-siem-logs"></a>샘플 SIEM 로그
-
-Cloud App Security에서 SIEM에 제공한 로그는 Syslog를 통한 CEF입니다. 다음 샘플 로그에서 Cloud App Security에서 일반적으로 SIEM 서버로 보내는 이벤트 유형을 확인할 수 있습니다. 이 경우 경고가 트리거된 시기, **이벤트 유형**, 위반된 **정책**, 이벤트를 트리거한 **사용자**, 사용자가 위반을 만드는 데 사용한 **앱** 및 경고 **URL**을 확인할 수 있습니다.
-
-샘플 활동 로그: 
-  
-2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
-
-
-
-샘플 경고 로그: 
-
-2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
 
 
 ## <a name="how-to-integrate"></a>통합 방법
@@ -65,10 +52,10 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>1단계: Cloud App Security 포털에서 설정합니다.
 
-1. Cloud App Security 포털의 Settings(설정) 코그 아래에서 **SIEM agents**(SIEM 에이전트)를 클릭합니다.
+1. Cloud App Security 포털의 [설정] 코그 아래에서 **보안 확장**을 클릭하고 나서 **SIEM 에이전트** 탭을 클릭합니다.
 
-2. Add SIEM agent(SIEM 에이전트 추가)를 클릭하여 마법사를 시작합니다.
-3. 마법사에서 **Add SIEM agent**(SIEM 에이전트 추가)를 클릭합니다.    
+2. 더하기 아이콘을 클릭하여 **SIEM 에이전트 추가** 마법사를 시작합니다.
+3. 마법사에서 **Add SIEM agent**(SIEM 에이전트 추가)를 클릭합니다. 
 4. 마법사에서 이름을 입력하고, **SIEM 형식을 선택**하고, 해당 형식과 관련된 **고급 설정**을 지정합니다. **다음**을 클릭합니다.
 
    ![일반 SIEM 설정](./media/siem1.png)

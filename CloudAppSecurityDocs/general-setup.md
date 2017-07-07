@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 6/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,22 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cb2b4b26ee9a5f0340409090318fcbe1421b90d5
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 7f4b5fb5b6100d5037be62f012c73cdc6609680f
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="basic-set-up"></a>기본 설정
 다음 절차에서는 Cloud App Security 포털을 사용자 지정하기 위한 지침을 제공합니다.
+
+## <a name="prerequisites"></a>필수 구성 요소 
+포털 액세스의 경우 Cloud App Security 포털에 액세스할 수 있도록 다음 IP 주소를 방화벽 허용 목록에 추가해야 합니다.  
+  
+- 104.42.231.28  
+  
+> [!NOTE]  
+>  URL 및 IP 주소가 변경된 경우 업데이트를 가져오려면 [Office 365 URL 및 IP 주소 범위](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 설명된 대로 RSS를 구독합니다.  
   
 ## <a name="set-up-the-portal"></a>포털 설정  
   

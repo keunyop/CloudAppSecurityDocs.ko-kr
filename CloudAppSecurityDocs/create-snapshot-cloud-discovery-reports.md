@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Cloud App Security에서 구문 분석하도록 해야 합니다.
@@ -41,6 +41,11 @@ ms.lasthandoff: 05/16/2017
 5. 로그 형식을 확인하여 다운로드할 수 있는 샘플에 따라 형식이 올바로 지정되었는지 확인합니다. **보기 및 확인**을 클릭한 다음 **샘플 로그 다운로드**를 클릭합니다. 그런 다음 로그를 제공된 샘플과 비교하여 호환되는지 확인합니다. 
 
  ![로그 형식 확인](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > FTP 샘플 형식은 스냅숏 및 자동화된 업로드에서 지원되지만 syslog는 자동화된 업로드에서만 지원됩니다.<br></br>
+샘플 로그를 다운로드하면 샘플 FTP 로그가 다운로드됩니다.
+
 
 5.  업로드할 **트래픽 로그를 선택**합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다. 압축된 파일도 지원됩니다.  
   

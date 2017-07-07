@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>활동
 Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. 
@@ -80,7 +80,7 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
    기본 제공 IP 태그는 다음과 같습니다.
     - Microsoft 앱(그중 14개)
     - 익명 프록시
-    - 봇넷
+    - 봇넷(특정 봇넷에 대한 세부 정보 링크를 통해 활동이 봇넷에 의해 수행되었는지 확인)
     - Darknet 검색 IP
     - 맬웨어 C&C 서버
     - 원격 연결 분석기
@@ -99,8 +99,8 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 -   등록된 ISP – 활동을 수행한 ISP입니다.   
 
 -  원본 - 활동이 검색된 원본을 기준으로 검색합니다. 원본은 다음 중 하나일 수 있습니다.
-  -    앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
-  -    앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
+  - 앱 커넥터 - 앱의 API 커넥터에서 직접 가져오는 로그입니다.
+  - 앱 커넥터 분석 - API 커넥터의 정보 검사를 기반으로 한 Cloud App Security 강화입니다.
   
 
 -   사용자 – 활동을 수행한 사용자입니다. 도메인, 그룹, 이름 또는 조직을 기준으로 필터링할 수 있습니다. 특정 사용자 없이 활동을 필터링하려면 '설정되지 않음' 연산자를 사용할 수 있습니다.  
@@ -117,10 +117,14 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
   
 -   사용자 에이전트 태그 – 기본 제공 사용자 에이전트 태그입니다(예: 오래된 브라우저 또는 오래된 운영 체제의 모든 활동).  
     
-  
-## <a name="working-with-the-activity-drawer"></a>활동 서랍 사용
+>[!NOTE]
+> 필터를 지워야 하는 경우 언제든지 필터 지우기 아이콘 ![필터 지우기 아이콘](./media/clear-filters.png)을 클릭하여 필터를 지울 수 있습니다.
 
-활동 로그에서 활동 자체를 클릭하여 각 활동에 관한 자세한 정보를 볼 수 있습니다. 그러면 파일에서 수행할 다음 추가 작업을 제공하는 활동 서랍이 열립니다.
+## <a name="the-activity-drawer"></a>활동 서랍
+
+### <a name="working-with-the-activity-drawer"></a>활동 서랍 사용
+
+활동 로그에서 활동 자체를 클릭하여 각 활동에 관한 자세한 정보를 볼 수 있습니다. 그러면 활동에서 수행할 다음 추가 작업을 제공하는 활동 서랍이 열립니다.
 
 - 일치 정책: 이 활동과 일치하는 정책의 목록을 보려면 [일치 정책] 링크를 클릭합니다.
 - 원시 데이터 보기: 응용 프로그램에서 받은 실제 데이터를 보려면 [원시 데이터 보기]를 클릭합니다.
@@ -135,6 +139,22 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 ![활동 서랍](./media/activity-drawer.png "활동 서랍")  
   
 사용할 수 있는 거버넌스 작업 목록은 [활동 거버넌스 작업](governance-actions.md#activity-governance-actions)을 참조하세요.
+
+### <a name="user-insights"></a>사용자 정보
+
+조사 환경에는 작업 사용자에 대한 기본 제공 정보가 포함됩니다. 한 번 클릭으로 사용자 연결이 시작된 위치, 사용자가 관련된 열린 경고 수, 사용자의 메타데이터 정보를 포함하여 사용자에 대한 포괄적인 개요를 확인할 수 있습니다.
+
+사용자 정보를 보려면:
+
+1. **활동 로그**에서 활동 자체를 클릭합니다.
+
+2. 그다음에 **사용자** 탭을 클릭합니다. <br></br> 그러면 활동 서랍이 열리고 **사용자** 탭에 사용자에 대한 다음 정보가 제공됩니다.
+    - **열린 경고**: 사용자에 관련된 열린 경고 수입니다.
+    - **파일 위반**: 사용자가 소유한 파일에 대한 파일 위반 수입니다.
+    - **활동**: 지난 30일 동안 사용자가 수행한 활동 수입니다.
+    - **국가**: 지난 30일 동안 사용자가 연결한 국가 수입니다.
+    - **ISP**: 지난 30일 동안 사용자가 연결한 ISP 수입니다.
+    - **IP 주소**: 지난 30일 동안 사용자가 연결한 IP 주소 수입니다.
 
 
 ## <a name="see-also"></a>참고 항목  
