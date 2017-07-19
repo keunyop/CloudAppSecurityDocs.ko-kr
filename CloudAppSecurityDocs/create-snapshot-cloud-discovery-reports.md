@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: bce725777964ac46a21b03434d24ac725280d84d
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Cloud App Security에서 구문 분석하도록 해야 합니다.
@@ -36,7 +36,7 @@ ms.lasthandoff: 07/03/2017
   
      ![새 스냅숏 보고서](./media/new-snapshot-report.png) 
 
-4.  13 로그 파일을 업로드할 **데이터 원본**을 선택합니다.  
+4.  로그 파일을 업로드할 **데이터 원본**을 선택합니다.  
   
 5. 로그 형식을 확인하여 다운로드할 수 있는 샘플에 따라 형식이 올바로 지정되었는지 확인합니다. **보기 및 확인**을 클릭한 다음 **샘플 로그 다운로드**를 클릭합니다. 그런 다음 로그를 제공된 샘플과 비교하여 호환되는지 확인합니다. 
 

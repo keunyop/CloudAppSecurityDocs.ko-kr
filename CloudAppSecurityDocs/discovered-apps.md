@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 824dd288e821289b0d09569d461a498d87e30705
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
+ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/05/2017
 ---
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
@@ -59,7 +59,7 @@ Cloud Discovery에서 제공된 데이터를 심층 분석하려면 필터를 �
 ![검색된 앱](./media/discovered-apps.png)  
 
 
-- **앱 태그**: 앱의 사용 권한이 부여 또는 취소되었거나 태그가 지정되었는지 선택합니다. 또한 앱에 대한 사용자 지정 태그를 만들고 나서 이를 사용하여 특정 유형의 앱을 필터링할 수 있습니다.
+- **앱 태그**: 앱의 사용 권한이 부여 또는 취소되었거나 태그가 지정되었는지 선택합니다. 또한 앱에 대한 사용자 지정 태그를 만들고 나서 이를 사용하여 특정 유형의 앱을 필터링할 수 있습니다. 
 - **앱 및 도메인**: 특정 앱 또는 특정 도메인에서 사용되는 앱을 검색할 수 있습니다. 
 - **범주**: 페이지 왼쪽에 있는 범주 필터를 사용하여 앱 범주에 따라 앱 유형을 검색할 수 있습니다(예: 소셜 네트워크 앱, 클라우드 저장소 앱 등). 한 번에 여러 범주를 선택하거나 단일 범주를 선택하고 나서 해당 범주에서 기본 및 고급 필터를 적용할 수 있습니다.
 - **Compliance risk factor**(규격 위험 요인): 앱이 준수할 수 있는 특정 표준, 인증 및 규격(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)을 검색할 수 있습니다.
@@ -70,7 +70,7 @@ Cloud Discovery에서 제공된 데이터를 심층 분석하려면 필터를 �
 
 ## <a name="creating-and-managing-custom-app-tags"></a>사용자 지정 앱 태그 만들기 및 관리
 
-사용자 지정 앱 태그를 만들 수 있습니다. 이러한 태그는 조사할 앱의 특정 유형을 심층 분석하는 데 필터로 사용할 수 있습니다. 
+사용자 지정 앱 태그를 만들 수 있습니다. 이러한 태그는 조사할 앱의 특정 유형을 심층 분석하는 데 필터로 사용할 수 있습니다. 예를 들어 사용자 지정 조사 목록, 특정 비즈니스 단위에 대한 지정 또는 사용자 지정 승인(예: “법적 승인”)을 사용할 수 있습니다.
 
 사용자 지정 앱 태그를 만들려면:
 

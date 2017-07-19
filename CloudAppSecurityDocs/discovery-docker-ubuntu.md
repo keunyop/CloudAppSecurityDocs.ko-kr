@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 284cec7753339bcfaa91bf8289709f8b165bab88
-ms.sourcegitcommit: 7ca888f37e4fe05eda72d8e588be15fbcf4ca9e5
+ms.openlocfilehash: e32eebc75355e8016fcdb62a1b113431db346c31
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -134,7 +134,7 @@ ms.lasthandoff: 07/11/2017
 
 대화 상자의 지침에 따라 FTP 디렉터리의 전용 Syslog 포트로 로그를 주기적으로 내보내도록 네트워크 방화벽 및 프록시를 구성합니다. 예를 들면 다음과 같습니다.
 
-    \`BlueCoat_HQ - Destination path: \\\\\<\<machine_name\>\>\\BlueCoat_HQ\\\`
+    BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ## <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>5 단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
