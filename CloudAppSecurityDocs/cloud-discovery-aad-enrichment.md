@@ -33,7 +33,7 @@ Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discover
 
 ## <a name="enabling-user-data-enrichment"></a>사용자 데이터 보강 사용 
     
-1. Settings(설정) 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택합니다.
+1. [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택합니다.
      
 2. Cloud App Security에서 Azure Active Directory 데이터를 사용하여 기본적으로 사용자 이름을 보강할 수 있도록 하려면, **사용자 보강** 탭에서 **Azure Active Directory 사용자 이름으로 검색된 사용자 ID를 보강하세요.**를 선택합니다.
 

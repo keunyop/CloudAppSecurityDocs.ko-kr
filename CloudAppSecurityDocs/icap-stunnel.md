@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b9931f11e50285c1bc6a0053fe0c8ad820851a08
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
 > [!NOTE] 
-> 이 기능은 미리 보기로 제공됩니다.
+> 이 기능은 미리 보기로 제공됩니다. 테넌트에서 이 기능을 사용해 보려면 <mcaspreview@microsoft.com>으로 문의하세요.
 
 Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
 
@@ -73,7 +73,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
 2. 설치하는 동안 새로운 자체 서명된 인증서를 만들지 마세요. 나중 단계에서 인증서를 만들 것입니다.
 
-3. **Start server after installation**(설치한 후 서버 시작)을 클릭합니다.
+3. **설치한 후 서버 시작**을 클릭합니다.
 
 4. 다음 방법 중 하나로 인증서를 만듭니다.
 
@@ -211,19 +211,19 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 
 2. 더하기를 클릭하여 새 연결을 추가합니다. 
 
-3. **Add new external DLP**(새 외부 DLP 추가) 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
+3. **새 외부 DLP 추가** 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
 
 4. **연결 형식**을 선택합니다.
     - **Symantec Vontu** – Vontu DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
     - **Forcepoint DLP** – Forcepoint DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
-    - **Generic ICAP – REQMOD**(일반 ICAP – REQMOD) - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
-    - **Generic ICAP – RESPMOD**(일반 Generic ICAP – RESPMOD) - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
+    - **일반 ICAP – REQMOD** - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
+    - **일반 ICAP – RESPMOD** - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
     ![Cloud App Security ICAP 연결](./media/icap-wizard1.png)
 
 4. stunnel에 연결하는 데 사용할 stunnel의 공용 루트 CA로 이동하여 이를 선택하고 **다음**을 클릭합니다.
 
    > [!NOTE]
-   > 암호화된 stunnel 게이트웨이를 설정하려면 **Use secure ICAP**(보안 ICAP 사용) 상자를 선택하는 것이 좋습니다. 테스트 목록이거나 stunnel 서버가 없는 경우 이 확인란을 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
+   > 암호화된 stunnel 게이트웨이를 설정하려면 **보안 ICAP 사용** 상자를 선택하는 것이 좋습니다. 테스트 목록이거나 stunnel 서버가 없는 경우 이 확인란을 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
 
 5. **서버 구성** 화면에서, 2단계에서 설정한 stunnel 서버의 **IP 주소** 및 **포트**를 제공합니다. 부하 분산 목적으로 추가 서버의 **IP 주소** 및 **포트**를 구성할 수 있습니다. 제공된 IP 주소는 서버의 외부 정적 IP 주소여야 합니다.
 
@@ -241,7 +241,7 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
 
     ![ICAP 배포](./media/icap-system-modules.png)
 
-2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **Allow connection to this ICAP Server from the following IP addresses**(다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용)에서 **모든 IP 주소**를 선택합니다.
+2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용**에서 **모든 IP 주소**를 선택합니다.
  
     ![ICAP 구성](./media/icap-ip-address.png)
 

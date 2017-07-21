@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="release-notes"></a>릴리스 정보
 
@@ -44,6 +44,10 @@ ms.lasthandoff: 07/04/2017
     - **사용자 지정 메모**: 환경에서 검색된 다양한 응용 프로그램을 검토하고 평가할 때 결론 및 정보를 메모에 저장할 수 있습니다.
     - **사용자 지정 위험 점수**: 앱의 위험 점수를 재정의할 수 있습니다. 예를 들어 앱의 위험 점수가 8이고 해당 앱이 조직에서 사용 권한 앱인 경우 조직에 대한 위험 점수를 10으로 변경할 수 있습니다. 메모를 추가하여 누군가 앱을 검토할 때 변경의 근거를 분명히 설명할 수도 있습니다.
 -   **새 로그 수집기 배포 모드:** 배포를 시작하면서 이제 새로운 배포 모드를 로그 수집기에 사용할 수 있습니다. 현재 가상 어플라이언스 기반 배포 이외에 새로운 Docker(컨테이너) 기반 로그 수집기를 패키지로 Windows 및 Ubuntu 컴퓨터에 온-프레미스 및 Azure를 사용하여 설치할 수 있습니다. Docker를 사용할 경우 호스팅 컴퓨터는 이를 자유롭게 패치 및 모니터링할 수 있는 고객이 소유합니다.
+
+### <a name="announcements"></a>공지 사항: 
+-   클라우드 앱 카탈로그는 이제 15,000개 이상의 검색 가능한 앱을 지원합니다.
+-   규정 준수: Cloud App Security는 공식적으로 Azure에서 SOC1/2/3 인증되었습니다. 전체 인증 목록은 [규정 준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하고 Cloud App Security에 대한 결과를 필터링하세요.
 
 ### <a name="other-improvements"></a>기타 향상된 기능: 
 -   **향상된 구문 분석:** Cloud Discovery 로그 구문 분석 메커니즘에서 기능이 향상되었습니다. 내부 오류 발생 가능성이 크게 감소했습니다.
