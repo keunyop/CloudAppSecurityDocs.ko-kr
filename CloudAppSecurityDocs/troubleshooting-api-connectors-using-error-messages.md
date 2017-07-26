@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
 
 API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 앱 커넥터 대화 상자에 앱 커넥터 오류가 표시될 수 있습니다.
 
 
+> [!div class="mx-tableFixed"]
 |오류 메시지|관련 앱|설명|해결 방법|
 |----|----|----|------------|
 |HttpRequestFailure: 서버에서 반환함: 400 잘못된 요청: {"error":{"code":"AF20012","message":"지정된 테넌트 ID(Tenant_ID 위치)가 시스템에서 잘못 구성되었습니다."|Office 365 |할당된 Office 365 라이선스가 없습니다. |테넌트에 하나 이상의 Office 365 라이선스를 할당하세요.| 
