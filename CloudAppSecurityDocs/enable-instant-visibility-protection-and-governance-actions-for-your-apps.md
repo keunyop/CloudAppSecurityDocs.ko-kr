@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 96f6aeb2ec67175bde4ed94199405d6457797659
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
+ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
@@ -66,6 +66,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
   
 다음 표에서는 앱 커넥터에서 지원되는 기능을 클라우드 앱별로 보여 줍니다.  
 
+> [!div class="mx-tableFixed"]
 ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**계정 나열**|✔|✔|✔|✔|✔|✔|✔|✔|  
