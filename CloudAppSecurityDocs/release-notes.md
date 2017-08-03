@@ -1,5 +1,5 @@
 ---
-title: "Cloud App Security 릴리스 정보 및 버전 | Microsoft 문서"
+title: "Cloud App Security의 새로운 기능 | Microsoft Docs"
 description: "이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다."
 keywords: 
 author: rkarlin
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
-ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
+ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
+ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2017
+ms.lasthandoff: 07/23/2017
 ---
-# <a name="release-notes"></a>릴리스 정보
+# <a name="whats-new-with-cloud-app-security"></a>Cloud App Security의 새로운 기능
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security 릴리스 100 
 릴리스 날짜: 2017년 7월 3일

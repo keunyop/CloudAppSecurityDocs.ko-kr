@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: b3c9181bf1d56fe515d3e1356d38d631fee2cac5
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
 > [!NOTE] 
-> 이 기능은 미리 보기로 제공됩니다. 테넌트에서 이 기능을 사용해 보려면 <mcaspreview@microsoft.com>으로 문의하세요.
+> 이 기능은 미리 보기로 제공됩니다. 테넌트에서 이 기능을 사용해 보려면 <Cloud App Securitypreview@microsoft.com>으로 문의하세요.
 
 Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
 
@@ -88,7 +88,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. cert.pem 및 key.pem을 연결하고 파일에 저장합니다. `cat cert.pem key.pem >> stunnel-key.pem`
+8. cert.pem 및 key.pem을 연결하고 파일에 저장합니다. `type cert.pem key.pem >> stunnel-key.pem`
 
 9. [공개 키를 다운로드](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)하고 **C:\Program Files (x86)\stunnel\config\CAfile.pem** 위치에 저장합니다.
 
@@ -96,7 +96,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
 11. `c:\Program Files (x86)\stunnel\bin\stunnel.exe`를 실행하여 stunnel 응용 프로그램을 엽니다. 
 
@@ -112,7 +112,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
-
+        client = no
 12. 파일을 저장하고 **구성 다시 로드**를 클릭합니다.
 
 13. 모든 것이 예상대로 실행 중인지 유효성을 검사하려면 명령 프롬프트에서 `netstat -nao  | findstr 11344`를 실행합니다.
@@ -159,12 +159,12 @@ stunnel 구성은 stunnel.conf 파일에서 설정됩니다.
 3.  파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **CAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다.
 
         [microsoft-Cloud App Security]
-         accept = 0.0.0.0:11344
-         connect = **ICAP Server IP**:1344
-          cert = /etc/ssl/private/**stunnel-key**.pem
-          CAfile = /etc/ssl/certs/**CAfile**.pem
-          TIMEOUTclose = 1
-
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = /etc/ssl/private/**stunnel-key**.pem
+        CAfile = /etc/ssl/certs/**CAfile**.pem
+        TIMEOUTclose = 1
+        client = no
 > [!NOTE] 
 > 기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다. 다음 단계에서 해당 포트 번호를 입력해야 합니다.
 
@@ -250,6 +250,54 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
     ![ICAP 차단](./media/icap-blocking.png)
  
 
+## <a name="appendix-b-symantec-deployment-guide"></a>부록 B: Symantec 배포 가이드
+
+지원되는 Symantec DLP 버전은 11-14.6입니다. 위에서 언급한 대로 Cloud App Security 테넌트 상주 위치와 동일한 Azure 데이터 센터에서 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
+ 
+### <a name="detection-server-installation"></a>검색 서버 설치 
+Cloud App Security에서 사용되는 검색 서버는 표준 Network Prevent for Web 서버입니다. 다음과 같이 여러 구성 옵션이 변경되어야 합니다.
+1.  **평가판 모드**를 사용하지 않도록 설정합니다.
+    1. **시스템** > **서버 및 탐지기**에서 ICAP 대상을 클릭합니다. 
+    
+      ![ICAP 대상](./media/icap-target.png)
+    
+    2. **구성**을 클릭합니다. 
+    
+      ![ICAP 대상 구성](./media/configure-icap-target.png)
+    
+    3. **평가판 모드**를 사용하지 않도록 설정합니다.
+    
+      ![평가판 모드를 사용하지 않도록 설정](./media/icap-disable-trial-mode.png)
+    
+2. **ICAP** > **응답 필터링**에서 **크기가 다음 값보다 작은 응답 무시** 값을 1로 변경합니다.
+
+3. **콘텐츠 형식 검사** 목록에 "application/*"를 추가합니다.
+     ![콘텐츠 형식 검사](./media/icap-inspect-content-type.png)
+4. **저장**을 클릭합니다.
+
+
+### <a name="policy-configuration"></a>정책 구성
+Cloud App Security는 Symantec DLP와 함께 포함된 모든 검색 규칙 유형을 원활하게 지원하므로 기존 규칙을 변경할 필요가 없습니다. 그러나 완벽하게 통합될 수 있도록 모든 기존 정책 및 새 정책에 구성 변경이 적용되어야 합니다. 이 변경에서는 특정 응답 규칙을 모든 정책에 추가합니다. Vontu에 구성 변경을 추가하려면 다음을 수행합니다.
+1.  **관리** > **정책** > **응답 규칙**으로 이동하여 **응답 규칙 추가**를 클릭합니다.
+    
+    ![응답 규칙 추가](./media/icap-add-response-rule.png)
+
+2.  **자동 응답**이 선택되었는지 확인하고 **다음**을 클릭합니다.
+
+    ![자동 응답](./media/icap-automated-response.png)
+
+3. 규칙 이름, 예를 들어 **HTTP/HTTPS 차단**을 입력합니다. **동작**에서 **HTTP/HTTPS 차단**을 선택하고 **저장**을 클릭합니다.
+
+    ![http 차단](./media/icap-block-http.png)
+
+만든 규칙을 다음과 같이 모든 기존 정책에 추가합니다.
+1. 각 정책에서 **응답** 탭으로 전환합니다.
+2. **응답 규칙** 드롭다운을 눌러 위에서 만든 차단 응답 규칙을 선택합니다.
+3. 정책을 저장합니다.
+   
+    ![평가판 모드를 사용하지 않도록 설정](./media/icap-add-policy.png)
+
+이 규칙은 모든 기존 정책에 추가되어야 합니다.
 
 
 
