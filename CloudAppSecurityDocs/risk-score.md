@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: c08aa36d651c060f571e580c531a6d4eee22094c
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>위험 점수 사용  
 
 ## <a name="the-cloud-app-catalog"></a>클라우드 앱 카탈로그
 
-클라우드 앱 카탈로그를 통해 Cloud Discovery가 무엇을 나타내는지 전체적으로 파악할 수 있습니다. Cloud Discovery는 50개 이상의 특성을 기준으로 순위 및 점수가 매겨진 14,000개를 초과하는 클라우드 앱에 대한 Cloud App Security의 클라우드 앱 카탈로그에 대해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT 및 위험 섀도 IT를 지속해서 파악합니다.
+클라우드 앱 카탈로그를 통해 Cloud Discovery가 무엇을 나타내는지 전체적으로 파악할 수 있습니다. Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
 **클라우드 앱 카탈로그**는 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 앱의 위험을 평가합니다. 클라우드 앱 카탈로그에서 네 개의 보완 프로세스를 실행하여 다음 항목에 대한 최신 정보를 제공합니다.
 1.  클라우드 앱에서 직접 자동화된 데이터 추출(SOC 2 준수와 같은 특성)
 2.  Cloud App Security의 알고리즘에 따라 데이터에 대한 자동화된 고급 데이터 추출(HTTP 보안 헤더와 같은 특성)
