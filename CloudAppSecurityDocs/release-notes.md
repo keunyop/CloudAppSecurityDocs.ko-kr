@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security의 새로운 기능 | Microsoft Docs"
+title: "Cloud App Security 새 소식 | Microsoft 문서"
 description: "이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Cloud App Security의 새로운 기능
+# <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 새 소식
+
+## <a name="cloud-app-security-release-102"></a>Cloud App Security 릴리스 102 
+릴리스 날짜: 2017년 7월 30일
+ 
+-   IP 주소 정보는 거의 모든 조사에 매우 중요하므로 이제 활동 서랍에서 IP 주소에 대한 자세한 정보를 볼 수 있습니다. 특정 활동 내에서 이제 IP 주소 탭을 클릭하면 특정 IP 주소의 미해결 경고, 최근 활동의 추세 그래프, 위치 맵 등 해당 IP 주소에 대한 통합 데이터를 볼 수 있습니다. 이를 통해 쉽게 드릴다운할 수 있습니다. 예를 들어 불가능한 여행 경고를 조사할 때 IP 주소가 어디에 사용되었는지와 의심스러운 활동과 관련되어 있는지를 쉽게 알 수 있습니다. IP 주소를 위험, VPN 또는 회사로 지정할 수 있게 하는 IP 주소 서랍에서 작업을 바로 수행함으로써 향후 조사와 정책 만들기를 쉽게 수행할 수도 있습니다. 자세한 내용은 [IP 주소 정보](activity-filters.md#ip-address-insights)를 참조하세요.
+
+-   Cloud Discovery에서 이제 [자동화된 로그 업로드](discovery-docker.md)에도 [사용자 지정 로그 형식](custom-log-parser.md)을 사용할 수 있습니다. 이를 통해 Splunk 서버 등의 SIEM에서 또는 지원되지 않는 다른 모든 형식의 로그를 자동으로 업로드할 수 있습니다. 
+ 
+-   새 사용자 조사 작업은 사용자 조사에 추가된 수준의 드릴다운을 사용할 수 있게 합니다. **조사** 페이지에서 이제 활동, 사용자 또는 계정을 마우스 오른쪽 단추로 클릭하고 고급 조사 및 필터링을 위해 다음과 같은 새 필터 중 하나를 적용할 수 있습니다. **관련 활동 보기**, **관련 거버넌스 보기**, **관련 경고 보기**, **소유한 파일 보기**, **이 사용자와 공유한 파일 보기**.
+
+-   클라우드 앱 카탈로그에는 이제 계정 종료 후 데이터 보존의 새로운 필드가 포함되어 있습니다. 이 위험 요소를 사용하면 클라우드 앱 내에서 계정이 종료된 후 데이터가 완전히 제거되었는지 확인할 수 있습니다.
+
+-   이제 잠재 고객, 계정, 캠페인, 기회, 프로필, 사례 등의 Salesforce 개체 활동과 관련하여 Cloud App Security의 가시성이 강화되었습니다. 예를 들어 계정 페이지 액세스에 대한 가시성을 사용하면 어떤 사용자가 비정상적으로 많은 수의 계정 페이지를 볼 경우 나에게 경고 메시지를 전달하도록 정책을 구성할 수 있습니다. 이는 Salesforce에서 Salesforce Event Monitoring(Salesforce Shield의 일부)을 사용하도록 설정한 경우에 Salesforce App Connector를 통해 가능합니다.
+
+- 이제 비공개 미리 보기 고객이 Do Not Track을 사용할 수 있습니다! 이제 어느 사용자의 활동 데이터를 처리할지 제어할 수 있습니다. 그러면 Cloud App Security에서 특정 그룹을 "Do Not Track"으로 설정할 수 있습니다. 예를 들어 이제는 독일이나 특정 규정 준수 규칙으로 바인딩되지 않은 국가에 위치한 사용자의 활동 데이터를 처리할지를 결정할 수가 있습니다. 이는 특정 앱과 특정 하위 앱 등 Cloud App Security의 모든 앱에 걸쳐 구현할 수 있습니다. 또한, 이 기능을 사용하여 Cloud App Security의 단계적 롤아웃을 쉽게 수행할 수 있습니다. 자세한 내용을 보거나 이 기능의 비공개 미리 보기에 참가하려면 지원 또는 계정 담당자에게 문의하세요. 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security 릴리스 100 
 릴리스 날짜: 2017년 7월 3일
@@ -45,9 +62,9 @@ ms.lasthandoff: 07/23/2017
     - **사용자 지정 위험 점수**: 앱의 위험 점수를 재정의할 수 있습니다. 예를 들어 앱의 위험 점수가 8이고 해당 앱이 조직에서 사용 권한 앱인 경우 조직에 대한 위험 점수를 10으로 변경할 수 있습니다. 메모를 추가하여 누군가 앱을 검토할 때 변경의 근거를 분명히 설명할 수도 있습니다.
 -   **새 로그 수집기 배포 모드:** 배포를 시작하면서 이제 새로운 배포 모드를 로그 수집기에 사용할 수 있습니다. 현재 가상 어플라이언스 기반 배포 이외에 새로운 Docker(컨테이너) 기반 로그 수집기를 패키지로 Windows 및 Ubuntu 컴퓨터에 온-프레미스 및 Azure를 사용하여 설치할 수 있습니다. Docker를 사용할 경우 호스팅 컴퓨터는 이를 자유롭게 패치 및 모니터링할 수 있는 고객이 소유합니다.
 
-### <a name="announcements"></a>공지 사항: 
--   클라우드 앱 카탈로그는 이제 15,000개 이상의 검색 가능한 앱을 지원합니다.
--   규정 준수: Cloud App Security는 공식적으로 Azure에서 SOC1/2/3 인증되었습니다. 전체 인증 목록은 [규정 준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하고 Cloud App Security에 대한 결과를 필터링하세요.
+### <a name="announcements"></a>알림: 
+-   클라우드 앱 카탈로그가 이제 15,000개가 넘는 검색 가능한 앱 지원
+-   준수: Cloud App Security는 Azure에서 공식적으로 SOC1/2/3 인증을 했습니다. 전체 인증 목록을 보려면 [준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하거나 Cloud App Security 결과를 필터링하세요.
 
 ### <a name="other-improvements"></a>기타 향상된 기능: 
 -   **향상된 구문 분석:** Cloud Discovery 로그 구문 분석 메커니즘에서 기능이 향상되었습니다. 내부 오류 발생 가능성이 크게 감소했습니다.
@@ -175,7 +192,7 @@ Cloud Discovery 업데이트:
 -   타사 DLP 스캐너를 추가로 구성한 경우 이제 DLP 검색 상태에 각 커넥터 상태가 개별적으로 표시되므로 더 쉽게 확인할 수 있습니다.
 -   이제 Cloud App Security에서 Office 365 감사 로그에서 지원되는 Microsoft 팀 활동도 지원합니다. 이 기능은 점진적으로 출시될 예정입니다.
 -   Exchange Online 가장 이벤트의 경우 이제 사용된 권한 수준 즉, 위임, 관리자 또는 위임된 관리자별로 필터링할 수 있습니다. **활동 개체** > **항목**을 검색하여 **활동 로그**에서 관심 있는 가장 수준을 표시하는 이벤트를 검색할 수 있습니다.
--   App Permissions(앱 사용 권한) 탭의 앱 서랍에서 이제 각 앱의 **게시자**를 볼 수 있습니다. 또한 게시자를 필터로 사용하여 동일한 게시자의 앱을 추가로 확인할 수도 있습니다.
+-   Office 365 앱의 **앱 사용 권한** 탭의 앱 서랍에서 이제 각 앱의 **게시자**를 볼 수 있습니다. 또한 게시자를 필터로 사용하여 동일한 게시자의 앱을 추가로 확인할 수도 있습니다.
 -   이제 위험한 IP 주소가 일반 **위치** 위험 요소 아래에서 가중 위험 요소가 아닌 독립 위험 요소로 표시됩니다. 
 -   파일에 대해 Azure Information Protection 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
  

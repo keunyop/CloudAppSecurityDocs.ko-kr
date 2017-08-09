@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스에서 연속 보고서에 대한 자동 로그 업로드 구성
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스 연속 보고서에 대한 자동 로그 업로드 구성
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 - 하이퍼바이저: HyperV 또는 VMware
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/16/2017
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
   
 1.  자동화된 업로드 설정 페이지로 이동합니다.  
-    Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "settings icon"), **로그 수집기**를 차례로 클릭합니다.  
+    Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘"), **로그 수집기**를 차례로 클릭합니다.  
   
 3.  로그를 업로드하려는 각 방화벽 또는 프록시에 대해 일치하는 데이터 원본을 만듭니다.  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 07/16/2017
   
     b.  프록시 또는 방화벽에 **이름**을 지정합니다.  
   
-    c.  **원본** 목록에서 어플라이언스를 선택합니다.  
+    c.  **원본** 목록에서 어플라이언스를 선택합니다. 구체적으로 나열되지 않은 네트워크 어플라이언스에 사용하기 위하여 **사용자 지정 로그 형식**을 선택하는 경우 구성 지침은 [사용자 지정 로그 파서 작업](custom-log-parser.md)을 참조하세요.
   
     d.  예상 로그 형식 샘플과 로그를 비교합니다. 로그 파일 형식이 이 샘플과 일치하지 않는 경우 데이터 원본을 **기타**로 추가해야 합니다.  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 07/16/2017
 1.  Hyper-V 관리자를 엽니다.  
   
 2.  **새로 만들기**, **가상 컴퓨터**를 차례로 선택하고 **다음**을 클릭합니다.  
- ![검색 hyperv 가상 컴퓨터](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![검색 HyperV 가상 컴퓨터](./media/discovery-hyperv-virtual-machine.png "검색 HyperV 가상 컴퓨터")  
   
 3.  새 가상 컴퓨터의 **이름**(예: CloudAppSecurityLogCollector01)을 지정하고 **다음**을 클릭합니다.  
   
@@ -151,7 +151,7 @@ sudo network_config
 
 로그가 Cloud App Security에 업로드되고 보고서가 생성되고 있는지 확인한 후 사용자 지정 보고서를 만들 수 있습니다. 이제 Azure Active Directory 사용자 그룹을 기반으로 사용자 지정 검색 보고서를 만들 수 있습니다. 예를 들어 마케팅 부서의 클라우드 사용을 확인하려면 사용자 그룹 가져오기 기능을 사용하여 마케팅 그룹을 가져오고 이 그룹에 대한 사용자 지정 보고서를 만들면 됩니다. IP 주소 태그 또는 IP 주소 범위를 기반으로 보고서를 사용자 지정할 수도 있습니다.
 
-1. Cloud App Security 포털의 [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택하고 **연속 보고서 관리**를 선택합니다. 
+1. Cloud App Security 포털의 [설정] 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택하고 **연속 보고서 관리**를 선택합니다. 
 2. **보고서 만들기** 단추를 클릭하고 필드를 입력합니다.
 3. **필터** 아래에서 데이터 원본별, [가져온 사용자 그룹](user-groups.md)별 또는 [IP 주소 태그 및 범위](ip-tags.md)별로 데이터를 필터링할 수 있습니다. 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3c9181bf1d56fe515d3e1356d38d631fee2cac5
-ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
+ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
-
-> [!NOTE] 
-> 이 기능은 미리 보기로 제공됩니다. 테넌트에서 이 기능을 사용해 보려면 <Cloud App Securitypreview@microsoft.com>으로 문의하세요.
 
 Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
 
 [RFC 3507](https://tools.ietf.org/html/rfc3507)에 설명된 HTTP와 유사한 프로토콜인 표준 ICAP 프로토콜을 사용하여 통합을 수행합니다. 데이터를 전송할 경우 ICAP를 보호하기 위해 DLP 솔루션과 Cloud App Security 간에 보안 SSL 터널(stunnel)을 설정해야 합니다. stunnel 설정은 DLP 서버와 Cloud App Security 간에 이동할 때 데이터에 대한 TLS 암호화 기능을 제공합니다. 
 
 이 가이드에서는 ICAP 연결을 통해 통신을 보호하기 위해 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
+
+> [!NOTE]
+>이 기능은 공개 미리 보기로 제공됩니다.
 
 ## <a name="architecture"></a>아키텍처
 Cloud App Security는 클라우드 환경을 검색하고 파일 정책 구성에 따라 내부 DLP 엔진 또는 외부 DLP를 사용하여 파일을 검색할지 여부를 결정합니다. 외부 DLP 검색이 적용되면 파일은 DLP verdict: allowed/blocked를 위해 ICAP 어플라이언스에 릴레이되는 경우 보안 터널을 통해 고객 환경에 전송됩니다. 응답은 알림, 격리 및 공유 컨트롤과 같은 후속 작업을 결정하기 위해 정책에서 사용되는 경우 stunnel을 통해 다시 Cloud App Security에 전송됩니다.
@@ -44,6 +44,9 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 2.  원본 TCP 포트: 동적
 3.  대상 주소: 다음 단계에서 구성할 외부 ICAP 서버에 연결된 stunnel의 IP 주소 하나 이상
 4.  대상 TCP 포트: 네트워크에 정의된 대로
+
+> [!NOTE] 
+> 기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다. 다음 단계에서 해당 포트 번호를 입력해야 합니다.
 
 ## <a name="step-1--set-up-icap-server"></a>1단계: ICAP 서버 설정
 
@@ -73,7 +76,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
 2. 설치하는 동안 새로운 자체 서명된 인증서를 만들지 마세요. 나중 단계에서 인증서를 만들 것입니다.
 
-3. **설치한 후 서버 시작**을 클릭합니다.
+3. **Start server after installation**(설치한 후 서버 시작)을 클릭합니다.
 
 4. 다음 방법 중 하나로 인증서를 만듭니다.
 
@@ -84,13 +87,13 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
        -    **stunnel-key**(새로 만들어진 키 이름 포함)
 
 5. stunnel 설치 경로에서 config 디렉터리를 엽니다. 기본 경로는 c:\Program Files (x86)\stunnel\config\입니다.
-6. 관리자 권한으로 명령줄을 실행합니다. `..\bin\openssl.exe genrsa -out ey.pem 2048 `
+6. 관리자 권한으로 명령줄을 실행합니다. `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
 8. cert.pem 및 key.pem을 연결하고 파일에 저장합니다. `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [공개 키를 다운로드](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)하고 **C:\Program Files (x86)\stunnel\config\CAfile.pem** 위치에 저장합니다.
+9. [공개 키를 다운로드](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)하고 **C:\Program Files (x86)\stunnel\config\MCASca.pem** 위치에 저장합니다.
 
 10. 다음 규칙을 추가하여 Windows 방화벽에서 포트를 엽니다.
 
@@ -104,13 +107,13 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
    ![Windows Server 구성 편집](./media/stunnel-windows.png)
  
-13. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **CAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 또한 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음을 파일에 복사합니다.
+13. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 또한 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음을 파일에 복사합니다.
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
         connect = **ICAP Server IP**:1344
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
-        CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
+        CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
 12. 파일을 저장하고 **구성 다시 로드**를 클릭합니다.
@@ -148,7 +151,7 @@ ICAP 서버 및 Cloud App Security에서는 stunnel을 통해 서버 암호화 �
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Cloud App Security stunnel 클라이언트 공개 키 다운로드
 
-https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 위치에서 공개 키를 다운로드하고 **/etc/ssl/certs/CAfile.pem** 위치에 저장합니다.
+https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 위치에서 공개 키를 다운로드하고 **/etc/ssl/certs/MCASCAfile.pem** 위치에 저장합니다.
 
 ### <a name="configure-stunnel"></a>stunnel 구성 
 
@@ -156,17 +159,16 @@ stunnel 구성은 stunnel.conf 파일에서 설정됩니다.
 
 1. **vim /etc/stunnel/stunnel.conf** 디렉터리에서 stunnel.conf 파일을 만듭니다.
 
-3.  파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **CAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다.
+3.  파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다.
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
         connect = **ICAP Server IP**:1344
         cert = /etc/ssl/private/**stunnel-key**.pem
-        CAfile = /etc/ssl/certs/**CAfile**.pem
+        CAfile = /etc/ssl/certs/**MCASCAfile**.pem
         TIMEOUTclose = 1
         client = no
-> [!NOTE] 
-> 기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다. 다음 단계에서 해당 포트 번호를 입력해야 합니다.
+
 
 ### <a name="update-your-ip-table"></a>IP 테이블 업데이트
 다음 경로 규칙을 사용하여 IP 주소 테이블을 업데이트합니다.
@@ -211,19 +213,19 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 
 2. 더하기를 클릭하여 새 연결을 추가합니다. 
 
-3. **새 외부 DLP 추가** 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
+3. **Add new external DLP**(새 외부 DLP 추가) 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
 
 4. **연결 형식**을 선택합니다.
     - **Symantec Vontu** – Vontu DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
     - **Forcepoint DLP** – Forcepoint DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
-    - **일반 ICAP – REQMOD** - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
-    - **일반 ICAP – RESPMOD** - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
+    - **Generic ICAP – REQMOD**(일반 ICAP – REQMOD) - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
+    - **Generic ICAP – RESPMOD**(일반 Generic ICAP – RESPMOD) - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
     ![Cloud App Security ICAP 연결](./media/icap-wizard1.png)
 
-4. stunnel에 연결하는 데 사용할 stunnel의 공용 루트 CA로 이동하여 이를 선택하고 **다음**을 클릭합니다.
+5. 이전 단계에서 생성한 공용 인증서를 찾아서 선택하고 “cert.pem”을 stunnel에 연결한 후 **다음**을 클릭합니다.
 
    > [!NOTE]
-   > 암호화된 stunnel 게이트웨이를 설정하려면 **보안 ICAP 사용** 상자를 선택하는 것이 좋습니다. 테스트 목록이거나 stunnel 서버가 없는 경우 이 확인란을 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
+   > 암호화된 stunnel 게이트웨이를 설정하려면 **Use secure ICAP**(보안 ICAP 사용) 상자를 선택하는 것이 좋습니다. 테스트 목록이거나 stunnel 서버가 없는 경우 이 확인란을 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
 
 5. **서버 구성** 화면에서, 2단계에서 설정한 stunnel 서버의 **IP 주소** 및 **포트**를 제공합니다. 부하 분산 목적으로 추가 서버의 **IP 주소** 및 **포트**를 구성할 수 있습니다. 제공된 IP 주소는 서버의 외부 정적 IP 주소여야 합니다.
 
@@ -241,7 +243,7 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
 
     ![ICAP 배포](./media/icap-system-modules.png)
 
-2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용**에서 **모든 IP 주소**를 선택합니다.
+2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **Allow connection to this ICAP Server from the following IP addresses**(다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용)에서 **모든 IP 주소**를 선택합니다.
  
     ![ICAP 구성](./media/icap-ip-address.png)
 
@@ -252,12 +254,12 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
 
 ## <a name="appendix-b-symantec-deployment-guide"></a>부록 B: Symantec 배포 가이드
 
-지원되는 Symantec DLP 버전은 11-14.6입니다. 위에서 언급한 대로 Cloud App Security 테넌트 상주 위치와 동일한 Azure 데이터 센터에서 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
+지원되는 Symantec DLP 버전은 11-14.6입니다. 위에서 언급한 대로 Cloud App Security 테넌트가 있는 동일한 Azure 데이터 센터에 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
  
 ### <a name="detection-server-installation"></a>검색 서버 설치 
-Cloud App Security에서 사용되는 검색 서버는 표준 Network Prevent for Web 서버입니다. 다음과 같이 여러 구성 옵션이 변경되어야 합니다.
-1.  **평가판 모드**를 사용하지 않도록 설정합니다.
-    1. **시스템** > **서버 및 탐지기**에서 ICAP 대상을 클릭합니다. 
+Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent for Web 서버입니다. 여러 구성 옵션을 변경해야 합니다.
+1.  **평가 모드** 사용 안 함:
+    1. **시스템** > **서버 및 탐지기** 아래에서 ICAP 대상을 클릭합니다. 
     
       ![ICAP 대상](./media/icap-target.png)
     
@@ -265,37 +267,37 @@ Cloud App Security에서 사용되는 검색 서버는 표준 Network Prevent fo
     
       ![ICAP 대상 구성](./media/configure-icap-target.png)
     
-    3. **평가판 모드**를 사용하지 않도록 설정합니다.
+    3. **평가 모드**를 사용하지 않도록 구성합니다.
     
-      ![평가판 모드를 사용하지 않도록 설정](./media/icap-disable-trial-mode.png)
+      ![평가 모드 사용 안 함](./media/icap-disable-trial-mode.png)
     
-2. **ICAP** > **응답 필터링**에서 **크기가 다음 값보다 작은 응답 무시** 값을 1로 변경합니다.
+2. **ICAP** > **응답 필터링** 아래에서 **다음보다 적은 응답 무시** 값을 1로 변경합니다.
 
-3. **콘텐츠 형식 검사** 목록에 "application/*"를 추가합니다.
+3. "application/*"를 **콘텐츠 형식 검사**의 목록에 추가합니다.
      ![콘텐츠 형식 검사](./media/icap-inspect-content-type.png)
 4. **저장**을 클릭합니다.
 
 
 ### <a name="policy-configuration"></a>정책 구성
-Cloud App Security는 Symantec DLP와 함께 포함된 모든 검색 규칙 유형을 원활하게 지원하므로 기존 규칙을 변경할 필요가 없습니다. 그러나 완벽하게 통합될 수 있도록 모든 기존 정책 및 새 정책에 구성 변경이 적용되어야 합니다. 이 변경에서는 특정 응답 규칙을 모든 정책에 추가합니다. Vontu에 구성 변경을 추가하려면 다음을 수행합니다.
-1.  **관리** > **정책** > **응답 규칙**으로 이동하여 **응답 규칙 추가**를 클릭합니다.
+Cloud App Security는 Symantec DLP에 포함된 모든 검색 규칙 형식을 원활하게 지원하므로 기존 규칙을 바꿀 필요가 없습니다. 하지만 전체 통합을 사용하려면 모든 기존 및 새 정책에 적용되어야 하는 구성 변경 내용이 있습니다. 이 변경 내용은 모든 정책에 대한 특정 응답 규칙의 추가입니다. Vontu에 구성 변경 내용 추가:
+1.  **관리** > **정책** > **응답 규칙**으로 이동해서 **응답 규칙 추가**를 클릭합니다.
     
     ![응답 규칙 추가](./media/icap-add-response-rule.png)
 
-2.  **자동 응답**이 선택되었는지 확인하고 **다음**을 클릭합니다.
+2.  **자동화된 응답**을 선택했는지 확인하고 **다음**을 클릭합니다.
 
-    ![자동 응답](./media/icap-automated-response.png)
+    ![자동화된 응답](./media/icap-automated-response.png)
 
-3. 규칙 이름, 예를 들어 **HTTP/HTTPS 차단**을 입력합니다. **동작**에서 **HTTP/HTTPS 차단**을 선택하고 **저장**을 클릭합니다.
+3. 예를 들어 **Block HTTP/HTTPS**와 같은 규칙 이름을 입력합니다. **작업** 아래에서 **Block HTTP/HTTPS**를 선택하고 **저장**을 클릭합니다.
 
     ![http 차단](./media/icap-block-http.png)
 
-만든 규칙을 다음과 같이 모든 기존 정책에 추가합니다.
+만든 규칙을 원하는 기존 정책에 추가합니다.
 1. 각 정책에서 **응답** 탭으로 전환합니다.
-2. **응답 규칙** 드롭다운을 눌러 위에서 만든 차단 응답 규칙을 선택합니다.
+2. **응답 규칙** 드롭다운에서 위에서 만든 응답 규칙 차단을 선택합니다.
 3. 정책을 저장합니다.
    
-    ![평가판 모드를 사용하지 않도록 설정](./media/icap-add-policy.png)
+    ![평가 모드 사용 안 함](./media/icap-add-policy.png)
 
 이 규칙은 모든 기존 정책에 추가되어야 합니다.
 
