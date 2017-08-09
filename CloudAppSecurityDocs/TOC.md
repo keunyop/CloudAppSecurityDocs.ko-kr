@@ -1,6 +1,6 @@
 # 이해 및 탐색
 ## [CAS란 무엇인가요?](what-is-cloud-app-security.md)
-## [새로운 기능](release-notes.md)
+## [새로운 기능은 무엇인가요?](release-notes.md)
 # 배포 게스트 클러스터에
 ## [시작](getting-started-with-cloud-app-security.md)
 ## [기본 설정](general-setup.md)
@@ -12,9 +12,9 @@
 ## [Cloud Discovery 배포](set-up-cloud-discovery.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
-#### [Windows Server의 Docker](discovery-docker-windows.md)
-#### [Ubuntu의 Docker](discovery-docker-ubuntu.md)
-#### [가상 어플라이언스 사용(사용 중단)](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Windows Server의 Docker(미리 보기)](discovery-docker-windows.md)
+#### [Ubuntu의 Docker(미리 보기)](discovery-docker-ubuntu.md)
+#### [가상 어플라이언스 사용](configure-automatic-log-upload-for-continuous-reports.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
