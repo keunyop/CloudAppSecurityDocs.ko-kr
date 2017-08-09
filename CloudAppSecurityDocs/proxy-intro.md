@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 28317b70-1851-4610-b1d6-863bc5994bb6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46377a8447ca7a7c0e98183b9d114c329d040e74
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 82e1ee0b5161dce88db815dc8eea06340bdbc532
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-the-cloud-app-security-proxy"></a>Cloud App Security 프록시 작업
 
@@ -42,7 +42,7 @@ Cloud App Security에서 액세스 제어를 사용하려면 기존 ID 공급자
 > [!NOTE]
 > -  ID 공급자의 정책을 변경할 필요가 없습니다.
 
-### <a name="supported-apps-and-identity-providers"></a>지원되는 앱 및 ID 공급자
+#### <a name="supported-apps-and-identity-providers"></a>지원되는 앱 및 ID 공급자
 
 프록시의 액세스 제어는 SAML 또는 WS-Federation 프로토콜을 지원하는 모든 앱 및 모든 ID 공급자를 지원하도록 설계되었습니다. Cloud App Security 팀에서는 업계를 선도하는 ID 공급자와 앱의 액세스 제어 기능을 테스트하고 있습니다. 하지만 ID 공급자와 클라우드 앱이 너무 많은 관계로 모든 ID 공급자와 앱의 조합을 테스트하지는 못합니다. 프로덕션 환경에 배포하기 전에 ID 공급자와 앱을 사용하여 Single Sign-On 프로세스를 샌드박스 또는 테스트 환경에서 테스트하는 것이 좋습니다.
 
