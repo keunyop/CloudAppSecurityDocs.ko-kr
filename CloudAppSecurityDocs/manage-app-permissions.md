@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23eedf73a5b3eec883da5e64a9db98f6ec895098
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: e34e37e82173cd6e29daa22320f99390d8294fa3
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="manage-app-permissions"></a>응용 프로그램 사용 권한 관리
 조직의 비즈니스 사용자가 설치하는 타사 생산성 앱 중에는 사용자 정보와 데이터의 사용 권한을 요청하고 사용자 대신 Office 365, G Suite, Salesforce 등의 다른 클라우드 앱에 로그인하는 것도 많습니다.  사용자가 이러한 응용 프로그램을 설치할 때, 응용 프로그램에 사용 권한을 부여하는 내용을 포함한 메시지의 세부 정보를 검토하지 않고 승인을 클릭하는 경우도 많습니다.  이 문제는 IT 직원이 응용 프로그램의 생산성 향상 효과와 보안 위험을 신중하게 비교하지 못하기 때문에 발생합니다. 타사 앱의 사용 권한을 승인하면 조직에 보안 위험이 생길 수 있으므로, 사용자가 부여하는 앱 사용 권한을 모니터링하면 사용자와 응용 프로그램을 보호하는 데 필요한 정보를 얻고 상황을 통제할 수 있습니다. Cloud App Security 앱 사용 권한을 활용하면 사용자가 설치한 응용 프로그램 중에서 Office 365 데이터, G Suite 데이터 및 Salesforce 데이터에 액세스할 수 있는 것이 무엇이고, 앱에 어떤 사용 권한이 있으며, 이러한 앱에 Office 365, G Suite 및 Salesforce 계정 액세스 권한을 부여한 사용자가 누구인지 확인할 수 있습니다. 응용 프로그램 사용 권한은 사용자의 액세스를 허용할 응용 프로그램과 금지할 응용 프로그램을 결정하는 데 유용합니다.
@@ -42,7 +42,7 @@ Cloud App Security 포털에서 **조사**, **앱 사용 권한**을 차례로 �
 |응용 프로그램 쿼리 표시줄의 고급 아이콘  |고급 보기의 쿼리로 전환하려면 이 항목을 선택합니다.|Office 365, G Suite, Salesforce|
 |응용 프로그램 목록에서 모든 세부 정보 아이콘 열기 또는 닫기  |이 아이콘을 선택하여 각 응용 프로그램에 대한 정보를 자세히 보거나 간단히 볼 수 있습니다.|
 |응용 프로그램 목록의 내보내기 아이콘  |응용 프로그램 목록, 각 응용 프로그램의 사용자 수, 응용 프로그램에 연관된 사용 권한, 사용 권한 수준, 응용 프로그램 상태, 커뮤니티 사용 수준이 포함된 CSV 파일을 내보내려면 이 아이콘을 선택합니다.|Office 365, G Suite, Salesforce|
-|앱|응용 프로그램의 이름입니다. 설명, 게시자, 응용 프로그램 웹 사이트, ID를 포함한 자세한 정보를 보려면 이름을 선택합니다.|Office 365, G Suite, Salesforce|
+|앱|응용 프로그램의 이름입니다. 설명, 게시자(Office 365용), 응용 프로그램 웹 사이트, ID를 포함한 자세한 정보를 보려면 이름을 선택합니다.|Office 365, G Suite, Salesforce|
 |권한을 부여한 사용자|이 앱에서 사용자 앱의 계정에 액세스하도록 승인하고 앱 사용 권한을 부여한 사용자 수입니다. 사용자 메일, 관리자가 이전에 응용 프로그램을 허용했는지 여부 등의 자세한 정보를 보려면 숫자를 선택합니다.|Office 365, G Suite, Salesforce|
 |사용 권한 수준  |높음, 보통 또는 낮음을 나타내는 사용 권한 수준 아이콘과 텍스트입니다. 수준은 이 앱이 앱의 데이터에 대해 가진 액세스 권한이 어느 정도인지를 나타냅니다. 예를 들어 낮음은 응용 프로그램에서 사용자 프로필 이름에만 액세스하는 것을 나타낼 수 있습니다. 앱에 부여된 사용 권한, 커뮤니티 사용 또는 [거버넌스 로그](governance-actions.md)의 관련 활동과 같은 추가 정보를 보려면 수준을 선택합니다.|Office 365, G Suite|
 |앱 상태|관리자가 응용 프로그램을 승인 또는 금지로 표시하거나 미확인 상태로 둘 수 있습니다.|Office 365, G Suite, Salesforce|
