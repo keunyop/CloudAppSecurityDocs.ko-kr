@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
@@ -51,6 +51,9 @@ Cloud Discovery에서 제공된 데이터를 심층 분석하려면 필터를 �
 ![검색된 앱 필터](./media/discovered-app-filters.png)
 
 결과가 필터링된 후 [대량 작업] 확인란을 사용하여 하나의 작업으로 모든 앱의 사용 권한을 취소하는 방식으로 앱의 [사용 권한을 취소하거나 앱을 차단](governance-discovery.md)할 수 있습니다. 사용 권한이 취소된 후 차단 스크립트를 사용하여 앱이 환경에서 사용되지 않도록 차단할 수 있습니다.
+
+더 깊이 들어가기 위해 검색된 앱을 하위 도메인 수준까지 조사하고 사용 중인 특정 인스턴스를 식별할 수 있습니다. 
+
 
 ## <a name="discovered-app-filters"></a>검색된 앱 필터
 

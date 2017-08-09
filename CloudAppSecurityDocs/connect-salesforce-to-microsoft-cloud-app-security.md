@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Salesforce 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Salesforce 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
@@ -38,18 +38,19 @@ ms.lasthandoff: 07/16/2017
   
     -   Salesforce 계정에 로그인한 다음 **설정** 페이지로 이동합니다.  
   
-    -   **사용자 관리**에서 **프로필** 페이지로 이동합니다.  
+    -   **사용자 관리**에서 **사용자 프로필** 페이지로 이동합니다.  
   
          ![salesforce manageusers 프로필](./media/salesforce-manageusers-profiles.png "salesforce manageusers 프로필")  
   
-    -   Cloud App Security를 배포하는 데 사용할 프로필을 선택하고 **편집**을 클릭합니다. 이 프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
+    -   **새로 만들기**를 클릭하여 새 프로필을 만듭니다. 
+    - Cloud App Security를 배포하려고 만든 프로필을 선택하고 **편집**을 클릭합니다. 이 프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
   
          ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce 프로필 편집")  
   
     -   다음 확인란이 사용하도록 설정되었는지 확인합니다.   
         - **API 사용**
         - **모든 데이터 보기** 
-        - **Salesforce CRM 콘텐츠 관리**
+        - **Manage Salesforce CRM Content**(Salesforce CRM 콘텐츠 관리)
         - **사용자 관리**
         
         이러한 확인란이 선택되지 않은 경우 계정에 확인란을 추가하려면 Salesforce에 연락해야 할 수 있습니다.  
@@ -108,7 +109,7 @@ Salesforce 이벤트는 Cloud App Security에서 다음과 같이 처리합니�
   
 - 15분마다 로그인 이벤트
 - 15분마다 감사 추적 설정
-- Salesforce 로그는 오전 12:00부터 오후 11:59까지(UTC 시간) 24시간 동안 사용 활동을 추적합니다. Salesforce의 이벤트는 실시간으로 로그 데이터를 생성합니다. 그러나 사용률이 낮은 시간에는 이벤트가 발생한 그다음 날 Salesforce에 의해 로그 파일이 생성됩니다. 따라서 로그 파일 데이터는 이벤트가 발생한 후 적어도 하루 동안 사용할 수 없습니다. Salesforce 이벤트에 대한 자세한 내용은 [Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)(이벤트 모니터링 사용)을 참조하세요.
+- Salesforce 로그가 UTC 시간으로 오전 12시부터 오후 11시 59분까지 24시간 동안 사용 활동을 추적합니다. Salesforce의 이벤트는 실시간으로 로그 데이터를 생성합니다. 그러나 Salesforce는 이벤트가 발생한 그다음 날 사용률이 낮은 시간에 로그 파일을 생성합니다. 따라서 로그 파일 데이터는 이벤트 발생 후 적어도 하루 동안은 사용할 수 없습니다. Salesforce 이벤트에 대한 자세한 내용은 [Using Event Monitoring(이벤트 모니터링 사용)](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)을 참조하세요.
 
 
 ## <a name="see-also"></a>참고 항목  

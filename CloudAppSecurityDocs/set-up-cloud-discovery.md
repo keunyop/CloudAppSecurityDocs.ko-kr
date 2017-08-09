@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
-Cloud Discovery는 50개 이상의 특성을 기준으로 순위 및 점수가 매겨진 13,000개를 초과하는 클라우드 앱에 대한 Cloud App Security의 클라우드 앱 카탈로그에 대해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT 및 위험 섀도 IT를 지속적으로 파악합니다.
-**클라우드 앱 카탈로그**는 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 앱의 위험을 평가합니다. 클라우드 앱 카탈로그에서 네 개의 보완 프로세스를 실행하여 다음 항목에 대한 최신 정보를 제공합니다.
-1.    클라우드 앱에서 직접 자동화된 데이터 추출(SOC 2 준수와 같은 특성)
-2.    Cloud App Security의 알고리즘에 따라 데이터에 대한 자동화된 고급 데이터 추출(HTTP 보안 헤더와 같은 특성)
-3.    Cloud App Security 클라우드 분석가 팀에 의한 연속 분석(미사용 암호화 같은 특성)
-4.    클라우드 앱 카탈로그의 변경 내용에 대한 고객 제출 요청에 따른 고객 기반 수정 요청. 모든 요청은 클라우드 분석가 팀에서 검토하고 해당 결과에 따라 업데이트됩니다.
-  
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
-
-Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 보호할 수 있습니다. Cloud App Security 포털에 데이터 로그를 업로드하면 로그가 삭제되고 모든 사용자 이름 정보가 암호화된 사용자 이름으로 교체됩니다. 이러한 방식으로 모든 클라우드 활동이 익명으로 유지됩니다. 자세한 내용은 [Cloud Discovery 익명화](cloud-discovery-anonymizer.md)를 참조하세요.
-
+Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>스냅숏 및 연속 위험 평가 보고서 
 
 두 가지 유형의 보고서를 생성할 수 있습니다. 
@@ -44,7 +36,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
   
 -   **구문 분석** – Cloud App Security에서 각 데이터 원본에 대한 전용 파서를 사용하여 트래픽 로그에서 트래픽 데이터를 구문 분석하고 추출합니다.  
   
--   **분석** - 클라우드 앱 카탈로그를 기준으로 트래픽 데이터를 분석하여 13,000개 이상의 클라우드 앱을 식별하고 해당 위험 점수를 평가합니다. 활성 사용자와 IP 주소도 분석의 일부로 식별됩니다.  
+-   **분석** - 클라우드 앱 카탈로그를 기준으로 트래픽 데이터를 분석하여 15,000개를 넘는 클라우드 앱을 식별하고 해당 위험 점수를 평가합니다. 활성 사용자와 IP 주소도 분석의 일부로 식별됩니다.  
   
 -   **보고서 생성** - 로그 파일에서 추출된 데이터의 위험 평가 보고서가 생성됩니다.   
  
@@ -74,6 +66,8 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 3.  이벤트가 90일 이상 오래되지 않았습니다.
 4.  로그 파일이 유효하며 아웃바운드 트래픽 정보를 포함합니다.
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>지원되는 방화벽 및 프록시
 
 - Barracuda - Web App Firewall(W3C)
@@ -99,6 +93,8 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Websense - Web Security Solutions - Internet activity log(CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery는 IPv4 및 IPv6 주소를 모두 지원합니다.
 
 로그가 지원되지 않는 경우 **데이터 원본**에서 **기타**를 선택하고 업로드하려는 어플라이언스 및 로그를 지정합니다. Cloud App Security 클라우드 분석가 팀에서 로그를 검토하고 로그 유형에 대한 지원이 추가되는 경우 알려줍니다. 또는 형식과 일치하는 사용자 지정 파서를 정의할 수 있습니다. 자세한 내용은 [사용자 지정 로그 파서 사용](custom-log-parser.md)을 참조하세요.
 
@@ -117,17 +113,19 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 |Clavister NGFW(Syslog)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Dell SonicWall|**예**|**예**|아니요|**예**|**예**|**예**|
 |Fortigate|아니요|**예**|아니요|**예**|**예**|**예**|
-|Juniper SRX|아니요|**예**|아니요|**예**\**|**예**|**예**|
+|Juniper SRX|아니요|**예**|아니요|**예**|**예**|**예**|
 |Juniper SSG|아니요|**예**|아니요|**예**|**예**|**예**|
 |McAfee SWG|**예**|아니요|아니요|**예**|**예**|**예**|
 |MS TMG|**예**|아니요|**예**|**예**|**예**|**예**|
-|Palo Alto 네트워크|**예**|**예**|**예**|**예**\*|**예**|**예**|
+|Palo Alto 네트워크|**예**|**예**|**예**|**예**|**예**|**예**|
 |Sophos|**예**|**예**|**예**|**예**|**예**|아니요|
-|Websense - Investigative detail report(CSV)|**예**|아니요|아니요|**예**|아니요|아니요|
+|Squid(Common)|**예**|아니요|**예**|**예**|아니요|**예**|
+|Squid(Native)|**예**|아니요|**예**|**예**|아니요|**예**|
+|Websense - Investigative detail report(CSV)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Websense - Internet activity log(CEF)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Zscaler|**예**|아니요|**예**|아니요|**예**|**예**|
 
-\* Cloud Discovery는 IPv6을 지원합니다.
+
 
 ## <a name="see-also"></a>참고 항목
  

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/04/2017
 12.  P12 인증서 파일이 컴퓨터에 저장됩니다.  
         
 12. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
-       ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite credentials service account")  
+       ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite 자격 증명 서비스 계정")  
   
 13. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **편집**을 선택합니다.  
   
@@ -119,6 +119,9 @@ ms.lasthandoff: 07/04/2017
   
 19. **사용 API** 목록에서 **Google Apps Marketplace SDK** 옆에 있는 설정 코그 설정을 클릭합니다. 
          ![google marketplace SDK 구성](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > 코그를 사용하지 않도록 설정되어 있으면 대신에 **Google Apps Marketplace SDK**를 클릭합니다. 
 20. **구성** 탭을 선택합니다. 
   
     -   나중에 사용하기 위해 맨 위에 표시되는 **프로젝트 번호(앱 ID)**를 복사합니다.  
