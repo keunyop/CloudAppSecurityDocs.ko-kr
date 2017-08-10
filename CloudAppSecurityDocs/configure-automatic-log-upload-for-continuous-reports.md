@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 27ede13ad752ee3826acfcd9d37d2b758d75cdf2
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스 연속 보고서에 대한 자동 로그 업로드 구성
+
+> [!WARNING] 
+> 이 기능은 사용되지 않습니다.
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 - 하이퍼바이저: HyperV 또는 VMware

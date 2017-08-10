@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
@@ -52,7 +52,7 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 
 ICAP 서버를 설정하여 포트 번호를 적어 두고 **모드**를 **차단**으로 설정했는지 확인합니다. 차단 모드는 분류 verdict를 다시 Cloud App Security로 릴레이하도록 ICAP 서버를 설정합니다.
 
-이 작업을 수행하는 방법에 대한 지침은 외부 DLP 제품 설명서를 참조하세요. 예제에 대해서는 [부록 A: Forcepoint ICAP 서버 설정](#forcepoint)을 참조하세요.
+이 작업을 수행하는 방법에 대한 지침은 외부 DLP 제품 설명서를 참조하세요. 예를 들어 [부록 A: Forcepoint ICAP 서버 설정](#forcepoint) 및 [부록 B: Symantec 배포 가이드](#symantec)를 참조하세요.
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>2단계: stunnel 서버 설정 
 
@@ -252,9 +252,9 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
     ![ICAP 차단](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>부록 B: Symantec 배포 가이드
+## 부록 B: Symantec 배포 가이드 <a name="symantec"></a>
 
-지원되는 Symantec DLP 버전은 11-14.6입니다. 위에서 언급한 대로 Cloud App Security 테넌트가 있는 동일한 Azure 데이터 센터에 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
+지원되는 Symantec DLP 버전은 11 이상입니다. 위에서 언급한 대로 Cloud App Security 테넌트가 있는 동일한 Azure 데이터 센터에 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
  
 ### <a name="detection-server-installation"></a>검색 서버 설치 
 Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent for Web 서버입니다. 여러 구성 옵션을 변경해야 합니다.
