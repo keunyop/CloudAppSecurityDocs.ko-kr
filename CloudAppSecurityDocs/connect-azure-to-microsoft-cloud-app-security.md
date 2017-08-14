@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75b5a6fb3707872f0455da1a1856b55adb17c597
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
+ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Azure 연결
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
 Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션에서는 모든 활동 로그를 구독의 단일 이벤트 허브로 스트리밍하기 위한 지침을 제공합니다. 
 
-### <a name="step-1-stream-your-azure-activity"></a>1단계: Azure 활동 스트림
+### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>1단계: Azure 활동 로그를 Event Hubs에 스트림
 
 1.  Azure 구독의 Azure 활동 로그를 이벤트 허브에 스트림합니다. Azure 설명서에서 공식 지침을 따릅니다. https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -35,10 +35,13 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
  > Azure 구독이 여러 개 있는 경우 각 구독에 대해 이 단계를 반복하지만 구독에서 공유되는 이벤트 허브는 하나만 사용합니다.
 
  지침을 완료하면 새 이벤트 허브가 선택한 네임스페이스에 만들어집니다.
+ 
+ > [!NOTE]
+ > 활동 로그를 내보내려고 한 후 오류가 발생하면 Azure의 **리소스 공급자** 블레이드로 이동하여 ‘microsoft.insights’가 등록되었는지 확인합니다.
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>2단계: 이벤트 허브에 연결 문자열 가져오기
 
-1.  Event Hubs 블레이드로 이동합니다.
+1.  **Event Hubs** 블레이드로 이동합니다.
   
    ![Event Hubs 블레이드](media/azure-event-hubs.png "Azure Event Hubs")
 
@@ -53,6 +56,9 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
 4.  Azure Monitor에서 만든 새 이벤트 허브를 선택합니다. 이름이 **insights-operational-logs**입니다.
   
     ![Insights 작업 로그](media/azure-insight-operational-logs.png "Azure Insight 작업 로그")
+  
+  > [!NOTE]
+  > 이벤트 허브가 만들어질 때까지 몇 분 정도 걸릴 수 있습니다.
 
 5. **Shared access policies**\(공유 액세스 정책\)를 클릭한 다음 **추가**를 클릭하여 이벤트 허브에서 읽을 수 있는 Cloud App Security 권한을 제공하는 새 액세스 정책을 만듭니다.
   
@@ -78,7 +84,10 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
   
 4.  **연결 문자열** 필드에서 이전 단계에서 복사한 연결 문자열을 붙여넣습니다.  
   
-5.  사용할 다른 소비자 그룹을 만든 경우가 아니라면 **소비자 그룹** 필드에 $Default를 입력합니다.
+5.  **소비자 그룹** 필드에 `$Default`를 입력합니다.
+    
+   >[!NOTE] 
+   > 사용할 다른 소비자 그룹을 만든 경우 해당 **소비자 그룹** 이름을 사용합니다.
   
 6.  **연결**을 클릭합니다.
 8.  **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.  
