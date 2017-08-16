@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
 Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
@@ -123,7 +123,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 |Squid(Native)|**예**|아니요|**예**|**예**|아니요|**예**|
 |Websense - Investigative detail report(CSV)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Websense - Internet activity log(CEF)|**예**|**예**|**예**|**예**|**예**|**예**|
-|Zscaler|**예**|아니요|**예**|아니요|**예**|**예**|
+|Zscaler|**예**|**예**|**예**|**예**|**예**|**예**|
 
 
 
