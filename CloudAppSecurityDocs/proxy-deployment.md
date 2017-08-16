@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>Cloud App Security 프록시 배포
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > 프로덕션 환경에 설치하기 전에 먼저 샌드박스 또는 테스트 환경에서 설치를 시도하는 것이 좋습니다.
 
 아래에 설명된 단계에 따라 Cloud App Security 프록시를 배포하고 액세스 제어와 세션 제어를 사용하도록 설정해야 합니다.
+
+프록시 배포의 일환으로, 제어할 ID 공급자와 앱 모두의 구성을 변경해야 합니다. 여기에는 URL 변경 내용이 포함됩니다. 그래야 ID 공급자와 앱이 로그인 요청을 프록시로 리디렉션할 수 있기 때문입니다. 추가로 필요에 따라 인증서가 교체되기도 합니다.
+
+이러한 단계가 완료된 후에는 모든 로그인 이벤트가 프록시를 통하게 되며 프록시는 이들의 앱에 대한 액세스를 허용할지 거부할지 아니면 모니터링되는 모드로 허용할지를 결정할 수 있습니다. 이 단계에서 프록시는 장치의 클라이언트 인증서를 요청할 수 있으며, 장치 상태를 사용하여 정책 결정을 내릴 수 있습니다.
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
