@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  
@@ -79,7 +79,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 7.  **콘텐츠 검사 방법**을 선택합니다. 기본 제공 DLP를 사용하면 콘텐츠를 기준으로 파일을 필터링할 수 있습니다. 파일에서 콘텐츠를 검색하려면 **기본 제공 DLP**를 선택합니다. 콘텐츠 검사를 사용하도록 설정한 경우 사전 설정 식을 사용하거나 고유한 하위 문자열 또는 [정규식](working-with-the-regex-engine.md)으로 다른 사용자 지정 식을 검색할 수 있습니다.  
     또한 정규식을 지정하여 결과에서 파일을 제외할 수 있습니다. 정책에서 제외하려는 내부 분류 키워드 표준이 있는 경우에 매우 유용합니다.  
     파일이 위반으로 간주되기 전에 일치하려는 최소 콘텐츠 위반 수를 설정할 수 있습니다. 예를 들어 파일 콘텐츠 내에 10개 이상의 신용 카드 번호가 있는 파일에 대한 경고를 수신하려는 경우 10을 선택할 수 있습니다.  
-    콘텐츠가 선택한 식에 대해 일치하면 위반 텍스트가 "X" 문자로 바뀝니다. 기본적으로 위반 텍스트는 위반 전후의 40자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 식의 컨텍스트에서 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다. **Unmask the last 4 characters of a violation**(위반의 마지막 4자 마스크 해제) 옵션을 선택하여 위반 자체의 마지막 4자를 마스크 해제할 수 있습니다.
+    콘텐츠가 선택한 식에 대해 일치하면 위반 텍스트가 "X" 문자로 바뀝니다. 기본적으로 위반 텍스트는 위반 전후의 100자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 식의 컨텍스트에서 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다. **Unmask the last 4 characters of a violation**(위반의 마지막 4자 마스크 해제) 옵션을 선택하여 위반 자체의 마지막 4자를 마스크 해제할 수 있습니다.
   
 8.  일치 항목이 검색될 때 Cloud App Security에서 수행하려는 **거버넌스** 작업을 선택합니다.  
   

@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4035cbaa331470cd762550470e9543b8fa256fe0
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 83a89f9d916a1a95394993e9d95fb7988ec85a4b
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 ## <a name="managing-admin-access"></a>관리자 액세스 관리
 
 Cloud App Security는 역할 기반 액세스 제어를 지원합니다. 기본적으로 다음 Office 365 및 Azure AD 관리자 역할은 Cloud App Security에 액세스할 수 있습니다.
 
 - 전역 관리자 및 보안 관리자: **모든 권한**을 가진 관리자는 Cloud App Security에서 관리자를 추가하고, 정책 및 설정을 추가하고, 로그를 업로드하고, 거버넌스 작업을 수행할 모든 권한을 가집니다.
+
+- 준수 관리자: 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 파일 정책을 생성 및 수정하고 파일 관리 작업을 허용하며 데이터 관리에서 모든 기본 보고서를 볼 수 있습니다. 
 
 - 보안 독자: 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 보안 독자는 다음을 수행할 수 없습니다.
       - 정책 만들기 또는 기존 정책 편집/변경 
