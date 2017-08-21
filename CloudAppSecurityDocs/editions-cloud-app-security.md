@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 68ca6a7a4bacb0e04fddea4c1df36350c0e4c6fb
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Cloud App Security와 Office 365 ASM(Advanced Security Management)의 차이점은 무엇인가요?
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-Cloud App Security의 독립 실행형 버전은 비사용 권한 앱에 대해 Shadow IT Discovery를 제공하는 SaaS 간 솔루션입니다. 사용 권한 앱에 대해 조직의 클라우드 응용 프로그램에서 정보 보호, 위협 검색 및 조건부 액세스를 제공합니다. 
+Microsoft Cloud App Security는 클라우드 앱을 위해 심층적인 가시성, 강력한 데이터 컨트롤 및 향상된 위협 방지를 제공하는 포괄적인 크로스 SaaS 솔루션입니다. 이 서비스를 사용하면 사용 중인 클라우드 앱을 확인함으로써 섀도 IT에 대한 가시성을 얻고 앱 내 데이터를 서비스로 제한한 후에는 데이터를 제어하고 보호할 수 있습니다. 
 
 ## <a name="office-365-advanced-security-management"></a>Office 365 Advanced Security Management
 
@@ -34,30 +34,27 @@ Advanced Security Management는 Office 365에 대한 향상된 가시성과 제�
 
 ## <a name="feature-support"></a>기능 지원
 
-|Pillar|기능|Microsoft Cloud App Security|Advanced Security Management|
+|기능|기능|Microsoft Cloud App Security|Office 365 Advanced Security Management|
 |----|----|----|----|
-|섀도 IT 검색||||
-||검색된 앱 지원|15,000개 이상 및 자동화된 위험 평가|Office 365와 유사한 750개 이상의 앱|
-||로그 업로드|수동 및 자동|Manual|
+|클라우드 검색|검색된 앱 |15,000개 이상의 클라우드 앱  |750개 이상의 클라우드 앱 Office 365와 유사한 기능을 가진 클라우드 앱|
+||검색 분석을 위한 배포|수동 및 자동 로그 업로드|수동 로그 업로드|
 ||사용자 개인 정보 보호를 위한 로그 익명화|예|예|
-||지속적인 위험 평가: 앱 위험 점수 및 새로운 앱 경고|예||
-||검색된 앱 보고서|예|예|
-||앱 검색 변칙 검색|예||
-||전체 앱 카탈로그에 대한 액세스|예||
-||앱, 사용자, IP 주소별 자세한 보고|예||
-|정보 보호||||
-||DLP 지원|교차 SaaS DLP 및 데이터 공유 제어|Office 365 DLP에서 제공되며, ASM에서 인시던트를 보고 보고할 수 있음|
-||앱 사용 권한 - OAuth 앱 식별 및 제어|예|예|
+||전체 클라우드 앱 카탈로그에 대한 액세스|예||
+||클라우드 앱 위험 평가|예||
+||앱, 사용자, IP 주소당 클라우드 사용 현황 분석|예||
+||지속적인 분석 및 보고|예||
+||검색된 앱에 대한 변칙 검색|예||
+|정보 보호|데이터 손실 방지(DLP) 지원|교차 SaaS DLP 및 데이터 공유 제어|기존 Office DLP(Office E3 이상에서 사용 가능)|
+||앱 사용 권한 및 액세스를 취소 기능|예|예|
 ||정책 설정 및 적용|예||
-||Azure Information Protection 통합|예||
+||Azure Information Protection과 통합 |예||
 ||타사 DLP 솔루션과의 통합|예||
-|위협 검색||||
-||검색 범위|앱 간의 포괄적인 경고, 위협 및 위반 대시보드|Office 365 변칙 검색 및 보안 경고|
+|위협 검색|변칙 검색 및 행동 분석|Office 365를 포함한 SaaS 간 앱용|Office 365 앱용 |
 ||수동 및 자동 경고 수정|예|예|
-||SIEM 커넥터|경고 및 활동 로그|경고만|
-||Microsoft 인텔리전트 보안 그래프 향상|예|예|
+||SIEM 커넥터|예. SaaS 간 앱을 위한 경고 및 활동 로그입니다.|예. Office 365 경고만 해당됩니다.|
+||Microsoft 인텔리전트 보안 그래프 통합|예|예|
 ||활동 정책|예|예|
-||변칙 검색|예|예|
+
 
 ## <a name="see-also"></a>참고 항목  
 

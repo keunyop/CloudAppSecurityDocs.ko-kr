@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 새 소식
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security 릴리스 103 
+릴리스 날짜: 2017년 8월 13일
+
+- Cloud App Security에 .docm,.docx,.dotm,.dotx,.xlam,.xlsb, .xlsm,.xlsx,.xltx, .xps,.potm,.potx, .ppsx,.ppsm,.pptm,.pptx,.thmx,.vsdx,.vsdm,.vssx,.vssm,.vstx,.vstm과 같은 Office 파일을 위한 Azure Information Protection 네이티브 보호가 추가되었습니다(일반 보호 대체).
+
+- 모든 Azure Active Directory 준수 관리자는 데이터 관리에서 경고 읽기 및 관리, 파일 정책 생성 및 수정, 파일 거버넌스 작업 허용, 모든 기본 보고서 보기를 포함하여 Cloud App Security에서 유사한 권한을 자동으로 부여받습니다. 
+
+- 위반 컨텍스트를 더 잘 이해할 수 있도록 DLP 위반 컨텍스트를 40자에서 100자로 확장했습니다.
+
+- 로그 업로드 오류를 쉽게 해결할 수 있도록 상세한 오류 메시지가 Cloud Discovery Custom Log 업로더로 전송됩니다.
+
+- Zscaler 형식을 지원하기 위해 Cloud Discovery 블록 스크립트가 확장되었습니다.
+
+- 새로운 클라우드 앱 카탈로그 위험 요소: 계정 종료 후 데이터 보존. 이 위험 요소를 사용하면 클라우드 앱 내에서 계정이 종료된 후 데이터가 완전히 제거되었는지 확인할 수 있습니다.
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security 릴리스 102 
 릴리스 날짜: 2017년 7월 30일
