@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
 
@@ -80,6 +80,9 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 ### <a name="policy-control"></a>정책 제어  
 
 정책을 사용하여 클라우드에서의 사용자 동작을 정의할 수 있습니다. 정책을 사용하여 클라우드 환경에서 위험한 동작, 위반 또는 의심스러운 데이터 요소 및 활동을 검색합니다. 필요한 경우 정책을 사용하여 수정 프로세스를 통합하고 완전한 위험 완화를 달성할 수 있습니다. 여러 유형의 정책이 클라우드 환경에 대해 수집하려는 다양한 정보 유형 및 수행할 수 있는 수정 작업 유형과 상호 관련되어 있습니다.  
+
+## <a name="related-videos"></a>관련 동영상
+- [보안 커뮤니티에 가입](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## <a name="see-also"></a>참고 항목  
 

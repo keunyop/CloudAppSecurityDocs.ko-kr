@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Azure 연결
 
@@ -41,7 +41,7 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>2단계: 이벤트 허브에 연결 문자열 가져오기
 
-1.  **Event Hubs** 블레이드로 이동합니다.
+1.  **Event Hubs - 미리 보기** 블레이드로 이동합니다.
   
    ![Event Hubs 블레이드](media/azure-event-hubs.png "Azure Event Hubs")
 
@@ -54,12 +54,12 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
     ![Event Hubs 엔터티](media/azure-event-hubs-entities.png "Azure Event Hubs 엔터티")
 
 4.  Azure Monitor에서 만든 새 이벤트 허브를 선택합니다. 이름이 **insights-operational-logs**입니다.
-  
-    ![Insights 작업 로그](media/azure-insight-operational-logs.png "Azure Insight 작업 로그")
-  
   > [!NOTE]
   > 이벤트 허브가 만들어질 때까지 몇 분 정도 걸릴 수 있습니다.
 
+   ![Insights 작업 로그](media/azure-insight-operational-logs.png "Azure Insight 작업 로그")
+  
+  
 5. **Shared access policies**\(공유 액세스 정책\)를 클릭한 다음 **추가**를 클릭하여 이벤트 허브에서 읽을 수 있는 Cloud App Security 권한을 제공하는 새 액세스 정책을 만듭니다.
   
     ![공유 액세스 정책](media/azure-shared-access-policies.png "Azure 공유 액세스 정책")
@@ -90,15 +90,8 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
    > 사용할 다른 소비자 그룹을 만든 경우 해당 **소비자 그룹** 이름을 사용합니다.
   
 6.  **연결**을 클릭합니다.
-8.  **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.  
+     그러면 연결 문자열이 입력됩니다. 처리되는 데 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.  
   
-     테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.  
-  
-
-
-
-
-
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

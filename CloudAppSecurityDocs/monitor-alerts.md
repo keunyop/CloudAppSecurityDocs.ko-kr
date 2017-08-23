@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>경고
 경고를 보려면
@@ -27,6 +27,11 @@ Cloud App Security 포털에서 경고를 클릭합니다.
 
 ![경고 메뉴](./media/alert-menu.png)
 
+각 경고를 처리하려면 테이블의 경고를 클릭하고 다음 옵션 중 하나를 선택합니다.
+- **경고 해결**: 경고를 조사하고 완화 조치를 취한 후 **경고 해결**을 클릭합니다. 취한 조치에 대한 정보를 저장하기 위해 설명을 입력할 수 있으며, 경고와 관련해 **Cloud App Security 팀에게 피드백 보내기** 옵션을 사용할 수 있습니다. 경고를 해결하면 더 이상 경고 테이블에 표시되지 않습니다.
+- 경고를 해결하고 **읽은 것으로 표시**: 경고를 미해결 상태로 두되 읽은 것으로 표시할 수 있습니다.
+- 경고를 해결하고 **정책 조정**: 경고에 대응하기 위해 경고에 해당하는 정책을 수정할 수 있습니다.
+- **해제**: 경고를 해제하여 테이블에 더 이상 나타나지 않도록 하되, 해결되지 않은 것으로 표시하도록 할 수 있습니다. 이는 경고가 양성이거나 오탐지일 경우에 주로 사용됩니다.
 
 다음과 같은 경고 유형이 표시됩니다. 
 
