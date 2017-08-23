@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: db600c90983cc90ad55b994a22af0ed8bb6f288a
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
@@ -138,7 +138,7 @@ ms.lasthandoff: 07/16/2017
 |파일|파일|사용자 격리에서 복원|사용자를 격리 상태에서 복원합니다.|상자|
 |파일|파일|자신에게 읽기 권한 부여|파일에 액세스하여 파일에 위반이 있는지를 파악할 수 있도록 자신에게 파일에 대한 읽기 권한을 부여합니다.|G Suite|
 |파일|파일|편집자에게 공유 허용|Google Drive에서 파일의 기본 편집자 권한은 공유도 허용합니다. 이 거버넌스 작업은 편집자의 공유 권한 제거와 반대이며, 편집자가 파일을 공유할 수 있도록 합니다.|G Suite|
-|파일|파일|보호|Microsoft Rights Management를 통해 조직 템플릿을 적용하여 파일을 보호합니다.|Office 365|
+|파일|파일|보호|Azure Information Protection을 통해 조직 템플릿을 적용하여 파일을 보호합니다.|Office 365(SharePoint 및 OneDrive)|
 |파일|파일|내 자신의 읽기 권한 철회|내 자신의 파일에 대한 읽기 권한을 철회하며, 이 작업은 파일에 위반이 있는지를 파악하기 위해 자신에게 사용 권한을 부여한 후에 유용합니다.|G Suite|
 |파일, 파일 정책|파일|파일 소유권 이전|소유자를 변경합니다. 정책에서 특정 소유자를 선택합니다.|G Suite|
 |파일, 파일 정책|파일|협력자 제거|파일에서 특정 협력자를 제거합니다.|G Suite, Box, One Drive, SharePoint|
