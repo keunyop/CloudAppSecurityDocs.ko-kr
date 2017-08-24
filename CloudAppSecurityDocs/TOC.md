@@ -1,6 +1,7 @@
 # 이해 및 탐색
 ## [CAS란 무엇인가요?](what-is-cloud-app-security.md)
 ## [새로운 기능은 무엇인가요?](release-notes.md)
+## [CAS 버전](editions-cloud-app-security.md)
 # 배포 게스트 클러스터에
 ## [시작](getting-started-with-cloud-app-security.md)
 ## [기본 설정](general-setup.md)
