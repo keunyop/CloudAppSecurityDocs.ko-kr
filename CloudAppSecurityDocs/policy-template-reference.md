@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>정책 템플릿
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 06/28/2017
 |위협 검색|회사 외 IP 주소에서 관리 활동|관리 사용자가 회사 IP 주소 범위 범주에 포함되지 않는 IP 주소에서 관리 작업을 수행할 때 경고합니다. 먼저 [설정] 페이지로 이동하고 **IP 주소 범위**를 설정하여 회사 IP 주소를 구성해야 합니다.|
 |위협 검색|일반 이상 검색|승인된 앱 중 하나에서 비정상적인 세션이 검색될 때 경고합니다(예: 불가능한 이동, 로그온 패턴, 비활성 계정).|
 |위협 검색|위험한 IP 주소에서 로그온|사용자가 위험한 IP 주소에서 권한 있는 앱에 로그온하려고 할 경우 발생하는 경고입니다. 기본적으로 위험한 IP 주소 범주에는 익명 프록시, TOR 또는 Botnet의 IP 주소 태그가 있는 주소가 포함되어 있습니다. IP 주소 범위 설정 페이지에서 이 범주에 더 많은 IP 주소를 추가할 수 있습니다.|
-|위협 검색|단일 사용자에 의한 대용량 다운로드|단일 사용자가 5분 이내에 30번 이상 다운로드를 수행할 때 경고합니다.|
+|위협 검색|단일 사용자에 의한 대용량 다운로드|단일 사용자가 1분 이내에 50번 이상 다운로드를 수행할 때 경고합니다.|
 |위협 검색|앱에서 여러 번의 사용자 로그온 시도 실패|단일 사용자가 단일 앱에 로그온할 때 5분 내에 10번 이상 실패할 때 경고합니다.|
 |위협 검색|잠재적인 랜섬웨어 활동|사용자가 랜섬웨어에 감염되었을 수 있는 파일을 클라우드에 업로드하는 경우 경고합니다.|
 |위협 검색|분류되지 않은 IP 주소로부터의 사용자 로그온|사용자가 특정 IP 주소 범위 범주에 포함되지 않는 IP 주소에서 로그온할 때 경고합니다. 설정 페이지로 이동하고 IP 주소 범위를 선택하여 IP 주소를 범주화할 수 있습니다.|
