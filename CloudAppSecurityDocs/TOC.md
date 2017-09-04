@@ -33,6 +33,7 @@
 ## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
 ## 시나리오
 ### [랜섬웨어로부터 조직 보호](use-case-ransomware.md)
+### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
 ### [위험 점수 사용](risk-score.md)
