@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a102951d6600f960ee9c045f6ce6fdb3adbe1f42
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 37f288aa66213fde4ad3a0146064b2c44ea79e4a
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 
@@ -29,7 +29,8 @@ ms.lasthandoff: 08/07/2017
 자동 로그 파일 수집을 설정하기 전에 로그가 예상 로그 유형과 일치하는지 확인하여 Cloud App Security에서 특정 파일을 구문 분석할 수 있도록 합니다.
 
 > [!NOTE]
-> Cloud App Security는 로그가 원래 형식으로 전달된다고 가정하고 SIEM 서버에서 로그 수집기로 로그 전달을 지원합니다. 그러나 로그 수집기를 방화벽 및/또는 프록시와 직접 통합하는 것이 좋습니다.
+>-  Cloud App Security는 로그가 원래 형식으로 전달된다고 가정하고 SIEM 서버에서 로그 수집기로 로그 전달을 지원합니다. 그러나 로그 수집기를 방화벽 및/또는 프록시와 직접 통합하는 것이 좋습니다.
+>- 로그 수집기는 데이터가 업로드되기 전에 압축합니다. 로그 수집기의 아웃바운드 트래픽은 수신하는 트래픽 로그의 10% 크기가 됩니다. 
 
 ## <a name="deployment-modes"></a>배포 모드
 

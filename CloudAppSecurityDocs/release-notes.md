@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 새 소식
 
@@ -28,6 +28,7 @@ ms.lasthandoff: 08/27/2017
 -   이제 [IP 주소 범위 API](https://portal.cloudappsecurity.com/api-docs/)를 사용하여 스크립트를 만들어 IP 범위를 대량으로 추가할 수 있습니다. 
 -   Cloud Discovery는 이제 차단된 트랜잭션뿐만 아니라 전체 트랜잭션을 제공하여 차단된 트랜잭션에 대해 더 향상된 가시성을 제공합니다.
 -   이제 **ISO 27017** 인증 여부를 기준으로 클라우드 응용 프로그램을 필터링할 수 있습니다. 이 새로운 클라우드 앱 카탈로그 위험 요소는 공용 클라우드 컴퓨팅 환경에서 사용자 정보 처리 및 보호에 대해 일반적으로 허용되는 제어와 지침을 설정하는 이 인증이 응용 프로그램 공급자에게 있는지 여부를 확인합니다.
+- GDPR 규정 준수에 대한 준비를 활성화하기 위해 클라우드 앱 카탈로그의 클라우드 앱에서 GDPR 준비 문을 수집했습니다. 앱 위험 점수에 아직 영향을 주지 않지만 제공되는 경우 앱 게시자의 GDPR 준비 페이지에 대한 링크를 제공합니다. Microsoft는 이 콘텐츠를 확인하지 않았으며 해당 유효성에 대한 책임이 없습니다.
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security 릴리스 103 
