@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
 Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
@@ -42,9 +42,10 @@ Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점�
  
  
 >[!NOTE]
->연속 보고서 데이터는 하루에 두 번 분석됩니다.
+>- 연속 보고서 데이터는 하루에 두 번 분석됩니다.
+>- 로그 수집기는 데이터가 업로드되기 전에 압축합니다. 로그 수집기의 아웃바운드 트래픽은 수신하는 트래픽 로그의 10% 크기가 됩니다. 
  
-## <a name="using-traffic-logs-for--cloud-discovery"></a>Cloud Discovery에 트래픽 로그 사용
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Cloud Discovery에 트래픽 로그 사용
 Cloud Discovery에서는 트래픽 로그의 데이터를 활용합니다. 로그가 더 자세할수록 더 명확하게 파악할 수 있습니다. Cloud Discovery에는 다음과 같은 특성이 있는 웹 트래픽 데이터가 필요합니다.
 - 트랜잭션 날짜
 - 원본 IP
