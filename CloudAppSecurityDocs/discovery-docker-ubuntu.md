@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: dba7c5cf9a5160e4bd6be4a236f8e64ac4a412e2
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  Ubuntu 컴퓨터에서 터미널을 엽니다.
 
-2.  `sudo - i` 명령을 사용하여 루트 권한으로 변경합니다.
+2.  `sudo -i` 명령을 사용하여 루트 권한으로 변경합니다.
 
 3.  다음 명령을 실행하여 이전 버전을 제거하고 Docker CE를 설치합니다.
 
