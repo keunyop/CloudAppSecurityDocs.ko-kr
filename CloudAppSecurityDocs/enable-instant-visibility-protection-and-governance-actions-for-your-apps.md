@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
@@ -85,34 +85,8 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
   
   
 ## <a name="prerequisites"></a>필수 구성 요소  
-일부 앱의 경우 Cloud App Security에서 로그를 수집할 수 있게 하고 Cloud App Security 콘솔에 대한 액세스를 제공하기 위해 허용 목록에 다음 IP 주소를 추가해야 할 수 있습니다.  
-  
--   로그:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   콘솔:  
-  
-     104.42.231.28  
+- 일부 앱의 경우 Cloud App Security에서 로그를 수집할 수 있게 하고 Cloud App Security 콘솔에 대한 액세스를 제공하기 위해 허용 목록 IP 주소가 필요할 수 있습니다. 자세한 내용은 [네트워크 요구사항](network-requirements.md)을 참조하세요.
 
 - Cloud App Security API 통합을 사용하여 연결하려는 각 앱에 대해 Cloud App Security의 전용 관리 서비스 계정을 만드는 것이 좋습니다.  
   
