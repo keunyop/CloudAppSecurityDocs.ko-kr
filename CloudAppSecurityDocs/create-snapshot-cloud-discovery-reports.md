@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bce725777964ac46a21b03434d24ac725280d84d
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: 9aec263f470dae7db5e3b6edb415addf4e619d8a
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Cloud App Security에서 구문 분석하도록 해야 합니다.

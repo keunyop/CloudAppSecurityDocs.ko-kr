@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 27ede13ad752ee3826acfcd9d37d2b758d75cdf2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f6475c66a8786d3d9f39c70d460453aeed352feb
+ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/24/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스 연속 보고서에 대한 자동 로그 업로드 구성
 
 > [!WARNING] 
-> 이 기능은 사용되지 않습니다.
+> 보다 유연한 배포를 위해 [Docker](discovery-docker.md)를 사용하여 로그 업로드를 구성하는 것을 적극 권장합니다.
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 - 하이퍼바이저: HyperV 또는 VMware
