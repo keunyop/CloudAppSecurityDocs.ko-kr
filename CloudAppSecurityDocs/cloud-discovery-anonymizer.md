@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
+# <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 
 Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 보호할 수 있습니다. Cloud App Security 포털에 데이터 로그를 업로드하면 로그가 삭제되고 모든 사용자 이름 정보가 암호화된 사용자 이름으로 교체됩니다. 이러한 방식으로 모든 클라우드 활동이 익명으로 유지됩니다. 특정 보안 조사를 위해(예: 보안 위반 또는 의심스런 사용자 활동) 필요한 경우 관리자는 실제 사용자 이름을 확인할 수 있습니다. 관리자는 특정 사용자를 의심할 만한 이유가 있는 경우 알려진 사용자 이름의 암호화된 사용자 이름을 조회한 다음 암호화된 사용자 이름을 사용하여 조사를 시작할 수도 있습니다. 각 사용자 이름 변환에 대한 감사는 포털의 **거버넌스 로그**에서 수행됩니다.
 
@@ -33,7 +33,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
 1.  데이터 익명화를 적용하는 방법에는 세 가지가 있습니다. 
     
-    - [새 스냅숏 보고서를 만들고](create-snapshot-cloud-discovery-reports.md) **개인 정보 익명화**를 선택하여 특정 로그 파일의 데이터를 익명화하도록 설정할 수 있습니다.
+    - [새 스냅숏 보고서](create-snapshot-cloud-discovery-reports.md)를 만들고 **Anonymize private information**(개인 정보 익명화)을 선택하여 특정 로그 파일의 데이터를 익명화하도록 설정할 수 있습니다.
  ![스냅숏 데이터 익명화](./media/anonymize-log.png)
 
     - 새 데이터 원본을 추가할 때 **Anonymize private information**(개인 정보 익명화)를 선택하여 [새 데이터 원본에 대한 자동 업로드](configure-automatic-log-upload-for-continuous-reports.md)의 데이터를 익명화하도록 설정할 수 있습니다.  
@@ -41,7 +41,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
     - 업로드된 로그 파일의 스냅숏 보고서 및 로그 수집기의 연속 보고서에서 오는 모든 데이터를 익명화하려면 Cloud App Security에서 다음과 같이 기본값을 설정할 수 있습니다.
      
-        1. [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택합니다.
+        1. Settings(설정) 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택합니다.
      
         2. 기본적으로 사용자 이름을 익명화하려면 Anonymization(익명화) 탭에서 **Anonymize private information by default in new reports and data sources**(기본적으로 새 보고서 및 데이터 원본의 개인 정보 익명화)를 선택합니다.
 
@@ -58,7 +58,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
 5.  비정상적인 사용량 경고 조사와 같은 특정 조사의 경우 포털에서 특정 사용자 이름을 확인하고 비즈니스 근거를 제공할 수 있습니다. 이 페이지는 알려진 사용자 이름의 암호화된 사용자 이름을 조회하는 데에도 사용할 수 있습니다. 
 
-    1. [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택합니다.
+    1. Settings(설정) 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택합니다.
     2. **Anonymize and resolve usernames**(사용자 이름 익명화 및 확인) 아래의 **Anonymization**(익명화) 탭에서 확인을 수행하는 근거를 입력합니다.
     3. **Enter username to resolve**(확인할 사용자 이름 입력) 아래에서 **From anonymized**(익명화된 항목에서)를 선택하고 익명화된 사용자 이름을 입력하거나, **To anonymized**(익명화된 항목으로)를 선택하고 확인할 원래 사용자 이름을 입력합니다. **Resolve**(확인)를 클릭합니다. 
 ![익명화](./media/anonymizer.png)
