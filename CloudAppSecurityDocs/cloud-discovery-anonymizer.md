@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
-ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
+ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 
@@ -33,7 +33,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
 1.  데이터 익명화를 적용하는 방법에는 세 가지가 있습니다. 
     
-    - [새 스냅숏 보고서](create-snapshot-cloud-discovery-reports.md)를 만들고 **Anonymize private information**(개인 정보 익명화)을 선택하여 특정 로그 파일의 데이터를 익명화하도록 설정할 수 있습니다.
+    - [새 스냅숏 보고서를 만들고](create-snapshot-cloud-discovery-reports.md) **Anonymize private information**(개인 정보 익명화)을 선택하여 특정 로그 파일의 데이터를 익명화하도록 설정할 수 있습니다.
  ![스냅숏 데이터 익명화](./media/anonymize-log.png)
 
     - 새 데이터 원본을 추가할 때 **Anonymize private information**(개인 정보 익명화)를 선택하여 [새 데이터 원본에 대한 자동 업로드](configure-automatic-log-upload-for-continuous-reports.md)의 데이터를 익명화하도록 설정할 수 있습니다.  

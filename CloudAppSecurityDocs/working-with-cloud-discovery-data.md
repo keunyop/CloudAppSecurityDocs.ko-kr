@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 9/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b76c732e35258212b4ab97d5e21811a5f2f2828
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="discover"></a>검색
 
@@ -77,6 +77,10 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
 6.  데이터에 대해 원하는 필터를 설정합니다. 이러한 필터는 **조직 구성 단위**, **IP 주소 태그** 또는 **IP 주소 범위**가 될 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
   
     ![사용자 지정 연속 보고서 만들기](./media/create-custom-continuous-report.png) 
+
+
+> [!NOTE]
+> 모든 사용자 지정 보고서는 최대 1GB의 압축되지 않은 데이터로 제한됩니다. 데이터가 1GB를 초과하면 데이터의 처음 1GB를 보고서로 내보냅니다.
 
 ## <a name="deleting-cloud-discovery-data"></a>클라우드 검색 데이터 삭제  
 다양한 이유로 클라우드 검색 데이터를 삭제할 수 있습니다. 다음과 같은 경우 삭제하는 것이 좋습니다.  

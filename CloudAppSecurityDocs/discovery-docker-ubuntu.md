@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dba7c5cf9a5160e4bd6be4a236f8e64ac4a412e2
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: 42e562f484ee5e0a980ab3678c34508cbff113f3
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 09/17/2017
     -   로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
 
     -   로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+
+> [!NOTE]
+> 방화벽에 정적 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않을 경우 로그 수집기가 [포트 443에서 Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
 ## <a name="log-collector-performance"></a>로그 수집기 성능
 

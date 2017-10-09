@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5033a66c976775c512c0f5f0d3ebd3d9aee89b5a
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 9e6b47d61464e2a8b7fb95d8a7fdad9873d09d0b
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="accounts"></a>계정
 Cloud App Security에서는 연결된 앱의 계정을 볼 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 연결된 앱과 관련된 계정 정보를 읽습니다. [계정] 페이지에서 해당 계정, 사용 권한, 계정이 속한 그룹, 계정 별칭 및 사용하는 앱을 조사할 수 있습니다. 또한 Cloud App Security가 활동이나 파일 공유 등의 연결된 앱 중 하나에서 이전에 보이지 않던 새 계정을 검색하는 경우 이 계정이 해당 앱의 계정 목록에 추가됩니다. 따라서 클라우드 앱을 조작하는 외부 사용자의 활동을 파악할 수 있습니다.
@@ -25,7 +25,7 @@ Cloud App Security에서는 연결된 앱의 계정을 볼 수 있습니다. 앱
 
 **계정** 페이지를 필터링하여 특정 계정을 찾고 여러 유형의 계정을 심층 분석할 수 있습니다. 예를 들어 작년 이후 액세스하지 않은 모든 외부 계정을 필터링할 수 있습니다. 
 
-**계정** 페이지에서 다음을 비롯하여 문제에 대해 계정을 쉽게 조사할 수 있습니다.  
+**계정** 페이지에서 다음 문제를 비롯하여 계정을 쉽게 조사할 수 있습니다.  
 
 -   특정 서비스에서 오랫동안 활성화되지 않은 계정이 있는지 확인(해당 서비스에 대해 해당 사용자의 라이선스를 해지할 수 있음)  
 -   관리자 권한이 있는 사용자의 목록을 필터링할 수 있음  
@@ -42,11 +42,11 @@ Cloud App Security에서는 연결된 앱의 계정을 볼 수 있습니다. 앱
 ![계정 화면](./media/accounts-page.png)
 
 ## <a name="account-filters"></a>계정 필터
-다음은 적용할 수 있는 계정 필터 목록입니다. 대부분의 필터는 매우 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
+다음은 적용할 수 있는 계정 필터 목록입니다. 대부분의 필터는 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
   
 - **계정 이름**: 계정 이름은 사용자의 기본 별칭이지만 프록시 주소, 별칭, SID 같은 다른 Microsoft 계정(Office 365 및 Azure Active Directory)의 기타 ID가 지원되며 기본 별칭 아래에 통합됩니다.
 
-- **Affiliation**(소속): 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이 ![계정 관리자 아이콘](./media/accounts-admin-icon.png)와 함께 표시됩니다.
+- **Affiliation**(소속): 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이 ![계정 관리자 아이콘](./media/accounts-admin-icon.png)과 함께 표시됩니다.
 
 - **앱**: 조직의 계정에서 사용하는 모든 API 연결 앱을 필터링할 수 있습니다.
 
