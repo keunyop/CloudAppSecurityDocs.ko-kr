@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
@@ -130,6 +130,10 @@ Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시�
 6.  데이터에 대해 원하는 필터를 설정합니다. 이러한 필터는 **조직 구성 단위**, **IP 주소 태그** 또는 **IP 주소 범위**가 될 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
   
     ![사용자 지정 연속 보고서 만들기](./media/create-custom-continuous-report.png) 
+
+> [!NOTE]
+> 모든 사용자 지정 보고서는 최대 1GB의 압축되지 않은 데이터로 제한됩니다. 데이터가 1GB를 초과하면 데이터의 처음 1GB를 보고서로 내보냅니다.
+
 
 ## <a name="deleting-cloud-discovery-data"></a>클라우드 검색 데이터 삭제  
 다양한 이유로 클라우드 검색 데이터를 삭제할 수 있습니다. 다음과 같은 경우 삭제하는 것이 좋습니다.  

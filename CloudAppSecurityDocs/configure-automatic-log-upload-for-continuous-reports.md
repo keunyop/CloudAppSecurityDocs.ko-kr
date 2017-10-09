@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 9/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6475c66a8786d3d9f39c70d460453aeed352feb
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스 연속 보고서에 대한 자동 로그 업로드 구성
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 09/24/2017
     - 로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용
     - 로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용
 
-  
+> [!NOTE]
+> 방화벽에 정적 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않을 경우 로그 수집기가 [포트 443에서 Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+
 ## <a name="log-collector-performance"></a>로그 수집기 성능
 로그 수집기는 시간당 최대 50GB의 로그 용량을 성공적으로 처리할 수 있습니다.
 로그 수집 프로세스의 주요 병목 상태는 다음과 같습니다.
@@ -54,7 +56,7 @@ ms.lasthandoff: 09/24/2017
   
     b.  프록시 또는 방화벽에 **이름**을 지정합니다.  
   
-    c.  **원본** 목록에서 어플라이언스를 선택합니다. 구체적으로 나열되지 않은 네트워크 어플라이언스에 사용하기 위하여 **사용자 지정 로그 형식**을 선택하는 경우 구성 지침은 [사용자 지정 로그 파서 작업](custom-log-parser.md)을 참조하세요.
+    c.  **원본** 목록에서 어플라이언스를 선택합니다. 나열되지 않은 네트워크 어플라이언스에 사용하기 위하여 **사용자 지정 로그 형식**을 선택하는 경우 구성 지침은 [사용자 지정 로그 파서 작업](custom-log-parser.md)을 참조하세요.
   
     d.  예상 로그 형식 샘플과 로그를 비교합니다. 로그 파일 형식이 이 샘플과 일치하지 않는 경우 데이터 원본을 **기타**로 추가해야 합니다.  
   
@@ -73,8 +75,8 @@ ms.lasthandoff: 09/24/2017
   
   > [!NOTE] 
   > - 단일 로그 수집기로 여러 데이터 원본을 처리할 수 있습니다.
-  > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
-4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**하고 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
+  > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 사용해야 하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
+4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**합니다. 그런 다음 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
@@ -84,7 +86,7 @@ ms.lasthandoff: 09/24/2017
 1.  Hyper-V 관리자를 엽니다.  
   
 2.  **새로 만들기**, **가상 컴퓨터**를 차례로 선택하고 **다음**을 클릭합니다.  
- ![검색 HyperV 가상 컴퓨터](./media/discovery-hyperv-virtual-machine.png "검색 HyperV 가상 컴퓨터")  
+ ![검색 Hyper-V 가상 컴퓨터](./media/discovery-hyperv-virtual-machine.png "검색 Hyper-V 가상 컴퓨터")  
   
 3.  새 가상 컴퓨터의 **이름**(예: CloudAppSecurityLogCollector01)을 지정하고 **다음**을 클릭합니다.  
   
@@ -103,7 +105,7 @@ ms.lasthandoff: 09/24/2017
   
 9. **Virtual Machines** 테이블에서 컴퓨터를 클릭한 다음 **시작**을 클릭합니다.   
   
-10. 로그 수집기 가상 컴퓨터에 연결하여 DHCP 주소가 할당되었는지 확인합니다. 가상 컴퓨터를 클릭하고 **연결**을 선택합니다. 로그인 프롬프트가 표시됩니다. IP 주소가 표시되면 터미널/SSH 도구를 사용하여 가상 컴퓨터에 연결할 수 있습니다.  IP 주소가 표시되지 않으면 Hyper-V/VMWare 연결 도구를 사용하여 위에서 로그 수집기를 만들 때 복사한 자격 증명으로 로그인합니다. 다음 명령을 실행하여 암호를 변경하고 네트워크 구성 유틸리티를 사용하여 가상 컴퓨터를 구성할 수 있습니다.
+10. 로그 수집기 가상 컴퓨터에 연결하여 DHCP 주소가 할당되었는지 확인합니다. 가상 컴퓨터를 클릭하고 **연결**을 선택합니다. 로그인 프롬프트가 표시됩니다. IP 주소가 표시되면 터미널/SSH 도구를 사용하여 가상 컴퓨터에 연결할 수 있습니다.  IP 주소가 표시되지 않으면 Hyper-V/VMWare 연결 도구를 사용하여 이전에 로그 수집기를 만들 때 복사한 자격 증명으로 로그인합니다. 다음 명령을 실행하여 암호를 변경하고 네트워크 구성 유틸리티를 사용하여 가상 컴퓨터를 구성할 수 있습니다.
 ```
 sudo network_config
 ```
@@ -120,7 +122,7 @@ sudo network_config
 2.  로그 수집기를 만들 때 제공된 액세스 토큰을 사용하여 수집기 구성 유틸리티를 실행합니다.```sudo collector_config <access token> ```
 3. 콘솔 도메인을 입력합니다. 예를 들면 다음과 같습니다. ```contoso.portal.cloudappsecurity.com``` 이 값은 Cloud App Security 포털에 로그인한 후에 보이는 URL에서 사용할 수 있습니다. 
 
-4. 예를 들어, 위 그림의 **CloudAppSecurityLogCollector01** 또는 **NewYork**과 같이 구성할 로그 수집기의 이름을 입력합니다.
+4. 예를 들어, 앞 그림의 **CloudAppSecurityLogCollector01** 또는 **NewYork**과 같이 구성할 로그 수집기의 이름을 입력합니다.
 
 5.  다음과 같이 포털에서 로그 수집기의 구성을 가져옵니다.  
   
@@ -154,9 +156,12 @@ sudo network_config
 
 로그가 Cloud App Security에 업로드되고 보고서가 생성되고 있는지 확인한 후 사용자 지정 보고서를 만들 수 있습니다. 이제 Azure Active Directory 사용자 그룹을 기반으로 사용자 지정 검색 보고서를 만들 수 있습니다. 예를 들어 마케팅 부서의 클라우드 사용을 확인하려면 사용자 그룹 가져오기 기능을 사용하여 마케팅 그룹을 가져오고 이 그룹에 대한 사용자 지정 보고서를 만들면 됩니다. IP 주소 태그 또는 IP 주소 범위를 기반으로 보고서를 사용자 지정할 수도 있습니다.
 
-1. Cloud App Security 포털의 [설정] 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택하고 **연속 보고서 관리**를 선택합니다. 
+1. Cloud App Security 포털의 [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택하고 **연속 보고서 관리**를 선택합니다. 
 2. **보고서 만들기** 단추를 클릭하고 필드를 입력합니다.
 3. **필터** 아래에서 데이터 원본별, [가져온 사용자 그룹](user-groups.md)별 또는 [IP 주소 태그 및 범위](ip-tags.md)별로 데이터를 필터링할 수 있습니다. 
+
+> [!NOTE]
+> 모든 사용자 지정 보고서는 최대 1GB의 압축되지 않은 데이터로 제한됩니다. 데이터가 1GB를 초과하면 데이터의 처음 1GB를 보고서로 내보냅니다.
 
 ![사용자 지정 연속 보고서](./media/custom-continuous-report.png)
 

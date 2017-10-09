@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>네트워크 요구 사항
 
@@ -69,7 +69,13 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 > [!NOTE] 
 > 기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다.
 
+## <a name="email-server"></a>메일 서버
 
+Cloud App Security 전용 메일 IP 주소: 
+
+198.2.134.139(mail1.cloudappsecurity.com)
+
+알림을 보낼 수 있도록 스팸 방지 서비스에서 이 IP 주소를 허용 목록에 포함해야 합니다.
     
 
 

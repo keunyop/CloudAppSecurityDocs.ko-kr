@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/4/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 1b33f8bcb27cc303463ac83b46098bf82d66d25c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/07/2017
   
      ![google1](./media/google1.png "google1")  
   
-3.  **새 프로젝트** 화면에</br>
+3.  **새 프로젝트** 화면에서:</br>
     **Microsoft Cloud App Security**로 프로젝트 이름을 지정하고 **만들기**를 클릭합니다.  
            ![google2](./media/google2.png "google2")  
   
@@ -71,26 +71,26 @@ ms.lasthandoff: 08/07/2017
   
     -   **Save**을 클릭합니다.  
   
-     ![google prod 이름](./media/google6.png "google6")  
+     ![Google 제품 이름](./media/google6.png "google6")  
   
 9. **API Credentials**(API 자격 증명) 화면에서 **Create credentials**(자격 증명 만들기) 옆의 화살표를 클릭합니다.  
   
-     ![google 자격 증명](./media/google7.png "google7")  
+     ![Google 자격 증명](./media/google7.png "google7")  
 
 10. **Service account key**(서비스 계정 키)를 선택합니다.
 
-     ![google 서비스 계정 키](./media/google8.png "google8")  
+     ![Google 서비스 계정 키](./media/google8.png "google8")  
   
-11. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름(예:**Service account 1**)을 입력한 다음 **Role**(역할)에서 **Project**(프로젝트)와 **Editor**(편집자)를 선택한 다음 **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
+11. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름을 입력합니다(예: **Service account 1**). **Role**(역할)에서 **Project**(프로젝트), **Editor**(편집기)를 차례로 선택합니다. **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
   
-     ![google 서비스 계정 키 만들기](./media/google9.png "google9")  
+     ![Google에서 서비스 계정 키 만들기](./media/google9.png "google9")  
   
 12.  P12 인증서 파일이 컴퓨터에 저장됩니다.  
         
 12. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
        ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite 자격 증명 서비스 계정")  
   
-13. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **편집**을 선택합니다.  
+13. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **Edit**(편집)을 선택합니다.  
   
      ![google 편집](./media/google11.png "google 편집")  
   
@@ -98,12 +98,12 @@ ms.lasthandoff: 08/07/2017
   
      ![google 서비스 계정 ID](./media/google13.png "google13")  
   
-16. 제목 표시줄의 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 열고 **API 관리자**와 **대시보드**를 선택합니다.  
+16. 제목 표시줄에서 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 엽니다. **API manager**(API 관리자), **Dashboard**(대시보드)를 차례로 선택합니다.  
     
 17. 사용 가능한 API 목록으로 아래로 스크롤하고 **Google Drive API**(Google 드라이브 API) 옆의 설정을 클릭합니다.   
        ![Google 드라이브 선택](./media/google14.png "google14")  
 
-18. 다음을 입력합니다.
+18. 다음 정보를 입력합니다.
 
     -   **응용 프로그램 이름**: Microsoft Cloud App Security.  
   
@@ -111,14 +111,14 @@ ms.lasthandoff: 08/07/2017
   
     -   Google을 사용하려면 하나 이상의 응용 프로그램 아이콘을 업로드해야 합니다. [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)으로 이동하여 Cloud App Security 아이콘이 포함된 zip 파일을 다운로드합니다. 그런 다음 **응용 프로그램 아이콘**에서 128x128 및 32x32 이미지를 끌어서 놓습니다.  
   
-    -   **Drive Integration**(드라이브 통합)에서 **Open URL:**(URL 열기:) 아래에 다음을 입력합니다.  
+    -   **Drive Integration**(드라이브 통합)에서 **Open URL:**(URL 열기:) 아래에 다음 URL을 입력합니다.  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
-         ![google 드라이브 구성](./media/google15.png "googledriveconfig")  
+         ![google 드라이브 구성](./media/google15.png "Google 드라이브 구성")  
   
 19. **사용 API** 목록에서 **Google Apps Marketplace SDK** 옆에 있는 설정 코그 설정을 클릭합니다. 
-         ![google marketplace SDK 구성](./media/google16.png "googledriveconfig")  
+         ![google marketplace SDK 구성](./media/google16.png "Google 드라이브 구성")  
 
        >[!NOTE]
        > 코그를 사용하지 않도록 설정되어 있으면 대신에 **Google Apps Marketplace SDK**를 클릭합니다. 
@@ -128,7 +128,7 @@ ms.lasthandoff: 08/07/2017
   
     -   **응용 프로그램 이름**은 **Microsoft Cloud App Security**로 표시되어야 합니다.
   
-         **응용 프로그램 설명** 필드에 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다."라고 입력합니다.  
+         **Application description**(응용 프로그램 설명) 필드에 “Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.”라고 입력합니다.  
   
     -   **개별 설치 사용** 확인란을 선택 취소합니다.  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 08/07/2017
   
         -   **개인 정보 취급 방침 URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   **OAuth 2.0 scopes**(OAuth 2.0 범위)에서 다음을 복사하고 붙여넣습니다. 한 번에 하나씩 복사한 후 <Enter> 키를 눌러야 합니다.  
+    -   **OAuth 2.0 scopes**(OAuth 2.0 범위)에서 다음 URL을 복사한 후 붙여넣습니다(한 번에 하나씩 복사한 후 <Enter> 키 누르기).  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 08/07/2017
 2.  **연결된 앱** 페이지에서 더하기 기호를 클릭하고 **G Suite**를 선택합니다.  
        
   
-3.  팝업에서 다음을 입력합니다.  
+3.  팝업에서 다음 정보를 입력합니다.  
   
      ![Cloud App Security의 G Suite 구성](./media/gsuite-config-cas.png "Cloud App Security의 G Suite 구성")  
   
@@ -231,7 +231,7 @@ ms.lasthandoff: 08/07/2017
   
 G Suite를 연결한 후 연결 전 60일 동안 이벤트를 받게 됩니다.
   
-G Suite를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 파일 및 사용자 수에 따라 전체 검색을 완료하려면 시간이 오래 걸릴 수 있습니다. 근 실시간 검색을 사용하려면 작업이 감지되는 파일을 검색 큐의 시작 부분으로 이동합니다. 예를 들어 편집, 업데이트 또는 공유되는 파일은 바로 검색하며 일반 검색 프로세스에 연결될 때까지 대기하지 않습니다. 단, 보거나, 미리 보거나, 인쇄하거나, 내보내는 파일과 같이 기본적으로 수정되지 않는 파일에는 적용되지 않습니다.
+G Suite를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 파일 및 사용자 수에 따라 전체 검색을 완료하려면 시간이 오래 걸릴 수 있습니다. 거의 실시간 검색을 사용하려면 작업이 감지되는 파일을 검색 큐의 시작 부분으로 이동합니다. 예를 들어 편집, 업데이트 또는 공유되는 파일은 바로 검색합니다. 기본적으로 수정되지 않는 파일에는 이 검색이 적용되지 않습니다. 예를 들어 보거나, 미리 보거나, 인쇄하거나, 내보내는 파일은 정기적인 검색 중에 검색됩니다.
   
   
 ## <a name="see-also"></a>참고 항목  
