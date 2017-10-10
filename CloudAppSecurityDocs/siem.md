@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -83,6 +83,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 > [!NOTE]
 > - 파일 이름은 SIEM 에이전트의 버전에 따라 달라질 수 있습니다.
 > - 대괄호 안에 있는 매개 변수는 선택 사항이며, 관련된 경우에만 사용해야 합니다.
+> - Windows에서 실행하는 경우 명령을 실행하도록 예약된 작업을 구성하는 것이 좋습니다. 그러면 서비스가 항상 실행되도록 합니다.
 
 여기서는 다음 변수가 사용됩니다.
 - DIRNAME은 로컬 에이전트 디버그 로그에 사용할 디렉터리의 경로입니다.

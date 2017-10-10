@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security 배포
 Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
 
-조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)의 라이선싱 리소스를 참조하세요.  
+조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
 
 >[!NOTE]
 >Office 365 라이선스가 없어도 Cloud App Security를 사용할 수 있습니다.  
 
 ## <a name="prerequisites"></a>필수 구성 요소  
   
--   조직에서 제품을 사용하려면 Cloud App Security에 대한 라이선스가 있어야 합니다. 자세한 내용은 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) 및 [라이선싱 리소스](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)를 참조하세요.  
+-   조직에서 제품을 사용하려면 Cloud App Security에 대한 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
   
      테넌트 정품 인증 지원에 대한 자세한 내용은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요.  
   
