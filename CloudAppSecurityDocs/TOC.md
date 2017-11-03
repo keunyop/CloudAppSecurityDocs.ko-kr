@@ -31,10 +31,13 @@
 ### [Okta 연결](connect-okta-to-microsoft-cloud-app-security.md)
 ### [ServiceNow 연결](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Salesforce 연결](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [프록시를 사용하여 앱 보호](proxy-intro-aad.md)
+### [Azure AD 앱용 프록시 배포](proxy-deployment-aad.md)
 # Windows Server Update Services와 함께
 ## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
 ## 시나리오
 ### [랜섬웨어로부터 조직 보호](use-case-ransomware.md)
+### [중요한 정보의 다운로드 차단](use-case-proxy-block-session-aad.md)
 ### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [파일 정책](data-protection-policies.md)
 ##### [콘텐츠 검사](content-inspection.md)
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
+#### [세션 정책](session-policy-aad.md)
 #### [정책 템플릿 참조](policy-template-reference.md)
 ### [연결된 앱 제어](governance-actions.md)
 ### [검색된 앱 제어](governance-discovery.md)
