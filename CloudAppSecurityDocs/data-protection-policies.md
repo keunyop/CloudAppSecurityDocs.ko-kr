@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: a68112f2425b993d8f2eb05200aa800ee09869d5
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  

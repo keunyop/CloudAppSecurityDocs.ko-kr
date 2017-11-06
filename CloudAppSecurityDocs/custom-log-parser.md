@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 8463285f9462296188bc015b455fad824b3660cb
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="use-a-custom-log-parser"></a>사용자 지정 로그 파서 사용
 Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud App Security에서 명시적으로 지원되지 않는 방화벽 또는 장치에서 로그가 생성된 경우에도 Cloud Discovery에 대해 해당 로그를 사용할 수 있습니다. 

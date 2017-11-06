@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e34e37e82173cd6e29daa22320f99390d8294fa3
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="manage-app-permissions"></a>응용 프로그램 사용 권한 관리
 조직의 비즈니스 사용자가 설치하는 타사 생산성 앱 중에는 사용자 정보와 데이터의 사용 권한을 요청하고 사용자 대신 Office 365, G Suite, Salesforce 등의 다른 클라우드 앱에 로그인하는 것도 많습니다.  사용자가 이러한 응용 프로그램을 설치할 때, 응용 프로그램에 사용 권한을 부여하는 내용을 포함한 메시지의 세부 정보를 검토하지 않고 승인을 클릭하는 경우도 많습니다.  이 문제는 IT 직원이 응용 프로그램의 생산성 향상 효과와 보안 위험을 신중하게 비교하지 못하기 때문에 발생합니다. 타사 앱의 사용 권한을 승인하면 조직에 보안 위험이 생길 수 있으므로, 사용자가 부여하는 앱 사용 권한을 모니터링하면 사용자와 응용 프로그램을 보호하는 데 필요한 정보를 얻고 상황을 통제할 수 있습니다. Cloud App Security 앱 사용 권한을 활용하면 사용자가 설치한 응용 프로그램 중에서 Office 365 데이터, G Suite 데이터 및 Salesforce 데이터에 액세스할 수 있는 것이 무엇이고, 앱에 어떤 사용 권한이 있으며, 이러한 앱에 Office 365, G Suite 및 Salesforce 계정 액세스 권한을 부여한 사용자가 누구인지 확인할 수 있습니다. 응용 프로그램 사용 권한은 사용자의 액세스를 허용할 응용 프로그램과 금지할 응용 프로그램을 결정하는 데 유용합니다.

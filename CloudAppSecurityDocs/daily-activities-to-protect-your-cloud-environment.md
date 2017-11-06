@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="working-with-the-dashboard"></a>대시보드 사용
 Cloud App Security를 실행하고 나면 데이터 스트림을 구성하고, 사람들의 사용을 허용할 응용 프로그램 권한을 부여하고, 클라우드 환경을 모니터링할 정책을 설정해야 합니다. 그러고 나면 Cloud App Security를 사용하여 클라우드를 제어 및 보호하고 위험을 관리할 수 있습니다.  
