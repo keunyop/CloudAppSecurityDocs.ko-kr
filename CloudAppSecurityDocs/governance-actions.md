@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0c3487980cdd5c1a3dad08e280de43ea714fadd
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
