@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>네트워크 요구 사항
 
 이 항목에서는 Cloud App Security를 사용하기 위해 허용해야 하는 포트 및 IP 주소 목록과 허용 목록을 제공합니다. 
 
-연결된 Cloud App Security 데이터 센터를 확인하는 방법에 대한 자세한 내용은 [API 토큰](api-tokens.md)을 참조하세요.
 
+## <a name="view-your-data-center"></a>데이터 센터 보기
 
+아래 요구 사항 중 일부는 연결되어 있는 데이터 센터에 따라 다릅니다. 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>포털 액세스, SIEM 에이전트, 인증 게이트웨이 및 로그 수집기
+연결되어 있는 데이터 센터를 확인하려면 다음을 수행합니다.
 
-포털 및 인증 게이트웨이에 액세스하고 Cloud App Security가 SIEM에 연결하도록 하고 Cloud App Security 로그 수집기가 실행되도록 하려면 다음 IP 주소에 대한 **아웃바운드 포트 443**을 방화벽의 허용 목록에 추가해야 합니다.  
+1. Cloud App Security 포털의 메뉴 모음에서 **?** 를 클릭하고 **정보**를 선택합니다. 
+
+    ![정보 클릭](./media/about-menu.png)
+
+2. Cloud App Security 버전 화면에서 지역 및 데이터 센터를 확인할 수 있습니다.
+
+    ![데이터 센터 보기](./media/data-center.png)
+
+## <a name="portal-access"></a>포털 액세스
+
+Cloud App Security 포털에 액세스하려면 다음 IP 주소에 대한 **443 아웃바운드 포트**를 방화벽의 허용 목록에 추가합니다.  
 
 
 > [!div class="mx-tableFixed"]
 |데이터 센터|IP 주소|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>SIEM 에이전트 연결
+
+Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소에 대한 **443 아웃바운드 포트**를 방화벽의 허용 목록에 추가합니다.  
+
+
+> [!div class="mx-tableFixed"]
+|데이터 센터|IP 주소|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>앱 커넥터 액세스 및 외부 DLP 통합
 
@@ -77,10 +99,20 @@ Cloud App Security 전용 메일 IP 주소:
 
 알림을 보낼 수 있도록 스팸 방지 서비스에서 이 IP 주소를 허용 목록에 포함해야 합니다.
     
+## <a name="log-collector"></a>로그 수집기 
+
+로그 수집기를 사용하여 클라우드 검색 기능을 사용하도록 설정하고 조직에서 섀도 IT를 검색하려면 다음과 같이 개방해야 합니다.
+
+- 로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
+- 로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+- 로그 수집기가 80 및 443 포트에서 Azure Blob 저장소(https://adaprodconsole.blob.core.windows.net/)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+
+> [!NOTE]
+> 방화벽에 고정 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않는 경우 로그 수집기가 443 포트에서 Microsoft Azure 데이터 센터 IP 범위에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
 
 
-  
+
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Windows Server 2016에서 자동 로그 수집기 Docker 설정 및 구성
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
 
     -   로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+
+    - 로그 수집기가 80 및 443 포트에서 Azure Blob 저장소(https://adaprodconsole.blob.core.windows.net/)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
 > [!NOTE]
 > 방화벽에 정적 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않을 경우 로그 수집기가 [포트 443에서 Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
@@ -93,15 +95,11 @@ ms.lasthandoff: 09/28/2017
 
     > -   Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 
-4.  추가 배포 정보가 표시됩니다.
-
-    ![Windows3](./media/windows3.png)
-
-5.  대화 상자의 실행 명령을 **복사**합니다. 클립보드에 복사 아이콘 [클립보드에 복사 아이콘](./media/copy-icon.png)을 사용할 수 있습니다.
+4.  추가 배포 정보가 표시됩니다. 대화 상자의 실행 명령을 **복사**합니다. 클립보드에 복사 아이콘 [클립보드에 복사 아이콘](./media/copy-icon.png)을 사용할 수 있습니다.
 
 6.  예상 데이터 원본 구성 **내보내기**를 수행합니다. 이 구성에서는 어플라이언스에서 로그 내보내기를 설정하는 방법을 설명합니다.
 
-    ![Windows4](./media/windows4.png)
+   ![로그 수집기 만들기](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>2단계 - 컴퓨터의 온-프레미스 배포
 
@@ -126,17 +124,10 @@ ms.lasthandoff: 09/28/2017
 
 7.  포털에서 생성된 실행 명령을 사용하여 수집기 이미지를 배포합니다.
 
-    ![windows8](./media/windows8.png)
+   ![로그 수집기 만들기](./media/windows7.png)
 
-    >[!NOTE]
-    >프록시를 구성해야 하는 경우, 아래에 프록시 IP 주소와 포트를 추가합니다. 예를 들어, 프록시 세부 정보가 192.168.10.1:8080이면 업데이트된 실행 명령은 다음과 같습니다.  
- `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![windows9](./media/windows9.png)
+   프록시를 구성해야 하는 경우 프록시 IP 주소와 포트를 추가합니다. 예를 들어, 프록시 세부 정보가 192.168.10.1:8080이면 업데이트된 실행 명령은 다음과 같습니다.  
+ `(echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 9.  `docker logs <collector_name>` 명령을 실행하여 수집기가 정상적으로 실행되고 있는지 확인합니다.
 
