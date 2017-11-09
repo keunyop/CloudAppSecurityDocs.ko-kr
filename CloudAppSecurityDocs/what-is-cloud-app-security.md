@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
+ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
 
@@ -43,9 +43,10 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 -   클라우드 검색을 사용하여 클라우드 환경 및 조직에서 사용 중인 클라우드 응용 프로그램을 매핑하고 식별합니다.
 -   클라우드에서 응용 프로그램의 권한을 부여하고 취소합니다.  
 -   배포가 쉬운 응용 프로그램 커넥터를 사용하여 API를 활용하고 연결하는 응용 프로그램의 가시성과 거버넌스를 확보합니다.  
+-   프록시 보호를 사용하여 클라우드 앱 내에서 수행되는 액세스와 활동에 대한 실시간 가시성과 제어를 가져옵니다.
 -   정책을 설정한 후 지속적으로 미세 조정하여 연속 제어를 돕습니다.  
 
-![Cloud App Security 아키텍처 다이어그램](./media/architecture.png)  
+![Cloud App Security 아키텍처 다이어그램](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>데이터 보존 및 규정 준수
 
@@ -58,7 +59,7 @@ Cloud App Security에서는 다음과 같이 데이터를 유지합니다.
 - 검색 데이터: 90일 
 - 경고: 180일 
 
-이러한 원본의 데이터를 수집한 후 Cloud App Security에서 데이터에 대한 정교한 분석을 실행 합니다. 비정상적인 활동이 있으면 즉시 알리고, 클라우드 환경에 대한 심층적인 정보를 제공합니다. Cloud App Security에서 정책을 구성한 다음 클라우드 환경에 있는 모든 항목을 보호하는 데 사용할 수 있습니다.  
+이러한 원본에서 데이터가 수집되면 Cloud App Security는 환경을 프로파일링하고 학습된 기준과 관련하여 비정상 활동을 경고하는 정교한 추론 변칙 검색 엔진을 실행하고, 클라우드 환경에 대한 심층적인 가시성을 제공합니다. Cloud App Security에서 정책을 구성한 다음 클라우드 환경에 있는 모든 항목을 보호하는 데 사용할 수 있습니다.  
 
 ### <a name="cloud-discovery"></a>클라우드 검색  
 
@@ -76,6 +77,13 @@ Cloud App Security를 사용하면 *클라우드 응용 프로그램 카탈로�
 응용 프로그램의 연결과 보호 강화를 위해, 응용 프로그램 관리자는 Cloud App Security에 응용 프로그램 액세스 권한을 부여합니다. 그런 다음, Cloud App Security에서 응용 프로그램의 활동 로그를 쿼리하고 데이터와 계정, 클라우드 콘텐츠를 검색합니다. Cloud App Security는 정책을 적용하고, 위험을 검색하며, 문제 해결을 위한 거버넌스 작업을 제공할 수 있습니다.  
 
 Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합니다. 각 응용 프로그램에는 자체 프레임워크 및 API 제한이 있습니다. Cloud App Security는 앱 공급자와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 응용 프로그램이 API에 적용하는 다양한 제한을 고려하여(제한, API 제한, 동적 시간 이동 API 창 등), Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
+
+### <a name="proxy-protection"></a>프록시 보호
+Cloud App Security 프록시는 클라우드 환경에서 수행되는 액세스 및 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 프록시를 사용하면 조직을 보호할 수 있습니다. 
+-   다운로드가 시작되기 전에 차단하여 데이터 누수 방지
+-   안에 저장한 데이터와 클라우드에서 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙 설정
+-   관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있도록 보호되지 않는 끝점을 세부적으로 파악
+-   비회사 네트워크 또는 위험한 IP 주소로부터의 액세스 제어
 
 ### <a name="policy-control"></a>정책 제어  
 

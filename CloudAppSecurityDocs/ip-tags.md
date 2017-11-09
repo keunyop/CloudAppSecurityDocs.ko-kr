@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 10/09/2017
 ---
 #  <a name="IPtagsandRanges"></a> IP 범위 및 태그 사용
 
@@ -69,14 +69,15 @@ Cloud App Security는 다음 IP 주소에 대한 기본 제공 태그로 미리 
   
     -   **관리**: 관리자의 모든 IP 주소여야 합니다.  
   
-    -   **내부**: 내부 네트워크, 지점 및 Wi-Fi 로밍 주소의 모든 IP 주소여야 합니다.  
+    -  **클라우드 공급자**: 클라우드 공급자에서 사용하는 IP 주소여야 합니다.
+  
+    -   **회사**: 내부 네트워크, 지점 및 Wi-Fi 로밍 주소의 모든 IP 주소여야 합니다.  
   
     -   **위험**: 위험한 것으로 간주하는 모든 IP 주소여야 합니다. 여기에는 과거에 본 적이 있는 의심스러운 IP 주소, 경쟁업체의 네트워크에 있는 IP 주소 등이 포함될 수 있습니다.  
   
     -   **VPN**: 원격 작업자에 사용하는 모든 IP 주소여야 합니다.  
-  
-    -   **클라우드 프록시**: 클라우드에 있는 프록시의 IP 주소여야 합니다.  
-  
+ 
+
 7.  완료되면 **만들기**를 클릭합니다.  
   
      ![newipaddress 범위](./media/newipaddress-range.png "newipaddress 범위")  

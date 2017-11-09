@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,40 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 새 소식
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
+
+## <a name="cloud-app-security-releases-109"></a>Cloud App Security 릴리스 109
+릴리스 날짜: 2017년 10월 29일 
+
+- Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예:
+    -   다운로드를 시작하기 전에 차단하여 데이터 누수를 미리를 방지합니다.
+    -   클라우드에서 저장되거나 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙을 설정합니다.
+    -   보호되지 않는 끝점에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
+    -   비회사 네트워크 또는 위험한 IP 주소로부터의 액세스를 제어합니다.
+  
+  자세한 내용은 [프록시를 사용하여 앱 보호](proxy-intro-aad.md)를 참조하세요.
+
+-   특정 서비스 활동 이름에 따라 필터링하는 기능을 점진적으로 배포하고 있습니다. 이 새로운 활동 유형 필터는 자세히 세분화되어 있어 매우 일반적인 활동 유형과 달리 특정 앱 활동을 모니터링할 수 있습니다. 예를 들어 이전에는 **실행 명령**을 필터링할 수 있었고, 이제는 특정 EXO cmdlet을 필터링할 수 있습니다. 활동 이름은 **유형(앱)**의 [활동] 서랍에서도 확인할 수 있습니다. 이 기능은 결국 활동 유형 필터를 바꿉니다.  
+
+-   클라우드 검색에서는 이제 Cisco ASA with FirePOWER를 지원합니다. 
+
+-   사용자 환경을 개선하기 위해 Discovery 사용자 및 IP 페이지의 성능이 향상되었습니다.
+
+
+## <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security 릴리스 105, 106, 107, 108
+릴리스 날짜: 2017년 9/10월
+ 
+-   Cloud App Security에는 이제 EU에 있는 데이터 센터가 포함됩니다. Cloud App Security 고객은 미국 데이터 센터 외에도 EU 데이터 센터를 통해 예정된 새로운 유럽 표준 및 인증을 완벽하게 준수할 수 있습니다. 
+-   더 간단한 필터링과 추가 통찰력을 제공하는 새 필터가 **App 커넥터** 페이지에 추가되었습니다.
+-   대상 IP 정보만 포함된 로그 파일에 대한 클라우드 검색이 향상되었습니다.
+ 
 
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security 릴리스 104 
 릴리스 날짜: 2017년 8월 27일

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 342f0eb03a79bfc3ee1d43d101d0c27769e1b9d4
+ms.sourcegitcommit: 0dc6e8eae04e8b5901eef7dbe558238790f07140
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
 
@@ -32,11 +32,14 @@ ms.lasthandoff: 06/28/2017
   
 |정책 유형 아이콘|정책 유형|Windows Server Update Services와 함께|  
 |-----|-----------------|---------|  
+|![액세스 정책 아이콘](./media/proxy-policy.png)|액세스 정책|액세스 정책을 통해 클라우드 앱에 대한 사용자 로그인을 실시간으로 모니터링하고 제어할 수 있습니다.|
 |![활동 정책 아이콘](./media/activity_policy.png)|활동 정책|활동 정책을 통해 앱 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 이러한 정책을 사용하면 다양한 사용자가 수행하는 특정 활동을 모니터링하거나 한 가지 특정 활동 유형의 예기치 않게 높은 비율을 팔로우할 수 있습니다.|  
 |![변칙 검색 정책 아이콘](./media/anomaly_detection_policy.png)|변칙 검색 정책|변칙 검색 정책을 사용할 경우 여기서 설정한 위험 요소에 따라 클라우드에서 비정상적인 활동을 찾고 조직의 기준이나 사용자의 일반 활동과 다른 활동이 발생하면 경고할 수 있습니다.|  
 |![클라우드 검색 정책 아이콘](./media/discovery_policy.png)|앱 검색 정책|앱 검색 정책을 통해 조직 내에서 새로운 앱이 검색되면 알려주는 경고를 설정할 수 있습니다.|  
 |![변칙 검색 정책 아이콘](./media/anomaly_detection_policy.png)|클라우드 검색 변칙 검색 정책|클라우드 검색 변칙 검색 정책은 클라우드 앱 검색에 사용하는 로그를 확인하고 비정상적인 발생을 검색합니다. 예를 들어 이전에 Dropbox를 사용한 적이 없는 사용자가 갑자가 Dropbox에 600GB를 업로드하거나 특정 앱에서 평소보다 많은 트랜잭션이 있는 경우입니다.|  
 |![파일 정책 아이콘](./media/file_policy.png)|파일 정책|파일 정책을 사용하면 클라우드 앱에서 지정된 파일 또는 파일 형식(공유, 외부 도메인과 공유됨)과 데이터(소유 정보, PII, 신용 카드 정보 등)를 검색하고 파일에 거버넌스 작업을 적용할 수 있습니다(거버넌스 작업은 클라우드 앱과 관련이 있음).|  
+|![세션 정책 아이콘](./media/proxy-policy.png)|세션 정책|세션 정책을 통해 클라우드 앱의 사용자 작업을 실시간으로 모니터링하고 제어할 수 있습니다.|
+
   
 ## <a name="identifying-risk"></a>위험 식별  
 Cloud App Security는 클라우드에서 다양한 위험을 완화하는 데 도움이 됩니다. 다음 위험 중 하나와 연결되도록 정책 및 경고를 구성할 수 있습니다.  

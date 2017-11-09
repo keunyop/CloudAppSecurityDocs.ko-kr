@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -82,8 +82,10 @@ SIEM과의 통합은 세 단계로 수행됩니다.
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 > [!NOTE]
 > - 파일 이름은 SIEM 에이전트의 버전에 따라 달라질 수 있습니다.
-> - 대괄호 안에 있는 매개 변수는 선택 사항이며, 관련된 경우에만 사용해야 합니다.
-> - Windows에서 실행하는 경우 명령을 실행하도록 예약된 작업을 구성하는 것이 좋습니다. 그러면 서비스가 항상 실행되도록 합니다.
+> - 대괄호([ ]) 안에 있는 매개 변수는 선택 사항이며, 관련된 경우에만 사용해야 합니다.
+> - 서버 시작 시 JAR을 실행하는 것이 좋습니다.
+>   - Windows: 예약된 작업으로 실행하고, 작업을 **사용자가 로그온했는지 여부에 상관 없이 실행**으로 구성하고 **다음보다 더 오래 실행되면 작업 중지** 확인란을 선택 취소했는지 확인합니다.
+>   - Linux: rc.local 파일에 **&**가 포함된 실행 명령을 추가합니다. 예를 들면 다음과 같습니다. `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 여기서는 다음 변수가 사용됩니다.
 - DIRNAME은 로컬 에이전트 디버그 로그에 사용할 디렉터리의 경로입니다.
@@ -142,10 +144,6 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 ## <a name="high-availability-options"></a>고가용성 옵션
 
 SIEM 에이전트는 최대 2일의 가동 중지 시간 복구를 지원하는 단일 끝점입니다. 고객 끝점으로 부하 분산 장치를 사용하면 고가용성에 대한 추가 조치를 완수할 수 있습니다.
-
-
-## <a name="related-videos"></a>관련 동영상  
-[Cloud App Security용 SIEM 커넥터 설치](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>참고 항목  
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   

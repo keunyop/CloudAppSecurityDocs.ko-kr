@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e8e86368429fac280b5555d85a0de3ec1789effa
+ms.sourcegitcommit: 2fe9475d428855a6dab6fa2edd0ccd56d66f87ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="api-tokens"></a>API 토큰
     
@@ -69,16 +69,13 @@ API 토큰 페이지에는 생성된 모든 API 토큰 표가 포함됩니다.
 > SIEM 커넥터 및 로그 수집기에서도 API 토큰을 사용합니다. 이러한 토큰은 로그 수집기 및 SIEM 에이전트 섹션에서 관리해야 하고 이 표에는 나타나지 않습니다. 
 
 
-## <a name="view-your-data-center"></a>데이터 센터 보기
 
-Cloud App Security 포털에서 연결하는 데이터 센터를 보려면 메뉴 모음에서 **?** 를 클릭하고 **정보**를 선택합니다. 
-
-Cloud App Security 버전 화면에서 데이터 센터를 볼 수 있습니다.
 
 
 ## <a name="see-also"></a>참고 항목  
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
-  
-  
+
+## <a name="check-out-this-video"></a>이 비디오를 확인해 보세요!
+[Microsoft Cloud App Security - REST API 및 토큰](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
