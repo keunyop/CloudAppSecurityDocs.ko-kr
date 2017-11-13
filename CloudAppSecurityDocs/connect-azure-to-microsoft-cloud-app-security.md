@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: d7c37ad69347de717dbef2179191e35284bd27c2
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Azure 연결
 
@@ -93,7 +93,7 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
 
 
 > [!NOTE]
-> 이 기능은 공개 미리 보기로 제공됩니다.
+> 이 기능은 비공개 미리 보기입니다.
 
 
 ## <a name="see-also"></a>참고 항목  

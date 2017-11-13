@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 0bda9f2ccc5c2e74e11edddf32789216f32958f7
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Windows Server 2016에서 자동 로그 수집기 Docker 설정 및 구성
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
 
-    -   로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+    -   로그 수집기가 포트 443에서 포털(예: portal.contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
     - 로그 수집기가 80 및 443 포트에서 Azure Blob 저장소(https://adaprodconsole.blob.core.windows.net/)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
