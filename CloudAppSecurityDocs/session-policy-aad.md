@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>세션 정책 
 
 > [!NOTE]
-> Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다.
+> 이것은 미리 보기 기능입니다.
 
 Cloud App Security 세션 정책을 사용하면 실시간 세션 수준 모니터링에서 클라우드 앱에 대한 세부적인 가시성을 제공하고 사용자 세션에 설정한 정책에 따라 다른 작업을 수행할 수 있습니다. 세션 제어를 통해 액세스를 완전히 허용하거나 차단하는 대신 세션을 모니터링하면서 액세스를 허용하거나 특정 세션 활동을 제한할 수 있습니다. 
 
@@ -159,7 +159,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 **보호**를 Cloud App Security 프록시 세션 정책에서 수행할 **작업**으로 설정하면 프록시에서 정책의 파일 필터에 따라 파일의 레이블 지정과 후속 보호를 적용합니다. 레이블은 Azure의 Azure Information Protection 콘솔에서 구성되며, 클라우드 앱 보안 정책에서 옵션으로 표시되도록 레이블 내에서 해당 레이블에 대해 **보호**를 선택해야 합니다. 레이블을 선택하고 Cloud App Security 정책 기준을 충족하는 파일을 다운로드하는 경우 다운로드 시 이 레이블과 해당 보호(권한 포함)가 파일에 적용됩니다. 이제 다운로드한 파일이 보호되는 동안 원본 파일은 있는 그대로 클라우드 앱에 남아 있습니다. 파일에 액세스하려는 사용자는 적용된 보호에 의해 결정된 권한 요구 사항을 충족해야 합니다.  
  
-  
+ 
 ## <a name="see-also"></a>참고 항목  
 [Azure AD 프록시 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

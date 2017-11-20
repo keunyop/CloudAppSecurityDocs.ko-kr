@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 5d49c04f6ddfda778bc3775805a42383a41f88c4
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 중요한 정보 다운로드 차단
 
-> [!NOTE]
-> Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다.
 
 오늘날 IT 관리자는 직원의 생산성을 높이는 데 있어 진퇴양난에 놓여 있습니다. 즉 직원이 언제든지 어떤 장치에서든 작업할 수 있도록 앱에 액세스할 수 있어야 합니다. 다른 한편으로는 자산 정보와 특수 정보를 포함하는 회사 자산을 보호해야 합니다. 데이터를 보호하는 동시에 직원이 클라우드 앱에 액세스할 수 있게 하려면 어떻게 해야 할까요? **이 사용 사례에서는 관리되지 않는 장치 또는 회사 네트워크 외부 위치에서 엔터프라이즈 클라우드 앱의 중요한 데이터에 액세스할 수 있는 사용자가 다운로드할 수 없도록 차단합니다.**
 
@@ -127,7 +125,9 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 
 4. 정책 보고서에서 세션 제어에 대해 프록시로 리디렉션되는 로그인 및 모니터링된 세션에서 다운로드되거나 차단된 파일을 확인할 수 있습니다.
 
-  
+
+
+
 ## <a name="see-also"></a>참고 항목  
 [세션 정책 만들기](session-policy-aad.md)   
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

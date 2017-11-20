@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d76d9026352d237b26f2945570e2f349bd372bb4
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Azure AD 앱용 프록시 배포
 
 > [!NOTE]
-> Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다.
+> 이것은 미리 보기 기능입니다.
 
 다음 단계에 따라 Cloud App Security 프록시에서 Azure AD 앱을 제어하도록 구성합니다.
 
@@ -100,6 +100,8 @@ ms.lasthandoff: 10/31/2017
 
 
 이제 [세션 정책](session-policy-aad.md)을 만들어 프록시 앱을 제어할 준비가 되었습니다.
+
+
 
 ## <a name="see-also"></a>참고 항목  
 [Cloud App Security 프록시 작업](proxy-intro-aad.md)   
