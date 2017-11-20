@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 앱 보호
 
 > [!NOTE]
-> Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다.
+> 이것은 미리 보기 기능입니다.
+
 
 요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Cloud App Security 프록시는 Azure Active Directory와 함께 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
 
@@ -79,6 +80,7 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 
 > [!NOTE]
 > Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
+
 
 ## <a name="see-also"></a>참고 항목  
 [Cloud App Security 프록시 배포](proxy-deployment-aad.md)   
