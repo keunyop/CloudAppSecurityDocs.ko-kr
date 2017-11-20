@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -61,6 +61,7 @@ Azure Information Protection을 사용하도록 설정하고 나면 Cloud App Se
 
 ### <a name="set-internal-and-external-tags"></a>내부 및 외부 태그 설정
 기본적으로 Cloud App Security에서는 조직에 정의된 분류 레이블과 다른 조직에서 정의된 외부 레이블을 검색합니다. 
+
 
 Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레이블을 무시하려면 **Azure 보안 설정** 아래의 **일반 설정**에서 **다른 테넌트의 Azure Information Protection 분류 레이블 무시**를 선택합니다.
  
@@ -118,7 +119,7 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
 
 ## <a name="integration-with-azure-rights-management"></a>Azure 권한 관리와 통합
 
-조직에는 Cloud App Security와 Azure RMS 간에 통합할 수 있도록 사용이 허가되고 활성화된 Azure 권한 관리가 있어야 합니다.  이러한 두 가지 별도의 단계는 [Azure 권한 관리 활성화](https://docs.microsoft.com/information-protection/deploy-use/activate-service)에서 찾아볼 수 있습니다.
+조직에는 Cloud App Security와 Azure RMS 간에 통합할 수 있도록 사용이 허가되고 활성화된 Azure 권한 관리가 있어야 합니다. 이러한 두 가지 별도의 단계는 [Azure 권한 관리 활성화](https://docs.microsoft.com/information-protection/deploy-use/activate-service)에서 찾아볼 수 있습니다.
 
 Cloud App Security는 현재 Office 파일(2016 이상)을 위한 네이티브 보호를 지원합니다. PDF 및 이미지 파일은 이후 버전에서 사용할 수 있습니다. 
 
@@ -133,7 +134,7 @@ Cloud App Security가 Office 365 서비스에 연결되면 Cloud App Security RM
 
 2. 파일을 보호하는 데 사용할 조직의 분류 레이블 중 하나를 선택하라는 메시지가 표시되면 **보호**를 클릭합니다. 
 ![보호 분류 레이블](./media/protect-template.png)
-3. 분류 레이블을 선택하고 보호를 클릭하면 Cloud App Security가 분류 레이블을 적용하고 원본 파일을 보호합니다. T
+3. 분류 레이블을 선택하고 보호를 클릭하면 Cloud App Security가 분류 레이블을 적용하고 원본 파일을 보호합니다.
 > [!NOTE]
 >   파일에 전사적 RMS 분류 레이블을 적용하는 것이 좋습니다. 그러면 파일의 원래 소유자를 비롯하여 조직의 모든 사용자가 이러한 파일에 액세스할 수 있게 됩니다. 파일이 보호되면 파일의 소유자, 파일의 공유 정책 및 파일에 이미 액세스할 수 있는 사용자 목록이 변경되지 않습니다.
 
