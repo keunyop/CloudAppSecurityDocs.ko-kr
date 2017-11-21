@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>가상 어플라이언스 연속 보고서에 대한 자동 로그 업로드 구성
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/28/2017
   > [!NOTE] 
   > - 단일 로그 수집기로 여러 데이터 원본을 처리할 수 있습니다.
   > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 사용해야 하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
-4.  Hyper-V 또는 VMWare를 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**합니다. 그런 다음 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
+4.  [최종 사용자 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862492)에 동의하는 경우 Hyper-V 또는 VMWare에서 클릭하여 새 로그 수집기 가상 컴퓨터를 **다운로드**합니다. 그런 다음 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 컴퓨터 및 네트워크 구성의 온-프레미스 배포   
 
