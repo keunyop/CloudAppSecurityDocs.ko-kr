@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -34,7 +34,9 @@ SIEM 에이전트가 Cloud App Security에서 데이터를 검색하면 설정 �
 
 ![SIEM 통합 아키텍처](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>지원되는 SIEM
 
+Cloud App Security는 현재 HP archsight 및 일반 CEF를 지원합니다.
 
 ## <a name="how-to-integrate"></a>통합 방법
 
@@ -63,6 +65,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 5. **원격 syslog 호스트**의 IP 주소 또는 호스트 이름과 **Syslog 포트 번호**를 입력합니다. 원격 Syslog 프로토콜로 TCP 또는 UDP를 선택합니다.
 세부 정보가 없는 경우 보안 관리자와 작업하여 세부 정보를 가져올 수 있습니다.
 **다음**을 클릭합니다.
+
   ![원격 Syslog 설정](./media/siem2.png)
 
 6. SIEM 서버로 내보낼 데이터 형식, **경고** 및 **활동**을 선택합니다. 슬라이더를 사용하여 사용 여부를 설정합니다. 기본적으로 모든 항목이 선택되어 있습니다. **적용 대상** 드롭다운을 사용하여 특정 경고와 활동만 SIEM 서버로 보내도록 필터를 설정할 수 있습니다.
@@ -74,12 +77,13 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>2단계: JAR 파일을 다운로드하고 서버에서 실행합니다.
 
-1. [Microsoft 다운로드 센터에서 .zip 파일을 다운로드](https://go.microsoft.com/fwlink/?linkid=838596)하고 압축을 풉니다.
+1. [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?linkid=838596)에서 [소프트웨어 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862491)에 동의한 후 .zip 파일을 다운로드하고 압축을 풉니다.
 
 2. Zip 파일에서 .jar 파일을 추출하고 서버에서 실행합니다.
  파일을 실행한 후 다음을 실행합니다.
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - 파일 이름은 SIEM 에이전트의 버전에 따라 달라질 수 있습니다.
 > - 대괄호([ ]) 안에 있는 매개 변수는 선택 사항이며, 관련된 경우에만 사용해야 합니다.

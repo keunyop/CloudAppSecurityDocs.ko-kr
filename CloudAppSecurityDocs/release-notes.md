@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 
-## <a name="cloud-app-security-releases-109"></a>Cloud App Security 릴리스 109
+## <a name="cloud-app-security-release-110"></a>Cloud App Security 릴리스 110
+2017년 11월 12일 출시됨
+ 
+-   일반 공급: 로그 수집기에 대한 새 배포 모델의 배포를 시작했습니다. 현재 가상 어플라이언스 기반 배포 이외에 새로운 Docker(컨테이너) 기반 로그 수집기를 패키지로 [Ubuntu 컴퓨터](discovery-docker.md)에 온-프레미스 및 Azure를 사용하여 설치할 수 있습니다. Docker를 사용할 경우 호스팅 컴퓨터는 이를 자유롭게 패치 및 모니터링할 수 있는 고객이 소유합니다.
+-   모서리에 있는 새 파란색 물음표를 사용하여 포털의 페이지 내에서 docs.microsoft.com의 관련 Cloud App Security 설명서 페이지에 액세스할 수 있습니다. 각 링크는 컨텍스트에 따라 표시되므로 현재 페이지에 따라 필요한 정보로 이동합니다.
+-   이제 Cloud App Security 포털의 모든 페이지에서 피드백을 보낼 수 있습니다. 이를 통해 버그를 보고하고 새 기능을 요청하며 Cloud App Security 팀과 직접 공유할 수 있습니다.
+-   클라우드 검색 기능이 향상되어 조직의 클라우드 사용 현황을 심층 조사하기 위한 하위 도메인 인식이 가능합니다. 자세한 내용은 [검색된 앱 사용](discovered-apps.md)을 참조하세요.
+
+## <a name="cloud-app-security-release-109"></a>Cloud App Security 릴리스 109
 릴리스 날짜: 2017년 10월 29일 
 
 - Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예:
