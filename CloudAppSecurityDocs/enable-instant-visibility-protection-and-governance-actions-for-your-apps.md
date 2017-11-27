@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
@@ -76,7 +76,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 |**로그온 활동**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**사용자 작업**|✔*|✔|✔|✔ - Google Unlimited 필요|부분|Salesforce Shield에서 지원됨|✔|해당 없음|  
 |**관리 활동**|✔|✔|✔|✔|부분|✔|✔|✔|  
-|**정기적인 파일 검색**|✔|✔|해당 없음|✔|✔|✔|✔|서비스 예정|  
+|**정기적인 파일 검색**|✔|✔|해당 없음|✔|✔|✔|✔|해당 없음|  
 |**근 실시간 파일 검색**|✔|✔|해당 없음|✔ - Google Unlimited 필요|||서비스 예정||  
 |**제어권 공유**|✔|✔|해당 없음|✔|해당 없음||✔||  
 |**격리**|✔|✔|해당 없음|서비스 예정|||서비스 예정||  
