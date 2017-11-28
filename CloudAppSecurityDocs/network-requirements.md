@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
-ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
+ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="network-requirements"></a>네트워크 요구 사항
 
@@ -47,6 +47,7 @@ Cloud App Security 포털에 액세스하려면 다음 IP 주소에 대한 **443
 |데이터 센터|IP 주소|  
 |----|----|
 |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
 |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## <a name="siem-agent-connection"></a>SIEM 에이전트 연결
@@ -58,6 +59,7 @@ Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소
 |데이터 센터|IP 주소|  
 |----|----|
 |US1|13.91.91.243|
+|US2|52.184.165.82|
 |EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>앱 커넥터 액세스 및 외부 DLP 통합
@@ -68,8 +70,9 @@ Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소
 > [!div class="mx-tableFixed"]
 |데이터 센터|IP 주소|  
 |----|----|
-|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
-|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
 ### <a name="app-connector"></a>앱 커넥터
@@ -105,7 +108,13 @@ Cloud App Security 전용 메일 IP 주소:
 
 - 로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
 - 로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
-- 로그 수집기가 80 및 443 포트에서 Azure Blob 저장소(https://adaprodconsole.blob.core.windows.net/)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+- 로그 수집기가 80 및 443 포트에서 Azure Blob Storage에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+   
+    |데이터 센터|URL|
+    |----|----|
+    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |US2|https://prod03use2console1.blob.core.windows.net/|
+    |EU1|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
 > 방화벽에 고정 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않는 경우 로그 수집기가 443 포트에서 Microsoft Azure 데이터 센터 IP 범위에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.

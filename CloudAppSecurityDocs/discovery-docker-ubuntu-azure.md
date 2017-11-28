@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4GB
 
--   방화벽 설정:
-
-    -   로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
-
-    -   로그 수집기가 포트 443에서 포털(예: portal.contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
-
-    - 로그 수집기가 80 및 443 포트에서 Azure Blob 저장소(https://adaprodconsole.blob.core.windows.net/)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
-
-> [!NOTE]
-> 방화벽에 정적 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않을 경우 로그 수집기가 [포트 443에서 Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+-   [네트워크 요구 사항](network-requirements#log-collector)에 설명된 대로 방화벽 설정
 
 ## <a name="log-collector-performance"></a>로그 수집기 성능
 
@@ -118,7 +109,7 @@ ms.lasthandoff: 11/14/2017
     |caslogcollector_ftp|21|TCP|임의|임의|
     |caslogcollector_ftp_passive|20000-20099|TCP|임의|임의|
     |caslogcollector_syslogs_tcp|601-700|TCP|임의|임의|
-    |caslogcollector_syslogs_tcp|514-600|UDP|임의|임의|
+    |caslogcollector_syslogs_udp|514-600|UDP|임의|임의|
       
       ![Ubuntu Azure 규칙](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ ms.lasthandoff: 11/14/2017
 
 5.  [소프트웨어 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862492)에 동의하는 경우 다음 명령을 실행하여 이전 버전을 제거하고 Docker CE를 설치합니다.
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. Cloud App Security 포털의 **새 로그 수집기 만들기** 창에서 명령을 복사하여 호스팅 컴퓨터에서 수집기 구성을 가져옵니다.
 
@@ -138,12 +129,12 @@ ms.lasthandoff: 11/14/2017
 
       ![Ubuntu Azure 명령](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->프록시를 구성하려면 프록시 IP 주소와 포트를 추가합니다. 예를 들어, 프록시 세부 정보가 192.168.10.1:8080인 경우 업데이트된 실행 명령은 다음과 같습니다. 
+     >[!NOTE]
+     >프록시를 구성하려면 프록시 IP 주소와 포트를 추가합니다. 예를 들어, 프록시 세부 정보가 192.168.10.1:8080인 경우 업데이트된 실행 명령은 다음과 같습니다. 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Ubuntu 프록시](./media/ubuntu-proxy.png)
 
 8. 로그 수집기가 정상적으로 실행 중인지 확인하려면 다음 명령을 실행합니다. `Docker logs <collector_name>`. **성공적으로 완료되었습니다.**라는 결과가 표시되어야 합니다.
 
