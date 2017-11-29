@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a68112f2425b993d8f2eb05200aa800ee09869d5
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: fb64a080a1b74b89be98410fefba5f9821704645
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  
@@ -79,7 +79,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 7.  **콘텐츠 검사 방법**을 선택합니다. 기본 제공 DLP를 사용하면 콘텐츠를 기준으로 파일을 필터링할 수 있습니다. 파일에서 콘텐츠를 검색하려면 **기본 제공 DLP**를 선택합니다. 콘텐츠 검사를 사용하도록 설정한 경우 사전 설정 식을 사용하거나 고유한 하위 문자열 또는 [정규식](working-with-the-regex-engine.md)으로 다른 사용자 지정 식을 검색할 수 있습니다.  
     또한 정규식을 지정하여 결과에서 파일을 제외할 수 있습니다. 정책에서 제외하려는 내부 분류 키워드 표준이 있는 경우에 매우 유용합니다.  
     파일이 위반으로 간주되기 전에 일치하려는 최소 콘텐츠 위반 수를 설정할 수 있습니다. 예를 들어 파일 콘텐츠 내에 10개 이상의 신용 카드 번호가 있는 파일에 대한 경고를 수신하려는 경우 10을 선택할 수 있습니다.  
-    콘텐츠가 선택한 식에 대해 일치하면 위반 텍스트가 "X" 문자로 바뀝니다. 기본적으로 위반 텍스트는 위반 전후의 100자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 식의 컨텍스트에서 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다. **Unmask the last 4 characters of a violation**(위반의 마지막 4자 마스크 해제) 옵션을 선택하여 위반 자체의 마지막 4자를 마스크 해제할 수 있습니다.
+    콘텐츠가 선택한 식에 대해 일치하면 위반 텍스트가 "X" 문자로 바뀝니다. 기본적으로 위반 텍스트는 위반 전후의 100자를 표시하는 컨텍스트에서 완전히 마스크되고 표시됩니다. 식의 컨텍스트에서 숫자는 "#" 문자로 바뀌고 Cloud App Security 내에 저장되지 않습니다. **Unmask the last 4 characters of a violation**(위반의 마지막 4자 마스크 해제) 옵션을 선택하여 위반 자체의 마지막 4자를 마스크 해제할 수 있습니다. 정규식에서 검색할 데이터 형식(콘텐츠, 메타데이터 및/또는 파일 이름)을 설정해야 합니다. 기본적으로 콘텐츠 및 메타데이터를 검색합니다. 검색할 데이터 형식을 하나 이상 선택해야 하며, 그러지 않으면 정규식이 작동할 수 없으며 정책이 만들어질 수 없습니다. 
   
 8.  일치 항목이 검색될 때 Cloud App Security에서 수행하려는 **거버넌스** 작업을 선택합니다.  
   

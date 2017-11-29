@@ -18,6 +18,9 @@
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
 #### [Ubuntu 온-프레미스의 Docker](discovery-docker-ubuntu.md)
 #### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
+##### Docker 구성 수정
+###### [인증서 파일 사용자 지정](discovery-docker-custom-cert.md)
+###### [FTP 암호 변경](discovery-docker-change-ftp.md)
 #### [가상 어플라이언스 사용](configure-automatic-log-upload-for-continuous-reports.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
