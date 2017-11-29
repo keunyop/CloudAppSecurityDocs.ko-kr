@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security 릴리스 111
+2017년 11월 26일 출시됨
+
+-   이제 검색 정책은 앱 태그를 조건 및 거버넌스 작업으로 지원합니다. 따라서 새로 검색된 앱에 **인기 앱**과 같은 사용자 지정 태그를 자동으로 지정할 수 있습니다. 예를 들어 “하루에 ‘관심 목록’의 앱을 사용하는 사용자가 100명이 넘을 경우 알림”과 같은 앱 태그를 필터로 사용할 수도 있습니다.
+
+-   **시간** 필터가 더 사용자에게 친숙하도록 개선되었습니다.
+
+-   이제 콘텐츠 검사를 통해 콘텐츠, 메타데이터 및 파일 이름을 구별하여 이 중에서 검사할 항목을 선택할 수 있습니다.
+
+-   G Suite에 대한 새 거버넌스 작업이 추가되었습니다. 이제 공유 파일에 대한 **공용 액세스를 줄일** 수 있습니다. 따라서 공개적으로 사용할 수 있는 파일을 공유 링크를 통해서만 사용할 수 있도록 설정할 수 있습니다.
+
+-   다른 응용 프로그램에 대한 활동과 관련한 모든 OKTA 로그가 이제 Cloud App Security에서 OKTA에서 시작되는 것으로 표시됩니다. 활동의 **활동 개체** 필드에서 로그인이 수행된 대상 응용 프로그램을 기반으로 보고 필터링할 수 있습니다.
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security 릴리스 110
