@@ -18,10 +18,7 @@
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
 #### [Ubuntu 온-프레미스의 Docker](discovery-docker-ubuntu.md)
 #### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
-##### Docker 구성 수정
-###### [인증서 파일 사용자 지정](discovery-docker-custom-cert.md)
-###### [FTP 암호 변경](discovery-docker-change-ftp.md)
-#### [가상 어플라이언스 사용](configure-automatic-log-upload-for-continuous-reports.md)
+#### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
 ## [SIEM 통합 문제 해결](troubleshooting-siem.md)
+## [Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
+## [문제 해결 정책](troubleshoot-policies.md)
