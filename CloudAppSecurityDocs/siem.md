@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 298358657f775ec3a53a52112ee05af5db13ca16
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 908050cfc46ebeec5f201d562dca9c37b963c0eb
+ms.sourcegitcommit: f4ec7f2cb81c9d83bb7f406ddcca91ab07790a98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
-이제 Office 365 경고와 활동을 중앙에서 모니터링할 수 있도록 Cloud App Security를 SIEM 서버와 통합할 수 있습니다. 새 활동 및 이벤트가 Office 365에서 지원되므로 Cloud App Security에도 표시됩니다. SIEM 서비스와 통합하면 일반적인 보안 워크플로를 유지 관리하고, 보안 절차를 자동화하고, 클라우드 기반 이벤트와 온-프레미스 이벤트를 상호 연결하여 클라우드 응용 프로그램을 더 잘 보호할 수 있습니다. Cloud App Security SIEM 에이전트는 서버에서 실행되며 Cloud App Security에서 경고와 활동을 가져와서 SIEM 서버로 스트리밍합니다.
+이제 연결된 앱의 경고와 활동을 중앙에서 모니터링할 수 있도록 Cloud App Security를 SIEM 서버와 통합할 수 있습니다. 새 활동 및 이벤트가 연결된 앱에서 지원되므로 Cloud App Security에도 표시됩니다. SIEM 서비스와 통합하면 일반적인 보안 워크플로를 유지 관리하고, 보안 절차를 자동화하고, 클라우드 기반 이벤트와 온-프레미스 이벤트를 상호 연결하여 클라우드 응용 프로그램을 더 잘 보호할 수 있습니다. Cloud App Security SIEM 에이전트는 서버에서 실행되며 Cloud App Security에서 경고와 활동을 가져와서 SIEM 서버로 스트리밍합니다.
 
 먼저 SIEM을 Cloud App Security와 통합하면 지난 2일 동안의 활동과 경고가 SIEM에 전달되고, 그 이후부터 모든 활동 및 경고(선택한 필터 기반)가 전달됩니다. 또한 장기간 이 기능을 사용하지 않도록 설정한 경우 다시 사용하도록 설정하면 지난 2일간의 경고와 활동을 전달한 다음 그 이후부터 모든 경고와 활동을 전달합니다.
 
