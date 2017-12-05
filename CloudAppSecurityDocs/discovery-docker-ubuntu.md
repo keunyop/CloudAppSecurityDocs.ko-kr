@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
--   OS: Ubuntu 14.04 이상
+-   OS: Ubuntu 14.04 이상(Ubuntu 17.10을 지원하는 안정적인 버전의 Docker 없음)
 
 -   디스크 공간: 250GB
 
@@ -153,7 +153,7 @@ ms.lasthandoff: 11/22/2017
 ![사용자 지정 연속 보고서](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>참고 항목
-[Cloud Discovery 데이터 작업](working-with-cloud-discovery-data.md)  
+[Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)  
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)
 

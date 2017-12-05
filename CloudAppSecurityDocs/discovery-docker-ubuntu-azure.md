@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
--   OS: Ubuntu 14.04 이상
+-   OS: Ubuntu 14.04 이상(Ubuntu 17.10을 지원하는 안정적인 버전의 Docker 없음)
 
 -   디스크 공간: 250GB
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/22/2017
     |caslogcollector_syslogs_tcp|601-700|TCP|임의|임의|
     |caslogcollector_syslogs_udp|514-600|UDP|임의|임의|
       
-      ![Ubuntu Azure 규칙](./media/ubuntu-azure-rules.png)
+      ![Ubuntu Azure 규칙](./media/inbound-rule.png)
 
 3.  컴퓨터로 돌아가서 **연결** 을 클릭하여 컴퓨터에서 터미널을 엽니다.
 
@@ -121,23 +121,21 @@ ms.lasthandoff: 11/22/2017
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. Cloud App Security 포털의 **새 로그 수집기 만들기** 창에서 명령을 복사하여 호스팅 컴퓨터에서 수집기 구성을 가져옵니다.
-
-      ![Ubuntu Azure](./media/ubuntu-azure.png)
-
-7. 명령을 실행하여 로그 수집기를 배포합니다.
-
       ![Ubuntu Azure 명령](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >프록시를 구성하려면 프록시 IP 주소와 포트를 추가합니다. 예를 들어, 프록시 세부 정보가 192.168.10.1:8080인 경우 업데이트된 실행 명령은 다음과 같습니다. 
+6. Cloud App Security 포털의 **새 로그 수집기 만들기** 창에서 명령을 복사하여 호스팅 컴퓨터에서 수집기 구성을 가져옵니다.
 
+      ![Ubuntu Azure](./media/windows7.png)
+
+7. 명령을 실행하여 로그 수집기를 배포합니다.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu 프록시](./media/ubuntu-proxy.png)
 
 8. 로그 수집기가 정상적으로 실행 중인지 확인하려면 다음 명령을 실행합니다. `Docker logs <collector_name>`. **성공적으로 완료되었습니다.**라는 결과가 표시되어야 합니다.
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>3단계 - 네트워크 어플라이언스의 온-프레미스 구성
 
@@ -166,7 +164,7 @@ ms.lasthandoff: 11/22/2017
 ![사용자 지정 연속 보고서](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>참고 항목
-[Cloud Discovery 데이터 작업](working-with-cloud-discovery-data.md)  
+[Cloud Discovery Docker 배포 문제 해결](troubleshoot-docker.md)
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)
 
