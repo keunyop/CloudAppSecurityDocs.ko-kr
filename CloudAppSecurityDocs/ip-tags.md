@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> IP 범위 및 태그 사용
 
@@ -40,7 +40,7 @@ Cloud App Security는 다음 IP 주소에 대한 기본 제공 태그로 미리 
 검색의 일부로 이러한 기본 제공 태그를 사용하려면 Cloud App Security API 설명서에서 해당 ID를 참조하세요. 
 
 > [!NOTE]
-> [IP 주소 범위 API](https://portal.cloudappsecurity.com/api-docs/)를 사용하여 스크립트를 만들어 IP 범위를 대량으로 추가할 수 있습니다.
+> 물음표와 **API 문서**를 차례로 클릭해서 Cloud App Security 포털 메뉴 모음에서 찾을 수 있는 **IP 주소 범위 API**를 사용하여 스크립트를 만듦으로써 IP 범위를 일괄 추가할 수 있습니다.
 
 
 기본 제공 IP 주소 태그 및 사용자 지정 IP 태그는 계층 구조로 고려되고, 사용자 지정 IP 태그가 기본 제공 IP 태그보다 우선합니다. 예를 들어 IP 주소를 위협 인텔리전스에 따라 **위험**으로 태그 지정하지만 **회사**로 식별하는 IP 태그가 있는 경우, 사용자 지정 범주 및 태그가 우선 순위로 적용됩니다.

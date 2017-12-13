@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>활동
 Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. 
@@ -134,7 +134,13 @@ Cloud App Security에서는 연결된 앱의 모든 활동을 볼 수 있습니�
 
  활동 서랍의 필드는 추가 작업에 대한 상황별 링크 및 서랍에서 직접 수행할 수 있는 드릴다운을 제공합니다. 예를 들어 IP 주소 범주 옆으로 커서를 이동하면 필터에 추가 아이콘(![필터에 추가](./media/add-to-filter-icon.png))을 사용하여 현재 페이지의 필터에 IP 주소를 즉시 추가할 수 있습니다. 또한 설정 톱니 아이콘(![설정 아이콘](./media/contextual-settings-icon.png))을 사용하면 **사용자 그룹**과 같은 필드 중 하나의 구성을 수정하는 데 필요한 설정 페이지가 표시되므로 바로 작업할 수 있습니다.
 
-
+ 또한 탭 상단의 아이콘을 사용하여 다음 작업을 수행할 수 있습니다.
+ - 동일한 유형의 활동 보기
+ - 동일한 사용자의 모든 활동 보기
+ - 동일한 IP 주소의 활동 보기
+ - 동일한 지리적 위치의 활동 보기
+ - 동일한 기간(48시간)의 활동 보기
+ 
 ![활동 서랍](./media/activity-drawer.png "활동 서랍")  
   
 사용할 수 있는 거버넌스 작업 목록은 [활동 거버넌스 작업](governance-actions.md#activity-governance-actions)을 참조하세요.
@@ -165,7 +171,7 @@ IP 주소 정보를 보려면:
 
 1. **활동 로그**에서 활동 자체를 클릭합니다.
 
-2. 그런 다음 **IP 주소** 탭을 클릭합니다. <br></br> 그러면 활동 서랍 **IP 주소** 탭이 열리고 이는 사용자에게 IP 주소에 대한 다음 정보를 제공합니다.
+2. 그런 다음 **IP 주소** 탭을 클릭합니다. <br></br> 그러면 활동 서랍 **IP 주소** 탭이 열리고, 해당 탭에서는 IP 주소에 대한 다음 정보를 제공합니다.
     - **열린 경고**: IP 주소와 관련된 미해결 경고 수입니다.
     - **활동**: 지난 30일 동안 IP 주소가 수행한 활동 수입니다.
     - **IP 위치**: 지난 30일 동안 IP 주소가 연결된 지리적 위치입니다.
@@ -175,6 +181,7 @@ IP 주소 정보를 보려면:
         - 위험한 태그로 지정 
         - VPN IP 주소로 태그 지정
         - 위험한 IP로 태그 지정 후 차단된 그룹에 추가
+
 
 ![Cloud App Security에서의 IP 주소 정보](./media/ip-address-insights.png)
 

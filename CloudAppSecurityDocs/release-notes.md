@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-112"></a>Cloud App Security 릴리스 112
+2017년 12월 10일에 릴리스됨
+
+-   이제 활동 로그에서 사용자 이름 또는 IP 주소를 클릭하여 관련된 정보 서랍에 액세스할 수 있습니다. 
+-   이제 활동을 조사할 때 시계 아이콘을 클릭하여 정보 서랍에서 동일한 기간의 모든 활동을 쉽게 볼 수 있습니다. 이를 통해 사용자가 보고 있는 48시간 이내의 활동에서 수행된 모든 활동을 볼 수 있습니다.
+-   Juniper SRX에 대한 Cloud Discovery 로그 파서의 성능이 향상되었습니다.
+-   프록시에 의해 모니터링되는 활동의 경우, **활동 개체**가 DLP 검사와 관련된 정보를 포함하도록 확장되었고, 일치하는 정책이 DLP 위반(있는 경우)을 포함하도록 확장되었습니다.
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security 릴리스 111
 2017년 11월 26일 출시됨
@@ -72,7 +81,7 @@ ms.lasthandoff: 11/27/2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security 릴리스 104 
 릴리스 날짜: 2017년 8월 27일
 
--   이제 [IP 주소 범위 API](https://portal.cloudappsecurity.com/api-docs/)를 사용하여 스크립트를 만들어 IP 범위를 대량으로 추가할 수 있습니다. 
+-   이제 물음표와 **API 문서**를 차례로 클릭해서 Cloud App Security 포털 메뉴 모음에서 찾을 수 있는 **IP 주소 범위 API**를 사용하여 스크립트를 만듦으로써 IP 범위를 일괄 추가할 수 있습니다. 
 -   Cloud Discovery는 이제 차단된 트랜잭션뿐만 아니라 전체 트랜잭션을 제공하여 차단된 트랜잭션에 대해 더 향상된 가시성을 제공합니다.
 -   이제 **ISO 27017** 인증 여부를 기준으로 클라우드 응용 프로그램을 필터링할 수 있습니다. 이 새로운 클라우드 앱 카탈로그 위험 요소는 공용 클라우드 컴퓨팅 환경에서 사용자 정보 처리 및 보호에 대해 일반적으로 허용되는 제어와 지침을 설정하는 이 인증이 응용 프로그램 공급자에게 있는지 여부를 확인합니다.
 - GDPR 규정 준수에 대한 준비를 활성화하기 위해 클라우드 앱 카탈로그의 클라우드 앱에서 GDPR 준비 문을 수집했습니다. 앱 위험 점수에 아직 영향을 주지 않지만 제공되는 경우 앱 게시자의 GDPR 준비 페이지에 대한 링크를 제공합니다. Microsoft는 이 콘텐츠를 확인하지 않았으며 해당 유효성에 대한 책임이 없습니다.
