@@ -41,9 +41,11 @@
 ### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
+#### [검색된 앱 필터 및 쿼리](discovered-app-queries.md)
 ### [위험 점수 사용](risk-score.md)
 ## [조사](investigate.md)
 ### [활동](activity-filters.md)
+#### [활동 필터 및 쿼리](activity-filters-queries.md)
 ### [파일](file-filters.md)
 ### [계정](accounts.md)
 ### [기본 제공 보고서 참조](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [외부 DLP 통합](icap-stunnel.md)
 ### [API 토큰](api-tokens.md)
 # 문제 해결
+## [서비스 상태 문제 해결](troubleshooting-status.md)
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
