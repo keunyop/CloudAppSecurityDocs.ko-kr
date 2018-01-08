@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
@@ -52,46 +52,6 @@ Cloud Discovery에서 제공된 데이터를 심층 분석하려면 필터를 �
 
 결과가 필터링된 후 [대량 작업] 확인란을 사용하여 하나의 작업으로 모든 앱의 사용 권한을 취소하는 방식으로 앱의 [사용 권한을 취소하거나 앱을 차단](governance-discovery.md)할 수 있습니다. 사용 권한이 취소된 후 차단 스크립트를 사용하여 앱이 환경에서 사용되지 않도록 차단할 수 있습니다.
 
-Cloud Discovery를 사용하면 조직의 클라우드 사용을 더 자세히 파악하고, 검색한 하위 도메인을 조사하여 사용 중인 특정 인스턴스를 식별할 수 있습니다.
-
-예를 들어 서로 다른 SharePoint 사이트를 구분할 수 있습니다.
-
-Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
-
-![하위 도메인 정보](./media/discovery-domains.png)  
-
-## <a name="discovered-app-filters"></a>검색된 앱 필터
-
-기본 및 고급 검색된 앱 필터가 있습니다. 복잡한 필터(위의 예제 참조)를 적용하려면 다음이 모두 포함된 고급 옵션을 사용합니다.
-
-![검색된 앱](./media/discovered-apps.png)  
-
-
-- **앱 태그**: 앱의 사용 권한이 부여 또는 취소되었거나 태그가 지정되었는지 선택합니다. 또한 앱에 대한 사용자 지정 태그를 만들고 나서 이를 사용하여 특정 유형의 앱을 필터링할 수 있습니다. 
-- **앱 및 도메인**: 특정 앱 또는 특정 도메인에서 사용되는 앱을 검색할 수 있습니다. 
-- **범주**: 페이지 왼쪽에 있는 범주 필터를 사용하여 앱 범주에 따라 앱 유형을 검색할 수 있습니다(예: 소셜 네트워크 앱, 클라우드 저장소 앱 등). 한 번에 여러 범주를 선택하거나 단일 범주를 선택하고 나서 해당 범주에서 기본 및 고급 필터를 적용할 수 있습니다.
-- **Compliance risk factor**(규격 위험 요인): 앱이 준수할 수 있는 특정 표준, 인증 및 규격(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)을 검색할 수 있습니다.
-- **일반 위험 요인**: 소비자 인기도, 데이터 센터 로캘 등의 일반 위험 요인을 검색할 수 있습니다.
-- **위험 점수**: 매우 위험한 앱만 검토하는 것과 같이 초점을 맞출 수 있도록 위험 점수별로 앱을 필터링할 수 있습니다. Cloud App Security에서 설정된 위험 점수를 재정의할 수도 있습니다. 자세한 내용은 [위험 점수 사용](risk-score.md)을 참조하세요.
-- **보안 위험 요인**: 특정 보안 조치(예: 미사용 암호화, 다단계 인증 등)를 기준으로 필터링할 수 있습니다.
-- **사용량**: 이 앱(예: 지정된 **데이터 업로드** 양보다 적거나 많은 앱, 지정된 **사용자** 수보다 많거나 적은 앱)의 사용량 통계를 기준으로 필터링할 수 있습니다.
-
-## <a name="creating-and-managing-custom-app-tags"></a>사용자 지정 앱 태그 만들기 및 관리
-
-사용자 지정 앱 태그를 만들 수 있습니다. 이러한 태그는 조사할 앱의 특정 유형을 심층 분석하는 데 필터로 사용할 수 있습니다. 예를 들어 사용자 지정 조사 목록, 특정 비즈니스 단위에 대한 지정 또는 사용자 지정 승인(예: “법적 승인”)을 사용할 수 있습니다.
-
-사용자 지정 앱 태그를 만들려면:
-
-1. **설정** 코그에서 **Cloud Discovery**를 선택하고 **Manage app tags**(앱 태그 관리) 탭에서 아이콘 ![더하기 아이콘](./media/plus-icon.png)을 클릭합니다. 
-
-![사용자 지정 앱 태그 만들기](./media/create-app-tag.png)
-
-2. **Manage app tags**(앱 태그 관리) 표를 사용하여 현재 각 앱 태그를 사용하여 태그가 지정된 앱을 보고 사용되지 않는 앱 태그를 삭제할 수 있습니다.
-
-3. 앱 태그를 적용하려면 **검색된 앱** 탭에서 표의 맨 오른쪽에 있는 점 세 개를 클릭하고 적용할 앱 태그를 선택합니다. 
-
-> [!NOTE]
->선택한 앱의 오른쪽에 있는 점 세 개를 선택한 후 **Create app tag**(앱 태그 만들기)를 클릭하여 **검색된 앱** 표에서 직접 새 앱 태그를 만들 수도 있습니다. **Create app tag**(앱 태그 만들기) 팝업의 모퉁이에서 링크를 클릭하여 **Manage app tags**(앱 태그 관리) 화면에 액세스할 수도 있습니다.
 
 ## <a name="exclude-entities"></a>엔터티 제외  
 특히 노이즈가 많고 흥미 없는 시스템 사용자 또는 IP 주소나 관련 없는 앱이 있는 경우 분석되는 클라우드 검색 데이터에서 해당 데이터를 제외하는 것이 좋습니다. 예를 들어 127.0.0.1 또는 로컬 호스트에서 발생하는 모든 정보를 제외할 수 있습니다.  
