@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
@@ -136,6 +136,8 @@ ms.lasthandoff: 11/27/2017
 |파일 정책 및 활동 정책|파일, 활동|사용자에게 알림|사용자가 수행한 활동이나 사용자가 소유한 파일이 정책을 위반한다는 사실을 알리기 위해 사용자에게 메일을 보냅니다. 위반 사실이 무엇이었는지 사용자가 알 수 있도록 사용자 지정 알림을 추가할 수 있습니다.|모두|
 |파일 정책 및 파일|파일|편집자의 공유 권한 제거|Google 드라이브에서 파일의 기본 편집자 권한은 공유도 허용합니다. 이 거버넌스 작업은 이 옵션을 제한하고 파일 공유를 소유자로 제한합니다.|G Suite|
 |파일 정책 및 파일|파일|[관리자 격리에 넣기](use-case-admin-quarantine.md)|파일에서 모든 사용 권한을 제거하고 관리자에 대한 위치에 있는 격리 폴더로 파일을 이동합니다. 이렇게 하면 관리자가 파일을 검토하고 제거할 수 있습니다.|Office 365 SharePoint, 비즈니스용 OneDrive, Box|
+|파일 정책 및 파일|파일|분류 레이블 적용|정책에 설정된 조건에 따라 Azure Information Protection 분류 레이블을 파일에 자동으로 적용합니다.|Box, OneDrive, SharePoint|
+|파일 정책 및 파일|파일|분류 레이블 제거|정책에 설정된 조건에 따라 Azure Information Protection 분류 레이블을 파일에서 자동으로 제거합니다.|Box, OneDrive, SharePoint|
 |파일 정책, 활동 정책, 경고|앱|사용자가 다시 로그인해야 합니다.|의심스러운 사용자 활동 경고 및 손상된 계정에 대한 빠르고 효과적인 해결 방법으로 사용자가 모든 Office 365 및 Azure AD 앱에 다시 로그인하도록 요구할 수 있습니다. 정책 설정 및 경고 페이지의 [사용자 일시 중단] 옵션 옆에서 새 거버넌스를 찾을 수 있습니다.|Office 365, Azure AD|
 |파일|파일|사용자 격리에서 복원|사용자를 격리 상태에서 복원합니다.|상자|
 |파일|파일|자신에게 읽기 권한 부여|파일에 액세스하여 파일에 위반이 있는지를 파악할 수 있도록 자신에게 파일에 대한 읽기 권한을 부여합니다.|G Suite|

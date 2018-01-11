@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Azure AD 앱용 프록시 배포
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 11/13/2017
 
         ![장치 식별](./media/device-identification.png)
  
-       인증서가 업로드되면 **장치 태그**가 **유효한 클라이언트 인증서**와 같거나 같지 않은 세션 정책을 만들 수 있습니다.
+       인증서가 업로드되면 **장치 태그**가 **유효한 클라이언트 인증서**와 같거나 같지 않은 액세스 정책 및 세션 정책을 만들 수 있습니다.
  
       > [!NOTE]
       >세션이 유효한 클라이언트 인증서 필터를 사용하는 정책과 일치하는 경우에만 사용자에게 인증서를 요청합니다. 
@@ -99,7 +99,7 @@ ms.lasthandoff: 11/13/2017
  ![사용자 에이전트 태그 테스트](./media/domain-joined.png)
 
 
-이제 [세션 정책](session-policy-aad.md)을 만들어 프록시 앱을 제어할 준비가 되었습니다.
+이제 프록시 앱을 제어할 [액세스 정책](access-policy-aad.md) 및 [세션 정책](session-policy-aad.md)을 만들 준비가 되었습니다.
 
 
 

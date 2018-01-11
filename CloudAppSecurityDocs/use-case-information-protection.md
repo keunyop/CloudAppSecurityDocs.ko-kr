@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 분류 레이블 자동 적용  
 
@@ -45,12 +45,12 @@ Azure Information Protection과 함께 Cloud App Security를 사용하여 데이
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
-- 테넌트에서 Cloud App Security 및 Azure Information Protection을 사용하도록 설정합니다
+- 테넌트에서 [Cloud App Security 및 Azure Information Protection을 사용하도록 설정](azip-integration.md)합니다.
 - Cloud App Security에 [Box를 연결](connect-box-to-microsoft-cloud-app-security.md)합니다.
 
 ## <a name="setting-up-data-protection"></a>데이터 보호 설정
 
-Box 계정에 저장된 파일에서 신용 카드 번호를 찾는 정책을 설정해 보겠습니다. 해당 파일이 있으면 다음을 수행합니다.
+Box 계정에 저장된 파일에서 신용 카드 번호를 검색하고, 해당 번호를 찾으면 Azure Information Protection 레이블을 자동으로 적용한 다음 해당 레이블이 있는 모든 파일에 발생하는 작업을 제어하는 정책을 설정하겠습니다.
 
 1. Box에 저장된 중요한 데이터를 암호화하는 정책을 설정하여 Box에 저장하는 데이터 보호를 시작합니다.
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,29 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-114"></a>Cloud App Security 릴리스 114
+릴리스 날짜: 2018년 1월 7일
+
+- 114버전부터 활동 로그 및 검색된 앱 페이지에서 사용자 지정 쿼리를 만들고 저장하는 기능을 점차적으로 제공하고 있습니다. 사용자 지정 쿼리를 사용하면 심층적인 조사를 위해 다시 사용할 수 있는 필터 템플릿을 만들 수 있습니다. 또한 활동과 검색된 앱을 필터링할 수 있도록 기본 제공되는 조사 템플릿을 제공하기 위해 **제안된 쿼리**가 추가되었습니다. **제안된 쿼리**에는 가장(impersonation) 활동, 관리자 활동, 위험한 비규격 클라우드 저장소 앱, 암호화가 약한 엔터프라이즈 앱 및 보안 위험 등과 같은 위험을 식별하는 사용자 지정 필터가 포함됩니다. **제안된 쿼리**를 시작점으로 사용하여 알맞게 수정한 다음 새 쿼리로 저장할 수 있습니다. 자세한 내용은 [활동 필터 및 쿼리](activity-filters-queries.md)와 [검색된 앱 필터 및 쿼리](discovered-app-queries.md)를 참조하세요.
+ 
+- 이제 [status.cloudappsecurity.com](https://status.cloudappsecurity.com)으로 이동하거나 **도움말**>**시스템 상태**를 클릭하면 포털에서 현재 Cloud App Security 서비스 상태를 확인할 수 있습니다. 
+ 
+
+## <a name="cloud-app-security-release-113"></a>Cloud App Security 릴리스 113
+릴리스 날짜: 2017년 12월 25일
+
+-   이제 Cloud App Security에서 Azure Information Protection과의 심층적인 통합이 지원됩니다. 공개 미리 보기 기능을 사용하면 클라우드 앱에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 이 기능은 Box, SharePoint 및 OneDrive에서 사용할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
+
+-   Cloud Discovery 로그 파서가 LEEF, CEF 및 WC3과 같은 일반 형식을 지원합니다.
+
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security 릴리스 112
 2017년 12월 10일에 릴리스됨
