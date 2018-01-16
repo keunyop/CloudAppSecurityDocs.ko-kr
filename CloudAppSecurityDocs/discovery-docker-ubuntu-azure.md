@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -72,7 +72,10 @@ ms.lasthandoff: 12/10/2017
 
     b. 로그 수집기에 **이름**을 지정합니다.
 
-    c. Docker를 배포하는 데 사용할 컴퓨터의 **호스트 IP 주소**를 입력합니다.
+    c. Docker를 배포하는 데 사용할 컴퓨터의 **호스트 IP 주소**를 입력합니다. 
+
+     > [!NOTE]
+     > 호스트 이름을 확인할 DNS 서버(또는 이와 동등한)가 있으면 호스트 IP 주소를 컴퓨터 이름으로 바꿀 수 있습니다.
 
     d. 수집기에 연결할 모든 **데이터 원본**을 선택하고 **업데이트**를 클릭하여 구성을 저장한 후 다음 배포 단계를 확인합니다.
 
@@ -111,8 +114,7 @@ ms.lasthandoff: 12/10/2017
     |caslogcollector_syslogs_tcp|601-700|TCP|<사용자 어플라이언스의 IP 주소 서브넷>|임의|
     |caslogcollector_syslogs_udp|514-600|UDP|<사용자 어플라이언스의 IP 주소 서브넷>|임의|
       
-    
-      ![Ubuntu Azure 규칙](./media/inbound-rule.png)
+     ![Ubuntu Azure 규칙](./media/inbound-rule.png)
 
 3.  컴퓨터로 돌아가서 **연결** 을 클릭하여 컴퓨터에서 터미널을 엽니다.
 

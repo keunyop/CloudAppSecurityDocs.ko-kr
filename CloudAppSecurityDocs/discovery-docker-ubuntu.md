@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -62,8 +62,9 @@ ms.lasthandoff: 11/29/2017
     d. 예상 로그 형식 샘플과 로그를 비교합니다. 로그 파일 형식이 이 샘플과 일치하지 않는 경우 데이터 원본을 **기타**로 추가해야 합니다.
 
     e. **수신기 유형**을 **FTP**, **FTPS**, **Syslog – UDP** 또는 **Syslog – TCP** 또는 **Syslog – TLS**로 설정합니다.
-    >[!NOTE]
-    >보안 전송 프로토콜(FTPS 및 Syslog - TLS)과 통합하려면 종종 추가 설정 또는 방화벽/프록시가 필요합니다.
+    
+     >[!NOTE]
+     >보안 전송 프로토콜(FTPS 및 Syslog - TLS)과 통합하려면 종종 추가 설정 또는 방화벽/프록시가 필요합니다.
 
     f. 해당 로그를 사용하여 네트워크의 트래픽을 검색할 수 있는 각 방화벽 및 프록시에 대해 이 프로세스를 반복합니다.
 
@@ -73,15 +74,18 @@ ms.lasthandoff: 11/29/2017
 
     b. 로그 수집기에 **이름**을 지정합니다.
 
-    c. Docker를 배포하는 데 사용할 컴퓨터의 **호스트 IP 주소**를 입력합니다.
+    c. Docker를 배포하는 데 사용할 컴퓨터의 **호스트 IP 주소**를 입력합니다. 
+       
+       > [!NOTE]
+       > 호스트 이름을 확인할 DNS 서버(또는 이와 동등한)가 있으면 호스트 IP 주소를 컴퓨터 이름으로 바꿀 수 있습니다.
 
     d. 수집기에 연결할 모든 **데이터 원본**을 선택하고 **업데이트**를 클릭하여 구성을 저장한 후 다음 배포 단계를 확인합니다.
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - 단일 로그 수집기로 여러 데이터 원본을 처리할 수 있습니다.
-    >- Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
+     >  [!NOTE]
+     > - 단일 로그 수집기로 여러 데이터 원본을 처리할 수 있습니다.
+     > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 정보가 필요하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
 
 4.  추가 배포 정보가 표시됩니다. 대화 상자의 실행 명령을 **복사**합니다. 클립보드에 복사 아이콘 ![클립보드에 복사 아이콘](./media/copy-icon.png)을 사용할 수 있습니다.
 
@@ -91,7 +95,7 @@ ms.lasthandoff: 11/29/2017
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>2단계 - 컴퓨터의 온-프레미스 배포
 
-> [!Note]
+> [!NOTE]
 > 다음 단계에서는 Ubuntu에서의 배포를 설명합니다. 다른 플랫폼의 경우 배포 단계가 약간 다릅니다.
 
 1.  Ubuntu 컴퓨터에서 터미널을 엽니다.
@@ -153,7 +157,10 @@ ms.lasthandoff: 11/29/2017
 ![사용자 지정 연속 보고서](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>참고 항목
-[Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)  
+
+[Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
+
 [기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)
 

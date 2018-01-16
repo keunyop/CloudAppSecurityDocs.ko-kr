@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,14 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
-
   
   
 ## <a name="configure-g-suite"></a>G Suite 구성  
@@ -33,7 +32,7 @@ ms.lasthandoff: 11/14/2017
      ![google1](./media/google1.png "google1")  
   
 3.  **새 프로젝트** 화면에서:</br>
-    **Microsoft Cloud App Security**로 프로젝트 이름을 지정하고 **만들기**를 클릭합니다.  
+    프로젝트 이름을 **Microsoft Cloud App Security**로 지정하고 **만들기**를 클릭합니다.  
            ![google2](./media/google2.png "google2")  
   
 4.  프로젝트를 만든 후 도구 모음에서 **Google Cloud Platform**을 클릭하고 위쪽의 드롭다운에서 오른쪽 프로젝트가 선택되어 있는지 확인합니다.
@@ -44,9 +43,9 @@ ms.lasthandoff: 11/14/2017
   
      ![google3](./media/google3.png "google3")  
   
-5.  **API** 아래에서 나열된 API를 모두 사용하지 않도록 설정합니다.  
+6.  **API** 아래에서 나열된 API를 모두 사용하지 않도록 설정합니다.  
       
-6.  **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
+7.  **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
      
     -   관리자 SDK  
   
@@ -63,52 +62,52 @@ ms.lasthandoff: 11/14/2017
    > [!NOTE]  
    >  지금은 **자격 증명** 경고를 무시합니다.  
 
-7.  **사용 API**가 5개 있어야 합니다.  
+8.  **사용 API**가 5개 있어야 합니다.  
   
      ![google 사용 API](./media/google5.png "google5")  
   
-8.  **자격 증명**을 클릭한 후 **OAuth 동의 화면** 탭을 선택합니다.
+9.  **자격 증명**을 클릭한 후 **OAuth 동의 화면** 탭을 선택합니다.
   
     -   **사용자에게 표시되는 제품 이름**에서 **Microsoft Cloud App Security**를 입력합니다.  
   
     -   다른 모든 필드는 선택 사항입니다.  
   
-    -   **Save**(저장)를 클릭합니다.  
+    -   **Save**을 클릭합니다.  
   
      ![Google 제품 이름](./media/google6.png "google6")  
   
-9. **자격 증명** 탭에서 **자격 증명 만들기** 옆의 화살표를 클릭합니다.  
+10. **자격 증명** 탭에서 **자격 증명 만들기** 옆의 화살표를 클릭합니다.  
   
      ![Google 자격 증명](./media/google7.png "google7")  
 
-10. **Service account key**(서비스 계정 키)를 선택합니다.
+11. **Service account key**(서비스 계정 키)를 선택합니다.
 
      ![Google 서비스 계정 키](./media/google8.png "google8")  
   
-11. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름을 입력합니다(예: **Service account 1**). **Role**(역할)에서 **Project**(프로젝트), **Editor**(편집기)를 차례로 선택합니다. **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. P12 인증서 파일이 컴퓨터에 저장됩니다.
+12. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름을 입력합니다(예: **Service account 1**). **Role**(역할)에서 **Project**(프로젝트), **Editor**(편집기)를 차례로 선택합니다. **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. P12 인증서 파일이 컴퓨터에 저장됩니다.
  
      ![Google에서 서비스 계정 키 만들기](./media/google9.png "google9")  
   
-12.  나중에 필요하므로 서비스에 할당된 **Service account ID**(서비스 계정 ID)를 복사합니다.    
+13.  나중에 필요하므로 서비스에 할당된 **Service account ID**(서비스 계정 ID)를 복사합니다.    
         
-12. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
+14. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
      
     ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite 자격 증명 서비스 계정")  
   
-13. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **Edit**(편집)을 선택합니다.  
+15. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **Edit**(편집)을 선택합니다.  
   
      ![google 편집](./media/google11.png "google 편집")  
   
-15. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
+16. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
   
      ![google 서비스 계정 ID](./media/google12.png "google12")  
   
-16. 제목 표시줄에서 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 엽니다. **Google Cloud Platform**을 클릭하고 왼쪽 메뉴의 **API 및 서비스** 탭을 클릭합니다.  
+17. 제목 표시줄에서 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 엽니다. **Google Cloud Platform**을 클릭하고 왼쪽 메뉴의 **API 및 서비스** 탭을 클릭합니다.  
     
-17. 열린 대시보드에서 사용 가능한 API 목록까지 아래로 스크롤하고 **Google 드라이브 API**를 클릭합니다.   
+18. 열린 대시보드에서 사용 가능한 API 목록까지 아래로 스크롤하고 **Google 드라이브 API**를 클릭합니다.   
        ![Google 드라이브 선택](./media/google14.png "google14")  
 
-18. **드라이브 UI 통합** 탭을 클릭하고 다음 정보를 입력합니다.
+19. **드라이브 UI 통합** 탭을 클릭하고 다음 정보를 입력합니다.
 
     -   **응용 프로그램 이름**: Microsoft Cloud App Security.  
   
@@ -122,9 +121,11 @@ ms.lasthandoff: 11/14/2017
     
        ![Google 드라이브 편집](./media/google15.png "google15")  
 
-19. **사용 가능한 API** 목록으로 돌아갑니다. **Google Apps Marketplace SDK**를 클릭합니다. 
+20. **변경 내용 저장**을 클릭합니다.
+
+20. **사용 가능한 API** 목록으로 돌아갑니다. **Google Apps Marketplace SDK**를 클릭합니다. 
       
-20. **구성** 탭을 선택합니다. 
+21. **구성** 탭을 선택합니다. 
   
     -   나중에 사용하기 위해 맨 위에 표시되는 **프로젝트 번호(앱 ID)**를 복사합니다.  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 11/14/2017
   
     -   **응용 프로그램 아이콘**에서 필수 이미지 4개를 구성합니다.  
   
-         이미지는 [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644)에서 찾을 수 있습니다.  
+         이미지는 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)에서 찾을 수 있습니다.  
   
     -   다음 **지원 URL**을 입력합니다.  
   
@@ -186,14 +187,14 @@ ms.lasthandoff: 11/14/2017
   
     -   **변경 내용 저장**을 클릭합니다.  
   
-18. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
+22. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
    
       ![google 보안](./media/googlesec.png "google 보안")  
  
-19. **API 참조**를 선택합니다.  
+23. **API 참조**를 선택합니다.  
        ![google api 사용](./media/googleapi.png "google api")  
       
-20. **API 액세스 사용**을 선택하고 **변경 내용 저장**을 클릭합니다.  
+24. **API 액세스 사용**을 선택하고 **변경 내용 저장**을 클릭합니다.  
   
     ![google api 참조](./media/googleapiref.png "google8")  
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 11/14/2017
   
      ![Cloud App Security의 G Suite 구성](./media/gsuite-config-cas.png "Cloud App Security의 G Suite 구성")  
   
-    1.  16단계에서 복사한 **서비스 계정 메일 주소**  
+    1.  13단계에서 복사한 **서비스 계정 ID**  
   
     2.  21단계에서 복사한 **프로젝트 번호(앱 ID)**  
   

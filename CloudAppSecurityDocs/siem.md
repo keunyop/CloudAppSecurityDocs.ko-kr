@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -130,57 +130,25 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF 형식의 샘플 Cloud App Security 경고
 
 
-##### <a name="activity-logs"></a>활동 로그
+|적용 대상|CEF 필드 이름|설명|
+|----|-----|----|
+|활동/경고|start| 활동 또는 경고 타임스탬프|
+|활동/경고|end|활동 또는 경고 타임스탬프|
+|활동/경고|rt|활동 또는 경고 타임스탬프|
+|활동/경고|msg |포털에 표시된 활동 또는 경고 설명|
+|활동/경고|suser| 활동 또는 경고 제목 사용자|
+|활동/경고|destinationServiceName| 활동 또는 경고가 시작되는 앱(예: Office 365, Sharepoint, Box)|
+|활동/경고|cs<X>Label|각 레이블에는 다른 의미가 있지만 레이블 자체가 그 의미를 설명합니다(예: targetObjects).|
+|활동/경고|cs<X>|레이블에 해당하는 정보입니다(레이블 예에 따른 활동 또는 경고의 대상 사용자).|
+|활동|EVENT_CATEGORY_* |활동의 상위 범주|
+|활동|<ACTION> |포털에 표시된 활동 유형|
+|활동|externalId| 이벤트 ID|
+|활동|dvc| 클라이언트 장치의 IP|
+|활동|requestClientApplication|클라이언트 장치의 사용자 에이전트|
+|경고|<alert type>|예: “ALERT_CABINET_EVENT_MATCH_AUDIT”|
+|경고|<name>|일치하는 정책 이름|
+|경고|externalId|경고 ID|
 
--   EVENT_CATEGORY_* - 활동의 상위 수준 범주
-
--   <ACTION> - 포털에 표시된 활동 유형
-
--   externalId - 이벤트 ID
-
--   start - 활동 타임스탬프
-
--   end - 활동 타임스탬프
-
--   rt - 활동 타임스탬프
-
--   msg - 포털에 표시된 이벤트 설명
-
--   suser - 활동 사용자
-
--   destinationServiceName - 활동 시작 앱(예: Office 365, SharePoint, Box)
-
--   dvc - 클라이언트 장치의 IP
-
--   requestClientApplication - 클라이언트 장치의 사용자 에이전트
-
--   cs<X>Label – 각 레이블에는 다른 의미가 있지만 레이블 자체가 그 의미를 설명합니다(예: targetObjects).
-
--   cs<X> - 레이블에 해당하는 정보입니다(레이블 예에 따른 활동 또는 경고의 대상 사용자).
-
-##### <a name="alerts"></a>경고
-
--   <alert type> - 예: “ALERT_CABINET_EVENT_MATCH_AUDIT”
-
--   <name> - 일치하는 정책 이름
-
--   externalId - 경고 ID
-
--   start- 경고 타임스탬프
-
--   end - 경고 타임스탬프
-
--   rt - 경고 타임스탬프
-
--   msg - 포털에 표시된 경고 설명
-
--   suser - 경고 제목 사용자
-
--   destinationServiceName – 경고 시작 앱(예: Office 365, Sharepoint, Box)
-
--   cs<X>Label – 각 레이블에는 다른 의미가 있지만 레이블 자체가 그 의미를 설명합니다(예: targetObjects).
-
--   cs<X> - 레이블에 해당하는 정보입니다(레이블 예에 따른 활동 또는 경고의 대상 사용자).
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>3단계: SIEM 에이전트가 제대로 작동하는지 확인합니다.

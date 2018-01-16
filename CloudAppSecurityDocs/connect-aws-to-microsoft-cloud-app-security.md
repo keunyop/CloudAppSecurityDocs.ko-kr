@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 AWS 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 Amazon Web Services 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
@@ -36,20 +36,12 @@ ms.lasthandoff: 09/28/2017
 
      ![AWS에서 사용자 만들기](./media/aws-create-user.png "AWS에서 사용자 만들기")
 
-5. **Permissions**(권한) 단계에서 **Attach existing policies directly**(기존 정책을 바로 연결)를 선택하고 **Create policy**(정책 만들기)를 클릭합니다.
+5. JSON 탭을 클릭합니다.
 
-   ![AWS에서 사용자 연결](./media/aws-attach-user-policy.png "AWS에서 사용자 정책 연결")
+     ![AWS JSON](./media/aws-json.png "AWS JSON 탭")
 
-6.  **Create Policy**(정책 만들기)에서 **Create Your Own Policy**(고유한 정책 만들기)를 선택합니다.
- 
-    ![AWS에서 고유한 정책 만들기](./media/aws-create-own-policy.png "AWS에서 정책 만들기")
- 
-7.  **Review Policy**(정책 검토) 아래에 **Policy Name**(정책 이름)을 제공합니다(예: CloudAppSecurityPolicy).
+6. 다음 스크립트를 제공된 영역에 붙여넣습니다.
 
-    ![AWS에서 정책 검토](./media/aws-review-policy.png "AWS에서 정책 검토")
-
-8. 그런 다음 **Policy Document**(정책 문서) 필드에 다음 스크립트를 붙여넣고 **Create policy**(정책 만들기)를 클릭합니다.
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ ms.lasthandoff: 09/28/2017
      }  
   
     ```  
-  
+
+     ![AWS 코드](./media/aws-code.png "AWS 코드")
+    
+6. **정책 검토**를 클릭합니다.
+
+7. **이름**을 제공하고 **정책 만들기**를 클릭합니다.
+
+     ![AWS 이름 정책](./media/aws-create-policy.png "AWS 정책 만들기")
+
 9. **Add user**(사용자 추가) 화면으로 돌아가서 필요한 경우 목록을 새로 고치고 직접 만든 사용자를 선택한 후 **Next Review**(다음 검토)를 클릭합니다.
 
    ![AWS에서 사용자 정책 검토](./media/aws-review-user.png "AWS에서 사용자 검토")
