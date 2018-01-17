@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -25,7 +25,7 @@ ms.lasthandoff: 12/31/2017
   
 ## <a name="configure-g-suite"></a>G Suite 구성  
   
-1.  G Suite 슈퍼 관리자로 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)에 로그인합니다.  
+1.  G Suite 슈퍼 관리자로 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>에 로그인합니다.  
   
 2.  **Create project**(프로젝트 만들기)를 클릭하여 새 프로젝트를 시작합니다.  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 12/31/2017
   
     -   **짧은 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 응용 프로그램을 파악할 수 있으며 클라우드 응용 프로그램 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 응용 프로그램에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
   
-    -   Google을 사용하려면 하나 이상의 응용 프로그램 아이콘을 업로드해야 합니다. [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)으로 이동하고 Cloud App Security 아이콘이 포함된 zip 파일을 다운로드합니다. 그런 다음 **응용 프로그램 아이콘**에서 128x128 및 32x32 이미지를 끌어서 놓습니다.  
+    -   Google을 사용하려면 하나 이상의 응용 프로그램 아이콘을 업로드해야 합니다. [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)으로 이동하고 Cloud App Security 아이콘이 포함된 zip 파일을 다운로드합니다. 그런 다음 **응용 프로그램 아이콘**에서 128x128 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다. 32x32 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다.  
   
     -   아래로 스크롤하고 **드라이브 통합** 섹션에서 **URL 열기:** 아래에 다음 URL을 입력합니다.  
   
@@ -184,7 +184,8 @@ ms.lasthandoff: 12/31/2017
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   G Suite에서 가시성을 요청하는 경우 **내 도메인**(공용 아님)을 선택합니다. 
     -   **변경 내용 저장**을 클릭합니다.  
   
 22. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
