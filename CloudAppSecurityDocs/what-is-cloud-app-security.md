@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
-ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
+ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security란?
 
@@ -95,5 +95,5 @@ Cloud App Security 프록시는 클라우드 환경에서 수행되는 액세스
 ## <a name="see-also"></a>참고 항목  
 
 [Cloud App Security 시작](getting-started-with-cloud-app-security.md)에서 기본적인 사항을 읽으세요.    
-기술 지원을 받으려면 [Cloud App Security 보조 지원](http://support.microsoft.com/oas/default.aspx?prid=16031) 페이지를 방문하세요.   
+
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.   

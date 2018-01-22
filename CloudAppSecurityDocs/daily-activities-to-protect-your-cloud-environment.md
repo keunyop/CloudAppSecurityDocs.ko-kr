@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="working-with-the-dashboard"></a>대시보드 사용
 Cloud App Security를 실행하고 나면 데이터 스트림을 구성하고, 사람들의 사용을 허용할 응용 프로그램 권한을 부여하고, 클라우드 환경을 모니터링할 정책을 설정해야 합니다. 그러고 나면 Cloud App Security를 사용하여 클라우드를 제어 및 보호하고 위험을 관리할 수 있습니다.  
@@ -40,5 +40,5 @@ Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개�
 
 ## <a name="next-steps"></a>다음 단계  
 경고를 조사하는 방법에 대한 자세한 내용은 [조사](investigate.md)를 참조하세요.  
-기술 지원을 받으려면 [Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 ## <a name="manage-your-alerts"></a>알림 관리  
 경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어 한 관리자가 그린란드에서 로그인한다고 표시되는데 조직의 누구도 이전에 그린란드에서 로그인한 적이 없는 경우, 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
@@ -82,5 +82,5 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="next-steps"></a>다음 단계  
 경고를 조사하는 방법에 대한 자세한 내용은 [조사](investigate.md)를 참조하세요.  
-기술 지원을 받으려면 [Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
