@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
-ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
+ms.openlocfilehash: 95d0ea00118972de81899b35f198f3df66444a44
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 
@@ -43,7 +43,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
     - 업로드된 로그 파일의 스냅숏 보고서 및 로그 수집기의 연속 보고서에서 오는 모든 데이터를 익명화하려면 Cloud App Security에서 다음과 같이 기본값을 설정할 수 있습니다.
      
-        1. Settings(설정) 코그 아래에서 **Cloud Discovery settings**(Cloud Discovery 설정)를 선택합니다.
+        1. [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택합니다.
      
         2. 기본적으로 사용자 이름을 익명화하려면 Anonymization(익명화) 탭에서 **Anonymize private information by default in new reports and data sources**(기본적으로 새 보고서 및 데이터 원본의 개인 정보 익명화)를 선택합니다.
 
@@ -78,7 +78,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
       
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
-[기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
     
       
