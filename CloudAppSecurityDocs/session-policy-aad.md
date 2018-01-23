@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 06ae1763918d44512ff52ad25ca0c0f77bcab3e9
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="session-policies"></a>세션 정책 
 
@@ -164,7 +164,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
  
 ## <a name="see-also"></a>참고 항목  
 [Azure AD 프록시 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
-[기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   

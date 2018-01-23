@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-115"></a>Cloud App Security 릴리스 115
+릴리스 날짜: 2018년 1월 21일
+
+-   이 릴리스는 파일 정책에서 특정 폴더를 선택할 때 개선된 환경을 제공합니다. 이제 정책에 포함할 여러 폴더를 쉽게 보고 선택할 수 있습니다. 
+-   **검색된 앱** 페이지에서: 
+   - 대량 태그 지정 기능을 사용하여 사용 권한 및 비사용 권한 태그 외에 사용자 지정 태그를 적용할 수 있습니다. 
+   - **IP 주소 보고서를 생성**하면 이제 내보낸 보고서에 트래픽이 사용 권한 앱에서 온 것인지 또는 비사용 권한 앱에서 온 것인지에 대한 정보가 포함됩니다. 
+-   이제 포털의 **앱 연결** 페이지에서 직접 Microsoft Cloud App Security 팀으로부터 새 API 앱 커넥터를 요청할 수 있습니다. 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security 릴리스 114
 릴리스 날짜: 2018년 1월 7일
@@ -34,7 +44,7 @@ ms.lasthandoff: 01/07/2018
 
 -   이제 Cloud App Security에서 Azure Information Protection과의 심층적인 통합이 지원됩니다. 공개 미리 보기 기능을 사용하면 클라우드 앱에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 이 기능은 Box, SharePoint 및 OneDrive에서 사용할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
 
--   Cloud Discovery 로그 파서가 LEEF, CEF 및 WC3과 같은 일반 형식을 지원합니다.
+-   이제 Cloud Discovery 로그 파서는 LEEF, CEF 및 W3C와 같은 일반 형식을 지원합니다.
 
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security 릴리스 112
@@ -629,7 +639,7 @@ Cloud Discovery 업데이트:
 * 정책을 위반할 경우 전송되도록 경고를 설정할 때, 이제 경고가 발생하도록 할 최소 심각도 수준을 설정할 수 있습니다. 이에 대한 조직의 기본 설정을 사용하도록 선택할 수 있으며, 조직에 대한 기본값으로 특정 경고 설정을 지정할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목  
-[기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
