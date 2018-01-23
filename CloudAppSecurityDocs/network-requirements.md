@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad089d71975a83c2f41fb9a9694acb8d01defdc7
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: cf6bca7ff1e5ccb2bc2ed72a0c6f0e47942ed19a
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="network-requirements"></a>네트워크 요구 사항
 
@@ -129,14 +129,14 @@ Cloud App Security 전용 메일 IP 주소:
     |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> 방화벽에 고정 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않는 경우 로그 수집기가 443 포트에서 [Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
-
+> - 방화벽에 고정 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않는 경우 로그 수집기가 443 포트에서 [Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+>- 로그 수집기가 Cloud App Security 포털에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 
 
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
-[기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
 

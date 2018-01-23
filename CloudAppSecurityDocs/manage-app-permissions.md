@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="manage-app-permissions"></a>응용 프로그램 사용 권한 관리
 조직의 비즈니스 사용자가 설치하는 타사 생산성 앱 중에는 사용자 정보와 데이터의 사용 권한을 요청하고 사용자 대신 Office 365, G Suite, Salesforce 등의 다른 클라우드 앱에 로그인하는 것도 많습니다.  사용자가 이러한 응용 프로그램을 설치할 때, 응용 프로그램에 사용 권한을 부여하는 내용을 포함한 메시지의 세부 정보를 검토하지 않고 승인을 클릭하는 경우도 많습니다.  이 문제는 IT 직원이 응용 프로그램의 생산성 향상 효과와 보안 위험을 신중하게 비교하지 못하기 때문에 발생합니다. 타사 앱의 사용 권한을 승인하면 조직에 보안 위험이 생길 수 있으므로, 사용자가 부여하는 앱 사용 권한을 모니터링하면 사용자와 응용 프로그램을 보호하는 데 필요한 정보를 얻고 상황을 통제할 수 있습니다. Cloud App Security 앱 사용 권한을 활용하면 사용자가 설치한 응용 프로그램 중에서 Office 365 데이터, G Suite 데이터 및 Salesforce 데이터에 액세스할 수 있는 것이 무엇이고, 앱에 어떤 사용 권한이 있으며, 이러한 앱에 Office 365, G Suite 및 Salesforce 계정 액세스 권한을 부여한 사용자가 누구인지 확인할 수 있습니다. 응용 프로그램 사용 권한은 사용자의 액세스를 허용할 응용 프로그램과 금지할 응용 프로그램을 결정하는 데 유용합니다.
@@ -55,7 +55,7 @@ Cloud App Security 포털에서 **조사**, **앱 사용 권한**을 차례로 �
 ## <a name="ban-or-approve-an-app"></a>응용 프로그램 금지 또는 승인
 1. 앱 사용 권한 페이지에서 앱을 클릭하여 앱 서랍을 열면 앱에 관한 자세한 정보와 부여된 사용 권한을 볼 수 있습니다. 사용 권한 링크를 클릭하면 응용 프로그램에 부여된 사용 권한의 전체 목록을 볼 수 있습니다. 커뮤니티 사용에서 다른 조직에 해당 응용 프로그램이 얼마나 흔한지 확인할 수 있습니다. 관련 활동 링크를 클릭하여 이 응용 프로그램과 관련된 거버넌스 로그의 활동을 볼 수도 있습니다.
 2. 응용 프로그램을 금지하려면 표에서 응용 프로그램 행의 끝에 있는 금지 아이콘을 클릭합니다. <br></br>
- ![응용 프로그램 금지 아이콘](./media/ban-app-icon.png) <br></br>
+ ![앱 금지 아이콘](./media/ban-app-icon.png) <br></br>
 앱을 금지할 때, 사용자에게 이전에 설치 및 승인한 앱이 금지되어 사용할 수 없게 되고 연결된 앱에 액세스할 수 없게 된다고 알릴지 여부를 선택할 수 있습니다. 알리지 않으려면 [응용 프로그램 금지] 대화 상자에서 [이 금지된 응용 프로그램에 액세스 권한을 부여한 사용자에게 알림]을 선택 취소합니다.
 
     ![응용 프로그램 금지](./media/ban-app.png)
@@ -63,7 +63,7 @@ Cloud App Security 포털에서 **조사**, **앱 사용 권한**을 차례로 �
 > 응용 프로그램 사용자에게 응용 프로그램 사용이 곧 금지되는 것을 알리는 편이 좋습니다.
 
 3. 응용 프로그램을 승인하려면 표의 행 끝에 있는 승인 아이콘을 클릭합니다. <br></br>
- ![응용 프로그램 승인](./media/approve-app.png) <br></br>
+ ![앱 승인](./media/approve-app.png) <br></br>
 아이콘이 녹색으로 바뀌며 앱이 모든 연결된 앱 사용자에게 승인됩니다.
 > [!Note]
 > 응용 프로그램을 승인된 것으로 표시해도 최종 사용자에게는 영향이 없습니다. 이 표시는 승인된 응용 프로그램에 눈에 띄는 표시를 하여 아직 검토하지 않은 응용 프로그램과 구분하는 용도로만 사용됩니다.
@@ -91,7 +91,7 @@ G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 
 
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
-[기술 지원을 받으려면 Cloud App Security 보조 지원 페이지를 방문하세요.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
   
