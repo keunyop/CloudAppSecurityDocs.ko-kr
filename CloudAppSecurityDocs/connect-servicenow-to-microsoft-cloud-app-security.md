@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 01/16/2018
 
    ![ServiceNow OAuth 유형](./media/servicenow-oauth-app-type.png)
 
-5. **Application Registries New record**(응용 프로그램 레지스트리 새 레코드)에 다음을 입력합니다.
+5. **Application Registries New record**(응용 프로그램 레지스트리 새 레코드)에서 다음 필드를 입력합니다.
     
     - **Name**(이름) 필드, 새 OAuth 프로필의 이름(예: CloudAppSecurity) 
     
@@ -104,7 +104,7 @@ ServiceNow를 Cloud App Security와 연결하려면 관리자 수준 권한이 �
 
 8.  **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.   
   
-   테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.   
+   테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.    
  ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다. 
 
 

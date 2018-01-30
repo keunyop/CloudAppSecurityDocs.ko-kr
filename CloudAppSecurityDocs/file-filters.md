@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c7c9fe0a5ace1bfd464160ee4c1c777cdc5f4195
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 995bcacd450856fb9aa75a4c7d48596a7fbc168c
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="files"></a>파일
 
@@ -54,7 +54,10 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
 
 >**같음**은 전체 문자열만 검색합니다. 예를 들어 **malware.exe**를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다. 
 
--   액세스 수준 – 공유 액세스 수준(공개, 외부, 내부 또는 전용)입니다.  외부 파일에 대한 자세한 내용은 [일반 설정, 포털 설정](getting-started-with-cloud-app-security.md)을 참조하세요. 내부는 [일반 설정](General-setup.md)에서 설정한 내부 도메인 내의 모든 파일입니다. 외부는 설정한 내부 도메인에 속하지 않는 위치에 저장된 모든 파일입니다. 공유는 공유 수준이 개인보다 위인 파일입니다. 여기에는 내부 공유(내부 도메인 내에서 공유되는 파일), 외부 공유(내부 도메인에 나열되지 않는 도메인에서 공유되는 파일), 링크를 통한 공개(링크를 통해 모든 사용자와 공유할 수 있는 파일) 및 공개(인터넷을 검색하여 찾을 수 있는 파일)가 포함됩니다. 
+-   액세스 수준 – 공유 액세스 수준(공개, 외부, 내부 또는 전용)입니다.  외부 파일에 대한 자세한 내용은 [일반 설정, 포털 설정](getting-started-with-cloud-app-security.md)을 참조하세요.
+    - 내부는 [일반 설정](General-setup.md)에서 설정한 내부 도메인의 파일입니다. 
+    - 외부는 설정한 내부 도메인에 속하지 않는 위치에 저장된 모든 파일입니다. 
+    - 공유는 공유 수준이 개인보다 위인 파일입니다. 여기에는 내부 공유(내부 도메인 내에서 공유되는 파일), 외부 공유(내부 도메인에 나열되지 않는 도메인에서 공유되는 파일), 링크를 통한 공개(링크를 통해 모든 사용자와 공유할 수 있는 파일) 및 공개(인터넷을 검색하여 찾을 수 있는 파일)가 포함됩니다. 
 
 > [!NOTE]
 >  외부 사용자에 의해 연결된 저장소 응용 프로그램에 공유된 파일은 Cloud App Security에서 다음과 같이 처리됩니다.
