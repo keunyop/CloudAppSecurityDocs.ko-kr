@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
@@ -301,7 +301,7 @@ Vontu에 구성 변경 내용 추가:
 
 1. 각 정책에서 **응답** 탭으로 전환합니다.
 
-2. **응답 규칙** 드롭다운에서, 위에서 만든 응답 차단 규칙을 선택합니다.
+2. **응답 규칙** 드롭다운에서, 앞서 만든 응답 차단 규칙을 선택합니다.
 
 3. 정책을 저장합니다.
    

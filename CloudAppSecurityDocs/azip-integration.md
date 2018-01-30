@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af2fc62de63eba4ca1f275be5cf4f8717047c063
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -91,7 +91,7 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
  ![앱 보호](./media/protect-app.png)
   
   >[!NOTE]
-  >Azure Information Protection은 최대 50MB 크기의 파일을 보호합니다. 
+  >Cloud App Security가 Azure Information Protection을 사용하여 파일을 보호하는 경우 지원되는 최대 파일 크기는 50MB입니다. 
 
 2. 파일에 적용할 조직의 분류 레이블 중 하나를 선택하라는 메시지가 표시되면 **적용**을 클릭합니다. 
 ![보호 분류 레이블](./media/protect-template.png)
