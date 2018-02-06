@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="basic-setup"></a>기본 설정
 다음 절차에서는 Cloud App Security 포털을 사용자 지정하기 위한 지침을 제공합니다.
@@ -47,7 +47,9 @@ ms.lasthandoff: 01/24/2018
 > - 내부로 구성되지 않은 도메인의 사용자는 외부로 표시되며 활동이나 파일이 검색되지 않습니다.
 
 5. Azure Information Protection 통합을 사용하여 통합하는 경우 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요. 
-  
+
+ >[!NOTE]
+ > Azure Information Protection 통합 작업을 하려면 [Office 365용 앱 커넥터](connect-office-365-to-microsoft-cloud-app-security.md)를 사용하도록 설정해야 합니다.
   
 6.  포털 설정을 백업하려는 경우 언제든지 이 화면에서 백업할 수 있습니다. **포털 설정 내보내기**를 클릭하여 정책 규칙, 사용자 그룹 및 IP 주소 범위를 비롯한 모든 포털 설정이 포함된 json 파일을 만듭니다.  
   

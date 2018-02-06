@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -35,6 +35,8 @@ Azure Information Protection을 Cloud App Security에 통합하여 다음과 같
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
+
+- Azure Information Protection 통합 작업을 하려면 [Office 365용 앱 커넥터](connect-office-365-to-microsoft-cloud-app-security.md)를 사용하도록 설정해야 합니다.
 
 Cloud App Security는 현재 다음 파일 형식에 Azure Information Protection 분류 레이블을 적용하도록 지원합니다.
 
@@ -91,7 +93,7 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
  ![앱 보호](./media/protect-app.png)
   
   >[!NOTE]
-  >Cloud App Security가 Azure Information Protection을 사용하여 파일을 보호하는 경우 지원되는 최대 파일 크기는 50MB입니다. 
+  > Cloud App Security는 최대 50MB인 파일에 Azure Information Protection을 적용할 수 있습니다.  
 
 2. 파일에 적용할 조직의 분류 레이블 중 하나를 선택하라는 메시지가 표시되면 **적용**을 클릭합니다. 
 ![보호 분류 레이블](./media/protect-template.png)
