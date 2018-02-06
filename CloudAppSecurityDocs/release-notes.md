@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 2/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-116"></a>Cloud App Security 릴리스 116
+릴리스 날짜: 2018년 2월 4일
+
+- 점진적 출시: Cloud App Security는 이제 SaaS 앱 전체에서 사용자와 해당 계정 간의 상관 관계를 지정합니다. 따라서 사용자가 사용한 앱 또는 계정과 관계없이 해당 사용자의 모든 다양한, 상관 관계가 지정된 SaaS 앱에서 사용자의 모든 활동을 쉽게 조사할 수 있습니다.  
+
+-   점진적 출시: Cloud App Security는 이제 같은 연결된 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 
+
+- Cloud App Security 조사가 개선되었습니다! 이제 **경고** 페이지 내에서 **활동 로그**로 드릴다운하고 경고에서 직접 수행할 수 있는 추가 작업을 볼 수 있습니다.
+
+- Cloud Discovery 파서는 이제 두 가지 추가 검사점 형식 XML 및 KPC를 지원합니다.
+
+
 
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security 릴리스 115
 릴리스 날짜: 2018년 1월 21일
@@ -27,7 +40,7 @@ ms.lasthandoff: 01/21/2018
 -   이 릴리스는 파일 정책에서 특정 폴더를 선택할 때 개선된 환경을 제공합니다. 이제 정책에 포함할 여러 폴더를 쉽게 보고 선택할 수 있습니다. 
 -   **검색된 앱** 페이지에서: 
    - 대량 태그 지정 기능을 사용하여 사용 권한 및 비사용 권한 태그 외에 사용자 지정 태그를 적용할 수 있습니다. 
-   - **IP 주소 보고서를 생성**하면 이제 내보낸 보고서에 트래픽이 사용 권한 앱에서 온 것인지 또는 비사용 권한 앱에서 온 것인지에 대한 정보가 포함됩니다. 
+   - **IP 주소 보고서를 생성**하거나 **사용자 보고서를 생성**하면 이제 내보낸 보고서에 트래픽이 사용 권한 앱에서 온 것인지 또는 비사용 권한 앱에서 온 것인지에 대한 정보가 포함됩니다. 
 -   이제 포털의 **앱 연결** 페이지에서 직접 Microsoft Cloud App Security 팀으로부터 새 API 앱 커넥터를 요청할 수 있습니다. 
 
 
