@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>SIEM 통합
     
@@ -74,6 +74,10 @@ SIEM과의 통합은 세 단계로 수행됩니다.
   ![데이터 형식 설정](./media/siem3.png)
 
 7. 토큰을 복사하고 나중을 위해 저장합니다. Finish(마침)를 클릭하고 마법사를 나와 SIEM 페이지로 돌아가면 추가한 SIEM 에이전트가 테이블에 표시됩니다. 나중에 연결될 때까지 **Created**(만들어짐) 상태로 표시됩니다.
+
+> [!NOTE]
+> 사용자가 만든 모든 토큰은 해당 토큰을 만든 관리자에게 바인딩됩니다. 즉, Cloud App Security에서 관리 사용자가 제거되면 토큰이 더 이상 유효하지 않게 됩니다.
+
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>2단계: JAR 파일을 다운로드하고 서버에서 실행합니다.
 

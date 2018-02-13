@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -28,9 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 -   점진적 출시: Cloud App Security는 이제 같은 연결된 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 
 
-- Cloud App Security 조사가 개선되었습니다! 이제 **경고** 페이지 내에서 **활동 로그**로 드릴다운하고 경고에서 직접 수행할 수 있는 추가 작업을 볼 수 있습니다.
-
-- Cloud Discovery 파서는 이제 두 가지 추가 검사점 형식 XML 및 KPC를 지원합니다.
+oul- Cloud Discovery 파서는 이제 두 가지 추가 검사점 형식 XML 및 KPC를 지원합니다.
 
 
 
