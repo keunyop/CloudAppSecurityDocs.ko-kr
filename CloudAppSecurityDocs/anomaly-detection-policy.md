@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf4935db1267819167a392fb1c0ce8ba73181fd7
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 9ac466a721a9e5eef13d868d2eae2ce1c2df58c8
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>즉각적인 동작 분석 및 변칙 검색 이용
 
@@ -27,6 +27,7 @@ Cloud App Security의 변칙 검색 정책은 클라우드 환경에서 고급 �
 
 변칙은 사용자 활동을 검사하여 검색합니다. 다음과 같이 여러 위험 요소로 그룹화된 30개 이상의 다양한 위험 표시기를 확인하여 위험을 평가합니다. 
           
+ -   위험한 IP 주소
  -   로그인 실패
  -   관리자 활동
  -   비활성 계정

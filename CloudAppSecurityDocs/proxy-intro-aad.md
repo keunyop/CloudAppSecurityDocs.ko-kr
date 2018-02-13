@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 950ccd90c2efa777bc8f43abf87a2638f7316de1
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 앱 보호
 
@@ -84,8 +84,36 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 > - 프록시는 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
 > - Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
 
-또한 모든 앱에 대해 세션 제어를 자동으로 사용할 수 있는 것은 아닙니다. Cloud App Security 팀에서 세션 제어를 사용하여 인기 있는 많은 앱을 테스트했습니다. 다른 앱은 고객과 함께 수행되는 온보딩 프로세스가 필요할 수 있습니다.
-클라이언트 측면에서 세션 제어는 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다. 그러나 모바일 앱과 데스크톱 앱은 세션 컨트롤에서 지원되지 않습니다. 
+세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱은 현재 지원되지 않음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
+
+-   Salesforce
+
+-   상자
+
+-   G Suite
+
+-   Workday
+
+-   Slack
+
+-   Workplace by Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   CornerStone on Demand
+
+-   DocuSign
+
+-   HighQ 
+
+세션 제어에 추가 앱이 계속 등록되고 있습니다. 여기에서 언급되지 않은 특정 앱에 관심이 있는 경우 [해당 앱에 대한 세부 정보](mailto:casfeedback@microsoft.com)와 관심 있는 사용 사례를 보내 주시면 등록해 드리겠습니다.
+
 
 
 
