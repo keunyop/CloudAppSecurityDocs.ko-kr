@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
+ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -34,7 +34,7 @@ Azure Information Protection을 Cloud App Security에 통합하여 다음과 같
 > 이 기능을 사용하도록 설정하려면 Cloud App Security 라이선스와 Azure Information Protection Premium P2 라이선스가 모두 필요합니다. 두 라이선스가 모두 있으면 Cloud App Security는 즉시 Azure Information Protection 서비스에서 조직 레이블을 동기화합니다.
 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Azure Information Protection 통합 작업을 하려면 [Office 365용 앱 커넥터](connect-office-365-to-microsoft-cloud-app-security.md)를 사용하도록 설정해야 합니다.
 
@@ -45,7 +45,7 @@ Cloud App Security는 현재 다음 파일 형식에 Azure Information Protectio
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF 및 이미지 파일은 이후 버전에서 지원될 예정입니다. 
 
-이 기능은 현재 Box, SharePoint Online 및 비즈니스용 OneDrive에 저장된 파일에서 사용할 수 있습니다. 향후 버전에서는 더 많은 클라우드 앱이 지원됩니다.
+이 기능은 현재 Box, G Suite, SharePoint Online 및 비즈니스용 OneDrive에 저장된 파일에 사용할 수 있습니다. 향후 버전에서는 더 많은 클라우드 앱이 지원됩니다.
 
 Cloud App Security 외부에서 보호 레이블이 지정된 파일은 현재 Cloud App Security에서 검사하거나 변경할 수 없습니다. Cloud App Security 외부로 레이블이 지정된(보호되지 않은) 파일은 검사가 가능하며 Cloud App Security에서 Cloud App Security 정책에 정의된 대로 다른 레이블(보호 여부와 상관없이)을 적용할 수 있습니다.
 
@@ -116,6 +116,9 @@ Cloud App Security와 Azure Information Protection이 함께 작동하는 방식
 3.  관련 앱의 거버넌스 작업에서 **분류 레이블 적용**을 선택한 다음 레이블 형식을 선택합니다.
 
    ![레이블 적용](./media/aip-gov-action.png)
+
+> [!NOTE]
+> 파일 정책을 통해 Azure Information Protection 레이블을 자동으로 적용하는 기능은 강력한 기능입니다. 고객이 많은 수의 파일에 레이블을 실수로 적용하는 것을 방지하기 위해, 안전 예방 조치로 테넌트당 앱별로 일일 **레이블 적용** 작업 100개라는 제한이 있습니다. 일일 제한에 도달하면 레이블 적용 작업이 일시 중지되고 다음날(12:00 UTC 이후) 자동으로 계속됩니다. 테넌트의 제한을 늘리려면 [Cloud App Security 지원에 문의](mailto:cascoresupport@microsoft.com)하세요.
 
 ### <a name="control-file-exposure"></a>파일 노출 제어
 
