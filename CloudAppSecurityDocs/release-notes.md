@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security 새 소식 | Microsoft 문서"
+title: "Cloud App Security의 새로운 기능 | Microsoft Docs"
 description: "이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
-ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
+ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
+## <a name="cloud-app-security-release-117"></a>Cloud App Security 릴리스 117
+릴리스 날짜: 2018년 2월 20일
+
+-   Cloud App Security가 Azure Information Protection과 심층 통합되어 이제 G Suite에서 파일을 보호할 수 있습니다. 이 공개 미리 보기 기능을 사용하면 G Suite에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
+
+-   이제 Cloud Discovery는 i-FILTER를 지원합니다.
+
+-   이제 SIEM 에이전트 표에 더 쉬운 관리를 위한 자세한 정보가 포함됩니다.
+
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 릴리스 116
 릴리스 날짜: 2018년 2월 4일
-
 - Cloud App Security의 변칙 검색 정책이 불가능한 이동, 의심스러운 IP 주소로부터의 활동, 여러 번 실패한 로그인 시도 등 새로운 **시나리오 기반 검색**으로 향상되었습니다. 새 정책은 자동으로 사용 가능하며, 클라우드 환경에서 기본 제공 위협 검색 기능을 제공합니다. 또한 새 정책은 Cloud App Security 검색 엔진의 데이터를 더 많이 공개하여 조사 프로세스를 더 빨리 진행하고 지속적으로 발견되는 위협을 포함하도록 도와줍니다. 자세한 내용은 [즉각적인 동작 분석 및 변칙 검색 이용](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)을 참조하세요.
 
 - 점진적 출시: Cloud App Security는 이제 SaaS 앱 전체에서 사용자와 해당 계정 간의 상관 관계를 지정합니다. 따라서 사용자가 사용한 앱 또는 계정과 관계없이 해당 사용자의 모든 다양한, 상관 관계가 지정된 SaaS 앱에서 사용자의 모든 활동을 쉽게 조사할 수 있습니다.  
@@ -94,7 +102,7 @@ ms.lasthandoff: 02/12/2018
 ## <a name="cloud-app-security-release-109"></a>Cloud App Security 릴리스 109
 릴리스 날짜: 2017년 10월 29일 
 
-- Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예:
+- Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예를 들면 다음과 같습니다.
     -   다운로드를 시작하기 전에 차단하여 데이터 누수를 미리를 방지합니다.
     -   클라우드에서 저장되거나 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙을 설정합니다.
     -   보호되지 않는 끝점에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
@@ -183,9 +191,9 @@ ms.lasthandoff: 02/12/2018
     - **사용자 지정 위험 점수**: 앱의 위험 점수를 재정의할 수 있습니다. 예를 들어 앱의 위험 점수가 8이고 해당 앱이 조직에서 사용 권한 앱인 경우 조직에 대한 위험 점수를 10으로 변경할 수 있습니다. 메모를 추가하여 누군가 앱을 검토할 때 변경의 근거를 분명히 설명할 수도 있습니다.
 -   **새 로그 수집기 배포 모드:** 배포를 시작하면서 이제 새로운 배포 모드를 로그 수집기에 사용할 수 있습니다. 현재 가상 어플라이언스 기반 배포 이외에 새로운 Docker(컨테이너) 기반 로그 수집기를 패키지로 Windows 및 Ubuntu 컴퓨터에 온-프레미스 및 Azure를 사용하여 설치할 수 있습니다. Docker를 사용할 경우 호스팅 컴퓨터는 이를 자유롭게 패치 및 모니터링할 수 있는 고객이 소유합니다.
 
-### <a name="announcements"></a>알림: 
--   클라우드 앱 카탈로그가 이제 15,000개가 넘는 검색 가능한 앱 지원
--   준수: Cloud App Security는 Azure에서 공식적으로 SOC1/2/3 인증을 했습니다. 전체 인증 목록을 보려면 [준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하거나 Cloud App Security 결과를 필터링하세요.
+### <a name="announcements"></a>공지 사항: 
+-   클라우드 앱 카탈로그는 이제 15,000개 이상의 검색 가능한 앱을 지원합니다.
+-   규정 준수: Cloud App Security는 공식적으로 Azure에서 SOC1/2/3 인증되었습니다. 전체 인증 목록은 [규정 준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하고 Cloud App Security에 대한 결과를 필터링하세요.
 
 ### <a name="other-improvements"></a>기타 향상된 기능: 
 -   **향상된 구문 분석:** Cloud Discovery 로그 구문 분석 메커니즘에서 기능이 향상되었습니다. 내부 오류 발생 가능성이 크게 감소했습니다.
