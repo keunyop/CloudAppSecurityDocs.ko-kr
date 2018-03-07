@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>기본 설정
 다음 절차에서는 Cloud App Security 포털을 사용자 지정하기 위한 지침을 제공합니다.
@@ -32,10 +32,8 @@ ms.lasthandoff: 02/05/2018
   
 ## <a name="set-up-the-portal"></a>포털 설정  
   
-1.  Cloud App Security 포털 메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **일반 설정**을 선택하여 다음을 구성합니다.  
-     
-     ![일반 설정](./media/general-settings.png "일반 설정")  
-  
+1.  Cloud App Security 포털 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택하여 조직 세부 정보를 구성합니다.     
+
 3.  **조직 정보**에서 조직에 대한 **조직 표시 이름**을 제공하는 것이 중요합니다. 이 이름은 시스템에서 전송하는 메일 및 웹 페이지에 표시됩니다.  
   
 4. **환경 이름**(테넌트)을 제공합니다. 이는 여러 테넌트를 관리하는 경우에 특히 중요합니다.  

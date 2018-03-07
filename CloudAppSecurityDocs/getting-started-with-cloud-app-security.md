@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security 배포
 Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
@@ -60,14 +60,14 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>1단계. [클라우드 검색 설정](set-up-cloud-discovery.md).
 필요한 작업: 트래픽 로그 업로드 **연속 Cloud Discovery 보고서를 만들려면**
 
- 1. **설정** > **Cloud Discovery 설정**으로 이동합니다.
- 2. **자동으로 로그 업로드**를 선택합니다.
+ 1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+ 2. **자동 로그 업로드**를 선택합니다.
  3. **데이터 원본** 탭에서 원본을 추가합니다.
  4. **로그 수집기** 탭에서 로그 수집기를 구성합니다.
  
 **Cloud Discovery 스냅숏 보고서를 만들려면**
 
- 1. **검색** > **새 스냅숏 보고서 만들기**로 이동하고 표시되는 단계를 따릅니다.
+ 1. **검색** > **스냅숏 보고서**로 이동하고 표시되는 단계를 따릅니다.
 
 **Cloud Discovery 보고서를 구성해야 하는 이유는 무엇일까요?**
 조직의 섀도 IT를 파악하는 것이 중요합니다.
@@ -77,8 +77,8 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 ### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>2단계. [응용 프로그램에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업을 사용합니다](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 필요한 작업: 앱 연결
 
-1. **설정** > **앱 커넥터**로 이동합니다.
-2. **응용 프로그램 연결**을 선택하고 응용 프로그램을 선택합니다.
+1. 설정 코그에서 **앱 커넥터**를 선택합니다.
+2. 더하기 기호를 클릭하여 앱을 추가하고 앱을 선택합니다.
 3. 구성 단계에 따라 앱을 연결합니다.
 
 **앱을 연결해야 하는 이유는 무엇일까요?**
@@ -105,7 +105,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **메일 설정을 입력하려면**
 
-1. **설정** > **메일 설정**으로 이동합니다.
+1. 설정 코그에서 **메일 설정**을 선택합니다.
 2. **메일 보낸 사람 ID**에서 메일 주소와 표시 이름을 입력합니다.
 3. **메일 디자인**에서 조직의 메일 템플릿을 업로드합니다.
 
@@ -117,8 +117,9 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **점수 메트릭을 사용자 지정하려면**
 
-1. **설정** > **Cloud Discovery 설정**으로 이동합니다.
-2. **점수 메트릭 구성**에서 다양한 위험 값의 중요도를 구성합니다.
+1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+2. **점수 메트릭** 아래에서 다양한 위험 값의 중요도를 구성합니다.
 3. **저장**을 선택합니다.
 
 이제 검색된 앱에 제공되는 위험 점수가 조직 요구 및 우선 순위에 따라 정확하게 구성됩니다.
@@ -132,8 +133,9 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **IP 주소 태그를 만들려면**
 
-1. **설정** > **IP 주소 태그**로 이동합니다.
-2. (+) **IP 주소 범위 추가**를 선택합니다.
+1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+1. 설정 코그에서 **IP 주소 범위**를 선택합니다.
+2. 더하기 기호를 클릭하여 IP 주소 범위를 추가합니다.
 3. IP 범위 **세부 정보**, **위치**, **태그** 및 **범주**를 입력합니다.
 4. **만들기**를 선택합니다.
 
@@ -141,8 +143,8 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **연속 보고서 만들기**
 
-1. **설정** > **Cloud Discovery 설정**으로 이동합니다.
-2. **연속 보고서 관리** 아래에서 **보고서 만들기**를 선택합니다.
+1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+2. **연속 보고서** 아래에서 **보고서 만들기**를 선택합니다.
 3. 구성 단계를 따릅니다.
 4. **만들기**를 선택합니다.
 
@@ -150,7 +152,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **도메인을 추가하려면**
 
-1. **설정** > **일반 설정**으로 이동합니다.
+1. 설정 코그에서 **설정**을 선택합니다.
 2. **조직 세부 정보**에서 조직의 내부 도메인을 추가합니다.
 3. **저장**을 선택합니다.
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Box 연결
 이 섹션에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  응용 프로그램 권한 액세스를 제한하는 경우 이 단계를 따르세요. 그렇지 않을 경우 2단계로 건너뜁니다.  
   
-    -   Box 관리 콘솔에서 설정 아이콘, **비즈니스 설정**을 차례로 클릭합니다.  
+    -   Box 관리 콘솔에서 설정 아이콘을 클릭한 다음 **비즈니스 설정** 또는 **엔터프라이즈 설정**을 클릭합니다.  
   
          ![box 비즈니스 설정](./media/box-business-settings.png "box 비즈니스 설정")  
   

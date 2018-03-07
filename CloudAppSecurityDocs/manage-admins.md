@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>관리자 액세스 관리
 
@@ -43,7 +43,7 @@ Cloud App Security는 역할 기반 액세스 제어를 지원합니다. 기본�
 
 다음 단계를 수행하여 Azure Active Directory 관리자 역할에 사용자를 추가하지 않고 Cloud App Security에 추가 관리자를 추가할 수도 있습니다.
 
-1. 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘"), **관리자 액세스 관리**를 차례로 클릭합니다. 
+1. 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘"), **관리자 관리**를 차례로 클릭합니다. 
 
 2. Cloud App Security에 액세스할 수 있어야 하는 관리자를 추가합니다.
   

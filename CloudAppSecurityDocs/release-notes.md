@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security의 새로운 기능 | Microsoft Docs"
+title: "Cloud App Security 새 소식 | Microsoft 문서"
 description: "이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다."
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: c2e6d6b3b31c93d69f366b93a7426f62518b948c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+
+## <a name="cloud-app-security-release-118"></a>Cloud App Security 릴리스 118
+릴리스 날짜: 2018년 3월 4일
+
+- 이제 고유한 사용자 지정 앱에서 Microsoft Cloud App Security의 섀도 IT 검색 및 모니터링 기능을 활용할 수 있습니다. Cloud Discovery에 사용자 지정 앱을 추가하는 새로운 기능을 사용하면 앱 사용을 모니터링하고 사용 패턴 변경에 대한 알림을 받을 수 있습니다. 자세한 내용은 [사용자 지정 앱 보호](cloud-discovery-custom-apps.md)를 참조하세요. 이 기능은 점진적으로 출시될 예정입니다.
+
+- Cloud App Security 포털 **설정** 페이지가 다시 디자인되었습니다. 새 디자인은 모든 설정 페이지를 통합하고 검색 기능 및 향상된 디자인을 제공합니다. 
+
+- 이제 Cloud Discovery는 Barracuda F-Series 방화벽 및 Barracuda F-Series 방화벽 웹 로그 스트리밍을 지원합니다.
+
+- 사용자 및 IP 주소 페이지의 검색 기능을 사용하면 자동 완성을 통해 원하는 내용을 더 쉽게 찾을 수 있습니다.
+
+- 이제 엔터티 제외 및 IP 주소 제외 설정 페이지에서 대량 작업을 수행할 수 있습니다. 이렇게 하면 여러 사용자와 그룹 또는 IP 주소를 더욱 쉽게 선택하고 조직에서 Cloud Discovery를 통해 모니터링되지 않도록 제외할 수 있습니다. 
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security 릴리스 117
 릴리스 날짜: 2018년 2월 20일
 
--   Cloud App Security가 Azure Information Protection과 심층 통합되어 이제 G Suite에서 파일을 보호할 수 있습니다. 이 공개 미리 보기 기능을 사용하면 G Suite에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
+-   Cloud App Security가 Azure Information Protection과 심층 통합되어 이제 G Suite에서 파일을 보호할 수 있습니다. 공개 미리 보기 기능을 사용하면 G Suite에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
 
--   이제 Cloud Discovery는 i-FILTER를 지원합니다.
+-   이제 Cloud Discovery는 [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/)를 지원합니다.
 
 -   이제 SIEM 에이전트 표에 더 쉬운 관리를 위한 자세한 정보가 포함됩니다.
 
@@ -102,7 +116,7 @@ ms.lasthandoff: 02/20/2018
 ## <a name="cloud-app-security-release-109"></a>Cloud App Security 릴리스 109
 릴리스 날짜: 2017년 10월 29일 
 
-- Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예를 들면 다음과 같습니다.
+- Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예:
     -   다운로드를 시작하기 전에 차단하여 데이터 누수를 미리를 방지합니다.
     -   클라우드에서 저장되거나 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙을 설정합니다.
     -   보호되지 않는 끝점에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
@@ -191,9 +205,9 @@ ms.lasthandoff: 02/20/2018
     - **사용자 지정 위험 점수**: 앱의 위험 점수를 재정의할 수 있습니다. 예를 들어 앱의 위험 점수가 8이고 해당 앱이 조직에서 사용 권한 앱인 경우 조직에 대한 위험 점수를 10으로 변경할 수 있습니다. 메모를 추가하여 누군가 앱을 검토할 때 변경의 근거를 분명히 설명할 수도 있습니다.
 -   **새 로그 수집기 배포 모드:** 배포를 시작하면서 이제 새로운 배포 모드를 로그 수집기에 사용할 수 있습니다. 현재 가상 어플라이언스 기반 배포 이외에 새로운 Docker(컨테이너) 기반 로그 수집기를 패키지로 Windows 및 Ubuntu 컴퓨터에 온-프레미스 및 Azure를 사용하여 설치할 수 있습니다. Docker를 사용할 경우 호스팅 컴퓨터는 이를 자유롭게 패치 및 모니터링할 수 있는 고객이 소유합니다.
 
-### <a name="announcements"></a>공지 사항: 
--   클라우드 앱 카탈로그는 이제 15,000개 이상의 검색 가능한 앱을 지원합니다.
--   규정 준수: Cloud App Security는 공식적으로 Azure에서 SOC1/2/3 인증되었습니다. 전체 인증 목록은 [규정 준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하고 Cloud App Security에 대한 결과를 필터링하세요.
+### <a name="announcements"></a>알림: 
+-   클라우드 앱 카탈로그가 이제 15,000개가 넘는 검색 가능한 앱 지원
+-   준수: Cloud App Security는 Azure에서 공식적으로 SOC1/2/3 인증을 했습니다. 전체 인증 목록을 보려면 [준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하거나 Cloud App Security 결과를 필터링하세요.
 
 ### <a name="other-improvements"></a>기타 향상된 기능: 
 -   **향상된 구문 분석:** Cloud Discovery 로그 구문 분석 메커니즘에서 기능이 향상되었습니다. 내부 오류 발생 가능성이 크게 감소했습니다.

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: f8dabfd6a7e5d246c1c36dd29e023e294a266f5d
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
 Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
@@ -69,7 +69,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
  
 
 
-## <a name="supported-firewalls-and-proxies"></a>지원되는 방화벽 및 프록시
+## 지원되는 방화벽 및 프록시 <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall(W3C)
 - Blue Coat Proxy SG - Access log(W3C)
@@ -81,6 +81,7 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Cisco Meraki – URL 로그
 - Clavister NGFW(Syslog)
 - Dell Sonicwall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 |Barracuda|**예**|**예**|**예**|**예**|아니요|아니요|
 |Blue Coat|**예**|아니요|**예**|**예**|**예**|**예**|
 |Checkpoint|아니요|**예**|아니요|**예**|아니요|아니요|
-|Cisco ASA|아니요|**예**|아니요|**예**|**예**|아니요|
+|Cisco ASA(Syslog)|아니요|**예**|아니요|**예**|**예**|아니요|
 |Cisco ASA with FirePOWER|**예**|**예**|**예**|**예**|**예**|**예**|
 |Cisco FWSM|아니요|**예**|아니요|**예**|**예**|아니요|
 |Cisco Ironport WSA|**예**|**예**|**예**|**예**|**예**|**예**|
 |Cisco Meraki|**예**|**예**|아니요|**예**|아니요|아니요||Cisco Scansafe|**예**|아니요|**예**|**예**|**예**|**예**|
 |Clavister NGFW(Syslog)|**예**|**예**|**예**|**예**|**예**|**예**|
 |Dell SonicWall|**예**|**예**|아니요|**예**|**예**|**예**|
+|Digital Arts i-FILTER|**예**|**예**|**예**|**예**|**예**|**예**|
 |Fortigate|아니요|**예**|아니요|**예**|**예**|**예**|
 |Juniper SRX|아니요|**예**|아니요|**예**|**예**|**예**|
-|Juniper SSG|아니요|**예**|아니요|**예**|**예**|**예**|
+|Juniper SSG|아니요|**예**|**예**|**예**|**예**|**예**|
 |McAfee SWG|**예**|아니요|아니요|**예**|**예**|**예**|
 |MS TMG|**예**|아니요|**예**|**예**|**예**|**예**|
-|Palo Alto 네트워크|**예**|**예**|**예**|**예**|**예**|**예**|
+|Palo Alto 네트워크|아니요|**예**|**예**|**예**|**예**|**예**|
 |Sophos|**예**|**예**|**예**|**예**|**예**|아니요|
 |Squid(Common)|**예**|아니요|**예**|**예**|아니요|**예**|
 |Squid(Native)|**예**|아니요|**예**|**예**|아니요|**예**|

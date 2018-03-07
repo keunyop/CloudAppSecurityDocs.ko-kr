@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
-ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
+ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -34,7 +34,7 @@ Azure Information Protection을 Cloud App Security에 통합하여 다음과 같
 > 이 기능을 사용하도록 설정하려면 Cloud App Security 라이선스와 Azure Information Protection Premium P2 라이선스가 모두 필요합니다. 두 라이선스가 모두 있으면 Cloud App Security는 즉시 Azure Information Protection 서비스에서 조직 레이블을 동기화합니다.
 
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 - Azure Information Protection 통합 작업을 하려면 [Office 365용 앱 커넥터](connect-office-365-to-microsoft-cloud-app-security.md)를 사용하도록 설정해야 합니다.
 
@@ -43,9 +43,9 @@ Cloud App Security는 현재 다음 파일 형식에 Azure Information Protectio
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
-- PDF 및 이미지 파일은 이후 버전에서 지원될 예정입니다. 
+- 이후 버전에서 PDF를 사용할 수 있습니다. 
 
-이 기능은 현재 Box, G Suite, SharePoint Online 및 비즈니스용 OneDrive에 저장된 파일에 사용할 수 있습니다. 향후 버전에서는 더 많은 클라우드 앱이 지원됩니다.
+이 기능은 현재 Box, G Suite, SharePoint Online 및 비즈니스용 OneDrive에 저장된 파일에서 사용할 수 있습니다. 향후 버전에서는 더 많은 클라우드 앱이 지원됩니다.
 
 Cloud App Security 외부에서 보호 레이블이 지정된 파일은 현재 Cloud App Security에서 검사하거나 변경할 수 없습니다. Cloud App Security 외부로 레이블이 지정된(보호되지 않은) 파일은 검사가 가능하며 Cloud App Security에서 Cloud App Security 정책에 정의된 대로 다른 레이블(보호 여부와 상관없이)을 적용할 수 있습니다.
 
