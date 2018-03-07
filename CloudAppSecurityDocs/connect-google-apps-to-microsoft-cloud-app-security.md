@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -62,7 +62,9 @@ ms.lasthandoff: 01/21/2018
    > [!NOTE]  
    >  지금은 **자격 증명** 경고를 무시합니다.  
 
-8.  **사용 API**가 5개 있어야 합니다.  
+8. 각 API에 대해 [사용]을 클릭합니다.
+     ![Google APPI 사용](./media/google-api.png "google-api")  
+1. 5개의 **사용 가능 API**가 있어야 하고 다른 API를 사용하지 않도록 설정해야 합니다.
   
      ![google 사용 API](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ ms.lasthandoff: 01/21/2018
 
     -   **Visibility**(가시성)에서 **My domain**(not public)(내 도메인(공용 아님))을 선택합니다. 
     -   **변경 내용 저장**을 클릭합니다.  
-  
+        ![google 표시 여부](./media/google-visibility.png "google 표시 여부")  
 22. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
    
       ![google 보안](./media/googlesec.png "google 보안")  
@@ -219,7 +221,7 @@ ms.lasthandoff: 01/21/2018
   
     4.  G Suite 관리자의 **관리자 계정 메일** 하나를 입력합니다.  
   
-    5.  G Suite unlimited 계정이 있는 경우 이 확인란을 선택합니다. Cloud App Security for G Suite unlimited에서 사용할 수 있는 기능에 대한 자세한 내용은 [앱에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업 사용](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)을 참조하세요.  
+    5.  G Suite Business 또는 Enterprise 계정이 있는 경우 이 확인란을 선택합니다. Cloud App Security for G Suite Business 또는 Enterprise에서 사용할 수 있는 기능에 대한 자세한 내용은 [앱에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업 사용](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)을 참조하세요.  
   
     6.  **설정 저장**을 클릭합니다.  
   

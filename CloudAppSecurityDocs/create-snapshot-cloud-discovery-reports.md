@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd4c2cc8a4382a5e3a50903499d098d1e90dce53
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ec381d45d9124220fd227f91d4e4c4673f127014
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Cloud App Security에서 구문 분석하도록 해야 합니다.
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/16/2018
 10. 로그를 업로드하는 데 성공하고 나면 로그 파일 처리가 완료되었다는 내용의 알림이 표시됩니다. 이제 상태 표시줄의 링크를 클릭하거나 설정 코그로 이동하고 **Cloud Discovery 설정**을 선택하여 보고서를 볼 수 있습니다.   
   
      ![Discovery 설정 탭](./media/discovery-settings-tab.png)
-11. 그런 다음 **스냅숏 보고서 관리**를 선택하고 스냅숏 보고서를 선택합니다.
+11. 그런 다음 **스냅숏 보고서**를 선택하고 스냅숏 보고서를 선택합니다.
  
 ![스냅숏 보고서 관리](./media/snapshot-report-managment.png)
 
