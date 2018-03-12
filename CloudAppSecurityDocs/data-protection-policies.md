@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
+ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="file-policies"></a>파일 정책  
 파일 정책을 통해 클라우드 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 지속적인 규정 준수 검색, 법적 eDiscovery 작업, 공개적으로 공유된 중요한 콘텐츠에 대한 DLP 및 더 많은 사용 사례를 제공하도록 정책을 설정할 수 있습니다.  <br></br>
@@ -105,8 +105,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 -   Extensions  
    
     -  향상된 DLP 또는 맬웨어 방지 기능을 위해 콘텐츠 검사는 타사 엔진을 통해 수행할 수 있습니다.  
-  
-    -  사용자 지정 암호화 제어 또는 다른 유형의 파일 처리(예: 사용자 지정 워터마크)를 적용하기 위해 [거버넌스 작업](governance-actions.md)은 타사 엔진을 통해 수행할 수 있습니다.  
+
   
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
