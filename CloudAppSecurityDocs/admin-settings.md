@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="Adminsettings"></a> 관리자 설정 사용자 지정  
 Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메뉴 모음에서 사용자 이름을 클릭하고 **사용자 설정**을 선택하여 다음 설정을 지정합니다.  
   
-1.  **계정 설정**을 클릭합니다. 여기서 사용자에게 표시되는 포털 언어를 사용자 지정할 수 있습니다. 기본 언어로 포털을 표시하도록 설정하거나 다른 언어를 설정할 수 있습니다.  
+1.  **계정 설정**을 클릭합니다. 여기에서 Cloud App Security 포털에 액세스하기 위한 암호를 설정하고 갱신할 수 있습니다.  
   
      ![사용자 지정 설정이](./media/custom-user-settings.png "사용자 지정 사용자 설정")  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a61579877c230849ef721a923d4148ea4950c8d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
@@ -87,7 +87,7 @@ ms.lasthandoff: 01/16/2018
     > [!NOTE] 
     > Azure Active Directory가 Active Directory 온-프레미스 환경의 사용자와 자동으로 동기화되도록 설정되어 있으면 온-프레미스 환경의 설정이 Azure AD 설정을 재정의하고 이 거버넌스 작업이 되돌려집니다. 
   
-    -   암호 철회 – 사용자 암호를 해지하고 다음 로그인 시 새 암호를 설정하도록 강제합니다.  
+    -   사용자가 다시 로그인해야 함 - 사용자가 로그아웃했다가 다시 로그인해야 합니다.  
   
      ![Cloud App Security 활동 정책 거버넌스 작업](./media/activity-policy-ref6.png "활동 정책 ref6")  
   
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/16/2018
 |계정|계정|계정 설정|특정 앱의 계정 설정 페이지(예: Salesforce 내부)로 이동합니다.|모든 앱(OneDrive 및 SharePoint) 설정은 Office 내에서 구성합니다.|
 |계정 |파일|모든 파일 소유권 이전|계정에서 한 사용자의 모든 파일을 선택한 새 사용자가 소유하도록 이전합니다. 이전 소유자가 편집자가 되고 더 이상 공유 설정을 변경할 수 없게 됩니다. 새 소유자는 소유권 변경에 대한 메일 알림을 받게 됩니다.|G Suite|
 |계정, 활동 정책|계정|사용자 일시 중단|사용자에게 액세스 권한과 로그인 권한이 없도록 설정합니다. 사용자가 로그인한 경우 이 작업이 설정되면 사용자가 즉시 잠깁니다.|G Suite, Box, Office, Salesforce|
-|활동 정책, 계정|계정|암호 철회|사용자 계정의 암호를 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 암호를 철회하는 활동 정책을 설정합니다.|G Suite|
+|활동 정책, 계정|계정|사용자가 다시 로그인해야 함|사용자가 응용 프로그램에 발급한 모든 새로 고침 토큰 및 세션 쿠키를 철회합니다. 이렇게 하면 조직의 모든 데이터에 대한 액세스가 금지되며 사용자가 모든 응용 프로그램에 다시 로그인해야 합니다.|G Suite|
 |활동 정책, 계정|계정|관리자 권한 철회|관리자 계정의 권한을 철회합니다. 예를 들어 실패한 로그인 시도 횟수가 10번이 되면 관리자 권한을 철회하는 활동 정책을 설정합니다.|G Suite|
 |앱 대시보드 > 앱 사용 권한|사용 권한|앱 금지 취소|Google 및 Salesforce: 앱에서 금지를 제거하고 사용자가 Google 또는 Salesforce를 사용하여 타사 앱에 사용 권한을 부여하도록 허용합니다. Office 365: Office에 대한 타사 앱의 사용 권한을 복원합니다.|G Suite, Salesforce, Office|
 |앱 대시보드 > 앱 사용 권한|사용 권한|응용 프로그램 사용 권한 사용 안 함|Google, Salesforce 또는 Office에 대한 타사 앱의 사용 권한을 철회합니다. 이는 기존의 모든 사용 권한에 대해 수행되는 일회성 작업이지만 이후 연결을 차단하지는 않습니다. |G Suite, Salesforce, Office|

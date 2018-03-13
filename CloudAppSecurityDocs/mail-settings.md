@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
-메뉴 모음에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **메일 설정**을 선택하여 Cloud App Security에서 관련 위반에 대한 경고 및 알림을 최종 사용자에게 보내도록 요청하는 관리자에게 보내는 메일 알림에 대한 매개 변수를 설정합니다.  
 
-스팸 방지 서비스에서 허용 목록에 포함해야 하는 Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요. 
+Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일 알림 및 관련 위반에 대해 최종 사용자에게 보내는 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요. 
+
+
+1. 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
+
+2. **보낸 사람 메일 주소**: 알림을 보내는 데 사용할 메일 계정입니다.  
+   
+   **보낸 사람 표시 이름**: 메일 메시지의 **보낸 사람** 필드에 표시하려는 이름입니다.  
   
-![메일 설정 메뉴](./media/mail-setting-menu.png "메일 설정 메뉴")  
-  
-다음을 구성합니다.  
-  
-1.  **보낸 사람 메일 주소**: 알림을 보내는 데 사용할 메일 계정입니다.  
-  
-     **보낸 사람 표시 이름**: 메일 메시지의 **보낸 사람** 필드에 표시하려는 이름입니다.  
-  
-     **회신 메일 주소**: 메시지에 회신하는 데 사용할 메일 계정입니다.  
+   **회신 메일 주소**: 메시지에 회신하는 데 사용할 메일 계정입니다.  
   
      ![메일 설정 구성](./media/mail-settings-config.png "메일 설정 구성")  
 
@@ -41,7 +39,7 @@ ms.lasthandoff: 01/16/2018
   
 2.  **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음이 포함되어야 합니다.  
   
-    -   모든 템플릿 CSS는 템플릿에 인라인으로 포함되어야 합니다.  
+    -   모든 템플릿 CSS 파일은 템플릿에 인라인으로 포함되어야 합니다.  
   
     -   템플릿에 편집할 수 없는 다음 세 개의 자리 표시자가 있어야 합니다.  
   
