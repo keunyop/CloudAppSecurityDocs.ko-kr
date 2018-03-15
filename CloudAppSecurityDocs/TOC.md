@@ -43,6 +43,7 @@
 ### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
+#### [Cloud Discovery에 사용자 지정 앱 추가](cloud-discovery-custom-apps.md)
 #### [검색된 앱 필터 및 쿼리](discovered-app-queries.md)
 ### [위험 점수 사용](risk-score.md)
 ## [조사](investigate.md)
