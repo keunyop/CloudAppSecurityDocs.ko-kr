@@ -41,6 +41,7 @@
 ### [랜섬웨어로부터 조직 보호](use-case-ransomware.md)
 ### [중요한 정보의 다운로드 차단](use-case-proxy-block-session-aad.md)
 ### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
+### [Azure Information Protection 레이블을 자동으로 적용](use-case-information-protection.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
 #### [Cloud Discovery에 사용자 지정 앱 추가](cloud-discovery-custom-apps.md)
