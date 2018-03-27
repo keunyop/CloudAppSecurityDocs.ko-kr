@@ -1,23 +1,23 @@
 ---
-title: "Azure Information Protection 분류 레이블 자동 적용 | Microsoft Docs"
-description: "이 항목에서는 Microsoft Cloud App Security에서 Azure Information Protection 분류 레이블을 자동으로 적용하는 프로세스를 설명합니다."
-keywords: 
+title: Azure Information Protection 분류 레이블 자동 적용 | Microsoft Docs
+description: 이 항목에서는 Microsoft Cloud App Security에서 Azure Information Protection 분류 레이블을 자동으로 적용하는 프로세스를 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 분류 레이블 자동 적용  
 
@@ -86,8 +86,8 @@ Box 계정에 저장된 파일에서 신용 카드 번호를 검색하고, 해�
 4. 일치 항목을 클릭하여 보호된 파일을 확인할 수 있습니다. 일치 항목 자체는 중요한 데이터를 보호하기 위해 마스킹됩니다. 
 
 >[!NOTE]
->Cloud App Security는 현재 비즈니스용 Box, SharePoint 및 OneDrive에서 Azure Information Protection 레이블을 자동으로 적용할 수 있도록 지원합니다.
-
+> - Cloud App Security는 현재 비즈니스용 Box, SharePoint 및 OneDrive에서 Azure Information Protection 레이블을 자동으로 적용할 수 있도록 지원합니다.
+> - Cloud App Security를 사용하여 문서에 레이블을 지정하면 시각적 표시가 즉시 적용되지는 않지만 해당 문서를 Office 응용프로그램에서 열고 문서를 처음 저장할 때 적용됩니다. 자세한 내용은 [Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)의 시각적 표시에 레이블을 구성하는 방법을 참조하세요.
 
  ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   

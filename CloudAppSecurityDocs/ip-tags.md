@@ -1,23 +1,23 @@
 ---
-title: "IP 범위 및 태그 설정 | Microsoft 문서"
-description: "이 항목에서는 IP 태그 및 IP 범주 사용에 관한 지침을 제공합니다."
-keywords: 
+title: IP 범위 및 태그 설정 | Microsoft 문서
+description: 이 항목에서는 IP 태그 및 IP 범주 사용에 관한 지침을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> IP 범위 및 태그 사용
 
@@ -26,16 +26,7 @@ ms.lasthandoff: 03/08/2018
   
 IPv4 및 IPv6이 지원됩니다.  
   
-Cloud App Security는 다음 IP 주소에 대한 기본 제공 태그로 미리 구성됩니다. 
-- 네이티브 클라이언트
-- 오래된 운영 체제
-- 관리되는 장치
-- 익명 프록시
-- 봇네트(활동이 봇네트에 의해 수행된 경우 특정 봇네트에 대한 세부 정보 링크가 제공됨)
-- Tor
-- 규격 장치
-- 확인된 장치
-- 가장
+Cloud App Security는 Azure 및 Office 365와 같이 널리 사용되는 클라우드 공급자를 위해 내장 IP 범위가 사전 구성되어 제공됩니다. 또한 익명 프록시, 봇네트 및 토르 등 Microsoft 위협 인텔리전스를 기반으로 하는 태그가 내장되어 있습니다. IP 주소 범위 페이지의 드롭다운에서 전체 목록을 볼 수 있습니다.
 
 검색의 일부로 이러한 기본 제공 태그를 사용하려면 Cloud App Security API 설명서에서 해당 ID를 참조하세요. 
 

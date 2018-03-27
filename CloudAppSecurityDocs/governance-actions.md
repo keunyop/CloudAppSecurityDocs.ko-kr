@@ -1,27 +1,31 @@
 ---
-title: "연결된 앱을 제어하기 위해 거버넌스 작업을 적용하는 방법| Microsoft 문서"
-description: "이 항목에서는 Cloud App Security에서 수행할 수 있는 모든 거버넌스 작업 및 이 작업을 추적하는 로그 메시지를 나열하고 설명합니다."
-keywords: 
+title: 연결된 앱을 제어하기 위해 거버넌스 작업을 적용하는 방법| Microsoft 문서
+description: 이 항목에서는 Cloud App Security에서 수행할 수 있는 모든 거버넌스 작업 및 이 작업을 추적하는 로그 메시지를 나열하고 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 8339081e7600faf417a35ff4a4318b60d84eece1
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 거버넌스를 사용하면 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어할 수 있습니다. 연결된 앱의 경우 파일 또는 활동에 거버넌스 작업을 적용할 수 있습니다.
 거버넌스 작업은 연결된 앱 전체에서 사용자가 수행할 수 있는 작업을 실시간으로 제어하기 위해 Cloud App Security에서 곧바로 파일 또는 활동에 대해 실행할 수 있는 통합 작업입니다. 
+
+> [!NOTE]
+> Cloud App Security가 파일에서 거버넌스 작업을 실행하려 하지만 파일이 잠겨 있어 실패하며, 자동으로 거버넌스 작업을 다시 시도합니다. 
+
 
 ### <a name="file-governance-actions"></a>파일 거버넌스 작업  
 

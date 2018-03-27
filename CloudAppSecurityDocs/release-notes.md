@@ -1,26 +1,31 @@
 ---
-title: "Cloud App Security 새 소식 | Microsoft 문서"
-description: "이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다."
-keywords: 
+title: Cloud App Security 새 소식 | Microsoft 문서
+description: 이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security 릴리스 119
+릴리스 날짜: 2018년 3월 18일
+
+-   IP 주소 범위 페이지에는 Cloud App Security에서 검색된 기본 제공 IP 주소가 포함됩니다. 여기에는 Azure 및 Office 365와 같이 확인된 클라우드 서비스의 IP 주소뿐만 아니라 알려진 위험 IP 주소 정보로 IP 주소를 자동으로 강화하는 위협 인텔리전스 피드가 포함됩니다. 
+-   Cloud App Security가 파일에서 거버넌스 작업을 실행하려 하지만 파일이 잠겨 있어 실패하며, 지금 자동으로 거버넌스 작업을 다시 시도합니다. 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security 릴리스 118
 릴리스 날짜: 2018년 3월 4일
