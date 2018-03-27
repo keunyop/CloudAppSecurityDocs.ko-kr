@@ -1,29 +1,33 @@
 ---
-title: "앱을 연결하여 Cloud App Security의 표시 유형 및 제어 향상 | Microsoft 문서"
-description: "이 항목에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다."
-keywords: 
+title: 앱을 연결하여 Cloud App Security의 표시 유형 및 제어 향상 | Microsoft 문서
+description: 이 항목에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c14ba598a593dd8711151eb58e0eab75d0ea8791
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-apps"></a>앱 연결 
 앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
   
 Cloud App Security는 클라우드 공급자가 제공하는 API를 활용하며, 각 서비스에는 자체 프레임워크 및 API 제한 사항이 있습니다. Cloud App Security는 서비스와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 서비스에서 API에 적용하는 다양한 제한 사항(예: 제한, API 제한, 동적 시간 이동 API 창 등)을 고려하여 Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
   
+## <a name="multi-instance-support"></a>여러 인스턴스 지원
+
+Cloud App Security는 연결된 동일한 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 이 지원은 API 연결 앱에만 적용되며, 클라우드 검색된 앱 또는 프록시 연결된 앱에는 적용되지 않습니다.
+
 ## <a name="how-it-works"></a>작동 방식  
 Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한을 허용하는 시스템 관리자 권한으로 배포됩니다.  
   

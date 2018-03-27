@@ -1,30 +1,30 @@
 ---
-title: "연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서"
-description: "이 항목에서는 온-프레미스 서버의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다."
-keywords: 
+title: 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
+description: 이 항목에서는 온-프레미스 서버의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 13110a717b907decd2bafc938a01548f16d7bd76
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
+ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu 및 RHEL 온-프레미스의 Docker
 
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
--   OS: Ubuntu 14.04 이상(Ubuntu 17.10을 지원하는 안정적인 버전의 Docker 없음)
+-   OS: Ubuntu 14.04 이상(Ubuntu 17.10을 지원하는 안정적인 버전의 Docker 없음) 또는 RHEL 7.2 이상 
 
 -   디스크 공간: 250GB
 

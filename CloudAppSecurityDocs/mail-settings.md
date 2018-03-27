@@ -1,23 +1,23 @@
 ---
-title: "메일 알림 기본 설정 | Microsoft 문서"
-description: "이 문서에서는 Cloud App Security에서 보낸 메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: 메일 알림 기본 설정 | Microsoft 문서
+description: 이 문서에서는 Cloud App Security에서 보낸 메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
 
@@ -29,7 +29,9 @@ Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일
 2. **보낸 사람 메일 주소**: 알림을 보내는 데 사용할 메일 계정입니다.  
    
    **보낸 사람 표시 이름**: 메일 메시지의 **보낸 사람** 필드에 표시하려는 이름입니다.  
-  
+   > [!NOTE]
+   > [rfc822 프로토콜](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름에 유니 코드 문자만 지원됩니다.
+
    **회신 메일 주소**: 메시지에 회신하는 데 사용할 메일 계정입니다.  
   
      ![메일 설정 구성](./media/mail-settings-config.png "메일 설정 구성")  
