@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
-description: "Cloud App Security 사용 방법을 알아봅니다."
-ms.openlocfilehash: d499b8abe9aa775dbd0c248cf117040c322111de
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+description: Cloud App Security 사용 방법을 알아봅니다.
+ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-app-security-documentation"></a>Cloud App Security 설명서
 
@@ -138,5 +138,4 @@ Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공
                 </div>
             </div>
         </div>
-    </li>    
-</ul>
+    </li><br/></ul>
