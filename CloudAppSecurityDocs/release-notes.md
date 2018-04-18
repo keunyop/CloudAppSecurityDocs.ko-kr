@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security 릴리스 120
+릴리스 날짜: 2018년 4월 8일
+
+-   Office 365 및 Azure AD를 위해 현재 Office 365 및 Azure AD 응용 프로그램(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 내부 응용 프로그램을 감지하는 기능을 도입하고 있습니다. 이를 통해 응용 프로그램에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 
+-   앱 권한 목록을 csv로 내보낼 때 규정 준수 및 조사 프로세스를 지원하기 위해 게시자, 권한 수준 및 커뮤니티 사용량과 같은 추가 필드가 포함됩니다.
+-   ServiceNow 연결 앱이 개선되어 내부 서비스 활동이 더 이상 "게스트"가 수행한 것으로 등록되지 않으며 또 가양성 경고를 트리거하지 않습니다. 이러한 활동은 이제 연결된 다른 모든 앱처럼 N/A로 표시됩니다.
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security 릴리스 119
 릴리스 날짜: 2018년 3월 18일
@@ -64,11 +72,11 @@ ms.lasthandoff: 03/19/2018
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security 릴리스 115
 릴리스 날짜: 2018년 1월 21일
 
--   이 릴리스는 파일 정책에서 특정 폴더를 선택할 때 개선된 환경을 제공합니다. 이제 정책에 포함할 여러 폴더를 쉽게 보고 선택할 수 있습니다. 
--   **검색된 앱** 페이지에서: 
-   - 대량 태그 지정 기능을 사용하여 사용 권한 및 비사용 권한 태그 외에 사용자 지정 태그를 적용할 수 있습니다. 
-   - **IP 주소 보고서를 생성**하거나 **사용자 보고서를 생성**하면 이제 내보낸 보고서에 트래픽이 사용 권한 앱에서 온 것인지 또는 비사용 권한 앱에서 온 것인지에 대한 정보가 포함됩니다. 
--   이제 포털의 **앱 연결** 페이지에서 직접 Microsoft Cloud App Security 팀으로부터 새 API 앱 커넥터를 요청할 수 있습니다. 
+- 이 릴리스는 파일 정책에서 특정 폴더를 선택할 때 개선된 환경을 제공합니다. 이제 정책에 포함할 여러 폴더를 쉽게 보고 선택할 수 있습니다. 
+- **검색된 앱** 페이지에서: 
+  - 대량 태그 지정 기능을 사용하여 사용 권한 및 비사용 권한 태그 외에 사용자 지정 태그를 적용할 수 있습니다. 
+  - **IP 주소 보고서를 생성**하거나 **사용자 보고서를 생성**하면 이제 내보낸 보고서에 트래픽이 사용 권한 앱에서 온 것인지 또는 비사용 권한 앱에서 온 것인지에 대한 정보가 포함됩니다. 
+- 이제 포털의 **앱 연결** 페이지에서 직접 Microsoft Cloud App Security 팀으로부터 새 API 앱 커넥터를 요청할 수 있습니다. 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security 릴리스 114
