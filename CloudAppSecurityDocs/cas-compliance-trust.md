@@ -1,23 +1,23 @@
 ---
-title: "Cloud App Security 준수, 데이터 보안, 개인 정보, 신뢰 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security 준수 제품, 신뢰 센터, 개인 정보 및 데이터 보안에 대해 설명합니다."
-keywords: 
+title: Cloud App Security 준수, 데이터 보안, 개인 정보, 신뢰 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security 준수 제품, 신뢰 센터, 개인 정보 및 데이터 보안에 대해 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/11/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: efa135ed66891e4af5f685405b742fb9f1d5667e
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security 준수, 신뢰, 데이터 보안 및 개인 정보
 
@@ -40,15 +40,15 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 |----|----|----|
 |![로고 csa](./media/csastar-attest.png)|CSA STAR 증명|Azure 및 Intune은 독립적인 감사에 따라 Cloud Security Alliance STAR 증명을 획득했습니다.|
 |![로고 csa](./media/csastar.png)|CSA STAR 인증|Azure, Intune 및 Power BI는 Cloud Security Alliance STAR 인증의 골드 레벨을 획득했습니다.|
-|![로고 EU 모범 조항](./media/eu-model-icon.png)|[EU 모범 조항](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft는 EU 표준 계약 조항을 제공하며, 개인 데이터의 전송을 보장합니다.|
+|![로고 EU 모범 조항](./media/eu-model-icon.png)|[EU 모범 조항](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft는 EU 표준 계약 조항을 제공하며, 개인 데이터의 전송을 보장합니다.|
 |![로고 개인 정보 보호](./media/privacy_shield.png)|EU-U.S. 개인 정보 보호|Microsoft는 EU에서 미국으로 전송되는 개인 데이터를 보호하기 위해 이 체계를 준수합니다.|
 |![로고 FISC](./media/logo_fisc.png)|FISC|Microsoft는 일본의 FISC(Financial Industry Information Systems) v8 표준 요구 사항을 충족합니다.|
-|![로고 HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/trustcenter/compliance/hipaa)|Microsoft는 HIPAA(Health Insurance Portability & Accountability Act) BAA(Business Associate Agreement)를 제공합니다.|
+|![로고 HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft는 HIPAA(Health Insurance Portability & Accountability Act) BAA(Business Associate Agreement)를 제공합니다.|
 |![로고 iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft는 이러한 품질 관리 표준의 구현에 대한 인증을 받았습니다.|
-|![로고 iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001)|Microsoft는 이러한 정보 보안 관리 표준의 구현에 대한 인증을 받았습니다.|
-|![로고 iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/trustcenter/compliance/iso-iec-27018)|Microsoft는 클라우드 개인 정보 보호에 대한 이 규칙을 준수하는 첫 번째 클라우드 공급자였습니다.|
+|![로고 iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft는 이러한 정보 보안 관리 표준의 구현에 대한 인증을 받았습니다.|
+|![로고 iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft는 클라우드 개인 정보 보호에 대한 이 규칙을 준수하는 첫 번째 클라우드 공급자였습니다.|
 |![로고 PCI](./media/pci-logo.png)|PCI DSS|Azure는 PCI(Payment Card Industry) DSS(Data Security Standards) 레벨 1 버전 3.1을 준수합니다.|
-|![로고 SOC](./media/soc-logo.png)|[SOC 1 및 SOC 2 Type 2 보고서](https://www.microsoft.com/trustcenter/compliance/soc)|Microsoft 클라우드 서비스는 운영 보안에 대한 SOC(Service Organization Controls) 표준을 준수합니다.|
+|![로고 SOC](./media/soc-logo.png)|[SOC 1 및 SOC 2 Type 2 보고서](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Microsoft 클라우드 서비스는 운영 보안에 대한 SOC(Service Organization Controls) 표준을 준수합니다.|
 |![로고 SOC](./media/soc-logo.png)|SOC 3|Microsoft 클라우드 서비스는 운영 보안에 대한 SOC(Service Organization Controls) 표준을 준수합니다.|
 |![로고 g-cloud](./media/g-cloud.png)|영국 G-Cloud|CCS(Crown Commercial Service)는 Microsoft 클라우드 서비스 분류를 정부 클라우드 v6으로 갱신했습니다.|
 
@@ -66,7 +66,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 
 -   Cloud App Security는 구독하는 서비스 제공에 부합하는 목적으로만 데이터를 사용합니다.
 
--   정부가 Microsoft에 고객 데이터 액세스를 요청할 경우 Microsoft는 가능한 경우 언제나 고객에게 문의를 다시 보냅니다. Microsoft는 고객 데이터에 대한 [정부 요청](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)의 공개를 금지한, 유효하지 않은 법적 요구에 이의를 제기했습니다. [데이터에 액세스할 수 있는 대상 사용자 및 관련 조건](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)을 자세히 알아보세요.
+-   정부가 Microsoft에 고객 데이터 액세스를 요청할 경우 Microsoft는 가능한 경우 언제나 고객에게 문의를 다시 보냅니다. Microsoft는 고객 데이터에 대한 [정부 요청](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)의 공개를 금지한, 유효하지 않은 법적 요구에 이의를 제기했습니다. [데이터에 액세스할 수 있는 대상 사용자 및 관련 조건](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)을 자세히 알아보세요.
 
 ### <a name="privacy-controls"></a>개인 정보 제어
 
@@ -76,7 +76,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 
 -   Microsoft Cloud App Security는 현재 미국 및 유럽(각 “지역”)의 데이터 센터에서 작동합니다. 테넌트 계정은 사용자가 가입할 때 선택한 국가에 따라 지역에서 만들어집니다. 특히 데이터는 해당 위치에 가장 가까운 지역의 데이터 센터에 저장됩니다.
 
-[개인 정보에 대한 자세한 정보](https://www.microsoft.com/trustcenter/privacy)
+[개인 정보에 대한 자세한 정보](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>투명성
 
@@ -100,7 +100,7 @@ Microsoft Cloud App Security에서는 다음과 같이 데이터를 유지합니
 
 [온라인 서비스 약관](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)을 참고하여 Microsoft 데이터 사례에 대해 자세히 알아볼 수 있습니다.
 
-[투명성에 대한 자세한 정보](https://www.microsoft.com/trustcenter/about/transparency) 
+[투명성에 대한 자세한 정보](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
 ## <a name="security"></a>보안
 

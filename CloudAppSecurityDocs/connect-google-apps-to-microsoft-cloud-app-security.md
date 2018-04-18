@@ -1,23 +1,23 @@
 ---
-title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 G Suite 연결 | Microsoft 문서"
-description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 G Suite 연결 | Microsoft 문서
+description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 9dba7289b83397ae68224b56332baf1a59abe704
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.
@@ -25,109 +25,109 @@ ms.lasthandoff: 03/05/2018
   
 ## <a name="configure-g-suite"></a>G Suite 구성  
   
-1.  G Suite 슈퍼 관리자로 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>에 로그인합니다.  
+1. G Suite 슈퍼 관리자로 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>에 로그인합니다.  
   
-2.  **Create project**(프로젝트 만들기)를 클릭하여 새 프로젝트를 시작합니다.  
+2. **Create project**(프로젝트 만들기)를 클릭하여 새 프로젝트를 시작합니다.  
   
-     ![google1](./media/google1.png "google1")  
+    ![google1](./media/google1.png "google1")  
   
-3.  **새 프로젝트** 화면에서:</br>
-    프로젝트 이름을 **Microsoft Cloud App Security**로 지정하고 **만들기**를 클릭합니다.  
-           ![google2](./media/google2.png "google2")  
+3. **새 프로젝트** 화면에서:</br>
+   프로젝트 이름을 **Microsoft Cloud App Security**로 지정하고 **만들기**를 클릭합니다.  
+          ![google2](./media/google2.png "google2")  
   
-4.  프로젝트를 만든 후 도구 모음에서 **Google Cloud Platform**을 클릭하고 위쪽의 드롭다운에서 오른쪽 프로젝트가 선택되어 있는지 확인합니다.
+4. 프로젝트를 만든 후 도구 모음에서 **Google Cloud Platform**을 클릭하고 위쪽의 드롭다운에서 오른쪽 프로젝트가 선택되어 있는지 확인합니다.
        
-       ![google 프로젝트](./media/googleverify-project.png "googleverify 프로젝트")  
+      ![google 프로젝트](./media/googleverify-project.png "googleverify 프로젝트")  
 
 5. **API** 아래에서 **API 개요로 이동**을 클릭합니다.  
   
      ![google3](./media/google3.png "google3")  
   
-6.  **API** 아래에서 나열된 API를 모두 사용하지 않도록 설정합니다.  
+6. **API** 아래에서 나열된 API를 모두 사용하지 않도록 설정합니다.  
       
-7.  **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
+7. **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
      
-    -   관리자 SDK  
+   -   관리자 SDK  
   
-    -   감사 API  
+   -   감사 API  
   
-    -   Google 드라이브 API  
+   -   Google 드라이브 API  
   
-    -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace API  
   
-    -   Gmail API  
+   -   Gmail API  
             
- ![google api](./media/google4.png "google4")  
+   ![google api](./media/google4.png "google4")  
   
    > [!NOTE]  
    >  지금은 **자격 증명** 경고를 무시합니다.  
 
 8. 각 API에 대해 [사용]을 클릭합니다.
      ![Google APPI 사용](./media/google-api.png "google-api")  
-1. 5개의 **사용 가능 API**가 있어야 하고 다른 API를 사용하지 않도록 설정해야 합니다.
+9. 5개의 **사용 가능 API**가 있어야 하고 다른 API를 사용하지 않도록 설정해야 합니다.
   
      ![google 사용 API](./media/google5.png "google5")  
   
-9.  **자격 증명**을 클릭한 후 **OAuth 동의 화면** 탭을 선택합니다.
+10. **자격 증명**을 클릭한 후 **OAuth 동의 화면** 탭을 선택합니다.
   
-    -   **사용자에게 표시되는 제품 이름**에서 **Microsoft Cloud App Security**를 입력합니다.  
+    - **사용자에게 표시되는 제품 이름**에서 **Microsoft Cloud App Security**를 입력합니다.  
   
-    -   다른 모든 필드는 선택 사항입니다.  
+    - 다른 모든 필드는 선택 사항입니다.  
   
-    -   **Save**을 클릭합니다.  
+    - **Save**을 클릭합니다.  
   
-     ![Google 제품 이름](./media/google6.png "google6")  
+      ![Google 제품 이름](./media/google6.png "google6")  
   
-10. **자격 증명** 탭에서 **자격 증명 만들기** 옆의 화살표를 클릭합니다.  
+11. **자격 증명** 탭에서 **자격 증명 만들기** 옆의 화살표를 클릭합니다.  
   
      ![Google 자격 증명](./media/google7.png "google7")  
 
-11. **Service account key**(서비스 계정 키)를 선택합니다.
+12. **Service account key**(서비스 계정 키)를 선택합니다.
 
      ![Google 서비스 계정 키](./media/google8.png "google8")  
   
-12. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름을 입력합니다(예: **Service account 1**). **Role**(역할)에서 **Project**(프로젝트), **Editor**(편집기)를 차례로 선택합니다. **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. P12 인증서 파일이 컴퓨터에 저장됩니다.
+13. **Create service account key**(서비스 계정 키 만들기)에서 **New service account**(새 서비스 계정)를 선택하고 이름을 입력합니다(예: **Service account 1**). **Role**(역할)에서 **Project**(프로젝트), **Editor**(편집기)를 차례로 선택합니다. **Key type**(키 유형)에서 **P12**를 선택하고 **Create**(만들기)를 클릭합니다. P12 인증서 파일이 컴퓨터에 저장됩니다.
  
      ![Google에서 서비스 계정 키 만들기](./media/google9.png "google9")  
   
-13.  나중에 필요하므로 서비스에 할당된 **Service account ID**(서비스 계정 ID)를 복사합니다.    
+14. 나중에 필요하므로 서비스에 할당된 **Service account ID**(서비스 계정 ID)를 복사합니다.    
         
-14. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
+15. **자격 증명** 화면에서 맨 오른쪽에 있는 **서비스 계정 관리**를 클릭합니다.  
      
     ![G Suite 자격 증명 서비스 계정](./media/google10.png "G Suite 자격 증명 서비스 계정")  
   
-15. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **Edit**(편집)을 선택합니다.  
+16. 만든 서비스 계정의 오른쪽에 있는 3개의 점을 클릭하고 **Edit**(편집)을 선택합니다.  
   
      ![google 편집](./media/google11.png "google 편집")  
   
-16. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
+17. **Enable G Suite Domain-wide Delegation**(G Suite 도메인 수준 위임 사용) 확인란을 선택하고 **저장**을 클릭합니다.  
   
      ![google 서비스 계정 ID](./media/google12.png "google12")  
   
-17. 제목 표시줄에서 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 엽니다. **Google Cloud Platform**을 클릭하고 왼쪽 메뉴의 **API 및 서비스** 탭을 클릭합니다.  
+18. 제목 표시줄에서 Google Cloud Platform 옆에 있는 세 개의 가로선을 클릭하여 Google 메뉴를 엽니다. **Google Cloud Platform**을 클릭하고 왼쪽 메뉴의 **API 및 서비스** 탭을 클릭합니다.  
     
-18. 열린 대시보드에서 사용 가능한 API 목록까지 아래로 스크롤하고 **Google 드라이브 API**를 클릭합니다.   
+19. 열린 대시보드에서 사용 가능한 API 목록까지 아래로 스크롤하고 **Google 드라이브 API**를 클릭합니다.   
        ![Google 드라이브 선택](./media/google14.png "google14")  
 
-19. **드라이브 UI 통합** 탭을 클릭하고 다음 정보를 입력합니다.
+20. **드라이브 UI 통합** 탭을 클릭하고 다음 정보를 입력합니다.
 
-    -   **응용 프로그램 이름**: Microsoft Cloud App Security.  
+    - **응용 프로그램 이름**: Microsoft Cloud App Security.  
   
-    -   **짧은 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 응용 프로그램을 파악할 수 있으며 클라우드 응용 프로그램 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 응용 프로그램에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
+    - **짧은 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 응용 프로그램을 파악할 수 있으며 클라우드 응용 프로그램 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 응용 프로그램에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
   
-    -   Google을 사용하려면 하나 이상의 응용 프로그램 아이콘을 업로드해야 합니다. [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)으로 이동하고 Cloud App Security 아이콘이 포함된 zip 파일을 다운로드합니다. 그런 다음 **응용 프로그램 아이콘**에서 128x128 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다. 32x32 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다.  
+    - Google을 사용하려면 하나 이상의 응용 프로그램 아이콘을 업로드해야 합니다. [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)로 이동하여 Cloud App Security 아이콘을 포함하는 zip 파일을 다운로드합니다. 그런 다음 **응용 프로그램 아이콘**에서 128x128 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다. 32x32 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다.  
   
-    -   아래로 스크롤하고 **드라이브 통합** 섹션에서 **URL 열기:** 아래에 다음 URL을 입력합니다.  
+    - 아래로 스크롤하고 **드라이브 통합** 섹션에서 **URL 열기:** 아래에 다음 URL을 입력합니다.  
   
-         https://portal.cloudappsecurity.com/#/services/11770?tab=files  
+       https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
-       ![Google 드라이브 편집](./media/google15.png "google15")  
+      ![Google 드라이브 편집](./media/google15.png "google15")  
 
-20. **변경 내용 저장**을 클릭합니다.
+21. **변경 내용 저장**을 클릭합니다.
 
-20. **사용 가능한 API** 목록으로 돌아갑니다. **Google Apps Marketplace SDK**를 클릭합니다. 
+22. **사용 가능한 API** 목록으로 돌아갑니다. **Apps Marketplace SDK**를 클릭합니다. 
       
-21. **구성** 탭을 선택합니다. 
+23. **구성** 탭을 선택합니다. 
   
     -   나중에 사용하기 위해 맨 위에 표시되는 **프로젝트 번호(앱 ID)**를 복사합니다.  
   
@@ -139,13 +139,13 @@ ms.lasthandoff: 03/05/2018
   
     -   **응용 프로그램 아이콘**에서 필수 이미지 4개를 구성합니다.  
   
-         이미지는 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)에서 찾을 수 있습니다.  
+         [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)에서 이미지를 찾을 수 있습니다.  
   
     -   다음 **지원 URL**을 입력합니다.  
   
         -   **서비스 약관 URL**: http://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **개인 정보 취급 방침 URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **개인정보처리방침 URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   **OAuth 2.0 scopes**(OAuth 2.0 범위)에서 다음 URL을 복사한 후 붙여넣습니다(한 번에 하나씩 복사한 후 <Enter> 키 누르기).  
   
@@ -190,14 +190,14 @@ ms.lasthandoff: 03/05/2018
     -   **Visibility**(가시성)에서 **My domain**(not public)(내 도메인(공용 아님))을 선택합니다. 
     -   **변경 내용 저장**을 클릭합니다.  
         ![google 표시 여부](./media/google-visibility.png "google 표시 여부")  
-22. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
+24. [admin.google.com](https://admin.google.com/)으로 이동하고 **Security**(보안)를 선택합니다. 
    
       ![google 보안](./media/googlesec.png "google 보안")  
  
-23. **API 참조**를 선택합니다.  
+25. **API 참조**를 선택합니다.  
        ![google api 사용](./media/googleapi.png "google api")  
       
-24. **API 액세스 사용**을 선택하고 **변경 내용 저장**을 클릭합니다.  
+26. **API 액세스 사용**을 선택하고 **변경 내용 저장**을 클릭합니다.  
   
     ![google api 참조](./media/googleapiref.png "google8")  
 

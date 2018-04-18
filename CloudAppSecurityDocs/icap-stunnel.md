@@ -1,23 +1,23 @@
 ---
-title: "ICAP를 통한 Cloud App Security 외부 DLP 통합 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다."
-keywords: 
+title: ICAP를 통한 Cloud App Security 외부 DLP 통합 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
@@ -72,7 +72,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 #### <a name="install-stunnel-on-windows"></a>Windows에 stunnel 설치
 
 1. [최신 Windows Server 설치를 다운로드합니다](https://www.stunnel.org/downloads.html)(최근 Windows Server 버전에서 작업해야 함).
-(기본 설치)
+   (기본 설치)
 
 2. 설치하는 동안 새로운 자체 서명된 인증서를 만들지 마세요. 나중 단계에서 인증서를 만들 것입니다.
 
@@ -80,34 +80,34 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
 4. 다음 방법 중 하나로 인증서를 만듭니다.
 
-   -    인증서 관리 서버를 사용하여 ICAP 서버에서 SSL 인증서를 만들고 나서 stunnel 설치를 준비한 서버에 키를 복사합니다.
-   -    또는 stunnel 서버에서 다음 OpenSSL 명령을 사용하여 개인 키 및 자체 서명된 인증서를 생성합니다. 다음 변수를 바꿉니다.
-       -    **key.pem**(개인 키 이름 포함)
-       -    **cert.pem**(인증서 이름 포함)
-       -    **stunnel-key**(새로 만들어진 키 이름 포함)
+   - 인증서 관리 서버를 사용하여 ICAP 서버에서 SSL 인증서를 만들고 나서 stunnel 설치를 준비한 서버에 키를 복사합니다.
+   - 또는 stunnel 서버에서 다음 OpenSSL 명령을 사용하여 개인 키 및 자체 서명된 인증서를 생성합니다. 다음 변수를 바꿉니다.
+     -    **key.pem**(개인 키 이름 포함)
+     -    **cert.pem**(인증서 이름 포함)
+     -    **stunnel-key**(새로 만들어진 키 이름 포함)
 
 5. stunnel 설치 경로에서 config 디렉터리를 엽니다. 기본 경로는 c:\Program Files (x86)\stunnel\config\입니다.
 6. 관리자 권한으로 명령줄을 실행합니다. `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. cert.pem 및 key.pem을 연결하고 파일에 저장합니다. `type cert.pem key.pem >> stunnel-key.pem`
+7. cert.pem 및 key.pem을 연결하고 파일에 저장합니다. `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [공개 키를 다운로드](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)하고 **C:\Program Files (x86)\stunnel\config\MCASca.pem** 위치에 저장합니다.
+8. [공개 키를 다운로드](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)하고 **C:\Program Files (x86)\stunnel\config\MCASca.pem** 위치에 저장합니다.
 
-10. 다음 규칙을 추가하여 Windows 방화벽에서 포트를 엽니다.
+9. 다음 규칙을 추가하여 Windows 방화벽에서 포트를 엽니다.
 
-        rem Open TCP Port 11344 inbound and outbound
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
+       rem Open TCP Port 11344 inbound and outbound
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. `c:\Program Files (x86)\stunnel\bin\stunnel.exe`를 실행하여 stunnel 응용 프로그램을 엽니다. 
+10. `c:\Program Files (x86)\stunnel\bin\stunnel.exe`를 실행하여 stunnel 응용 프로그램을 엽니다. 
 
-12. **구성**, **구성 편집**을 차례로 클릭합니다.
+11. **구성**, **구성 편집**을 차례로 클릭합니다.
 
-   ![Windows Server 구성 편집](./media/stunnel-windows.png)
+    ![Windows Server 구성 편집](./media/stunnel-windows.png)
  
-13. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 또한 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음을 파일에 복사합니다.
+12. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 또한 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음을 파일에 복사합니다.
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -116,9 +116,9 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-12. 파일을 저장하고 **구성 다시 로드**를 클릭합니다.
+13. 파일을 저장하고 **구성 다시 로드**를 클릭합니다.
 
-13. 모든 것이 예상대로 실행 중인지 유효성을 검사하려면 명령 프롬프트에서 `netstat -nao  | findstr 11344`를 실행합니다.
+14. 모든 것이 예상대로 실행 중인지 유효성을 검사하려면 명령 프롬프트에서 `netstat -nao  | findstr 11344`를 실행합니다.
  
 
 #### <a name="install-stunnel-on-ubuntu"></a>Ubuntu에 stunnel 설치
@@ -151,7 +151,7 @@ ICAP 서버 및 Cloud App Security에서는 stunnel을 통해 서버 암호화 �
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Cloud App Security stunnel 클라이언트 공개 키 다운로드
 
-https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 위치에서 공개 키를 다운로드하고 **/etc/ssl/certs/MCASCAfile.pem** 위치에 저장합니다.
+이 위치(https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)에서 공개 키를 다운로드하고 이 위치(**/etc/ssl/certs/MCASCAfile.pem**)에 저장
 
 ### <a name="configure-stunnel"></a>stunnel 구성 
 
@@ -260,23 +260,25 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
  
 ### <a name="detection-server-installation"></a>검색 서버 설치 
 Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent for Web 서버입니다. 여러 구성 옵션을 변경해야 합니다.
-1.  **평가 모드** 사용 안 함:
-    1. **시스템** > **서버 및 탐지기** 아래에서 ICAP 대상을 클릭합니다. 
+1. **평가 모드** 사용 안 함:
+   1. **시스템** > **서버 및 탐지기** 아래에서 ICAP 대상을 클릭합니다. 
     
       ![ICAP 대상](./media/icap-target.png)
     
-    2. **구성**을 클릭합니다. 
+   2. **구성**을 클릭합니다. 
     
       ![ICAP 대상 구성](./media/configure-icap-target.png)
     
-    3. **평가 모드**를 사용하지 않도록 구성합니다.
+   3. **평가 모드**를 사용하지 않도록 구성합니다.
     
       ![평가 모드 사용 안 함](./media/icap-disable-trial-mode.png)
     
 2. **ICAP** > **응답 필터링** 아래에서 **다음보다 적은 응답 무시** 값을 1로 변경합니다.
 
-3. "application/*"를 **콘텐츠 형식 검사**의 목록에 추가합니다.
+
+3. "application/<em>"을 **콘텐츠 형식 검사</em>**의 목록에 추가합니다.
      ![콘텐츠 형식 검사](./media/icap-inspect-content-type.png)
+
 4. **저장**을 클릭합니다.
 
 
