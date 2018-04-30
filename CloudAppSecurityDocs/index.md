@@ -1,15 +1,15 @@
 ---
 layout: LandingPage
-description: Cloud App Security 사용 방법을 알아봅니다.
-ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
-ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
+description: Microsoft Cloud App Security 사용 방법을 알아봅니다.
+ms.openlocfilehash: 63bdaefbb58fed837aa9d9ce363801693b3eafbf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="cloud-app-security-documentation"></a>Cloud App Security 설명서
+# <a name="microsoft-cloud-app-security-documentation"></a>Microsoft Cloud App Security 설명서
 
-Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공하세요.
+Microsoft Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공하세요.
 여러분이 클라우드에 있든지 없든지 간에, 직원들은 있습니다. 심층적 가시성, 포괄적인 컨트롤 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 승인되거나 승인되지 않은 클라우드 응용 프로그램에 온-프레미스 시스템의 보안을 가져오세요.
 
 <ul class="panelContent cardsFTitle">
@@ -24,7 +24,7 @@ Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cloud App Security에 대한 자세한 정보</h3>
+                        <h3>Microsoft Cloud App Security에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cloud App Security를 사용하여 클라우드 앱 사용 제어</h3>
+                        <h3>Microsoft Cloud App Security를 사용하여 클라우드 앱 사용 제어</h3>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cloud App Security에 대한 추가 정보</h3>
+                        <h3>Microsoft Cloud App Security에 대한 자세한 정보</h3>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cloud App Security에 대한 지원 받기</h3>
+                        <h3>Microsoft Cloud App Security에 대한 지원 받기</h3>
                     </div>
                 </div>
             </div>
