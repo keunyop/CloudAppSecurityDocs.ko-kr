@@ -1,26 +1,28 @@
 ---
-title: "Cloud App Security 대시보드 사용 | Microsoft 문서"
-description: "이 문서는 Cloud App Security 대시보드의 기초적인 사용 방법을 제공합니다."
-keywords: 
+title: Cloud App Security 대시보드 사용 | Microsoft 문서
+description: 이 문서는 Cloud App Security 대시보드의 기초적인 사용 방법을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
 # <a name="working-with-the-dashboard"></a>대시보드 사용
-Cloud App Security를 실행하고 나면 데이터 스트림을 구성하고, 사람들의 사용을 허용할 응용 프로그램 권한을 부여하고, 클라우드 환경을 모니터링할 정책을 설정해야 합니다. 그러고 나면 Cloud App Security를 사용하여 클라우드를 제어 및 보호하고 위험을 관리할 수 있습니다.  
+Microsoft Cloud App Security를 실행하고 나면 데이터 스트림을 구성하고, 사람들의 사용을 허용할 앱 권한을 부여하고, 클라우드 환경을 모니터링할 정책을 설정해야 합니다. 그러고 나면 Cloud App Security를 사용하여 클라우드를 제어 및 보호하고 위험을 관리할 수 있습니다.  
 
 이 항목에서는 Cloud App Security로 매일 수행해야 하는 작업을 설명합니다.  
 

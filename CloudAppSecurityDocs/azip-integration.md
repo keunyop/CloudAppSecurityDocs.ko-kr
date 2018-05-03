@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security와 Azure Information Protection 통합 | Microsoft 문서"
-description: "이 문서에서는 Cloud App Security에서 Azure Information Protection 태그를 활용하여 조직의 클라우드 응용 프로그램 사용을 상세히 제어하는 방법에 관한 정보를 제공합니다."
-keywords: 
+title: Cloud App Security와 Azure Information Protection 통합 | Microsoft 문서
+description: 이 문서에서는 Cloud App Security에서 Azure Information Protection 태그를 활용하여 조직의 클라우드 응용 프로그램 사용을 상세히 제어하는 방법에 관한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
-Cloud App Security를 통해 Azure Information Protection 분류 레이블을 보호 여부와 상관없이 파일 정책 거버넌스 작업으로 파일에 자동 적용할 수 있습니다. Cloud App Security 포털 내에서 적용된 분류 레이블을 필터링하여 파일을 조사할 수도 있습니다. 이렇게 하면 클라우드에서 중요한 데이터를 더 잘 볼 수 있고 제어할 수 있습니다. Azure Information Protection을 Cloud App Security와 통합하는 작업은 확인란 하나를 선택하는 것만큼 쉽습니다. 
+Microsoft Cloud App Security를 통해 Azure Information Protection 분류 레이블을 보호 여부와 상관없이 파일 정책 거버넌스 작업으로 파일에 자동 적용할 수 있습니다. Cloud App Security 포털 내에서 적용된 분류 레이블을 필터링하여 파일을 조사할 수도 있습니다. 이렇게 하면 클라우드에서 중요한 데이터를 더 잘 볼 수 있고 제어할 수 있습니다. Azure Information Protection을 Cloud App Security와 통합하는 작업은 확인란 하나를 선택하는 것만큼 쉽습니다. 
 
 Azure Information Protection을 Cloud App Security에 통합하여 다음과 같이 클라우드에서 서비스와 안전한 파일의 전체 성능을 모두 활용할 수 있습니다.
 - 특정 정책과 일치하는 파일에 분류 레이블을 거버넌스 작업으로 적용할 수 있는 기능
@@ -90,17 +93,17 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
 
 1. **파일** 페이지에서 보호하려는 파일을 선택한 후 파일의 행 끝부분에 있는 점 세 개를 클릭하고 **분류 레이블 적용**을 선택합니다.
 
- ![앱 보호](./media/protect-app.png)
+   ![앱 보호](./media/protect-app.png)
   
-  >[!NOTE]
-  > Cloud App Security는 최대 50MB인 파일에 Azure Information Protection을 적용할 수 있습니다.  
+   >[!NOTE]
+   > Cloud App Security는 최대 50MB인 파일에 Azure Information Protection을 적용할 수 있습니다.  
 
 2. 파일에 적용할 조직의 분류 레이블 중 하나를 선택하라는 메시지가 표시되면 **적용**을 클릭합니다. 
-![보호 분류 레이블](./media/protect-template.png)
+   ![보호 분류 레이블](./media/protect-template.png)
 
 3. 분류 레이블을 선택하고 적용을 클릭하면 Cloud App Security가 분류 레이블을 원본 파일에 적용합니다.
 
-5. **분류 레이블 제거** 옵션을 선택하여 분류 레이블을 제거할 수도 있습니다. 
+4. **분류 레이블 제거** 옵션을 선택하여 분류 레이블을 제거할 수도 있습니다. 
 
 
 Cloud App Security와 Azure Information Protection이 함께 작동하는 방식에 관한 자세한 내용은 [사용자 실수로부터 데이터 보호](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)를 참조하세요.
@@ -111,9 +114,9 @@ Cloud App Security와 Azure Information Protection이 함께 작동하는 방식
 
 다음 지침에 따라 파일 정책을 만듭니다.
 
-1.  파일 정책을 만듭니다.
-2.  검색할 파일 형식을 포함하는 정책(예: **액세스 수준**이 **내부**와 같지 않고 **소유자 OU**가 재무팀과 동일한 모든 파일)을 설정합니다. 
-3.  관련 앱의 거버넌스 작업에서 **분류 레이블 적용**을 선택한 다음 레이블 형식을 선택합니다.
+1. 파일 정책을 만듭니다.
+2. 검색할 파일 형식을 포함하는 정책(예: **액세스 수준**이 **내부**와 같지 않고 **소유자 OU**가 재무팀과 동일한 모든 파일)을 설정합니다. 
+3. 관련 앱의 거버넌스 작업에서 **분류 레이블 적용**을 선택한 다음 레이블 형식을 선택합니다.
 
    ![레이블 적용](./media/aip-gov-action.png)
 

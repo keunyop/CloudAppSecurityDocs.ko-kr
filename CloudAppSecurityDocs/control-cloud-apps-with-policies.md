@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security에서 정책을 만들어 클라우드 앱 사용 제어 | Microsoft 문서"
-description: "이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: Cloud App Security에서 정책을 만들어 클라우드 앱 사용 제어 | Microsoft 문서
+description: 이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 578cedd1f499f91ae2e740a7e0e0f1495d86f3cb
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
 
 정책을 사용하면 사용자가 클라우드에서 동작하게 하려는 방식을 정의할 수 있습니다. 클라우드 환경에서 위험한 동작, 위반 또는 의심스러운 데이터 요소 및 활동을 검색할 수 있으며, 필요한 경우 완전한 위험 완화를 위해 수정 워크플로를 통합할 수 있습니다. 클라우드 환경에 대해 수집하려는 다양한 정보 유형 및 수행할 수 있는 수정 작업 유형과 상호 관련된 여러 유형의 정책이 있습니다.  
@@ -59,7 +62,7 @@ Cloud App Security는 클라우드에서 다양한 위험을 완화하는 데 �
 -   **클라우드 검색:** 새로운 앱이 조직에서 사용되고 있나요? 모르는 Shadow IT 앱이 사용되는 문제가 있나요?  
   
      규제와 산업 인증 및 모범 사례를 기반으로 각 클라우드 앱의 전반적인 위험을 평가하여, 각 클라우드 응용 프로그램의 사용자 수, 활동 수, 트래픽 양 및 일반적인 사용 시간을 모니터링할 수  
-    있습니다.  
+    각 클라우드 응용 프로그램에 대한 사용자, 활동, 트래픽 볼륨 및 일반적인 사용 시간 수를 모니터링할 수 있습니다.  
   
 -   **DLP:** 소유 파일이 공개적으로 공유되고 있나요? 파일을 격리해야 하나요?  
   
@@ -93,18 +96,18 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
 **정책 템플릿**에서 정책을 만들려면 다음 단계를 수행합니다.  
   
-1.  콘솔에서 **제어**, **템플릿**을 차례로 클릭합니다.  
+1. 콘솔에서 **제어**, **템플릿**을 차례로 클릭합니다.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  사용하려는 템플릿 행의 오른쪽 끝에 있는 **+**를 클릭합니다. 사전 정의된 템플릿 구성이 포함된 정책 만들기 페이지가 열립니다.  
+2. 사용하려는 템플릿 행의 오른쪽 끝에 있는 **+** 를 클릭합니다. 사전 정의된 템플릿 구성이 포함된 정책 만들기 페이지가 열립니다.  
   
-3.  사용자 지정 정책에 필요한 경우 템플릿을 수정합니다. 이 새로운 템플릿 기반 정책의 모든 속성 및 필드를 요구에 따라 수정할 수 있습니다.  
-> [!NOTE] 
->정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 예를 들어 **malware** 또는 **virus**를 검색하는 경우 virus_malware_file.exe를 찾지만 malwarevirusfile.exe는 찾지 않습니다. *malware.exe*를 검색하는 경우 파일 이름에 malware 또는 exe가 포함된 모든 파일을 찾지만 **"malware.exe"**(따옴표 포함)를 검색하는 경우 정확하게 "malware.exe"가 포함된 파일만 찾습니다. 
-     **같음**은 전체 문자열만 검색합니다. 예를 들어 *malware.exe*를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다.  
-4.  새로운 템플릿 기반 정책을 만들면 정책 템플릿 테이블에서 정책을 만든 템플릿 옆에 있는 **연결된 정책** 열에 새 정책에 대한 링크가 나타납니다.   
-     각 템플릿에서 정책을 원하는 개수만큼 만들 수 있으며, 원래 템플릿에 연결되어 동일한 템플릿으로 작성한 모든 정책을 추적할 수 있도록 합니다.  
+3. 사용자 지정 정책에 필요한 경우 템플릿을 수정합니다. 이 새로운 템플릿 기반 정책의 모든 속성 및 필드를 요구에 따라 수정할 수 있습니다.  
+   > [!NOTE] 
+   >정책 필터를 사용하는 경우 **포함**은 쉼표, 점, 공백 또는 밑줄로 구분된 전체 단어만 검색합니다. 예를 들어 **malware** 또는 **virus**를 검색하는 경우 virus_malware_file.exe를 찾지만 malwarevirusfile.exe는 찾지 않습니다. *malware.exe*를 검색하는 경우 파일 이름에 malware 또는 exe가 포함된 모든 파일을 찾지만 **"malware.exe"**(따옴표 포함)를 검색하는 경우 정확하게 "malware.exe"가 포함된 파일만 찾습니다. 
+    **같음**은 전체 문자열만 검색합니다. 예를 들어 *malware.exe*를 검색하는 경우 malware.exe를 찾지만 malware.exe.txt는 찾지 않습니다.  
+4. 새로운 템플릿 기반 정책을 만들면 정책 템플릿 테이블에서 정책을 만든 템플릿 옆에 있는 **연결된 정책** 열에 새 정책에 대한 링크가 나타납니다.   
+    각 템플릿에서 정책을 원하는 개수만큼 만들 수 있으며, 원래 템플릿에 연결되어 동일한 템플릿으로 작성한 모든 정책을 추적할 수 있도록 합니다.  
   
 또는 **조사하는 동안 정책을 만들** 수 있습니다. **활동 로그**, **파일** 또는 **계정**을 조사 중이며 드릴다운하여 특정 항목을 검색하는 경우 언제든지 조사 결과에 따라 새 정책을 만들 수 있습니다.  
   

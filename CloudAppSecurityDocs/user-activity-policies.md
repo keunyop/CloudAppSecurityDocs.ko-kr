@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security에서 활동을 제어하기 위한 정책 만들기 | Microsoft 문서"
-description: "이 항목에서는 활동 정책을 만들고 사용하기 위한 지침을 제공합니다."
-keywords: 
+title: Cloud App Security에서 활동을 제어하기 위한 정책 만들기 | Microsoft 문서
+description: 이 항목에서는 활동 정책을 만들고 사용하기 위한 지침을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 87e05e1b28ef469b6f180fbd4479ac6727b22f3b
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="activity-policies"></a>활동 정책
 활동 정책을 통해 앱 공급자의 API를 활용하는 다양한 자동화된 프로세스를 적용할 수 있습니다. 이러한 정책을 사용하면 다양한 사용자가 수행하는 특정 활동을 모니터링하거나 한 가지 특정 활동 유형의 예기치 않게 높은 비율을 팔로우할 수 있습니다.  
   
@@ -68,15 +71,15 @@ ms.lasthandoff: 01/16/2018
 **활동 정책**은 20개 이상의 파일 메타데이터 필터(장치 유형 및 위치 포함)를 고려하여 클라우드의 조직 활동을 모니터링할 수 있도록 하는 API 기반 정책입니다. 정책 결과에 따라 알림이 생성될 수 있으며 사용자가 클라우드 앱에서 일시 중단될 수 있습니다.   
 각 정책은 다음 부분으로 구성됩니다.  
   
--   활동 필터 – 메타데이터에 따라 매우 세부적인 조건을 만들 수 있습니다.  
+- 활동 필터 – 메타데이터에 따라 매우 세부적인 조건을 만들 수 있습니다.  
   
--   활동 일치 매개 변수 - 정책과 일치하는 것으로 간주되기 위해 활동이 반복되는 횟수의 임계값을 설정할 수 있습니다.  정책 일치 확인에 필요한 반복되는 활동의 수를 지정합니다(예: 사용자가 2분 동안 로그인 시도를 10회 실패할 경우 경고하는 정책 설정).  기본적으로 **활동 일치 매개 변수**는 모든 활동 필터를 충족하는 모든 단일 활동에 대해 일치를 발생시킵니다.   
-**반복 활동**을 사용하여 반복 활동 수와 활동이 계산되는 시간 프레임 기간을 설정하고 동일한 사용자가 동일한 클라우드 앱에서 모든 활동을 수행하도록 지정할 수 있습니다.  
+- 활동 일치 매개 변수 - 정책과 일치하는 것으로 간주되기 위해 활동이 반복되는 횟수의 임계값을 설정할 수 있습니다.  정책 일치 확인에 필요한 반복되는 활동의 수를 지정합니다(예: 사용자가 2분 동안 로그인 시도를 10회 실패할 경우 경고하는 정책 설정).  기본적으로 **활동 일치 매개 변수**는 모든 활동 필터를 충족하는 모든 단일 활동에 대해 일치를 발생시킵니다.   
+  **반복 활동**을 사용하여 반복 활동 수와 활동이 계산되는 시간 프레임 기간을 설정하고 동일한 사용자가 동일한 클라우드 앱에서 모든 활동을 수행하도록 지정할 수 있습니다.  
   
   
--   작업 - 위반 항목이 발견될 때 자동으로 적용할 수 있는 거버넌스 작업 집합을 제공합니다.  
-## <a name="see-also"></a>참고 항목  
-[데이터 보호 정책](data-protection-policies.md)   
+- 작업 - 위반 항목이 발견될 때 자동으로 적용할 수 있는 거버넌스 작업 집합을 제공합니다.  
+  ## <a name="see-also"></a>참고 항목  
+  [데이터 보호 정책](data-protection-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   

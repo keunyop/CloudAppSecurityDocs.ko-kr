@@ -1,43 +1,45 @@
 ---
-title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 ServiceNow 연결 | Microsoft 문서"
-description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 ServiceNow 연결 | Microsoft 문서
+description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a8e439e170b5684c105ac7ae398deaa4e0c10f6
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: b0ada957e7054f0054e808975a6b9c1323067252
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
-이 섹션에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다. 
+이 섹션에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 
 
- >  [!NOTE]
+> [!NOTE]
 >  ServiceNow를 배포할 때는 Fuji 이상 릴리스에 제공되는 OAuth 앱 토큰을 사용하는 것이 좋습니다(관련 [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)(ServiceNow 설명서)을 참조하세요. 이전 릴리스의 경우 사용자/암호를 기반으로 [레거시 연결 모델](#legacy-servicenow-connection)을 사용할 수 있습니다. 제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
-
- > [!NOTE]  
+> 
+> [!NOTE]
 >  Cloud App Security는 Eureka, Fiji, Geneva, Helsinki 및 Istanbul의 ServiceNow 버전을 지원합니다. ServiceNow를 Cloud App Security와 연결하려면 **관리자** 역할이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.  자세한 내용은 [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)(ServiceNow 제품 설명서)을 참조하세요.
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>OAuth를 사용하여 Cloud App Security에 ServiceNow를 연결하는 방법
   
   
-1.  관리자 계정을 사용하여 ServiceNow 계정에 로그온합니다.  
+1. 관리자 계정을 사용하여 ServiceNow 계정에 로그온합니다.  
  
-  > [!NOTE]
-  >  제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
+   > [!NOTE]
+   >  제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
 
-2.  **Filter navigator**(필터 탐색기) 검색 창에 **OAuth**를 입력하고 **Application Registry**(응용 프로그램 레지스트리)를 선택합니다.
+2. **Filter navigator**(필터 탐색기) 검색 창에 **OAuth**를 입력하고 **Application Registry**(응용 프로그램 레지스트리)를 선택합니다.
 
 3. **Application Registries**(응용 프로그램 레지스트리) 메뉴 모음에서 **New**(새로 만들기)를 클릭하여 새 OAuth 프로필을 만듭니다.
 
@@ -61,23 +63,23 @@ ms.lasthandoff: 03/05/2018
 
    ![ServiceNow 프로필 ID](./media/servicenow-profile-ids.png)
 
-6.  Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
+6. Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-7.  **앱 커넥터** 페이지에서 더하기 단추, **ServiceNow**를 차례로 클릭합니다.  
+7. **앱 커넥터** 페이지에서 더하기 단추, **ServiceNow**를 차례로 클릭합니다.  
   
-     ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")  
+    ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")  
   
-8.  팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다. ServiceNow 포털에서 ServiceNow 사용자 ID를 찾으려면 **사용자**로 이동하고 표에서 이름을 찾습니다. ID는 사용자 ID 옆에 표시됩니다.
+8. 팝업에서 해당 상자에 ServiceNow 사용자 ID, 암호, 인스턴스 URL, 클라이언트 ID 및 클라이언트 암호를 추가합니다. ServiceNow 포털에서 ServiceNow 사용자 ID를 찾으려면 **사용자**로 이동하고 표에서 이름을 찾습니다. ID는 사용자 ID 옆에 표시됩니다.
 
-    ![ServiceNow 사용자 ID](./media/servicenow-userid.png)
+   ![ServiceNow 사용자 ID](./media/servicenow-userid.png)
   
-9.  **연결**을 클릭합니다.  
+9. **연결**을 클릭합니다.  
   
-     ![servicenow CAS에 연결](./media/servicenow-portal-connect.png "포털에서 servicenow 연결")  
+    ![servicenow CAS에 연결](./media/servicenow-portal-connect.png "포털에서 servicenow 연결")  
   
-10.  **Test now**(지금 테스트)를 클릭하여 연결에 성공했는지 확인합니다.  
+10. **Test now**(지금 테스트)를 클릭하여 연결에 성공했는지 확인합니다.  
   
-     테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.  
+    테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.  
   
 ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다.
   
@@ -85,30 +87,30 @@ ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩�
 
 ServiceNow를 Cloud App Security와 연결하려면 관리자 수준 권한이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.   
 
-1.  관리자 계정을 사용하여 ServiceNow 계정에 로그온합니다.   
+1. 관리자 계정을 사용하여 ServiceNow 계정에 로그온합니다.   
 
-2.  Cloud App Security에 대한 새 서비스 계정을 만들고 새로 만든 계정에 관리자 역할을 연결합니다.   
+2. Cloud App Security에 대한 새 서비스 계정을 만들고 새로 만든 계정에 관리자 역할을 연결합니다.   
 
-3.  REST API 플러그 인이 켜져 있는지 확인합니다.   
+3. REST API 플러그 인이 켜져 있는지 확인합니다.   
 
-    ![servicenow 계정](./media/servicenow-account.png "servicenow 계정")   
+   ![servicenow 계정](./media/servicenow-account.png "servicenow 계정")   
 
-4.  Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.   
+4. Cloud App Security 포털에서 **조사**, **사용 권한 앱**을 차례로 클릭합니다.   
 
-5.  ServiceNow 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **ServiceNow**를 차례로 클릭합니다.   
+5. ServiceNow 행의 **앱 커넥터 상태** 열에서 **연결**을 클릭하거나 **앱 연결** 단추, **ServiceNow**를 차례로 클릭합니다.   
 
-    ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")   
+   ![servicenow 연결](./media/connect-servicenow.png "servicenow 연결")   
 
-6.  ServiceNow 설정 페이지의 API 탭에서 해당 상자에 ServiceNow 사용자 ID, 암호 및 인스턴스 URL을 추가합니다.   
+6. ServiceNow 설정 페이지의 API 탭에서 해당 상자에 ServiceNow 사용자 ID, 암호 및 인스턴스 URL을 추가합니다.   
 
-7.  **연결**을 클릭합니다.   
+7. **연결**을 클릭합니다.   
 
    ![servicenow 암호 업데이트](./media/servicenow-update-password.png "servicenow 암호 업데이트")   
 
-8.  **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.   
+8. **API 테스트**를 클릭하여 연결에 성공했는지 확인합니다.   
   
    테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **닫기**를 클릭합니다.    
- ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다. 
+   ServiceNow를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다. 
 
 
 ## <a name="see-also"></a>참고 항목  

@@ -1,26 +1,28 @@
 ---
-title: "관리자 기본 설정 지정 | Microsoft 문서"
-description: "이 문서에서는 Cloud App Security에서 관리자 기본 설정 지정에 대한 지침을 제공합니다."
-keywords: 
+title: 관리자 기본 설정 지정 | Microsoft 문서
+description: 이 문서에서는 Cloud App Security에서 관리자 기본 설정 지정에 대한 지침을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 3651f962973d9e2850301097e403d2da7b9eb01e
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
 ##  <a name="Adminsettings"></a> 관리자 설정 사용자 지정  
-Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메뉴 모음에서 사용자 이름을 클릭하고 **사용자 설정**을 선택하여 다음 설정을 지정합니다.  
+Microsoft Cloud App Security의 관리자로 기본 설정을 지정하려면 포털 메뉴 모음에서 사용자 이름을 클릭하고 **사용자 설정**을 선택하여 다음 설정을 지정합니다.  
   
 1.  **계정 설정**을 클릭합니다. 여기에서 Cloud App Security 포털에 액세스하기 위한 암호를 설정하고 갱신할 수 있습니다.  
   

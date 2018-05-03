@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security의 이전 업데이트 아카이브 | Microsoft Docs"
-description: "이 항목은 Cloud App Security의 이전 릴리스에서 만들어졌던 업데이트를 설명하는 아카이브입니다."
-keywords: 
+title: Cloud App Security의 이전 업데이트 아카이브 | Microsoft Docs
+description: 이 항목은 Cloud App Security의 이전 릴리스에서 만들어졌던 업데이트를 설명하는 아카이브입니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eccb23c10641517090c9fead2231eb5ebceb2000
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 이전 릴리스 아카이브
 
 최신 새로운 기능 목록을 보려면 [Cloud App Security의 새로운 기능](release-notes.md)을 참조하세요.
@@ -77,7 +80,7 @@ ms.lasthandoff: 03/08/2018
   
   자세한 내용은 [프록시를 사용하여 앱 보호](proxy-intro-aad.md)를 참조하세요.
 
--   특정 서비스 활동 이름에 따라 필터링하는 기능을 점진적으로 배포하고 있습니다. 이 새로운 활동 유형 필터는 자세히 세분화되어 있어 매우 일반적인 활동 유형과 달리 특정 앱 활동을 모니터링할 수 있습니다. 예를 들어 이전에는 **실행 명령**을 필터링할 수 있었고, 이제는 특정 EXO cmdlet을 필터링할 수 있습니다. 활동 이름은 **유형(앱)**의 [활동] 서랍에서도 확인할 수 있습니다. 이 기능은 결국 활동 유형 필터를 바꿉니다.  
+-   특정 서비스 활동 이름에 따라 필터링하는 기능을 점진적으로 배포하고 있습니다. 이 새로운 활동 유형 필터는 자세히 세분화되어 있어 매우 일반적인 활동 유형과 달리 특정 앱 활동을 모니터링할 수 있습니다. 예를 들어 이전에는 **실행 명령**을 필터링할 수 있었고, 이제는 특정 EXO cmdlet을 필터링할 수 있습니다. 활동 이름은 **유형(앱)** 의 [활동] 서랍에서도 확인할 수 있습니다. 이 기능은 결국 활동 유형 필터를 바꿉니다.  
 
 -   클라우드 검색에서는 이제 Cisco ASA with FirePOWER를 지원합니다. 
 
@@ -173,16 +176,16 @@ ms.lasthandoff: 03/08/2018
 
 #### <a name="new-features"></a>새로운 기능
 
--   이제 의심스러운 사용자 활동 경고 및 손상된 계정에 대한 빠르고 효과적인 해결 방법으로 사용자가 모든 Office 365 및 Azure AD 앱에 다시 로그인하도록 요구할 수 있습니다. 정책 설정 및 경고 페이지의 [사용자 일시 중단] 옵션 옆에서 새 거버넌스를 찾을 수 있습니다.
--   활동 로그에서 **가장 역할 할당 추가** 활동을 필터링할 수 있습니다. 이 활동을 사용하여 관리자는 cmdlet **New-ManagementRoleAssignment**를 사용하여 사용자 또는 시스템 계정에 **응용 프로그램 가장** 역할을 지정한 시간을 검색할 수 있습니다. 이 역할을 가진 가장자는 가장자 계정과 연결된 사용 권한이 아니라 가장된 계정과 연결된 사용 권한을 사용하여 작업을 수행할 수 있습니다.
-Cloud Discovery 향상된 기능:
--   Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discovery 데이터를 보강할 수 있습니다. 이 기능을 사용하도록 설정하면 검색 트래픽 로그에 받은 사용자 이름이 Azure AD 사용자 이름과 일치하고 이 사용자 이름으로 대체되어 다음과 같은 새 기능을 사용할 수 있습니다.
+- 이제 의심스러운 사용자 활동 경고 및 손상된 계정에 대한 빠르고 효과적인 해결 방법으로 사용자가 모든 Office 365 및 Azure AD 앱에 다시 로그인하도록 요구할 수 있습니다. 정책 설정 및 경고 페이지의 [사용자 일시 중단] 옵션 옆에서 새 거버넌스를 찾을 수 있습니다.
+- 활동 로그에서 **가장 역할 할당 추가** 활동을 필터링할 수 있습니다. 이 활동을 사용하여 관리자는 cmdlet **New-ManagementRoleAssignment**를 사용하여 사용자 또는 시스템 계정에 **응용 프로그램 가장** 역할을 지정한 시간을 검색할 수 있습니다. 이 역할을 가진 가장자는 가장자 계정과 연결된 사용 권한이 아니라 가장된 계정과 연결된 사용 권한을 사용하여 작업을 수행할 수 있습니다.
+  Cloud Discovery 향상된 기능:
+- Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discovery 데이터를 보강할 수 있습니다. 이 기능을 사용하도록 설정하면 검색 트래픽 로그에 받은 사용자 이름이 Azure AD 사용자 이름과 일치하고 이 사용자 이름으로 대체되어 다음과 같은 새 기능을 사용할 수 있습니다.
   - Azure Active Directory 사용자에 의한 섀도 IT 사용량을 조사할 수 있습니다.
   - 검색된 클라우드 앱 사용을 API로 수집된 활동과 상호 연결할 수 있습니다.
   - Azure AD 사용자 그룹을 기반으로 사용자 지정 로그를 만들 수 있습니다. 예를 들어 특정 마케팅 부서에 대한 섀도 IT 보고서를 만들 수 있습니다.
--   Juniper syslog 파서의 기능이 향상되었습니다. 이제 welf 및 sd-syslog 형식을 지원합니다.
--   응용 프로그램 검색을 개선하기 위해 Palo Alto 파서의 기능이 향상되었습니다.
--   로그가 성공적으로 업로드되는지 확인하기 위해 Cloud App Security 포털에서 로그 수집기의 상태를 확인할 수 있습니다. 
+- Juniper syslog 파서의 기능이 향상되었습니다. 이제 welf 및 sd-syslog 형식을 지원합니다.
+- 응용 프로그램 검색을 개선하기 위해 Palo Alto 파서의 기능이 향상되었습니다.
+- 로그가 성공적으로 업로드되는지 확인하기 위해 Cloud App Security 포털에서 로그 수집기의 상태를 확인할 수 있습니다. 
 
 #### <a name="general-improvements"></a>일반적인 향상된 기능:
 -   이제 기본 제공 IP 주소 태그 및 사용자 지정 IP 태그는 계층 구조로 고려되고, 사용자 지정 IP 태그가 기본 제공 IP 태그보다 우선합니다. 예를 들어 IP 주소를 위협 인텔리전스에 따라 **위험**으로 태그 지정하지만 **회사**로 식별하는 IP 태그가 있는 경우, 사용자 지정 범주 및 태그가 우선 순위로 적용됩니다.
@@ -256,8 +259,7 @@ Cloud Discovery 업데이트:
 
 - Microsoft 회사 계정(Office 365 및 Azure Active Directory)의 경우 Cloud App Security가 프록시 주소, 별칭, SID 등과 같은 여러 사용자 ID를 단일 계정 아래에 그룹화합니다. 계정과 관련된 모든 별칭이 기본 메일 주소 아래에 표시됩니다. 사용자 ID 목록에 따라, 행위자가 사용자 ID인 작업의 경우 행위자가 기본 사용자 이름 UPN(사용자 계정 이름)으로 표시됩니다. UPN에 따라 그룹이 할당되고 정책이 적용됩니다. 그러면 예외 사항 및 그룹 기반 정책에 대해 활동에 대한 조사가 향상되고 모든 관련 활동이 동일한 세션으로 융합됩니다. 이 기능은 다음 달에 점진적으로 출시될 예정입니다.
 
-- 브라우저 사용 기본 제공 보고서에 가능한 위험 요소로 로봇 태그가 추가되었습니다. 이제 브라우저 사용이 오래된 항목으로 태그가 지정되는 것 외에도 로봇이 브라우저 사용을 수행한 시기를 확인할 수 있습니다. [기본 제공 보고서](built-in-report-reference.md)에 대해 자세히 알아보세요.
-
+- 브라우저 사용 기본 제공 보고서에 가능한 위험 요소로 로봇 태그가 추가되었습니다. 이제 브라우저 사용이 오래된 항목으로 태그가 지정되는 것 외에도 로봇이 브라우저 사용을 수행한 시기를 확인할 수 있습니다. 
 - 콘텐츠 검사 파일 정책을 만들 때 이제 50개 이상의 일치 항목이 있는 파일만 포함하도록 필터를 설정할 수 있습니다.
 
 
@@ -343,8 +345,8 @@ Cloud Discovery 업데이트:
 -   활동 설명의 명확성과 일관성이 향상되었습니다. 이제 각 활동은 피드백 단추를 제공하므로 이해하지 못하거나 궁금한 사항이 있는 활동이 있는 경우 Microsoft에 알려줄 수 있습니다. 
  
 **향상된 기능**  
--   파일의 모든 외부 사용자를 제거할 수 있는, Office 365에 대한 새로운 거버넌스 작업이 추가되었습니다. 예를 들어 이 기능을 통해 **내부 전용 분류가 있는 파일에서 외부 공유를 제거**하는 정책을 구현할 수 있습니다.
--   SharePoint Online에서 외부 사용자 식별이 향상되었습니다. "외부 사용자" 그룹에 대해 필터링할 때 app@sharepoint 시스템 계정이 표시되지 않습니다.
+- 파일의 모든 외부 사용자를 제거할 수 있는, Office 365에 대한 새로운 거버넌스 작업이 추가되었습니다. 예를 들어 이 기능을 통해 **내부 전용 분류가 있는 파일에서 외부 공유를 제거**하는 정책을 구현할 수 있습니다.
+- SharePoint Online에서 외부 사용자 식별이 향상되었습니다. “외부 사용자” 그룹을 필터링할 때 app@"sharepoint" 시스템 계정이 표시되지 않습니다.
 
 
 
@@ -427,11 +429,11 @@ Cloud Discovery 업데이트:
 -   이제 Cloud App Security에서는 향상된 통합 및 자동 프로비저닝이 포함된 Microsoft Azure Information Protection을 지원합니다. 태그 보안 분류를 사용하여 파일을 필터링하고 파일 정책을 설정한 다음 보려는 분류 레이블을 설정할 수 있습니다. 또한 레이블은 분류가 조직의 사용자에 의해 설정되었는지 다른 테넌트의 사용자(외부)에 의해 설정되었는지를 나타냅니다. Azure Information Protection 분류 레이블을 기반으로 활동 정책을 설정하고 Office 365에서 분류 레이블의 자동 검색을 사용하도록 설정할 수도 있습니다. 이 훌륭한 새 기능을 활용하는 방법에 관한 자세한 내용은 [Azure Information Protection와의 통합](azip-integration.md)을 참조하세요.
  
 **향상된 기능**
--   Cloud App Security 활동 로그가 다음과 같이 향상되었습니다. 
-   -    보안 및 규정 준수 센터의 Office 365 이벤트가 이제 Cloud App Security와 통합되어 **활동 로그**에 표시됩니다.
-   -    모든 Cloud App Security 활동은 Cloud App Security 활동 로그에 관리자 활동으로 등록됩니다.
--   파일 관련 경고의 조사를 돕기 위해, 파일 정책에서 발생하는 각 경고에서 이제 해당 파일에서 수행한 활동의 목록을 볼 수 있습니다.
--   비정상 검색 엔진의 이동 불가능 알고리즘이 작은 테넌트를 더 잘 지원하도록 개선되었습니다. 
+- Cloud App Security 활동 로그가 다음과 같이 향상되었습니다. 
+  -    보안 및 규정 준수 센터의 Office 365 이벤트가 이제 Cloud App Security와 통합되어 **활동 로그**에 표시됩니다.
+  -    모든 Cloud App Security 활동은 Cloud App Security 활동 로그에 관리자 활동으로 등록됩니다.
+- 파일 관련 경고의 조사를 돕기 위해, 파일 정책에서 발생하는 각 경고에서 이제 해당 파일에서 수행한 활동의 목록을 볼 수 있습니다.
+- 비정상 검색 엔진의 이동 불가능 알고리즘이 작은 테넌트를 더 잘 지원하도록 개선되었습니다. 
  
 **사소하게 향상된 기능**
 -   **활동 내보내기 제한**이 10,000개로 올라갔습니다. 

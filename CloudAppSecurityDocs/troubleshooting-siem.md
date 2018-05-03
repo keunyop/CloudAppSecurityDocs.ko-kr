@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security와 SIEM 통합 문제 해결 | Microsoft 문서"
-description: "이 항목에서는 SIEM을 Cloud App Security에 연결할 때 발생할 수 있는 문제 목록과 각각에 대한 해결 방법을 제공합니다."
-keywords: 
+title: Cloud App Security와 SIEM 통합 문제 해결 | Microsoft 문서
+description: 이 항목에서는 SIEM을 Cloud App Security에 연결할 때 발생할 수 있는 문제 목록과 각각에 대한 해결 방법을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 940e5994e9260b5fff6882867d5acea4f974b5e7
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-the-siem-agent"></a>SIEM 에이전트 문제 해결
 
-Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오류** 또는 **연결 끊김**이 아닌지, 에이전트 알림이 없는지를 확인합니다. 연결이 2시간 이상 동안 끊어진 경우 **연결 오류**로 표시되고, 12시간 이상 끊어진 경우 **연결 끊김**으로 표시됩니다.
+Microsoft Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오류** 또는 **연결 끊김**이 아닌지, 에이전트 알림이 없는지를 확인합니다. 연결이 2시간 이상 동안 끊어진 경우 **연결 오류**로 표시되고, 12시간 이상 끊어진 경우 **연결 끊김**으로 표시됩니다.
 
 에이전트를 실행하는 동안 cmd 프롬프트에 다음 오류 중 하나가 표시되는 경우 다음 단계를 사용하여 문제를 해결하세요.
 

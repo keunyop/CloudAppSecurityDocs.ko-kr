@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security에서 검색된 앱 사용 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다."
-keywords: 
+title: Cloud App Security에서 검색된 앱 사용 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery 대시보드 검토
@@ -106,15 +109,15 @@ Cloud Discovery에서 제공된 데이터를 심층 분석하려면 필터를 �
   
 클라우드 검색 데이터를 삭제하려면  
   
-1.  포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
+1. 포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
   
-2.  **데이터 삭제** 탭을 클릭합니다.  
+2. **데이터 삭제** 탭을 클릭합니다.  
   
-     계속하기 전에 데이터를 삭제할 것인지 확인하는 것이 좋습니다. 이 작업은 실행 취소할 수 없으며 시스템의 **모든** Cloud Discovery 데이터가 삭제됩니다.  
+    계속하기 전에 데이터를 삭제할 것인지 확인하는 것이 좋습니다. 이 작업은 실행 취소할 수 없으며 시스템의 **모든** Cloud Discovery 데이터가 삭제됩니다.  
   
-3.  **삭제** 단추를 클릭합니다.  
+3. **삭제** 단추를 클릭합니다.  
   
-     ![데이터 삭제](./media/delete-data.png "데이터 삭제")  
+    ![데이터 삭제](./media/delete-data.png "데이터 삭제")  
   
    > [!NOTE]  
    >  삭제 프로세스는 몇 분 정도 걸리며 즉시 적용되지 않습니다.  

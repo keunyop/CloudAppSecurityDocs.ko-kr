@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security에서 Cloud Discovery 변칙 검색 정책 만들기 | Microsoft 문서"
-description: "이 항목에서는 Cloud Discovery 변칙 검색 정책을 사용하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: Cloud App Security에서 Cloud Discovery 변칙 검색 정책 만들기 | Microsoft 문서
+description: 이 항목에서는 Cloud Discovery 변칙 검색 정책을 사용하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 49e7dadb3d179e70c04decccdc8ab11aeefc3241
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>클라우드 검색 변칙 검색 정책
 이 문서에서는 정책에 대한 참조 정보를 제공하며 각 정책에 대해 구성할 수 있는 필드와 각 정책 형식에 대해 설명합니다.  
   
@@ -33,7 +36,8 @@ ms.lasthandoff: 01/16/2018
  
 2. **정책 이름**과 **설명**을 입력합니다.  
 
-3. **필터 추가**를 클릭하여 모니터링할 앱에 대한 필터를 만듭니다. 특정 앱, 앱 **범주**를 선택하거나 **이름**, **도메인 및 **위험 요소**별로 필터링하고 **저장**을 클릭합니다.
+3. <strong>필터 추가</strong>를 클릭하여 모니터링할 앱에 대한 필터를 만듭니다. 
+   특정 앱, 앱 <strong>범주</strong>를 선택하거나 <strong>이름</strong>, <strong>도메인 및 **위험 요소</strong>별로 필터링하고 <strong>저장</strong>을 클릭합니다.
 
 4. **적용 대상** 아래에서 사용을 필터링할 방법을 설정합니다. 모니터링되는 사용을 다음 두 가지 방법으로 필터링할 수 있습니다.  
   

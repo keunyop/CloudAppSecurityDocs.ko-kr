@@ -1,27 +1,30 @@
 ---
-title: "콘텐츠 검사 정책에 RegEx 엔진 사용 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security 정책에서 패턴 일치에 RegEx를 사용하는 지침을 제공합니다."
-keywords: 
+title: 콘텐츠 검사 정책에 RegEx 엔진 사용 | Microsoft 문서
+description: 이 항목에서는 Cloud App Security 정책에서 패턴 일치에 RegEx를 사용하는 지침을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f6ee1a96a7f65c903fe6e0978fd9a31d850697e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2e7c8f640a054ba8e5bc2ad999bd73a6604eb4d0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-regex-engine"></a>RegEx 엔진 작업
  
-Cloud App Security의 콘텐츠 검사 정책은 패턴 일치에 RegEx를 활용합니다. 파일 정책의 일부로 콘텐츠 검사를 적용할 수 있습니다. 정규식을 테스트하려면 다음 웹 사이트를 사용할 수 있습니다.  
+Microsoft Cloud App Security의 콘텐츠 검사 정책은 패턴 일치에 RegEx를 활용합니다. 파일 정책의 일부로 콘텐츠 검사를 적용할 수 있습니다. 정규식을 테스트하려면 다음 웹 사이트를 사용할 수 있습니다.  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -51,14 +54,14 @@ Cloud App Security의 콘텐츠 검사 정책은 패턴 일치에 RegEx를 활�
   
 예제 식  
   
-||||  
-|-|-|-|  
-|**정규식**|**데이터**|**일치 항목**|  
-|Colou?r (?:black&#124;blue&#124;white)|검은색<br /><br /> 흰색<br /><br /> 빨간색|예<br /><br /> 예<br /><br /> 아니요|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|예<br /><br /> 예<br /><br /> 아니요|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|예<br /><br /> 예<br /><br /> 아니요|  
-|d.n't\s{0,10}c.r.|Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care|예<br /><br /> 예<br /><br /> 아니요|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>정규식</strong>              |                     <strong>데이터</strong>                     |      <strong>일치 항목</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   검은색<br /><br /> 흰색<br /><br /> 빨간색   | 예<br /><br /> 예<br /><br /> 아니요 |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | 예<br /><br /> 예<br /><br /> 아니요 |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | 예<br /><br /> 예<br /><br /> 아니요 |
+|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | 예<br /><br /> 예<br /><br /> 아니요 |
 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   

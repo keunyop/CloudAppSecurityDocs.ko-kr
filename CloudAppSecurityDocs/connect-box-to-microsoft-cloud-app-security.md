@@ -1,26 +1,29 @@
 ---
-title: "표시 유형 및 사용 제어를 위해 Cloud App Security에 Box 연결 | Microsoft 문서"
-description: "이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Box 연결 | Microsoft 문서
+description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: d7a3d2670a8c4ccabc96807304545b85ee43cbd2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Box 연결
-이 섹션에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 섹션에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Cloud App Security에 Box를 연결하는 방법  
   

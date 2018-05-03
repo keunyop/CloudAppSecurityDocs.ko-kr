@@ -1,29 +1,32 @@
 ---
-title: "위험 점수 사용 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security 앱 위험 점수를 사용하고 사용자 지정하는 방법에 관한 지침을 제공합니다."
-keywords: 
+title: 위험 점수 사용 | Microsoft 문서
+description: 이 항목에서는 Cloud App Security 앱 위험 점수를 사용하고 사용자 지정하는 방법에 관한 지침을 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fbb7d6bef14cb70766fdfbbc8ec958c557ee29df
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 863801bab42b957af98541da326d9b7ec6c69ccc
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-risk-score"></a>위험 점수 사용  
 
 ## <a name="the-cloud-app-catalog"></a>클라우드 앱 카탈로그
 
-클라우드 앱 카탈로그를 통해 Cloud Discovery가 무엇을 나타내는지 전체적으로 파악할 수 있습니다. Cloud Discovery는 60개를 넘는 위험 요인을 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속해서 파악합니다.
+클라우드 앱 카탈로그를 통해 Cloud Discovery가 무엇을 나타내는지 전체적으로 파악할 수 있습니다. Cloud Discovery는 60개가 넘는 위험 요소를 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Microsoft Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속적으로 파악합니다.
 **클라우드 앱 카탈로그**는 규정 인증, 산업 표준 및 모범 사례에 따라 클라우드 앱의 위험을 평가합니다. 클라우드 앱 카탈로그에서 네 개의 보완 프로세스를 실행하여 다음 항목에 대한 최신 정보를 제공합니다.
 1.  클라우드 앱에서 직접 자동화된 데이터 추출(SOC 2 준수, 서비스 약관, 로그온 URL, 개인 정보 취급 방침, HQ 위치 같은 특성)
 2.  Cloud App Security의 알고리즘에 따라 데이터에 대한 자동화된 고급 데이터 추출(HTTP 보안 헤더와 같은 특성)
@@ -60,11 +63,11 @@ Cloud App Security에서 점수를 매기지 않은 새 앱, 새 위험 요인, 
 **새 앱을 제안하려면:**
 1. **검색된 앱** 페이지의 맨 위에서 점 세 개를 클릭하고 **새 앱 제안**을 선택합니다. 
 
-  ![Cloud App Security에 대한 앱 제안](./media/suggest-new-app.png)
+   ![Cloud App Security에 대한 앱 제안](./media/suggest-new-app.png)
 
 2. **새 클라우드 앱 제안** 팝업에서 앱의 이름 및 도메인을 포함하여 새 앱에 대한 세부 정보를 입력합니다. 
 
-  ![Cloud App Security에 대한 앱 팝업 제안](./media/suggest-new-app-popup.png)
+   ![Cloud App Security에 대한 앱 팝업 제안](./media/suggest-new-app-popup.png)
 
 3. 앱에 대한 추가 정보가 필요한 경우, 그리고 분석이 완료되면 업데이트를 받을 수 있도록 Cloud App Security 분석가가 연락할 수 있는 확인란을 선택하는 것이 좋습니다.
 
@@ -72,11 +75,11 @@ Cloud App Security에서 점수를 매기지 않은 새 앱, 새 위험 요인, 
 
 1. **클라우드 앱 카탈로그** 페이지의 업데이트할 앱 행에서 행 끝에 있는 점 세 개를 클릭하고 **점수 업데이트 요청**을 선택합니다.
 
-  ![점수 업데이트 요청](./media/request-score-update.png)
+   ![점수 업데이트 요청](./media/request-score-update.png)
 
 2. **개선 사항 제안** 팝업에서 점수 업데이트를 요청하건, 새 위험 요인을 제안하거나, 앱 데이터를 업데이트할지 선택합니다.
 
-  ![Cloud App Security에 대한 개선 사항 제안](./media/suggest-improvement-popup.png)
+   ![Cloud App Security에 대한 개선 사항 제안](./media/suggest-improvement-popup.png)
 
 3. 앱에 대한 추가 정보가 필요한 경우, 그리고 분석이 완료되면 업데이트를 받을 수 있도록 Cloud App Security 분석가가 연락할 수 있는 확인란을 선택하는 것이 좋습니다.
  
@@ -92,19 +95,19 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 -   **규정 준수** - 이 범주는 앱을 생산하는 회사에서 유지하는 일반적인 모범 사례 규정 준수 표준을 표시합니다. 사양 목록에는 HIPAA, CSA, PCI-DSS 등의 표준이 포함됩니다.  
   
-각 범주는 많은 특정 속성으로 구성됩니다. 점수 매기기 알고리즘에 따라 각 속성은 값을 기준으로 0과 10 사이의 예비 점수를 받습니다. True/False 값은 각각 10 또는 0을 받지만 도메인 사용 기간 등의 연속 속성은 스펙트럼 내의 특정 값을 받게 됩니다. 각 속성의 점수는 범주의 하위 점수를 만들기 위해 범주의 다른 모든 기존 필드를 기준으로 가중 처리됩니다. 점수가 없는 앱을 발견할 경우 일반적으로 속성을 알 수 없어 점수가 매겨지지 않은 앱을 나타냅니다.  
+각 범주는 많은 특정 속성으로 구성됩니다. Cloud App Security 점수 매기기 알고리즘에 따라 각 속성은 값을 기준으로 0과 10 사이의 예비 점수를 받습니다. True/False 값은 각각 10 또는 0을 받지만 도메인 사용 기간 등의 연속 속성은 스펙트럼 내의 특정 값을 받게 됩니다. 각 속성의 점수는 범주의 하위 점수를 만들기 위해 범주의 다른 모든 기존 필드를 기준으로 가중 처리됩니다. 점수가 없는 앱을 발견할 경우 일반적으로 속성을 알 수 없어 점수가 매겨지지 않은 앱을 나타냅니다.  
   
 클라우드 검색 점수 구성에 제공된 기본 가중치를 잠시 검토하고 수정하는 것이 중요합니다. 기본적으로 평가된 모든 매개 변수에 동일한 가중치가 지정됩니다. 조직에 더 중요하거나 덜 중요한 특정 매개 변수가 있는 경우 다음과 같이 변경하는 것이 중요합니다.  
   
-1.  포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
+1. 포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
   
-2.  **점수 메트릭 구성**에서 **중요도**를 밀어 필드 또는 위험 범주의 가중치를 **무시됨**, **낮음**, **중간**, **높음** 또는 **매우 높음**으로 변경합니다.  
+2. **점수 메트릭 구성**에서 **중요도**를 밀어 필드 또는 위험 범주의 가중치를 **무시됨**, **낮음**, **중간**, **높음** 또는 **매우 높음**으로 변경합니다.  
   
-3.  또한 점수를 계산할 때 특정 값을 사용할 수 없거나 적용할 수 없는지 여부를 설정할 수 있습니다. 포함할 경우 해당 없음 값에는 점수에 대한 음의 기여도가 포함됩니다.  
+3. 또한 점수를 계산할 때 특정 값을 사용할 수 없거나 적용할 수 없는지 여부를 설정할 수 있습니다. 포함할 경우 해당 없음 값에는 점수에 대한 음의 기여도가 포함됩니다.  
   
-  ![점수](./media/score.png "점수")  
+   ![점수](./media/score.png "점수")  
 
-위험 점수가 누적되는 방식을 이해하는 데 필요한 모든 정보는 Cloud App Security 포털에서 확인할 수 있습니다.
+Cloud App Security 위험 점수가 누적되는 방식을 이해하는 데 필요한 모든 정보는 Cloud App Security 포털에서 확인할 수 있습니다.
 특정 위험 범주 내 위험 요인의 가중치를 더 적절히 이해하려면 앱 프로필의 각 필드 이름 오른쪽에 있는 "i" 단추를 사용해 보세요. 그러면 Cloud App Security에서 특정 위험 요인을 정확하게 채점하는 방식에 대한 정보를 확인할 수 있습니다. 점수는 1-10점 척도 + 위험 범주의 가중치를 통해 계산된 위험 요인의 값입니다.
 
 ![위험 계산](./media/cac-weight.png)

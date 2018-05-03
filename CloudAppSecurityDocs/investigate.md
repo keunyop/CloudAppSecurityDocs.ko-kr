@@ -1,26 +1,29 @@
 ---
-title: "Cloud App Security를 사용하여 클라우드 앱 위험 및 의심스러운 활동 조사 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security를 사용하여 경고, 문제 및 의심스러운 활동을 조사하는 프로세스에 대해 간략하게 설명합니다."
-keywords: 
+title: Cloud App Security를 사용하여 클라우드 앱 위험 및 의심스러운 활동 조사 | Microsoft 문서
+description: 이 항목에서는 Cloud App Security를 사용하여 경고, 문제 및 의심스러운 활동을 조사하는 프로세스에 대해 간략하게 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="investigate"></a>조사
-클라우드 환경에서 Cloud App Security를 실행한 후 클라우드 환경에서 발생하는 사항을 자세히 파악하기 위해 Cloud App Security의 도구의 사용 방법을 알아보고 조사하는 단계가 필요합니다. 그런 다음 특정 환경 및 사용 방법에 따라 위험으로부터 조직을 보호하기 위한 요구 사항을 식별할 수 있습니다.
+클라우드 환경에서 Microsoft Cloud App Security를 실행한 후 클라우드 환경에서 발생하는 사항을 자세히 파악하기 위해 Microsoft Cloud App Security의 도구 사용 방법을 알아보고 조사하는 단계가 필요합니다. 그런 다음 특정 환경 및 사용 방법에 따라 위험으로부터 조직을 보호하기 위한 요구 사항을 식별할 수 있습니다.
 
 이 항목에서는 조사를 수행하여 클라우드 환경을 보다 잘 이해하는 방법을 설명합니다.  
 
@@ -116,13 +119,6 @@ ms.lasthandoff: 01/16/2018
 
     -   사용되었지만 조직의 정책을 준수하지 않는 클라우드 앱이 있나요?  
 
-## <a name="use-reports-to-investigate-risk"></a>보고서를 사용하여 위험 조사  
-클라우드 환경에 대한 제어 권한을 얻으려는 경우 찾으려는 사항에 따라 특정 가정을 합니다. 즉, 클라우드에 대해 아직 잘 모른다고 가정합니다. 이러한 가정에 따라 정책을 만듭니다.
-
-클라우드 환경에서 Cloud App Security가 실행된 후 기본 제공 보고서(및 사용자 지정 보고서)를 사용하여 클라우드의 사용 상황을 파악합니다. 이를 기반으로 예외를 포함하도록 정책을 조정하여, 궁극적으로 정책에서 가양성이 극소수만 잡히도록 합니다.  
-
-기본 제공 보고서는 조사를 위해 집계 뷰를 제공합니다. 기본 제공 보고서로 작업하려면 **조사**, **기본 제공 보고서**로 차례로 이동합니다. 다양한 기본 제공 보고서에 대한 자세한 내용은 [기본 제공 보고서 참조](built-in-report-reference.md)를 참조하세요.  
-
 ## <a name="sample-investigation"></a>샘플 조사  
 위험한 IP 주소(예: 익명 프록시 및 Tor)에 의한 클라우드 환경 액세스가 없다고 가정합니다. 그러나 다음을 확인하기 위해서라도 위험한 IP에 대한 정책을 만듭니다.  
 
@@ -134,7 +130,7 @@ ms.lasthandoff: 01/16/2018
 
 4.  이 정책을 식별할 수 있도록 정책 이름을 변경합니다.  
 
-5.  필터를 추가하려면 **활동 필터**에서 **+**를 선택합니다. 아래의 **IP 태그**로 스크롤한 다음 **익명** 및 **Tor**를 선택합니다.  
+5.  필터를 추가하려면 **활동 필터**에서 **+** 를 선택합니다. 아래의 **IP 태그**로 스크롤한 다음 **익명** 및 **Tor**를 선택합니다.  
 
      ![위험한 IP에 대한 정책의 예](./media/example-policy-risky-ips.png "정책의 예 위험한 ip")  
 

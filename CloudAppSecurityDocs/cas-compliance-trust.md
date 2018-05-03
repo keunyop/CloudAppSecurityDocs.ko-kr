@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security 준수, 신뢰, 데이터 보안 및 개인 정보
 
 Microsoft Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입니다. 조직이 클라우드 응용 프로그램의 기능을 모두 활용하도록 도우면서도 중요한 데이터에 대한 포괄적인 표시 여부, 감사 기능 및 세부적인 제어를 통해 제어를 유지하는 포괄적인 솔루션입니다.

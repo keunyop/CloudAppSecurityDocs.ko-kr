@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,23 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 분류 레이블 자동 적용  
 
 이상적인 세계에서 모든 직원은 정보 보호의 중요성을 이해하고 정책을 준수하며 작업합니다. 그러나 현실 세계에서는 회계 업무를 수행하는 파트너가 잘못된 권한으로 Box 리포지토리에 문서를 업로드할 가능성이 높습니다. 그리고 한 주 후에 기업의 기밀 정보가 경쟁업체로 유출되었음을 알게 됩니다. 
 
 Microsoft Cloud App Security는 이러한 종류의 재해를 사전에 방지할 수 있습니다.
 
-Cloud App Security는 Box 계정에 저장된 문서에 대한 공용 권한이 있는지와 분류 엔진을 통해 공개적으로 공유된 문서에 기밀 정보가 있는지를 식별합니다. 그리고 사용자에게 이 결과를 알리는 경고를 보내고, Azure Information Protection **기밀** 분류 레이블을 자동으로 적용하여 파일에 대한 추가 암호화를 제공합니다. 
+Microsoft Cloud App Security는 Box 계정에 저장된 문서에 대한 공용 권한이 있는지와 분류 엔진을 통해 공개적으로 공유된 문서에 기밀 정보가 있는지를 식별합니다. 그리고 사용자에게 이 결과를 알리는 경고를 보내고, Azure Information Protection **기밀** 분류 레이블을 자동으로 적용하여 파일에 대한 추가 암호화를 제공합니다. 
 
 >[!NOTE]
 > - Azure Information Protection 레이블 적용은 사용 가능하고 긴 [거버넌스 작업](governance-actions.md) 목록 중 하나입니다.

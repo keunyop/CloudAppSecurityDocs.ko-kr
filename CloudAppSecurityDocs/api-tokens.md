@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security의 API 토큰 관리 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security용 API 토큰을 생성하는 방법을 설명합니다."
-keywords: 
+title: Cloud App Security의 API 토큰 관리 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security용 API 토큰을 생성하는 방법을 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 1823f6bbcf0061b43d9d438c94b9434a609b5fad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="api-tokens"></a>API 토큰
     
-Cloud App Security API에서는 REST API 끝점을 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
+Microsoft Cloud App Security API에서는 REST API 끝점을 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
 
 - Cloud Discovery에 대한 로그 파일 업로드
 - 차단 스크립트 생성
@@ -40,18 +43,18 @@ API에 액세스하려면 API 토큰을 만들고 소프트웨어에서 이 토�
 1. **설정** 메뉴에서 **보안 확장**, **API 토큰**을 차례로 선택합니다.
 
 2. 더하기 아이콘, **새 토큰 생성**을 클릭하고, 나중에 토큰을 식별할 이름을 지정하고, **다음**을 클릭합니다.
-![Cloud App Security에서 API 토큰 생성](./media/api-token-gen.png)
+   ![Cloud App Security에서 API 토큰 생성](./media/api-token-gen.png)
 
 3. 토큰 값을 복사하고 복구를 위해 임의 위치에 저장해 둡니다. 토큰을 분실하면 토큰을 다시 생성해야 합니다. 토큰에는 토큰을 발급한 사용자의 권한이 포함됩니다. 예를 들어 보안 독자는 데이터에 대해 경고할 수 있는 토큰을 발급할 수 없습니다.
 
 4. 활성, 비활성 또는 생성됨 상태별로 토큰을 필터링할 수 있습니다. 
 
-  - 생성됨은 사용된 적이 없는 토큰입니다. 
-  - 활성은 생성되었고 지난 7일 이내에 사용된 토큰입니다. 
-  - 비활성은 사용되었지만 지난 7일 동안 활동이 없는 토큰입니다.
+   - 생성됨은 사용된 적이 없는 토큰입니다. 
+   - 활성은 생성되었고 지난 7일 이내에 사용된 토큰입니다. 
+   - 비활성은 사용되었지만 지난 7일 동안 활동이 없는 토큰입니다.
 5. 새 토큰을 생성하고 나면 Cloud App Security 포털에 액세스하는 데 사용할 새 URL이 제공됩니다. 
 
- ![Cloud App Security API 토큰](./media/generate-api-token.png)
+   ![Cloud App Security API 토큰](./media/generate-api-token.png)
 
 일반 포털 URL은 계속 작동하지만, 토큰과 함께 제공된 사용자 지정 URL보다 상당히 느립니다. URL을 잊은 경우 언제든지 메뉴의 **?** 아이콘으로 이동하고 **정보**를 선택하여 URL을 확인할 수 있습니다.
 

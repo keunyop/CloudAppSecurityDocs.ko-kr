@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security의 정책 템플릿 참조 | Microsoft 문서"
-description: "이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다."
-keywords: 
+title: Cloud App Security의 정책 템플릿 참조 | Microsoft 문서
+description: 이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="policy-templates"></a>정책 템플릿
 
-다음은 Cloud App Security에 있는 모든 정책 템플릿 목록입니다. 사용 편의성을 위해 가능할 경우 기존 템플릿을 기반으로 정책 만들기를 시작하는 것이 좋습니다.
+다음은 Microsoft Cloud App Security에 있는 모든 정책 템플릿 목록입니다. 사용 편의성을 위해 가능할 경우 기존 템플릿을 기반으로 정책 만들기를 시작하는 것이 좋습니다.
 
 |위험 범주|템플릿 이름|설명|
 |-----|----|----|

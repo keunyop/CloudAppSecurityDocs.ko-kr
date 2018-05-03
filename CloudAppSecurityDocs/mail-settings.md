@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,18 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 ##  <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
 
-Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일 알림 및 관련 위반에 대해 최종 사용자에게 보내는 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요. 
+Microsoft Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일 알림 및 관련 위반에 대해 최종 사용자에게 보내는 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Microsoft Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요. 
 
 
 1. 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
@@ -30,30 +33,30 @@ Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일
    
    **보낸 사람 표시 이름**: 메일 메시지의 **보낸 사람** 필드에 표시하려는 이름입니다.  
    > [!NOTE]
-   > [rfc822 프로토콜](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름에 유니 코드 문자만 지원됩니다.
+   > [rfc822 표준](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
 
    **회신 메일 주소**: 메시지에 회신하는 데 사용할 메일 계정입니다.  
   
      ![메일 설정 구성](./media/mail-settings-config.png "메일 설정 구성")  
 
-  >[!NOTE]
-  >**보낸 사람 메일 주소** 필드를 고유한 도메인으로 변경하려면 [여기](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)에서 지침을 참조하세요.
+   >[!NOTE]
+   >**보낸 사람 메일 주소** 필드를 고유한 도메인으로 변경하려면 [여기](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)에서 지침을 참조하세요.
   
-2.  **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음이 포함되어야 합니다.  
+3. **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음이 포함되어야 합니다.  
   
-    -   모든 템플릿 CSS 파일은 템플릿에 인라인으로 포함되어야 합니다.  
+   -   모든 템플릿 CSS 파일은 템플릿에 인라인으로 포함되어야 합니다.  
   
-    -   템플릿에 편집할 수 없는 다음 세 개의 자리 표시자가 있어야 합니다.  
+   -   템플릿에 편집할 수 없는 다음 세 개의 자리 표시자가 있어야 합니다.  
   
-         %%logo%% - 일반 설정 페이지에서 업로드된 회사 로고의 URL  
+        %%logo%% - 일반 설정 페이지에서 업로드된 회사 로고의 URL  
   
-         %%title%% - 정책에 의해 설정된 메일 제목의 자리 표시자  
+        %%title%% - 정책에 의해 설정된 메일 제목의 자리 표시자  
 
-         %%content%% - 정책에 의해 설정된 최종 사용자에 대해 포함할 콘텐츠의 자리 표시자  
+        %%content%% - 정책에 의해 설정된 최종 사용자에 대해 포함할 콘텐츠의 자리 표시자  
      
-3.  **템플릿 업로드...**를 클릭하고 만든 파일을 선택합니다. 
+4. **템플릿 업로드...** 를 클릭하고 만든 파일을 선택합니다. 
 
-4. **테스트 전자 메일 보내기**를 클릭하여 자신에게 테스트 메일을 보낸 다음 직접 만든 템플릿의 예를 확인합니다. 포털에 로그인할 때 사용한 계정으로 메일이 전송됩니다. 테스트 메일에서 메타데이터 필드, 템플릿, 메일 제목, 메일 본문의 제목 및 콘텐츠를 볼 수 있습니다.  다음은 샘플 메일 템플릿입니다. 
+5. **테스트 전자 메일 보내기**를 클릭하여 자신에게 테스트 메일을 보낸 다음 직접 만든 템플릿의 예를 확인합니다. 포털에 로그인할 때 사용한 계정으로 메일이 전송됩니다. 테스트 메일에서 메타데이터 필드, 템플릿, 메일 제목, 메일 본문의 제목 및 콘텐츠를 볼 수 있습니다.  다음은 샘플 메일 템플릿입니다. 
 
 
 

@@ -1,28 +1,31 @@
 ---
-title: "연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다."
-keywords: 
+title: 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
+description: 이 항목에서는 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2017
+ms.date: 4/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a55e0ff02d16af8b166b62a53fbcffb62d6dcc08
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 
 
-로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. 파일을 로그 수집기로 FTP 전송이 완료된 후 FTP 로그는 Cloud App Security에 업로드됩니다.  Syslog의 경우 파일 크기가 40KB보다 크면 로그 수집기는 디스크로 수신된 로그를 기록하고 파일을 Cloud App Security에 업로드합니다.
+로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다. 각 로그는 자동으로 처리 및 압축되고 포털에 전송됩니다. 로그 수집기로 파일의 FTP 전송이 완료되면 FTP 로그는 Microsoft Cloud App Security에 업로드됩니다.  Syslog의 경우 파일 크기가 40KB보다 크면 로그 수집기는 디스크로 수신된 로그를 기록하고 파일을 Cloud App Security에 업로드합니다.
 
 로그는 Cloud App Security에 업로드된 후 특정 시점에 마지막 20개 로그를 저장한 백업 디렉터리로 이동합니다. 새 로그가 도착하면 이전 로그가 삭제됩니다. 로그 수집기 디스크 공간이 가득 차면 로그 수집기는 사용 가능한 디스크 공간이 확보될 때까지 새 로그를 삭제합니다. 이 경우 **자동으로 로그 업로드** 설정의 **로그 수집기** 탭에 경고가 표시됩니다.
 

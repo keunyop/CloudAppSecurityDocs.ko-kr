@@ -1,67 +1,70 @@
 ---
-title: "Cloud App Security 포털에서 트리거된 경고 관리 | Microsoft 문서"
-description: "이 문서에서는 Cloud App Security 포털에서 발생한 경고를 사용하는 방법을 설명합니다."
-keywords: 
+title: Cloud App Security 포털에서 트리거된 경고 관리 | Microsoft 문서
+description: 이 문서에서는 Cloud App Security 포털에서 발생한 경고를 사용하는 방법을 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>알림 관리  
 경고는 클라우드 환경을 보다 자세히 이해하기 위한 진입점입니다. 찾은 내용에 따라 새 정책을 만들 수도 있습니다. 예를 들어 한 관리자가 그린란드에서 로그인한다고 표시되는데 조직의 누구도 이전에 그린란드에서 로그인한 적이 없는 경우, 해당 위치에서 로그인에 사용된 관리자 계정을 일시 중단하는 정책을 만들 수 있습니다.  
 
 모든 경고를 검토하고 정책을 수정하기 위한 도구로 사용하는 것이 좋습니다. 무해한 이벤트가 기존 정책에 대한 위반으로 간주되는 경우 불필요한 경고 수를 줄이기 위해 정책을 구체화합니다.  
 
-1.   **미해결 경고**에서 **모든 경고 보기**를 클릭합니다.  
+1. **미해결 경고**에서 **모든 경고 보기**를 클릭합니다.  
 
-     대시보드의 이 섹션에서는 의심스러운 활동이나 설정된 정책의 위반을 완전히 파악할 수 있습니다. 그러고 나면 클라우드 환경에 대해 정의한 보안 상태를 보호하는 데 도움이 됩니다.  
+   대시보드의 이 섹션에서는 의심스러운 활동이나 설정된 정책의 위반을 완전히 파악할 수 있습니다. 그러고 나면 클라우드 환경에 대해 정의한 보안 상태를 보호하는 데 도움이 됩니다.  
 
-     ![경고](./media/alerts.png "경고")  
+   ![경고](./media/alerts.png "경고")  
 
-2.   각 경고에 대해 위반의 특성 및 필요한 응답을 조사하고 결정해야 합니다.  
+2. 각 경고에 대해 위반의 특성 및 필요한 응답을 조사하고 결정해야 합니다.  
 
-     경고를 경고 유형이나 심각도에 따라 필터링하여 가장 중요한 것을 먼저 처리할 수 있습니다.  
+   경고를 경고 유형이나 심각도에 따라 필터링하여 가장 중요한 것을 먼저 처리할 수 있습니다.  
 
-     특정 경고를 선택합니다. 경고 유형에 따라 경고를 해결하기 전에 수행할 수 있는 다양한 작업이 표시됩니다.  
+   특정 경고를 선택합니다. 경고 유형에 따라 경고를 해결하기 전에 수행할 수 있는 다양한 작업이 표시됩니다.  
 
-     경고를 조사할 때 처리해야 하는 다음 세 가지 유형의 위반이 있습니다.  
+   경고를 조사할 때 처리해야 하는 다음 세 가지 유형의 위반이 있습니다.  
 
-    #### <a name="serious-violations"></a>심각한 위반
-     심각한 위반에는 즉시 응답해야 합니다.
+   #### <a name="serious-violations"></a>심각한 위반
+   심각한 위반에는 즉시 응답해야 합니다.
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>의심스러운 위반
-    의심스러운 위반에는 추가 조사가 필요합니다.  
+   #### <a name="questionable-violations"></a>의심스러운 위반
+   의심스러운 위반에는 추가 조사가 필요합니다.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>승인된 위반 또는 비정상적인 동작
- 승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다.  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>승인된 위반 또는 비정상적인 동작
+   승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다.  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   이 프로세스를 완료하면 경고를 해결된 것으로 표시합니다.  
+3. 이 프로세스를 완료하면 경고를 해결된 것으로 표시합니다.  
 
 다음 표에서는 트리거될 수 있는 경고 유형 목록과 권장되는 해결 방법을 제공합니다.  
 

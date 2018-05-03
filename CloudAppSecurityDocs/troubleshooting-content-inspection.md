@@ -1,31 +1,35 @@
 ---
-title: "Cloud App Security에서 콘텐츠 검사 오류 문제 해결 | Microsoft 문서"
-description: "이 항목에서는 콘텐츠 검사 상태 목록과 해당 상태의 의미에 대해 설명합니다."
-keywords: 
+title: Cloud App Security에서 콘텐츠 검사 오류 문제 해결 | Microsoft 문서
+description: 이 항목에서는 콘텐츠 검사 상태 목록과 해당 상태의 의미에 대해 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be49af4df563d4aa2a05dd4830d2dd8835fa90d3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 58a3a202c7c31ec3fa063a5067821a657d47d836
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-content-inspection"></a>콘텐츠 검사 문제 해결
+
 |콘텐츠 검사 상태|설명|
 |----|----|
 |완료|콘텐츠 검사가 완료되었습니다.|
 |해당 없음|이 파일에는 콘텐츠 검사가 적용되지 않습니다. 정책에 이 파일의 콘텐츠 검사가 필요하지 않거나 파일 형식이 지원되지 않기 때문일 수 있습니다.|
 |Pending|파일이 현재 콘텐츠 검사 큐에 있습니다.|
-|실패: 다운로드 오류|Cloud App Security에서 검사할 파일을 다운로드하지 못했습니다.|
+|실패: 다운로드 오류|Microsoft Cloud App Security에서 검사할 파일을 다운로드하지 못했습니다.|
 |실패: 파일이 암호화됨|파일의 암호를 해독할 수 없습니다.|
 |실패: 파일이 손상됨|파일이 어떤 방식으로든 손상되어 검사할 수 없습니다.|
 |실패: 내부 오류|파일을 검사하려고 할 때 알 수 없는 오류가 발생했습니다.|
@@ -42,5 +46,4 @@ ms.lasthandoff: 01/16/2018
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
-  
-  
+

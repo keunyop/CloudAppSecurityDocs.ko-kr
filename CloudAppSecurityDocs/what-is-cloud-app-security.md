@@ -1,25 +1,28 @@
 ---
-title: "Cloud App Security란? | Microsoft 문서"
-description: "이 항목에서는 클라우드 응용 프로그램 보안 및 작동 방식을 설명합니다."
-keywords: 
+title: Cloud App Security란? | Microsoft 문서
+description: 이 항목에서는 클라우드 응용 프로그램 보안 및 작동 방식을 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="what-is-cloud-app-security"></a>Cloud App Security란?
+*적용 대상: Microsoft Cloud App Security*
+
+
+# <a name="what-is-microsoft-cloud-app-security"></a>Microsoft Cloud App Security란?
 
 > [!NOTE]
 > Office 365의 고급 보안 관리 및 Cloud App Security 기능에 대한 자세한 내용은 [고급 보안 관리 시작](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)을 참조하세요.
@@ -50,7 +53,7 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 
 ### <a name="data-retention--compliance"></a>데이터 보존 및 규정 준수
 
-Cloud App Security는 ISO, HIPAA, CSA STAR, EU 모델 조항 등에 대한 Microsoft 규정 준수로 공식 인증되었습니다. 인증의 전체 목록을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하고 Cloud App Security를 선택하세요.  
+Cloud App Security는 ISO, HIPAA, CSA STAR, EU 모델 조항 등에 대한 Microsoft 규정 준수로 공식 인증되었습니다. 전체 인증 목록을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하여 Cloud App Security를 선택하세요.  
 
 Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 콘텐츠는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
 Cloud App Security에서는 다음과 같이 데이터를 유지합니다. 

@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security에서 Cloud Discovery 앱에 대한 정책 만들기 | Microsoft 문서"
-description: "이 항목에서는 Cloud Discovery 정책 작업에 대한 정보를 제공합니다."
-keywords: 
+title: Cloud App Security에서 Cloud Discovery 앱에 대한 정책 만들기 | Microsoft 문서
+description: 이 항목에서는 Cloud Discovery 정책 작업에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f2a08facca3c932d5ee8890e295041dcc4e63d4
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 983a4af689351fe9c71d1971f16b858a577a31ae
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-policies"></a>클라우드 검색 정책
     
 ## <a name="creating-an-app-discovery-policy"></a>앱 검색 정책 만들기  

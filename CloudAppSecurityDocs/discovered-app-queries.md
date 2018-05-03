@@ -1,24 +1,26 @@
 ---
-title: "Cloud App Security에서 검색되는 앱 필터 및 쿼리 사용 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security에서 검색되는 앱 필터 및 쿼리 목록을 제공하고 이를 사용하는 방법을 설명합니다."
-keywords: 
+title: Cloud App Security에서 검색되는 앱 필터 및 쿼리 사용 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security에서 검색되는 앱 필터 및 쿼리 목록을 제공하고 이를 사용하는 방법을 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>검색된 앱 필터 및 쿼리
 
 ## <a name="discovered-app-filters"></a>검색된 앱 필터
@@ -64,11 +66,11 @@ ms.lasthandoff: 01/04/2018
 
 3. **쿼리 저장** 팝업에 쿼리 이름을 지정합니다.
 
- ![새 쿼리](./media/new-query.png)
+   ![새 쿼리](./media/new-query.png)
 
 4. 나중에 쿼리를 사용하려면 **쿼리**에서 **저장된 쿼리**까지 아래로 스크롤하여 쿼리를 선택합니다. 
 
- ![쿼리 열기](./media/open-query.png)
+   ![쿼리 열기](./media/open-query.png)
 
 
 Cloud App Security에는 **제안된 쿼리**가 제공되며 자주 사용하는 사용자 지정 쿼리를 저장할 수도 있습니다. 제안된 쿼리에는 다음과 같은 선택적 제안 쿼리를 사용하여 검색된 앱을 필터링하는 권장 조사 환경이 제공됩니다.

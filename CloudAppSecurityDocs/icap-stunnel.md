@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,19 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
+
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
-Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
+Microsoft Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
 
 [RFC 3507](https://tools.ietf.org/html/rfc3507)에 설명된 HTTP와 유사한 프로토콜인 표준 ICAP 프로토콜을 사용하여 통합을 수행합니다. 데이터를 전송할 경우 ICAP를 보호하기 위해 DLP 솔루션과 Cloud App Security 간에 보안 SSL 터널(stunnel)을 설정해야 합니다. stunnel 설정은 DLP 서버와 Cloud App Security 간에 이동할 때 데이터에 대한 TLS 암호화 기능을 제공합니다. 
 
@@ -276,7 +280,7 @@ Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent fo
 2. **ICAP** > **응답 필터링** 아래에서 **다음보다 적은 응답 무시** 값을 1로 변경합니다.
 
 
-3. "application/<em>"을 **콘텐츠 형식 검사</em>**의 목록에 추가합니다.
+3. “application/”을 **콘텐츠 형식 검사</em>** 목록에 추가합니다.
      ![콘텐츠 형식 검사](./media/icap-inspect-content-type.png)
 
 4. **저장**을 클릭합니다.

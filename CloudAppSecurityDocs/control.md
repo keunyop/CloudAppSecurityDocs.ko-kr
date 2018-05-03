@@ -1,24 +1,27 @@
 ---
-title: "거버넌스 작업을 사용하여 클라우드 앱 사용을 제어하는 방법 | Microsoft 문서"
-description: "이 문서에서는 Cloud App Security에서 조직의 클라우드 앱 사용을 제어하기 위해 수행할 수 있는 거버넌스 작업에 대한 정보를 제공합니다."
-keywords: 
+title: 거버넌스 작업을 사용하여 클라우드 앱 사용을 제어하는 방법 | Microsoft 문서
+description: 이 문서에서는 Cloud App Security에서 조직의 클라우드 앱 사용을 제어하기 위해 수행할 수 있는 거버넌스 작업에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7586c32819f106e563eddf5bcda2af805f89310
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 12b360be1e4490b15d61f9e49ef411970e11e9d1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="control"></a>컨트롤
 클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후 거버넌스 작업을 사용하여 조직의 보호를 도울 수 있습니다.  
 
@@ -74,13 +77,13 @@ Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알�
 ### <a name="migrate-your-users-to-a-new-app"></a>사용자를 새 응용 프로그램으로 마이그레이션  
 최근에 Office 365를 구입했으며 조직의 모든 사용자가 다른 모든 클라우드 저장소 앱의 사용을 중지하고 OneDrive 사용을 시작하도록 하는 시나리오를 가정해 보겠습니다. 수행할 수 있는 작업은 다음과 같습니다.  
 
-1.   **클라우드 검색 대시보드**로 이동한 다음 **범주**에서 **클라우드 저장소**를 기준으로 앱을 필터링합니다. 그런 다음 **사용자** 또는 **IP 주소**를 기준으로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
+1. **클라우드 검색 대시보드**로 이동한 다음 **범주**에서 **클라우드 저장소**를 기준으로 앱을 필터링합니다. 그런 다음 **사용자** 또는 **IP 주소**를 기준으로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
 
-2.   다른 앱을 사용하는 사용자를 확인할 수 있습니다. 또한 다음과 같이 이러한 응용 프로그램을 드릴다운하고 다음과 같이 사용자에게 OneDrive로 마이그레이션하도록 알릴 수 있습니다.
+2. 다른 앱을 사용하는 사용자를 확인할 수 있습니다. 또한 다음과 같이 이러한 응용 프로그램을 드릴다운하고 다음과 같이 사용자에게 OneDrive로 마이그레이션하도록 알릴 수 있습니다.
 
-    1.  **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
+   1.  **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
 
-    2.  화살표 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")를 선택하고 **내보내기**를 선택합니다.  
+   2.  화살표 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")를 선택하고 **내보내기**를 선택합니다.  
 
 ### <a name="find-more-secure-alternatives"></a>더 안전한 대안 찾기  
 Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 수 있는 위험한 응용 프로그램 대신 조직에 적합한 대안을 찾을 수 있습니다.  

@@ -1,31 +1,34 @@
 ---
-title: "Microsoft Cloud App Security 프록시로 보호 | Microsoft Docs"
-description: "이 항목에서는 Cloud App Security 프록시의 작동 방식에 대한 정보를 제공합니다."
-keywords: 
+title: Microsoft Cloud App Security 프록시로 보호 | Microsoft Docs
+description: 이 항목에서는 Cloud App Security 프록시의 작동 방식에 대한 정보를 제공합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/6/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 앱 보호
 
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
 
 
-요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Cloud App Security 프록시는 Azure Active Directory와 함께 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
+요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Microsoft Cloud App Security 프록시는 Azure Active Directory와 함께 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
 
 ## <a name="how-it-works"></a>작동 방식
 

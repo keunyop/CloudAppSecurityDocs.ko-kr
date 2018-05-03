@@ -1,26 +1,29 @@
 ---
-title: "클라우드 앱 사용 통찰력 및 제어를 위해 Cloud App Security 배포 | Microsoft 문서"
-description: "이 항목에서는 Cloud App Security 시작 및 실행에 대한 프로세스를 간략하게 설명합니다."
-keywords: 
+title: 클라우드 앱 사용 통찰력 및 제어를 위해 Cloud App Security 배포 | Microsoft 문서
+description: 이 항목에서는 Cloud App Security 시작 및 실행에 대한 프로세스를 간략하게 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 59588a909192f225a086bacc4c218f388cbc46d4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="deploy-cloud-app-security"></a>Cloud App Security 배포
-Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Cloud App Security을 설정하고 사용하는 단계를 안내합니다.  
+*적용 대상: Microsoft Cloud App Security*
+
+
+# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 배포
+Microsoft Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Microsoft Cloud App Security를 설정하고 사용하는 단계를 안내합니다.  
 
 조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
 
@@ -44,7 +47,7 @@ Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는
 
 ## <a name="to-access-the-portal"></a>포털에 액세스하려면
 
-Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동합니다.  
+Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동하세요.  
   
 또는 관리 센터 아이콘 ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘"), **Cloud App Security**를 차례로 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수 있습니다.  
   
@@ -139,7 +142,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 3. IP 범위 **세부 정보**, **위치**, **태그** 및 **범주**를 입력합니다.
 4. **만들기**를 선택합니다.
 
- 이제 정책을 만들 때와 연속 보고서를 필터링하고 만들 때 IP 태그를 사용할 수 있습니다.
+   이제 정책을 만들 때와 연속 보고서를 필터링하고 만들 때 IP 태그를 사용할 수 있습니다.
 
 **연속 보고서 만들기**
 

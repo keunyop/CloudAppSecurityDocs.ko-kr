@@ -1,24 +1,27 @@
 ---
-title: "위협 방지 시나리오 개요 | Microsoft 문서"
-description: "이 항목에서는 조직이 클라우드 환경에서 발생할 수 있는 위험 요소를 방지하기 위한 시나리오를 설명합니다."
-keywords: 
+title: 위협 방지 시나리오 개요 | Microsoft 문서
+description: 이 항목에서는 조직이 클라우드 환경에서 발생할 수 있는 위험 요소를 방지하기 위한 시나리오를 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bb90d94fdab3725c853a772df1c484260a6c5ec
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 747199b758fb5bee40cc7ec036280c16416d0372
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*적용 대상: Microsoft Cloud App Security*
+
+
 # <a name="protecting-your-organization-from-ransomware"></a>랜섬웨어로부터 조직 보호
 
 최근 대규모의 랜섬웨어 공격에서 WannaCry가 사이버 세계를 심각하게 공격하여 150여 개 국가에 200,000대의 컴퓨터가 감염된 것으로 추정됩니다. 지난 몇 년 동안 랜섬웨어 공격이 증가하면서 2015년 매월 평균 25,000회 공격이, 2016년 56,000회 공격이 발생하여 네트워크와 클라우드가 위험에 처하지 않도록 사전에 대처하는 사이버 보안이 필수가 되고 있습니다. 이 문서에서는 Cloud App Security를 사용하여 클라우드를 모니터링하고, 위협을 검색 및 완화하고, 랜섬웨어로부터 환경을 보호하기 위한 모범 사례를 적용하는 방법을 설명합니다.
@@ -35,13 +38,15 @@ ms.lasthandoff: 01/16/2018
 ## <a name="the-solution"></a>해결 방법
 의심스러운 활동이 검색될 때 업데이트하는 정책을 만들어 클라우드 환경에서 잠재적인 랜섬웨어를 검색하고 랜섬웨어 파일이 클라우드에 저장되지 않도록 방지하는 자동화된 작업을 설정합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="out-of-the-box-protection"></a>기본 제공 보호
 
 하나 이상의 클라우드 앱(Office 365, G Suite, Box 및 Dropbox)을 Cloud App Security에 [연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)합니다.
 
-## <a name="setting-up-monitoring"></a>모니터링 설정
-
 1.  기본적으로 Cloud App Security는 네트워크를 검색하여 사용자가 클라우드에서 일반적으로 수행하는 작업에 대한 패턴과 이 작업을 수행하는 시기 및 사용자가 일반적으로 수행하는 작업을 파악하는 기준을 설정합니다. 
+
+2. Cloud App Security의 자동화된 [위협 검색 정책](anomaly-detection-policy.md)은 연결되는 시점부터 백그라운드에서 실행되기 시작합니다. 이러한 정책 중 하나는 랜섬웨어 활동을 검색하여 정교한 랜섬웨어 공격으로부터 포괄적인 보호를 보장합니다. 보안 연구 전문 지식을 통해 랜섬웨어 활동을 반영하는 동작 패턴을 식별하는 Cloud App Security는 전체적이고 강력한 보호를 보장합니다. 예를 들어 Cloud App Security에서 비율이 높은 파일 업로드 또는 파일 삭제 활동을 식별하는 경우 이는 부정적인 암호화 프로세스를 나타낼 수 있습니다. 이 데이터는 연결된 API에서 받은 로그에 수집된 후 알려진 랜섬웨어 확장과 같은 학습된 동작 패턴 및 위협 인텔리전스와 결합됩니다. 
+
+## <a name="legacy-policy-creation"></a>레거시 정책 만들기
 
 2. 또한 클라우드 앱에서 많은 양의 다운로드가 발생하는지 감시하고 일반적인 범위를 벗어나는 동작이 발생하는 경우 경고하는 정책을 설정하여 클라우드 앱 모니터링을 시작해야 합니다.
 
@@ -60,21 +65,24 @@ ms.lasthandoff: 01/16/2018
 
     2. 특정 일치 항목을 클릭하고 파일 서랍을 열어 일치 항목을 조사할 수 있습니다. 서랍에서 이 활동이 일치하는 다른 정책을 확인할 수 있습니다. 
      
-## <a name="validating-your-policy"></a>정책 유효성 검사
-
-1. 경고를 시뮬레이트하려면 30개 파일의 확장명을 .wncry로 변경하고 파일을 SharePoint 사이트에 업로드합니다.
-3. 정책 보고서로 이동합니다. 활동 정책 일치 항목이 곧 나타납니다. 
-4. 일치 항목을 클릭하여 다운로드된 파일을 확인할 수 있습니다. 일치 항목 자체는 중요한 데이터를 보호하기 위해 마스킹됩니다. 
-
 ## <a name="remediating-attacks-and-preventing-risk"></a>공격 해결 및 위험 방지
 
 유효성을 검사하고 정책을 세밀하게 조정한 후 정책과 일치할 수 있는 가능한 거짓 긍정을 제거하세요. 그런 후 다음을 수행합니다. 
 1. 랜섬웨어 정책과 일치하는 경우 자동화된 [거버넌스 작업](governance-actions.md)을 설정하여 문제를 해결할 수 있습니다.
 
 2. 미래의 공격을 방지하려면 자동 거버넌스 작업을 수행하도록 정책을 설정합니다. 예를 들어 SharePoint 및 OneDrive에서 자동으로 **사용자를 일시 중단**하는 정책을 설정할 수 있습니다.
+ 
+ 
+## <a name="validating-ransomeware-protection"></a>랜섬웨어 보호의 유효성 검사
 
- ## <a name="see-also"></a>참고 항목  
-[클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
+1. 경고를 시뮬레이트하려면 30개 파일의 확장명을 .wncry로 변경하고 파일을 SharePoint 사이트에 업로드합니다.
+3. 정책 보고서로 이동합니다. 활동 정책 일치 항목이 곧 나타납니다. 
+4. 일치 항목을 클릭하여 다운로드된 파일을 확인할 수 있습니다. 일치 항목 자체는 중요한 데이터를 보호하기 위해 마스킹됩니다. 
+
+
+
+   ## <a name="see-also"></a>참고 항목  
+   [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
