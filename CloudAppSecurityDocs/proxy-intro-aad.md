@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security 프록시로 보호 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security 프록시의 작동 방식에 대한 정보를 제공합니다.
+title: Microsoft Cloud App Security 조건부 액세스 앱 제어로 보호| Microsoft Docs
+description: 이 항목에서는 Cloud App Security 조건부 액세스 앱 제어 역방향 프록시의 작동 방식에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,28 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
-# <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 앱 보호
+# <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어로 앱 보호
 
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
 
 
-요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Microsoft Cloud App Security 프록시는 Azure Active Directory와 함께 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
+요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Microsoft Cloud App Security는 Azure Active Directory와 함께 조건부 액세스 앱 제어를 사용하는 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
 
 ## <a name="how-it-works"></a>작동 방식
 
-Cloud App Security 프록시는 Azure AD 조건부 액세스와 통합됩니다. Azure AD 조건부 액세스를 사용하면 특정 조건에 따라 조직의 앱에 대한 액세스 제어를 적용할 수 있습니다. 조건은 *who*(예: 사용자 또는 사용자 그룹)와 *what*(클라우드 앱) 및 *where*(위치 및 네트워크) 조건부 액세스 정책이 적용됩니다. 조건을 결정한 후에 액세스 및 세션 컨트롤을 적용할 수 있는 Cloud App Security 프록시로 사용자를 라우팅할 수 있습니다.
+조건부 액세스 앱 제어는 역방향 프록시 아키텍처를 활용하며 Azure AD 조건부 액세스와 고유하게 통합됩니다. Azure AD 조건부 액세스를 사용하면 특정 조건에 따라 조직의 앱에 대한 액세스 제어를 적용할 수 있습니다. 조건은 *who*(예: 사용자 또는 사용자 그룹)와 *what*(클라우드 앱) 및 *where*(위치 및 네트워크) 조건부 액세스 정책이 적용됩니다. 조건을 확인한 후 사용자를 액세스 및 세션 제어를 적용하여 조건부 액세스 앱 제어를 사용하여 데이터를 보호할 수 있는 Microsoft Cloud App Security로 라우팅할 수 있습니다.
 
-사용자가 Cloud App Security 프록시로 라우팅되면 액세스 및 세션 정책에 따라 실시간으로 앱 액세스 및 세션을 모니터링하고 제어할 수 있습니다. 액세스 및 세션 정책은 Cloud App Security 포털에서 활용되어 필터를 자세히 구체화하고 사용자에 대해 수행할 작업을 설정합니다. 액세스 및 세션 정책을 사용하면 다음을 수행할 수 있습니다.
+조건부 액세스 앱 제어를 통해 사용자는 액세스 및 세션 정책에 따라 실시간으로 앱 액세스 및 세션을 모니터링하고 제어할 수 있습니다. 액세스 및 세션 정책은 Cloud App Security 포털에서 활용되어 필터를 자세히 구체화하고 사용자에 대해 수행할 작업을 설정합니다. 액세스 및 세션 정책을 사용하면 다음을 수행할 수 있습니다.
 
 -   **다운로드 시 차단**: 중요한 문서의 다운로드를 차단할 수 있습니다. 예를 들어 관리되지 않는 장치에 다운로드하는 경우에는 차단됩니다.
 
@@ -49,22 +49,22 @@ Cloud App Security 프록시는 Azure AD 조건부 액세스와 통합됩니다.
 
 ### <a name="how-session-control-works"></a>세션 제어 작동 방식
 
-프록시의 세션 제어는 조건부 액세스를 기반으로 합니다. 앱에 대한 액세스를 제어한 후 사용자 세션을 앱으로 직접 리디렉션하지 않고 프록시의 세션 제어로 리디렉션할 수 있습니다. 이때부터 사용자 요청과 응답은 앱으로 직접 이동하는 것이 아니라 프록시를 통해 이동합니다.
+조건부 액세스 앱 제어를 사용하여 세션 정책을 만들면 사용자를 앱이 아니라 역방향 프록시를 통해 리디렉션하여 사용자 세션을 제어할 수 있습니다. 이때부터 사용자 요청과 응답은 앱으로 직접 이동하는 것이 아니라 Microsoft Cloud App Security를 통해 이동합니다.
 
-세션 내에서 사용자를 유지하기 위해 프록시는 앱 세션 내에서 관련된 모든 URL, Java 스크립트 및 쿠키를 프록시 URL로 바꿉니다. 예를 들어 앱에서 도메인이 myapp.com으로 끝나는 링크가 포함된 페이지를 반환하는 경우 프록시는 연결을 myapp.com.us.cas.ms와 같이 끝나는 도메인으로 바꿉니다. 
+세션 내에서 사용자를 유지하기 위해 앱 세션 내에서 관련된 모든 URL, Java 스크립트 및 쿠키를 Microsoft Cloud App Security URL로 바꿉니다. 예를 들어 앱에서 도메인이 myapp.com으로 끝나는 링크가 포함된 페이지를 반환하는 경우 링크는 연결이 myapp.com.us.cas.ms와 같이 끝나는 도메인으로 바뀝니다. 
 
 이 방법을 사용하면 장치에 아무 것도 설치할 필요가 없습니다. 이는 관리되지 않는 장치에서 세션을 모니터링하는 경우에 가장 좋습니다. 
 
-프록시를 통하도록 세션을 지정한 후에는 프록시에서 다음을 수행할 수 있습니다.
+Microsoft Cloud App Security를 통해 세션이 전달된 후 다음 작업을 수행할 수 있습니다.
 1. 사용자 활동에 대한 트래픽 검사
-3. 클라우드 앱 프록시 포털에 식별된 활동 표시
-2. 트래픽 로그 저장 및 분석
-3. 관리자가 트래픽 로그를 내보낼 수 있도록 설정
-4. 세션에서 정책 적용
+2. Microsoft Cloud App Security 활동 로그에 식별된 활동 표시
+3. 트래픽 로그 저장 및 분석
+4. 관리자가 트래픽 로그를 내보낼 수 있도록 설정
+5. 세션에서 정책 적용
 
 ## <a name="managed-device-identification"></a>관리 장치 식별
 
-프록시를 사용하면 장치를 관리할지 여부를 고려하는 정책을 만들 수 있습니다. 장치를 관리하는지 여부를 확인하기 위해 프록시에서 다음을 활용합니다.
+조건부 액세스 앱 제어를 사용하면 장치를 관리할지 여부를 고려하는 정책을 만들 수 있습니다. 장치를 관리하는지 여부를 확인하기 위해 이 기능은 다음을 활용합니다.
 
 -   준수 장치 
 -   도메인 가입 장치 
@@ -72,19 +72,19 @@ Cloud App Security 프록시는 Azure AD 조건부 액세스와 통합됩니다.
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>준수 및 도메인 가입 장치
-Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 정보를 Cloud App Security 프록시에 직접 전달할 수 있습니다. 여기서 장치 상태를 필터로 사용하는 액세스 정책 또는 세션 정책을 개발할 수 있습니다.
+Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 정보를 Microsoft Cloud App Security에 직접 전달할 수 있습니다. 여기서 장치 상태를 필터로 사용하는 액세스 정책 또는 세션 정책을 개발할 수 있습니다.
 자세한 내용은 [Azure Active Directory의 장치 관리 소개](https://docs.microsoft.com/azure/active-directory/device-management-introduction)를 참조하세요. 
 
 ### <a name="client-certificate-authenticated-devices"></a>클라이언트 인증서 인증 장치
 
-프록시 장치 식별 메커니즘에서는 클라이언트 인증서를 사용하여 관련 장치에서 인증을 요청할 수 있습니다. 그러면 조직에 이미 배포된 기존 클라이언트 인증서를 활용하거나 관리 장치에 새 클라이언트 인증서를 배포한 다음 이러한 인증서의 존재를 사용하여 액세스 및 세션 정책을 설정할 수 있습니다. 클라이언트 인증서를 배포하는 방법에 대한 내용은 [Azure AD 앱용 프록시 배포](proxy-deployment-aad.md)를 참조하세요.
+장치 식별 메커니즘에서는 클라이언트 인증서를 사용하여 관련 장치에서 인증을 요청할 수 있습니다. 그러면 조직에 이미 배포된 기존 클라이언트 인증서를 활용하거나 관리 장치에 새 클라이언트 인증서를 배포한 다음 이러한 인증서의 존재를 사용하여 액세스 및 세션 정책을 설정할 수 있습니다. 클라이언트 인증서를 배포하는 방법에 대한 내용은 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)를 참조하세요.
  
 ## <a name="supported-apps-and-clients"></a>지원되는 앱 및 클라이언트
 
-프록시는 현재 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 
+조건부 액세스 앱 제어는 현재 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 
 
 > [!NOTE]
-> - 프록시는 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
+> - 조건부 액세스 앱 제어는 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
 > - Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
 
 세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱은 현재 지원되지 않음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
@@ -121,7 +121,7 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 
 
 ## <a name="see-also"></a>참고 항목  
-[Cloud App Security 프록시 배포](proxy-deployment-aad.md)   
+[Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/23/2018
     -   보호되지 않는 끝점에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
     -   비회사 네트워크 또는 위험한 IP 주소로부터의 액세스를 제어합니다.
   
-  자세한 내용은 [프록시를 사용하여 앱 보호](proxy-intro-aad.md)를 참조하세요.
+  자세한 내용은 [조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)를 참조하세요.
 
 -   특정 서비스 활동 이름에 따라 필터링하는 기능을 점진적으로 배포하고 있습니다. 이 새로운 활동 유형 필터는 자세히 세분화되어 있어 매우 일반적인 활동 유형과 달리 특정 앱 활동을 모니터링할 수 있습니다. 예를 들어 이전에는 **실행 명령**을 필터링할 수 있었고, 이제는 특정 EXO cmdlet을 필터링할 수 있습니다. 활동 이름은 **유형(앱)** 의 [활동] 서랍에서도 확인할 수 있습니다. 이 기능은 결국 활동 유형 필터를 바꿉니다.  
 

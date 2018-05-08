@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 -   클라우드 검색을 사용하여 클라우드 환경 및 조직에서 사용 중인 클라우드 응용 프로그램을 매핑하고 식별합니다.
 -   클라우드에서 응용 프로그램의 권한을 부여하고 취소합니다.  
 -   배포가 쉬운 응용 프로그램 커넥터를 사용하여 API를 활용하고 연결하는 응용 프로그램의 가시성과 거버넌스를 확보합니다.  
--   프록시 보호를 사용하여 클라우드 앱 내에서 수행되는 액세스와 활동에 대한 실시간 가시성과 제어를 가져옵니다.
+-   조건부 액세스 앱 제어 보호를 사용하여 클라우드 앱 내에서 수행되는 액세스와 활동에 대한 실시간 가시성과 제어를 가져옵니다.
 -   정책을 설정한 후 지속적으로 미세 조정하여 연속 제어를 돕습니다.  
 
 ![Cloud App Security 아키텍처 다이어그램](./media/proxy-architecture.png)  
@@ -81,8 +81,8 @@ Cloud App Security를 사용하면 *클라우드 응용 프로그램 카탈로�
 
 Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합니다. 각 응용 프로그램에는 자체 프레임워크 및 API 제한이 있습니다. Cloud App Security는 앱 공급자와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 응용 프로그램이 API에 적용하는 다양한 제한을 고려하여(제한, API 제한, 동적 시간 이동 API 창 등), Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
 
-### <a name="proxy-protection"></a>프록시 보호
-Cloud App Security 프록시는 클라우드 환경에서 수행되는 액세스 및 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 프록시를 사용하면 조직을 보호할 수 있습니다. 
+### <a name="conditional-access-app-control-protection"></a>조건부 액세스 앱 제어 보호
+Microsoft Cloud App Security 조건부 액세스 앱 제어는 역방향 프록시 아키텍처를 활용하여 클라우드 환경 내에서 수행되는 활동에 대한 실시간 가시성 및 제어를 위해 필요한 도구를 제공합니다. 조건부 액세스 앱 제어를 사용하면 다음과 같이 조직을 보호할 수 있습니다. 
 -   다운로드가 시작되기 전에 차단하여 데이터 누수 방지
 -   안에 저장한 데이터와 클라우드에서 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙 설정
 -   관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있도록 보호되지 않는 끝점을 세부적으로 파악

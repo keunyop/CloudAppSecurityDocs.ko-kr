@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 새 소식 | Microsoft 문서
+title: Cloud App Security의 새로운 기능 | Microsoft Docs
 description: 이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+
+## <a name="cloud-app-security-release-122"></a>Cloud App Security 릴리스 122
+릴리스 날짜: 2018년 4월 29일
+
+-   점진적 출시: 이제 앱별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 G Suite 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 G Suite와 관련된 경우에만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
+- 점진적 출시: OKTA 관리자 역할이 이제 Microsoft Cloud App Security에 표시되며 **설정** > **사용자 그룹** 아래에서 태그로 각 역할에 대해 사용 가능합니다.
+
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security 릴리스 121
 릴리스 날짜: 2018년 4월 22일

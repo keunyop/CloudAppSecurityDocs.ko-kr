@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 프록시를 사용하여 관리되지 않는 장치로의 중요한 데이터 다운로드를 차단하는 방법 | Microsoft Docs
-description: 이 항목에서는 Azure AD 프록시 기능을 사용하여 관리되지 않는 장치에서 중요한 데이터를 다운로드하지 못하도록 하여 조직을 보호하는 시나리오를 설명합니다.
+title: Cloud App Security 조건부 액세스 앱 제어를 사용하여 관리되지 않는 장치로 중요한 데이터 다운로드를 차단하는 방법 | Microsoft Docs
+description: 이 항목에서는 Azure AD 역방향 프록시 기능을 사용하여 관리되지 않는 장치에서 중요한 데이터를 다운로드하지 못하도록 하여 조직을 보호하는 시나리오를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb0e0eef92181f14d83f6c4c5eaf30023b5d80da
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 72d43369ca7f8405463bbe66f7df80b8f5797149
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
-# <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security 프록시를 사용하여 중요한 정보 다운로드 차단
+# <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어를 사용하여 중요한 정보 다운로드 차단
 
 
 오늘날 IT 관리자는 직원의 생산성을 높이는 데 있어 진퇴양난에 놓여 있습니다. 즉 직원이 언제든지 어떤 장치에서든 작업할 수 있도록 앱에 액세스할 수 있어야 합니다. 다른 한편으로는 자산 정보와 특수 정보를 포함하는 회사 자산을 보호해야 합니다. 데이터를 보호하는 동시에 직원이 클라우드 앱에 액세스할 수 있게 하려면 어떻게 해야 할까요? **이 사용 사례에서는 관리되지 않는 장치 또는 회사 네트워크 외부 위치에서 엔터프라이즈 클라우드 앱의 중요한 데이터에 액세스할 수 있는 사용자가 다운로드할 수 없도록 차단합니다.**
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/23/2018
 조직의 계정 관리자가 주말에 집에서 개인용 랩톱의 Salesforce에서 무언가를 확인하려고 합니다. Salesforce 데이터에는 고객의 신용 카드 정보 또는 개인 정보가 포함되어 있을 수 있습니다. 가정용 PC는 관리되지 않습니다. 즉 이 PC에 Salesforce 문서를 다운로드하는 경우 맬웨어에 감염될 수 있거나, 분실되거나 도난당하는 경우 암호로 보호되지 않을 수 있으며 이를 발견한 사람은 중요한 정보에 액세스할 수 있습니다. 
 
 ## <a name="the-solution"></a>해결 방법
-Azure AD 조건부 액세스와 Cloud App Security 프록시를 사용하여 클라우드 앱 사용을 모니터링하고 제어하여 조직을 보호합니다.  
+Azure AD 조건부 액세스와 Microsoft Cloud App Security 조건부 액세스 앱 제어를 사용하여 클라우드 앱 사용을 모니터링하고 제어하여 조직을 보호합니다.  
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
@@ -47,7 +47,7 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 ### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>1단계: Azure AD 조건부 액세스 정책 만들기
 
 1. 할당된 사용자 및 앱을 사용하여 Azure AD 조건부 액세스 정책을 만듭니다.
-2. 조건부 액세스 정책의 세션 제어 아래에서 **프록시 적용 제한 사용**을 선택합니다.   
+2. 조건부 액세스 정책 내의 세션 제어 아래에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택합니다.   
 
    ![Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
 
@@ -126,7 +126,7 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
  
    ![세션 정책 보고서](./media/session-policy-report.png)
 
-4. 정책 보고서에서 세션 제어에 대해 프록시로 리디렉션되는 로그인 및 모니터링된 세션에서 다운로드되거나 차단된 파일을 확인할 수 있습니다.
+4. 정책 보고서에서 세션 제어에 대해 Microsoft Cloud App Security로 리디렉션되는 로그인 및 모니터링된 세션에서 다운로드되거나 차단된 파일을 확인할 수 있습니다.
 
 
 

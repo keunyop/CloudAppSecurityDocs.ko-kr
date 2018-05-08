@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10f8c4bef7e62c6a3e6f90c5df1f67e050f6c589
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -42,7 +42,9 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 
  ![고급 활동 로그 필터](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> 레거시 태그는 이전 “사용자” 필터를 사용하는 모든 활동 정책에 추가됩니다. 이 필터는 평소대로 계속 작동합니다. 레거시 태그를 제거하려는 경우 필터를 제거하고 새 **사용자 이름** 필터를 사용하여 필터를 다시 추가할 수 있습니다.
+ 
 ## <a name="the-activity-drawer"></a>활동 서랍
 
 ### <a name="working-with-the-activity-drawer"></a>활동 서랍 사용

@@ -1,11 +1,11 @@
 ---
 title: 액세스 허용 및 차단을 위한 Cloud App Security 액세스 정책 만들기 | Microsoft Docs
-description: 이 문서에서는 Azure AD를 통해 연결된 앱에 대한 액세스를 허용하고 차단하도록 Cloud App Security 프록시 액세스 정책을 설정하는 절차를 설명합니다.
+description: 이 항목에서는 역방향 프록시 기능을 사용하여 Azure AD를 통해 연결된 앱에 대한 액세스를 허용하고 차단하도록 Cloud App Security 조건부 액세스 앱 제어 액세스 정책을 설정하는 절차를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -34,8 +34,8 @@ Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 장�
 ## <a name="prerequisites-to-using-access-policies"></a>액세스 정책 사용을 위한 필수 구성 요소
 
 - Azure AD Premium P2 라이선스
-- 관련 앱은 [프록시를 사용하여 배포](proxy-deployment-aad.md)해야 합니다.
-- [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Cloud App Security 프록시로 리디렉션하는 위치에 있어야 합니다.
+- 관련 앱은 [조건부 액세스 앱 제어를 사용하여 배포됩니다](proxy-deployment-aad.md).
+- [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Microsoft Cloud App Security로 리디렉션하는 위치에 있어야 합니다.
 
 > [!NOTE]
 > - 액세스 정책은 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
@@ -44,14 +44,14 @@ Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 장�
 
 Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 정책이 동시에 작동하여 각 사용자 세션을 검사하고 각 앱에 대한 정책을 결정합니다. Azure AD에서 조건부 액세스 정책을 설정하려면 다음 절차를 수행합니다.
 
-1. Cloud App Security 프록시를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
+1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
 
    > [!NOTE]
-   > [프록시를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
+   > [조건부 액세스 앱 제어를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
 
-2. **세션** 블레이드에서 **프록시 적용 제한 사용**을 선택하여 사용자를 Cloud App Security 프록시로 라우팅합니다.
+2. **세션** 블레이드에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택하여 사용자를 Microsoft Cloud App Security로 라우팅합니다.
 
-   ![프록시 제한 Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
+   ![조건부 액세스 앱 제어 제한 사항 Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security 액세스 정책 만들기 
 
@@ -91,7 +91,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
  
 ## <a name="see-also"></a>참고 항목  
-[Azure AD 프록시 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
+[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
