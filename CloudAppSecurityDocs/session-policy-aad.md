@@ -1,11 +1,11 @@
 ---
 title: 세션 정책을 만들어서 사용자 세션에 대한 심층적인 가시성을 확보하고 다운로드를 차단 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security Proxy 세션 정책을 만들어서 사용자의 세션 활동에 대한 심층적인 가시성을 확보하고 다운로드를 차단하는 절차를 설명합니다.
+description: 이 항목에서는 사용자의 세션 활동에 대한 심층적인 가시성을 확보하고 역방향 프록시 기능을 사용하여 다운로드를 차단하기 위해 Cloud App Security 조건부 액세스 앱 제어 세션 정책을 설정하는 절차를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b414597e499919d9d6251777c9bdbea160cac430
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 7ae1fa26f818fa652570dc6752028c3addbd3b2a
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/23/2018
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
 
-Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수준 모니터링에서 클라우드 앱에 대한 세부적인 가시성을 제공하고 사용자 세션에 설정한 정책에 따라 다른 작업을 수행할 수 있습니다. 세션 제어를 통해 [액세스를 완전히 허용하거나 차단](access-policy-aad.md)하는 대신 세션을 모니터링하면서 액세스를 허용하거나 특정 세션 활동을 제한할 수 있습니다. 
+Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수준 모니터링에서 클라우드 앱에 대한 세부적인 가시성을 제공하고 사용자 세션에 설정한 정책에 따라 다른 작업을 수행할 수 있습니다. 세션 제어를 통해 [액세스를 완전히 허용하거나 차단](access-policy-aad.md)하는 대신, 조건부 액세스 액 제어의 역방향 프록시 기능을 사용하여 세션을 모니터링하면서 액세스를 허용하거나 특정 세션 활동을 제한할 수 있습니다. 
 
 예를 들어 관리되지 않는 장치 또는 특정 위치에서 오는 세션에 대해 사용자가 응용 프로그램에 액세스할 수 있도록 허용하고 중요한 파일의 다운로드도 제한하도록 결정하거나, 다운로드 시 특정 문서를 보호하도록 요구할 수 있습니다. 세션 정책을 통해 이러한 사용자 세션 제어를 설정하고 액세스를 허용하며 다음을 수행할 수 있습니다.
 
@@ -39,8 +39,8 @@ Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수�
 ## <a name="prerequisites-to-using-session-policies"></a>세션 정책을 사용하기 위한 필수 구성 요소
 
 - Azure AD Premium P2 라이선스
-- 관련 앱은 [프록시를 사용하여 배포](proxy-deployment-aad.md)해야 합니다.
-- [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Cloud App Security 프록시로 리디렉션하는 위치에 있어야 합니다.
+- 관련 앱은 [조건부 액세스 앱 제어를 사용하여 배포됩니다](proxy-deployment-aad.md).
+- [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Microsoft Cloud App Security로 리디렉션하는 위치에 있어야 합니다.
 
 > [!NOTE]
 > - 세션 정책은 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
@@ -49,14 +49,14 @@ Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수�
 
 Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 정책이 동시에 작동하여 각 사용자 세션을 검사하고 각 앱에 대한 정책을 결정합니다. Azure AD에서 조건부 액세스 정책을 설정하려면 다음 절차를 수행합니다.
 
-1. Cloud App Security 프록시를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
+1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
 
    > [!NOTE]
-   > [프록시를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
+   > [조건부 액세스 앱 제어를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
 
-2. **세션** 블레이드에서 **프록시 적용 제한 사용**을 선택하여 사용자를 Cloud App Security 프록시로 라우팅합니다.
+2. **세션** 블레이드에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택하여 사용자를 Microsoft Cloud App Security로 라우팅합니다.
 
-   ![프록시 제한 Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
+   ![조건부 액세스 앱 제어 제한 사항 Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Cloud App Security 세션 정책 만들기 
 
@@ -132,7 +132,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 ## 모든 활동 모니터링 <a name="monitor-session"></a>
 
-세션 정책을 만들면 정책과 일치하는 각 사용자 세션이 앱이 아닌 프록시 세션 제어로 직접 리디렉션됩니다. 세션이 모니터링되고 있음을 알려주는 모니터링 알림이 사용자에게 표시됩니다.
+세션 정책을 만들면 정책과 일치하는 각 사용자 세션이 앱이 아닌 세션 제어로 직접 리디렉션됩니다. 세션이 모니터링되고 있음을 알려주는 모니터링 알림이 사용자에게 표시됩니다.
 
    ![세션 모니터링 알림](./media/session-monitoring-notice.png)
 
@@ -140,32 +140,32 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 1. 설정 코그 아래에서 **일반 설정**을 선택합니다. 
 
-2. 그런 다음 Cloud App Security 프록시 설정 아래에서 **사용자 알림** 확인란을 선택 취소합니다.
+2. 그런 다음 조건부 액세스 제어 제어 설정에서 **사용자에게 알립니다** 확인란을 선택 취소합니다.
 
     ![세션 모니터링 알림 사용 해제](./media/disable-session-monitoring-notice.png)
 
-세션 내에서 사용자를 유지하기 위해 프록시는 앱 세션 내에서 관련된 모든 URL, Java 스크립트 및 쿠키를 프록시 URL로 바꿉니다. 예를 들어 앱에서 도메인이 myapp.com으로 끝나는 링크가 포함된 페이지를 반환하는 경우 프록시는 연결을 myapp.com.us.cas.ms와 같이 끝나는 도메인으로 바꿉니다. 이렇게 하면 전체 세션이 프록시에서 모니터링됩니다.
+세션 내에서 사용자를 유지하기 위해 조건부 액세스 앱 제어는 앱 세션 내에서 관련된 모든 URL, Java 스크립트 및 쿠키를 Microsoft Cloud App Security URL로 바꿉니다. 예를 들어 앱에서 도메인이 myapp.com으로 끝나는 링크가 포함된 페이지를 반환하는 경우 조건부 액세스 앱 제어는 연결을 myapp.com.us.cas.ms와 같이 끝나는 도메인으로 바꿉니다. 이렇게 하면 전체 세션이 Microsoft Cloud App Security에서 모니터링됩니다.
 
-프록시는 라우팅된 모든 사용자 세션의 트래픽 로그를 기록합니다. 트래픽 로그에는 시간, IP, 사용자 에이전트, 방문한 URL 및 업로드 및 다운로드한 바이트 수가 포함됩니다. 이러한 로그가 분석되고 **Cloud App Security Proxy**라는 연속 보고서가 Cloud Discovery 대시보드의 Cloud Discovery 보고서 목록에 추가됩니다.
+조건부 액세스 앱 제어는 라우팅된 모든 사용자 세션의 트래픽 로그를 기록합니다. 트래픽 로그에는 시간, IP, 사용자 에이전트, 방문한 URL 및 업로드 및 다운로드한 바이트 수가 포함됩니다. 이러한 로그가 분석되고 **Cloud App Security Conditional Access App Control**(Cloud App Security 조건부 액세스 앱 제어)이라는 연속 보고서가 Cloud Discovery 대시보드의 Cloud Discovery 보고서 목록에 추가됩니다.
 
-![프록시 보고서](./media/proxy-report.png)
+![조건부 액세스 앱 제어 보고서](./media/proxy-report.png)
 
 
 이러한 로그를 내보내려면 다음을 수행합니다.
 
-1. 설정 코그로 이동하고 **프록시**를 클릭합니다.
+1. 설정 코그로 이동하고 **Conditional Access App Control**(조건부 액세스 앱 제어)을 클릭합니다.
 2. 테이블의 오른쪽에서 내보내기 단추를 클릭합니다 ![내보내기 단추](./media/export-button.png). 
 3. 보고서 범위를 선택하고 **내보내기**를 클릭합니다. 이 프로세스는 다소 시간이 걸릴 수 있습니다.
 
 내보낸 로그를 다운로드하려면 다음을 수행합니다.
 
 1. 보고서가 준비되면 **조사**, **사용자 지정 보고서**로 차례로 이동합니다.
-2. 테이블에서 **프록시 트래픽 로그** 목록에서 관련 보고서를 선택하고 다운로드 ![다운로드 단추](./media/download-button.png) 단추를 클릭합니다. 
+2. 테이블에서 **Conditional Access App Control traffic logs**(조건부 액세스 앱 제어 트래픽 로그) 목록에서 관련 보고서를 선택하고 다운로드 ![다운로드 단추](./media/download-button.png)를 클릭합니다. 
 
 
 ## 모든 다운로드 차단 <a name="block-download"></a>
 
-**차단**을 Cloud App Security 프록시 세션 정책에서 수행하려는 **작업**으로 설정하면 프록시에서 사용자가 정책의 파일 필터에 따라 파일을 다운로드할 수 없도록 합니다. 다운로드 이벤트가 각 SAML 앱에 대한 프록시에서 인식되고, 사용자가 이 이벤트를 시작하면 프록시에서 실시간으로 해당 이벤트가 실행되지 않도록 개입합니다. 사용자가 다운로드를 시작한 신호가 수신되면, 프록시에서 **제한된 다운로드** 메시지를 사용자에게 보내고, 다운로드한 파일을 프록시 세션 정책에서 구성할 수 있는 사용자 지정 가능한 메시지가 포함된 텍스트 파일로 바꿉니다.  
+**차단**을 Cloud App Security 세션 정책에서 수행하려는 **작업**으로 설정하면 조건부 액세스 앱 제어에서 사용자가 정책의 파일 필터에 따라 파일을 다운로드할 수 없도록 합니다. 다운로드 이벤트가 각 SAML 앱에 대한 Microsoft Cloud App Security에서 인식되고, 사용자가 이 이벤트를 시작하면 조건부 액세스 앱 제어에서 실시간으로 해당 이벤트가 실행되지 않도록 개입합니다. 사용자가 다운로드를 시작한 신호가 수신되면, 조건부 액세스 액 제어에서 **제한된 다운로드** 메시지를 사용자에게 보내고, 다운로드한 파일을 세션 정책에서 구성할 수 있는 사용자 지정 가능한 메시지가 포함된 텍스트 파일로 바꿉니다.  
 
 ## 특정 활동 차단 <a name="block-activities"></a>
 
@@ -173,11 +173,11 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 ## 다운로드 시 파일 보호 <a name="protect-download"></a>
 **활동 유형** 필터를 사용하여 선택할 수 있는 특정 활동을 차단하려면 **활동 차단**을 선택합니다. 선택한 앱의 모든 활동이 모니터링되고 활동 로그에 보고됩니다. **차단** 작업을 선택하면 선택한 특정 활동이 차단되고, **테스트** 작업을 선택하고 경고를 켜면 선택한 특정 활동에서 경고가 발생합니다.
-**보호**를 Cloud App Security 프록시 세션 정책에서 수행할 **작업**으로 설정하면 프록시에서 정책의 파일 필터에 따라 파일의 레이블 지정과 후속 보호를 적용합니다. 레이블은 Azure의 Azure Information Protection 콘솔에서 구성되며, 클라우드 앱 보안 정책에서 옵션으로 표시되도록 레이블 내에서 해당 레이블에 대해 **보호**를 선택해야 합니다. 레이블을 선택하고 Cloud App Security 정책 기준을 충족하는 파일을 다운로드하는 경우 다운로드 시 이 레이블과 해당 보호(권한 포함)가 파일에 적용됩니다. 이제 다운로드한 파일이 보호되는 동안 원본 파일은 있는 그대로 클라우드 앱에 남아 있습니다. 파일에 액세스하려는 사용자는 적용된 보호에 의해 결정된 권한 요구 사항을 충족해야 합니다.  
+**보호**를 Cloud App Security 세션 정책에서 수행할 **작업**으로 설정하면 조건부 액세스 앱 제어에서 정책의 파일 필터에 따라 파일의 레이블 지정과 후속 보호를 적용합니다. 레이블은 Azure의 Azure Information Protection 콘솔에서 구성되며, 클라우드 앱 보안 정책에서 옵션으로 표시되도록 레이블 내에서 해당 레이블에 대해 **보호**를 선택해야 합니다. 레이블을 선택하고 Cloud App Security 정책 기준을 충족하는 파일을 다운로드하는 경우 다운로드 시 이 레이블과 해당 보호(권한 포함)가 파일에 적용됩니다. 이제 다운로드한 파일이 보호되는 동안 원본 파일은 있는 그대로 클라우드 앱에 남아 있습니다. 파일에 액세스하려는 사용자는 적용된 보호에 의해 결정된 권한 요구 사항을 충족해야 합니다.  
  
  
 ## <a name="see-also"></a>참고 항목  
-[Azure AD 프록시 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
+[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
   
