@@ -146,7 +146,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 세션 내에서 사용자를 유지하기 위해 조건부 액세스 앱 제어는 앱 세션 내에서 관련된 모든 URL, Java 스크립트 및 쿠키를 Microsoft Cloud App Security URL로 바꿉니다. 예를 들어 앱에서 도메인이 myapp.com으로 끝나는 링크가 포함된 페이지를 반환하는 경우 조건부 액세스 앱 제어는 연결을 myapp.com.us.cas.ms와 같이 끝나는 도메인으로 바꿉니다. 이렇게 하면 전체 세션이 Microsoft Cloud App Security에서 모니터링됩니다.
 
-조건부 액세스 앱 제어는 라우팅된 모든 사용자 세션의 트래픽 로그를 기록합니다. 트래픽 로그에는 시간, IP, 사용자 에이전트, 방문한 URL 및 업로드 및 다운로드한 바이트 수가 포함됩니다. 이러한 로그가 분석되고 **Cloud App Security Conditional Access App Control**(Cloud App Security 조건부 액세스 앱 제어)이라는 연속 보고서가 Cloud Discovery 대시보드의 Cloud Discovery 보고서 목록에 추가됩니다.
+조건부 액세스 앱 제어는 라우팅된 모든 사용자 세션의 트래픽 로그를 기록합니다. 트래픽 로그에는 시간, IP, 사용자 에이전트, 방문한 URL 및 업로드 및 다운로드한 바이트 수가 포함됩니다. 이러한 로그가 분석되고 **Cloud App Security 조건부 액세스 앱 제어**라는 연속 보고서가 Cloud Discovery 대시보드의 Cloud Discovery 보고서 목록에 추가됩니다.
 
 ![조건부 액세스 앱 제어 보고서](./media/proxy-report.png)
 
@@ -160,7 +160,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 내보낸 로그를 다운로드하려면 다음을 수행합니다.
 
 1. 보고서가 준비되면 **조사**, **사용자 지정 보고서**로 차례로 이동합니다.
-2. 테이블에서 **Conditional Access App Control traffic logs**(조건부 액세스 앱 제어 트래픽 로그) 목록에서 관련 보고서를 선택하고 다운로드 ![다운로드 단추](./media/download-button.png)를 클릭합니다. 
+2. 테이블에서 **조건부 액세스 앱 제어 트래픽 로그** 목록에서 관련 보고서를 선택하고 다운로드 ![다운로드 단추](./media/download-button.png)를 클릭합니다. 
 
 
 ## 모든 다운로드 차단 <a name="block-download"></a>
