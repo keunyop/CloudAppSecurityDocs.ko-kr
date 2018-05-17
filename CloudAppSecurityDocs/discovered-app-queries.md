@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/23/2018
 
 4. 나중에 쿼리를 사용하려면 **쿼리**에서 **저장된 쿼리**까지 아래로 스크롤하여 쿼리를 선택합니다. 
 
-   ![쿼리 열기](./media/open-query.png)
+   ![쿼리 열기](./media/discovered-app-query.png)
 
 
 Cloud App Security에는 **제안된 쿼리**가 제공되며 자주 사용하는 사용자 지정 쿼리를 저장할 수도 있습니다. 제안된 쿼리에는 다음과 같은 선택적 제안 쿼리를 사용하여 검색된 앱을 필터링하는 권장 조사 환경이 제공됩니다.
