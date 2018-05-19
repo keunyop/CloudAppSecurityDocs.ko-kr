@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
+
+
+>[!div class="step-by-step"]
+[« 세션 정책](session-policy-aad.md)<br>
+[사용 사례 »](use-case-proxy-block-session-aad.md)
+
 
 Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 장치 및 앱을 기반으로 클라우드 앱에 대한 액세스를 실시간으로 모니터링하고 제어할 수 있습니다. 클라이언트 인증서를 관리되는 장치로 롤아웃하거나 타사 MDM 인증서와 같은 기존 인증서를 활용하여 도메인에 가입하지 않은 장치 및 Windows Intune으로 관리되지 않는 장치를 비롯한 모든 장치에 대한 액세스 정책을 만들 수 있습니다. 예를 들어 관리되는 장치에 클라이언트 인증서를 배포한 다음 인증서 없이 장치에서 액세스할 수 없도록 차단할 수 있습니다. 
 
@@ -88,7 +94,9 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 
 
-
+>[!div class="step-by-step"]
+[« 이전: 세션 정책](session-policy-aad.md)
+[다음: 조건부 액세스 앱 제어를 사용하여 중요한 정보 다운로드 차단 »](use-case-proxy-block-session-aad.md)
  
 ## <a name="see-also"></a>참고 항목  
 [Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   

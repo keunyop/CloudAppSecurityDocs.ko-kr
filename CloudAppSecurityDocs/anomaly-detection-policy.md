@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/13/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -86,8 +86,20 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 **여러 번의 로그인 시도 실패**
 - 이 검색은 학습된 기준과 관련하여 단일 세션에서 로그인 시도가 여러 번 실패한 사용자를 나타냅니다. 이는 위반 시도일 수 있습니다. 
 
+## <a name="scope-anomaly-detection-policies"></a>변칙 검색 정책 범위 지정
 
-## <a name="triaging-anomaly-detection-alerts"></a>변칙 검색 경고 심사
+정책에서 포함하고 제외할 사용자 및 그룹에만 정책이 적용되도록 각 변칙 검색 정책의 범위를 독립적으로 지정할 수 있습니다.
+예를 들어, 자주 여행하는 특정 사용자를 무시하도록 자주 사용되지 않는 국가에서의 활동 검색을 설정할 수 있습니다. 
+
+변칙 검색 정책의 범위를 지정하려면
+1. **제어** > **정책**을 클릭하고 **유형** 필터를 **변칙 검색 정책**으로 설정합니다.
+2. 범위를 지정할 정책을 클릭합니다.
+3. **범위** 아래의 기본 설정 **모든 사용자 및 그룹** 드롭다운을 **특정 사용자 및 그룹**으로 변경합니다.
+4. 이 정책이 적용될 사용자 및 그룹을 지정하려면 **포함**을 선택합니다. 여기에서 선택하지 않은 모든 사용자나 그룹은 위협으로 간주되지 않고 경고를 생성하지 않습니다.
+5. 이 정책이 적용되지 않을 사용자를 지정하려면 **제외**를 선택합니다. 여기에서 선택한 모든 사용자는 위협으로 간주되지 않고 경고를 생성하지 않으며, **포함**에서 선택한 그룹의 멤버인 경우에도 마찬가지입니다.
+
+ ![변칙 검색 범위 지정](./media/anomaly-detection-scoping.png)
+## <a name="triage-anomaly-detection-alerts"></a>변칙 검색 경고 심사
 
 새 변칙 검색 정책으로 트리거된 다양한 경고를 신속하게 심사하여 먼저 주의를 기울여야 할 경고를 결정할 수 있습니다. 이렇게 하려면 전체적인 상황을 보고 정말 악의적인 일이 발생하고 있는지를 파악할 수 있도록 경고에 대한 컨텍스트가 필요합니다.  
 

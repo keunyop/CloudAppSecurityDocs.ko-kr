@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,6 +26,10 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
+
+
+>[!div class="step-by-step"]
+[다음: 조건부 액세스 앱 제어 배포 »](proxy-deployment-aad.md)
 
 
 요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Microsoft Cloud App Security는 Azure Active Directory와 함께 조건부 액세스 앱 제어를 사용하는 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
@@ -115,10 +119,14 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 
 -   HighQ 
 
+-   Concur
+
 세션 제어에 추가 앱이 계속 등록되고 있습니다. 여기에서 언급되지 않은 특정 앱에 관심이 있는 경우 [해당 앱에 대한 세부 정보](mailto:casfeedback@microsoft.com)와 관심 있는 사용 사례를 보내 주시면 등록해 드리겠습니다.
 
 
 
+>[!div class="step-by-step"]
+[다음: 조건부 액세스 앱 제어 배포 »](proxy-deployment-aad.md)
 
 ## <a name="see-also"></a>참고 항목  
 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)   

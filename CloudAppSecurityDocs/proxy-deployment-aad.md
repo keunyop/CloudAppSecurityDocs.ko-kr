@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5397fd49d1eaa2365c7909155ded55eef965e0de
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: d82e0e1d46e3927d0488dc525fa9c6bea42dd791
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -25,6 +25,13 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > 이것은 미리 보기 기능입니다.
+
+
+
+>[!div class="step-by-step"]
+[« 이전](proxy-intro-aad.md)
+[다음 »](session-policy-aad.md)
+
 
 다음 단계에 따라 Microsoft Cloud App Security 조건부 액세스 앱 제어에서 Azure AD 앱을 제어하도록 구성합니다.
 
@@ -102,6 +109,11 @@ ms.lasthandoff: 04/30/2018
 
 
 이제 조건부 액세스 앱 제어 앱을 제어할 [액세스 정책](access-policy-aad.md) 및 [세션 정책](session-policy-aad.md)을 만들 준비가 되었습니다.
+
+
+>[!div class="step-by-step"]
+[« 이전: 조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)
+[다음: 세션 정책 »](session-policy-aad.md)
 
 
 
