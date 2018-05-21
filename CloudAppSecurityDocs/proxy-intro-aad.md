@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -127,6 +127,7 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 
 >[!div class="step-by-step"]
 [다음: 조건부 액세스 앱 제어 배포 »](proxy-deployment-aad.md)
+
 
 ## <a name="see-also"></a>참고 항목  
 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)   

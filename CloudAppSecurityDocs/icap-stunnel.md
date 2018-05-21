@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/14/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -280,7 +280,7 @@ Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent fo
 2. **ICAP** > **응답 필터링** 아래에서 **다음보다 적은 응답 무시** 값을 1로 변경합니다.
 
 
-3. “application/”을 **콘텐츠 형식 검사</em>** 목록에 추가합니다.
+3. "application/\*"을 **콘텐츠 형식 검사</em>** 의 목록에 추가합니다.
      ![콘텐츠 형식 검사](./media/icap-inspect-content-type.png)
 
 4. **저장**을 클릭합니다.
