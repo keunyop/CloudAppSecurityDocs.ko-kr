@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 # <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어를 사용하여 중요한 정보 다운로드 차단
 
 >[!div class="step-by-step"]
-[« 이전: 액세스 정책](access-policy-aad.md)
+[« 이전: 액세스 정책을 만드는 방법](access-policy-aad.md)
 
 오늘날 IT 관리자는 직원의 생산성을 높이는 데 있어 진퇴양난에 놓여 있습니다. 즉 직원이 언제든지 어떤 장치에서든 작업할 수 있도록 앱에 액세스할 수 있어야 합니다. 다른 한편으로는 자산 정보와 특수 정보를 포함하는 회사 자산을 보호해야 합니다. 데이터를 보호하는 동시에 직원이 클라우드 앱에 액세스할 수 있게 하려면 어떻게 해야 할까요? **이 사용 사례에서는 관리되지 않는 장치 또는 회사 네트워크 외부 위치에서 엔터프라이즈 클라우드 앱의 중요한 데이터에 액세스할 수 있는 사용자가 다운로드할 수 없도록 차단합니다.**
 
@@ -133,7 +133,7 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 
 
 >[!div class="step-by-step"]
-[« 이전: 액세스 정책](access-policy-aad.md)
+[« 이전: 액세스 정책을 만드는 방법](access-policy-aad.md)
 
 
 
