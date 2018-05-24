@@ -1,6 +1,6 @@
 # 이해 및 탐색
 ## [Cloud App Security란?](what-is-cloud-app-security.md)
-## [Cloud App Security 준수, 신뢰, 데이터 보안 및 개인 정보](cas-compliance-trust.md)
+## [Cloud App Security 데이터 보안 및 개인 정보](cas-compliance-trust.md)
 ## [새로운 기능은 무엇인가요?](release-notes.md)
 ### [이전 릴리스 아카이브](release-note-archive.md)
 ## 비교
