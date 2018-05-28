@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -168,7 +168,7 @@ Cloud App Security와 Azure Information Protection이 함께 작동하는 방식
 경고를 설정하거나, 사용자에게 알리거나, 이러한 정책에 즉각적인 조치를 취할 수도 있습니다.
 [거버넌스 작업](governance-actions.md)에 대해 자세히 알아보세요.
 
-[Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)에 대해 자세히 알아보고 Azure Information Protection [빠른 시작 자습서](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)를 확인하세요.
+[Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)에 대해 자세히 알아보고 Azure Information Protection [빠른 시작 자습서](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)를 확인하세요.
 
 
  

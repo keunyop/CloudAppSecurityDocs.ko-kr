@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/30/2018
 # <a name="what-is-microsoft-cloud-app-security"></a>Microsoft Cloud App Security란?
 
 > [!NOTE]
-> Office 365의 고급 보안 관리 및 Cloud App Security 기능에 대한 자세한 내용은 [고급 보안 관리 시작](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)을 참조하세요.
+> Office 365 Cloud App Security에 대한 자세한 내용은 [Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)을 참조하세요.
 
 클라우드로 전환하면 직원들의 유연성이 증가하고 IT 비용이 감소하지만, 조직의 보안 유지 면에서는 새로운 복잡성과 문제도 발생합니다. 클라우드 응용 프로그램의 모든 이점을 얻으려면 IT 팀에서 제어를 유지하는 동시에 액세스를 허용하는 적절한 균형 지점을 찾아 중요한 데이터를 보호해야 합니다.  
 
