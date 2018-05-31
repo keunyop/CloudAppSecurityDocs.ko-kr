@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 417e5eb128e5ec351369d8703a3c220117031f32
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: f93a78e35c76e9dd76e1264fb11d6046ed2b6d18
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558943"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>1단계: Azure 활동 로그를 Event Hubs에 스트림
 
-1. Azure 구독의 Azure 활동 로그를 이벤트 허브에 스트림합니다. Azure 설명서의 공식 지침(https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs)을 따릅니다.
+1. Azure 구독의 Azure 활동 로그를 이벤트 허브에 스트림합니다. Azure 설명서의 공식 지침(https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs)을 따릅니다.
 
    > [!NOTE]
    > Azure 구독이 여러 개 있는 경우 구독에서 공유되는 하나의 이벤트 허브를 사용하여 각 구독에 대해 이 단계를 반복합니다.
@@ -48,9 +49,7 @@ Cloud App Security는 Event Hubs를 통해 Azure에 연결됩니다. 이 섹션�
   
    ![Event Hubs 메뉴](media/azure-event-hubs.png "Azure Event Hubs")
 
-2. 이벤트 허브 네임스페이스를 선택합니다.
-  
-   ![이벤트 허브 네임스페이스](media/azure-namespace.png "Azure 네임스페이스")
+2.  Azure 팝업에서 **Microsoft Azure 연결**을 클릭합니다.
 
 3. 메뉴에서 **엔터티** 아래의 **Event Hubs**를 클릭합니다. 
   

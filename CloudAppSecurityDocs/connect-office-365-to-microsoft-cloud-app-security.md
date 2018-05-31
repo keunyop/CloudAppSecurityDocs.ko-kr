@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558977"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -53,15 +54,13 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
  
 1.  **연결된 앱** 페이지에서 더하기 단추를 클릭하고 **Office 365**를 선택합니다.  
 
-2.  Office 365 팝업에서 Office 365 연결을 클릭합니다.
+    ![0365 연결](./media/connect-0365.png) 
 
-      ![0365 연결](./media/connect-0365.png) 
+2.  Office 365 팝업에서 **Office 365 연결**을 클릭합니다.
+
+    ![0365 연결](./media/office-connect.png) 
  
-3.  Office 365에 대한 연결을 테스트하려면 지금 테스트를 클릭합니다. 테스트는 몇 분 정도 걸릴 수 있습니다.
-  
-    ![O365 연결 테스트](./media/o365-test-connection.png) 
- 
-4.   Office 365가 연결된 것으로 표시되면 **닫기**를 클릭합니다.
+3.   Office 365가 연결된 것으로 표시되면 **닫기**를 클릭합니다.
   
      ![O365 연결됨](./media/o365-connected.png) 
 

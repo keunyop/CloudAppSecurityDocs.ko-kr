@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558926"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -124,9 +125,20 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 
 ## <a name="email-server"></a>메일 서버
 
-Cloud App Security 전용 메일 IP 주소: 
+기본 템플릿 및 설정을 사용하여 알림을 보낼 수 있도록 설정하려면 다음 IP 주소를 스팸 방지 허용 목록에 추가합니다. Cloud App Security 전용 메일 IP 주소: 
 
-198.2.134.139(mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+알림을 사용자 지정하려는 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 Microsoft Cloud App Security 포털의 **설정**에서 **메일 설정**을 선택하고 MailChimp의 서비스 약관 및 개인정보처리방침을 검토한 후 Microsoft에 사용자를 대신하여 MailChimp를 사용할 수 있는 권한을 부여합니다.
+
+이렇게 하지 않으면 모든 기본 설정을 사용하여 메일 알림이 전송됩니다.
+
+MailChimp를 사용하려면 IP 주소 198.2.134.139(mail1.cloudappsecurity.com)를 스팸 방지 허용 목록에 추가하여 알림이 전송될 수 있도록 합니다.
 
 알림을 보낼 수 있도록 스팸 방지 서비스에서 이 IP 주소를 허용 목록에 포함해야 합니다.
 

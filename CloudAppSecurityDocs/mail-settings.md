@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558892"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -29,18 +30,13 @@ Microsoft Cloud App Security에서 경고를 요청하는 관리자에게 보내
 
 1. 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
 
-2. **보낸 사람 메일 주소**: 알림을 보내는 데 사용할 메일 계정입니다.  
+ ![메일 설정](./media/mail-settings-config.png)
+
+2. **메일 보낸 사람 ID**에서: 기본 메일 설정을 사용하려면 이 섹션의 내용을 변경할 필요가 없습니다. 메일 보낸 사람 ID를 사용자 지정하려면 **보낸 사람 표시 이름**, **보낸 사람 메일 주소** 및 **회신 메일 주소**를 설정하면 됩니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그러지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
    
-   **보낸 사람 표시 이름**: 메일 메시지의 **보낸 사람** 필드에 표시하려는 이름입니다.  
    > [!NOTE]
    > [rfc822 표준](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
 
-   **회신 메일 주소**: 메시지에 회신하는 데 사용할 메일 계정입니다.  
-  
-     ![메일 설정 구성](./media/mail-settings-config.png "메일 설정 구성")  
-
-   >[!NOTE]
-   >**보낸 사람 메일 주소** 필드를 고유한 도메인으로 변경하려면 [여기](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)에서 지침을 참조하세요.
   
 3. **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음이 포함되어야 합니다.  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559079"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -109,6 +110,15 @@ IP 주소 정보를 보려면:
 
 
 ![Cloud App Security에서의 IP 주소 정보](./media/ip-address-insights.png)
+
+## 활동 내보내기 <a name="export"></a>
+
+모든 사용자 활동을 CSV 파일로 내보낼 수 있습니다. 
+
+**활동 로그**에서 오른쪽 위 모서리에 있는 **내보내기** 단추 ![내보내기 단추](./media/export-button.png)를 클릭합니다.
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+
 
 
 ## <a name="see-also"></a>참고 항목  

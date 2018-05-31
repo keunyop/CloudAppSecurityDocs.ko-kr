@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9bfc880cdaa0bf87abfd2b3b34cdf647a4aa1aaf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: cfc1d9442c50153ce06a358ccdd88b4ab316a88d
+ms.sourcegitcommit: 592478b77531328e23bedd6e8964c07321e6b1a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445338"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 |Error|설명|해결 방법|
 |----|----|----|
-| **<policy name> 정책이 구성 오류로 인해 자동으로 비활성화되었습니다.**|Microsoft Cloud App Security에서 이 오류가 발생할 경우 명명된 정책의 구성을 수정해야 함을 의미합니다. Microsoft Cloud App Security 정책을 만들 때는 Cloud App Security 내에서 생성한 다른 개체(예: IP 태그 또는 IP 범위 필터)를 자주 사용합니다. 정책에 사용한 IP 태그 또는 범위를 나중에 삭제할 경우 정책이 자동으로 비활성화되며 이 오류가 표시됩니다. |정책을 복원하려면 정책을 편집하고 해당 필터에서 삭제된 개체를 제거하고 정책을 저장합니다.|
+| **<policy name> 정책이 구성 오류로 인해 자동으로 비활성화되었습니다.**|Microsoft Cloud App Security에서 이 오류가 발생할 경우, 표시된 정책의 구성을 수정해야 함을 의미합니다. Microsoft Cloud App Security 정책을 만들 때는 흔히 Cloud App Security 또는 보안 및 준수 센터에서 만든 다른 개체(예: IP 태그 또는 사용자 지정 중요한 형식)를 활용합니다. 정책에 사용한 IP 태그 또는 사용자 지정 중요한 형식을 나중에 삭제할 경우, 정책이 자동으로 비활성화되며 이 오류가 표시됩니다. 이 오류는 너무 복잡한 필터와 같은 좀 더 일반적인 구성 오류를 나타낼 수도 있습니다. |정책을 복원하려면 정책을 편집하고 언급된 모든 구성 오류를 해결합니다. 이는 대개 정책 필터에서 삭제된 개체를 제거하고 정책을 저장해야 함을 의미합니다.|
 
 
 
