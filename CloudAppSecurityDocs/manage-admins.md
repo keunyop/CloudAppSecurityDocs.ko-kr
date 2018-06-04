@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82df91691ec5543075a9b3c11dfef1e11eb4fae9
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568393"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -31,28 +32,39 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
 - 준수 관리자: 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 파일 정책을 생성 및 수정하고 파일 관리 작업을 허용하며 데이터 관리에서 모든 기본 보고서를 볼 수 있습니다. 
 
 - 보안 독자: 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 보안 독자는 다음을 수행할 수 없습니다.
-      - 정책 만들기 또는 기존 정책 편집/변경 
-      - 거버넌스 작업 수행 
-      - 검색 로그 업로드
-      - 타사 앱 금지 및 승인
-      - IP 주소 범위 설정 페이지 액세스 및 보기
-      - 모든 설정 페이지 액세스 및 보기 
-      - 검색 설정 액세스 및 보기 
-      - 앱 커넥터 페이지 액세스 및 보기
-      - 거버넌스 로그 액세스 및 보기 
-      - 스냅숏 보고서 관리 페이지 액세스 및 보기 
+
+   - 정책 만들기 또는 기존 정책 편집/변경 
+
+   - 거버넌스 작업 수행 
+
+   - 검색 로그 업로드
+
+   - 타사 앱 금지 및 승인
+
+   - IP 주소 범위 설정 페이지 액세스 및 보기
+
+   - 모든 설정 페이지 액세스 및 보기 
+
+   - 검색 설정 액세스 및 보기 
+
+   - 앱 커넥터 페이지 액세스 및 보기
+
+   - 거버넌스 로그 액세스 및 보기 
+
+   - 스냅숏 보고서 관리 페이지 액세스 및 보기 
 
 - 앱/인스턴스 관리자: 여기에서 선택한 앱의 인스턴스 또는 특정 앱에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어 사용자에게 Box European 인스턴스에 대한 관리자 권한을 제공하는 경우, 관리자는 파일이든, 활동이든, 정책이든, 경고든 상관없이 다음과 같이 이 앱 인스턴스와 관련된 데이터만 볼 수 있습니다.
-      - 활동 페이지 - 태그가 지정된 엔터티에 대한 활동만
-      - 경고 - 특정 앱과 관련된 경고만
-      - 정책 - 모든 정책을 볼 수 있으며, 앱/인스턴스에서만 처리되는 정책만 편집하거나 만들 수 있음
-      - 계정 - 특정 앱/인스턴스에 대한 계정만
-      - 앱 사용 권한 - 특정 앱/인스턴스에 대한 사용 권한만
-      - 파일 페이지 - 특정 앱/인스턴스의 파일만
-      - 조건부 액세스 앱 제어 - 사용 권한 없음
-      - Cloud Discovery 활동 - 사용 권한 없음
-      - 보안 확장 - 사용자 권한이 있는 API 토큰에 대한 사용 권한만
-      - 거버넌스 작업 - 특정 앱/인스턴스에 대해서만 
+- 
+  - 활동 페이지 - 태그가 지정된 엔터티에 대한 활동만
+  - 경고 - 특정 앱과 관련된 경고만
+  - 정책 - 모든 정책을 볼 수 있으며, 앱/인스턴스에서만 처리되는 정책만 편집하거나 만들 수 있음
+  - 계정 - 특정 앱/인스턴스에 대한 계정만
+  - 앱 사용 권한 - 특정 앱/인스턴스에 대한 사용 권한만
+  - 파일 페이지 - 특정 앱/인스턴스의 파일만
+  - 조건부 액세스 앱 제어 - 사용 권한 없음
+  - Cloud Discovery 활동 - 사용 권한 없음
+  - 보안 확장 - 사용자 권한이 있는 API 토큰에 대한 사용 권한만
+  - 거버넌스 작업 - 특정 앱/인스턴스에 대해서만 
 
 자세한 내용은 [Azure Active Directory에서 관리자 역할 할당](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)을 참조하세요.
 

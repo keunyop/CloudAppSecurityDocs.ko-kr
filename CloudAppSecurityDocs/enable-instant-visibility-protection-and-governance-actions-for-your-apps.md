@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b0f009770d16f7d801df637e1ba632cc6f82f1ac
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8e9fb2a64417d68e64b2b37088fcb5baae3e6fe2
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568976"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -90,7 +91,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 > |**격리**|✔|✔|해당 없음|서비스 예정|||서비스 예정||  
 > |**앱 사용 권한 보기**|✔|공급자가 지원하지 않음|해당 없음|✔||✔|공급자가 지원하지 않음||  
 > |**앱 사용 권한 취소**|✔||해당 없음|✔||✔|해당 없음||  
-> |**Azure Information Protection 레이블 적용**|✔|✔|||||||  
+> |**Azure Information Protection 레이블 적용**|✔|✔||✔|||||  
 
 ## <a name="prerequisites"></a>필수 구성 요소  
 

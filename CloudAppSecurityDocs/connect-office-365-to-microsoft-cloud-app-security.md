@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: f37b1a828ab13bd2b66a9b43bcb2c625fab0cc00
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558977"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568444"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -54,16 +54,14 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
  
 1.  **연결된 앱** 페이지에서 더하기 단추를 클릭하고 **Office 365**를 선택합니다.  
 
-    ![0365 연결](./media/connect-0365.png) 
+      ![0365 연결](./media/connect-0365.png) 
 
 2.  Office 365 팝업에서 **Office 365 연결**을 클릭합니다.
 
-    ![0365 연결](./media/office-connect.png) 
+      ![0365 연결](./media/office-connect.png) 
  
 3.   Office 365가 연결된 것으로 표시되면 **닫기**를 클릭합니다.
   
-     ![O365 연결됨](./media/o365-connected.png) 
-
 > [!NOTE] 
 > Office 365를 연결한 후 API를 가져오는, Office 365에 연결된 모든 타사 응용 프로그램을 포함하여 1주일 전부터의 데이터가 표시됩니다. 연결 전에 API를 가져오지 않은 타사 앱의 경우 Cloud App Security에서 기본적으로 꺼져 있는 API를 켜기 때문에 Office 365를 연결하는 순간부터의 이벤트가 표시됩니다.
 
