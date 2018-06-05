@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 4a304dc7e4da6282fe350fbb6d25825957d723fd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567577"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery에 사용자 지정 앱 추가
     
-Cloud Discovery는 15,000개 이상의 클라우드 앱이 포함된 Microsoft Cloud App Security 클라우드 앱 카탈로그에 대한 트래픽 로그를 분석합니다. 카탈로그에는 공개적으로 사용 가능한 클라우드 앱만 포함되어 있으며 Cloud App Security가 이러한 앱에 대한 표시 여부 및 위험 정보를 제공합니다.
+Cloud Discovery는 16,000개 이상의 클라우드 앱이 포함된 Microsoft Cloud App Security 클라우드 앱 카탈로그에 대한 트래픽 로그를 분석합니다. 카탈로그에는 공개적으로 사용 가능한 클라우드 앱만 포함되어 있으며 Cloud App Security가 이러한 앱에 대한 표시 여부 및 위험 정보를 제공합니다.
 
 클라우드 앱 카탈로그에서 제외된 클라우드 앱을 표시하기 위해 Cloud App Security를 사용하여 조직용으로 특별히 개발되거나 할당된 사용자 지정 클라우드 앱(LOB 앱)의 사용을 검색할 수 있습니다.
 

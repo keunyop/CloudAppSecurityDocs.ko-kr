@@ -1,23 +1,24 @@
 ---
-title: "Microsoft Cloud App Security 및 Azure AD 검색 기능 간의 차이점은 무엇인가요? | Microsoft 문서"
-description: "이 항목에서는 Microsoft Cloud App Security 및 Azure AD의 검색 기능 간의 차이점을 설명합니다."
-keywords: 
+title: Microsoft Cloud App Security 및 Azure AD 검색 기능 간의 차이점은 무엇인가요? | Microsoft 문서
+description: 이 항목에서는 Microsoft Cloud App Security 및 Azure AD의 검색 기능 간의 차이점을 설명합니다.
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9e4ba6be74994f097cbe225815a71b58b268e65f
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567546"
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory 및 Microsoft Cloud App Security 검색 기능 간의 차이점은 무엇인가요?
 
@@ -35,7 +36,7 @@ Microsoft Cloud App Security는 클라우드 앱을 위해 심층적인 가시�
 
 |기능|기능|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
-|클라우드 검색|검색된 앱|15,000개 이상의 클라우드 앱|15,000개 이상의 클라우드 앱|
+|클라우드 검색|검색된 앱|16,000개 이상의 클라우드 앱|16,000개 이상의 클라우드 앱|
 ||검색 분석을 위한 배포|수동 및 자동 로그 업로드|수동 및 자동 로그 업로드|
 ||사용자 개인 정보 보호를 위한 로그 익명화|예|예|
 ||전체 클라우드 앱 카탈로그에 대한 액세스|예||
@@ -49,4 +50,3 @@ Microsoft Cloud App Security는 클라우드 앱을 위해 심층적인 가시�
 [Cloud App Security 시작](getting-started-with-cloud-app-security.md)에서 기본적인 사항을 읽으세요.    
 
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.   
-

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559100"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568665"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security를 사용하면 특정 사용자 그룹만 모니�
      
      ![포함 규칙](./media/include-rule.png)
 
-4. 모니터링에서 제외할 특정 그룹 또는 사용자를 설정하려면 **제외** 탭에서 더하기 ![아이콘](./media/plus-icon.png)를 클릭합니다. <br>**Create new exclude rule**(새 제외 규칙 만들기) 대화 상자에서 다음 매개 변수를 설정합니다.
+4. 모니터링에서 제외할 특정 그룹을 설정하려면 **제외** 탭에서 더하기 ![아이콘](./media/plus-icon.png)을 클릭합니다. <br>**Create new exclude rule**(새 제외 규칙 만들기) 대화 상자에서 다음 매개 변수를 설정합니다.
 
     1. **Type rule name**(규칙 이름 입력) 아래에 규칙에 대한 설명이 포함된 이름을 지정합니다.
     **사용자 그룹 선택** 아래에서 Cloud App Security로 모니터링하지 않으려는 모든 그룹을 선택합니다.
@@ -62,6 +62,7 @@ Microsoft Cloud App Security를 사용하면 특정 사용자 그룹만 모니�
 - 사용자 그룹 “독일 모든 사용자” 제외
 - 사용자 그룹 “글로벌 영업” Office 365 활동만 포함
 - 사용자 그룹 “영업 관리자” Power BI 활동만 포함
+- Salesforce가 Microsoft Cloud App Security에 연결되어 있고 이에 대한 규칙이 설정되어 있지 않습니다.
 
 다음 사용자 활동이 모니터링됩니다.
 
@@ -72,6 +73,9 @@ Microsoft Cloud App Security를 사용하면 특정 사용자 그룹만 모니�
 |Cornel|글로벌 영업<br>영업 관리자|Office 365 및 모든 하위 앱|
 |Raymond|영업 관리자|Power BI만|
 
+> [!NOTE] 
+> 다른 앱은 이 규칙에서 그룹 범위 지정의 영향을 받지 않습니다.
+> 이 예에서 Salesforce의 경우 모든 사용자 그룹에 대해 모든 활동이 모니터링됩니다.
 
   
     

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5d7d03bc2c30716c9c449f66734ea65c58220eb
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559062"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568583"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -39,21 +39,28 @@ Microsoft 데이터 분류 서비스는 Office 365, Azure Information Protection
 
 -   **Microsoft Azure에 연결**(점진적 출시)<br>
 Microsoft Cloud App Security는 해당 IaaS 모니터링 기능을 Amazon Web Services 이상으로 확장하고 있으며 현재는 Microsoft Azure를 지원합니다. 따라서 Cloud App Security를 사용하여 모든 Azure 구독을 원활하게 연결하고 모니터링할 수 있습니다. 이 연결은 다음을 비롯하여 Azure 환경을 보호할 수 있는 강력한 도구 집합을 제공합니다. 
- -  포털을 통해 수행된 모든 활동 파악
- -  원치 않는 동작에 대해 경고하도록 하는 사용자 지정 정책을 만드는 기능 및 있을 수 있는 위험한 사용자를 일시 중단하거나 강제로 다시 로그인하도록 하여 위험한 사용자를 자동으로 방지하는 기능
- -  모든 Azure 활동은 변칙 검색 엔진으로 검사되고 Azure Portal에서 의심스러운 동작(예: 불가능한 이동, 의심스러운 대량 활동 및 새로운 국가에서의 활동)에 대해 자동으로 경고합니다.<br>
-자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
+
+       -    포털을 통해 수행된 모든 활동 파악
+
+       -    원치 않는 동작에 대해 경고하도록 하는 사용자 지정 정책을 만드는 기능 및 있을 수 있는 위험한 사용자를 일시 중단하거나 강제로 다시 로그인하도록 하여 위험한 사용자를 자동으로 방지하는 기능
+
+       -    모든 Azure 활동은 변칙 검색 엔진으로 검사되고 Azure Portal에서 의심스러운 동작(예: 불가능한 이동, 의심스러운 대량 활동 및 새로운 국가에서의 활동)에 대해 자동으로 경고합니다.<br>
+
+  자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
  
--   **범위 지정 배포**<br> (점진적 출시) Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니터링하고 보호할 사용자를 세부적으로 결정하는 기능을 엔터프라이즈에 제공합니다. 이 기능을 사용하면 보호된 응용 프로그램에 대해 활동이 표시되지 않는 사용자를 선택할 수 있습니다. 범위 지정 모니터링 기능은 특히 다음 경우에 유용합니다. 
-  - 준수 - 준수 규정에서 현지 규정으로 인해 특정 국가의 사용자를 모니터링하지 않도록 요구하는 경우
-  - 라이선스 - Microsoft Cloud App Security 라이선스 제한을 준수하기 위해 더 적은 수의 사용자를 모니터링하려는 경우.
-자세한 내용은 [범위 지정 배포](scoped-deployment.md)를 참조하세요.
+-   **범위 지정된 배포**(점진적 출시) <br>
+Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니터링하고 보호할 사용자를 세부적으로 결정하는 기능을 엔터프라이즈에 제공합니다. 이 기능을 사용하면 보호된 응용 프로그램에 대해 활동이 표시되지 않는 사용자를 선택할 수 있습니다. 범위 지정 모니터링 기능은 특히 다음 경우에 유용합니다. 
+
+    -   준수 - 준수 규정에서 현지 규정으로 인해 특정 국가의 사용자를 모니터링하지 않도록 요구하는 경우
+
+       -    라이선스 - Microsoft Cloud App Security 라이선스 제한을 준수하기 위해 더 적은 수의 사용자를 모니터링하려는 경우.
+   자세한 내용은 [범위 지정 배포](scoped-deployment.md)를 참조하세요.
 
 -   **검색된 앱에 대한 위반 앱 경고**<br>
-이제 테넌트의 검색된 앱이 위반했을 때 알려주는 기본 제공 경고가 있습니다. 경고는 위반 날짜 및 시간, 앱을 사용한 사용자 및 위반에 대한 정보를 제공하는 공개적으로 사용할 수 있는 소스의 링크에 대한 정보를 제공합니다.
+ 이제 테넌트의 검색된 앱이 위반했을 때 알려주는 기본 제공 경고가 있습니다. 경고는 위반 날짜 및 시간, 앱을 사용한 사용자 및 위반에 대한 정보를 제공하는 공개적으로 사용할 수 있는 소스의 링크에 대한 정보를 제공합니다.
 
 -   **새 메일 서버**<br>
-Cloud App Security의 메일 서버가 변경되었으며 다른 IP 주소 범위를 사용합니다. 알림을 받으려면 새 IP 주소를 스팸 방지 허용 목록에 추가합니다. 알림을 사용자 지정하려는 사용자의 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 메일 서버 IP 주소 목록 및 MailChimp를 사용하기 위한 지침은 [네트워크 요구 사항](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) 및 [메일 설정](mail-settings.md)을 참조하세요.
+ Cloud App Security의 메일 서버가 변경되었으며 다른 IP 주소 범위를 사용합니다. 알림을 받으려면 새 IP 주소를 스팸 방지 허용 목록에 추가합니다. 알림을 사용자 지정하려는 사용자의 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 메일 서버 IP 주소 목록 및 MailChimp를 사용하기 위한 지침은 [네트워크 요구 사항](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) 및 [메일 설정](mail-settings.md)을 참조하세요.
 
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security 릴리스 123

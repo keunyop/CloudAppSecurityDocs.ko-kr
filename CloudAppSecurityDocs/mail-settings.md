@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 6d19e90b8eda14868f1b25e6d9a776b030aeedbd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558892"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568427"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -30,9 +30,9 @@ Microsoft Cloud App Security에서 경고를 요청하는 관리자에게 보내
 
 1. 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
 
- ![메일 설정](./media/mail-settings-config.png)
+   ![메일 설정](./media/mail-settings-config.png)
 
-2. **메일 보낸 사람 ID**에서: 기본 메일 설정을 사용하려면 이 섹션의 내용을 변경할 필요가 없습니다. 메일 보낸 사람 ID를 사용자 지정하려면 **보낸 사람 표시 이름**, **보낸 사람 메일 주소** 및 **회신 메일 주소**를 설정하면 됩니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그러지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
+2. **메일 보낸 사람 ID**에서: 기본 메일 설정을 사용하려면 이 섹션의 내용을 변경할 필요가 없습니다. 이메일 보낸 사람 ID를 사용자 지정하려는 경우 여기에서 설정을 지정하여 변경할 필드를 사용자 지정할 수 있습니다. **표시 이름에서**, **이메일 주소에서**, **회신 이메일 주소** 중 하나 또는 모두를 변경할 수 있습니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그러지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
    
    > [!NOTE]
    > [rfc822 표준](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
