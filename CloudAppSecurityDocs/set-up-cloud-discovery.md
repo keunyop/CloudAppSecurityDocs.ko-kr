@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2017
+ms.date: 5/27/2017
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3daf04f3caa2541bacafe6be33c7f9714b1dda71
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 403d61fd6c0177371dab351413e80e40dde41386
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567662"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
-Cloud Discovery는 60개가 넘는 위험 요소를 기준으로 순위 및 점수가 매겨진 클라우드 앱 15,000개 이상의 Microsoft Cloud App Security 클라우드 앱 카탈로그에 비교해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속적으로 파악합니다.
+Cloud Discovery는 70개가 넘는 위험 요소를 기준으로 순위 및 점수가 매겨진 클라우드 앱 16,000개 이상의 Microsoft Cloud App Security 클라우드 앱 카탈로그에 대해 트래픽 로그를 분석하여 조직에 제기된 클라우드 사용, 섀도 IT, 위험 섀도 IT를 지속적으로 파악합니다.
 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>스냅숏 및 연속 위험 평가 보고서 
 
@@ -39,7 +40,7 @@ Cloud Discovery는 60개가 넘는 위험 요소를 기준으로 순위 및 점�
 
 -   **구문 분석** – Cloud App Security에서 각 데이터 원본에 대한 전용 파서를 사용하여 트래픽 로그에서 트래픽 데이터를 구문 분석하고 추출합니다.  
 
--   **분석** - 클라우드 앱 카탈로그를 기준으로 트래픽 데이터를 분석하여 15,000개를 넘는 클라우드 앱을 식별하고 해당 위험 점수를 평가합니다. 활성 사용자와 IP 주소도 분석의 일부로 식별됩니다.  
+-   **분석** - 클라우드 앱 카탈로그를 기준으로 트래픽 데이터를 분석하여 16,000개를 넘는 클라우드 앱을 식별하고 해당 위험 점수를 평가합니다. 활성 사용자와 IP 주소도 분석의 일부로 식별됩니다.  
 
 -   **보고서 생성** - 로그 파일에서 추출된 데이터의 위험 평가 보고서가 생성됩니다.   
 
