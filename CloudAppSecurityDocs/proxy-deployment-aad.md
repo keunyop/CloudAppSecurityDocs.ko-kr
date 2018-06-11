@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759984"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -77,7 +78,7 @@ ms.lasthandoff: 05/14/2018
 
 6. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 조건부 액세스 앱 제어 공개 미리 보기 기간에 온보딩 프로세스는 사용자와 함께 Microsoft Cloud App Security 팀에서 수행합니다.
   
-   ![세션 제어 요청](./media/request-session-control.png)
+   ![세션 제어 요청](./media/proxy-view-new-apps.png)
 
 7. 선택 사항 - 클라이언트 인증서를 사용하여 장치를 식별합니다.
 
