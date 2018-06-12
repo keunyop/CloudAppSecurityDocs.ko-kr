@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759866"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 1. 설정 코그 아래에서 **일반 설정**을 선택합니다. 
 
-2. 그런 다음 조건부 액세스 제어 제어 설정에서 **사용자에게 알립니다** 확인란을 선택 취소합니다.
+2. 그런 다음, **조건부 액세스 앱 제어**에서 **사용자 모니터링**을 선택하고 **사용자 알림** 확인란을 선택 취소합니다.
 
     ![세션 모니터링 알림 사용 해제](./media/disable-session-monitoring-notice.png)
 

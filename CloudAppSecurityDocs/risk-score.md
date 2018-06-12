@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567679"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759919"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -102,7 +102,7 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 1. 포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
   
-2. **점수 메트릭 구성**에서 **중요도**를 밀어 필드 또는 위험 범주의 가중치를 **무시됨**, **낮음**, **중간**, **높음** 또는 **매우 높음**으로 변경합니다.  
+2. **점수 메트릭**에서 **중요도**를 밀어 필드 또는 위험 범주의 가중치를 **무시됨**, **낮음**, **중간**, **높음** 또는 **매우 높음**으로 변경합니다.  
   
 3. 또한 점수를 계산할 때 특정 값을 사용할 수 없거나 적용할 수 없는지 여부를 설정할 수 있습니다. 포함할 경우 해당 없음 값에는 점수에 대한 음의 기여도가 포함됩니다.  
   

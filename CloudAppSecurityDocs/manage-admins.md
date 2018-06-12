@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568393"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251772"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
    - 스냅숏 보고서 관리 페이지 액세스 및 보기 
 
 - 앱/인스턴스 관리자: 여기에서 선택한 앱의 인스턴스 또는 특정 앱에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어 사용자에게 Box European 인스턴스에 대한 관리자 권한을 제공하는 경우, 관리자는 파일이든, 활동이든, 정책이든, 경고든 상관없이 다음과 같이 이 앱 인스턴스와 관련된 데이터만 볼 수 있습니다.
-- 
-  - 활동 페이지 - 태그가 지정된 엔터티에 대한 활동만
+
+  - 활동 페이지 - 특정 앱과 관련된 활동만
   - 경고 - 특정 앱과 관련된 경고만
   - 정책 - 모든 정책을 볼 수 있으며, 앱/인스턴스에서만 처리되는 정책만 편집하거나 만들 수 있음
   - 계정 - 특정 앱/인스턴스에 대한 계정만
@@ -65,6 +65,21 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - Cloud Discovery 활동 - 사용 권한 없음
   - 보안 확장 - 사용자 권한이 있는 API 토큰에 대한 사용 권한만
   - 거버넌스 작업 - 특정 앱/인스턴스에 대해서만 
+
+- 그룹 관리자: 여기에서 선택한 특정 그룹에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어, 사용자에게 “독일 - 모든 사용자” 그룹에 대한 관리자 권한을 부여하면 관리자는 다음과 같이 해당 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다.
+
+  - 활동 페이지 - 그룹의 사용자와 관련된 활동만
+  -     경고 - 그룹의 사용자와 관련된 경고만
+  -     정책 - 모든 정책을 볼 수 있으며, 그룹의 사용자에서만 처리되는 정책만 편집하거나 만들 수 있음
+  -     계정 - 그룹의 특정 사용자에 대한 계정만
+  -     앱 권한 - 사용 권한 없음
+  -     파일 페이지 - 사용 권한 없음
+  -     조건부 액세스 앱 제어 - 사용 권한 없음
+  -     Cloud Discovery 활동 - 사용 권한 없음
+  -     보안 확장 - 그룹의 사용자가 있는 API 토큰에 대한 사용 권한만
+  -     거버넌스 작업 - 그룹의 특정 사용자에 대해서만
+
+
 
 자세한 내용은 [Azure Active Directory에서 관리자 역할 할당](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)을 참조하세요.
 

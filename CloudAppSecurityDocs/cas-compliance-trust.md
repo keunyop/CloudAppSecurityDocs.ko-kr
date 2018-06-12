@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34470664"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251755"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 |![로고 SOC](./media/soc-logo.png)|SOC 3|Microsoft 클라우드 서비스는 운영 보안에 대한 SOC(Service Organization Controls) 표준을 준수합니다.|
 |![로고 g-cloud](./media/g-cloud.png)|영국 G-Cloud|CCS(Crown Commercial Service)는 Microsoft 클라우드 서비스 분류를 정부 클라우드 v6으로 갱신했습니다.|
 
-자세한 내용을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하고 Cloud App Security를 선택하세요.  
+자세한 내용을 보려면 [Microsoft 규정 준수 제안](https://servicetrust.microsoft.com)으로 이동하고 Cloud App Security를 선택하세요.  
 
 ## <a name="privacy"></a>개인 정보
 
@@ -137,9 +137,9 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
 
 ## <a name="customer-controls-for-organizational-compliance"></a>조직 준수에 대한 고객 제어
 
-### <a name="do-not-track"></a>Do Not Track
+### <a name="scoped-deployment"></a>범위 지정 배포
 
-Microsoft Cloud App Security를 사용하여 특정 사용자를 DNT(Do Not Track)로 설정할 수 있습니다. 이를 통해 Cloud App Security를 사용하여 특정 그룹만 관리하거나 Cloud App Security 거버넌스에서 특정 그룹을 제외할 수 있습니다.
+Microsoft Cloud App Security를 사용하여 배포 범위를 지정할 수 있습니다. 이를 통해 Cloud App Security를 사용하여 특정 그룹만 관리하거나 Cloud App Security 거버넌스에서 특정 그룹을 제외할 수 있습니다. 자세한 내용은 [범위 지정 배포](scoped-deployment.md)를 참조하세요.
 
 ### <a name="anonymization"></a>익명화 
 

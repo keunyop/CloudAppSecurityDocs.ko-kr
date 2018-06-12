@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568682"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759936"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -52,18 +52,8 @@ Cloud App Security는 다음과 같은 방법으로 클라우드에 가시성을
 
 ![Cloud App Security 아키텍처 다이어그램](./media/proxy-architecture.png)  
 
-### <a name="data-retention--compliance"></a>데이터 보존 및 규정 준수
-
-Cloud App Security는 ISO, HIPAA, CSA STAR, EU 모델 조항 등에 대한 Microsoft 규정 준수로 공식 인증되었습니다. 전체 인증 목록을 보려면 [Microsoft 규정 준수 제안](https://go.microsoft.com/fwlink/?linkid=842039)으로 이동하여 Cloud App Security를 선택하세요.  
-
-Cloud App Security가 콘텐츠 검사를 수행하면 데이터 개인 정보 보호가 적용됩니다. 파일 콘텐츠는 Cloud App Security 데이터베이스에 저장되지 않습니다. 파일 레코드의 메타데이터 및 확인된 위반만 Cloud App Security 데이터베이스에 저장됩니다. 데이터 보존에 대한 자세한 내용은 [개인 정보 취급 방침](http://go.microsoft.com/fwlink/?LinkId=512132) 및 [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)를 참조하세요.
-Cloud App Security에서는 다음과 같이 데이터를 유지합니다. 
- 
-- 활동 로그: 180일 
-- 검색 데이터: 90일 
-- 경고: 180일 
-
-이러한 원본에서 데이터가 수집되면 Cloud App Security는 환경을 프로파일링하고 학습된 기준과 관련하여 비정상 활동을 경고하는 정교한 추론 변칙 검색 엔진을 실행하고, 클라우드 환경에 대한 심층적인 가시성을 제공합니다. Cloud App Security에서 정책을 구성한 다음 클라우드 환경에 있는 모든 항목을 보호하는 데 사용할 수 있습니다.  
+### <a name="data-retention--compliance"></a>데이터 보존 및 준수
+Microsoft Cloud App Security 데이터 보존 및 준수에 대한 자세한 내용은 [Microsoft Cloud App Security 데이터 보안 및 개인 정보](cas-compliance-trust.md)를 참조하세요.
 
 ### <a name="cloud-discovery"></a>클라우드 검색  
 

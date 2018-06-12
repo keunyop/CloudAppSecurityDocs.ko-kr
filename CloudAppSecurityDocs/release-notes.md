@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568583"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251857"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+
+## <a name="cloud-app-security-release-125"></a>Cloud App Security 릴리스 125
+
+릴리스 날짜: 2018년 6월 10일
+
+
+### <a name="new-investigation-capability-by-top-users"></a>새로운 상위 사용자별 조사 기능: 
+Microsoft Cloud App Security에서는 열린 위협 검색 경고 수를 기준으로 상위 사용자를 표시하는 새로운 조사 위젯이 대시보드에 추가되었습니다. 이 조사 위젯을 사용하면 의심스러운 세션 수가 가장 큰 사용자에 대한 위협 조사에 집중할 수 있습니다.
+
+### <a name="support-for-aws-s3-buckets"></a>AWS S3 버킷에 대한 지원:
+Microsoft Cloud App Security는 이제 AWS S3 버킷 및 해당 공유 수준을 검색할 수 있습니다. 이 기능은 공개적으로 액세스할 수 있는 AWS 버킷에 대한 경고 및 가시성을 제공합니다. 또한 버킷을 기반으로 정책을 만들고 자동 거버넌스를 적용할 수 있습니다. 또한 AWS 저장소를 제어하기 위한 정책을 쉽게 만드는 데 사용할 수 있는 **공개적으로 액세스할 수 있는 S3 버킷(AWS)** 이라는 새 정책 템플릿이 있습니다. 이러한 새 기능을 사용하려면 [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)에 설명된 새 권한을 추가하여 AWS에 연결된 앱을 업데이트해야 합니다.
+
+### <a name="admin-privileges-based-on-user-groups"></a>사용자 그룹을 기반으로 한 관리자 권한:
+이제 사용자 그룹별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 독일에 있는 사용자 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 “독일 - 모든 사용자” 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security 릴리스 124
@@ -48,7 +63,7 @@ Microsoft Cloud App Security는 해당 IaaS 모니터링 기능을 Amazon Web Se
 
   자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
  
--   **범위 지정된 배포**(점진적 출시) <br>
+-   **범위 지정 배포**(점진적 출시) <br>
 Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니터링하고 보호할 사용자를 세부적으로 결정하는 기능을 엔터프라이즈에 제공합니다. 이 기능을 사용하면 보호된 응용 프로그램에 대해 활동이 표시되지 않는 사용자를 선택할 수 있습니다. 범위 지정 모니터링 기능은 특히 다음 경우에 유용합니다. 
 
     -   준수 - 준수 규정에서 현지 규정으로 인해 특정 국가의 사용자를 모니터링하지 않도록 요구하는 경우
@@ -88,8 +103,8 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 ## <a name="cloud-app-security-release-120"></a>Cloud App Security 릴리스 120
 릴리스 날짜: 2018년 4월 8일
 
--   Office 365 및 Azure AD를 위해 현재 Office 365 및 Azure AD 응용 프로그램(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 내부 응용 프로그램을 감지하는 기능을 도입하고 있습니다. 이를 통해 응용 프로그램에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 
--   앱 권한 목록을 csv로 내보낼 때 규정 준수 및 조사 프로세스를 지원하기 위해 게시자, 권한 수준 및 커뮤니티 사용량과 같은 추가 필드가 포함됩니다.
+-   Office 365 및 Azure AD를 위해 현재 Office 365 및 Azure AD 응용 프로그램(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 내부 응용 프로그램을 검색하는 기능을 점진적으로 출시하고 있습니다. 이를 통해 응용 프로그램에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 
+-   앱 권한 목록을 csv로 내보낼 때 준수 및 조사 프로세스를 지원하기 위해 게시자, 권한 수준 및 커뮤니티 사용량과 같은 추가 필드가 포함됩니다.
 -   ServiceNow 연결 앱이 개선되어 내부 서비스 활동이 더 이상 "게스트"가 수행한 것으로 등록되지 않으며 또 가양성 경고를 트리거하지 않습니다. 이러한 활동은 이제 연결된 다른 모든 앱처럼 N/A로 표시됩니다.
 
 
@@ -108,7 +123,7 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 
 - 이제 Cloud Discovery는 Barracuda F-Series 방화벽 및 Barracuda F-Series 방화벽 웹 로그 스트리밍을 지원합니다.
 
-- 사용자 및 IP 주소 페이지의 검색 기능을 사용하면 자동 완성을 통해 원하는 내용을 더 쉽게 찾을 수 있습니다.
+- 이제 사용자 및 IP 주소 페이지의 검색 기능을 사용하면 자동 완성을 통해 원하는 내용을 더 쉽게 찾을 수 있습니다.
 
 - 이제 엔터티 제외 및 IP 주소 제외 설정 페이지에서 대량 작업을 수행할 수 있습니다. 이렇게 하면 여러 사용자와 그룹 또는 IP 주소를 더욱 쉽게 선택하고 조직에서 Cloud Discovery를 통해 모니터링되지 않도록 제외할 수 있습니다. 
 

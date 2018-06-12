@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fd7eae955e91b9df5cf067386023041d71fe3a27
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251738"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -29,11 +30,12 @@ Microsoft Cloud App Security를 실행하고 나면 데이터 스트림을 구�
 ## <a name="check-the-dashboard"></a>대시보드 확인  
 Cloud App Security 대시보드에는 다음을 포함한 활동 및 기능 개요가 표시됩니다.
 
-- 열린 경고.
-- 활동 위반.
-- 콘텐츠 위반.
-- 사용자 활동이 일어난 위치를 표시하는 활동 맵.
-- 클라우드 환경의 연결된 응용 프로그램 사용 추세.  
+- 열린 경고
+- 활동 위반
+- 콘텐츠 위반
+- 사용자 활동이 일어난 위치를 표시하는 활동 맵
+- 클라우드 환경의 연결된 앱 사용 추세
+- 위협 검색별 상위 사용자
 
 매일 대시보드에서 어떤 경고가 새로 트리거되었는지 확인하는 것이 좋습니다. 여기서 클라우드 환경의 상태를 감시하여 클라우드 환경 전체에서 발생하는 상황을 파악할 수도 있습니다.  
 
