@@ -26,7 +26,7 @@
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-### [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)
+### [Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)
 ### [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Box 연결](connect-box-to-microsoft-cloud-app-security.md)
 ### [Dropbox 연결](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -52,6 +52,7 @@
 ### [활동](activity-filters.md)
 #### [활동 필터 및 쿼리](activity-filters-queries.md)
 ### [파일](file-filters.md)
+#### [데이터 관리 보고서 생성](built-in-reports.md)
 ### [계정](accounts.md)
 ### [응용 프로그램 사용 권한 관리](manage-app-permissions.md)
 ### [앱 모니터링](monitor-alerts.md)
@@ -63,7 +64,9 @@
 #### [활동 정책](user-activity-policies.md)
 #### [변칙 검색 정책](anomaly-detection-policy.md)
 #### [파일 정책](data-protection-policies.md)
-##### [콘텐츠 검사](content-inspection.md)
+##### 콘텐츠 검사
+###### [기본 제공 콘텐츠 검사](content-inspection.md)
+###### [데이터 분류 서비스 통합](dcs-inspection.md)
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
 #### 조건부 액세스 앱 제어 정책
 ##### [액세스 정책](access-policy-aad.md)
