@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f72ec05e044f6c14aa9336ee80cd9bc6a344cc7b
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34152745"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259726"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -32,8 +32,6 @@ Microsoft Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레�
 
 이 가이드에서는 ICAP 연결을 통해 통신을 보호하기 위해 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
 
-> [!NOTE]
->이 기능은 공개 미리 보기로 제공됩니다.
 
 ## <a name="architecture"></a>아키텍처
 Cloud App Security는 클라우드 환경을 검색하고 파일 정책 구성에 따라 내부 DLP 엔진 또는 외부 DLP를 사용하여 파일을 검색할지 여부를 결정합니다. 외부 DLP 검색이 적용되면 파일은 DLP verdict: allowed/blocked를 위해 ICAP 어플라이언스에 릴레이되는 경우 보안 터널을 통해 고객 환경에 전송됩니다. 응답은 알림, 격리 및 공유 컨트롤과 같은 후속 작업을 결정하기 위해 정책에서 사용되는 경우 stunnel을 통해 다시 Cloud App Security에 전송됩니다.

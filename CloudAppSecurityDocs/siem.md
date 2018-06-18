@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
-ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
+ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259622"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -189,9 +190,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 > [!NOTE]
 > 이 기능은 공개 미리 보기로 제공됩니다.
 
-## <a name="high-availability-options"></a>고가용성 옵션
 
-SIEM 에이전트는 최대 2일의 가동 중지 시간 복구를 지원하는 단일 끝점입니다. 고객 끝점으로 부하 분산 장치를 사용하면 고가용성에 대한 추가 조치를 완수할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목  
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   

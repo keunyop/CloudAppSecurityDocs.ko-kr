@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
-ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
+ms.openlocfilehash: 62c2eca135031d756864a268c57677a31dad4746
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259693"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -108,7 +109,7 @@ Cloud App Security 포털에서 조직에 대해 외부로 설정된 분류 레�
 
 Cloud App Security와 Azure Information Protection이 함께 작동하는 방식에 관한 자세한 내용은 [사용자 실수로부터 데이터 보호](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)를 참조하세요.
 
-### <a name="automatically-label-files-preview"></a>파일에 자동으로 레이블 지정(미리 보기)
+### <a name="automatically-label-files"></a>파일에 자동으로 레이블 지정
 
 파일 정책을 만들고 **분류 레이블 적용**을 거버넌스 작업으로 설정하여 분류 레이블을 파일에 자동으로 적용할 수 있습니다.
 
