@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 747199b758fb5bee40cc7ec036280c16416d0372
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 23579135df9c26953b2a950fdd661fbac83da603
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
+ms.locfileid: "32298744"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -46,38 +47,6 @@ ms.lasthandoff: 04/23/2018
 
 2. Cloud App Security의 자동화된 [위협 검색 정책](anomaly-detection-policy.md)은 연결되는 시점부터 백그라운드에서 실행되기 시작합니다. 이러한 정책 중 하나는 랜섬웨어 활동을 검색하여 정교한 랜섬웨어 공격으로부터 포괄적인 보호를 보장합니다. 보안 연구 전문 지식을 통해 랜섬웨어 활동을 반영하는 동작 패턴을 식별하는 Cloud App Security는 전체적이고 강력한 보호를 보장합니다. 예를 들어 Cloud App Security에서 비율이 높은 파일 업로드 또는 파일 삭제 활동을 식별하는 경우 이는 부정적인 암호화 프로세스를 나타낼 수 있습니다. 이 데이터는 연결된 API에서 받은 로그에 수집된 후 알려진 랜섬웨어 확장과 같은 학습된 동작 패턴 및 위협 인텔리전스와 결합됩니다. 
 
-## <a name="legacy-policy-creation"></a>레거시 정책 만들기
-
-2. 또한 클라우드 앱에서 많은 양의 다운로드가 발생하는지 감시하고 일반적인 범위를 벗어나는 동작이 발생하는 경우 경고하는 정책을 설정하여 클라우드 앱 모니터링을 시작해야 합니다.
-
-    1. **컨트롤** 탭에서 [**템플릿**](policy-template-reference.md)을 클릭합니다. 
-   
-    2. [**정책 템플릿**](policy-template-reference.md) 목록에서 **잠재적인 랜섬웨어 활동**을 선택합니다. 
-       ![템플릿 랜섬웨어](./media/ransomware-template.png)
-    3. 이 템플릿은 랜섬웨어 공격에 일반적인 활동과 알려진 랜섬웨어와 관련된 파일 및 폴더를 기본적으로 검색하도록 디자인되어 있습니다. 필요한 경우 정책과 일치할 경우 받을 경고 유형(메일 및 텍스트 메시지)을 설정할 수 있습니다.
-        ![템플릿 랜섬웨어](./media/ransomware-template-fields.png)
-    4. **만들기**를 클릭합니다. 
-   
-     
-2. 일치 항목 조사
-    
-    1. **정책** 페이지에서 정책 이름을 클릭하여 **정책 보고서**로 이동해 정책에 대해 트리거된 일치 항목을 검토합니다.
-
-    2. 특정 일치 항목을 클릭하고 파일 서랍을 열어 일치 항목을 조사할 수 있습니다. 서랍에서 이 활동이 일치하는 다른 정책을 확인할 수 있습니다. 
-     
-## <a name="remediating-attacks-and-preventing-risk"></a>공격 해결 및 위험 방지
-
-유효성을 검사하고 정책을 세밀하게 조정한 후 정책과 일치할 수 있는 가능한 거짓 긍정을 제거하세요. 그런 후 다음을 수행합니다. 
-1. 랜섬웨어 정책과 일치하는 경우 자동화된 [거버넌스 작업](governance-actions.md)을 설정하여 문제를 해결할 수 있습니다.
-
-2. 미래의 공격을 방지하려면 자동 거버넌스 작업을 수행하도록 정책을 설정합니다. 예를 들어 SharePoint 및 OneDrive에서 자동으로 **사용자를 일시 중단**하는 정책을 설정할 수 있습니다.
- 
- 
-## <a name="validating-ransomeware-protection"></a>랜섬웨어 보호의 유효성 검사
-
-1. 경고를 시뮬레이트하려면 30개 파일의 확장명을 .wncry로 변경하고 파일을 SharePoint 사이트에 업로드합니다.
-3. 정책 보고서로 이동합니다. 활동 정책 일치 항목이 곧 나타납니다. 
-4. 일치 항목을 클릭하여 다운로드된 파일을 확인할 수 있습니다. 일치 항목 자체는 중요한 데이터를 보호하기 위해 마스킹됩니다. 
 
 
 

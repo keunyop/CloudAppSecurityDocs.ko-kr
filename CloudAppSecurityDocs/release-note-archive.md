@@ -18,6 +18,7 @@ ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/30/2018
+ms.locfileid: "32298965"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
