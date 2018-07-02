@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746945"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -52,8 +53,6 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 1. 할당된 사용자 및 앱을 사용하여 Azure AD 조건부 액세스 정책을 만듭니다.
 2. 조건부 액세스 정책 내의 세션 제어 아래에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택합니다.   
 
-   ![Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
-
 이 작업이 완료되면 Cloud App Security 포털로 이동하여 세션의 파일 다운로드를 모니터링하고 제어하는 세션 정책을 만듭니다.
 
 ### <a name="step-2-create-a-session-policy"></a>2단계: 세션 정책 만들기
@@ -62,17 +61,11 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 
 2. **정책** 페이지에서 **정책** 만들기, **세션 정책**을 차례로 클릭합니다.
  
-   ![세션 정책 만들기](./media/create-session-policy.png)
-
 3. **세션 정책 만들기** 페이지에서 정책에 대한 이름과 설명을 제공합니다. 예를 들어 **관리되지 않는 장치의 Salesforce에서 다운로드 차단**이 있습니다.
 
 4. **정책 심각도** 및 **범주**를 할당합니다.
 
-   ![새 세션 정책](./media/new-session-policy.png)
-
 5. **세션 컨트롤 형식**에서 **파일 다운로드 제어(DLP 포함)** 를 선택합니다. 그러면 Salesforce 세션 내에서 사용자가 수행하는 모든 작업을 모니터링할 수 있고, 실시간으로 다운로드를 차단하거나 보호할 수 있습니다.
-
-   ![세션 정책 제어 유형](./media/session-policy-control-type.png)
 
 6. **다음 항목 모두와 일치하는 활동** 섹션의 **활동 원본** 아래에서 다음 필터를 선택합니다. 
     
@@ -98,21 +91,11 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
    - **분류 레이블**: Azure Information Protection 분류 레이블을 사용하고 특정 Azure Information Protection Classification 레이블에 따라 파일을 필터링하려는 경우에 설정합니다.
    
    - **파일 이름** 또는 **파일 형식**을 선택하여 이 설정에 기반한 제한 사항을 적용합니다.
- 
-     ![세션 정책 파일 필터](./media/session-policy-file-filters.png)
-
 9. **콘텐츠 검사**를 사용하도록 설정하여 내부 DLP에서 중요한 콘텐츠에 대해 파일을 검색할 수 있게 합니다. 
-
-   ![세션 정책 콘텐츠 검사](./media/session-policy-content-inspection.png)
 
 10. **작업** 아래에서 **차단**을 선택합니다. 파일을 다운로드할 수 없는 경우 사용자가 받을 차단 메시지를 사용자 지정합니다.  
 
-    ![세션 정책 작업](./media/session-policy-actions.png)
-
 11. 정책이 일치할 때 수신할 경고를 설정합니다. 경고를 너무 많이 받지 않도록 제한을 설정할 수 있고, 경고를 전자 메일 메시지, 문자 메시지 또는 둘 다로 가져올지를 선택할 수 있습니다.
-
-    ![세션 정책 경고](./media/session-policy-alert.png)
-
 
 12. **만들기**를 클릭합니다.  
  
@@ -123,11 +106,7 @@ Cloud App Security 세션 정책을 사용하면 장치 상태에 따라 세션�
 
 2. 파일이 차단되어야 하며, **차단 메시지 사용자 지정**에서 설정한 메시지가 표시되어야 합니다. 
 
-   ![다운로드 차단 메시지](./media/block-download-message.png)
-
 3. Cloud App Security 포털에서 **제어**, **정책**을 차례로 클릭한 다음, 만든 정책을 클릭하여 정책 보고서를 확인합니다. 세션 정책 일치 항목이 곧 표시됩니다. 
- 
-   ![세션 정책 보고서](./media/session-policy-report.png)
 
 4. 정책 보고서에서 세션 제어에 대해 Microsoft Cloud App Security로 리디렉션되는 로그인 및 모니터링된 세션에서 다운로드되거나 차단된 파일을 확인할 수 있습니다.
 

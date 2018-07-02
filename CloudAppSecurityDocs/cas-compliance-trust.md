@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251755"
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140757"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -49,7 +49,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 |![로고 EU 모범 조항](./media/eu-model-icon.png)|[EU 모범 조항](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft는 EU 표준 계약 조항을 제공하며, 개인 데이터의 전송을 보장합니다.|
 |![로고 개인 정보 보호](./media/privacy_shield.png)|EU-U.S. 개인 정보 보호|Microsoft는 EU에서 미국으로 전송되는 개인 데이터를 보호하기 위해 이 체계를 준수합니다.|
 |![로고 FISC](./media/logo_fisc.png)|FISC|Microsoft는 일본의 FISC(Financial Industry Information Systems) v8 표준 요구 사항을 충족합니다.|
-|![로고 HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft는 HIPAA(Health Insurance Portability & Accountability Act) BAA(Business Associate Agreement)를 제공합니다.|
+|![로고 HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft는 HIPAA(Health Insurance Portability &amp; Accountability Act) BAA(Business Associate Agreement)를 제공합니다.|
 |![로고 iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft는 이러한 품질 관리 표준의 구현에 대한 인증을 받았습니다.|
 |![로고 iso 27001](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft는 이러한 정보 보안 관리 표준의 구현에 대한 인증을 받았습니다.|
 |![로고 iso 27018](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft는 클라우드 개인 정보 보호에 대한 이 규칙을 준수하는 첫 번째 클라우드 공급자였습니다.|
@@ -64,7 +64,6 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 
 ### <a name="you-are-the-owner-of-your-data"></a>고객은 데이터의 소유자입니다.
 - Microsoft Cloud App Security에서 관리자는 검색 창을 사용하여 포털의 서비스에 저장된 식별이 가능한 개인 데이터를 볼 수 있습니다.
-- 
 - 관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. 엔터티를 클릭하면 [**사용자 및 계정**](accounts.md)이 열립니다. **사용자 및 계정** 페이지는 연결된 클라우드 응용 프로그램에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.
 
 -   고객은 데이터를 소유하고 언제든지 구독을 취소하고 데이터 삭제를 요청할 수 있습니다. 구독을 갱신하지 않으면 [온라인 서비스 약관](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)에 지정된 타임라인 내에 데이터가 삭제됩니다.
