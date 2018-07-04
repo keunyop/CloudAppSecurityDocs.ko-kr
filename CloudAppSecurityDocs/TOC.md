@@ -55,6 +55,7 @@
 #### [데이터 관리 보고서 생성](built-in-reports.md)
 ### [계정](accounts.md)
 ### [응용 프로그램 사용 권한 관리](manage-app-permissions.md)
+### [보안 구성](security-config.md)
 ### [앱 모니터링](monitor-alerts.md)
 #### [경고 관리](managing-alerts.md)
 ## [제어](control.md)
@@ -63,6 +64,7 @@
 ##### [Cloud Discovery 변칙 검색 정책](cloud-discovery-anomaly-detection-policy.md)
 #### [활동 정책](user-activity-policies.md)
 #### [변칙 검색 정책](anomaly-detection-policy.md)
+#### [앱 권한 정책](app-permission-policy.md)
 #### [파일 정책](data-protection-policies.md)
 ##### 콘텐츠 검사
 ###### [기본 제공 콘텐츠 검사](content-inspection.md)
