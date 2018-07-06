@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746979"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -41,28 +42,24 @@ ms.lasthandoff: 04/23/2018
 
    경고를 조사할 때 처리해야 하는 다음 세 가지 유형의 위반이 있습니다.  
 
-   #### <a name="serious-violations"></a>심각한 위반
-   심각한 위반에는 즉시 응답해야 합니다.
+   - **심각한 위반**<br>
+     심각한 위반에는 즉시 응답해야 합니다. <br>
+     예제:<br>
+     의심스러운 활동 경고의 경우 사용자가 암호를 변경할 때까지 계정을 일시 중단하는 것이 좋습니다.  
 
-       Examples:  
+     데이터 누출의 경우 사용 권한을 제한하거나 파일을 격리하는 것이 좋습니다.  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     새로운 앱이 검색된 경우 프록시 또는 방화벽에서 해당 서비스에 대한 액세스를 차단하는 것이 좋습니다.  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **의심스러운 위반**<br>
+     의심스러운 위반에는 추가 조사가 필요합니다.  <br>
+     사용자 또는 사용자의 관리자에게 활동의 특성을 문의할 수 있습니다. <br>  
+     추가 정보를 받을 때까지 활동을 미해결 상태로 둡니다.  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **승인된 위반 또는 비정상적인 동작**<br>
+     승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다.  
 
-   #### <a name="questionable-violations"></a>의심스러운 위반
-   의심스러운 위반에는 추가 조사가 필요합니다.  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### <a name="authorized-violations-or-anomalous-behavior"></a>승인된 위반 또는 비정상적인 동작
-   승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다.  
-
-       Dismiss the alert.  
+     경고를 해제합니다.  
 
 3. 이 프로세스를 완료하면 경고를 해결된 것으로 표시합니다.  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,16 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759984"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746962"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
-
-> [!NOTE]
-> 이것은 미리 보기 기능입니다.
-
-
 
 >[!div class="step-by-step"]
 [« 이전: 조건부 액세스 앱 제어 소개](proxy-intro-aad.md)<br>
@@ -76,7 +71,7 @@ ms.locfileid: "34759984"
    > [!NOTE]
    > 앱이 Cloud App Security 앱 카탈로그에 표시되지 않으면 로그인 URL과 함께 알 수 없는 앱 아래의 대화 상자에 나타납니다. 이러한 앱에 대한 + 기호를 클릭하면 카탈로그에 해당 앱을 추가하도록 제안할 수 있습니다. 앱이 카탈로그에 있으면 단계를 다시 수행하여 해당 앱을 배포합니다. 
 
-6. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 조건부 액세스 앱 제어 공개 미리 보기 기간에 온보딩 프로세스는 사용자와 함께 Microsoft Cloud App Security 팀에서 수행합니다.
+6. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
   
    ![세션 제어 요청](./media/proxy-view-new-apps.png)
 

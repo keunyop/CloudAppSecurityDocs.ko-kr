@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251857"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747054"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,19 +26,45 @@ ms.locfileid: "35251857"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 
+## <a name="cloud-app-security-release-126"></a>Cloud App Security 릴리스 126
+
+릴리스 날짜: 2018년 6월 24일
+
+-   **조건부 액세스 앱 제어 GA**<br>이제 Microsoft Cloud App Security의 조건부 액세스 앱 제어(역방향 프록시)는 모든 SAML 응용 프로그램에 대해 일반 공급됩니다. 조건부 액세스 앱 제어는 **실시간으로 사용자 세션을 모니터링하고 제어**하기 위해 Azure AD 조건부 액세스 정책을 사용하여 직접 통합되는 동시에 생산성을 높일 수 있습니다. 먼저 기능을 미리 보기하므로 다음을 비롯한 다양한 기능이 추가되고 향상되었습니다. 
+    -   브라우저 트래픽에 대한 세션 정책을 만드는 작업 외에도 [액세스 정책](access-policy-aad.md)을 만들어 기본 클라이언트의 동일한 앱에 대한 액세스 권한을 관리합니다.
+    -   앱 온보딩 프로세스는 조직에서 사용자 지정 SAML 응용 프로그램을 지원하도록 간소화되었습니다.
+    -   Azure 전세계 네트워크의 일환으로 전 세계에 있는 모든 사용자에 대한 원활한 환경을 위해 통합 및 인터페이스가 개선되었습니다.
+ 
+
+-   **Microsoft 데이터 분류 서비스 GA를 사용한 콘텐츠 검사**<br>Microsoft 데이터 분류 서비스와 Microsoft Cloud App Security 통합은 이제 일반 공급됩니다. 이 통합을 통해 기본적으로 Microsoft 데이터 분류 서비스를 활용하여 클라우드 앱의 파일을 분류할 수 있습니다. 자세한 내용은 [Microsoft 데이터 분류 서비스 통합](dcs-inspection.md)을 참조하세요.
+
+- **Cloud Discovery 주요 보고서**<br>Microsoft Cloud App Security는 Cloud Discovery 주요 PDF 보고서를 생성하는 기능을 롤아웃합니다. 이 보고서에서는 조직에서 식별된 섀도 IT 사용량 개요를 제공하여 전반적인 사용량 및 주요 범주의 상위 앱 및 사용자를 강조 표시하고 조직에서 섀도 IT가 갖는 위험을 중점적으로 설명합니다. 또한 보고서에서는 조직에서 섀도 IT에 대한 가시성을 개선하고 제어하는 방법에 대한 권장 사항 목록을 제공합니다. 이 보고서를 사용하여 잠재적 위험 및 위협을 제거하고 조직을 안전하게 유지하는지 확인합니다.
+
+-   **맬웨어 검색**<br>파일 형식에 관계 없이 **클라우드 저장소에서 악성 파일을 자동으로 검색**하는 맬웨어 검색 기능은 점진적으로 롤아웃됩니다. Microsoft Cloud App Security는 Microsoft의 위협 인텔리전스를 사용하여 특정 파일이 알려진 맬웨어 공격과 연결되는지 아니면 잠재적으로 악의적인지를 인식합니다. 자세한 내용은 [변칙 검색 정책](anomaly-detection-policy.md)을 참조하세요.
+ 
+-   **의심스러운 작업에 대한 자동 수정**<br>이제 변칙 검색 정책에 의해 트리거되는 의심스러운 세션에 대해 자동 수정 작업을 설정할 수 있습니다. 이 향상된 기능을 사용하면 위반이 발생하고 사용자 일시 중단과 같은 **거버넌스 작업을 자동으로 적용**할 때 즉시 경고할 수 있습니다. 자세한 내용은 [변칙 검색 정책](anomaly-detection-policy.md#adp-automated-gov)을 참조하세요. 
+ 
+-   **Azure에 대한 보안 구성 평가**<br>Microsoft Cloud App Security는 점진적으로 Azure 환경의 보안 구성 평가를 사용하는 기능을 롤아웃하고, 누락된 구성 및 보안 제어에 대한 권장 사항을 제공합니다. 예를 들어 관리자에 대한 MFA를 누락한 경우 알림을 표시합니다. 자세한 내용은 [클라우드 보안 상태 관리 통합](security-config.md)을 참조하세요.  
+  
+-   **위험한 OAuth 앱 자동 감지**<br>환경에 연결된 OAuth 앱의 기존 조사 외에도 Microsoft Cloud App Security는 이제 점진적으로 OAuth 앱이 특정 기준을 충족하는 경우 알 수 있도록 자동화된 알림을 설정하는 기능을 롤아웃합니다. 예를 들어 높은 사용 권한 수준이 필요하고 50명을 초과하는 사용자에 의해 권한이 부여된 앱이 있는 경우 자동으로 경고를 받을 수 있습니다. 자세한 내용은 [앱 사용 권한 정책](app-permission-policy.md)을 참조하세요.
+ 
+-   **MSSP(관리되는 보안 서비스 공급자) 관리 지원**<br>Microsoft Cloud App Security는 이제 MSSP에 더 나은 관리 환경을 제공합니다. 외부 사용자는 이제 관리자로 구성되고 [Microsoft Cloud App Security에서 현재 지원되는 역할](manage-admins.md) 중 하나를 할당받을 수 있습니다. 또한 여러 고객 테넌트에 서비스를 제공하는 데 MSSP를 사용하기 위해 둘 이상의 테넌트에 대한 액세스 권한이 있는 관리자는 포털 내에서 테넌트를 쉽게 전환할 수 있습니다. 관리자를 관리하는 방법에 대한 자세한 내용은 [관리자 관리](manage-admins.md)를 참조하세요.
+  
+-   **외부 DLP GA와 통합**<br>Microsoft Cloud App Security를 사용하여 DLP(데이터 손실 방지) 솔루션과 같은 [타사 분류 시스템에서 기존 투자를 활용](icap-stunnel.md)할 수 있고 사용자 환경에서 실행되는 기존 배포를 사용하여 클라우드 응용 프로그램의 콘텐츠를 검색할 수 있습니다. 자세한 내용은 [외부 DLP 통합](icap-stunnel.md)을 참조하세요.
+
+
 ## <a name="cloud-app-security-release-125"></a>Cloud App Security 릴리스 125
 
 릴리스 날짜: 2018년 6월 10일
 
 
-### <a name="new-investigation-capability-by-top-users"></a>새로운 상위 사용자별 조사 기능: 
+- **새로운 상위 사용자별 조사 기능:**<br>
 Microsoft Cloud App Security에서는 열린 위협 검색 경고 수를 기준으로 상위 사용자를 표시하는 새로운 조사 위젯이 대시보드에 추가되었습니다. 이 조사 위젯을 사용하면 의심스러운 세션 수가 가장 큰 사용자에 대한 위협 조사에 집중할 수 있습니다.
 
-### <a name="support-for-aws-s3-buckets"></a>AWS S3 버킷에 대한 지원:
+- **AWS S3 버킷에 대한 지원:**<br>
 Microsoft Cloud App Security는 이제 AWS S3 버킷 및 해당 공유 수준을 검색할 수 있습니다. 이 기능은 공개적으로 액세스할 수 있는 AWS 버킷에 대한 경고 및 가시성을 제공합니다. 또한 버킷을 기반으로 정책을 만들고 자동 거버넌스를 적용할 수 있습니다. 또한 AWS 저장소를 제어하기 위한 정책을 쉽게 만드는 데 사용할 수 있는 **공개적으로 액세스할 수 있는 S3 버킷(AWS)** 이라는 새 정책 템플릿이 있습니다. 이러한 새 기능을 사용하려면 [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)에 설명된 새 권한을 추가하여 AWS에 연결된 앱을 업데이트해야 합니다.
 
-### <a name="admin-privileges-based-on-user-groups"></a>사용자 그룹을 기반으로 한 관리자 권한:
-이제 사용자 그룹별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 독일에 있는 사용자 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 “독일 - 모든 사용자” 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
+- **사용자 그룹에 따른 관리자 권한**: 이제 사용자 그룹별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 독일에 있는 사용자 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 “독일 - 모든 사용자” 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security 릴리스 124

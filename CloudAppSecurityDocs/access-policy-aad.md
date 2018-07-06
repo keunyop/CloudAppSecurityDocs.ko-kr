@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746918"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 # <a name="access-policies"></a>액세스 정책 
 
-> [!NOTE]
-> 이것은 미리 보기 기능입니다.
 
 
 >[!div class="step-by-step"]
@@ -44,7 +43,7 @@ Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 장�
 - [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Microsoft Cloud App Security로 리디렉션하는 위치에 있어야 합니다.
 
 > [!NOTE]
-> - 액세스 정책은 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
+> - 액세스 정책은 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 자세한 내용은 mcaspreview@microsoft.com으로 이메일을 보내주세요.
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 조건부 액세스 정책 만들기
 
@@ -56,9 +55,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
    > [조건부 액세스 앱 제어를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
 
 2. **세션** 블레이드에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택하여 사용자를 Microsoft Cloud App Security로 라우팅합니다.
-
-   ![조건부 액세스 앱 제어 제한 사항 Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
-
+ 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security 액세스 정책 만들기 
 
 새 액세스 정책을 만들려면 다음 절차를 따르세요.
@@ -66,11 +63,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 1. 포털에서 **제어**, **정책**을 차례로 선택합니다.
 2. **정책** 페이지에서 **정책 만들기**를 클릭하고 **액세스 정책**을 선택합니다.  
 
-   ![액세스 정책 만들기](./media/access-policy-menu.png)
-
 3. **액세스 정책** 창에서 정책의 이름(예: *관리되지 않는 장치의 액세스 차단*)을 할당합니다.
-
-   ![새 액세스 정책](./media/access-policy-screen.png)
 
 4. **다음 항목 모두와 일치하는 활동** 섹션의 **활동 원본** 아래에서 정책에 적용할 추가 활동 필터를 선택합니다. 여기에는 다음 옵션이 포함될 수 있습니다. 
      
@@ -82,8 +75,6 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
    - **사용자 에이전트 태그**: 추론 방식으로 모바일 및 데스크톱 앱을 식별하려면 이 필터를 사용합니다. 이 필터는 **네이티브 클라이언트**와 같거나 같지 않도록 설정할 수 있으며, 각 클라우드 앱의 모바일 및 데스크톱 앱에 대해 테스트해야 합니다.
   
-       ![네이티브 클라이언트 지원](./media/user-agent-tag.png)
-
 5. **작업** 아래에서 다음 중 하나를 선택합니다. 
 
     - **허용**: 설정한 정책 필터에 따라 액세스를 명시적으로 허용하려면 이 작업을 설정합니다.

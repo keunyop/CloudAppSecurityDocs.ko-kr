@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59eb0ca7813a96f2ac2face66fba96d50851fd97
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 3eb6f6b5338273abc31d0019a967d269aa51bed4
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140740"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
--   OS: Ubuntu 14.04 이상(Ubuntu 17.10을 지원하는 안정적인 버전의 Docker 없음)
+-   OS: Ubuntu 14.04 및 16.04(최신 버전은 지원 센터에 문의)
 
 -   디스크 공간: 250GB
 

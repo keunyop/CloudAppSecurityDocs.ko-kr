@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747037"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어로 앱 보호
-
-> [!NOTE]
-> 이것은 미리 보기 기능입니다.
-
 
 >[!div class="step-by-step"]
 [다음: 조건부 액세스 앱 제어 배포 »](proxy-deployment-aad.md)
@@ -44,12 +41,13 @@ ms.lasthandoff: 05/14/2018
 
 -   **다운로드 시 보호**: 중요한 문서의 다운로드를 차단하는 대신 다운로드 시 암호화를 통해 문서를 보호하도록 요구할 수 있습니다. 이렇게 하면 데이터가 신뢰할 수 없는 장치에 다운로드되는 경우 문서가 보호되고 사용자 액세스가 인증됩니다. 
 
--   **비회사 네트워크의 사용자 세션 제한**: 회사 네트워크에 속하지 않은 위치에서 보호되는 앱에 액세스하는 사용자는 액세스가 제한되고 중요한 자료의 다운로드가 차단되거나 보호됩니다.
-
 -   **낮은 신뢰 사용자 세션 모니터링**: 위험한 사용자가 앱에 로그인하고 해당 작업이 세션 내에서 기록될 때 모니터링됩니다. 사용자 동작을 조사하고 분석하여 나중에 세션 정책을 적용해야 하는 위치와 조건을 이해할 수 있습니다. 
 
 - **액세스 차단**: 관리되지 않는 장치 또는 회사 네트워크가 아닌 곳의 사용자에 대해 특정 앱에 대한 액세스를 완전히 차단할 수 있습니다.
 
+- **읽기 전용 모드 만들기**: 사용자 지정 앱 내 작업을 모니터링하고 차단하여 특정 사용자의 특정 앱에 대한 읽기 전용 모드를 만들 수 있습니다.  
+
+- **비회사 네트워크의 사용자 세션 제한**: 회사 네트워크에 속하지 않은 위치에서 보호되는 앱에 액세스하는 사용자는 액세스가 제한되고 중요한 자료의 다운로드가 차단되거나 보호됩니다.
 
 ### <a name="how-session-control-works"></a>세션 제어 작동 방식
 
@@ -88,10 +86,10 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 조건부 액세스 앱 제어는 현재 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 
 
 > [!NOTE]
-> - 조건부 액세스 앱 제어는 비공개 미리 보기에서 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 비공개 미리 보기에 대한 자세한 내용이 필요하면 mcaspreview@microsoft.com에 전자 메일을 보내주세요.
+> - 조건부 액세스 앱 제어는 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 이 시나리오에 대한 자세한 내용은 mcaspreview@microsoft.com으로 이메일을 보내주세요.
 > - Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
 
-세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱은 현재 지원되지 않음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
+세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱도 차단되거나 허용될 수 있음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
 
 -   Salesforce
 
@@ -120,6 +118,8 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 -   HighQ 
 
 -   Concur
+
+-   Tableau
 
 세션 제어에 추가 앱이 계속 등록되고 있습니다. 여기에서 언급되지 않은 특정 앱에 관심이 있는 경우 [해당 앱에 대한 세부 정보](mailto:casfeedback@microsoft.com)와 관심 있는 사용 사례를 보내 주시면 등록해 드리겠습니다.
 
