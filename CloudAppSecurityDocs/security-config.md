@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0d21df4cac9ca31207b94061d5bb18ec857668ac
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5d95b5b1e97eb1758c8f62b238ef1bdbb9f8a9c
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140774"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339950"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ Microsoft Cloud App Security는 Azure 환경의 보안 구성 평가를 제공�
 
 Microsoft Cloud App Security에서 보안 구성 권장 사항을 활성화하려면:
 
-1. 자신 및 이 페이지에 대한 액세스 권한을 부여하려는 다른 모든 Microsoft Cloud App Security 관리자에게 모든 구독에 대한 독자 역할을 부여하고, Azure Security Center에서 루트 관리 그룹의 역할을 할당하고, Azure 구독에 대한 액세스 권한을 부여하도록 Azure AD 전역 관리자의 권한을 상승시켜 <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Azure Security Center에 대한 테넌트 수준 가시성을 확보</a>합니다. 
+1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Azure Security Center에 대한 테넌트 전체 가시성을 확보합니다</a>. 이 프로세스에는 사용자와 이 페이지에 대한 액세스 권한을 부여하려는 다른 모든 Microsoft Cloud App Security 관리자에게 권한 부여가 포함됩니다. 모든 구독에 대한 Reader의 역할과 Azure Security Center의 루트 관리 그룹에 역할을 할당하고 Azure AD Global 관리자가 Azure 구독에 대한 액세스 권한을 부여합니다. 
 
    > [!NOTE]
    > 문서에서는 보안 관리자가 되기 위한 프로세스를 설명합니다. 이 통합을 작동하기 위해 필요한 최소 권한은 독자입니다.
