@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e34ff5bd2e25b4c25f314c35f2ffc3ab4b41c24a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ea0eaa4831dce2ba19b434e6ebc91c8b59661834
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339967"
 ---
 *적용 대상: Microsoft Cloud App Security*
 

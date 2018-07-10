@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 75731e401111286d3760163e512b623d6e85fdf2
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34559079"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340025"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -51,12 +51,18 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 ### <a name="working-with-the-activity-drawer"></a>활동 서랍 사용
 
 활동 로그에서 활동 자체를 클릭하여 각 활동에 관한 자세한 정보를 볼 수 있습니다. 그러면 각 활동에 대한 다음과 같은 추가 작업 및 정보를 제공하는 활동 서랍이 열립니다.
-    - 일치 정책: 이 활동과 일치하는 정책의 목록을 보려면 [일치 정책] 링크를 클릭합니다.
-    - 원시 데이터 보기: 응용 프로그램에서 받은 실제 데이터를 보려면 [원시 데이터 보기]를 클릭합니다.
-    - 사용자: 사용자 페이지에서 활동을 수행한 사용자를 보려면 사용자를 클릭합니다. 
-    - 장치 유형: 원시 사용자 에이전트 데이터를 보려면 장치 유형을 클릭합니다. 
-    - 위치:Bing 지도에서 위치를 보려면 위치를 클릭합니다.
-    - IP 주소 범주 및 태그: 이 활동에서 찾을 수 있는 IP 태그의 목록을 보려면 IP 태그를 클릭합니다. 그 후에 이 태그와 일치하는 모든 활동을 필터링할 수 있습니다.    
+
+   - 일치 정책: 이 활동과 일치하는 정책의 목록을 보려면 [일치 정책] 링크를 클릭합니다.
+
+   - 원시 데이터 보기: 응용 프로그램에서 받은 실제 데이터를 보려면 [원시 데이터 보기]를 클릭합니다.
+
+   - 사용자: 사용자 페이지에서 활동을 수행한 사용자를 보려면 사용자를 클릭합니다. 
+
+   - 장치 유형: 원시 사용자 에이전트 데이터를 보려면 장치 유형을 클릭합니다. 
+
+   - 위치:Bing 지도에서 위치를 보려면 위치를 클릭합니다.
+
+   - IP 주소 범주 및 태그: 이 활동에서 찾을 수 있는 IP 태그의 목록을 보려면 IP 태그를 클릭합니다. 그 후에 이 태그와 일치하는 모든 활동을 필터링할 수 있습니다.    
 
  활동 서랍의 필드는 추가 작업에 대한 상황별 링크 및 서랍에서 직접 수행할 수 있는 드릴다운을 제공합니다. 예를 들어 IP 주소 범주 옆으로 커서를 이동하면 필터에 추가 아이콘(![필터에 추가](./media/add-to-filter-icon.png))을 사용하여 현재 페이지의 필터에 IP 주소를 즉시 추가할 수 있습니다. 또한 설정 톱니 아이콘(![설정 아이콘](./media/contextual-settings-icon.png))을 사용하면 **사용자 그룹**과 같은 필드 중 하나의 구성을 수정하는 데 필요한 설정 페이지가 표시되므로 바로 작업할 수 있습니다.
 

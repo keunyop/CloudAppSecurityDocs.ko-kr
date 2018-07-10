@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747054"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843526"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
+
+## <a name="cloud-app-security-release-127"></a>Cloud App Security 릴리스 127
+
+릴리스 날짜: 2018년 7월 8일
+
+- 이제 Office 365의 일반 작업을 **활동 로그** 및 **활동 정책**에서 볼 수 있습니다. 이제 **지정되지 않음** 작업에 대한 Office 365 작업을 필터링할 수 있습니다. 이러한 활동을 검토하면 Cloud App Security에서 분류되지 않은 수행된 동작에 대한 정보를 조사할 수 있습니다. 또한 이러한 활동을 사용하여 Cloud App Security 팀에 요청을 보내 이러한 활동에 따라 새로운 활동 유형을 생성할 수 있습니다. 
 
 ## <a name="cloud-app-security-release-126"></a>Cloud App Security 릴리스 126
 
@@ -36,7 +42,7 @@ ms.locfileid: "36747054"
     -   Azure 전세계 네트워크의 일환으로 전 세계에 있는 모든 사용자에 대한 원활한 환경을 위해 통합 및 인터페이스가 개선되었습니다.
  
 
--   **Microsoft 데이터 분류 서비스 GA를 사용한 콘텐츠 검사**<br>Microsoft 데이터 분류 서비스와 Microsoft Cloud App Security 통합은 이제 일반 공급됩니다. 이 통합을 통해 기본적으로 Microsoft 데이터 분류 서비스를 활용하여 클라우드 앱의 파일을 분류할 수 있습니다. 자세한 내용은 [Microsoft 데이터 분류 서비스 통합](dcs-inspection.md)을 참조하세요.
+-   **Microsoft 데이터 분류 서비스 GA를 사용한 콘텐츠 검사**<br>Microsoft 데이터 분류 서비스와 Microsoft Cloud App Security 통합은 이제 일반 공급됩니다. 이 통합을 통해 기본적으로 Microsoft 데이터 분류 서비스를 활용하여 클라우드 앱의 파일을 분류할 수 있습니다. 자세한 내용은 [Microsoft 데이터 분류 서비스 통합](dcs-inspection.md)을 참조하세요. 이 기능은 현재 미국과 유럽(프랑스 제외)에서만 사용할 수 있는 기능입니다.
 
 - **Cloud Discovery 주요 보고서**<br>Microsoft Cloud App Security는 Cloud Discovery 주요 PDF 보고서를 생성하는 기능을 롤아웃합니다. 이 보고서에서는 조직에서 식별된 섀도 IT 사용량 개요를 제공하여 전반적인 사용량 및 주요 범주의 상위 앱 및 사용자를 강조 표시하고 조직에서 섀도 IT가 갖는 위험을 중점적으로 설명합니다. 또한 보고서에서는 조직에서 섀도 IT에 대한 가시성을 개선하고 제어하는 방법에 대한 권장 사항 목록을 제공합니다. 이 보고서를 사용하여 잠재적 위험 및 위협을 제거하고 조직을 안전하게 유지하는지 확인합니다.
 

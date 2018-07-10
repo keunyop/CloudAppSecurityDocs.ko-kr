@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 146426bca36b4026af80d711e42860f553aef971
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: ef45ee81fced76dd3ff619aa8d42edf60b90e954
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747020"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340042"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -42,7 +42,7 @@ Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수�
 
 ## <a name="prerequisites-to-using-session-policies"></a>세션 정책을 사용하기 위한 필수 구성 요소
 
-- Azure AD Premium P2 라이선스
+- Azure AD Premium P1 라이선스
 - 관련 앱은 [조건부 액세스 앱 제어를 사용하여 배포됩니다](proxy-deployment-aad.md).
 - [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)이 아래에 설명된 대로 사용자를 Microsoft Cloud App Security로 리디렉션하는 위치에 있어야 합니다.
 
