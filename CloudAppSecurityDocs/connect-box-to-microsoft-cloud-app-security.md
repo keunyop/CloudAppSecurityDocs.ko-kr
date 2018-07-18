@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7a3d2670a8c4ccabc96807304545b85ee43cbd2
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: a9a89450ed04b21159b7f4323f2e4b01a8e81d28
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063948"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -40,7 +41,17 @@ ms.lasthandoff: 04/23/2018
   
          ![box 앱](./media/box-apps.png "box 앱")  
   
-    -   **Unpublished Applications**(게시되지 않은 응용 프로그램)이 선택된 경우 **Except for**(제외) 텍스트 상자에서 Cloud App Security 앱 일련 번호를 추가합니다.<br></br>US1 데이터 센터:`nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>US2 데이터 센터: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>EU1 데이터 센터:`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>그런 다음 **저장**을 클릭합니다. 연결된 Cloud App Security 데이터 센터를 확인하는 방법에 대한 자세한 내용은 [API 토큰](api-tokens.md)을 참조하세요. 
+    -   **Unpublished Applications**(게시되지 않은 응용 프로그램)이 선택된 경우 **Except for**(제외) 텍스트 상자에서 Cloud App Security 앱 일련 번호를 추가합니다.
+     
+         |데이터 센터|Microsoft Cloud App Security 일련 번호|
+         |----|----|    
+         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+         |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
+         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
+
+        그런 다음 **저장**을 클릭합니다. 연결된 Cloud App Security 데이터 센터를 확인하는 방법에 대한 자세한 내용은 [API 토큰](api-tokens.md)을 참조하세요. 
   
          ![box 제외 설정](./media/box-settings-except-for.png "box 제외 설정")  
   
