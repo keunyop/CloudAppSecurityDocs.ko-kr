@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568665"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175420"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security를 사용하면 특정 사용자 그룹만 모니�
      
      ![포함 규칙](./media/include-rule.png)
 
-4. 모니터링에서 제외할 특정 그룹을 설정하려면 **제외** 탭에서 더하기 ![아이콘](./media/plus-icon.png)을 클릭합니다. <br>**Create new exclude rule**(새 제외 규칙 만들기) 대화 상자에서 다음 매개 변수를 설정합니다.
+4. 모니터링에서 제외할 특정 그룹을 설정하려면 **제외** 탭에서 더하기 ![아이콘](./media/plus-icon.png)을 클릭합니다. <br>**새 제외 규칙 만들기** 대화 상자에서 다음 매개 변수를 설정합니다.
 
     1. **Type rule name**(규칙 이름 입력) 아래에 규칙에 대한 설명이 포함된 이름을 지정합니다.
     **사용자 그룹 선택** 아래에서 Cloud App Security로 모니터링하지 않으려는 모든 그룹을 선택합니다.

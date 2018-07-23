@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: c116a2b199638d60aeb793a8562a0852e07031f0
+ms.sourcegitcommit: 00e7adf7ebf26bf414df67e42ff6e3bac709b68b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259622"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39143345"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -52,6 +52,13 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 - 표준 Windows 또는 Linux 서버(가상 머신일 수 있음).
 - 서버에서 Java 8이 실행 중이어야 합니다. 이전 버전은 지원되지 않습니다.
+- OS: Windows 또는 Linux
+- CPU: 2
+- 디스크 공간: 20GB
+- RAM: 2GB
+- 서버는 Java 8을 실행해야 합니다. 이전 버전은 지원되지 않습니다.
+- [네트워크 요구 사항](network-requirements.md)에 설명된 대로 방화벽 설정
+ 
 
 ## <a name="integrating-with-your-siem"></a>SIEM과 통합
 
