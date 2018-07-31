@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
-ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
+ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
+ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843526"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39220646"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-128"></a>Cloud App Security 릴리스 128
+
+릴리스 날짜: 2018년 7월 22일
+
+-   **여러 앱에서 앱 권한 작업**<br>
+앱 권한이 부여된 앱에 대해 한 번에 여러 앱을 금지하거나 승인할 수 있습니다. 예를 들어 조직의 사용자가 권한을 부여한 모든 앱을 검토하고, 금지하려는 모든 앱을 선택한 다음, 앱 금지를 클릭하고 부여된 모든 동의를 취소하여 사용자가 해당 앱에 대한 권한을 더 이상 부여할 수 없도록 할 수 있습니다.  자세한 내용은 [앱 권한 관리](manage-app-permissions.md)를 참조하세요.
+-   **Azure 응용 프로그램에 대한 지원 향상**<br>
+Azure의 경우 Azure 응용 프로그램(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 응용 프로그램을 검색하는 기능이 점차적으로 출시되고 있습니다. 이를 통해 응용 프로그램에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
+-   **새로운 GDPR 감지 유형으로 데이터 분류 엔진 업데이트**<br>
+파일에서 GDPR 관련 콘텐츠를 검색할 수 있도록 [Cloud App Security 데이터 분류 서비스](dcs-inspection.md)에서 데이터 분류 엔진에 새로운 GDPR 감지 유형이 추가되었습니다.
+-   **클라우드 앱 카탈로그 업데이트**<br>
+현재 GDPR 준비 상태를 비롯한 데이터 프라이버시 및 소유권 규정 준수를 관리할 수 있도록 Cloud App Catalog에 법적 위험 범주 (일반, 보안 및 규정 준수 이외에)가 포함됩니다.
+각 클라우드 앱의 GDPR 준비 상태를 평가하는 데 도움이 되도록, 새로운 위험 범주에 클라우드 서비스의 GDPR 준비 상태 명령문 및 각 GDPR 프레임워크 컨트롤의 상태가 포함됩니다.
+이러한 기능 향상의 일환으로, 다음과 같은 위험 특성이 기타 위험 범주에서 법률 범주로 옮겨졌습니다.
+     - DMCA
+     - 데이터 소유권
+     - 데이터 보존 정책
+
+     또한 새로운 위험 범주가 별도로 채점되기 때문에 선호도 및 우선 순위에 따라 점수 가중치를 구성할 수 있습니다. 자세한 내용은 [위험 점수](risk-score.md)를 참조하세요.
+
+-   **새로운 추천 쿼리: GDPR 준비** <br>
+검색된 GDPR에 준비된 앱을 식별할 수 있는 새로운 추천 쿼리가 있습니다. 최근 GDPR이 보안 관리자에게 최우선 순위가 되었기 때문에 이 쿼리를 사용하면 GDPR에 준비된 앱을 쉽게 식별하고 그렇지 않은 앱의 위험을 평가하여 위협을 완화할 수 있습니다.
 
 
 ## <a name="cloud-app-security-release-127"></a>Cloud App Security 릴리스 127
