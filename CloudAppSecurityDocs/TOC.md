@@ -16,7 +16,7 @@
 ### [사용자 그룹](user-groups.md)
 ### [범위 지정 배포](scoped-deployment.md)
 ### [IP 태그 및 범위](ip-tags.md)
-## [Cloud Discovery 배포](set-up-cloud-discovery.md)
+## [Cloud Discovery 설정](set-up-cloud-discovery.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
 #### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
