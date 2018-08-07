@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/06/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3eb6f6b5338273abc31d0019a967d269aa51bed4
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5bde1c7caa26b9501a63c884125ffa0f30ed5f8
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140740"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519145"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -43,7 +43,7 @@ ms.locfileid: "37140740"
 
 -   네트워크 대역폭 - 네트워크 대역폭은 로그 업로드 속도를 결정합니다.
 
--   IT에서 할당한 가상 머신의 I/O 성능 - 로그가 로그 수집기의 디스크에 기록되는 속도를 결정합니다. 로그 수집기에는 로그가 도착하는 속도를 모니터링하고 업로드 속도와 비교하는 기본 제공 보안 메커니즘이 있습니다. 정체가 발생할 경우 로그 수집기에서 로그 파일 삭제를 시작합니다. 설치가 일반적으로 시간당 50GB를 초과할 경우 여러 로그 수집기 간에 트래픽을 분할하는 것이 좋습니다.
+-   IT에서 할당한 가상 컴퓨터의 I/O 성능 - 로그가 로그 수집기의 디스크에 기록되는 속도를 결정합니다. 로그 수집기에는 로그가 도착하는 속도를 모니터링하고 업로드 속도와 비교하는 기본 제공 보안 메커니즘이 있습니다. 정체가 발생할 경우 로그 수집기에서 로그 파일 삭제를 시작합니다. 설치가 일반적으로 시간당 50GB를 초과할 경우 여러 로그 수집기 간에 트래픽을 분할하는 것이 좋습니다.
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
 
@@ -68,6 +68,10 @@ ms.locfileid: "37140740"
    >보안 전송 프로토콜(FTPS 및 Syslog - TLS)과 통합하려면 종종 추가 설정 또는 방화벽/프록시가 필요합니다.
 
    f. 해당 로그를 사용하여 네트워크의 트래픽을 검색할 수 있는 각 방화벽 및 프록시에 대해 이 프로세스를 반복합니다.
+    > [!NOTE]
+    >네트워크 장치당 전용 데이터 원본을 사용할 수 있도록 설정하는 것이 좋습니다.
+    <br>- 조사를 위해 각 장치의 상태를 개별적으로 모니터링합니다.
+    <br>- 각 장치를 다른 사용자 세그먼트를 사용하는 경우 장치별로 Shadow IT Discovery를 탐색합니다.
 
 3. 맨 위에 있는 **로그 수집기** 탭으로 이동합니다.
 

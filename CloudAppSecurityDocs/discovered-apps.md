@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519060"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -62,6 +63,14 @@ Cloud Discovery를 사용하면 조직의 클라우드 사용을 더 자세히 �
 Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
 
  ![하위 도메인 정보](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>Cloud Discovery 임원 보고서 생성
+
+조직에서 Shadow IT를 사용하는 개요를 가져오는 가장 좋은 방법은 Cloud Discovery 임원 보고서를 생성하는 것입니다. 이 보고서는 잠재적인 상위 위험을 식별하고 위험을 해결할 때까지 완화하고 관리하는 워크플로를 계획할 수 있습니다.
+
+Cloud Discovery 임원 보고서를 생성하려면: 
+
+Cloud Discovery 대시보드에서 메뉴의 오른쪽 위 모서리에서 줄임표를 클릭하고 **Cloud Discovery 생성 임원 보고서**를 선택합니다.
 
 ## <a name="exclude-entities"></a>엔터티 제외  
 특히 노이즈가 많고 흥미 없는 시스템 사용자 또는 IP 주소나 관련 없는 앱이 있는 경우 분석되는 클라우드 검색 데이터에서 해당 데이터를 제외하는 것이 좋습니다. 예를 들어 127.0.0.1 또는 로컬 호스트에서 발생하는 모든 정보를 제외할 수 있습니다.  

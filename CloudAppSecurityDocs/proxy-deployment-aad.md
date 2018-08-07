@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c16e44132ec7047e5f1624907c184a0e03c6bf73
-ms.sourcegitcommit: 2862ebeb9e886bea16e62eb87dfdace638cf67bb
+ms.openlocfilehash: 082128a4a2b1130c14b2af770327f0f2bb956e4f
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37799164"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518264"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -31,10 +31,19 @@ ms.locfileid: "37799164"
 
 다음 단계에 따라 Microsoft Cloud App Security 조건부 액세스 앱 제어에서 Azure AD 앱을 제어하도록 구성합니다.
 
+**1단계: [Azure Active Directory 포털로 이동하여 앱에 대한 조건부 액세스 정책을 만들고 세션을 Cloud App Security ](#add-azure-ad)로 라우팅합니다.**
+
+**2단계: [앱](#sign-in-scoped)에서 정책 범위에 속한 사용자로 로그인합니다.**
+
+**3 단계 [Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱을](#banner-notification)추가합니다.**
+
+**4단계: [액세스 정책](access-policy-aad.md)을 만들거나 Cloud App Security에 대한 [세션 정책](session-policy-aad.md)을 만듭니다.**
+
+
 > [!NOTE]
 > Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)가 필요합니다.
 
-## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>1단계: Cloud App Security에 Azure AD 앱 추가  
+## 1단계: Cloud App Security에 Azure Active Directory 앱 추가 <a name="add-azure-ad"></a>  
 
 1. Azure AD 조건부 액세스 테스트 정책을 만듭니다.
 
@@ -53,29 +62,32 @@ ms.locfileid: "37799164"
       > [!NOTE]
       >조건부 액세스 앱 제어에서 지원하는 앱을 선택해야 합니다. 조건부 액세스 앱 제어는 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 예를 들어 Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
 
+## 2단계: 앱에서 정책 범위에 속한 사용자로 로그인 <a name="sign-in-scoped"></a>
 
-2. 정책을 만들었으면 정책에 구성된 사용자를 사용하여 정책에 구성된 각 앱에 로그인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
+정책을 만들었으면 정책에 구성된 사용자를 사용하여 정책에 구성된 각 앱에 로그인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
 
-3. Cloud App Security 포털에서 설정 코그로 이동하고 **Conditional Access App Control**(조건부 액세스 앱 제어)을 선택합니다. 
+## 3단계: Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱 추가 <a name="banner-notification"></a>
+
+1. Cloud App Security 포털에서 설정 코그로 이동하고 **Conditional Access App Control**(조건부 액세스 앱 제어)을 선택합니다. 
     
      ![프록시 메뉴](./media/proxy-menu.png)
 
-4. ‘새 Azure AD 앱이 조건부 액세스 앱 제어에 의해 검색되었습니다.’라고 알려주는 메시지가 표시됩니다. **새 앱을 확인하세요** 링크를 클릭합니다.
+2. ‘새 Azure AD 앱이 조건부 액세스 앱 제어에 의해 검색되었습니다.’라고 알려주는 메시지가 표시됩니다. **새 앱을 확인하세요** 링크를 클릭합니다.
 
    ![조건부 액세스 앱 제어 보기 새 앱](./media/proxy-view-new-apps.png)
 
-5. 열린 대화 상자에서 이전 단계에서 로그인한 모든 앱을 볼 수 있습니다. 각 앱에 대해 + 기호를 클릭한 다음 **추가**를 클릭합니다.
+3. 열린 대화 상자에서 이전 단계에서 로그인한 모든 앱을 볼 수 있습니다. 각 앱에 대해 + 기호를 클릭한 다음 **추가**를 클릭합니다.
 
    ![조건부 액세스 앱 제어 새 앱](./media/proxy-new-app.png)
 
    > [!NOTE]
    > 앱이 Cloud App Security 앱 카탈로그에 표시되지 않으면 로그인 URL과 함께 알 수 없는 앱 아래의 대화 상자에 나타납니다. 이러한 앱에 대한 + 기호를 클릭하면 카탈로그에 해당 앱을 추가하도록 제안할 수 있습니다. 앱이 카탈로그에 있으면 단계를 다시 수행하여 해당 앱을 배포합니다. 
 
-6. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
+4. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
   
    ![세션 제어 요청](./media/proxy-view-new-apps.png)
 
-7. 선택 사항 - 클라이언트 인증서를 사용하여 장치를 식별합니다.
+5. 선택 사항 - 클라이언트 인증서를 사용하여 장치를 식별합니다.
 
    1. 설정 코그로 이동하고 **장치 식별**을 선택합니다.
 
@@ -88,7 +100,7 @@ ms.locfileid: "37799164"
       > [!NOTE]
       >세션이 유효한 클라이언트 인증서 필터를 사용하는 정책과 일치하는 경우에만 사용자에게 인증서를 요청합니다. 
 
-## <a name="step-2-test-the-deployment"></a>2단계: 배포 테스트
+## <a name="test-the-deployment"></a>배포 테스트
 
 1. 먼저 기존 세션에서 로그아웃합니다. 그런 다음 Azure AD에 구성된 정책과 일치하는 사용자를 사용하여 성공적으로 배포된 각 응용 프로그램에 로그인합니다. 
 

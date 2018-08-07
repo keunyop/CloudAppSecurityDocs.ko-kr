@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519009"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 
 ## <a name="discovered-app-filters"></a>검색된 앱 필터
 
-기본 및 고급 검색된 앱 필터가 있습니다. 복잡한 필터(위의 예제 참조)를 적용하려면 다음이 모두 포함된 고급 옵션을 사용합니다.
+기본 및 고급 검색된 앱 필터가 있습니다. 위의 예제와 같이 복잡한 필터를 적용하려면 다음 필터가 모두 포함된 고급 옵션을 사용합니다.
 
 ![검색된 앱](./media/discovered-apps.png)  
 
@@ -33,11 +34,12 @@ ms.lasthandoff: 05/09/2018
 - **앱 태그**: 앱의 사용 권한이 부여 또는 취소되었거나 태그가 지정되었는지 선택합니다. 또한 앱에 대한 사용자 지정 태그를 만들고 나서 이를 사용하여 특정 유형의 앱을 필터링할 수 있습니다. 
 - **앱 및 도메인**: 특정 앱 또는 특정 도메인에서 사용되는 앱을 검색할 수 있습니다. 
 - **범주**: 페이지 왼쪽에 있는 범주 필터를 사용하여 앱 범주에 따라 앱 유형을 검색할 수 있습니다(예: 소셜 네트워크 앱, 클라우드 저장소 앱 등). 한 번에 여러 범주를 선택하거나 단일 범주를 선택하고 나서 해당 범주에서 기본 및 고급 필터를 적용할 수 있습니다.
-- **Compliance risk factor**(규격 위험 요인): 앱이 준수할 수 있는 특정 표준, 인증 및 규격(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)을 검색할 수 있습니다.
+- **위험 요인 준수**: 앱이 준수할 수 있는 특정 표준, 인증 및 준수(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)를 검색할 수 있습니다.
 - **일반 위험 요인**: 소비자 인기도, 데이터 센터 로캘 등의 일반 위험 요인을 검색할 수 있습니다.
 - **위험 점수**: 매우 위험한 앱만 검토하는 것과 같이 초점을 맞출 수 있도록 위험 점수별로 앱을 필터링할 수 있습니다. Cloud App Security에서 설정된 위험 점수를 재정의할 수도 있습니다. 자세한 내용은 [위험 점수 사용](risk-score.md)을 참조하세요.
 - **보안 위험 요인**: 특정 보안 조치(예: 미사용 암호화, 다단계 인증 등)를 기준으로 필터링할 수 있습니다.
-- **사용량**: 이 앱(예: 지정된 **데이터 업로드** 양보다 적거나 많은 앱, 지정된 **사용자** 수보다 많거나 적은 앱)의 사용량 통계를 기준으로 필터링할 수 있습니다.
+- **사용량**: 이 앱(예: 지정된 **데이터 업로드** 수보다 적거나 많은 앱, 지정된 **사용자** 수보다 많거나 적은 앱)의 사용량 통계를 기준으로 필터링할 수 있습니다.
+- **법적**: GDPR, DMCA 및 데이터 보존 정책 등 데이터 보호 및 앱 사용자의 개인 정보를 확인하기 위해 준비된 모든 규정 및 정책에 따라 필터링할 수 있습니다.
 
 ### <a name="creating-and-managing-custom-app-tags"></a>사용자 지정 앱 태그 만들기 및 관리
 
@@ -45,7 +47,7 @@ ms.lasthandoff: 05/09/2018
 
 사용자 지정 앱 태그를 만들려면:
 
-1. **설정** 코그에서 **Cloud Discovery**를 선택하고 **Manage app tags**(앱 태그 관리) 탭에서 아이콘 ![더하기 아이콘](./media/plus-icon.png)을 클릭합니다. 
+1. **설정** 코그에서 **Cloud Discovery**를 선택하고, **앱 태그 관리** 탭에서 아이콘 ![더하기 아이콘](./media/plus-icon.png)을 클릭합니다. 
 
 ![사용자 지정 앱 태그 만들기](./media/create-app-tag.png)
 
@@ -89,6 +91,8 @@ Cloud App Security에는 **제안된 쿼리**가 제공되며 자주 사용하�
 
  - 암호화가 약한 엔터프라이즈 클라우드 앱 - 미사용 데이터를 암호화하지 않고 암호화 프로토콜을 지원하지 않기 때문에 위험한 앱만 표시하도록 검색된 모든 앱을 필터링합니다.
 
+- GDPR 준비: GDPR 준비된 앱만 표시하도록 검색된 모든 앱을 필터링합니다. GDPR이 최우선 순위이기 때문에 이 쿼리를 사용하면 GDPR에 준비된 앱을 쉽게 식별하고 그렇지 않은 앱의 위험을 평가하여 위협을 완화할 수 있습니다.
+ 
 ![쿼리로 검색된 앱](./media/queries-discovered-apps.png)
 
  

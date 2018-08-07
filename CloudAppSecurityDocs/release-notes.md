@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/24/2018
+ms.date: 8/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,26 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
-ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
+ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39220646"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518179"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+
+
+## <a name="cloud-app-security-release-129"></a>Cloud App Security 릴리스 129
+
+릴리스 날짜: 2018년 7월 22일
+
+- **새 변칙 검색 정책 - 의심스러운 메일 규칙**<br>새 변칙 검색 정책은 의심스러운 메일 전달 규칙(예: 사용자가 받은 편지함 규칙을 만들어 모든 메일의 복사본을 외부 주소로 전달하는 경우)을 검색하도록 추가되었습니다. 
+- 이 릴리스는 여러 문제에 대한 수정 사항 및 개선 사항이 포함되어 있습니다. 
 
 ## <a name="cloud-app-security-release-128"></a>Cloud App Security 릴리스 128
 
