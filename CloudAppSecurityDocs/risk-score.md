@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6820e8340a7316f826ff437f168b3db8cc5ec773
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 30e23682d99613d1bed0fa64f766bf668b60793d
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519179"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653250"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -56,7 +56,7 @@ ms.locfileid: "39519179"
 - **일반 위험 요인**: 소비자 인기도, 데이터 센터 로캘 등의 일반 위험 요인을 검색할 수 있습니다.
 - **위험 점수**: 매우 위험한 앱만 검토하는 것과 같이 초점을 맞출 수 있도록 위험 점수별로 앱을 필터링할 수 있습니다.
 - **보안 위험 요인**: 특정 보안 조치(예: 미사용 암호화, 다단계 인증 등)를 기준으로 필터링할 수 있습니다.
-- **법적**: GDPR, DMCA 및 데이터 보존 정책 등 데이터 보호 및 앱 사용자의 개인 정보를 확인하기 위해 준비된 모든 규정 및 정책에 따라 필터링할 수 있습니다.
+- **법적 위험 요소**: GDPR, DMCA 및 데이터 보존 정책 등 데이터 보호 및 앱 사용자의 개인 정보를 확인하기 위해 준비된 모든 규정 및 정책에 따라 필터링할 수 있습니다.
  
 ## <a name="suggesting-a-change"></a>변경 제안
 
@@ -96,6 +96,8 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
 -   **보안** - 보안 범주는 검색된 앱이 활용하는 데이터의 물리적 보안을 다루는 모든 표준을 고려합니다. 여기에는 다단계 인증, 암호화, 데이터 분류, 데이터 소유권 등의 필드가 포함됩니다.  
   
 -   **규정 준수** - 이 범주는 앱을 생산하는 회사에서 유지하는 일반적인 모범 사례 규정 준수 표준을 표시합니다. 사양 목록에는 HIPAA, CSA, PCI-DSS 등의 표준이 포함됩니다.  
+
+-  **법적**:이 범주는 GDPR, DMCA 및 데이터 보존 정책 등 데이터 보호 및 앱 사용자의 개인 정보를 확인하기 위해 준비된 모든 규정 및 정책을 표시합니다.
   
 각 범주는 많은 특정 속성으로 구성됩니다. Cloud App Security 점수 매기기 알고리즘에 따라 각 속성은 값을 기준으로 0과 10 사이의 예비 점수를 받습니다. True/False 값은 각각 10 또는 0을 받지만 도메인 사용 기간 등의 연속 속성은 스펙트럼 내의 특정 값을 받게 됩니다. 각 속성의 점수는 범주의 하위 점수를 만들기 위해 범주의 다른 모든 기존 필드를 기준으로 가중 처리됩니다. 점수가 없는 앱을 발견할 경우 일반적으로 속성을 알 수 없어 점수가 매겨지지 않은 앱을 나타냅니다.  
   
