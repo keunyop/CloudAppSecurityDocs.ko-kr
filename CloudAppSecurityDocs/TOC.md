@@ -22,6 +22,7 @@
 #### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
 #### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
 #### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
+### [Zscaler와 통합](zscaler-integration.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
