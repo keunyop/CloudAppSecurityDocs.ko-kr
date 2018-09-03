@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 4bb0a02b9577470ae35fb79d4cc74b1c6ad48d66
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518162"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016717"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -91,41 +91,25 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 
 세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱도 차단되거나 허용될 수 있음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
 
--   Salesforce
+- AWS
+- 상자
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- G Suite
+- GitHub
+- HighQ
+- JIRA/Confluence
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace by Facebook
 
--   상자
-
--   G Suite
-
--   Workday
-
--   Slack
-
--   Workplace by Facebook
-
--   ServiceNow
-
--   JIRA/Confluence
-
--   AWS
-
--   Workiva
-
--   CornerStone on Demand
-
--   DocuSign
-
--   HighQ 
-
--   Concur
-
--   Tableau
-
--  Dropbox
-
--  Egnyte
-
--  GitHub
 
 세션 제어에 추가 앱이 계속 등록되고 있습니다. 여기에서 언급되지 않은 특정 앱에 관심이 있는 경우 [해당 앱에 대한 세부 정보](mailto:casfeedback@microsoft.com)와 관심 있는 사용 사례를 보내 주시면 등록해 드리겠습니다.
 

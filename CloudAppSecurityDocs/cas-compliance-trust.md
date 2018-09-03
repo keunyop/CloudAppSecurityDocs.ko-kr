@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 68/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 2c0535c3c2fceec521383d00e828072c4e9ad1ff
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140757"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016967"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 |![로고 SOC](./media/soc-logo.png)|SOC 3|Microsoft 클라우드 서비스는 운영 보안에 대한 SOC(Service Organization Controls) 표준을 준수합니다.|
 |![로고 g-cloud](./media/g-cloud.png)|영국 G-Cloud|CCS(Crown Commercial Service)는 Microsoft 클라우드 서비스 분류를 정부 클라우드 v6으로 갱신했습니다.|
 
-자세한 내용을 보려면 [Microsoft 규정 준수 제안](https://servicetrust.microsoft.com)으로 이동하고 Cloud App Security를 선택하세요.  
+자세한 내용을 보려면 [Microsoft 규정 준수 제안](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings)으로 이동하고 Cloud App Security를 선택하세요.  
 
 ## <a name="privacy"></a>개인 정보
 
