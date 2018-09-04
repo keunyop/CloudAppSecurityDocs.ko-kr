@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259490"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016992"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ Cloud App Security 포털에서 **조사**, **앱 사용 권한**을 차례로 �
 
 G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 이 작업이 수행되어야 했음을 사용자에게 알릴 수 있습니다. 
 
-1. 앱 사용 권한 페이지에서 앱 행의 끝에 있는 점 세 개를 클릭하고 **사용자에게 알림**을 선택합니다. 기본적으로 사용자에게 다음 알림이 제공됩니다. *G Suite 계정에 액세스할 수 있도록 Adallom Google Protector 앱에 대한 권한을 부여했습니다. 이 앱은 조직의 보안 정책과 충돌합니다. G Suite 계정에서 이 앱에 제공한 사용 권한의 부여 또는 취소를 다시 고려하세요. 앱 액세스를 취소하려면 https://security.google.com/settings/security/permissions?hl=en&pli=1로 이동하세요. 앱을 선택하고 오른쪽 메뉴 모음에서 ‘액세스 취소’를 클릭합니다.* 보내는 메시지를 사용자 지정할 수 있습니다.
+1. **앱 사용 권한 페이지**에서 앱 행의 끝에 있는 점 세 개를 클릭하고 **사용자에게 알림**을 선택합니다. 기본적으로 사용자에게 다음 알림이 제공됩니다. *G Suite 계정에 액세스할 수 있도록 Adallom Google Protector 앱에 대한 권한을 부여했습니다. 이 앱은 조직의 보안 정책과 충돌합니다. G Suite 계정에서 이 앱에 제공한 사용 권한의 부여 또는 취소를 다시 고려하세요. 앱 액세스를 취소하려면 https://security.google.com/settings/security/permissions?hl=en&pli=1로 이동하세요. 앱을 선택하고 오른쪽 메뉴 모음에서 ‘액세스 취소’를 클릭합니다.* 보내는 메시지를 사용자 지정할 수 있습니다.
 2. 표에서 앱 행의 끝에 있는 아이콘을 클릭하고 **앱 철회**를 선택하여 사용자에 대한 앱 사용 권한을 철회할 수도 있습니다. 
 
    ![앱 철회](./media/revoke-app.png)
@@ -92,7 +92,15 @@ G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 
 
 - 필터를 제거하려면 필터 옆에 있는 **필터 제거** 아이콘을 선택합니다.
 
+## <a name="send-feedback"></a>피드백 보내기
 
+조직에서 검색된, 악성인 것 같은 OAuth 앱이 있는 경우 Cloud App Security 팀으로 피드백을 보내 알릴 수 있습니다. 이 새로운 기능을 사용하여 보안 커뮤니티의 일원이 되고 OAuth 앱 위험 점수 및 분석을 향상할 수 있습니다.
+1. **앱 사용 권한 페이지**에서 앱 행의 끝에 있는 점 세 개를 클릭하고 **앱 보고**를 선택합니다.  
+
+   ![앱 보고](./media/report-app.png)
+2. **이 앱 보고** 화면에서 앱을 악성으로 보고할지 또는 Cloud App Security가 앱을 인식하는 과정에서 발생한 다른 문제(예: **잘못된 게시자** 또는 **잘못된 사용 권한**)를 보고할지를 선택할 수 있습니다. 제출하는 데이터는 앱의 위험 점수 및 앱에 대한 기타 분석을 업데이트하는 데 사용됩니다.
+
+ 
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 

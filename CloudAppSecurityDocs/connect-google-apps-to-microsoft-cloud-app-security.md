@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8fe064b9955e0b2b5db5d40f0450c4af63d352b3
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017009"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -44,9 +45,7 @@ ms.lasthandoff: 04/23/2018
 5. **API** 아래에서 **API 개요로 이동**을 클릭합니다.  
   
      ![google3](./media/google3.png "google3")  
-  
-6. **API** 아래에서 나열된 API를 모두 사용하지 않도록 설정합니다.  
-      
+   
 7. **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
      
    -   관리자 SDK  
@@ -66,7 +65,7 @@ ms.lasthandoff: 04/23/2018
 
 8. 각 API에 대해 [사용]을 클릭합니다.
      ![Google APPI 사용](./media/google-api.png "google-api")  
-9. 5개의 **사용 가능 API**가 있어야 하고 다른 API를 사용하지 않도록 설정해야 합니다.
+9. 다음 API가 사용하도록 설정되어 있는지 확인합니다.
   
      ![google 사용 API](./media/google5.png "google5")  
   

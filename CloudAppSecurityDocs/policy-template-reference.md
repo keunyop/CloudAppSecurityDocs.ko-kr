@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 85985a9ad83cff0bb68b3d1fd310e98bbea09181
+ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251799"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43115729"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -61,7 +61,7 @@ Microsoft Cloud App Security에 있는 정책 템플릿 목록입니다. 사용 
 |제어권 공유|권한 없는 도메인과 공유되는 파일|권한 없는 도메인(예: 경쟁 업체)과 파일이 공유될 때 경고합니다.|
 |제어권 공유|공유 디지털 인증서(파일 확장명)|디지털 인증서를 포함하는 파일이 공개적으로 공유될 때 경고합니다. 이 템플릿을 사용하면 AWS 저장소를 제어하는 데 도움이 됩니다.|
 |제어권 공유|공개적으로 액세스할 수 있는 S3 버킷(AWS)|AWS S3 버킷이 공개적으로 공유될 때 경고합니다.|
-|제어권 공유|외부에서 공유되는 부실 파일|6개월 동안 열거나 수정하지 않아 드라이브에서 제거할 외부 공유 파일을 찾습니다.|
+|제어권 공유|외부에서 공유되는 부실 파일|6개월 동안 열거나 수정되지 않은 외부에서 공유되는 파일을 찾습니다.|
 
 
 

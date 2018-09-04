@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5edbb6a812060cee1fef9b0bdf78bc31d362dfaf
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6a25560de126aa0a18e9050d2f4f5695e19b880b
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567611"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016896"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security와 Office 365 Cloud App Security의 차이점은 무엇인가요?
 
@@ -37,7 +37,7 @@ Office 365 Cloud App Security는 Office 365에 향상된 가시성과 제어를 
 
 |기능|기능|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
-|클라우드 검색|검색된 앱 |16,000개 이상의 클라우드 앱  |750개 이상의 클라우드 앱 Office 365와 유사한 기능을 가진 클라우드 앱|
+|클라우드 검색|검색된 앱 |16,000개 이상의 클라우드 앱  |Office 365와 유사한 기능을 가진 750개 이상의 클라우드 앱|
 ||검색 분석을 위한 배포|수동 및 자동 로그 업로드|수동 로그 업로드|
 ||사용자 개인 정보 보호를 위한 로그 익명화|예||
 ||전체 클라우드 앱 카탈로그에 대한 액세스|예||

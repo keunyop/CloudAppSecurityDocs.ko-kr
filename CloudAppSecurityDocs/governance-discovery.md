@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fbbf979dddb96db69e57c86758c6c1a699c8a51
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 394a6db8cc79ab5c52cb6775394f7b939b02f9d5
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016828"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,6 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 환경에서 검색된 앱 목록을 검토한 후 다음 방법으로 원하지 않는 앱 사용으로부터 환경을 보호할 수 있습니다.
 
+
 ### <a name="sanctioningunsanctioning-an-app"></a>앱 사용 권한 부여/취소 
 
 행 끝에 있는 점 세 개를 클릭하고 **Unsanction**(사용 권한 취소)을 선택하여 위험한 특정 앱의 사용 권한을 취소할 수 있습니다.
@@ -33,10 +35,12 @@ ms.lasthandoff: 04/23/2018
 
 ![비사용 권한으로 태그 지정](./media/tag-as-unsanctioned.png)  
 
-
 사용 권한을 부여 또는 취소할 앱 목록이 있는 경우 확인란을 사용하여 관리할 모든 앱을 선택하고 나서 작업을 선택할 수 있습니다.
 
 비사용 권한 앱 목록을 조회하려면 [Cloud App Security API를 사용하여 차단 스크립트를 생성](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script)할 수 있습니다.
+
+> [!NOTE]
+> 테넌트에서 Zscaler NSS를 사용하는 경우 비사용 권한으로 표시한 모든 앱은 자동으로 Cloud App Security에 의해 차단되며, 차단 스크립트 만들기에 관한 다음 섹션은 불필요합니다. 자세한 내용은 [Zscaler와 통합](zscaler-integration.md)을 참조하세요.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>검색된 앱을 관리하기 위해 차단 스크립트 내보내기
 

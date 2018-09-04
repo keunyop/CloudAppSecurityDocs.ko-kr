@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016913"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -87,9 +88,7 @@ ms.lasthandoff: 04/23/2018
     
     -   또한 사용자 계정 행 끝의 코그를 클릭하고 **사용자 일시 중단** 또는 **Remove user's collaborations**(사용자의 공동 작업 제거) 등 수행할 작업을 선택하여 사용자 계정으로 드릴다운할 수 있습니다. 사용자를 Azure Active Directory에서 가져온 경우 **Azure AD account settings**(Azure AD 계정 설정)를 클릭하여 그룹 관리, MFA, 사용자 로그인 세부 정보, 로그인 차단 기능 등과 같은 고급 사용자 관리 기능에 쉽게 액세스할 수도 있습니다.
 
-4.  **조사**로 이동한 다음 앱을 선택합니다. 응용 프로그램 대시보드가 열리며 정보와 활용 방법을 제공합니다. 위쪽에 있는 탭을 사용하여 다음을 확인할 수 있습니다.  
-
-     ![앱 대시보드](./media/investigate-app.png "앱 조사")  
+4.  **조사** 및 **연결된 앱**으로 이동한 다음, 앱을 선택합니다. 응용 프로그램 대시보드가 열리며 정보와 활용 방법을 제공합니다. 위쪽에 있는 탭을 사용하여 다음을 확인할 수 있습니다.  
 
     -   사용자가 앱에 연결하는 데 사용 중인 장치 종류는 무엇인가요?  
 
@@ -104,6 +103,8 @@ ms.lasthandoff: 04/23/2018
     -   허용되는 액세스 수준에 대해 권한이 부여되었나요?  
 
     -   배포한 사용자 수는 몇 명인가요? 총체적으로 이러한 앱은 얼마나 일반적인가요?  
+ 
+    ![앱 대시보드](./media/investigate-app.png "앱 조사")  
 
 5.  **클라우드 검색 대시보드**로 이동한 후 다음을 확인합니다.  
 

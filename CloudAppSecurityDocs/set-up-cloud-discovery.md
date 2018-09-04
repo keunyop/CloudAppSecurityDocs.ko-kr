@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4e2a85c11e0e693ee7967de0fa0c23bf47388c34
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: 6d96dea5cfd7fd50c0730c59b13e5abb4121cdca
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259599"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016845"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -87,12 +87,14 @@ Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건�
 - Dell Sonicwall
 - Digital Arts i-FILTER
 - Fortinet Fortigate
+- iboss Secure Cloud Gateway
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway(W3C)
 - Palo Alto series Firewall
 - Sophos SG
+- Sophos XG
 - Sophos Cyberoam
 - Squid(Common)
 - Squid(Native)

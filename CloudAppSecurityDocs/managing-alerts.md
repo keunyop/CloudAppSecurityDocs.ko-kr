@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 537f95a46164678e921b5f6b4644d864bea24316
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 1131a736fa630e9507427267fc9865723d5eaf82
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340076"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017057"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -39,6 +39,8 @@ ms.locfileid: "37340076"
    경고를 경고 유형이나 심각도에 따라 필터링하여 가장 중요한 것을 먼저 처리할 수 있습니다.  
 
    특정 경고를 선택합니다. 경고 유형에 따라 경고를 해결하기 전에 수행할 수 있는 다양한 작업이 표시됩니다.  
+   
+   앱을 기준으로 필터링 할 수 있습니다. 나열된 앱은 Cloud App Security에 의해 검색된 활동에 대한 앱입니다.
 
    경고를 조사할 때 처리해야 하는 다음 세 가지 유형의 위반이 있습니다.  
 
