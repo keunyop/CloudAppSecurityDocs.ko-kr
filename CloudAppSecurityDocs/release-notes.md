@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: c966c33a1ed31c1e5981600750760493133c8493
+ms.sourcegitcommit: 9ae2e002db44ed8a808351cec5eda305e4c0bd92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43017040"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486454"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,6 +26,16 @@ ms.locfileid: "43017040"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 
+## <a name="cloud-app-security-release-131"></a>Cloud App Security 릴리스 131
+
+릴리스 날짜: 2018년 9월 2일
+
+- **자동으로 위험한 OAuth 앱에 대한 사용 권한 해지**<br>
+이제 Office, Google 또는 Salesforce에서 OAuth 앱에 대한 앱 사용 권한을 취소하여 사용자가 액세스 권한을 가진 OAuth 앱을 제어할 수 있습니다. 이제 **앱 사용 권한 정책**을 만들면 앱의 사용 권한을 취소하는 정책을 설정할 수 있습니다. 
+
+- **Cloud Discovery 추가 기본 제공 구문 분석 지원**<br>이제 Cloud Discovery에서는 Forcepoint 웹 보안 클라우드 로그 형식을 지원합니다.
+
+ 
 ## <a name="cloud-app-security-release-130"></a>Cloud App Security 릴리스 130
 
 릴리스 날짜: 2018년 8월 22일
