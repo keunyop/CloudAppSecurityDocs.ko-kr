@@ -6,18 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e3e75687839e96d92c50f6fba132b49c06c62bd
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 843b58567b87793cc5c46c0d10d5b94127a4b156
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144162"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -74,8 +75,7 @@ ms.lasthandoff: 04/23/2018
    > [!NOTE] 
    > - 단일 로그 수집기로 여러 데이터 원본을 처리할 수 있습니다.
    > - Cloud App Security와 통신하도록 로그 수집기를 구성하는 경우 사용해야 하므로 화면의 내용을 복사합니다. Syslog를 선택한 경우 이 정보에는 Syslog 수신기가 수신 대기하는 포트에 대한 정보가 포함됩니다.
-4. 
-  [최종 사용자 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862492)에 동의하는 경우 Hyper-V 또는 VMWare에서 클릭하여 새 로그 수집기 가상 머신을 **다운로드**합니다. 그런 다음 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
+4. [최종 사용자 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862492)에 동의하는 경우 Hyper-V 또는 VMWare에서 클릭하여 새 로그 수집기 가상 머신을 **다운로드**합니다. 그런 다음 포털에서 받은 암호를 사용하여 파일의 압축을 풉니다.  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>2단계 – 가상 머신 및 네트워크 구성의 온-프레미스 배포   
 
@@ -84,10 +84,8 @@ ms.lasthandoff: 04/23/2018
 
 1. Hyper-V 관리자를 엽니다.  
   
-2. 
-     **새로 만들기**, **가상 머신**을 차례로 선택하고 **다음**을 클릭합니다.  
-
-  ![Hyper-V 가상 머신 검색](./media/discovery-hyperv-virtual-machine.png " Hyper-V 가상 머신 검색")  
+2. **새로 만들기**, **가상 머신**을 차례로 선택하고 **다음**을 클릭합니다.  
+   ![Hyper-V 가상 머신 검색](./media/discovery-hyperv-virtual-machine.png " Hyper-V 가상 머신 검색")  
   
 3. 새 가상 머신의 **이름**(예: CloudAppSecurityLogCollector01)을 지정하고 **다음**을 클릭합니다.  
   

@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 5/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: ed1e0cc723d078ee74b9b1c53b1960e874abd344
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759936"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143618"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -76,7 +76,7 @@ Cloud App Security에서는 클라우드 제공자가 제공한 API를 사용합
 Microsoft Cloud App Security 조건부 액세스 앱 제어는 역방향 프록시 아키텍처를 활용하여 클라우드 환경 내에서 수행되는 활동에 대한 실시간 가시성 및 제어를 위해 필요한 도구를 제공합니다. 조건부 액세스 앱 제어를 사용하면 다음과 같이 조직을 보호할 수 있습니다. 
 -   다운로드가 시작되기 전에 차단하여 데이터 누수 방지
 -   안에 저장한 데이터와 클라우드에서 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙 설정
--   관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있도록 보호되지 않는 끝점을 세부적으로 파악
+-   관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있도록 보호되지 않는 엔드포인트를 세부적으로 파악
 -   비회사 네트워크 또는 위험한 IP 주소로부터의 액세스 제어
 
 ### <a name="policy-control"></a>정책 제어  

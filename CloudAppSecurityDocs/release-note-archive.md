@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 1753cf48360bd2c8c895eaa6ae93b7141402c1fa
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298965"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144604"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -76,7 +76,7 @@ ms.locfileid: "32298965"
 - Microsoft Cloud App Security 프록시 기능 배포를 시작했습니다. Microsoft Cloud App Security 프록시는 클라우드 환경에 대한 액세스 및 내부에서 수행되는 활동에 대한 실시간 가시성 및 제어가 필요한 도구를 제공합니다. 예:
     -   다운로드를 시작하기 전에 차단하여 데이터 누수를 미리를 방지합니다.
     -   클라우드에서 저장되거나 다운로드한 데이터를 암호화로 보호하도록 적용하는 규칙을 설정합니다.
-    -   보호되지 않는 끝점에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
+    -   보호되지 않는 엔드포인트에 대한 가시성을 확보하여 관리되지 않는 장치에서 수행되는 작업을 모니터링할 수 있습니다.
     -   비회사 네트워크 또는 위험한 IP 주소로부터의 액세스를 제어합니다.
   
   자세한 내용은 [조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)를 참조하세요.

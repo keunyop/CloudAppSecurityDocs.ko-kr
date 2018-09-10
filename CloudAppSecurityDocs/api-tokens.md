@@ -6,25 +6,26 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1823f6bbcf0061b43d9d438c94b9434a609b5fad
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: e7ae8a06cc54eaa274b951a0762a589437c13ee0
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142411"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="api-tokens"></a>API 토큰
     
-Microsoft Cloud App Security API에서는 REST API 끝점을 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
+Microsoft Cloud App Security API에서는 REST API 엔드포인트를 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
 
 - Cloud Discovery에 대한 로그 파일 업로드
 - 차단 스크립트 생성
