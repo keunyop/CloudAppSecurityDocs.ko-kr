@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773096"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144043"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ ms.locfileid: "31773096"
    1. 원본 파일이 설정한 관리자 격리 폴더로 이동합니다.
    2. 원본 파일이 삭제됩니다.
    3. 삭제 표식이 원본 파일 위치에 업로드됩니다.
-
+      
       ![격리 삭제 표식](./media/quarantine-tombstone.png)
-
+      
    4. 사용자는 IT에 연락하여 파일을 릴리스할 수 있는 상관 관계 ID 및 IT에서 제공된 사용자 지정 지침을 읽을 수 있는 삭제 표식에만 액세스할 수 있습니다.
 
 4. 파일이 격리되었다는 경고가 표시되면 Cloud App Security **경고** 페이지에서 파일을 조사합니다.
-
+   
    ![격리 경고](./media/quarantine-alerts.png)
- 
+   
 5. 또한 **격리됨** 탭의 **정책 보고서**에서:
-
+   
    ![격리 보고서](./media/quarantine-report.png)
     
 6. 파일이 격리된 후 다음 프로세스를 사용하여 위협 상황을 해결합니다.
-       
+    
     1. SharePoint Online의 격리된 폴더에서 파일을 검사합니다.
-    3. 감사 로그를 확인하여 파일 속성을 심층 분석할 수도 있습니다.
-    4. 파일이 회사 정책을 위반한 것으로 확인되면 조직의 IR(인시던트 응답) 프로세스를 실행합니다.
-    5. 무해한 파일로 확인이 되면 격리에서 파일을 복원할 수 있고, 이때 원본 파일이 릴리스됩니다. 즉, 파일이 다시 원래 위치로 복사되고, 삭제 표식이 삭제되고, 사용자가 파일에 액세스할 수 있습니다.
+    2. 감사 로그를 확인하여 파일 속성을 심층 분석할 수도 있습니다.
+    3. 파일이 회사 정책을 위반한 것으로 확인되면 조직의 IR(인시던트 응답) 프로세스를 실행합니다.
+    4. 무해한 파일로 확인이 되면 격리에서 파일을 복원할 수 있고, 이때 원본 파일이 릴리스됩니다. 즉, 파일이 다시 원래 위치로 복사되고, 삭제 표식이 삭제되고, 사용자가 파일에 액세스할 수 있습니다.
+       
        ![격리 복원](./media/quarantine-restore.png)
+       
 7. 정책이 원활하게 실행되는지 유효성을 검사한 후 정책에서 자동 거버넌스 작업을 사용하여 미래의 누수를 방지하고 정책이 일치하는 경우 관리자 격리의 자동 적용을 방지합니다.
 
 > [!NOTE]
