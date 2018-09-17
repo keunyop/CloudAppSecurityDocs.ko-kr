@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f0cc3758f09ae77966ace3622e5c658a4e2cf9d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b4f96e969a4276e6f2456659dfcae7243a791232
+ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144655"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45561204"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -226,7 +226,7 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 릴리스 116
 릴리스 날짜: 2018년 2월 4일
-- Cloud App Security의 변칙 검색 정책이 불가능한 이동, 의심스러운 IP 주소로부터의 활동, 여러 번 실패한 로그인 시도 등 새로운 **시나리오 기반 검색**으로 향상되었습니다. 새 정책은 자동으로 사용 가능하며, 클라우드 환경에서 기본 제공 위협 검색 기능을 제공합니다. 또한 새 정책은 Cloud App Security 검색 엔진의 데이터를 더 많이 공개하여 조사 프로세스를 더 빨리 진행하고 지속적으로 발견되는 위협을 포함하도록 도와줍니다. 자세한 내용은 [즉각적인 동작 분석 및 변칙 검색 이용](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)을 참조하세요.
+- Cloud App Security의 변칙 검색 정책이 불가능한 이동, 의심스러운 IP 주소로부터의 활동, 여러 번 실패한 로그인 시도 등 새로운 **시나리오 기반 검색**으로 향상되었습니다. 새 정책은 자동으로 사용 가능하며, 클라우드 환경에서 기본 제공 위협 검색 기능을 제공합니다. 또한 새 정책은 Cloud App Security 검색 엔진의 데이터를 더 많이 공개하여 조사 프로세스를 더 빨리 진행하고 지속적으로 발견되는 위협을 포함하도록 도와줍니다. 자세한 내용은 [즉각적인 동작 분석 및 변칙 검색 이용](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)을 참조하세요.
 
 - 점진적 출시: Cloud App Security는 이제 SaaS 앱 전체에서 사용자와 해당 계정 간의 상관 관계를 지정합니다. 따라서 사용자가 사용한 앱 또는 계정과 관계없이 해당 사용자의 모든 다양한, 상관 관계가 지정된 SaaS 앱에서 사용자의 모든 활동을 쉽게 조사할 수 있습니다.  
 

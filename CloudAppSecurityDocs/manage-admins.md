@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c2c5e89da95f550c35f346a27dede245195b1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0e3c2ed7397f1c233955ea59c6c8be8f0d9c06e3
+ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144400"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45561187"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -72,7 +72,7 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
 
 
 
-자세한 내용은 [Azure Active Directory에서 관리자 역할 할당](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)을 참조하세요.
+자세한 내용은 [Azure Active Directory에서 관리자 역할 할당](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)을 참조하세요.
 
 다음 단계를 수행하여 Azure Active Directory 관리자 역할에 사용자를 추가하지 않고 Cloud App Security에 추가 관리자를 추가할 수도 있습니다.
 
