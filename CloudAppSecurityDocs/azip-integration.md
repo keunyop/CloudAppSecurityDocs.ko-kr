@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/16/2018
+ms.date: 9/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: debda58661d0b9a9f70a1d7bd1c2b2010bd0d06a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 443243443480d1b8302b9f05c2a620b619df61f0
+ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144349"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683369"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -154,7 +154,7 @@ Cloud App Security와 Azure Information Protection이 함께 작동하는 방식
 
 
 > [!Note]
-> 파일에 대해 Azure ID 보호 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
+> 파일에 대해 Azure Information Protection 레이블을 사용하지 않도록 설정하면 사용하지 않도록 설정한 레이블이 Cloud App Security에서 사용 안 함으로 표시됩니다. 삭제된 레이블은 표시되지 않습니다.
 
 
 **샘플 정책 - 상자에서 외부에 공유되는 기밀 데이터:**
