@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0735a00693c1f744867d577ae46e1709b4f24cc9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9d86355440c92ab832257de1876be5653ae1db8d
+ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144213"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683386"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -74,8 +74,11 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 - 이 검색은 Microsoft Threat Intelligence에서 위험한 것으로 식별된 IP 주소에서 사용자가 활동했음을 나타냅니다. 이러한 IP 주소는 봇네트 C&C와 같은 악성 활동에 관여하며, 손상된 계정을 나타낼 수도 있습니다. 이 검색은 조직의 사용자가 널리 사용하는 태그가 잘못된 IP 주소와 같은 "거짓 긍정"을 줄이는 기계 학습 알고리즘을 활용합니다.
 
 
-**비정상적인 활동(사용자별)**
+**의심스러운 메일 규칙**
 
+- 이 검색은 의심스러운 메일 전달 규칙(예: 사용자가 모든 메일의 복사본을 외부 주소로 전달하는 받은 편지함 규칙을 만든 경우)을 찾습니다. 
+
+**비정상적인 활동(사용자별)**<br>
 이러한 검색은 다음을 수행하는 사용자를 식별합니다.
 
  - 비정상적인 여러 파일 다운로드 활동
