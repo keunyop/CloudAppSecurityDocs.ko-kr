@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6976c39a644fe96f1d9ec431df08c9737026ffd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143042"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881791"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ ms.locfileid: "44143042"
 
 사용 권한을 부여 또는 취소할 앱 목록이 있는 경우 확인란을 사용하여 관리할 모든 앱을 선택하고 나서 작업을 선택할 수 있습니다.
 
-비사용 권한 앱 목록을 조회하려면 [Cloud App Security API를 사용하여 차단 스크립트를 생성](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script)할 수 있습니다.
+비사용 권한 앱 목록을 조회하려면 [Cloud App Security API를 사용하여 차단 스크립트를 생성](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)할 수 있습니다.
 
 > [!NOTE]
 > 테넌트에서 Zscaler NSS를 사용하는 경우 비사용 권한으로 표시한 모든 앱은 자동으로 Cloud App Security에 의해 차단되며, 차단 스크립트 만들기에 관한 다음 섹션은 불필요합니다. 자세한 내용은 [Zscaler와 통합](zscaler-integration.md)을 참조하세요.

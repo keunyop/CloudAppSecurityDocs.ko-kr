@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 476906fe636c6d7618344bcb7c0aadbc979a6366
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0f5bdc1459b14442dfc8db45e4b0001c04add80f
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144230"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881859"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Cloud Discovery를 사용하면 조직의 클라우드 사용을 더 자세히 �
      
 예를 들어 서로 다른 SharePoint 사이트를 구분할 수 있습니다.
 
-Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
+Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. [지원되는 방화벽 및 프록시](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
 
  ![하위 도메인 정보](./media/discovery-domains.png) 
 
