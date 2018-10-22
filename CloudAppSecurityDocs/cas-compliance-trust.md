@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 68/21/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 04baf0164ebead748914d8492a43fc62f5d63160
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 8e6af8713761ccff80a141dadabba33b12bf00ea
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143890"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349579"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -144,7 +144,7 @@ Microsoft Cloud App Security를 사용하여 배포 범위를 지정할 수 있�
 
 **Cloud Discovery** 보고서를 익명으로 유지하도록 선택할 수 있습니다. 로그 파일이 **Microsoft** Cloud App Security에 업로드되면 모든 사용자 이름 정보가 암호화된 사용자 이름으로 바뀝니다. 특정 보안 조사의 경우 실제 사용자 이름을 확인할 수 있습니다. 비공개 데이터는 테넌트당 전용 키와 함께 AES-128을 사용하여 암호화됩니다. [자세한 정보](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
 
-## <a name="see-also"></a>참고 항목
+## <a name="next-steps"></a>다음 단계
 
 [Cloud App Security 개요](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
