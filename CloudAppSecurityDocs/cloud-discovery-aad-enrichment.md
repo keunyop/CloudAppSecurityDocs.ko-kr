@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144587"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349528"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery 보강
 
-Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discovery 데이터를 보강할 수 있습니다. 이 기능을 사용하도록 설정하면 검색 트래픽 로그에 받은 사용자 이름이 Azure AD 사용자 이름과 일치하고 이 사용자 이름으로 대체되어 다음과 같은 새 기능을 사용할 수 있습니다.
--   Azure Active Directory 사용자에 의한 섀도 IT 사용량을 조사할 수 있습니다.
--   검색된 클라우드 앱 사용을 API로 수집된 활동과 상호 연결할 수 있습니다.
--   Azure AD 사용자 그룹을 기반으로 사용자 지정 로그를 만들 수 있습니다. 예를 들어 특정 마케팅 부서에 대한 섀도 IT 보고서를 만들 수 있습니다.
+Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discovery 데이터를 보강할 수 있습니다. 이 기능을 사용하도록 설정하면 검색 트래픽 로그에 받은 사용자 이름이 Azure AD 사용자 이름과 일치하고 이 사용자 이름으로 대체됩니다. Cloud Discovery 보강은 다음과 같은 기능을 지원합니다.
+- Azure Active Directory 사용자에 의한 섀도 IT 사용량을 조사할 수 있습니다.
+- 검색된 클라우드 앱 사용을 API로 수집된 활동과 상호 연결할 수 있습니다.
+- Azure AD 사용자 그룹을 기반으로 사용자 지정 로그를 만들 수 있습니다. 예를 들어 특정 마케팅 부서에 대한 섀도 IT 보고서를 만들 수 있습니다.
 
 
 ## <a name="prerequisites"></a>필수 구성 요소:
@@ -39,7 +39,7 @@ Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discover
     
 1. [설정] 코그 아래에서 **Cloud Discovery 설정**을 선택합니다.
      
-2. Cloud App Security에서 Azure Active Directory 데이터를 사용하여 기본적으로 사용자 이름을 보강할 수 있도록 하려면, **사용자 보강** 탭에서 **Azure Active Directory 사용자 이름으로 검색된 사용자 ID를 보강하세요.** 를 선택합니다.
+2. **사용자 보강** 탭에서 **Azure Active Directory 사용자 이름으로 검색된 사용자 ID 보강**을 선택합니다. 이 옵션은 기본적으로 Cloud App Security가 Azure Active Directory 데이터를 사용하여 사용자 이름을 보강하도록 합니다.
 
 3. **Save**을 클릭합니다.
  
@@ -48,7 +48,8 @@ Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discover
 
   
       
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
+  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17aed7570f5f0cb68c89bfebe25969b0bf713aba
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d477439e05f8c6a9a29b8ad28fa4381b5e93274c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144060"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349596"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -112,7 +112,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식(PDF
   
 -   소유자 - 특정 파일 소유자를 포함/제외합니다(예: rogue_employee_#100이 공유하는 모든 파일 추적).  
   
--   소유자 OU – 특정 조직 그룹에 속하는 파일 소유자를 포함/제외합니다(예: EMEA_marketing이 공유하는 파일을 제외한 모든 공용 파일).  
+-   소유자 OU – 특정 조직 그룹에 속하는 파일 소유자를 포함/제외합니다(예: EMEA_marketing이 공유하는 파일을 제외한 모든 공용 파일). 이는 Google Drive에 저장된 파일에만 적용됩니다.
   
 -   부모 폴더 – 부모 폴더에 따라 포함/제외합니다(예: 이 폴더의 파일을 제외하고 공개적으로 공유된 모든 파일).  
   
