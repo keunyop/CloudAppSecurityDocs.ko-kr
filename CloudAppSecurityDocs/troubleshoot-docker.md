@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,23 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e251ff0ede60e0d612eb7741ec949877bde8b38
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: f53eca16b08b72798e2b3b0ababcad7ae676765d
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142564"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881774"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-docker"></a>Microsoft Cloud App Security Cloud Discovery Docker 문제 해결
+# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Microsoft Cloud App Security Cloud Discovery 배포 문제 해결
 
-## <a name="changing-the-ftp-password"></a>FTP 암호 변경
+## <a name="windows-defender-atp-integration"></a>Windows Defender ATP 통합
+Cloud App Security과 Windows Defender ATP를 통합했으나 통합 결과가 표시되지 않는 경우에는 **Win10 엔드포인트 사용자** 보고서가 없는 것입니다. 연결 중인 머신이 Windows 10 버전 1809 이상인지 확인하고 데이터에 액세스하기 전에 2시간 동안 충분히 기다렸는지 확인하세요.
+
+## <a name="docker-deployment"></a>Docker 배포
+
+### <a name="changing-the-ftp-password"></a>FTP 암호 변경
 
 
 1. 로그 수집기 호스트에 연결합니다.
@@ -39,7 +44,7 @@ ms.locfileid: "44142564"
 
   ![ftp 암호 변경](./media/ftp-connect.png)
 
-## <a name="customize-certificate-files"></a>인증서 파일 사용자 지정
+### <a name="customize-certificate-files"></a>인증서 파일 사용자 지정
 
 이 절차에 따라 Cloud Discovery Docker에 대한 보안 연결에 사용할 인증서 파일을 사용자 지정하세요.
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7188174777e87293576f20cbd6ee512b82e51b8e
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0c6f6a8139996cadde78f5378b84d82210d70ade
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143133"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251390"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -49,7 +49,7 @@ Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 장�
 
 Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 정책이 동시에 작동하여 각 사용자 세션을 검사하고 각 앱에 대한 정책을 결정합니다. Azure AD에서 조건부 액세스 정책을 설정하려면 다음 절차를 수행합니다.
 
-1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
+1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
 
    > [!NOTE]
    > [조건부 액세스 앱 제어를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.

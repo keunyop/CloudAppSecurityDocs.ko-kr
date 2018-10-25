@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/4/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 99af9274716bd11033b9a7dff947a99dc6c42f9d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 361c94a87eda619f9eb9faf9f568ba55857cf84a
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143059"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072806"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -31,9 +31,9 @@ Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 �
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
-**계정** 페이지를 필터링하여 특정 계정을 찾고 여러 유형의 계정을 심층 분석할 수 있습니다. 예를 들어 작년 이후 액세스하지 않은 모든 외부 계정을 필터링할 수 있습니다. 
+**사용자 및 계정** 페이지를 필터링하여 특정 계정을 찾고 여러 유형의 계정을 심층 분석할 수 있습니다. 예를 들어 작년 이후 액세스하지 않은 모든 외부 계정을 필터링할 수 있습니다. 
 
-**계정** 페이지에서 다음 문제를 비롯하여 계정을 쉽게 조사할 수 있습니다.  
+**사용자 및 계정** 페이지에서 다음 문제를 비롯하여 계정을 쉽게 조사할 수 있습니다.  
 
 -   특정 서비스에서 오랫동안 활성화되지 않은 계정이 있는지 확인(해당 서비스에 대해 해당 사용자의 라이선스를 해지할 수 있음)  
 -   관리자 권한이 있는 사용자의 목록을 필터링할 수 있음  
@@ -49,25 +49,35 @@ Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 �
 
 ![계정 화면](./media/accounts-page.png)
 
-## <a name="account-filters"></a>계정 필터
+## <a name="users-and-accounts-filters"></a>사용자 및 계정 필터
 다음은 적용할 수 있는 계정 필터 목록입니다. 대부분의 필터는 강력한 정책 만들기 도구를 제공하기 위해 NOT뿐만 아니라 여러 값을 지원합니다.  
   
-- **계정 이름**: 계정 이름은 사용자의 기본 별칭이지만 프록시 주소, 별칭, SID 같은 다른 Microsoft 계정(Office 365 및 Azure Active Directory)의 기타 ID가 지원되며 기본 별칭 아래에 통합됩니다.
+<!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **Affiliation**(소속): 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이 ![계정 관리자 아이콘](./media/accounts-admin-icon.png)과 함께 표시됩니다.
+- **Affiliation**(소속): 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이와 함께 표시됩니다. ![계정 관리자 아이콘](./media/accounts-admin-icon.png)
 
 - **앱**: 조직의 계정에서 사용하는 모든 API 연결 앱을 필터링할 수 있습니다.
 
 - **도메인**: 특정 도메인의 사용자를 필터링할 수 있습니다.
 
+- **그룹**: Cloud App Security에서 사용자 그룹(기본 제공 사용자 그룹 및 가져온 사용자 그룹)의 구성원을 필터링할 수 있습니다.
+
+- **인스턴스**: 특정 앱 인스턴스의 멤버를 필터링할 수 있습니다. 
+
 - **Last seen**(마지막 확인): **last seen**(마지막 확인) 필터를 사용하면 유휴 상태이고 한동안 아무런 활동도 하지 않은 사용자의 계정을 찾을 수 있습니다.
 
-- **Organization/Department**(조직/부서): 연결된 앱에서 정의한 특정 조직 그룹의 구성원을 필터링할 수 있습니다.
+- **조직**: 연결된 앱에서 정의한 특정 조직 그룹의 멤버를 필터링할 수 있습니다.
 
-- **사용자 그룹**: Cloud App Security에서 사용자 그룹(기본 제공 사용자 그룹 및 가져온 사용자 그룹)의 구성원을 필터링할 수 있습니다.
+- **관리자만 표시**: 관리자인 계정 및 사용자를 필터링합니다.
+
+- **상태**: 해당 없음, 스테이징됨, 활성, 일시 중단됨 또는 삭제됨 사용자 계정 상태를 기준으로 필터링합니다.
+
+- **유형**: 사용자 또는 계정 유형을 필터링할 수 있습니다.
+
+- **사용자 이름**: 특정 사용자를 필터링할 수 있습니다. 
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

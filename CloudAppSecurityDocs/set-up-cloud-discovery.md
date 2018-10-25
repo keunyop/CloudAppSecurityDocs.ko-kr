@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/7/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 805cb008b60d3ab74119d15e4e24944fe82c8bd7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: cbc8999419f9c316323227c515fe111310231a9a
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144519"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881808"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -31,7 +31,10 @@ Cloud Discovery는 70개가 넘는 위험 요소를 기준으로 순위 및 점�
 두 가지 유형의 보고서를 생성할 수 있습니다. 
 - **스냅숏 보고서**는 방화벽 및 프록시에서 수동으로 업로드하는 트래픽 로그 집합에 대해 임시 가시성을 제공합니다.
 
-- **연속 보고서**는 Cloud App Security의 로그 수집기를 사용하여 네트워크에서 전달되는 모든 로그를 분석합니다. 이러한 보고서는 모든 데이터에 대해 향상된 가시성을 제공하고 Machine Learning 변칙 검색 엔진이나 사용자가 정의한 사용자 지정 정책을 사용하여 비정상적인 사용을 자동으로 식별합니다.
+- **연속 보고서**는 Cloud App Security를 사용하여 네트워크에서 전달되는 모든 로그를 분석합니다. 이러한 보고서는 모든 데이터에 대해 향상된 가시성을 제공하고 Machine Learning 변칙 검색 엔진이나 사용자가 정의한 사용자 지정 정책을 사용하여 비정상적인 사용을 자동으로 식별합니다. 이러한 보고서는 다음과 같은 방법으로 연결하여 만들 수 있습니다.
+  - [Windows Defender ATP 통합](wdatp-integration.md): Cloud App Security는 Cloud Discovery 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 너머로 확장하고, 머신 기반 조사를 사용하기 위해 기본적으로 Windows Defender ATP(Advanced Threat Protection)와 통합됩니다.
+  - [로그 수집기]( ):
+  - [Zscaler 통합](zscaler-integration.md): 
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>로그인 프로세스 흐름: 원시 데이터에서 위험 평가로  
 위험 평가 생성 프로세스는 다음 단계로 구성되며 처리되는 데이터 크기에 따라 몇 분에서 몇 시간 정도 걸립니다.  
@@ -47,95 +50,8 @@ Cloud Discovery는 70개가 넘는 위험 요소를 기준으로 순위 및 점�
 
 >[!NOTE]
 >- 연속 보고서 데이터는 하루에 두 번 분석됩니다.
->- 로그 수집기는 데이터가 업로드되기 전에 압축합니다. 로그 수집기의 아웃바운드 트래픽은 수신하는 트래픽 로그의 10% 크기가 됩니다. 
+> 
 
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Cloud Discovery에 트래픽 로그 사용
-Cloud Discovery에서는 트래픽 로그의 데이터를 활용합니다. 로그가 더 자세할수록 더 명확하게 파악할 수 있습니다. Cloud Discovery에는 다음과 같은 특성이 있는 웹 트래픽 데이터가 필요합니다.
-- 트랜잭션 날짜
-- 원본 IP
-- 원본 사용자 - 권장
-- 대상 IP 주소
-- 대상 URL **권장**(URL은 IP 주소보다 클라우드 앱 검색에 더 높은 정확도를 제공함)
-- 총 데이터 양(데이터 정보는 매우 중요함)
-- 업로드하거나 다운로드한 데이터 양(클라우드 앱의 사용 패턴에 대한 통찰력 제공)
-- 수행된 작업(허용/차단)
-
-Cloud Discovery에서는 로그에 포함되지 않은 특성을 표시하거나 분석할 수 없습니다.
-예를 들어 **Cisco ASA Firewall** 표준 로그 형식에는 **트랜잭션당 업로드된 바이트 수**나 **사용자 이름**이 포함되지 않고 **대상 URL**도 포함되지 않지만 대상 IP만 포함됩니다.
-따라서 이러한 특성은 이러한 로그에 대한 Cloud Discovery 데이터에 표시되지 않으며 클라우드 앱에 대한 가시성이 제한됩니다. Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 합니다. 
-
-
-Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건을 충족해야 합니다.
-1.  데이터 원본이 지원됩니다(아래 목록 참조).
-2.  로그 형식이 예상되는 표준 형식과 일치합니다(로그 도구로 업로드할 때 확인).
-3.  이벤트가 90일 이상 오래되지 않았습니다.
-4.  로그 파일이 유효하며 아웃바운드 트래픽 정보를 포함합니다.
-
-
-
-## 지원되는 방화벽 및 프록시 <a name="supported-firewalls-and-proxies"></a>
-
-- Barracuda - Web App Firewall(W3C)
-- Blue Coat Proxy SG - Access log(W3C)
-- Check Point
-- Cisco ASA Firewall(Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 함)
-- Cisco ASA with FirePOWER
-- Cisco IronPort WSA
-- Cisco ScanSafe
-- Cisco Meraki – URL 로그
-- Clavister NGFW(Syslog)
-- Dell Sonicwall
-- Digital Arts i-FILTER
-- Fortinet Fortigate
-- iboss Secure Cloud Gateway
-- Juniper SRX
-- Juniper SSG
-- McAfee Secure Web Gateway
-- Microsoft Forefront Threat Management Gateway(W3C)
-- Palo Alto series Firewall
-- Sophos SG
-- Sophos XG
-- Sophos Cyberoam
-- Squid(Common)
-- Squid(Native)
-- Websense - Web Security Solutions - Investigative detail report(CSV)
-- Websense - Web Security Solutions - Internet activity log(CEF)
-- Zscaler
-
-> [!NOTE]
-> Cloud Discovery는 IPv4 및 IPv6 주소를 모두 지원합니다.
-
-로그가 지원되지 않는 경우 **데이터 원본**에서 **기타**를 선택하고 업로드하려는 어플라이언스 및 로그를 지정합니다. Cloud App Security 클라우드 분석가 팀에서 로그를 검토하고 로그 유형에 대한 지원이 추가되는 경우 알려줍니다. 또는 형식과 일치하는 사용자 지정 파서를 정의할 수 있습니다. 자세한 내용은 [사용자 지정 로그 파서 사용](custom-log-parser.md)을 참조하세요.
-
-
-데이터 특성(공급업체 설명서 참조):
-
-
-|                 데이터 원본                  |    대상 앱 URL    |    대상 앱 IP     |       Username       |      원본 IP       |    총 트래픽     |    업로드된 바이트    |
-|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |          아니요          |          아니요          |
-|                  Blue Coat                   | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                  Checkpoint                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> |          아니요          |          아니요          |
-|              Cisco ASA(Syslog)              |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          |
-|           Cisco ASA with FirePOWER           | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                  Cisco FWSM                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          |
-|              Cisco Ironport WSA              | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                 Cisco Meraki                 | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |          아니요          |          아니요          |
-|           Clavister NGFW(Syslog)            | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                Dell SonicWall                | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|            Digital Arts i-FILTER             | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                  Fortigate                   |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                 Juniper SRX                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                 Juniper SSG                  |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                  McAfee SWG                  | <strong>예</strong> |          아니요          |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                    MS TMG                    | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|              Palo Alto 네트워크              |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                    Sophos                    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |          아니요          |
-|                Squid(Common)                | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |
-|                Squid(Native)                | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |
-| Websense - Investigative detail report(CSV) | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|    Websense - Internet activity log(CEF)    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
-|                   Zscaler                    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
 
 ## <a name="see-also"></a>참고 항목
 

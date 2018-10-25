@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 9/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d3abbd87822d97b0c72f20ff42f3aa18b6e57db
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 46f948064bfea4aa921fd5b269f6576ec0f75d97
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143363"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251474"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -26,8 +26,7 @@ ms.locfileid: "44143363"
 
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft 데이터 분류 서비스 통합
 
-Microsoft Cloud App Security를 통해 기본적으로 Microsoft 데이터 분류 서비스를 활용하여 클라우드 앱의 파일을 분류할 수 있습니다.
-Microsoft 데이터 분류 서비스는 Office 365, Azure Information Protection 및 Microsoft Cloud App Security에서 통합 정보 보호 환경을 제공하며, 데이터 분류 작업을 Microsoft Cloud App Security로 보호되는 타사 클라우드 앱으로 확장할 수 있도록 하여 이미 한 결정을 훨씬 더 많은 수의 앱에서 활용할 수 있게 해줍니다.
+Microsoft Cloud App Security를 통해 기본적으로 Microsoft 데이터 분류 서비스를 활용하여 클라우드 앱의 파일을 분류할 수 있습니다. Microsoft 데이터 분류 서비스는 Office 365, Azure Information Protection 및 Microsoft Cloud App Security에서 통합 정보 보호 환경을 제공하며, 데이터 분류 작업을 Microsoft Cloud App Security로 보호되는 타사 클라우드 앱으로 확장할 수 있도록 하여 이미 한 결정을 훨씬 더 많은 수의 앱에서 활용할 수 있게 해줍니다.
 
 >[!NOTE]
 > 이 기능은 현재 미국과 유럽(프랑스 제외)에서만 사용할 수 있는 기능입니다.

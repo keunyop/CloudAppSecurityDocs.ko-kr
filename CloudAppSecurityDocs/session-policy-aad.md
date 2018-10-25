@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f241033fc56cb1c9adea4cb2c9c8facd95c82d73
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6614c845fad94880883dccff14f5f7f9d110dfa1
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144502"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251407"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Microsoft Cloud App Security 세션 정책을 사용하면 실시간 세션 수�
 
 Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 정책이 동시에 작동하여 각 사용자 세션을 검사하고 각 앱에 대한 정책을 결정합니다. Azure AD에서 조건부 액세스 정책을 설정하려면 다음 절차를 수행합니다.
 
-1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 SAML 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
+1. 조건부 액세스 앱 제어를 통해 제어하려는 사용자 또는 사용자 그룹 및 앱에 대한 할당을 사용하여 [Azure AD 조건부 액세스 정책](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)을 구성합니다. 
 
    > [!NOTE]
    > [조건부 액세스 앱 제어를 사용하여 배포](proxy-deployment-aad.md)된 앱만 이 정책에 따라 영향을 받습니다.
@@ -142,7 +142,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 ## 모든 다운로드 차단 <a name="block-download"></a>
 
-**차단**을 Cloud App Security 세션 정책에서 수행하려는 **작업**으로 설정하면 조건부 액세스 앱 제어에서 사용자가 정책의 파일 필터에 따라 파일을 다운로드할 수 없도록 합니다. 다운로드 이벤트가 각 SAML 앱에 대한 Microsoft Cloud App Security에서 인식되고, 사용자가 이 이벤트를 시작하면 조건부 액세스 앱 제어에서 실시간으로 해당 이벤트가 실행되지 않도록 개입합니다. 사용자가 다운로드를 시작한 신호가 수신되면, 조건부 액세스 액 제어에서 **제한된 다운로드** 메시지를 사용자에게 보내고, 다운로드한 파일을 세션 정책에서 구성할 수 있는 사용자 지정 가능한 메시지가 포함된 텍스트 파일로 바꿉니다.  
+**차단**을 Cloud App Security 세션 정책에서 수행하려는 **작업**으로 설정하면 조건부 액세스 앱 제어에서 사용자가 정책의 파일 필터에 따라 파일을 다운로드할 수 없도록 합니다. 다운로드 이벤트가 각 앱에 대한 Microsoft Cloud App Security에서 인식되고, 사용자가 이 이벤트를 시작하면 조건부 액세스 앱 제어에서 실시간으로 해당 이벤트가 실행되지 않도록 개입합니다. 사용자가 다운로드를 시작한 신호가 수신되면, 조건부 액세스 액 제어에서 **제한된 다운로드** 메시지를 사용자에게 보내고, 다운로드한 파일을 세션 정책에서 구성할 수 있는 사용자 지정 가능한 메시지가 포함된 텍스트 파일로 바꿉니다.  
 
 ## 특정 활동 차단 <a name="block-activities"></a>
 

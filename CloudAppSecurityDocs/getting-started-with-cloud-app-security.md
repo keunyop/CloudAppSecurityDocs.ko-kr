@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc2099958c64448931c1211fa9a5fe76d82f1422
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144383"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072857"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -61,24 +61,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
  
 
-### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>1단계. [클라우드 검색 설정](set-up-cloud-discovery.md).
-필요한 작업: 트래픽 로그 업로드 **연속 Cloud Discovery 보고서를 만들려면**
-
- 1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
- 2. **자동 로그 업로드**를 선택합니다.
- 3. **데이터 원본** 탭에서 원본을 추가합니다.
- 4. **로그 수집기** 탭에서 로그 수집기를 구성합니다.
- 
-**Cloud Discovery 스냅숏 보고서를 만들려면**
-
- 1. **검색** > **스냅숏 보고서**로 이동하고 표시되는 단계를 따릅니다.
-
-**Cloud Discovery 보고서를 구성해야 하는 이유는 무엇일까요?**
-조직의 섀도 IT를 파악하는 것이 중요합니다.
-로그를 분석한 후에는 누가 어떤 장치에서 어떤 클라우드 앱을 사용하는지 쉽게 검색할 수 있습니다.
-
-
-### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>2단계. [응용 프로그램에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업을 사용합니다](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>1단계. [응용 프로그램에 대해 인스턴트 표시 유형, 보호 및 거버넌스 작업을 사용합니다](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 필요한 작업: 앱 연결
 
 1. 설정 코그에서 **앱 커넥터**를 선택합니다.
@@ -89,7 +72,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 응용 프로그램을 연결한 후, 클라우드 환경에서 응용 프로그램의 활동, 파일 및 계정을 조사할 수 있도록 심층 정보를 확인할 수 있습니다.
 
 
-### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>3단계. [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md).
+### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>2단계. [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md).
 필요한 작업: 정책 만들기
 
 **정책을 만들려면**
@@ -103,6 +86,27 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 **정책은 조직에 어떤 도움을 줄 수 있을까요?**
 정책을 사용하면 추세 모니터링, 보안 위협 파악, 사용자 지정 보고서 및 경고 생성에 도움이 됩니다. 정책을 사용하면 거버넌스 작업을 만들고 데이터 손실 방지 및 파일 공유 컨트롤을 설정할 수 있습니다.
 
+
+### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>3단계. [클라우드 검색 설정](set-up-cloud-discovery.md).
+
+필요한 작업: 클라우드 앱 사용을 볼 수 있도록 Cloud App Security 설정
+
+1. Cloud App Security가 자동으로 회사 내부 및 외부에서 Windows 10 장치를 모니터링할 수 있도록 [Windows Defender ATP와 통합](wdatp-integration.md)합니다.
+2. Zscaler를 사용하는 경우 Cloud App Security와 [Zscaler를 통합](zscaler-integration.md)합니다.
+3. 전체적으로 적용하려면 연속 Cloud Discovery 보고서를 만듭니다.
+
+   1. 설정 코그에서 **Cloud Discovery 설정**을 선택합니다.
+   2. **자동 로그 업로드**를 선택합니다.
+   3. **데이터 원본** 탭에서 원본을 추가합니다.
+   4. **로그 수집기** 탭에서 로그 수집기를 구성합니다.
+ 
+**Cloud Discovery 스냅숏 보고서를 만들려면**
+
+ **검색** > **스냅숏 보고서**로 이동하고 표시되는 단계를 따릅니다.
+
+**Cloud Discovery 보고서를 구성해야 하는 이유는 무엇일까요?**
+조직의 섀도 IT를 파악하는 것이 중요합니다.
+로그를 분석한 후에는 누가 어떤 장치에서 어떤 클라우드 앱을 사용하는지 쉽게 검색할 수 있습니다.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>4단계. [환경 개인 설정](mail-settings.md).
 권장 작업: 조직 정보 추가

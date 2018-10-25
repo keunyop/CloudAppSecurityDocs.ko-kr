@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 636c0e407db3a7460cf64a76dc82133e7febf4c9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143346"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251508"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ ms.locfileid: "44143346"
    4. 테스트 정책의 **클라우드 앱** 아래에서 조건부 액세스 앱 제어로 제어하려는 앱을 할당합니다. 
 
       > [!NOTE]
-      >조건부 액세스 앱 제어에서 지원하는 앱을 선택해야 합니다. 조건부 액세스 앱 제어는 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 예를 들어 Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
+      >조건부 액세스 앱 제어에서 지원하는 앱을 선택해야 합니다. 조건부 액세스 앱 제어는 Azure AD에서 SAML로 구성된 앱과 Single Sign-On으로 구성된 열린 ID 연결 앱을 지원합니다. 
 
 ## 2단계: 앱에서 정책 범위에 속한 사용자로 로그인 <a name="sign-in-scoped"></a>
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a1ec5d07316f56a2f859cffa30ec22297c8b935
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: c1778a15df20cfccad8375dbf7f9fb4a753c17e7
+ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143635"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584512"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
 6. 마지막으로 **앱 위험 개요**에서 검색된 앱의 위험 점수를 검토하고 검색 경고 상태를 확인하여 조사해야 하는 미해결 경고 수를 확인합니다.
   
 ## <a name="exclude-entities"></a>엔터티 제외  
-특히 노이즈가 많고 흥미 없는 시스템 사용자 또는 IP 주소나 관련 없는 앱이 있는 경우 분석되는 클라우드 검색 데이터에서 해당 데이터를 제외하는 것이 좋습니다. 예를 들어 127.0.0.1 또는 로컬 호스트에서 발생하는 모든 정보를 제외할 수 있습니다.  
+정신 없고 불필요한 시스템 사용자 또는 IP 주소나 머신([Windows Defender ATP 통합](wdatp-integration.md)을 사용하는 경우)이 있다면 분석 대상인 Cloud Discovery 데이터에서 이러한 항목의 데이터를 제외하는 것이 좋습니다. 예를 들어 127.0.0.1 또는 로컬 호스트에서 발생하는 모든 정보를 제외할 수 있습니다.  
   
 제외 항목을 만들려면  
   
@@ -55,7 +55,7 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
   
 3.  **제외된 사용자** 또는 **제외된 IP 주소** 탭을 선택하고 **사용자 추가** 또는 **IP 주소 추가** 단추를 클릭합니다.  
   
-4.  사용자 별칭 또는 IP 주소를 추가합니다. 사용자 또는 IP 주소가 제외된 이유에 대한 정보를 추가하는 것이 좋습니다.  
+4.  Windows Defender ATP 통합을 사용하는 경우 사용자 별칭, IP 주소 또는 머신을 추가합니다. 사용자 또는 IP 주소가 제외된 이유에 대한 정보를 추가하는 것이 좋습니다.  
   
      ![사용자 제외](./media/exclude-user.png "사용자 제외")  
   

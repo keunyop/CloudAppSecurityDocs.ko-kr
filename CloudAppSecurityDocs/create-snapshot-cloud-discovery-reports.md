@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 734975276a148ce541b84c4a68751b2bdb5666fb
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1072196cb6a1ab8781f1bde5b2b58a094d6d3afe
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143652"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881927"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
-자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Microsoft Cloud App Security에서 구문 분석하도록 해야 합니다.
+자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하여 Microsoft Cloud App Security에서 구문 분석하도록 해야 합니다. 로그 수집기가 작동하는 방법과 예상되는 로그 형식에 대한 자세한 내용은 [Cloud Discovery에 트래픽 로그 사용](#log-format)을 참조하세요.
+
 아직 로그가 없는데 로그가 어떤 모양일지 샘플을 보고 싶다면 아래 절차에 따라 샘플로그 파일을 다운로드하여 로그가 어떤 모양일지 확인하세요.
 
 
@@ -71,7 +72,95 @@ ms.locfileid: "44143652"
 ![스냅숏 보고서 관리](./media/snapshot-report-managment.png)
 
   
-      
+## Cloud Discovery에 트래픽 로그 사용 <a name="log-format"></a>
+Cloud Discovery에서는 트래픽 로그의 데이터를 활용합니다. 로그가 더 자세할수록 더 명확하게 파악할 수 있습니다. Cloud Discovery에는 다음과 같은 특성이 있는 웹 트래픽 데이터가 필요합니다.
+- 트랜잭션 날짜
+- 원본 IP
+- 원본 사용자 - 권장
+- 대상 IP 주소
+- 대상 URL **권장**(URL은 IP 주소보다 클라우드 앱 검색에 더 높은 정확도를 제공함)
+- 총 데이터 양(데이터 정보는 매우 중요함)
+- 업로드하거나 다운로드한 데이터 양(클라우드 앱의 사용 패턴에 대한 통찰력 제공)
+- 수행된 작업(허용/차단)
+
+Cloud Discovery에서는 로그에 포함되지 않은 특성을 표시하거나 분석할 수 없습니다.
+예를 들어 **Cisco ASA Firewall** 표준 로그 형식에는 **트랜잭션당 업로드된 바이트 수**나 **사용자 이름**이 포함되지 않고 **대상 URL**도 포함되지 않지만 대상 IP만 포함됩니다.
+따라서 이러한 특성은 이러한 로그에 대한 Cloud Discovery 데이터에 표시되지 않으며 클라우드 앱에 대한 가시성이 제한됩니다. Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 합니다. 
+
+
+Cloud Discovery 보고서를 생성하려면 트래픽 로그가 다음 조건을 충족해야 합니다.
+1.  데이터 원본이 지원됩니다(아래 목록 참조).
+2.  로그 형식이 예상되는 표준 형식과 일치합니다(로그 도구로 업로드할 때 확인).
+3.  이벤트가 90일 이상 오래되지 않았습니다.
+4.  로그 파일이 유효하며 아웃바운드 트래픽 정보를 포함합니다.
+
+
+
+## 지원되는 방화벽 및 프록시 <a name="supported-firewalls-and-proxies"></a>
+
+- Barracuda - Web App Firewall(W3C)
+- Blue Coat Proxy SG - Access log(W3C)
+- Check Point
+- Cisco ASA Firewall(Cisco ASA Firewall의 경우 정보 수준을 6으로 설정해야 함)
+- Cisco ASA with FirePOWER
+- Cisco IronPort WSA
+- Cisco ScanSafe
+- Cisco Meraki – URL 로그
+- Clavister NGFW(Syslog)
+- Digital Arts i-FILTER
+- Fortinet Fortigate
+- iboss Secure Cloud Gateway
+- Juniper SRX
+- Juniper SSG
+- McAfee Secure Web Gateway
+- Microsoft Forefront Threat Management Gateway(W3C)
+- Palo Alto series Firewall
+- Sonicwall(이전의 Dell)
+- Sophos SG
+- Sophos XG
+- Sophos Cyberoam
+- Squid(Common)
+- Squid(Native)
+- Websense - Web Security Solutions - Investigative detail report(CSV)
+- Websense - Web Security Solutions - Internet activity log(CEF)
+- Zscaler
+
+> [!NOTE]
+> Cloud Discovery는 IPv4 및 IPv6 주소를 모두 지원합니다.
+
+로그가 지원되지 않는 경우 **데이터 원본**에서 **기타**를 선택하고 업로드하려는 어플라이언스 및 로그를 지정합니다. Cloud App Security 클라우드 분석가 팀에서 로그를 검토하고 로그 유형에 대한 지원이 추가되는 경우 알려줍니다. 또는 형식과 일치하는 사용자 지정 파서를 정의할 수 있습니다. 자세한 내용은 [사용자 지정 로그 파서 사용](custom-log-parser.md)을 참조하세요.
+
+
+데이터 특성(공급업체 설명서 참조):
+
+
+|                 데이터 원본                  |    대상 앱 URL    |    대상 앱 IP     |       Username       |      원본 IP       |    총 트래픽     |    업로드된 바이트    |
+|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+|                  Barracuda                   | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |          아니요          |          아니요          |
+|                  Blue Coat                   | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                  Checkpoint                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> |          아니요          |          아니요          |
+|              Cisco ASA(Syslog)              |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          |
+|           Cisco ASA with FirePOWER           | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                  Cisco FWSM                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          |
+|              Cisco Ironport WSA              | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                 Cisco Meraki                 | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |          아니요          |          아니요          |
+|           Clavister NGFW(Syslog)            | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                SonicWall(이전의 Dell)                | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|            Digital Arts i-FILTER             | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                  Fortigate                   |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                 Juniper SRX                  |          아니요          | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                 Juniper SSG                  |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                  McAfee SWG                  | <strong>예</strong> |          아니요          |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                    MS TMG                    | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|              Palo Alto 네트워크              |          아니요          | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                    Sophos                    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |          아니요          |
+|                Squid(Common)                | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |
+|                Squid(Native)                | <strong>예</strong> |          아니요          | <strong>예</strong> | <strong>예</strong> |          아니요          | <strong>예</strong> |
+| Websense - Investigative detail report(CSV) | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|    Websense - Internet activity log(CEF)    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+|                   Zscaler                    | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> | <strong>예</strong> |
+     
+ 
 ## <a name="see-also"></a>참고 항목  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 

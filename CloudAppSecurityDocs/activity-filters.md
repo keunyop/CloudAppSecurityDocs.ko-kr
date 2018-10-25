@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15dc221b188aa2c72d8791ac511e7216c896861d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144145"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072891"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 > [!NOTE] 
 > Cloud App Security에 의해 모니터링되는 Office 365 활동의 전체 목록은 [Office 365 보안 및 준수 센터에서 감사 로그 검색](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)을 참조하세요.
 
-**활동 로그**를 필터링하여 특정 활동을 찾을 수 있습니다. 활동을 기준으로 정책을 만든 다음 경고를 받을 활동 및 조치를 정의할 수 있습니다. 특정 파일에 대해 수행된 활동을 검색할 수도 있습니다. 활동의 유형과 각 활동에 대해 가져오는 정보는 앱과 앱이 제공할 수 있는 데이터 종류에 따라 다릅니다. 
+**활동 로그**를 필터링하여 특정 활동을 찾을 수 있습니다. 활동을 기준으로 정책을 만든 다음, 경고를 받을 활동 및 조치를 정의합니다. 특정 파일에 대해 수행된 활동을 검색할 수도 있습니다. 활동의 유형과 각 활동에 대해 가져오는 정보는 앱과 앱이 제공할 수 있는 데이터 종류에 따라 다릅니다. 
 
 예를 들어 다음과 같이 **활동 로그**를 사용하여 조직에서 오래된 운영 체제나 브라우저를 사용하는 사용자를 찾을 수 있습니다. **활동 로그** 페이지에서 앱을 Cloud App Security에 연결한 후 고급 필터를 사용하여 **사용자 에이전트 태그**를 선택합니다. 그런 다음 **오래된 브라우저** 또는 **오래된 운영 체제**를 선택합니다.
 
@@ -79,15 +79,16 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 
 #### <a name="user-insights"></a>사용자 정보
 
-조사 환경에는 작업 사용자에 대한 기본 제공 정보가 포함됩니다. 한 번 클릭으로 사용자 연결이 시작된 위치, 사용자가 관련된 열린 경고 수, 사용자의 메타데이터 정보를 포함하여 사용자에 대한 포괄적인 개요를 확인할 수 있습니다.
+조사 환경에는 작업 사용자에 대한 인사이트가 포함됩니다. 한 번 클릭으로 사용자 연결이 시작된 위치, 사용자가 관련된 열린 경고 수, 사용자의 메타데이터 정보를 포함하여 사용자에 대한 포괄적인 개요를 확인할 수 있습니다.
 
 사용자 정보를 보려면:
 
 1. **활동 로그**에서 활동 자체를 클릭합니다.
 
-2. 그다음에 **사용자** 탭을 클릭합니다. <br></br> 그러면 활동 서랍이 열리고 **사용자** 탭에 사용자에 대한 다음 정보가 제공됩니다.
+2. 그다음에 **사용자** 탭을 클릭합니다. <br></br> 클릭하면 활동 서랍이 열리고 **사용자** 탭에 사용자에 대한 다음 인사이트가 제공됩니다.
     - **열린 경고**: 사용자에 관련된 열린 경고 수입니다.
-    - **파일 위반**: 사용자가 소유한 파일에 대한 파일 위반 수입니다.
+    - **일치**: 사용자가 소유한 파일과 일치하는 정책의 수입니다. 
+   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **활동**: 지난 30일 동안 사용자가 수행한 활동 수입니다.
     - **국가**: 지난 30일 동안 사용자가 연결한 국가 수입니다.
     - **ISP**: 지난 30일 동안 사용자가 연결한 ISP 수입니다.
@@ -97,7 +98,7 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 
 #### <a name="ip-address-insights"></a>IP 주소 정보
 
-IP 주소 정보는 거의 모든 조사에 매우 중요하므로 활동 서랍에서 IP 주소에 대한 자세한 정보를 볼 수 있습니다. 특정 활동 내에서 IP 주소 탭을 클릭하면 특정 IP 주소의 미해결 경고, 최근 활동의 추세 그래프, 위치 맵 등 해당 IP 주소에 대한 통합 데이터를 볼 수 있습니다. 이를 통해 쉽게 드릴다운할 수 있습니다. 예를 들어 불가능한 여행 경고를 조사할 때 IP 주소가 어디에 사용되었는지와 의심스러운 활동과 관련되어 있는지를 쉽게 알 수 있습니다. IP 주소를 위험, VPN 또는 회사로 지정할 수 있게 하는 IP 주소 서랍에서 작업을 바로 수행함으로써 향후 조사와 정책 만들기를 쉽게 수행할 수도 있습니다.
+IP 주소 정보는 거의 모든 조사에 매우 중요하므로 활동 서랍에서 IP 주소에 대한 자세한 정보를 볼 수 있습니다. 특정 활동 내에서 IP 주소 탭을 클릭하면 특정 IP 주소의 미해결 경고, 최근 활동의 추세 그래프, 위치 맵 등 해당 IP 주소에 대한 통합 데이터를 볼 수 있습니다. 예를 들어 불가능한 여행 경고를 조사할 때 이를 통해 쉽게 드릴다운할 수 있고, IP 주소가 사용된 위치나 의심스러운 활동과 관련되어 있는지 여부를 쉽게 알 수 있습니다. IP 주소를 위험, VPN 또는 회사로 지정할 수 있게 하는 IP 주소 서랍에서 작업을 바로 수행함으로써 향후 조사와 정책 만들기를 쉽게 수행할 수도 있습니다.
 
 IP 주소 정보를 보려면:
 
@@ -110,9 +111,9 @@ IP 주소 정보를 보려면:
     - **활동**: 지난 30일 동안 이 IP 주소에서 수행된 활동 수입니다.
     - **관리자 활동**: 지난 30일 동안 이 IP 주소에서 수행된 관리 활동 수입니다.
     - 다음 IP 주소 작업을 수행할 수 있습니다.
-        - 위험한 태그로 지정 
-        - VPN IP 주소로 태그 지정
-        - 위험한 IP로 태그 지정 후 차단된 그룹에 추가
+        - 회사 IP로 태그 지정 후 허용 목록에 추가
+        - VPN IP 주소로 태그 지정 후 허용 목록에 추가
+        - 위험한 IP로 태그 지정 후 차단 목록에 추가
 
 
 ![Cloud App Security에서의 IP 주소 정보](./media/ip-address-insights.png)
@@ -121,13 +122,13 @@ IP 주소 정보를 보려면:
 
 모든 사용자 활동을 CSV 파일로 내보낼 수 있습니다. 
 
-**활동 로그**에서 오른쪽 위 모서리에 있는 **내보내기** 단추 ![내보내기 단추](./media/export-button.png)를 클릭합니다.
+**활동 로그**에서 오른쪽 위 모서리에 있는 **내보내기** 단추를 클릭합니다. ![내보내기 단추](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

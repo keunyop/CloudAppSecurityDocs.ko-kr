@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 443243443480d1b8302b9f05c2a620b619df61f0
-ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
+ms.openlocfilehash: c68426af8eb0f12bc0157c3b24841e381dd119ce
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2018
-ms.locfileid: "45683369"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072874"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -27,7 +27,7 @@ ms.locfileid: "45683369"
 
 Microsoft Cloud App Security를 통해 Azure Information Protection 분류 레이블을 보호 여부와 상관없이 파일 정책 거버넌스 작업으로 파일에 자동 적용할 수 있습니다. Cloud App Security 포털 내에서 적용된 분류 레이블을 필터링하여 파일을 조사할 수도 있습니다. 이렇게 하면 클라우드에서 중요한 데이터를 더 잘 볼 수 있고 제어할 수 있습니다. Azure Information Protection을 Cloud App Security와 통합하는 작업은 확인란 하나를 선택하는 것만큼 쉽습니다. 
 
-Azure Information Protection을 Cloud App Security에 통합하여 다음과 같이 클라우드에서 서비스와 안전한 파일의 전체 성능을 모두 활용할 수 있습니다.
+Azure Information Protection을 Cloud App Security에 통합하여 다음과 같이 클라우드에서 서비스와 안전한 파일의 전체 성능을 모두 사용할 수 있습니다.
 - 특정 정책과 일치하는 파일에 분류 레이블을 거버넌스 작업으로 적용할 수 있는 기능
 - 중앙 위치에서 분류된 모든 파일을 보는 기능
 - 분류 수준에 따라 조사를 수행하고 클라우드 응용 프로그램을 통해 중요한 데이터의 노출을 수량화하는 기능
@@ -55,7 +55,7 @@ Cloud App Security 외부에서 보호 레이블이 지정된 파일은 현재 C
 
 
 ## <a name="how-it-works"></a>작동 방식
-사용자는 [Azure Information Protection](https://docs.microsoft.com/information-protection/)의 파일 분류 레이블에 익숙할 것입니다. Cloud App Security에서 Azure Information Protection 분류 태그를 볼 수 있습니다. Cloud App Security를 Azure Information Protection과 통합하는 즉시 Cloud App Security는 다음과 같이 파일을 검색합니다.
+사용자는 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)의 파일 분류 레이블에 익숙할 것입니다. Cloud App Security에서 Azure Information Protection 분류 태그를 볼 수 있습니다. Cloud App Security를 Azure Information Protection과 통합하는 즉시 Cloud App Security는 다음과 같이 파일을 검색합니다.
 
 1. Cloud App Security는 테넌트에서 사용되는 모든 분류 레이블의 목록을 검색합니다. 이 작업은 목록을 최신 상태로 유지하기 위해 매시간 수행됩니다.
 
@@ -74,7 +74,7 @@ Cloud App Security 외부에서 보호 레이블이 지정된 파일은 현재 C
   
 ### <a name="enable-azure-information-protection"></a>Azure Information Protection 사용
 
-Cloud App Security와 Azure Information Protection을 통합하려면 자동 검색을 사용하도록 설정하여, 정책을 만들 필요 없이 Office 365 파일에 대해 Azure Information Protection 분류 레이블 검색을 사용하도록 설정하기만 하면 됩니다. 이 기능을 사용하도록 설정한 후, 클라우드 환경에 Azure Information Protection 분류 레이블로 레이블이 지정된 파일이 있는 경우 해당 파일이 Cloud App Security에 표시됩니다.
+확인란 하나를 클릭하기만 하면 Azure Information Protection을 Cloud App Security와 통합할 수 있습니다. 자동 검색을 사용하면 정책을 만들 필요 없이 Office 365 파일에서 Azure Information Protection 분류 레이블을 검색할 수 있습니다. 이 기능을 사용하도록 설정한 후, 클라우드 환경에 Azure Information Protection 분류 레이블로 레이블이 지정된 파일이 있는 경우 해당 파일이 Cloud App Security에 표시됩니다.
 
 Cloud App Security를 사용하도록 설정하여 분류 레이블에 대해 사용하도록 설정된 콘텐츠 검사로 파일을 검색하려면:
 
@@ -183,7 +183,7 @@ Cloud App Security와 Azure Information Protection이 함께 작동하는 방식
 ## <a name="related-videos"></a>관련 동영상  
 [Cloud App Security + Azure Information Protection 통합](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

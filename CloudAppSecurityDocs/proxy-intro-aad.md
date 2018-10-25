@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6007579b9c83b83a1fa24502249437f645aeb94
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 629e1133b57a9d2aef7e83390aee156b71c53b8e
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144451"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881825"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -30,6 +30,10 @@ ms.locfileid: "44144451"
 
 
 요즘의 작업 공간에서는 사후에 클라우드 환경에 무슨 일이 일어났는지 아는 것만으로는 충분치 않습니다. 지금은 직원이 의도적이든 우연이든 데이터와 조직을 위험에 빠뜨리기 전에 위반이나 누수를 실시간으로 막을 수 있어야 합니다. 조직의 사용자가 클라우드 앱에서 제공하는 대부분의 서비스 및 도구를 최대한 활용하고 자신의 장치를 작동할 수 있도록 하는 것이 중요합니다. 동시에 데이터 누수 및 데이터 절도로부터 실시간으로 조직을 보호할 수 있는 도구가 필요합니다. Microsoft Cloud App Security는 Azure Active Directory와 함께 조건부 액세스 앱 제어를 사용하는 전체적이고 통합된 환경에서 이러한 기능을 제공합니다.
+
+> [!NOTE]
+> Cloud App Security 조건부 액세스 앱 제어를 사용하려면 [Azure Active Directory P1 라이선스](https://azure.microsoft.com/pricing/details/active-directory/) 및 활성 Microsoft Cloud App Security 구독이 필요합니다.
+>
 
 ## <a name="how-it-works"></a>작동 방식
 
@@ -83,13 +87,12 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
  
 ## <a name="supported-apps-and-clients"></a>지원되는 앱 및 클라이언트
 
-조건부 액세스 앱 제어는 현재 Azure AD에서 SAML Single Sign-On으로 구성된 앱을 지원합니다. 
+조건부 액세스 앱 제어는 현재 Azure AD에서 Single Sign-On을 통해 SAML 및 Open ID Connect 앱으로 구성된 앱을 지원합니다. 
 
 > [!NOTE]
-> - 조건부 액세스 앱 제어는 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 이 시나리오에 대한 자세한 내용은 mcaspreview@microsoft.com으로 이메일을 보내주세요.
-> - Office 365 응용 프로그램은 SAML로 구성되지 않으므로 현재 지원되지 않습니다.
+> 조건부 액세스 앱 제어는 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 이 시나리오에 대한 자세한 내용은 mcaspreview@microsoft.com으로 이메일을 보내주세요.
 
-세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱도 차단되거나 허용될 수 있음). 기본적으로 Azure AD와 통합하면 Azure AD에서 SAML Single Sign-On을 사용하여 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
+세션 제어는 모든 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다(모바일 앱 및 데스크톱 앱도 차단되거나 허용될 수 있음). 기본적으로 Azure AD와 통합하면 Azure AD에서 Single Sign-On을 통해 SAML 및 Open ID Connect 앱으로 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
 
 - AWS
 - 상자
@@ -109,6 +112,13 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 
 - Workday
 - Workiva
 - Workplace by Facebook
+- Exchange Online(미리 보기)
+- 비즈니스용 OneDrive(미리 보기)
+- Power BI(미리 보기)
+- SharePoint Online(미리 보기)
+- Azure DevOps(Visual Studio Team Services)(미리 보기)
+- Yammer(미리 보기)
+
 
 
 세션 제어에 추가 앱이 계속 등록되고 있습니다. 여기에서 언급되지 않은 특정 앱에 관심이 있는 경우 [해당 앱에 대한 세부 정보](mailto:casfeedback@microsoft.com)와 관심 있는 사용 사례를 보내 주시면 등록해 드리겠습니다.
