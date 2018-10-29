@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 0330128447be0de3c9b3c8419a241f665c3038fd
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349436"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990667"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -81,7 +81,7 @@ Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 �
 
   
       
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
