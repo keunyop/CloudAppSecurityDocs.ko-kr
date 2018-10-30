@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/7/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cbc8999419f9c316323227c515fe111310231a9a
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: c63379dd19c8e3a62c63d4f6ace5d35478a45ff6
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881808"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349615"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -33,8 +33,8 @@ Cloud Discovery는 70개가 넘는 위험 요소를 기준으로 순위 및 점�
 
 - **연속 보고서**는 Cloud App Security를 사용하여 네트워크에서 전달되는 모든 로그를 분석합니다. 이러한 보고서는 모든 데이터에 대해 향상된 가시성을 제공하고 Machine Learning 변칙 검색 엔진이나 사용자가 정의한 사용자 지정 정책을 사용하여 비정상적인 사용을 자동으로 식별합니다. 이러한 보고서는 다음과 같은 방법으로 연결하여 만들 수 있습니다.
   - [Windows Defender ATP 통합](wdatp-integration.md): Cloud App Security는 Cloud Discovery 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 너머로 확장하고, 머신 기반 조사를 사용하기 위해 기본적으로 Windows Defender ATP(Advanced Threat Protection)와 통합됩니다.
-  - [로그 수집기]( ):
-  - [Zscaler 통합](zscaler-integration.md): 
+  - [로그 수집기](discovery-docker.md): 로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다.
+  - [Zscaler 통합](zscaler-integration.md): Cloud App Security와 Zscaler를 모두 사용하는 경우 두 제품을 통합하여 보안 Cloud Discovery 환경을 향상할 수 있습니다. Cloud App Security와 Zscaler는 함께 Zscaler 포털에서 Cloud Discovery의 원활한 배포, 비사용 권한 앱의 자동 차단 및 위험 평가를 직접 제공합니다.
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>로그인 프로세스 흐름: 원시 데이터에서 위험 평가로  
 위험 평가 생성 프로세스는 다음 단계로 구성되며 처리되는 데이터 크기에 따라 몇 분에서 몇 시간 정도 걸립니다.  

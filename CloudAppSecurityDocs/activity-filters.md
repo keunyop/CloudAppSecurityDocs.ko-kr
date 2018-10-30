@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/5/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072891"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349460"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악�
 
  ![기본 활동 로그 필터](media/activity-log-filter-basic.png)
 
-더 구체적인 활동으로 드릴다운하려면 [고급]을 클릭하여 기본 필터를 확장합니다.
+더 구체적인 활동으로 드릴다운하려면 **고급**을 클릭하여 기본 필터를 확장합니다.
 
  ![고급 활동 로그 필터](media/activity-log-filter-advanced.png)
 

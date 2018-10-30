@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c3e0231d2b4f289ec460adc2d4d90e56443bb10f
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 6b2028a8b62413cccefdab0fb529fb42fa57c221
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072840"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349647"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ ms.locfileid: "49072840"
   - 활동 개체 ID - 개체의 ID(파일, 폴더, 사용자 또는 앱 ID)입니다.
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
-  - 항목 - 활동 개체의 이름 또는 ID를 기준으로 검색할 수 있습니다(예: 사용자 이름, 파일, 매개 변수, 사이트). **Activity object Item**(활동 개체 항목) 필터에서 특정 항목을 **포함**하거나, 특정 항목과 **같거나, 특정 항목으로 **시작**하는 항목을 필터링할지 여부를 선택할 수 있습니다.
+  - 항목 - 활동 개체의 이름 또는 ID를 기준으로 검색할 수 있습니다(예: 사용자 이름, 파일, 매개 변수, 사이트). **Activity object Item**(활동 개체 항목) 필터에서 특정 항목을 **포함**하거나, 특정 항목과 **같거나**, 특정 항목으로 **시작**하는 항목을 필터링할지 여부를 선택할 수 있습니다.
     
 - 활동 유형 - 응용 프로그램 활동을 검색합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "49072840"
     - 특정 파일 또는 폴더 - 특정 파일 또는 폴더를 포함하거나 제외할 수 있습니다. 파일 또는 폴더를 선택할 때 **앱**, **소유자** 또는 부분 **파일 이름**으로 목록을 필터링할 수 있습니다. 
   
 - IP 주소 - 활동을 수행한 원시 IP 주소, 범주 또는 태그입니다.  
-  - 원시 IP 주소 - 원시 IP 주소와 같거나 같지 않은 활동, 특정 시퀀스로 시작하거나 시작하지 않는 원시 IP 주소의 활동을 검색할 수 있습니다. 
+  - 원시 IP 주소 - 원시 IP 주소에서 또는 원시 IP 주소에 의해 수행된 활동을 검색할 수 있습니다. 원시 IP는 특정 시퀀스와 같거나 같지 않거나 특정 시퀀스로 시작하거나 시작하지 않을 수 있습니다. 
   - IP 범주 - 활동을 수행한 IP 주소 범주입니다(예: 관리 IP 주소 범위의 모든 활동). 범주는 관련 IP 주소를 포함하도록 구성해야 합니다. 단, 미리 구성되며 두 개의 IP 태그(Anonymous proxy 및 Tor)를 포함하는 “Risky”(위험) 범주는 예외입니다. IP 범주를 구성하는 방법을 알아보려면 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
   - IP 태그 - 활동을 수행한 IP 주소의 태그입니다(예: 익명 프록시 IP 주소의 모든 활동). Cloud App Security는 구성할 수 없는 기본 제공 IP 태그의 집합을 만듭니다. 또한 자체 IP 태그를 구성할 수 있습니다. IP 태그 구성에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.
   기본 제공 IP 태그는 다음과 같습니다.
@@ -128,7 +128,7 @@ ms.locfileid: "49072840"
    ![쿼리 열기](./media/select-activity-query.png)
 
 
-Cloud App Security에는 **제안된 쿼리**가 제공되며 제안된 쿼리에는 활동을 필터링하는 권장 조사 환경이 제공됩니다. 이러한 쿼리를 편집하고 사용자 지정 쿼리로 저장할 수 있습니다. 다음은 선택 가능한 제안된 쿼리입니다.
+Cloud App Security는 **제안된 쿼리**도 제공합니다. 제안된 쿼리는 활동을 필터링하는 권장 조사 환경을 제공합니다. 이러한 쿼리를 편집하고 사용자 지정 쿼리로 저장할 수 있습니다. 다음은 선택 가능한 제안된 쿼리입니다.
 
  - 관리 활동 - 관리와 관련된 활동만 표시하도록 모든 활동을 필터링합니다.
 
@@ -136,7 +136,7 @@ Cloud App Security에는 **제안된 쿼리**가 제공되며 제안된 쿼리�
 
  - 실패한 로그인 - SSO를 통해 실패한 로그온 및 실패한 로그인만 표시하도록 모든 활동을 필터링합니다. 
 
- - 파일 및 폴더 활동 - 파일 및 폴더와 관련된 활동(예: 폴더 업로드 및 다운로드, 폴더 액세스, 파일 만들기, 삭제, 업로드, 다운로드, 격리 및 액세스, 콘텐츠 전송)만 표시하도록 모든 활동을 필터링합니다. 
+ - 파일 및 폴더 활동 - 파일 및 폴더와 관련된 활동만 표시하도록 모든 활동을 필터링합니다. 필터에는 파일의 생성, 삭제, 업로드, 다운로드, 격리 및 액세스, 콘텐츠 전송과 함께 폴더 업로드, 다운로드 및 액세스가 포함됩니다. 
 
  - 가장 활동 - 가장 활동만 표시하도록 모든 활동을 필터링합니다.
 
