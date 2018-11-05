@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd068465731dd4759aa0e110ceaa76e4eb8eade4
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0bb637129c852e284aad5b27bba9ed13a5111cf5
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143312"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217155"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ ms.locfileid: "44143312"
 > Azure 연결하면 데이터를 가져옵니다. 이후부터 데이터를 볼 수 있습니다.
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
