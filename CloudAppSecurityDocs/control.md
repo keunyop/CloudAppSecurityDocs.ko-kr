@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,29 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143975"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217342"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="control"></a>컨트롤
-클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후 거버넌스 작업을 사용하여 조직의 보호를 도울 수 있습니다.  
+클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후에는 거버넌스 작업을 사용하여 조직을 보호할 수 있습니다.  
 
 ## <a name="use-policies-to-assess-risk"></a>정책을 사용하여 위험 평가  
 미해결 경고를 살펴본 후 정책 센터로 이동하여 경고를 트리거하지 않은 정책 위반을 검토합니다.  
 
 -   Cloud App Security 대시보드에서 **제어**를 클릭한 다음 **정책**을 클릭합니다.  
 
--   특정 정책을 선택하여 경고를 트리거하지 않은 정책 일치 항목의 **지금 위반 중** 목록을 확인합니다.  
+-   특정 정책을 선택하여 경고를 트리거하지 않은 정책 일치 항목의 **지금 일치 중** 목록을 확인합니다.  
 
--   한 번에 하나씩 위반을 클릭하고 각각에 대해 수행할 작업을 결정합니다. 거버넌스 작업에 대한 자세한 내용을 보려면 다음 그림을 참조하세요.  
+-   한 번에 하나씩 위반을 클릭하고 각각에 대해 수행할 작업을 결정합니다. 거버넌스 작업에 대한 자세한 내용은 다음 그림을 참조하세요.  
 
-     예를 들어 정책이 규정 준수 위반을 찾도록 설정된 상태에서 누군가가 신용 카드 번호를 OneDrive의 파일에 저장할 경우 정책에 일치 항목이 포함됩니다.  
+     정책이 규정 준수 위반을 찾도록 설정된 상태에서 누군가가 신용 카드 번호를 OneDrive의 파일에 저장할 경우 정책에 일치하는 항목이 포함됩니다.  
 
      ![PCI 일치](./media/pci-matches.png "pci 일치")  
 
@@ -49,7 +49,7 @@ ms.locfileid: "44143975"
 
      **일치 항목**을 클릭하면 실제 신용 카드 번호를 볼 수 있습니다.  
 
-     ![콘텐츠 일치 ccn](./media/content-matches-ccn.png "콘텐츠 일치 ccn")  
+     ![콘텐츠 일치 신용 카드 번호](./media/content-matches-ccn.png "콘텐츠 일치 신용 카드 번호")  
 
 ## <a name="apply-governance-actions"></a>거버넌스 작업 적용  
 정책 내, 내부 경고 및 **파일** 로그에서 거버넌스 작업을 적용할 수 있습니다.  
@@ -78,13 +78,13 @@ Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알�
 ### <a name="migrate-your-users-to-a-new-app"></a>사용자를 새 응용 프로그램으로 마이그레이션  
 최근에 Office 365를 구입했으며 조직의 모든 사용자가 다른 모든 클라우드 저장소 앱의 사용을 중지하고 OneDrive 사용을 시작하도록 하는 시나리오를 가정해 보겠습니다. 수행할 수 있는 작업은 다음과 같습니다.  
 
-1. **클라우드 검색 대시보드**로 이동한 다음 **범주**에서 **클라우드 저장소**를 기준으로 앱을 필터링합니다. 그런 다음 **사용자** 또는 **IP 주소**를 기준으로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
+1. **Cloud Discovery 대시보드**로 이동하고 **앱 범주**에서 **클라우드 저장소**별로 앱을 필터링합니다. **사용자** 또는 **IP 주소**별로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
 
 2. 다른 앱을 사용하는 사용자를 확인할 수 있습니다. 또한 다음과 같이 이러한 응용 프로그램을 드릴다운하고 다음과 같이 사용자에게 OneDrive로 마이그레이션하도록 알릴 수 있습니다.
 
-   1.  **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
+   1. **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
 
-   2.  화살표 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")를 선택하고 **내보내기**를 선택합니다.  
+   2. **내보내기** 화살표 아이콘 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")을 선택하고 내보내기 옵션을 선택합니다.  
 
 ### <a name="find-more-secure-alternatives"></a>더 안전한 대안 찾기  
 Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 수 있는 위험한 응용 프로그램 대신 조직에 적합한 대안을 찾을 수 있습니다.  
@@ -99,7 +99,7 @@ Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 �
 
 4.   전체 조직에 대한 엔터프라이즈 라이선스를 구입하기로 한 경우에는 **사용자** 열도 확인할 수 있습니다. 그리고 사용자들 사이에서 이미 인기 있는 응용 프로그램, 신뢰할 수 있는지 여부, 보안 기능을 확인한 후에 결정을 내릴 수 있습니다.  
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
 정책을 사용 및 설정하여 클라우드 응용 프로그램의 사용을 제어하는 방법을 알아보려면 [정책을 사용하여 클라우드 응용 프로그램 제어](control-cloud-apps-with-policies.md)를 참조하세요.   
 
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc5249ae183da37293920aade12346aaca46eb32
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349630"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745734"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -78,6 +78,9 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 **의심스러운 받은 편지함 전달**
 
 - 이 검색은 의심스러운 메일 전달 규칙(예: 사용자가 모든 메일의 복사본을 외부 주소로 전달하는 받은 편지함 규칙을 만든 경우)을 찾습니다. 
+ 
+> [!NOTE]
+> Cloud App Security는 사용자의 일반적인 동작을 기준으로 의심스러운 것으로 식별되는 각 전달 규칙에 대해서만 경고합니다. 
 
 **비정상적인 활동(사용자별)**<br>
 이러한 검색은 다음을 수행하는 사용자를 식별합니다.
@@ -92,6 +95,13 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 
 **여러 번의 로그인 시도 실패**
 - 이 검색은 학습된 기준과 관련하여 단일 세션에서 로그인 시도가 여러 번 실패한 사용자를 나타냅니다. 이는 위반 시도일 수 있습니다. 
+
+**승인되지 않은 앱으로 데이터 반출**
+- 이 정책은 사용자 또는 IP 주소가 조직에서 정보를 반출하려는 시도와 유사한 작업을 수행하도록 승인되지 않은 앱을 사용할 때 자동으로 경고하도록 활성화됩니다.
+
+**복수 삭제 VM 작업**
+- 이 정책은 환경을 프로파일링하고 사용자가 조직의 기준선과 관련하여 단일 세션에서 여러 VM을 삭제할 때 경고를 트리거합니다. 이는 보안 위반이 시도되었음을 나타낼 수 있습니다.
+
 
 ## 자동화된 거버넌스 사용<a name="adp-automated-gov"></a>
 

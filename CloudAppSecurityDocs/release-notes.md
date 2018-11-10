@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881910"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745751"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
+
+## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security 릴리스 133, 134, 135
+
+릴리스 날짜: 2018년 10월
+
+**점진적으로 롤아웃될 새 변칙 검색 정책**
+- 새 Data exfiltration to unsanctioned apps(승인되지 않은 앱으로 데이터 반출) 정책은 사용자 또는 IP 주소가 조직에서 정보를 반출하려는 시도와 유사한 작업을 수행할 권한이 부여되지 않은 앱을 사용하는 경우 사용자에게 알리도록 자동으로 활성화됩니다.
+- 새 복수 삭제 VM 작업 정책은 환경을 프로파일링하고 사용자가 조직의 기준선과 관련하여 단일 세션에서 여러 VM을 삭제할 때 경고를 트리거합니다.
+
+**APAC에 사용할 수 있는 데이터 분류 서비스**
+- APAC 고객은 이제 데이터 분류 서비스 콘텐츠 검사를 이용할 수 있습니다. 전체 지역 지원 목록은 [Microsoft 데이터 분류 서비스 통합](dcs-inspection.md)을 참조하세요.
+
+**i-Filter에 대한 Cloud Discovery 지원**
+-  이제 Cloud App Security Cloud Discovery 기능은 i-Filter syslog 파서에 대한 지원이 향상되었습니다.
 
 ## <a name="cloud-app-security-release-132"></a>Cloud App Security 릴리스 132
 

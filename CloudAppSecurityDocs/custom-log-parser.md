@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9a1bd913c139b7af83aa210bc185c83a5b4bd0a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 3d70d71364157d6e3eca2a97574a2cbd82020e78
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143256"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217189"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="use-a-custom-log-parser"></a>사용자 지정 로그 파서 사용
-Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud App Security에서 명시적으로 지원되지 않는 방화벽 또는 장치에서 로그가 생성된 경우에도 Cloud Discovery에 대해 해당 로그를 사용할 수 있습니다. 
+Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud Discovery에 사용할 수 있습니다. 일반적으로 방화벽 또는 장치가 Cloud App Security에서 명시적으로 지원되지 않은 경우 사용자 지정 파서를 사용합니다. 
 
 사용자 지정 파서를 통해 이 프로세스에 따라 지원되지 않는 방화벽에서 생성된 로그를 사용할 수 있습니다. 
 
@@ -43,7 +43,7 @@ Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사
 
 4. 조직의 사용자가 인터넷에 액세스할 때 사용하는 방화벽 및 프록시에서 로그를 수집합니다. 조직의 모든 사용자 활동을 나타내는 최대 트래픽 시간 동안 로그를 수집해야 합니다. 
 
-5. 텍스트 편집기에서 처리할 로그를 열고 해당 형식을 검토하여 로그의 열 이름이 **Custom log format**(사용자 지정 로그 형식) 화면의 필드와 일치하는지 확인합니다.
+5. 텍스트 편집기에서 처리할 로그를 엽니다. 형식을 검토하여 로그의 열 이름이 **사용자 지정 로그 형식** 화면의 필드와 일치하는지 확인합니다.
 
    ![사용자 지정 로그 파서](./media/log-data.png) 
 
@@ -57,7 +57,7 @@ Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사
 
 7. **Save**을 클릭합니다. 구성한 사용자 지정 로그 형식은 기본 사용자 지정 파서로 저장됩니다. 언제든지 [편집]을 클릭하여 편집할 수 있습니다.
 
-8. **Choose the traffic logs**(트래픽 로그 선택)에서 수정한 로그 파일을 선택하고 업로드합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다. 압축된 파일도 지원됩니다.  
+8. **트래픽 로그 선택**에서 수정한 로그 파일을 선택하고 업로드합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다. 압축된 파일도 지원됩니다.  
   
 
 9. **만들기**를 클릭합니다.  
@@ -65,12 +65,12 @@ Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사
 10. 업로드가 완료되면 로그가 성공적으로 업로드되었음을 알려주는 상태 메시지가 화면의 오른쪽 위에 나타납니다.  
   
 11. 로그 파일을 업로드한 후 구문 분석하고 분석하려면 다소 시간이 걸립니다.  
-    로그 파일의 처리가 완료되면 완료되었다는 메일을 받게 됩니다. 
+    로그 파일의 처리가 완료되면 작업이 완료되었음을 알리는 이메일을 받게 됩니다. 
   
-12. 로그 파일의 처리 상태를 업데이트하기 위해 알림 배너가 포털 맨 위의 상태 표시줄에 나타납니다.  
+12. **Cloud Discovery 대시보드**의 맨 위에 있는 상태 표시줄에 알림 배너가 나타납니다. 배너는 로그 파일의 처리 상태를 업데이트합니다.  
     ![로그 파일 처리 메뉴 모음](./media/processing-log-file-menu-bar.png) 
    
-13. 로그를 업로드하는 데 성공하고 나면 로그 파일 처리가 완료되었다는 내용의 알림이 표시됩니다. 이제 상태 표시줄의 링크를 클릭하거나 설정 코그로 이동하고 **Cloud Discovery 설정**을 선택하여 보고서를 볼 수 있습니다.   
+13. 로그를 업로드하는 데 성공하고 나면 로그 파일 처리가 완료되었다는 내용의 알림이 표시됩니다. 이제 상태 표시줄의 링크를 클릭하거나 설정 코그로 이동하여 **Cloud Discovery 설정**을 선택하여 보고서를 볼 수 있습니다.   
   
      ![Discovery 설정 탭](./media/discovery-settings-tab.png)
 14. 그런 다음 **스냅숏 보고서 관리**를 선택하고 스냅숏 보고서를 선택합니다.
@@ -83,7 +83,7 @@ Cloud App Security에서는 로그 형식을 일치시키고 처리하도록 사
 
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="next-steps"></a>다음 단계
  
 [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 

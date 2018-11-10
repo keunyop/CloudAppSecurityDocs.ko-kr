@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c547241190d4b51731f3c8b063624135d243d5ce
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d6c3e680ec17d8a62977e4c25af5b9163244afea
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143992"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217291"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -95,7 +95,7 @@ ms.locfileid: "44143992"
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    이전에 CloudTrail을 사용하지 않은 경우 **Get Started**(시작)를 클릭하고 이름을 제공하고 적절한 S3 버킷을 선택하여 설정한 다음 **Turn On**(켜기)을 클릭합니다. 전체 범위를 적용하려면 **Apply to all regions**(모든 지역에 적용)를 **Yes**(예)로 설정합니다.
+    이전에 CloudTrail을 사용하지 않은 경우 **Get Started**(시작)를 클릭하고, 이름을 제공하고, 적절한 S3 버킷을 선택하여 설정하고, **Turn On**(켜기)을 클릭합니다. 전체 범위를 적용하려면 **Apply to all regions**(모든 지역에 적용)를 **Yes**(예)로 설정합니다.
   
        ![AWS에서 CloudTrail 켜기](./media/aws-turnon-cloudtrail.png "AWS에서 CloudTrail 켜기")
   
@@ -105,7 +105,7 @@ ms.locfileid: "44143992"
   
 11. Cloud App Security 포털에서 **조사**, **연결된 앱**을 차례로 클릭합니다.  
   
-12. **앱 커넥터** 페이지에서 더하기 기호, **AWS**를 차례로 클릭합니다.  
+12. **앱 커넥터** 페이지에서 더하기 기호 다음에 **Amazon Web Services**를 클릭합니다.  
   
      ![AWS 연결](./media/connect-aws.png "AWS 연결")  
   
@@ -118,7 +118,7 @@ ms.locfileid: "44143992"
   
 AWS를 연결한 후 연결 전 7일에 대한 이벤트를 받게 됩니다. CloudTrail을 사용하도록 설정한 경우 CloudTrail를 사용하도록 설정한 시점부터 이벤트를 받습니다.
   
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

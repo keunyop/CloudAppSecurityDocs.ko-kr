@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 347a0fe95fc27212e76f294047c408e2b6aaa36d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143703"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217240"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -43,7 +43,7 @@ Dropbox를 사용하면 로그인하지 않고 공유 링크에서 파일에 액
   
 5.  **이 링크를 따름**을 클릭합니다.  
   
-     Dropbox 로그온 페이지가 열립니다. Cloud App Security에서 팀의 Dropbox 인스턴스에 액세스할 수 있도록 자격 증명을 입력합니다.  
+     Dropbox 로그인 페이지가 열립니다. Cloud App Security에서 팀의 Dropbox 인스턴스에 액세스할 수 있도록 자격 증명을 입력합니다.  
   
 6.  Dropbox에서 팀 정보 및 활동 로그에 대한 Cloud App Security의 액세스와 팀 멤버로서의 작업 수행을 허용할지 여부를 묻는 메시지를 표시합니다. 계속하려면 **허용**을 클릭합니다.  
   
@@ -58,7 +58,7 @@ Dropbox를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니�
 > [!NOTE] 
 > 파일 추가에 대한 모든 Dropbox 이벤트는 Cloud App Security에 연결된 다른 모든 앱에 맞게 파일 업로드로 Cloud App Security에 표시됩니다. 
  
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

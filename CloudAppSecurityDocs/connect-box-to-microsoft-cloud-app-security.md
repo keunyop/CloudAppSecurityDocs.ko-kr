@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c850a50458b3322f65087ceff105fc916ffdc83a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: f246cff6e48d07f52d0b40d37599e5dcd89d7d2e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142717"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217206"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -66,7 +66,7 @@ ms.locfileid: "44142717"
   
 4.  **Box 설정** 팝업에서 **이 링크를 따름**을 클릭합니다.  
   
-5.  Box 로그온 페이지가 열립니다. Cloud App Security에서 팀의 Box 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
+5.  Box 로그인 페이지가 열립니다. Cloud App Security에서 팀의 Box 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
   
 6.  Box에서 팀 정보 및 활동 로그에 대한 Cloud App Security의 액세스와 팀 멤버로서의 작업 수행을 허용할지 여부를 묻는 메시지를 표시합니다. 계속하려면 **허용**을 클릭합니다.  
   
@@ -82,7 +82,7 @@ Box를 연결한 후 연결 전 60일에 대한 이벤트를 받게 됩니다.
   
 Box를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 파일 및 사용자 수에 따라 전체 검색을 완료하려면 시간이 오래 걸릴 수 있습니다. 근 실시간 검색을 사용하려면 작업이 감지되는 파일을 검색 큐의 시작 부분으로 이동합니다. 예를 들어 편집, 업데이트 또는 공유되는 파일은 정기적인 검색 프로세스에 연결될 때까지 대기하지 않고 바로 검색합니다. 기본적으로 수정되지 않는 파일에는 거의 실시간 검색이 적용되지 않습니다. 예를 들어 보거나, 미리 보거나, 인쇄하거나, 내보내는 파일은 정기적으로 예약된 검색의 일부로 검색됩니다.
   
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

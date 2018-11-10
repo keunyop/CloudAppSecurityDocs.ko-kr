@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 52b24a6aa80ee3283a5f2f6b96a3b1b51ce07d8b
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 1a2830cb7813eb5b86fc56751f628b6b9d5a630e
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143941"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217308"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -39,14 +39,14 @@ ms.locfileid: "44143941"
   
      다음과 같이 버전에서 REST API를 사용할 수 있고 사용하도록 설정되었는지 확인합니다.  
   
-    -   Salesforce 계정에 로그인한 다음 **설정** 페이지로 이동합니다.  
+    -   Salesforce 계정에 로그인하고 **설정** 페이지로 이동합니다.  
   
     -   **사용자 관리**에서 **사용자 프로필** 페이지로 이동합니다.  
   
-         ![salesforce manageusers 프로필](./media/salesforce-manageusers-profiles.png "salesforce manageusers 프로필")  
+         ![salesforce 사용자 관리 프로필](./media/salesforce-manageusers-profiles.png "salesforce 사용자 관리 프로필")  
   
     -   **새로 만들기**를 클릭하여 새 프로필을 만듭니다. 
-    - Cloud App Security를 배포하려고 만든 프로필을 선택하고 **편집**을 클릭합니다. 이 프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
+    - Cloud App Security를 배포하려고 만든 프로필을 선택하고 **편집**을 클릭합니다.  프로필은 Cloud App Security 서비스 계정에서 앱 커넥터를 설정하는 데 사용됩니다.  
   
          ![salesforce 프로필 편집](./media/salesforce-edit-profile.png "salesforce 프로필 편집")  
   
@@ -56,7 +56,7 @@ ms.locfileid: "44143941"
         - **Manage Salesforce CRM Content**(Salesforce CRM 콘텐츠 관리)
         - **사용자 관리**
         
-        이러한 확인란이 선택되지 않은 경우 계정에 확인란을 추가하려면 Salesforce에 연락해야 할 수 있습니다.  
+        이러한 확인란이 선택되지 않은 경우 Salesforce에 연락하여 계정에 추가해야 할 수 있습니다.  
              
 3.  조직에서 **Salesforce CRM 콘텐츠**가 사용으로 설정된 경우 현재 관리자 계정에서도 사용으로 설정되었는지 확인합니다.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "44143941"
   
     4.  **Salesforce CRM 콘텐츠 사용자** 확인란이 선택되었는지 확인합니다.  
   
-         선택되지 않은 경우 **편집**을 클릭하고 확인란을 선택합니다.  
+         선택되지 않은 경우 **편집**을 클릭한 다음, 확인란을 선택합니다.  
   
          ![salesforce crm 콘텐츠 사용자](./media/salesforce-crm-content-user.png "salesforce crm 콘텐츠 사용자")  
   
@@ -86,13 +86,13 @@ ms.locfileid: "44143941"
   
 6.  Salesforce 설정 페이지의 API 탭에서 설치하려는 인스턴스에 따라 **이 링크를 따름**을 클릭합니다.  
   
-7.  Salesforce 로그온 페이지가 열립니다. Cloud App Security에서 팀의 Salesforce 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
+7.  그러면 Salesforce 로그인 페이지가 열립니다. Cloud App Security에서 팀의 Salesforce 앱에 액세스할 수 있도록 자격 증명을 입력합니다.  
   
-     ![salesforce 로그온](./media/salesforce-logon.png "salesforce 로그온")  
+     ![salesforce 로그인](./media/salesforce-logon.png "salesforce 로그온")  
   
 8.  Salesforce에서 팀 정보 및 활동 로그에 대한 Cloud App Security의 액세스와 팀 멤버로서의 작업 수행을 허용할지 여부를 묻는 메시지를 표시합니다. 계속하려면 **허용**을 클릭합니다.  
   
-9. 이때 배포와 관련된 성공 또는 실패 알림이 표시됩니다. 이제 Salesforce.com에서 Cloud App Security에 권한이 부여되었습니다.  
+9. 이때 배포에 대한 성공 또는 실패 알림이 표시됩니다. 이제 Salesforce.com에서 Cloud App Security에 권한이 부여되었습니다.  
   
 10. Cloud App Security 콘솔로 돌아가면 Salesforce가 연결되었다는 메시지가 표시됩니다.  
   
@@ -115,7 +115,7 @@ Salesforce 이벤트는 Cloud App Security에서 다음과 같이 처리합니�
 - Salesforce 로그가 UTC 시간으로 오전 12시부터 오후 11시 59분까지 24시간 동안 사용 활동을 추적합니다. Salesforce의 이벤트는 실시간으로 로그 데이터를 생성합니다. 그러나 Salesforce는 이벤트가 발생한 그다음 날 사용률이 낮은 시간에 로그 파일을 생성합니다. 따라서 로그 파일 데이터는 이벤트 발생 후 적어도 하루 동안은 사용할 수 없습니다. Salesforce 이벤트에 대한 자세한 내용은 [Using Event Monitoring(이벤트 모니터링 사용)](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)을 참조하세요.
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
