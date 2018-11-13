@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
-ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
+ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
+ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "50982074"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265327"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -89,6 +89,8 @@ Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
+
+Cloud App Security SIEM 에이전트를 설정할 때 프록시를 지정하지 않은 경우 포트 80에서 http://ocsp.msocsp.com/으로 http 연결을 허용해야 합니다. 이는 Cloud App Security 포털에 연결할 때 인증서 해지 상태를 확인하는 데 사용됩니다.
 
 ## <a name="app-connector"></a>앱 커넥터
 
@@ -174,6 +176,7 @@ MailChimp를 사용하려면 IP 주소 198.2.134.139(mail1.cloudappsecurity.com)
 > [!NOTE]
 > - 방화벽에 고정 IP 주소 액세스 목록이 필요하고 URL 기반 허용 목록을 지원하지 않는 경우 로그 수집기가 443 포트에서 [Microsoft Azure 데이터 센터 IP 범위](https://www.microsoft.com/download/details.aspx?id=41653)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 >- 로그 수집기가 Cloud App Security 포털에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
+>- 로그 수집기를 설정할 때 프록시를 지정하지 않은 경우 포트 80에서 http://ocsp.msocsp.com/으로 http 연결을 허용해야 합니다. 이는 Cloud App Security 포털에 연결할 때 인증서 해지 상태를 확인하는 데 사용됩니다.
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 11/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf1a10466deb59ca06a88674993c628b8b744563
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
+ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144621"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51285846"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -38,7 +38,7 @@ ms.locfileid: "44144621"
    프로젝트 이름을 **Microsoft Cloud App Security**로 지정하고 **만들기**를 클릭합니다.  
           ![google2](./media/google2.png "google2")  
   
-4. 프로젝트를 만든 후 도구 모음에서 **Google Cloud Platform**을 클릭하고 위쪽의 드롭다운에서 오른쪽 프로젝트가 선택되어 있는지 확인합니다.
+4. 프로젝트를 만든 후에 도구 모음에서 **Google Cloud Platform**을 클릭합니다. 맨 위의 드롭다운에서 올바른 프로젝트가 선택되었는지 확인합니다.
        
       ![google 프로젝트](./media/googleverify-project.png "googleverify 프로젝트")  
 
@@ -46,7 +46,7 @@ ms.locfileid: "44144621"
   
      ![google3](./media/google3.png "google3")  
    
-7. **Library**(라이브러리)를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular APIs**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
+7. **라이브러리**를 클릭하고 다음 API를 사용하도록 설정합니다(API가 **Popular API**(인기 API) 목록에 표시되지 않는 경우 검색 줄 사용).  
      
    -   관리자 SDK  
   
@@ -54,7 +54,7 @@ ms.locfileid: "44144621"
   
    -   Google 드라이브 API  
   
-   -   Apps Marketplace SDK  
+   -   G Suite Marketplace SDK  
   
    -   Gmail API  
             
@@ -77,7 +77,7 @@ ms.locfileid: "44144621"
   
     - **Save**을 클릭합니다.  
   
-      ![Google 제품 이름](./media/google6.png "google6")  
+      ![Google oauth 동의](./media/google-oauth-consent.png "google oauth 동의")  
   
 11. **자격 증명** 탭에서 **자격 증명 만들기** 옆의 화살표를 클릭합니다.  
   
@@ -126,7 +126,7 @@ ms.locfileid: "44144621"
 
 21. **변경 내용 저장**을 클릭합니다.
 
-22. **사용 가능한 API** 목록으로 돌아갑니다. **Apps Marketplace SDK**를 클릭합니다. 
+22. **사용 가능한 API** 목록으로 돌아갑니다. **G Suite Marketplace SDK**를 클릭합니다. 
       
 23. **구성** 탭을 선택합니다. 
   
@@ -134,8 +134,11 @@ ms.locfileid: "44144621"
   
     -   **응용 프로그램 이름** 아래에서 **Microsoft Cloud App Security**를 입력합니다.
   
-         **응용 프로그램 설명** 형식에서 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 감지하는 데 도움이 됩니다."라고 입력합니다.  
-  
+         **응용 프로그램 설명** 형식에서 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 감지하는 데 도움이 됩니다."라고 입력합니다. 
+    - **새 항목** 창에서 **완료**를 클릭합니다.      
+     
+       ![Google 새 항목](./media/google-new-item.png "Google 새 항목")  
+
     -   **개별 설치 사용** 확인란을 선택 취소합니다.  
   
     -   **응용 프로그램 아이콘**에서 필수 이미지 4개를 구성합니다.  
@@ -237,10 +240,10 @@ ms.locfileid: "44144621"
   
 G Suite를 연결한 후 연결 전 60일 동안 이벤트를 받게 됩니다.
   
-G Suite를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 파일 및 사용자 수에 따라 전체 검색을 완료하려면 시간이 오래 걸릴 수 있습니다. 거의 실시간 검색을 사용하려면 작업이 감지되는 파일을 검색 큐의 시작 부분으로 이동합니다. 예를 들어 편집, 업데이트 또는 공유되는 파일은 바로 검색합니다. 기본적으로 수정되지 않는 파일에는 이 검색이 적용되지 않습니다. 예를 들어 보거나, 미리 보거나, 인쇄하거나, 내보내는 파일은 정기적인 검색 중에 검색됩니다.
+G Suite를 연결한 후 Cloud App Security에서 전체 검색을 수행합니다. 파일 및 사용자 수에 따라 전체 검색을 완료하려면 시간이 오래 걸릴 수 있습니다. 거의 실시간 검색을 사용하려면 작업이 감지되는 파일을 검색 큐의 시작 부분으로 이동합니다. 예를 들어 편집, 업데이트 또는 공유되는 파일은 바로 검색합니다. 이는 본질적으로 수정되지 않는 파일에는 적용되지 않습니다. 예를 들어 보거나, 미리 보거나, 인쇄하거나, 내보내는 파일은 정기적인 검색 중에 검색됩니다.
   
   
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
