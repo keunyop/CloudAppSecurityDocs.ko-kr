@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb408b5422e2b9ed4eb0ab5287a67a929ec680c0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 972ee25a77f491704b6ebc17a059c2d1f7e4d367
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142734"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644317"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Cloud App Security와 Zscaler를 모두 사용하는 경우 두 제품을 통합
     
 3. 네트워크에서 검색된 클라우드 앱을 조사합니다. 자세한 내용 및 조사 단계는 [Cloud Discovery 작업](working-with-cloud-discovery-data.md)을 참조하세요.
  
-4. Cloud App Security에서 비사용 권한으로 설정한 모든 앱에는 Zscaler에 의해 두 시간마다 ping이 사용된 다음, 해당 앱은 Zscaler에 의해 자동으로 차단됩니다. 앱 사용 권한 취소에 대한 자세한 내용은 [앱 사용 권한 부여/취소](governance-discovery.md#govern-discovered-apps)를 참조하세요.
+4. Cloud App Security에서 비사용 권한으로 설정한 모든 앱에는 Zscaler에 의해 두 시간마다 ping이 사용된 다음, 해당 앱은 Zscaler에 의해 자동으로 차단됩니다. 앱 사용 권한 취소에 대한 자세한 내용은 [앱 사용 권한 부여/취소](governance-discovery.md#BKMK_SanctionApp)를 참조하세요.
     
     
     

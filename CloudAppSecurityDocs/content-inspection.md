@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 534a5e6c89fff6899c31db8377590ec492fc454e
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 34cacd1eecfb14039863d6cf920e83b16001df6a
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217271"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597481"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
-
 # <a name="built-in-content-inspection"></a>기본 제공 콘텐츠 검사
+
+*적용 대상: Microsoft Cloud App Security*
 
 이 문서에서는 클라우드의 데이터에 대해 기본 제공 DLP 콘텐츠 검사를 실행할 때 Microsoft Cloud App Security에서 수행하는 프로세스를 설명합니다. 
 

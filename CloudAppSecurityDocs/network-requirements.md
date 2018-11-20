@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
-ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
+ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265327"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597462"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -90,7 +90,8 @@ Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
-Cloud App Security SIEM 에이전트를 설정할 때 프록시를 지정하지 않은 경우 포트 80에서 http://ocsp.msocsp.com/으로 http 연결을 허용해야 합니다. 이는 Cloud App Security 포털에 연결할 때 인증서 해지 상태를 확인하는 데 사용됩니다.
+> [!NOTE]
+> Cloud App Security SIEM 에이전트를 설정할 때 프록시를 지정하지 않은 경우 포트 80에서 http://ocsp.msocsp.com/으로 http 연결을 허용해야 합니다. 이는 Cloud App Security 포털에 연결할 때 인증서 해지 상태를 확인하는 데 사용됩니다.
 
 ## <a name="app-connector"></a>앱 커넥터
 

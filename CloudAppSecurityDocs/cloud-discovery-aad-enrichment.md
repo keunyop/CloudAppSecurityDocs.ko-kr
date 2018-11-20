@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 66bf3a348a14dc6bc0fa8d3da481540493b7acbf
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349528"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597054"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery 보강
+
+*적용 대상: Microsoft Cloud App Security*
 
 Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discovery 데이터를 보강할 수 있습니다. 이 기능을 사용하도록 설정하면 검색 트래픽 로그에 받은 사용자 이름이 Azure AD 사용자 이름과 일치하고 이 사용자 이름으로 대체됩니다. Cloud Discovery 보강은 다음과 같은 기능을 지원합니다.
 - Azure Active Directory 사용자에 의한 섀도 IT 사용량을 조사할 수 있습니다.

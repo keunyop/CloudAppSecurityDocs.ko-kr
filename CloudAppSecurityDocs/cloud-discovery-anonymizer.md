@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0330128447be0de3c9b3c8419a241f665c3038fd
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 3926e7a62105d3b709dfe4171997417cfa5d7600
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990667"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596994"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
+
+*적용 대상: Microsoft Cloud App Security*
 
 Cloud Discovery 데이터 익명화를 사용하면 사용자 개인 정보를 보호할 수 있습니다. Microsoft Cloud App Security 포털에 데이터 로그를 업로드하면 로그가 삭제되고 모든 사용자 이름 정보가 암호화된 사용자 이름으로 교체됩니다. 이러한 방식으로 모든 클라우드 활동이 익명으로 유지됩니다. 특정 보안 조사를 위해(예: 보안 위반 또는 의심스런 사용자 활동) 필요한 경우 관리자는 실제 사용자 이름을 확인할 수 있습니다. 관리자는 특정 사용자를 의심할 만한 이유가 있는 경우 알려진 사용자 이름의 암호화된 사용자 이름을 조회한 다음, 암호화된 사용자 이름을 사용하여 조사를 시작할 수도 있습니다. 각 사용자 이름 변환에 대한 감사는 포털의 **거버넌스 로그**에서 수행됩니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed32435d0add14f1db3ef8457e54a628d9b26747
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 4cbe1ab46596f55283b0aa86390674e048c45216
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990684"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597394"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery에 사용자 지정 앱 추가
+
+*적용 대상: Microsoft Cloud App Security*
     
 Cloud Discovery는 Microsoft Cloud App Security의 클라우드 앱 카탈로그에 대한 트래픽 로그를 분석합니다. 16,000개가 넘는 클라우드 앱이 클라우드 앱 카탈로그에 위치합니다. 카탈로그에는 공개적으로 사용 가능한 클라우드 앱만 포함되어 있으며 Cloud App Security가 이러한 앱에 대한 표시 여부 및 위험 정보를 제공합니다.
 

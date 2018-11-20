@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6bc011f2e5d42f49d679260a2c36f977ba1b004f
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 014bc198a0033b86f5a4c07d01dab3f76724b75d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990701"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597004"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>가상 어플라이언스에서 연속 보고서에 대한 자동 로그 업로드 구성 - 사용되지 않음
+
+*적용 대상: Microsoft Cloud App Security*
 
 > [!WARNING] 
 > 보다 유연한 배포를 위해 [Docker](discovery-docker.md)를 사용하여 로그 업로드를 구성하는 것이 좋습니다.

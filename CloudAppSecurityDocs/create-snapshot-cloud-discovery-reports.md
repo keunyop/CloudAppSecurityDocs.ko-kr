@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ff22c10cdbb1736fde90922c7dc36b81f26558cc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217393"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597445"
 ---
+# <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 자동 로그 수집기를 사용하기 전에 로그를 수동으로 업로드하고 Microsoft Cloud App Security에서 구문 분석하도록 해야 합니다. 로그 수집기가 작동하는 방법과 예상되는 로그 형식에 대한 자세한 내용은 [Cloud Discovery에 트래픽 로그 사용](#log-format)을 참조하세요.
 
 로그가 아직 없고 로그가 어떤 모양인지 예제를 보려면 샘플 로그 파일을 다운로드합니다. 로그의 모양을 보려면 다음 절차를 따르세요.
