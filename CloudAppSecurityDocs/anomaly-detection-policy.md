@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security에서 변칙 검색 정책 만들기 | Microsoft 문서
-description: 이 항목에서는 변칙 검색 정책에 대해 설명하고 변칙 검색 정책의 구성 요소에 대한 참조 정보를 제공합니다.
+description: 이 문서에서는 변칙 검색 정책에 대해 설명하고 변칙 검색 정책의 구성 요소에 대한 참조 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: e29456add1796ea13c67b44f61c628cdb924f0dc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745734"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596952"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
- 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>즉각적인 동작 분석 및 변칙 검색 이용
+
+*적용 대상: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에서 지능형 위협 탐지를 즉시 실행할 수 있도록 UEBA(사용자 및 엔터티 동작 분석) 및 ML(기계 학습)을 기본적으로 제공합니다. 이러한 기능은 자동으로 사용하도록 설정되므로, 새 변칙 검색 정책은 즉각적인 검색을 제공하고 네트워크에 연결된 사용자, 머신 및 장치에서 다양한 동작 변칙을 대상으로 하여 즉각적인 결과를 제공합니다.  또한 새 정책은 Cloud App Security 검색 엔진의 데이터를 더 많이 공개하여 조사 프로세스를 더 빨리 진행하고 지속적으로 발견되는 위협을 포함하도록 도와줍니다. 
 
@@ -81,6 +80,9 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
  
 > [!NOTE]
 > Cloud App Security는 사용자의 일반적인 동작을 기준으로 의심스러운 것으로 식별되는 각 전달 규칙에 대해서만 경고합니다. 
+
+**의심스러운 받은 편지함 조작 규칙**
+- 이 검색 기능은 사용자 환경을 프로파일링하여 메시지나 폴더를 삭제하거나 이동하는 의심스러운 규칙이 사용자의 받은 편지함에 설정된 경우 경고를 트리거합니다. 이는 사용자 계정이 손상되었으며, 메시지가 의도적으로 숨겨져 있으며, 조직에 스팸 또는 맬웨이를 배포하는 데 사서함이 사용되고 있음을 나타낼 수 있습니다.
 
 **비정상적인 활동(사용자별)**<br>
 이러한 검색은 다음을 수행하는 사용자를 식별합니다.

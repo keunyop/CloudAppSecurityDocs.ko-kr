@@ -1,11 +1,11 @@
 ---
 title: 앱을 연결하여 Cloud App Security의 표시 유형 및 제어 향상 | Microsoft 문서
-description: 이 항목에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다.
+description: 이 문서에서는 조직의 클라우드에서 앱에 대해 API 커넥터를 사용하여 앱에 연결하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,64 +13,51 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1558d5063fe0307ca7005e4137a04133224e4b29
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b8eb53a500105c7935bebfc823f9ab4d8add70d6
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144672"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561056"
 ---
+# <a name="connect-apps"></a>앱 연결 
+
 *적용 대상: Microsoft Cloud App Security*
 
+앱 커넥터는 앱 공급자의 API를 사용하여 연결하는 앱에 대한 Microsoft Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
 
-# <a name="connect-apps"></a>앱 연결 
-앱 커넥터는 앱 공급자의 API를 활용하여 연결하는 앱에 대한 Microsoft Cloud App Security의 제어와 표시 유형을 강화할 수 있습니다.  
-
-Microsoft Cloud App Security는 클라우드 공급자가 제공하는 API를 활용하며, 각 서비스에는 자체 프레임워크 및 API 제한 사항이 있습니다. Microsoft Cloud App Security는 서비스와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 보장합니다. 서비스에서 API에 적용하는 다양한 제한 사항(예: 제한, API 제한, 동적 시간 이동 API 창 등)을 고려하여 Cloud App Security 엔진은 허용된 용량을 활용합니다. 테넌트에 있는 모든 파일 검색 등의 일부 작업에는 대량 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
+Microsoft Cloud App Security에서는 클라우드 공급자가 제공한 API를 활용합니다. 각 서비스에는 자체 프레임워크와 대역폭 제한, API 한도, 동적 시간 이동, API 창 등과 같은 API 제한 사항이 있습니다. Microsoft Cloud App Security는 서비스와 함께 작동하여 API 사용을 최적화하고 최적의 성능을 제공합니다. API에 부과되는 다양한 제한 사항을 고려하여 Cloud App Security 엔진은 허용된 용량을 사용합니다. 테넌트에 있는 모든 파일 검색과 같은 일부 작업에는 많은 API가 필요하므로 보다 오랜 기간 동안에 분산됩니다. 일부 정책은 몇 시간 또는 며칠 동안 실행될 것으로 예상합니다.  
 
 ## <a name="multi-instance-support"></a>여러 인스턴스 지원
 
-Cloud App Security는 연결된 동일한 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 이 지원은 API 연결 앱에만 적용되며, 클라우드 검색된 앱 또는 프록시 연결된 앱에는 적용되지 않습니다.
+Cloud App Security는 연결된 동일한 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce 인스턴스가 둘 이상인 경우(판매용 하나, 마케팅용 하나) 둘 모두를 Cloud App Security에 연결할 수 있습니다. 동일한 콘솔에서 여러 인스턴스를 관리하여 세분화된 정책을 만들고 심층적인 조사를 할 수 있습니다. 이 지원은 API 연결 앱에만 적용되며, 클라우드 검색된 앱 또는 프록시 연결된 앱에는 적용되지 않습니다.
 
 ## <a name="how-it-works"></a>작동 방식  
 Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한을 허용하는 시스템 관리자 권한으로 배포됩니다.  
 
 앱 커넥터 흐름은 다음과 같습니다.
+
 1. Cloud App Security에서 인증 권한을 검색하고 저장합니다.
-2.  Cloud App Security에서 사용자 목록을 요청합니다. 이 작업을 처음 수행하는 경우 검색이 완료될 때까지 다소 시간이 걸릴 수 있습니다. 사용자 검색이 끝나면 Cloud App Security에서 계속해서 활동 및 파일을 검색합니다. 검색이 시작되면 바로 일부 활동을 Cloud App Security에서 사용할 수 있습니다. 
-4. 사용자 요청 완료 후 Cloud App Security에서 사용자, 그룹, 활동 및 파일을 주기적으로 검색합니다. 첫 번째 전체 검색 후 모든 활동을 사용할 수 있습니다. 
+2. Cloud App Security에서 사용자 목록을 요청합니다. 처음 요청이 완료되면 검색이 완료될 때까지 다소 시간이 걸릴 수 있습니다. 사용자 검색이 끝나면 Cloud App Security에서 계속해서 활동 및 파일을 검색합니다. 검색이 시작되면 바로 일부 활동을 Cloud App Security에서 사용할 수 있습니다.
+3. 사용자 요청 완료 후 Cloud App Security에서 사용자, 그룹, 활동 및 파일을 주기적으로 검색합니다. 첫 번째 전체 검색 후 모든 활동을 사용할 수 있습니다.
 
-이 작업에는 다소 시간이 걸릴 수 있으며, 테넌트 크기, 사용자 수 및 검색해야 하는 파일의 크기와 수에 따라 시간이 달라집니다. 
+이 연결에는 테넌트 크기, 사용자 수 및 검색해야 하는 파일의 크기와 수에 따라 다소 시간이 걸릴 수 있습니다. 
 
-연결하는 앱(아래 표 참조)에 따라 API 연결은 다음을 사용하도록 설정합니다.  
+연결하는 앱에 따라 API 연결은 다음 항목을 사용하도록 설정합니다.  
 
--   **계정 정보:**  
+- **계정 정보** - 사용자, 계정, 프로필 정보, 상태(일시 중단됨, 활성, 사용 안 함) 그룹 및 권한에 대한 표시 유형입니다.  
 
-     사용자, 계정, 프로필 정보, 상태(일시 중단됨, 활성, 사용 안 함) 그룹 및 권한에 대한 표시 유형입니다.  
+- **감사 내역** - 사용자 활동, 관리자 활동, 로그인 활동에 대한 표시 유형입니다.  
 
--   **감사 내역:**  
+- **데이터 검색** - 주기적으로(12시간마다) 및 실시간 검색(변경이 검색될 때마다 트리거됨)의 두 프로세스를 사용하여 비정형 데이터를 검색합니다.  
 
-     사용자 활동, 관리자 활동, 로그온 활동에 대한 표시 유형입니다.  
+- **앱 사용 권한** - 발급된 토큰 및 해당 사용 권한에 대한 표시 유형입니다.  
 
--   **데이터 검색:**  
+- **계정 거버넌스** - 사용자 일시 중단, 암호 해지 등을 수행할 수 있습니다.  
 
-     주기적으로(12시간마다) 및 실시간 검색(변경이 검색될 때마다 트리거됨)의 두 프로세스를 사용하여 구조화되지 않은 데이터를 검색합니다.  
+- **데이터 거버넌스** - 휴지통의 파일을 포함하여 파일을 격리하고 파일을 덮어쓸 수 있습니다.  
 
--   **앱 사용 권한:**  
-
-     발급된 토큰 및 해당 사용 권한에 대한 표시 유형입니다.  
-
--   **계정 거버넌스:**  
-
-     사용자 일시 중단, 암호 해지 등을 수행할 수 있습니다.  
-
--   **데이터 거버넌스:**  
-
-     휴지통의 파일을 포함하여 파일을 격리하고 파일을 덮어쓸 수 있습니다.  
-
--   **앱 사용 권한 거버넌스:**  
-
-     토큰을 제거할 수 있습니다.  
+- **앱 사용 권한 거버넌스** - 토큰을 제거할 수 있습니다.  
 
 다음 표에서는 앱 커넥터에서 지원되는 기능을 클라우드 앱별로 보여 줍니다.  
 
@@ -102,7 +89,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 > [!NOTE]  
 >  URL 및 IP 주소가 변경된 경우 업데이트를 가져오려면 [Office 365 URL 및 IP 주소 범위](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 설명된 대로 RSS를 구독합니다.  
 
-앱 커넥터를 사용하려면 각 특정 앱에 대해 다음이 있는지 확인해야 합니다.  
+앱 커넥터를 사용하려면 각 특정 앱에 대해 다음 사항을 확인해야 합니다.  
 
 |앱|라이선스 유형|사용자|  
 |---------|------------------|----------|  
@@ -117,16 +104,17 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 |Salesforce||관리자|  
 
 
-**ExpressRoute**  
+**ExpressRoute**
 
 Cloud App Security는 Azure에 배포되고 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)와 완전히 통합됩니다. 검색 로그 업로드를 포함하여 Cloud App Security에 전송된 Cloud App Security 앱 및 트래픽과의 모든 상호 작용은 대기 시간, 성능 및 보안 향상을 위해 ExpressRoute **공용 피어링**을 통해 라우팅됩니다. 고객 측에서 필요한 구성 단계는 없습니다.  
 공용 피어링에 대한 자세한 내용은 [Express 경로 회로 및 라우팅 도메인](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)을 참조하세요.  
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
+ 
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
 
-
 ## <a name="check-out-this-video"></a>이 비디오를 확인해 보세요!
+
 [Microsoft Cloud App Security - REST API 및 토큰](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

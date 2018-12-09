@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security에서 검색된 앱 사용 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
+description: 이 문서에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8cc854e387cb563ca488c299f17b6553905ac6d7
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 97453e055dc7014cccef5d9a479e4fc76020fa2c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745700"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597139"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
-## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery 대시보드 검토
+*적용 대상: Microsoft Cloud App Security*
 
 Cloud Discovery 대시보드는 조직에서 클라우드 앱이 어떻게 사용되는지를 효과적으로 파악할 수 있도록 설계되었습니다. 이 대시보드에서는 사용되고 있는 앱의 종류, 미해결 경고 및 조직에서 앱의 위험 수준을 한눈에 파악할 수 있습니다. 또한 최고의 앱 사용자를 확인할 수 있으며 앱 본사 위치 지도를 제공합니다. Cloud Discovery 대시보드에는 데이터를 필터링하는 여러 가지 옵션이 있습니다. 필터링을 사용하면 이해하기 쉬운 그래픽을 사용하여 한 눈에 전체 그림을 그릴 수 있는 가장 관심 있는 항목에 따라 특정 보기를 생성할 수 있습니다.
 
 ![cloud discovery 대시보드](./media/cloud-discovery-dashboard.png)
+
+## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery 대시보드 검토
 
 Cloud Discovery 앱의 일반적인 그림을 가져오려면 먼저 Cloud Discovery 대시보드에서 다음 정보를 검토해야 합니다.
  
@@ -42,7 +41,7 @@ Cloud Discovery 앱의 일반적인 그림을 가져오려면 먼저 Cloud Disco
 4. **상위 사용자와 원본 IP 주소**를 확인하면 조직에서 어떤 사용자가 클라우드 앱을 가장 많이 사용하는지 파악할 수 있습니다.
 5. 검색된 앱이 **앱 본사 지도**에서 지리적 위치(HQ)에 따라 어떻게 분산되는지 확인합니다.
 
-6. 마지막으로 **앱 위험 개요**에서 검색된 앱의 위험 점수를 검토하세요.  **검색 경고 상태**를 점검하여 조사해야 하는 미해결 경고가 얼마나 되는지 확인하세요.
+6. 마지막으로 **앱 위험 개요**에서 검색된 앱의 위험 점수를 검토하세요. **검색 경고 상태**를 점검하여 조사해야 하는 미해결 경고가 얼마나 되는지 확인하세요.
 
 ## <a name="deep-dive-into-discovered-apps"></a>검색된 앱 심층 분석
 Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를 사용하여 위험한 앱과 일반적으로 사용되는 앱을 검토합니다.
@@ -109,7 +108,7 @@ Cloud Discovery 임원 보고서를 생성하려면:
   
 5. 포함할 데이터 원본을 선택합니다(모두 또는 특정).  
   
-6. 데이터에서 원하는 필터를 설정합니다. 이러한 필터는 **사용자 그룹**, ** IP 주소 태그 또는 **IP 주소 범위**일 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
+6. 데이터에서 원하는 필터를 설정합니다. 이러한 필터는 **사용자 그룹**, **IP 주소 태그** 또는 **IP 주소 범위**일 수 있습니다. IP 주소 태그 및 IP 주소 범위 작업에 대한 자세한 내용은 [요구에 따라 데이터 구성](ip-tags.md)을 참조하세요.  
   
     ![사용자 지정 연속 보고서 만들기](./media/create-custom-continuous-report.png) 
 

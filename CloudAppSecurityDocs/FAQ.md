@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,37 @@ ms.technology: ''
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b53a360b743e80c85dcced8dd2bef7eae8c60f36
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 071c2aefff1b885f5f63ee6403a6228250cb8686
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144009"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51560988"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="frequently-asked-questions"></a>질문과 대답
 
-## <a name="what-kind-of-permissions-do-i-need-to-have-in-order-to-access-cloud-app-security"></a>Cloud App Security에 액세스하려면 어떤 종류의 사용 권한이 있어야 하나요?
+*적용 대상: Microsoft Cloud App Security*
 
-Azure Active Directory에서 전역 관리자, 준수 관리자 또는 보안 관리자여야 합니다. Office 365 보안 및 준수 센터에서 이러한 역할을 가지는 것으로는 충분하지 않습니다.
-사용자를 Azure Active Directory에서 전역 관리자, 준수 관리자 또는 보안 관리자로 설정하려면 Windows PowerShell에서 다음을 실행합니다.
+이 문서에서는 Cloud App Security에 대한 질문과 대답을 제공합니다.
 
-        $cred = Get-Credential
-        Connect-MsolService -credential $cred
-        Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
- OR Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
+## <a name="what-kind-of-permissions-do-i-need-to-access-cloud-app-security"></a>Cloud App Security에 액세스하려면 어떤 종류의 사용 권한이 있어야 하나요?
 
-## <a name="see-also"></a>참고 항목  
-정책을 사용 및 설정하여 클라우드 응용 프로그램의 사용을 제어하는 방법을 알아보려면 [정책을 사용하여 클라우드 응용 프로그램 제어](control-cloud-apps-with-policies.md)를 참조하세요.   
+Azure Active Directory에서 글로벌 관리자, 준수 관리자 또는 보안 관리자여야 합니다. Office 365 보안 및 규정 준수 센터에서 이러한 역할을 수행하는 것만으로는 충분하지 않습니다. PowerShell을 사용하여 사용자를 Azure Active Directory에서 글로벌 관리자, 준수 관리자 또는 보안 관리자로 설정할 수 있습니다. 아래의 cmdlet을 실행합니다.
+
+```powershell
+
+ $cred = Get-Credential
+ Connect-MsolService -credential $cred
+ Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
+```
+
+ 또는
+
+```powershell
+ Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
+```
+
+## <a name="next-steps"></a>다음 단계  
+클라우드 앱 사용을 제어하기 위한 정책을 설정하고 사용하는 방법을 알아보려면 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)를 참조하세요.   
 
 프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  

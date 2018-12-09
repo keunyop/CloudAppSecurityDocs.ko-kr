@@ -1,11 +1,11 @@
 ---
 title: ICAP를 통한 Cloud App Security 외부 DLP 통합 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
+description: 이 문서에서는 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,20 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c893c5411201c2f40863d6f49602a694a915e2d5
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6898bfa943129fb32cae1f587e88dfd478c355d6
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144434"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644351"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
-
 # <a name="external-dlp-integration"></a>외부 DLP 통합
+
+*적용 대상: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security는 기존 DLP 솔루션과 통합되어 온-프레미스 및 클라우드 활동에서 일관된 통합 정책을 유지하면서 이러한 컨트롤을 클라우드로 확장할 수 있습니다. 플랫폼에서는 REST API 및 ICAP를 포함한 간편한 인터페이스를 내보내 Symantec 데이터 손실 방지(이전 Vontu 데이터 손실 방지) 또는 Forcepoint DLP와 같은 콘텐츠 분류 시스템과의 통합을 구현합니다. 
 
-[RFC 3507](https://tools.ietf.org/html/rfc3507)에 설명된 HTTP와 유사한 프로토콜인 표준 ICAP 프로토콜을 사용하여 통합을 수행합니다. 데이터를 전송할 경우 ICAP를 보호하기 위해 DLP 솔루션과 Cloud App Security 간에 보안 SSL 터널(stunnel)을 설정해야 합니다. stunnel 설정은 DLP 서버와 Cloud App Security 간에 이동할 때 데이터에 대한 TLS 암호화 기능을 제공합니다. 
+[RFC 3507](https://tools.ietf.org/html/rfc3507)에 설명된 HTTP와 유사한 프로토콜인 표준 ICAP 프로토콜을 사용하여 통합을 수행합니다. 데이터 전송을 위한 ICAP를 보호하려면 DLP 솔루션과 Cloud App Security 간에 보안 SSL 터널(stunnel)을 설정해야 합니다. stunnel 설정은 DLP 서버와 Cloud App Security 간에 이동할 때 데이터에 대한 TLS 암호화 기능을 제공합니다. 
 
 이 가이드에서는 ICAP 연결을 통해 통신을 보호하기 위해 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
 
@@ -45,7 +43,7 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 
 1.  원본 주소: [필수 구성 요소에 따라 앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites) 참조
 2.  원본 TCP 포트: 동적
-3.  대상 주소: 다음 단계에서 구성할 외부 ICAP 서버에 연결된 stunnel의 IP 주소 하나 이상
+3.  대상 주소: 다음 단계에서 구성할 외부 ICAP 서버에 연결된 stunnel의 하나 또는 두 개의 IP 주소
 4.  대상 TCP 포트: 네트워크에 정의된 대로
 
 > [!NOTE] 
@@ -55,7 +53,7 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 
 ICAP 서버를 설정하여 포트 번호를 적어 두고 **모드**를 **차단**으로 설정했는지 확인합니다. 차단 모드는 분류 verdict를 다시 Cloud App Security로 릴레이하도록 ICAP 서버를 설정합니다.
 
-이 작업을 수행하는 방법에 대한 지침은 외부 DLP 제품 설명서를 참조하세요. 예를 들어 [부록 A: Forcepoint ICAP 서버 설정](#forcepoint) 및 [부록 B: Symantec 배포 가이드](#symantec)를 참조하세요.
+이 설치를 수행하는 방법에 대한 지침은 외부 DLP 제품 설명서를 참조하세요. 예를 들어 [부록 A: Forcepoint ICAP 서버 설정](#forcepoint) 및 [부록 B: Symantec 배포 가이드](#symantec)를 참조하세요.
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>2단계: stunnel 서버 설정 
 
@@ -74,20 +72,20 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
 #### <a name="install-stunnel-on-windows"></a>Windows에 stunnel 설치
 
-1. [최신 Windows Server 설치를 다운로드합니다](https://www.stunnel.org/downloads.html)(최근 Windows Server 버전에서 작업해야 함).
+1. [최신 Windows Server 설치를 다운로드합니다](https://www.stunnel.org/downloads.html)(이 애플리케이션은 최근 Windows Server 버전에서 작업해야 함).
    (기본 설치)
 
-2. 설치하는 동안 새로운 자체 서명된 인증서를 만들지 마세요. 나중 단계에서 인증서를 만들 것입니다.
+2. 설치하는 동안 새로운 자체 서명된 인증서를 만들지 마세요. 이후 단계에서 인증서를 만듭니다.
 
 3. **Start server after installation**(설치한 후 서버 시작)을 클릭합니다.
 
 4. 다음 방법 중 하나로 인증서를 만듭니다.
 
-   - 인증서 관리 서버를 사용하여 ICAP 서버에서 SSL 인증서를 만들고 나서 stunnel 설치를 준비한 서버에 키를 복사합니다.
+   - 인증서 관리 서버를 사용하여 ICAP 서버에 SSL 인증서를 만듭니다. 그런 다음, stunnel 설치를 위해 준비한 서버에 키를 복사합니다.
    - 또는 stunnel 서버에서 다음 OpenSSL 명령을 사용하여 개인 키 및 자체 서명된 인증서를 생성합니다. 다음 변수를 바꿉니다.
-     -    **key.pem**(개인 키 이름 포함)
-     -    **cert.pem**(인증서 이름 포함)
-     -    **stunnel-key**(새로 만들어진 키 이름 포함)
+     - **key.pem**(개인 키 이름 포함)
+     - **cert.pem**(인증서 이름 포함)
+     - **stunnel-key**(새로 만들어진 키 이름 포함)
 
 5. stunnel 설치 경로에서 config 디렉터리를 엽니다. 기본 경로는 c:\Program Files (x86)\stunnel\config\입니다.
 6. 관리자 권한으로 명령줄을 실행합니다. `..\bin\openssl.exe genrsa -out key.pem 2048 `
@@ -110,7 +108,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
     ![Windows Server 구성 편집](./media/stunnel-windows.png)
  
-12. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 또한 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음을 파일에 복사합니다.
+12. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다. **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다. 배치된 예제 텍스트를 모두 삭제하고(예제에서는 Gmail 텍스트를 표시함) 다음 텍스트를 파일에 복사합니다.
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -128,11 +126,12 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
 
 다른 서버 사용 병렬 명령에 대해 루트 사용자로 서명된 경우 다음 예제는 Ubuntu 서버 설치를 기반으로 합니다. 
 
-stunnel 및 OpenSSL을 둘 다 설치할 Ubuntu 서버에서 다음 명령을 실행하여 준비된 서버에서 최신 버전의 stunnel을 다운로드하여 설치합니다.
+준비된 서버에서 최신 버전의 stunnel을 다운로드하여 설치합니다. stunnel 및 OpenSSL을 둘 다 설치하려면 Ubuntu 서버에서 다음 명령을 실행합니다.
 
     apt-get update
     apt-get install openssl -y
     apt-get install stunnel4 -y
+
 콘솔에서 다음 명령을 실행하여 stunnel이 설치되는지 확인합니다. 버전 번호 및 구성 옵션 목록을 확인해야 합니다.
 
     stunnel-version
@@ -142,8 +141,8 @@ stunnel 및 OpenSSL을 둘 다 설치할 Ubuntu 서버에서 다음 명령을 �
 ICAP 서버 및 Cloud App Security에서는 stunnel을 통해 서버 암호화 및 인증에 개인 키 및 공용 인증서를 사용합니다. stunnel이 백그라운드 서비스로 실행될 수 있도록 암호 없이 개인 키를 만들어야 합니다. 또한 파일에 대한 사용 권한을 **읽기 가능**(stunnel 소유자의 경우) 및 **없음**(다른 모든 사용자의 경우)으로 설정합니다.
 
 다음 방법 중 하나로 인증서를 만들 수 있습니다.
--   인증서 관리 서버를 사용하여 ICAP 서버에서 SSL 인증서를 만들고 나서 stunnel 설치를 준비한 서버에 키를 복사합니다. 
--   또는 stunnel 서버에서 다음 OpenSSL 명령을 사용하여 개인 키 및 자체 서명된 인증서를 생성합니다. 다음 변수를 바꿉니다.
+- 인증서 관리 서버를 사용하여 ICAP 서버에 SSL 인증서를 만듭니다. 그런 다음, stunnel 설치를 위해 준비한 서버에 키를 복사합니다. 
+- 또는 stunnel 서버에서 다음 OpenSSL 명령을 사용하여 개인 키 및 자체 서명된 인증서를 생성합니다. 다음 변수를 바꿉니다.
     - **“key.pem”**(개인 키 이름 포함)
     - **“cert.pem”**(인증서 이름 포함)
     - **“stunnel-key”**(새로 만들어진 키 이름 포함)
@@ -162,7 +161,7 @@ stunnel 구성은 stunnel.conf 파일에서 설정됩니다.
 
 1. **vim /etc/stunnel/stunnel.conf** 디렉터리에서 stunnel.conf 파일을 만듭니다.
 
-3.  파일을 열고 다음 서버 구성 줄을 붙여넣습니다. 여기서 **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다.
+2. 파일을 열고 다음 서버 구성 줄을 붙여넣습니다.  **DLP Server IP**는 ICAP 서버의 IP 주소이고, **stunnel-key**는 이전 단계에서 만든 키이고, **MCASCAfile**은 Cloud App Security stunnel 클라이언트의 공용 인증서입니다.
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -185,19 +184,19 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
  
 
 ### <a name="run-stunnel"></a>stunnel 실행
-1.  stunnel 서버에서 다음을 실행합니다.
+1. stunnel 서버에서 다음 명령을 실행합니다.
 
         vim /etc/default/stunnel4
 
-2.  변수 ENABLED를 1로 변경합니다.
+2. 변수 ENABLED를 1로 변경합니다.
 
         ENABLED=1
 
-3.  구성을 적용하려면 서비스를 다시 시작합니다.
+3. 구성을 적용하려면 서비스를 다시 시작합니다.
 
         /etc/init.d/stunnel4 restart
 
-4.  다음 명령을 실행하여 stunnel이 제대로 실행 중인지 확인합니다.
+4. 다음 명령을 실행하여 stunnel이 제대로 실행 중인지 확인합니다.
 
         ps -A | grep stunnel
 
@@ -205,7 +204,7 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 
         netstat -anp | grep 11344
 
-5. stunnel 서버가 배포된 네트워크가 앞에서 설명한 대로 네트워크 필수 구성 요소와 일치하는지 확인합니다. Cloud App Security에서 들어오는 연결이 서버에 성공적으로 도달하려면 이 작업이 필요합니다.
+5. stunnel 서버가 배포된 네트워크가 앞에서 설명한 대로 네트워크 필수 구성 요소와 일치하는지 확인합니다. Cloud App Security에서 들어오는 연결이 서버에 성공적으로 도달되도록 하기 위해 이 작업이 필요합니다.
 
 프로세스가 실행되고 있지 않으면 [stunnel 설명서](https://www.stunnel.org/docs.html)를 참조하여 문제를 해결하세요.
 
@@ -219,23 +218,23 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 3. **Add new external DLP**(새 외부 DLP 추가) 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
 
 4. **연결 형식**을 선택합니다.
-    - **Symantec Vontu** – Vontu DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
-    - **Forcepoint DLP** – Forcepoint DLP 어플라이언스에 사용자 지정 통합을 사용하려면 선택합니다.
-    - **Generic ICAP – REQMOD**(일반 ICAP – REQMOD) - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
-    - **Generic ICAP – RESPMOD**(일반 Generic ICAP – RESPMOD) - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스의 경우 선택합니다.
+    - **Symantec Vontu** – Vontu DLP 어플라이언스에 사용자 지정 통합을 사용합니다.
+    - **Forcepoint DLP** – Forcepoint DLP 어플라이언스에 사용자 지정 통합을 사용합니다.
+    - **Generic ICAP – REQMOD** - [요청 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스를 사용합니다.
+    - **Generic ICAP – RESPMOD** - [응답 수정](https://tools.ietf.org/html/rfc3507)을 사용하는 다른 DLP 어플라이언스를 사용합니다.
     ![Cloud App Security ICAP 연결](./media/icap-wizard1.png)
 
-5. 이전 단계에서 생성한 공용 인증서를 찾아서 선택하고 “cert.pem”을 stunnel에 연결한 후 **다음**을 클릭합니다.
+5. 이전 단계에서 생성한 공용 인증서인 “cert.pem”을 찾아서 stunnel에 연결합니다. **다음**을 클릭합니다.
 
    > [!NOTE]
-   > 암호화된 stunnel 게이트웨이를 설정하려면 **Use secure ICAP**(보안 ICAP 사용) 상자를 선택하는 것이 좋습니다. 테스트 목록이거나 stunnel 서버가 없는 경우 이 확인란을 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
+   > 암호화된 stunnel 게이트웨이를 설정하려면 **Use secure ICAP**(보안 ICAP 사용) 상자를 선택하는 것이 좋습니다. 테스트 목적이거나 stunnel 서버가 없는 경우 이 상자를 선택 취소하여 DLP 서버와 직접 통합할 수 있습니다. 
 
 5. **서버 구성** 화면에서, 2단계에서 설정한 stunnel 서버의 **IP 주소** 및 **포트**를 제공합니다. 부하 분산 목적으로 추가 서버의 **IP 주소** 및 **포트**를 구성할 수 있습니다. 제공된 IP 주소는 서버의 외부 정적 IP 주소여야 합니다.
 
    ![Cloud App Security ICAP 연결](./media/icap-wizard2.png)
 6. **다음**을 클릭합니다. Cloud App Security에서는 구성한 서버에 대한 연결을 테스트합니다. 오류가 표시되면 지침 및 네트워크 설정을 검토합니다. 성공적으로 연결된 후 **끝내기**를 클릭할 수 있습니다.
 
-7. 이제 트래픽을 이 외부 DLP 서버로 전송하려면 **파일 정책**을 만들 때 **콘텐츠 검사 방법**에서 방금 만든 연결을 선택합니다. 자세한 내용은 [파일 정책 만들기](data-protection-policies.md)를 참조하세요.
+7. 이제 트래픽을 이 외부 DLP 서버로 전송하려면 **파일 정책**을 만들 때 **콘텐츠 검사 방법**에서 만든 연결을 선택합니다. 자세한 내용은 [파일 정책 만들기](data-protection-policies.md)를 참조하세요.
 
 
 ## 부록 A: ForcePoint ICAP 서버 설정 <a name="forcepoint"></a>
@@ -318,7 +317,7 @@ Vontu에 구성 변경 내용 추가:
 > Symantec vontu를 사용하여 Dropbox의 파일을 검색하는 경우 CAS는 자동으로 파일이 URL http://misc/filename에서 시작된 것으로 표시합니다. 이 자리 표시자 URL은 실제로 어디로도 이동하지 않지만, 로깅 목적으로 사용됩니다.
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

@@ -1,11 +1,11 @@
 ---
 title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 G Suite 연결 | Microsoft 문서
-description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
-ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
+ms.openlocfilehash: e5d70f17437e2fb195fdc1555340dc29f8cfb436
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51285846"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596935"
 ---
+# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
+
 *적용 대상: Microsoft Cloud App Security*
 
-# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
-이 섹션에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.
-  
-  
+이 문서에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.
+    
 ## <a name="configure-g-suite"></a>G Suite 구성  
   
 1. G Suite 슈퍼 관리자로 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>에 로그인합니다.  

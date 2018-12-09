@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security의 API 토큰 관리 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security용 API 토큰을 생성하는 방법을 설명합니다.
+description: 이 문서에서는 Cloud App Security용 API 토큰을 생성하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 772c140ac178f65f1d558c69b732de6925ce0d51
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 849669dc659d3abfb4787d3a94edadc170db485e
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349494"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597071"
 ---
+# <a name="api-tokens"></a>API 토큰
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="api-tokens"></a>API 토큰
-    
 Microsoft Cloud App Security API에서는 REST API 엔드포인트를 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
 
 - Cloud Discovery에 대한 로그 파일 업로드
@@ -76,7 +75,7 @@ API 토큰 페이지에는 생성된 모든 API 토큰 표가 포함됩니다.
 
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

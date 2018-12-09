@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,57 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 682d3e7a988e7662f393b20296322ee590d85315
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143210"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943704"
 ---
+# <a name="email-notification-preferences"></a>이메일 알림 기본 설정
+
 *적용 대상: Microsoft Cloud App Security*
 
+이 문서에서는 Cloud App Security에서 보낸 메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다.
 
-##  <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
+## <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
 
-Microsoft Cloud App Security에서 경고를 요청하는 관리자에게 보내는 메일 알림 및 관련 위반에 대해 최종 사용자에게 보내는 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Microsoft Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요. 
+ Microsoft Cloud App Security는 경고를 요청하는 관리자 및 위반에 관련된 최종 사용자에게 이메일 알림을 보냅니다. 이메일 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Microsoft Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요.
 
-
-1. 메뉴 모음에서 설정 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")을 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
+1. 메뉴 모음에서 설정 코그를 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
 
    ![메일 설정](./media/mail-settings-config.png)
 
-2. **메일 보낸 사람 ID**에서: 기본 메일 설정을 사용하려면 이 섹션의 내용을 변경할 필요가 없습니다. 이메일 보낸 사람 ID를 사용자 지정하려는 경우 여기에서 설정을 지정하여 변경할 필드를 사용자 지정할 수 있습니다. **표시 이름에서**, **이메일 주소에서**, **회신 이메일 주소** 중 하나 또는 모두를 변경할 수 있습니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그러지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
-   
+2. **이메일 보낸 사람 ID**에서: 기본 이메일 설정을 사용하려는 경우 이 섹션의 내용을 변경할 필요가 없습니다. 이메일 보낸 사람 ID를 사용자 지정하려는 경우 여기에서 설정을 지정하여 변경할 필드를 사용자 지정할 수 있습니다. **표시 이름에서**, **이메일 주소에서**, **회신 이메일 주소** 항목 중 일부 또는 모두를 변경할 수 있습니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자 지정 작업을 수행합니다. 사용자 지정을 사용하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그렇지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
+ 
    > [!NOTE]
    > [rfc822 표준](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
 
   
-3. **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음이 포함되어야 합니다.  
+3. **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음 사항이 포함되어야 합니다.  
   
-   -   모든 템플릿 CSS 파일은 템플릿에 인라인으로 포함되어야 합니다.  
+   - 모든 템플릿 CSS 파일은 템플릿에 인라인으로 포함되어야 합니다.  
   
-   -   템플릿에 편집할 수 없는 다음 세 개의 자리 표시자가 있어야 합니다.  
+   - 템플릿에 편집할 수 없는 다음 3개의 자리 표시자가 있어야 합니다.  
   
-        %%logo%% - 일반 설정 페이지에서 업로드된 회사 로고의 URL  
+        - **%%logo%%** - 일반 설정 페이지에서 업로드된 회사 로고의 URL입니다.  
   
-        %%title%% - 정책에 의해 설정된 메일 제목의 자리 표시자  
+        - **%%title%%** - 정책에 의해 설정된 이메일 제목의 자리 표시자입니다.  
 
-        %%content%% - 정책에 의해 설정된 최종 사용자에 대해 포함할 콘텐츠의 자리 표시자  
-     
+        - **%%content%%** - 정책에 의해 설정된 최종 사용자에 대해 포함할 콘텐츠의 자리 표시자입니다.  
+
 4. **템플릿 업로드...** 를 클릭하고 만든 파일을 선택합니다. 
 
-5. **테스트 전자 메일 보내기**를 클릭하여 자신에게 테스트 메일을 보낸 다음 직접 만든 템플릿의 예를 확인합니다. 포털에 로그인할 때 사용한 계정으로 메일이 전송됩니다. 테스트 메일에서 메타데이터 필드, 템플릿, 메일 제목, 메일 본문의 제목 및 콘텐츠를 볼 수 있습니다.  다음은 샘플 메일 템플릿입니다. 
+5. **테스트 이메일 보내기**를 클릭하여 직접 만든 템플릿의 예를 이메일로 보내주세요. 포털에 로그인할 때 사용한 계정으로 메일이 전송됩니다. 테스트 이메일에서 다음 항목을 보고 확인합니다.
+    - 메타데이터 필드
+    - 템플릿
+    - 이메일 제목
+    - 이메일 본문의 제목
+    - 콘텐츠
 
+## <a name="sample-email-template"></a>샘플 이메일 템플릿
 
+다음은 샘플 이메일 템플릿입니다.
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -108,15 +117,10 @@ Microsoft Cloud App Security에서 경고를 요청하는 관리자에게 보내
           </table>  
             </body>  
           </html>  
-   ```
-  
+```
 
-  
-  
+## <a name="next-steps"></a>다음 단계
 
-  
-    
-## <a name="see-also"></a>참고 항목  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

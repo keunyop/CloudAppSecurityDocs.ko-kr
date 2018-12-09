@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596816"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743644"
 ---
 # <a name="use-a-custom-log-parser"></a>사용자 지정 로그 파서 사용
 
 *적용 대상: Microsoft Cloud App Security*
 
-Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud Discovery에 사용할 수 있습니다. 일반적으로 방화벽 또는 장치가 Cloud App Security에서 명시적으로 지원되지 않은 경우 사용자 지정 파서를 사용합니다. 
+Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud Discovery에 사용할 수 있습니다. 일반적으로 방화벽 또는 장치가 Cloud App Security에서 명시적으로 지원되지 않은 경우 사용자 지정 파서를 사용합니다. 이 경우 CSV 파서 또는 사용자 지정 키 값 파서가 될 수 있습니다.
 
 사용자 지정 파서를 통해 이 프로세스에 따라 지원되지 않는 방화벽에서 생성된 로그를 사용할 수 있습니다. 
 
 
  
-사용자 지정 CSV 파서를 구성하려면:
+사용자 지정 파서를 구성하려면:
 1. Cloud App Security 포털에서 **검색**, **새 스냅숏 보고서 만들기**를 차례로 클릭합니다.  
   
    ![새 스냅숏 보고서 만들기](./media/create-new-snapshot-report.png)
@@ -55,7 +55,7 @@ Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도
    ![사용자 지정 로그 파서](./media/custom-log-parser.png) 
 
 
-7. **Save**을 클릭합니다. 구성한 사용자 지정 로그 형식은 기본 사용자 지정 파서로 저장됩니다. 언제든지 [편집]을 클릭하여 편집할 수 있습니다.
+7. **Save**을 클릭합니다. 구성한 사용자 지정 로그 형식은 기본 사용자 지정 파서로 저장됩니다. 언제든지 **편집**을 클릭하여 편집할 수 있습니다.
 
 8. **트래픽 로그 선택**에서 수정한 로그 파일을 선택하고 업로드합니다. 한 번에 최대 20개 파일을 업로드할 수 있습니다. 압축된 파일도 지원됩니다.  
   

@@ -1,11 +1,11 @@
 ---
 title: 클라우드 앱 활동 보기 | Microsoft 문서
-description: 이 항목에서는 활동 정책에 적용할 수 있는 활동, 필터 및 일치 매개 변수 목록을 제공합니다.
+description: 이 문서에서는 활동 정책에 적용할 수 있는 활동, 필터 및 일치 매개 변수 목록을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: ed2628a18eaa777b8ad849cf2cc9f4417589685c
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349460"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743525"
 ---
+# <a name="activities"></a>활동
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="activities"></a>활동
 Microsoft Cloud App Security에서는 연결된 앱의 모든 활동을 파악할 수 있습니다. 앱 커넥터를 사용해 앱에 Cloud App Security를 연결하면 Cloud App Security에서 수행된 모든 활동이 검색됩니다. 소급 검색 기간은 앱에 따라 다르며 계속 새 활동으로 업데이트됩니다. 
 
 > [!NOTE] 
@@ -122,7 +122,9 @@ IP 주소 정보를 보려면:
 
 모든 사용자 활동을 CSV 파일로 내보낼 수 있습니다. 
 
-**활동 로그**에서 오른쪽 위 모서리에 있는 **내보내기** 단추를 클릭합니다. ![내보내기 단추](./media/export-button.png)
+**활동 로그**에서 오른쪽 위 모서리에 있는 **내보내기** 단추를 클릭합니다.
+
+ ![내보내기 단추](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

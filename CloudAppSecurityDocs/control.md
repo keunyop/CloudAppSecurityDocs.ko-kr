@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ad88c9d224426a73687ae972a58617ae5800221a
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217342"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597088"
 ---
+# <a name="control"></a>컨트롤
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="control"></a>컨트롤
 클라우드 환경 전체의 사용자 파일에 거버넌스 작업을 적용할 수 있습니다. 클라우드를 철저하게 조사하고 알아본 후에는 거버넌스 작업을 사용하여 조직을 보호할 수 있습니다.  
 
 ## <a name="use-policies-to-assess-risk"></a>정책을 사용하여 위험 평가  
@@ -54,9 +54,9 @@ ms.locfileid: "50217342"
 ## <a name="apply-governance-actions"></a>거버넌스 작업 적용  
 정책 내, 내부 경고 및 **파일** 로그에서 거버넌스 작업을 적용할 수 있습니다.  
 
-언제든지 **설정** 코그 ![설정 아이콘](./media/settings-icon.png "설정 아이콘")로 이동하고 **거버넌스 로그**를 선택하여 이전에 적용된 모든 거버넌스 작업의 상태를 검토하고 확인할 수 있습니다.  
+언제든지 **설정** 코그로 이동하여 **거버넌스 로그**를 선택하여 이전에 적용된 모든 거버넌스 작업의 상태를 검토하고 확인할 수 있습니다. ![설정 아이콘](./media/settings-icon.png "설정 아이콘")
 
-실패한 거버넌스 작업의 경우 **재시도** 아이콘 ![재시도 아이콘](./media/retry-icon.png "재시도 아이콘")을 선택하여 다시 적용합니다.  
+실패한 거버넌스 작업의 경우 **다시 시도** 아이콘을 선택하여 다시 적용합니다. ![다시 시도 아이콘](./media/retry-icon.png "다시 시도 아이콘")   
 
 정책, 위반 및 앱 유형에 따라 다양한 거버넌스 작업을 사용할 수 있습니다.  
 
@@ -84,7 +84,7 @@ Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알�
 
    1. **클라우드 검색 대시보드**에서 **Dropbox**를 선택한 다음 **IP 주소** 또는 **사용자** 탭을 선택합니다.  
 
-   2. **내보내기** 화살표 아이콘 ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")을 선택하고 내보내기 옵션을 선택합니다.  
+   2. **내보내기** 화살표 아이콘을 선택하고 내보내기 옵션을 선택합니다. ![화살표 아이콘](./media/arrow-icon.png "화살표 아이콘")
 
 ### <a name="find-more-secure-alternatives"></a>더 안전한 대안 찾기  
 Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 수 있는 위험한 응용 프로그램 대신 조직에 적합한 대안을 찾을 수 있습니다.  

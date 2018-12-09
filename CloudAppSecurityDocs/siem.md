@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security와 SIEM 통합 | Microsoft 문서
-description: 이 항목에서는 SIEM과 Cloud App Security의 통합에 대한 정보를 제공합니다.
+description: 이 문서에서는 SIEM과 Cloud App Security의 통합에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/19/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2744ea7ec15bd216a73aa332d530e9422463e401
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fbb9790307d2fd069e876438fa660300053be64a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143533"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743423"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
 # <a name="siem-integration"></a>SIEM 통합
 
-이제 연결된 앱의 경고와 활동을 중앙에서 모니터링할 수 있도록 Microsoft Cloud App Security를 SIEM 서버와 통합할 수 있습니다. 새 활동 및 이벤트가 연결된 앱에서 지원되므로 Microsoft Cloud App Security에도 표시됩니다. SIEM 서비스와 통합하면 일반적인 보안 워크플로를 유지 관리하고, 보안 절차를 자동화하고, 클라우드 기반 이벤트와 온-프레미스 이벤트를 상호 연결하여 클라우드 응용 프로그램을 더 잘 보호할 수 있습니다. Microsoft Cloud App Security SIEM 에이전트는 서버에서 실행되며 Microsoft Cloud App Security에서 경고와 활동을 가져와서 SIEM 서버로 스트리밍합니다.
+*적용 대상: Microsoft Cloud App Security*
 
-먼저 SIEM을 Cloud App Security와 통합하면 지난 2일 동안의 활동과 경고가 SIEM에 전달되고, 그 이후부터 모든 활동 및 경고(선택한 필터 기반)가 전달됩니다. 또한 장기간 이 기능을 사용하지 않도록 설정한 경우 다시 사용하도록 설정하면 지난 2일간의 경고와 활동을 전달한 다음 그 이후부터 모든 경고와 활동을 전달합니다.
+연결된 앱의 경고와 활동을 중앙에서 모니터링할 수 있도록 Microsoft Cloud App Security를 SIEM 서버와 통합할 수 있습니다. 새 활동 및 이벤트가 연결된 앱에서 지원되므로 Microsoft Cloud App Security에도 표시됩니다. SIEM 서비스와 통합하면 일반적인 보안 워크플로를 유지 관리하고, 보안 절차를 자동화하고, 클라우드 기반 이벤트와 온-프레미스 이벤트를 상호 연결하여 클라우드 애플리케이션을 더 잘 보호할 수 있습니다. Microsoft Cloud App Security SIEM 에이전트는 서버에서 실행되며 Microsoft Cloud App Security에서 경고와 활동을 가져와서 SIEM 서버로 스트리밍합니다.
+
+먼저 SIEM을 Cloud App Security와 통합하면 지난 2일 동안의 활동과 경고가 SIEM에 전달되고, 그 이후부터 모든 활동 및 경고(선택한 필터 기반)가 전달됩니다. 장기간 이 기능을 사용하지 않도록 설정한 경우 다시 사용하도록 설정하면 지난 2일간의 경고와 활동을 전달한 다음, 그 이후부터 모든 경고와 활동을 전달합니다.
 
 ## <a name="siem-integration-architecture"></a>SIEM 통합 아키텍처
 
 SIEM 에이전트가 조직의 네트워크에 배포됩니다. 배포 및 구성되면 Cloud App Security RESTful API를 사용하여 구성된 데이터 유형(경고 및 활동)을 끌어옵니다.
 그러면 트래픽이 포트 443의 암호화된 HTTPS 채널을 통해 전송됩니다.
 
-SIEM 에이전트가 Cloud App Security에서 데이터를 검색하면 설정 중에 제공된 네트워크 구성(사용자 지정 포트가 있는 UDP 또는 TCP)을 사용하여 로컬 SIEM으로 Syslog 메시지를 전송합니다. 
+SIEM 에이전트가 Cloud App Security에서 데이터를 검색하면 SIEM으로 Syslog 메시지를 보냅니다. Cloud App security는 설정 중에 제공한 네트워크 구성(TCP 또는 사용자 지정이 있는 UDP)을 사용합니다. 
 
 ![SIEM 통합 아키텍처](./media/siem-architecture.png)
 
@@ -64,7 +64,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>1단계: Cloud App Security 포털에서 설정합니다.
 
-1. Cloud App Security 포털의 [설정] 코그 아래에서 **보안 확장**을 클릭하고 나서 **SIEM 에이전트** 탭을 클릭합니다.
+1. Cloud App Security 포털의 [설정] 코그 아래에서 보안 확장을 클릭한 다음, **SIEM 에이전트** 탭을 클릭합니다.
 
 2. 더하기 아이콘을 클릭하여 **SIEM 에이전트 추가** 마법사를 시작합니다.
 3. 마법사에서 **마법사 시작**을 클릭합니다.   
@@ -79,15 +79,15 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
    ![원격 Syslog 설정](./media/siem2.png)
 
-6. SIEM 서버로 내보낼 데이터 형식, **경고** 및 **활동**을 선택합니다. 
+6. **경고** 및 **활동**에 대해 SIEM 서버로 내보낼 데이터 형식을 선택합니다. 
    슬라이더를 사용하여 사용 여부를 설정합니다. 기본적으로 모든 항목이 선택되어 있습니다. **적용 대상** 드롭다운을 사용하여 특정 경고와 활동만 SIEM 서버로 보내도록 필터를 설정할 수 있습니다.
-   **Edit and preview results**(결과 편집 및 미리 보기)를 클릭하여 필터가 예상대로 작동하는지 확인할 수 있습니다. 
+   **결과 편집 및 미리 보기**를 클릭하여 필터가 예상대로 작동하는지 확인합니다. 
    **다음**을 클릭합니다. 
 
    ![데이터 형식 설정](./media/siem3.png)
 
 7. 토큰을 복사하고 나중을 위해 저장합니다. 
-   Finish(마침)를 클릭하고 마법사를 나와 SIEM 페이지로 돌아가면 추가한 SIEM 에이전트가 테이블에 표시됩니다. 나중에 연결될 때까지 **Created**(만들어짐) 상태로 표시됩니다.
+   마침을 클릭하고 마법사를 종료합니다. 테이블에 추가한 SIEM 에이전트를 보려면 SIEM 페이지로 돌아갑니다. 나중에 연결될 때까지 **Created**(만들어짐) 상태로 표시됩니다.
 
 > [!NOTE]
 > 사용자가 만든 모든 토큰은 해당 토큰을 만든 관리자에게 바인딩됩니다. 즉, Cloud App Security에서 관리 사용자가 제거되면 토큰이 더 이상 유효하지 않게 됩니다.
@@ -133,7 +133,9 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 ```
-경고 로그 파일 예제도 있습니다.
+
+다음 텍스트는 경고 로그 파일 예제입니다.
+
 ```
 2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7
 
@@ -160,7 +162,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 | 활동/경고 |  destinationServiceName  |                  활동 또는 경고가 시작되는 앱(예: Office 365, Sharepoint, Box)                   |
 | 활동/경고 |        cs<X>Label        |        각 레이블에는 다른 의미가 있지만 레이블 자체가 그 의미를 설명합니다(예: targetObjects).        |
 | 활동/경고 |          cs<X>           | 레이블에 해당하는 정보입니다(레이블 예에 따른 활동 또는 경고의 대상 사용자). |
-|    활동     |     EVENT_CATEGORY_*     |                                       활동의 상위 범주                                       |
+|    활동     |     EVENT_CATEGORY_*     |                                       활동의 상위 수준 범주                                       |
 |    활동     |         <ACTION>         |                                  포털에 표시된 활동 유형                                  |
 |    활동     |        externalId        |                                                    이벤트 ID                                                     |
 |    활동     |           dvc            |                                             클라이언트 장치의 IP                                             |
@@ -171,7 +173,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>3단계: SIEM 에이전트가 제대로 작동하는지 확인합니다.
 
-1. Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오류** 또는 **연결 끊김**이 아닌지, 에이전트 알림이 없는지를 확인합니다. 연결이 2시간 이상 동안 끊어진 경우 **연결 오류**로 표시되고, 12시간 이상 끊어진 경우 **연결 끊김**으로 표시됩니다.
+1. Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오류** 또는 **연결 끊김**이 아닌지, 에이전트 알림이 없는지를 확인합니다. 연결이 2시간을 초과하여 다운되면 **연결 오류**로 표시됩니다. 연결이 12시간 이상 다운되면 **연결 끊김**으로 표시됩니다.
  ![SIEM 연결 끊김](./media/siem-not-connected.png)
 
    대신 상태는 ![SIEM connected](./media/siem-connected.png)(SIEM 연결됨)와 같이 연결된 상태여야 합니다.
@@ -180,17 +182,20 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 
 ## <a name="regenerating-your-token"></a>토큰 다시 생성
-토큰이 손실된 경우, 테이블에서 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하고 **Regenerate token**(토큰 다시 생성)을 선택하여 언제든 토큰을 다시 생성할 수 있습니다.
+
+토큰이 손실된 경우, 테이블의 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하여 언제든 토큰을 다시 생성할 수 있습니다. **토큰 다시 생성**을 선택하여 새 토큰을 가져옵니다.
 
  ![SIEM - 토큰 다시 생성](./media/siem-regenerate-token.png)
 
-## <a name="editing-your-siem-agent"></a>SIEM 에이전트 편집 
-나중에 SIEM 에이전트를 편집해야 하는 경우 테이블에서 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하고 **Edit**(편집)을 선택합니다. SIEM 에이전트를 편집하는 경우 .jar 파일은 자동으로 업데이트되므로 다시 실행할 필요가 없습니다.
+## <a name="editing-your-siem-agent"></a>SIEM 에이전트 편집
+
+SIEM 에이전트를 편집하려면 테이블의 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하고 **편집**을 선택합니다. SIEM 에이전트를 편집하는 경우 .jar 파일은 자동으로 업데이트되므로 다시 실행할 필요가 없습니다.
 
 ![SIEM - 편집](./media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>SIEM 에이전트 삭제
-나중에 SIEM 에이전트를 삭제해야 하는 경우 테이블에서 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하고 **Delete**(삭제)을 선택합니다.
+
+SIEM 에이전트를 삭제하려면 테이블의 SIEM 에이전트에 대한 행의 끝에 있는 점 세 개를 클릭하고 **삭제**를 선택합니다.
 
 ![SIEM - 삭제](./media/siem-delete.png)
 
@@ -199,7 +204,8 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
+  
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

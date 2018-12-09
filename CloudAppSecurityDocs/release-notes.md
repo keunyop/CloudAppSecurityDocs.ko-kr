@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,43 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745751"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743695"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+## <a name="cloud-app-security-release-137"></a>Cloud App Security 릴리스 137
+
+2018년 11월 25일 출시됨
+
+-   **Dynamics에 대한 지원 추가**<br>
+이제 Cloud App Security에는 Office 365 감사 로그에서 지원되는 Microsoft Dynamics 활동에 대한 지원이 포함됩니다. 
+-   **암호화된 콘텐츠 검사(미리 보기)**<br>
+이제 Cloud App Security를 통해 Azure Information Protection 보호 레이블로 보호되는 콘텐츠를 검사할 수 있습니다. 이렇게 하면 Azure Information Protection에 의해 이미 암호화된 파일에서도 중요한 콘텐츠를 찾을 수 있습니다. 
+-   **참고 사항 – 새 용어!**<br>
+앱 사용 권한 기능의 이름이 쉽게 구별될 수 있도록 변경되었습니다. 지금은 **OAuth 앱**이라고 합니다. 
+
+## <a name="cloud-app-security-release-136"></a>Cloud App Security 릴리스 136
+
+2018년 11월 11일 출시됨
+
+
+- **Cloud Discovery 업데이트**<br>
+사용자 지정 로그 파서는 추가적인 더 복잡한 웹 트래픽 로그 형식을 지원하도록 향상되었습니다. 이러한 향상된 기능의 일부로 사용자는 이제 헤더 없는 CSV 로그 파일에 대한 사용자 지정 헤더를 입력하고, 키-값 파일에 대한 특수 구분 기호를 사용하고, Syslog 파일 형식 등을 처리할 수 있습니다.
+- **새 변칙 검색 정책**<br>
+의심스러운 받은 편지함 조작 규칙: 이 정책은 사용자 환경을 프로파일링하고 메시지나 폴더를 삭제하거나 이동하는 의심스러운 규칙이 사용자의 받은 편지함에 설정된 경우 경고를 트리거합니다. 이는 사용자 계정이 손상되었으며, 메시지가 의도적으로 숨겨져 있으며, 조직에 스팸 또는 맬웨이를 배포하는 데 사서함이 사용되고 있음을 나타낼 수 있습니다.
+- **앱 사용 권한 정책의 그룹 지원**<br>
+Cloud App Security는 이제 앱 권한이 있는 사용자의 그룹 멤버 자격을 기반으로 앱 사용 권한 정책을 보다 세밀하게 정의할 수 있는 기능을 제공합니다. 예를 들어, 관리자는 권한이 있는 사용자가 관리자 그룹의 구성원인 경우에만 높은 권한을 요청할 때 일반적이지 않은 앱을 취소하는 정책을 설정할 수 있습니다.
+- **이제 Azure Active Directory 애플리케이션 프록시를 통해 조건부 액세스 앱 제어와 온-프레미스 앱 통합**
+  - [Azure AD 애플리케이션 프록시](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)는 온-프레미스에서 호스트되는 웹앱에 대한 Single Sign-On 및 보안 원격 액세스를 제공합니다.
+  - 이러한 온-프레미스 웹앱은 이제 Azure AD 조건부 액세스를 통해 Microsoft Cloud App Security로 라우팅하여 [액세스](access-policy-aad.md) 및 [세션](session-policy-aad.md) 정책을 통해 실시간 모니터링 및 제어 기능을 제공할 수 있습니다.
 
 
 ## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security 릴리스 133, 134, 135
@@ -73,7 +99,7 @@ ms.locfileid: "50745751"
 Microsoft 365 제품에서 더 일관된 관리자 환경을 제공하고 Microsoft 보안 솔루션 간에 더 쉽게 피벗할 수 있게 하려고 Cloud App Security 포털 메뉴 모음이 화면의 왼쪽으로 이동되었습니다. 이 일관된 탐색 환경은 한 Microsoft 보안 포털에서 다른 Microsoft 보안 포털로 이동할 때 자기 위치를 알 수 있게 도와줍니다.
 
 - **OAuth 앱 점수에 영향 주기**<br>
-이제 조직에서 검색된, 악성인 것 같은 OAuth 앱이 있는지를 알려주는 피드백을 Cloud App Security 팀으로 보낼 수 있습니다. 이 새로운 기능을 사용하여 보안 커뮤니티의 일원이 되고 OAuth 앱 위험 점수 및 분석을 향상할 수 있습니다. 자세한 내용은 [앱 사용 권한 관리](manage-app-permissions.md)를 참조하세요.
+이제 조직에서 검색된, 악성인 것 같은 OAuth 앱이 있는지를 알려주는 피드백을 Cloud App Security 팀으로 보낼 수 있습니다. 이 새로운 기능을 사용하여 보안 커뮤니티의 일원이 되고 OAuth 앱 위험 점수 및 분석을 향상할 수 있습니다. 자세한 내용은 [앱 permiOAuth appsssions 관리](manage-app-permissions.md)를 참조하세요.
 
 - **새 Cloud Discovery 파서**<br>
 이제 Cloud Discovery 파서가 iboss Secure Cloud Gateway 및 Sophos XG를 지원합니다.
@@ -90,8 +116,8 @@ Microsoft 365 제품에서 더 일관된 관리자 환경을 제공하고 Micros
 
 릴리스 날짜: 2018년 7월 22일
 
--   **여러 앱에서 앱 권한 작업**<br>
-앱 권한이 부여된 앱에 대해 한 번에 여러 앱을 금지하거나 승인할 수 있습니다. 예를 들어 조직의 사용자가 권한을 부여한 모든 앱을 검토하고, 금지하려는 모든 앱을 선택한 다음, 앱 금지를 클릭하고 부여된 모든 동의를 취소하여 사용자가 해당 앱에 대한 권한을 더 이상 부여할 수 없도록 할 수 있습니다.  자세한 내용은 [앱 권한 관리](manage-app-permissions.md)를 참조하세요.
+-   **여러 앱에서 OAuth 앱 작업**<br>
+앱 권한이 부여된 OAuth 앱의 경우 한 번의 작업으로 여러 앱을 금지하거나 승인할 수 있습니다. 예를 들어 조직의 사용자가 권한을 부여한 모든 앱을 검토하고, 금지하려는 모든 앱을 선택한 다음, 앱 금지를 클릭하고 부여된 모든 동의를 취소하여 사용자가 해당 앱에 대한 권한을 더 이상 부여할 수 없도록 할 수 있습니다.  자세한 내용은 [OAuth 앱 관리](manage-app-permissions.md)를 참조하세요.
 -   **Azure 응용 프로그램에 대한 지원 향상**<br>
 Azure의 경우 Azure 응용 프로그램(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 응용 프로그램을 검색하는 기능이 점차적으로 출시되고 있습니다. 이를 통해 응용 프로그램에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
 -   **새로운 GDPR 감지 유형으로 데이터 분류 엔진 업데이트**<br>

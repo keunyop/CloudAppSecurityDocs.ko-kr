@@ -1,11 +1,11 @@
 ---
 title: 클라우드 앱 계정 보기 | Microsoft 문서
-description: 이 항목의 내용
+description: 이 문서에서는 연결된 앱에서 계정을 검토하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06662cea3c0712fb26f6afdab1e83ab330b076e1
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 7785b9ea4e9f9d6dbc164ec7636e4f7a8ec79121
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349545"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596697"
 ---
+# <a name="accounts"></a>계정
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="accounts"></a>계정
 Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 연결된 앱과 관련된 계정 정보를 읽습니다. [계정] 페이지에서 해당 계정, 사용 권한, 계정이 속한 그룹, 계정 별칭 및 사용하는 앱을 조사할 수 있습니다. 또한 Cloud App Security가 활동이나 파일 공유 등의 연결된 앱 중 하나에서 이전에 보이지 않던 새 계정을 검색하는 경우 이 계정이 해당 앱의 계정 목록에 추가됩니다. 따라서 클라우드 앱을 조작하는 외부 사용자의 활동을 파악할 수 있습니다.
 
 관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. **사용자 및 계정** 페이지는 연결된 클라우드 응용 프로그램에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.

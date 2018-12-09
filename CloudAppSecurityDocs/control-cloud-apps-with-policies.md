@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security에서 정책을 만들어 클라우드 앱 사용 제어 | Microsoft 문서
-description: 이 항목에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 24b3148a5de7e0367076b740242a583f68e4856f
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: a1d79ec9dffe5e0b60a71106d4b4907ed8c5ee0d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217359"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597122"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
+
+*적용 대상: Microsoft Cloud App Security*
 
 정책을 사용하면 사용자가 클라우드에서 동작하게 하려는 방식을 정의할 수 있습니다. 이를 통해 클라우드 환경에서 위험한 동작, 위반 또는 의심스러운 데이터 요소 및 활동을 검색할 수 있습니다. 필요한 경우 수정 작업 흐름을 통합하여 완전한 위험 완화를 달성할 수 있습니다. 클라우드 환경에 대해 수집하려는 다양한 정보 유형 및 수행할 수 있는 수정 작업 유형과 상호 관련된 여러 유형의 정책이 있습니다.  
   
@@ -122,7 +121,9 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
      ![조사를 통해 파일 만들기](./media/create-file-from-investigation.png)  
   
-3. 콘솔의 오른쪽 상단 모서리에서 **검색을 통한 새 정책**을 클릭합니다.![검색을 통한 새 정책](./media/new-policy-from-search-button.png)  
+3. 콘솔의 오른쪽 위 모서리에서 **검색을 통한 새 정책**을 클릭합니다.
+
+     ![검색을 통한 새 정책 단추](./media/new-policy-from-search-button.png)
   
 4. 조사에 사용한 필터가 포함된 정책 만들기 페이지가 열립니다.  
   

@@ -1,6 +1,6 @@
 ---
 title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 ServiceNow 연결 | Microsoft 문서
-description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75e22bb5ff151ea71ea2a48e5aef45f22fc4b5f8
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217325"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597275"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
-이 섹션에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 
+*적용 대상: Microsoft Cloud App Security*
+
+이 문서에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 
 
 > [!NOTE]
 >  ServiceNow를 배포할 때는 Fuji 이상 릴리스에 제공되는 OAuth 앱 토큰을 사용하는 것이 좋습니다(관련 [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)(ServiceNow 설명서)을 참조하세요. 이전 릴리스의 경우 사용자/암호를 기반으로 [레거시 연결 모델](#legacy-servicenow-connection)을 사용할 수 있습니다. 제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.

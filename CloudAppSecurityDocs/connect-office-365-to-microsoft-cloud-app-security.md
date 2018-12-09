@@ -1,11 +1,11 @@
 ---
 title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Office 365 연결 | Microsoft 문서
-description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,20 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ef40ee52ca592de3feef2998ea6b753436c4d0fa
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 3bfbdaef4a62ba100710709703b6cdf0a53e9f64
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217264"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596765"
 ---
+# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-
-# <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
-이 섹션에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
   
-Cloud App Security는 Office 365 서비스의 최신 제공(Office 365의 vNext 릴리스 제품군)뿐만 아니라 레거시 Office 365 전용 플랫폼을 지원합니다.  Cloud App Security는 레거시 Microsoft Business Productivity Online Standard Suite를 지원하지 않습니다. 
+Cloud App Security는 Office 365 서비스의 최신 제공(Office 365의 vNext 릴리스 제품군)뿐만 아니라 레거시 Office 365 전용 플랫폼을 지원합니다.  Cloud App Security는 레거시 Microsoft Business Productivity Online Standard Suite(BPOS)를 지원하지 않습니다. 
 
 > [!NOTE]
 > 몇몇 경우에 vNext 서비스 릴리스는 관리 수준이 표준 Office 365 제공과 살짝 다릅니다.

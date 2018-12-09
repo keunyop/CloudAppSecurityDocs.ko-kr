@@ -1,11 +1,11 @@
 ---
 title: 클라우드 앱 사용 통찰력 및 제어를 위해 Cloud App Security 배포 | Microsoft 문서
-description: 이 항목에서는 Cloud App Security 시작 및 실행에 대한 프로세스를 간략하게 설명합니다.
+description: 이 문서에서는 Cloud App Security 시작 및 실행에 대한 프로세스를 간략하게 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: baa1aed2ca4e1c2f52248fbfec35376502370d7f
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072857"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644334"
 ---
+# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 배포
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 배포
-Microsoft Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 항목에서는 Microsoft Cloud App Security를 설정하고 사용하는 단계를 안내합니다.  
+Microsoft Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 문서에서는 Microsoft Cloud App Security를 설정하고 사용하는 단계를 안내합니다.  
 
 조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
 
@@ -33,24 +33,19 @@ Microsoft Cloud App Security는 클라우드 응용 프로그램의 이점을 �
 
 ## <a name="prerequisites"></a>필수 구성 요소  
   
--   조직에서 제품을 사용하려면 Cloud App Security에 대한 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
+- 조직에는 Cloud App Security에서 제품을 사용할 수 있는 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
   
      테넌트 정품 인증 지원에 대한 자세한 내용은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요.  
+- Cloud App Security에 대한 라이선스가 있으면 정품 인증 정보와 Cloud App Security 포털에 대한 링크가 포함된 이메일을 받게 됩니다.  
   
-> [!NOTE] 
-> Cloud App Security에는 Office 365 라이선스가 필요하지 않습니다.  
+- Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 글로벌 관리자, 준수 관리자 또는 보안 읽기 권한자여야 합니다. 관리자 역할이 할당된 사용자는 조직에서 구독한 모든 클라우드 앱에서 동일한 권한을 갖게 됨을 이해하는 것이 중요합니다. 이는 Office 365 포털 또는 Azure 클래식 포털에서 역할을 할당하거나 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx)에 Azure AD 모듈을 사용하는지 여부와 무관합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
   
--   Cloud App Security 라이선스를 구입하면 정품 인증 정보와 Cloud App Security 포털에 대한 링크가 포함된 메일을 받게 됩니다.  
-  
--   Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 전역 관리자, 준수 관리자 또는 보안 읽기 권한자여야 합니다. Office 365 포털, Azure 클래식 포털 또는 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx)용 Azure AD 모듈을 통해 역할을 할당하는지에 관계없이 관리자 역할이 할당된 사용자가 조직이 구독한 모든 클라우드 앱에서 동일한 권한을 가진다는 것을 이해하는 것이 중요합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
-  
--   Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
+- Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
 
 ## <a name="to-access-the-portal"></a>포털에 액세스하려면
 
 Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동하세요.  
-  
-또는 관리 센터 아이콘 ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘"), **Cloud App Security**를 차례로 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수 있습니다.  
+관리 센터 아이콘을 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수도 있습니다. ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘") 그런 다음, **Cloud App Security**를 선택합니다.  
   
 ![O365에서 액세스](./media/access-from-o365.png "O365에서 액세스")  
   
@@ -106,7 +101,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 **Cloud Discovery 보고서를 구성해야 하는 이유는 무엇일까요?**
 조직의 섀도 IT를 파악하는 것이 중요합니다.
-로그를 분석한 후에는 누가 어떤 장치에서 어떤 클라우드 앱을 사용하는지 쉽게 검색할 수 있습니다.
+로그를 분석한 후에는 누가 어떤 디바이스에서 어떤 클라우드 앱을 사용하는지 쉽게 찾을 수 있습니다.
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>4단계. [환경 개인 설정](mail-settings.md).
 권장 작업: 조직 정보 추가
@@ -133,7 +128,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 이제 검색된 앱에 제공되는 위험 점수가 조직 요구 및 우선 순위에 따라 정확하게 구성됩니다.
 
 **사용자 환경을 개인 설정해야 하는 이유는 무엇일까요?**
-일부 기능은 사용자의 요구에 맞게 사용자 지정한 경우에 가장 잘 작동합니다. 고유한 메일 템플릿을 사용하여 사용자에게 더 나은 환경을 제공하고, 수신할 알림을 결정하고, 위험 점수 메트릭을 조직의 기본 설정에 맞게 사용자 지정합니다.
+일부 기능은 사용자의 요구에 맞게 사용자 지정한 경우에 가장 잘 작동합니다. 고유한 이메일 템플릿을 사용하여 사용자에게 더 나은 환경을 제공합니다. 수신할 알림을 결정하고, 위험 점수 메트릭을 조직의 기본 설정에 맞게 사용자 지정합니다.
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>5단계. [필요에 따라 데이터 구성](ip-tags.md).

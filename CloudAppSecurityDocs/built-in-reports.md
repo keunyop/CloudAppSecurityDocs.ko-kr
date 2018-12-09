@@ -1,11 +1,11 @@
 ---
 title: Microsoft Cloud App Security에서 보고서를 생성하는 방법 | Microsoft 문서
-description: 이 항목에서는 Microsoft Cloud App Security에서 데이터 관리 보고서를 생성하기 위한 지침을 제공합니다.
+description: 이 문서에서는 Microsoft Cloud App Security에서 데이터 관리 보고서를 생성하기 위한 지침을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7684e6e3172076d8f7e8a4d69b1ddd70d322a200
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 52be8723161172332709cf841d8cb783e34eafe1
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349511"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596918"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
-
 # <a name="generate-data-management-reports"></a>데이터 관리 보고서 생성
+
+*적용 대상: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security를 사용하면 클라우드 앱의 파일 개요를 제공하는 보고서를 생성할 수 있습니다.
 

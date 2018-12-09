@@ -1,11 +1,11 @@
 ---
 title: Azure AD 앱용 Microsoft Cloud App Security 조건부 액세스 앱 제어 배포| Microsoft Docs
-description: 이 항목에서는 Azure AD 앱용 Microsoft Cloud App Security 조건부 액세스 앱 제어 역방향 프록시 기능을 배포하는 방법을 설명합니다.
+description: 이 문서에서는 Azure AD 앱용 Microsoft Cloud App Security 조건부 액세스 앱 제어 역방향 프록시 기능을 배포하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
-ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
+ms.openlocfilehash: ef834c9b73af6a1bed34530b29bec4fd3581cc1e
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251508"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280564"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
+
+*적용 대상: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 이전: 조건부 액세스 앱 제어 소개](proxy-intro-aad.md)<br>
@@ -51,7 +51,7 @@ ms.locfileid: "48251508"
 
       ![Azure AD 조건부 액세스](./media/aad-conditional-access.png)
 
-   2. **새 정책**을 클릭하고 **세션**에서 **Use Conditional Access App Control enforced restrictions**(조건부 액세스 앱 제어 적용 제한 사용)를 선택하여 새로운 정책을 만듭니다.
+   2. **새 정책**을 클릭하고 새 정책을 만듭니다. **세션**에서 **조건부 액세스 앱 제어 적용 제한 사용**을 선택해야 합니다.
 
       ![Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "48251508"
 
 ## 2단계: 앱에서 정책 범위에 속한 사용자로 로그인 <a name="sign-in-scoped"></a>
 
-정책을 만들었으면 정책에 구성된 사용자를 사용하여 정책에 구성된 각 앱에 로그인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
+정책을 만든 후에는 해당 정책에 구성된 각 앱에 로그인합니다. 정책에 구성된 사용자를 사용하여 로그인했는지 확인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
 
 ## 3단계: Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱 추가 <a name="banner-notification"></a>
 
@@ -83,7 +83,7 @@ ms.locfileid: "48251508"
    > [!NOTE]
    > 앱이 Cloud App Security 앱 카탈로그에 표시되지 않으면 로그인 URL과 함께 알 수 없는 앱 아래의 대화 상자에 나타납니다. 이러한 앱에 대한 + 기호를 클릭하면 카탈로그에 해당 앱을 추가하도록 제안할 수 있습니다. 앱이 카탈로그에 있으면 단계를 다시 수행하여 해당 앱을 배포합니다. 
 
-4. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대한 세션 제어가 표시되지 않으면 해당 특정 앱에서 아직 세션 제어를 사용할 수 없다는 의미이며, **세션 제어 요청** 링크가 대신 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
+4. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대해 세션 제어가 표시되지 않으면 특정 앱에서 세션 제어를 아직 사용할 수 없다는 것을 의미합니다. 대신 **세션 제어 요청** 링크가 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
   
    ![세션 제어 요청](./media/proxy-view-new-apps.png)
 
@@ -95,14 +95,14 @@ ms.locfileid: "48251508"
 
       ![장치 식별](./media/device-identification.png)
  
-      인증서가 업로드되면 **장치 태그**가 **유효한 클라이언트 인증서**와 같거나 같지 않은 액세스 정책 및 세션 정책을 만들 수 있습니다.
+      인증서가 업로드되면 **디바이스 태그** 및 **유효한 클라이언트 인증서**를 기반으로 액세스 정책 및 세션 정책을 만들 수 있습니다.
  
       > [!NOTE]
       >세션이 유효한 클라이언트 인증서 필터를 사용하는 정책과 일치하는 경우에만 사용자에게 인증서를 요청합니다. 
 
 ## <a name="test-the-deployment"></a>배포 테스트
 
-1. 먼저 기존 세션에서 로그아웃합니다. 그런 다음 Azure AD에 구성된 정책과 일치하는 사용자를 사용하여 성공적으로 배포된 각 응용 프로그램에 로그인합니다. 
+1. 먼저 기존 세션에서 로그아웃합니다. 그런 다음, 성공적으로 배포된 각 앱에 로그인합니다. Azure AD에 구성된 정책과 일치하는 사용자를 사용하여 로그인합니다. 
 
 2. Cloud App Security 포털의 **조사** 아래에서 **활동 로그**를 선택하고 각 앱에 대해 로그인 활동이 캡처되는지 확인합니다.
 
@@ -110,8 +110,8 @@ ms.locfileid: "48251508"
 
     ![Azure AD 조건부 액세스를 사용하여 필터링](./media/sso-logon.png)
 
-4. 활동이 활동 로그에 제대로 캡처되도록 하려면 관리 장치와 관리되지 않는 장치의 모바일 및 데스크톱 앱에 로그인하는 것이 좋습니다.<br></br>
-   활동이 제대로 캡처되었는지 확인하려면 활동의 Single Sign-On 로그온 활동을 클릭하여 활동 서랍을 열고 **사용자 에이전트 태그**에서 장치가 네이티브 클라이언트(모바일 또는 데스크톱 앱)인지 또는 장치가 관리 장치(준수, 도메인 가입 또는 유효한 클라이언트 인증서)인지 여부를 제대로 반영하는지 확인합니다.
+4. 관리되는 디바이스와 관리되지 않는 디바이스에서 모바일 및 데스크톱 앱에 로그인하는 것이 좋습니다. 이는 활동이 활동 로그에 제대로 캡처되었는지 확인하기 위한 것입니다.<br></br>
+   활동이 제대로 캡처되었는지 확인하려면 활동의 Single Sign-On 로그를 클릭하여 활동 서럽을 엽니다. **사용자 에이전트 태그**에서 디바이스가 네이티브 클라이언트(모바일 또는 데스크톱 앱)인지 또는 디바이스가 관리 디바이스(준수, 도메인 가입 또는 유효한 클라이언트 인증서)인지 여부를 제대로 반영하는지 확인합니다.
  
    ![사용자 에이전트 태그 테스트](./media/domain-joined.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "48251508"
 [다음: 세션 정책을 만드는 방법 »](session-policy-aad.md)
 
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계 
 [Cloud App Security 조건부 액세스 앱 제어로 작업](proxy-intro-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

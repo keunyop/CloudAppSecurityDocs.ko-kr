@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security 네트워크 요구 사항 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security를 사용하기 위해 열어야 하는 IP 주소와 포트에 대해 설명합니다.
+description: 이 문서에서는 Cloud App Security를 사용하기 위해 열어야 하는 IP 주소와 포트에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597462"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280598"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="network-requirements"></a>네트워크 요구 사항
 
-이 항목에서는 Microsoft Cloud App Security를 사용하기 위해 허용해야 하는 포트 및 IP 주소 목록과 허용 목록을 제공합니다. 
+*적용 대상: Microsoft Cloud App Security*
 
+이 문서에서는 Microsoft Cloud App Security를 사용하기 위해 허용해야 하는 포트 및 IP 주소 목록과 허용 목록을 제공합니다. 
 
 ## <a name="view-your-data-center"></a>데이터 센터 보기
 
 아래 요구 사항 중 일부는 연결되어 있는 데이터 센터에 따라 다릅니다. 
 
-연결되어 있는 데이터 센터를 확인하려면 다음을 수행합니다.
+연결할 데이터 센터를 확인하려면 다음 단계를 수행합니다.
 
-1. Cloud App Security 포털의 메뉴 모음에서 **?** 를 클릭하고 **정보**를 선택합니다. 
+1. Cloud App Security 포털의 메뉴 모음에서 **물음표 아이콘**을 클릭합니다. 그런 다음, **정보**를 선택합니다. 
 
     ![정보 클릭](./media/about-menu.png)
 
@@ -59,7 +57,7 @@ Cloud App Security 포털에 액세스하려면 다음 IP 주소 및 DNS 이름�
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
-또한 사용하는 데이터 센터에 따라 다음 데이터 센터를 허용 목록에 등록해야 합니다.
+또한 사용하는 데이터 센터에 따라 다음 항목을 허용 목록에 추가해야 합니다.
 > [!div class="mx-tableFixed"]
 > 
 > |데이터 센터|IP 주소|DNS 이름|
@@ -95,7 +93,7 @@ Cloud App Security에서 SIEM에 연결할 수 있게 하려면 다음 IP 주소
 
 ## <a name="app-connector"></a>앱 커넥터
 
-Cloud App Security에서 액세스하는 일부 타사 앱의 경우 Cloud App Security에서 로그를 수집할 수 있게 하고 Cloud App Security 콘솔에 대한 액세스를 제공하는 데 이러한 IP 주소가 사용될 수 있습니다. 
+Cloud App Security에서 액세스하는 일부 타사 앱인 경우 이러한 IP 주소를 사용할 수 있습니다. IP 주소를 통해 Cloud App Security에서 로그를 수집하고 Cloud App Security 콘솔에 대한 액세스를 제공할 수 있습니다. 
 
 > [!NOTE]
 >Cloud App Security가 이러한 IP 주소에서 거버넌스 작업 및 검사를 수행하기 때문에 공급업체의 활동 로그에 이러한 IP 주소가 표시될 수 있습니다. 
@@ -116,12 +114,12 @@ Cloud App Security에서 액세스하는 일부 타사 앱의 경우 Cloud App S
 
 ## <a name="third-party-dlp-integration"></a>타사 DLP 통합
 
-Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하려면 동적 소스 포트 번호를 통해 이러한 IP 주소로 DMZ 방화벽을 엽니다. 
+Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송할 수 있도록 하려면 동적 소스 포트 번호를 통해 이러한 IP 주소로 DMZ 방화벽을 엽니다. 
 
-1.  소스 주소: 소스 주소는 API 커넥터 타사 앱에 대해 위에 나열된 허용 목록에 있어야 합니다.
-2.  원본 TCP 포트: 동적
-3.  대상 주소: 외부 ICAP 서버에 연결된 stunnel의 IP 주소 하나 또는 두 개
-4.  대상 TCP 포트: 네트워크에 정의된 대로
+1. **소스 주소** - 이러한 주소는 API 커넥터 타사 앱에 대해 위에 나열된 허용 목록에 있어야 합니다.
+2. **원본 TCP 포트** - 동적
+3. **대상 주소** - 외부 ICAP 서버에 연결된 stunnel의 하나 또는 두 개의 IP 주소
+4. **대상 TCP 포트** - 네트워크에 정의된 대로
 
 > [!NOTE] 
 > -  기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다.
@@ -150,16 +148,16 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-이메일 보낸 사람 ID를 사용자 지정하려는 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 이렇게 하려면 Microsoft Cloud App Security 포털의 **설정**에서 **메일 설정**을 선택하고 MailChimp의 서비스 약관 및 개인정보처리방침을 검토한 후 Microsoft에 사용자를 대신하여 MailChimp를 사용할 수 있는 권한을 부여합니다.
+이메일 보낸 사람 ID를 사용자 지정하려는 경우 Microsoft Cloud App Security에서 타사 이메일 서비스인 MailChimp®를 사용하여 사용자 지정을 가능하게 합니다. 작동하려면 Microsoft Cloud App Security 포털에서 **설정**으로 이동합니다. **메일 설정**을 선택하고 MailChimp의 서비스 약관 및 개인정보처리방침을 검토합니다. 그런 다음, 사용자를 대신하여 MailChimp를 사용할 수 있는 권한을 Microsoft에 제공합니다.
 
-이렇게 하지 않으면 모든 기본 설정을 사용하여 메일 알림이 전송됩니다.
+보낸 사람 ID를 사용자 지정하지 않으면 모든 기본 설정을 사용하여 이메일 알림이 전송됩니다.
 
 MailChimp를 사용하려면 IP 주소 198.2.134.139(mail1.cloudappsecurity.com)를 스팸 방지 허용 목록에 추가하여 알림이 전송될 수 있도록 합니다.
 
 
 ## <a name="log-collector"></a>로그 수집기 
 
-로그 수집기를 사용하여 클라우드 검색 기능을 사용하도록 설정하고 조직에서 섀도 IT를 검색하려면 다음과 같이 개방해야 합니다.
+로그 수집기를 사용하여 클라우드 검색 기능을 사용하도록 설정하고 조직에서 섀도 IT를 검색하려면 다음 항목을 엽니다.
 
 - 로그 수집기가 인바운드 FTP 및 Syslog 트래픽을 수신하도록 허용합니다.
 - 로그 수집기가 포트 443에서 포털(예: contoso.cloudappsecurity.com)에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
@@ -179,9 +177,8 @@ MailChimp를 사용하려면 IP 주소 198.2.134.139(mail1.cloudappsecurity.com)
 >- 로그 수집기가 Cloud App Security 포털에 대한 아웃바운드 트래픽을 시작하도록 허용합니다.
 >- 로그 수집기를 설정할 때 프록시를 지정하지 않은 경우 포트 80에서 http://ocsp.msocsp.com/으로 http 연결을 허용해야 합니다. 이는 Cloud App Security 포털에 연결할 때 인증서 해지 상태를 확인하는 데 사용됩니다.
 
-
-
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
+ 
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  

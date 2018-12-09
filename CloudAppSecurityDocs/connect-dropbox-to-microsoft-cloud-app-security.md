@@ -1,11 +1,11 @@
 ---
 title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Dropbox 연결 | Microsoft 문서
-description: 이 항목에서는 API 커넥터를 사용하여 Cloud App Security에 Dropbox 앱을 연결하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Dropbox 앱을 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3e6e9a25c419aa9453e4771b477c068b9ad902c
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 6a994e5ef04a18299d78613adfb74147787c862c
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217240"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596799"
 ---
+# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Dropbox 연결
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Dropbox 연결
-이 섹션에서는 커넥터 API를 사용하여 기존 Dropbox 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 커넥터 API를 사용하여 기존 Dropbox 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
  
  
 Dropbox를 사용하면 로그인하지 않고 공유 링크에서 파일에 액세스할 수 있으므로 Cloud App Security에서는 이러한 사용자를 인증되지 않은 사용자로 등록합니다. 인증되지 않은 Dropbox 사용자가 표시되면 조직에 소속되지 않은 사용자를 나타내거나 조직 내에서 로그인하지 않은 사용자로 인식될 수 있습니다.
