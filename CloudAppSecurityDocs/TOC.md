@@ -21,6 +21,7 @@
 ### [Zscaler와 통합](zscaler-integration.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
+#### [Windows의 Docker](discovery-docker-windows.md)
 #### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
 #### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
 #### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
