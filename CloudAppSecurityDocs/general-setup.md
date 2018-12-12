@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0321ecc91cc6dc420e44a323cdef37f34c19556a
-ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
+ms.openlocfilehash: 5262c51e18ba46bd6a5b41da5a41b2a73deecfba
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644283"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123732"
 ---
 # <a name="basic-setup"></a>기본 설정
 
@@ -61,6 +61,6 @@ ms.locfileid: "51644283"
 ## <a name="next-steps"></a>다음 단계  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

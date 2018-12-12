@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a8936a8a3f9a9e2198edbdec3111f1cccad0c90
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 358d7a8398a213664e4fae3be9f1515ebbbfc6c1
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597177"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124318"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 AWS 연결
 
@@ -122,6 +122,6 @@ AWS를 연결한 후 연결 전 7일에 대한 이벤트를 받게 됩니다. Cl
 ## <a name="next-steps"></a>다음 단계  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

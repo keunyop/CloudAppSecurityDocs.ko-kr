@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
-ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
+ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51943704"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123553"
 ---
 # <a name="email-notification-preferences"></a>이메일 알림 기본 설정
 
@@ -123,6 +123,6 @@ ms.locfileid: "51943704"
 
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c1778a15df20cfccad8375dbf7f9fb4a753c17e7
-ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
+ms.openlocfilehash: dc435ff040f017d1119c96edc260e94eedbf93b1
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48584512"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124335"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -116,6 +116,6 @@ Cloud Discovery 앱을 일반적으로 살펴보기 위해 가장 먼저 해야 
 ## <a name="see-also"></a>참고 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

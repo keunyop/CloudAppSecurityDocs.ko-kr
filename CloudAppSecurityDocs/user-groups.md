@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb209535c6969a3177ea5a638425eedabda1bba1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d952746375c18730b92f7629ac4978c61ebfbfa9
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143472"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123791"
 ---
 *적용 대상: Microsoft Cloud App Security*
    
@@ -53,7 +53,8 @@ API 커넥터를 사용하여 앱을 연결할 때 Microsoft Cloud App Security�
 그룹을 가져오면 **활동 로그**에서 조사하고 정책을 만들 때 해당 그룹을 필터로 선택할 수 있습니다. 
 
 > [!NOTE]
-> 사용자 그룹을 가져온 후 수행된 활동만 사용자 그룹의 구성원이 수행한 것으로 태그가 지정됩니다.
+> - 사용자 그룹을 가져온 후 수행된 활동만 사용자 그룹의 구성원이 수행한 것으로 태그가 지정됩니다.
+> - 초기 동기화 후에 그룹은 1시간마다 업데이트됩니다.
 
 사용자 그룹 필터 사용에 대한 자세한 내용은 [활동](activity-filters.md)을 참조하세요.
 
@@ -62,6 +63,6 @@ API 커넥터를 사용하여 앱을 연결할 때 Microsoft Cloud App Security�
 ## <a name="see-also"></a>참고 항목  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

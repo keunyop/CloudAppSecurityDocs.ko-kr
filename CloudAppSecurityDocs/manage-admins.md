@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e326a75bbece56bd991e951b02260440db65493
-ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
+ms.openlocfilehash: 23fe11600fc802e0c4f4d8024b78fa2713cc4a63
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51943749"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123961"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
@@ -111,6 +111,6 @@ Microsoft Cloud App Security를 사용하면 Microsoft Cloud App Security 포털
 ## <a name="next-steps"></a>다음 단계  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

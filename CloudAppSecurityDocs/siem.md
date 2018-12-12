@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fbb9790307d2fd069e876438fa660300053be64a
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743423"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124216"
 ---
 # <a name="siem-integration"></a>SIEM 통합
 
@@ -208,5 +208,5 @@ SIEM 에이전트를 삭제하려면 테이블의 SIEM 에이전트에 대한 �
   
 [SIEM 통합 문제 해결](troubleshooting-siem.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
 

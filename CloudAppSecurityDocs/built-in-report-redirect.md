@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 40b119b9ea8702ee4e887e5f8d9c94dfe9127091
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: a26a055137aa64391fedf8399e35ec9f112858ee
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597428"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124753"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>더 이상 사용되지 않는 기본 제공 보고서를 찾는 방법
 
@@ -48,6 +48,6 @@ ms.locfileid: "51597428"
 ## <a name="next-steps"></a>다음 단계 
 [제어](control.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7c528a57799d7a00c0f54d2e798dc0f5c281fd13
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743576"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124607"
 ---
 # <a name="manage-oauth-apps"></a>OAuth 앱 관리
 
@@ -113,4 +113,4 @@ G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 
 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  

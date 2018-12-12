@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad88c9d224426a73687ae972a58617ae5800221a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: e2662ab98f5214f2843570c01c8f76e08799b347
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597088"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124080"
 ---
 # <a name="control"></a>컨트롤
 
@@ -102,4 +102,4 @@ Cloud App Security 서비스 카탈로그를 통해 사용자가 사용 중일 �
 ## <a name="next-steps"></a>다음 단계
 정책을 사용 및 설정하여 클라우드 응용 프로그램의 사용을 제어하는 방법을 알아보려면 [정책을 사용하여 클라우드 응용 프로그램 제어](control-cloud-apps-with-policies.md)를 참조하세요.   
 
-프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0385cef903263b680f4fdd5915bd150a3cca17dc
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: dd54f1244e418e88edc35da53097eb20a5f28674
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743406"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124114"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -91,4 +91,4 @@ ms.locfileid: "52743406"
 ## <a name="next-steps"></a>다음 단계  
 경고를 조사하는 방법에 대한 자세한 내용은 [조사](investigate.md)를 참조하세요.  
 
-프리미어 고객은 [프리미어 포털](https://premier.microsoft.com/)에서 직접 Cloud App Security를 선택할 수도 있습니다.  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  

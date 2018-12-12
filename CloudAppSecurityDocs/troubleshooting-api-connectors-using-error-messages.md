@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security에서 오류 메시지를 사용하여 앱 커넥터 문제 해결 | Microsoft 문서
-description: 이 항목에서는 API 앱 커넥터 오류 메시지 목록과 각각에 대한 권장 해결 방법을 제공합니다.
+description: 이 문서에서는 API 앱 커넥터 오류 메시지 목록과 각각에 대한 권장 해결 방법을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,20 @@ ms.technology: ''
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38a1699644d5c04197d46a88bb86586a7c9b0c99
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 22eb82fc88af490979b9b66b7a54628a92aba220
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144536"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124250"
 ---
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
+
 *적용 대상: Microsoft Cloud App Security*
 
-# <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
+이 문서에서는 API 앱 커넥터 오류 메시지 목록과 각 오류에 대한 권장 해결 방법을 제공합니다.
+
+## <a name="troubleshooting"></a>문제 해결
 
 API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 앱 커넥터 대화 상자에 앱 커넥터 오류가 표시될 수 있습니다.
 
@@ -59,8 +63,9 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 > |HttpRequestFailure: 서버에서 반환함: 500 내부 서버 오류|모든 앱|앱에서 오류가 발생했습니다.|앱의 상태를 확인하세요.|
 > |서비스 시간 초과|모든 앱|Cloud App Security와 앱 간의 연결에서 시간 초과가 검색되었습니다. 이 오류는 앱의 문제 때문일 수 있습니다.|나중에 다시 시도하세요.|
 
-## <a name="see-also"></a>참고 항목  
+## <a name="next-steps"></a>다음 단계
+
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
 

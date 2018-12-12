@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,27 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743695"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124828"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
+
+## <a name="cloud-app-security-release-138"></a>Cloud App Security 릴리스 138
+
+릴리스 날짜: 2018년 12월 9일
+
+- **Windows의 Docker를 사용하여 자동 로그 업로드**<br>Cloud App Security는 이제 Windows용 Docker를 사용하여 Windows 10(Fall Creators Update) 및 Windows Server 버전 1709 이상에 대한 자동 로그 업로드를 지원합니다.
+구성할 수 있는 방법에 대한 자세한 내용 및 지침은 [Windows의 Docker 온-프레미스](discovery-docker-windows.md)를 참조하세요.
+- Cloud App Security는 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started)와 통합하여 사용자 지정 경고 자동화 및 오케스트레이션 플레이북을 제공합니다. 자세한 정보 및 통합 지침은 [Microsoft Flow와 통합](flow-integration.md)을 참조하세요.
+
 
 ## <a name="cloud-app-security-release-137"></a>Cloud App Security 릴리스 137
 
@@ -313,6 +323,6 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 
 여기에 나열된 릴리스 이전의 릴리스에 대한 설명은 [Microsoft Cloud App Security의 이전 릴리스](release-note-archive.md)를 참조하세요.
 
-[프리미어 고객은 프리미어 포털에서 직접 Cloud App Security를 선택할 수도 있습니다.](https://premier.microsoft.com/)  
+[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   
