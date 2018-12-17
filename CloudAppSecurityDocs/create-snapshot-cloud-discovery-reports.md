@@ -121,8 +121,8 @@ Cloud Discovery 보고서를 성공적으로 생성하려면 트래픽 로그가
 - Sophos Cyberoam
 - Squid(Common)
 - Squid(Native)
-- Websense - Web Security Solutions - Investigative detail report(CSV)
-- Websense - Web Security Solutions - Internet activity log(CEF)
+- Websense-Web Security Solutions-조 사용 상세 보고서 (CSV)
+- Websense-Web Security Solutions-인터넷 활동 로그 (CEF)
 - Zscaler
 
 > [!NOTE]
