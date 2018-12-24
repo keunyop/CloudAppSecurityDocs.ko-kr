@@ -165,8 +165,8 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 |    활동     |     EVENT_CATEGORY_*     |                                       활동의 상위 수준 범주                                       |
 |    활동     |         <ACTION>         |                                  포털에 표시된 활동 유형                                  |
 |    활동     |        externalId        |                                                    이벤트 ID                                                     |
-|    활동     |           dvc            |                                             클라이언트 장치의 IP                                             |
-|    활동     | requestClientApplication |                                         클라이언트 장치의 사용자 에이전트                                         |
+|    활동     |           dvc            |                                             클라이언트 디바이스의 IP                                             |
+|    활동     | requestClientApplication |                                         클라이언트 디바이스의 사용자 에이전트                                         |
 |      경고       |       <alert type>       |                                  예: “ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
 |      경고       |          <name>          |                                             일치하는 정책 이름                                             |
 |      경고       |        externalId        |                                                    경고 ID                                                     |

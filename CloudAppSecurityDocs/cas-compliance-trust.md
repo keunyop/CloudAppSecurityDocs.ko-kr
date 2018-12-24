@@ -127,7 +127,7 @@ Microsoft Cloud App Security는 모든 사용자 활동 및 보안 경고 정보
 
 ### <a name="encryption"></a>암호화
 
-Microsoft는 암호화 기술을 사용하여 Microsoft 데이터베이스를 사용하지 않는 동안, 그리고 사용자 장치와 Cloud App Security 데이터 센터 간에 데이터가 이동할 때 데이터를 보호합니다.
+Microsoft는 암호화 기술을 사용하여 Microsoft 데이터베이스를 사용하지 않는 동안, 그리고 사용자 디바이스와 Cloud App Security 데이터 센터 간에 데이터가 이동할 때 데이터를 보호합니다.
 
 ### <a name="identity-and-access-management"></a>ID 및 액세스 관리
 

@@ -40,7 +40,7 @@ ms.locfileid: "53124267"
 
 조건부 액세스 앱 제어를 통해 사용자는 액세스 및 세션 정책에 따라 실시간으로 앱 액세스 및 세션을 모니터링하고 제어할 수 있습니다. 액세스 및 세션 정책은 Cloud App Security 포털에서 사용되어 필터를 자세히 구체화하고 사용자에 대해 수행할 작업을 설정합니다. 액세스 및 세션 정책을 사용하면 다음을 수행할 수 있습니다.
 
-- **다운로드 시 차단**: 중요한 문서의 다운로드를 차단할 수 있습니다. 예를 들어 관리되지 않는 장치에 다운로드하는 경우에는 차단됩니다.
+- **다운로드 시 차단**: 중요한 문서의 다운로드를 차단할 수 있습니다. 예를 들어 관리되지 않는 디바이스에 다운로드하는 경우에는 차단됩니다.
 
 - **다운로드 시 보호**: 중요한 문서의 다운로드를 차단하는 대신 다운로드 시 암호화를 통해 문서를 보호하도록 요구할 수 있습니다. 이 암호화는 데이터가 신뢰할 수 없는 디바이스에 다운로드되는 경우 문서가 보호되고 사용자 액세스가 인증되는지 확인합니다. 
 
@@ -68,22 +68,22 @@ Microsoft Cloud App Security를 통해 세션이 전달된 후 다음 작업을 
 4. 관리자가 트래픽 로그를 내보낼 수 있도록 설정
 5. 세션에서 정책 적용
 
-## <a name="managed-device-identification"></a>관리 장치 식별
+## <a name="managed-device-identification"></a>관리 디바이스 식별
 
-조건부 액세스 앱 제어를 사용하면 장치를 관리할지 여부를 고려하는 정책을 만들 수 있습니다. 디바이스를 관리하는지 여부를 확인하기 위해 이 기능은 다음을 사용합니다.
+조건부 액세스 앱 제어를 사용하면 디바이스를 관리할지 여부를 고려하는 정책을 만들 수 있습니다. 디바이스를 관리하는지 여부를 확인하기 위해 이 기능은 다음을 사용합니다.
 
-- 준수 장치
-- 도메인 가입 장치
+- 준수 디바이스
+- 도메인 가입 디바이스
 - 클라이언트 인증서 배포
  
-### <a name="compliant-and-domain-joined-devices"></a>준수 및 도메인 가입 장치
+### <a name="compliant-and-domain-joined-devices"></a>준수 및 도메인 가입 디바이스
 
-Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 장치 정보를 Microsoft Cloud App Security에 직접 전달할 수 있습니다. 여기서 장치 상태를 필터로 사용하는 액세스 정책 또는 세션 정책을 개발할 수 있습니다.
-자세한 내용은 [Azure Active Directory의 장치 관리 소개](https://docs.microsoft.com/azure/active-directory/device-management-introduction)를 참조하세요. 
+Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 디바이스 정보를 Microsoft Cloud App Security에 직접 전달할 수 있습니다. 여기서 디바이스 상태를 필터로 사용하는 액세스 정책 또는 세션 정책을 개발할 수 있습니다.
+자세한 내용은 [Azure Active Directory의 디바이스 관리 소개](https://docs.microsoft.com/azure/active-directory/device-management-introduction)를 참조하세요. 
 
-### <a name="client-certificate-authenticated-devices"></a>클라이언트 인증서 인증 장치
+### <a name="client-certificate-authenticated-devices"></a>클라이언트 인증서 인증 디바이스
 
-장치 식별 메커니즘에서는 클라이언트 인증서를 사용하여 관련 장치에서 인증을 요청할 수 있습니다. 조직에 이미 배포된 기존 클라이언트 인증서를 사용하거나 관리 디바이스에 새 클라이언트 인증서를 배포할 수 있습니다. 그런 다음, 해당 인증서의 존재를 사용하여 액세스 및 세션 정책을 설정합니다. 클라이언트 인증서를 배포하는 방법에 대한 내용은 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)를 참조하세요.
+디바이스 식별 메커니즘에서는 클라이언트 인증서를 사용하여 관련 디바이스에서 인증을 요청할 수 있습니다. 조직에 이미 배포된 기존 클라이언트 인증서를 사용하거나 관리 디바이스에 새 클라이언트 인증서를 배포할 수 있습니다. 그런 다음, 해당 인증서의 존재를 사용하여 액세스 및 세션 정책을 설정합니다. 클라이언트 인증서를 배포하는 방법에 대한 내용은 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)를 참조하세요.
  
 ## <a name="supported-apps-and-clients"></a>지원되는 앱 및 클라이언트
 

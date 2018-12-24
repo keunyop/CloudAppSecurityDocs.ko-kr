@@ -1,6 +1,6 @@
 ---
 title: 지원되지 않는 로그에 대해 사용자 지정 로그 파서 사용 | Microsoft 문서
-description: 이 문서에서는 사용자 지정 로그 파서를 사용하여 지원되지 않는 장치의 로그를 Cloud App Security로 업로드하는 방법에 대한 정보를 제공합니다.
+description: 이 문서에서는 사용자 지정 로그 파서를 사용하여 지원되지 않는 디바이스의 로그를 Cloud App Security로 업로드하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -24,7 +24,7 @@ ms.locfileid: "53123735"
 
 *적용 대상: Microsoft Cloud App Security*
 
-Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud Discovery에 사용할 수 있습니다. 일반적으로 방화벽 또는 장치가 Cloud App Security에서 명시적으로 지원되지 않은 경우 사용자 지정 파서를 사용합니다. 이 경우 CSV 파서 또는 사용자 지정 키 값 파서가 될 수 있습니다.
+Cloud App Security를 사용하면 로그 형식을 일치시키고 처리하도록 사용자 지정 파서를 구성할 수 있으므로, Cloud Discovery에 사용할 수 있습니다. 일반적으로 방화벽 또는 디바이스가 Cloud App Security에서 명시적으로 지원되지 않은 경우 사용자 지정 파서를 사용합니다. 이 경우 CSV 파서 또는 사용자 지정 키 값 파서가 될 수 있습니다.
 
 사용자 지정 파서를 통해 이 프로세스에 따라 지원되지 않는 방화벽에서 생성된 로그를 사용할 수 있습니다. 
 
