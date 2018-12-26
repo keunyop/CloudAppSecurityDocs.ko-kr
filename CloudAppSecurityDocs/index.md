@@ -12,7 +12,7 @@ ms.locfileid: "46563146"
 # <a name="microsoft-cloud-app-security-documentation"></a>Microsoft Cloud App Security 설명서
 
 Microsoft Cloud App Security로 클라우드 앱에 엔터프라이즈급 보안을 제공하세요.
-여러분이 클라우드에 있든지 없든지 간에, 직원들은 있습니다. 심층적 가시성, 포괄적인 컨트롤 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 승인되거나 승인되지 않은 클라우드 응용 프로그램에 온-프레미스 시스템의 보안을 가져오세요.
+여러분이 클라우드에 있든지 없든지 간에, 직원들은 있습니다. 심층적 가시성, 포괄적인 컨트롤 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 승인되거나 승인되지 않은 클라우드 애플리케이션에 온-프레미스 시스템의 보안을 가져오세요.
 
 <ul class="panelContent cardsFTitle">
     <li>

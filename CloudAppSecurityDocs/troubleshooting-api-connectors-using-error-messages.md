@@ -40,7 +40,7 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 > |BoxRestException: 응답을 구문 분석하지 못했습니다.|상자|내부 오류|지금 테스트 링크를 다시 클릭하여 Box에 대한 연결을 테스트하세요.|
 > |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"잘못된 새로 고침 토큰"}'|상자|Box 새로 고침 토큰이 잘못되었습니다.|프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
 > |BoxServerException: 엔터프라이즈 계정이 없으면 사용자가 이 기능에 액세스할 수 없습니다.|상자|Box 계정이 엔터프라이즈 계정이 아닙니다.|Box 라이선스를 Enterprise 버전의 Box로 업그레이드한 다음 프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
-> |BoxServerException: 권한 없음 - 이 서비스를 인증할 수 없습니다.|상자|Box 관리자가 Box에서 Cloud App Security 응용 프로그램을 삭제했습니다.|프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
+> |BoxServerException: 권한 없음 - 이 서비스를 인증할 수 없습니다.|상자|Box 관리자가 Box에서 Cloud App Security 애플리케이션을 삭제했습니다.|프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
 > |HttpRequestFailure: 서버에서 반환함: 401 권한 없음|Okta|Okta 토큰이 잘못되었습니다.|프로세스에 따라 Okta를 Cloud App Security에 다시 연결하세요.|
 > |IOException:|Okta|내부 오류|기술 지원 서비스에 문의하십시오.|
 > |HttpRequestFailure: 서버에서 반환함: 404 찾을 수 없음|Okta|내부 오류|기술 지원 서비스에 문의하십시오.|

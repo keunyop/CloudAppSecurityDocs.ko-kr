@@ -105,7 +105,7 @@ ms.locfileid: "53124692"
 Salesforce를 연결한 후 Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다. Cloud App Security API는 Salesforce에서 사용 가능한 API와 직접 통신합니다. Salesforce는 수신할 수 있는 API 호출 수를 제한하므로 Cloud App Security는 제한을 고려하고 준수합니다. Salesforce API는 사용 가능하고 남은 전체 API 호출을 비롯하여 API 카운터에 대한 필드를 사용하여 각 응답을 전송합니다. Cloud App Security는 이를 백분율로 계산하고 항상 사용 가능한 API 호출의 10%를 남깁니다. 
 
 > [!NOTE]
-> Cloud App Security 제한은 Salesforce를 통해 API 호출을 하는 다른 응용 프로그램의 호출이 아니라, Salesforce를 통한 고유한 API 호출에 대해서만 계산됩니다.
+> Cloud App Security 제한은 Salesforce를 통해 API 호출을 하는 다른 애플리케이션의 호출이 아니라, Salesforce를 통한 고유한 API 호출에 대해서만 계산됩니다.
 > 제한으로 인해 API 호출을 제한하면 Cloud App Security에 수집되는 데이터 속도는 느려질 수 있지만 대개 하룻밤 동안 처리됩니다.
 
 

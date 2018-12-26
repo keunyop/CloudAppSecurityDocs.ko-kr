@@ -24,7 +24,7 @@ ms.locfileid: "53124097"
 
 *적용 대상: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security는 클라우드 응용 프로그램의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 문서에서는 Microsoft Cloud App Security를 설정하고 사용하는 단계를 안내합니다.  
+Microsoft Cloud App Security는 클라우드 애플리케이션의 이점을 활용하는 한편 회사 리소스의 제어를 유지 관리하도록 지원할 수 있습니다. 클라우드 활동의 가시성을 개선하고 회사 데이터의 보호를 강화할 수 있도록 돕는 방식으로 작동합니다. 이 문서에서는 Microsoft Cloud App Security를 설정하고 사용하는 단계를 안내합니다.  
 
 조직에 Cloud App Security 사용 라이선스가 있어야 합니다. 자세한 내용은 Cloud App Security 홈페이지에서 [Cloud App Security를 구입하는 방법](https://www.microsoft.com/cloud-platform/cloud-app-security) 섹션을 참조하세요.  
 

@@ -80,7 +80,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 - 개인 정보 제어를 통해 조직에서 서비스에 액세스할 수 있는 대상 사용자 및 액세스할 수 있는 내용을 구성할 수 있습니다.
 
 ## <a name="updating-personal-data"></a>개인 데이터 업데이트
-사용자에 대한 개인 데이터는 사용된 SaaS 응용 프로그램의 사용자 개체에서 파생됩니다. 이로 인해 이러한 애플리케이션에서 사용자 프로필에 대해 수행된 모든 변경 내용은 Microsoft Cloud App Security에 반영됩니다.
+사용자에 대한 개인 데이터는 사용된 SaaS 애플리케이션의 사용자 개체에서 파생됩니다. 이로 인해 이러한 애플리케이션에서 사용자 프로필에 대해 수행된 모든 변경 내용은 Microsoft Cloud App Security에 반영됩니다.
 
 
 ## <a name="data-location"></a>데이터 보호
@@ -118,7 +118,7 @@ Microsoft Cloud App Security에서는 다음과 같이 데이터를 유지합니
 [투명성에 대한 자세한 정보](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
 ### <a name="deleting-personal-data"></a>개인 데이터 삭제
-연결된 클라우드 응용 프로그램에서 데이터가 삭제된 후 Microsoft Cloud App Security는 2년 이내에 데이터 복사본을 자동으로 삭제합니다.
+연결된 클라우드 애플리케이션에서 데이터가 삭제된 후 Microsoft Cloud App Security는 2년 이내에 데이터 복사본을 자동으로 삭제합니다.
 
 ### <a name="exporting-personal-data"></a>개인 데이터 내보내기
 Microsoft Cloud App Security는 모든 사용자 활동 및 보안 경고 정보를 CSV로 [내보내는](activity-filters.md#export) 기능을 제공합니다.

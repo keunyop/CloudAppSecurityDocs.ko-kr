@@ -38,7 +38,7 @@ Microsoft Cloud App Security는 Box 계정에 저장된 문서에 대한 공용 
 
 ### <a name="enhanced-data-level-encryption-protection"></a>향상된 데이터 수준 암호화 보호
 
-Cloud App Security와 Azure Information Protection을 통합하면 파일을 자동으로 암호화하여 보호 수준을 추가할 수 있습니다. 예를 들어 Azure Information Protection에서는 파일을 암호화하지만, Azure Information Protection을 지원하는 응용 프로그램(예: Office 365)은 파일을 열고 분류 레이블에 설정된 권한을 적용하는 방법을 인식하고 있습니다. 레이블을 사용하여 특정 보호 규칙을 적용할 수 있습니다. 예를 들어 파일을 열 수는 있지만 공유, 인쇄, 전달 또는 편집할 수 없도록 설정할 수 있습니다. 
+Cloud App Security와 Azure Information Protection을 통합하면 파일을 자동으로 암호화하여 보호 수준을 추가할 수 있습니다. 예를 들어 Azure Information Protection에서는 파일을 암호화하지만, Azure Information Protection을 지원하는 애플리케이션(예: Office 365)은 파일을 열고 분류 레이블에 설정된 권한을 적용하는 방법을 인식하고 있습니다. 레이블을 사용하여 특정 보호 규칙을 적용할 수 있습니다. 예를 들어 파일을 열 수는 있지만 공유, 인쇄, 전달 또는 편집할 수 없도록 설정할 수 있습니다. 
 
 이 강력한 보호 수준은 파일과 함께 이동합니다. 온라인 저장소 앱에 파일을 전송, 복사 및 저장하는 경우에도 파일이 계속 보호됩니다. 직원 중 한 명이 파일이 포함된 소형 드라이브를 분실하면 해당 파일이 잠기고 다른 사람이 이 파일을 열려고 하면 파일 소유자가 경고를 받게 됩니다. Cloud App Security를 사용하면 자동으로 보호를 적용할 수 있습니다. 예를 들어 신용 카드 번호가 있거나 재무 부서에서 업로드했고 외부에서 공유하는 모든 파일은 분류 레이블을 사용하여 자동으로 보호되도록 설정할 수 있습니다. 
 

@@ -62,7 +62,7 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
 3.   Office 365가 연결된 것으로 표시되면 **닫기**를 클릭합니다.
   
 > [!NOTE] 
-> Office 365를 연결한 후 API를 가져오는, Office 365에 연결된 모든 타사 응용 프로그램을 포함하여 1주일 전부터의 데이터가 표시됩니다. 연결 전에 API를 가져오지 않은 타사 앱의 경우 Cloud App Security에서 기본적으로 꺼져 있는 API를 켜기 때문에 Office 365를 연결하는 순간부터의 이벤트가 표시됩니다.
+> Office 365를 연결한 후 API를 가져오는, Office 365에 연결된 모든 타사 애플리케이션을 포함하여 1주일 전부터의 데이터가 표시됩니다. 연결 전에 API를 가져오지 않은 타사 앱의 경우 Cloud App Security에서 기본적으로 꺼져 있는 API를 켜기 때문에 Office 365를 연결하는 순간부터의 이벤트가 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계  
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)   

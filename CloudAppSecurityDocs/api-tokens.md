@@ -24,7 +24,7 @@ ms.locfileid: "53123451"
 
 *적용 대상: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security API에서는 REST API 엔드포인트를 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 응용 프로그램은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
+Microsoft Cloud App Security API에서는 REST API 엔드포인트를 통해 Cloud App Security에 대한 프로그래밍 방식 액세스를 제공합니다. 애플리케이션은 API를 사용하여 Cloud App Security 데이터 및 개체에 대한 읽기 및 업데이트 작업을 수행합니다. 예를 들어 Cloud App Security API에서는 사용자 개체에 대한 다음과 같은 일반 작업을 지원합니다.
 
 - Cloud Discovery에 대한 로그 파일 업로드
 - 차단 스크립트 생성
