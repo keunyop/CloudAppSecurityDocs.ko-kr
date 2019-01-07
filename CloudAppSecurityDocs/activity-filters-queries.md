@@ -14,12 +14,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 4fb8d909ee8720d6b2610bfe6acc65a02666167e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177184"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059303"
 ---
 # <a name="activity-filters-and-queries"></a>활동 필터 및 쿼리
 
@@ -160,6 +160,5 @@ Cloud App Security는 **제안된 쿼리**도 제공합니다. 제안된 쿼리�
 ## <a name="next-steps"></a>다음 단계 
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
-[프리미어 고객은 프리미어 포털에서 직접 새 문제를 만들 수도 있습니다.](https://premier.microsoft.com/)  
   
   

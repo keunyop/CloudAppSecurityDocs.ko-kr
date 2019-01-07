@@ -14,12 +14,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: c347b94688b070302de12651a75344213e4bcacc
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175705"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059424"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
@@ -111,7 +111,6 @@ Microsoft Cloud App Security를 사용하면 Microsoft Cloud App Security 포털
 
 ## <a name="next-steps"></a>다음 단계  
 [Cloud Discovery 설정](set-up-cloud-discovery.md)   
-
-[프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
+  
   
   
