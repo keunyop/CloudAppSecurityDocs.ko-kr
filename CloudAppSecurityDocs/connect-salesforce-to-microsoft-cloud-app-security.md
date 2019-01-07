@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Salesforce 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Salesforce를 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 Salesforce 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 Salesforce를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 83b2f4572c2e5714867ed529c6199e441da5234f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 322e5d0564e70ff4e8ff85bdd3f798f43aacf235
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124692"
+ms.locfileid: "53176742"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Salesforce 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 앱 커넥터 API를 사용하여 기존 Salesforce 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 앱 커넥터 API를 사용하여 기존 Salesforce 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 Salesforce 사용에 대한 표시 유형과 제어를 제공합니다. 
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Cloud App Security에 Salesforce를 연결하는 방법  
   
@@ -102,7 +103,7 @@ ms.locfileid: "53124692"
      테스트는 몇 분 정도 걸릴 수 있습니다. 성공 알림을 받은 후 **완료**를 클릭합니다.  
   
   
-Salesforce를 연결한 후 Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring과 같은 이벤트를 받게 됩니다. Cloud App Security API는 Salesforce에서 사용 가능한 API와 직접 통신합니다. Salesforce는 수신할 수 있는 API 호출 수를 제한하므로 Cloud App Security는 제한을 고려하고 준수합니다. Salesforce API는 사용 가능하고 남은 전체 API 호출을 비롯하여 API 카운터에 대한 필드를 사용하여 각 응답을 전송합니다. Cloud App Security는 이를 백분율로 계산하고 항상 사용 가능한 API 호출의 10%를 남깁니다. 
+Salesforce를 연결한 후 다음과 같은 이벤트를 받게 됩니다. Salesforce EventMonitoring 라이선스에 따라 연결 순간부터의 트리거, 연결 전 60일 동안의 로그인 이벤트 및 설정 감사 내역, 30일 또는 1일 전 EventMonitoring Cloud App Security API는 Salesforce에서 사용 가능한 API와 직접 통신합니다. Salesforce는 수신할 수 있는 API 호출 수를 제한하므로 Cloud App Security는 제한을 고려하고 준수합니다. Salesforce API는 사용 가능하고 남은 전체 API 호출을 비롯하여 API 카운터에 대한 필드를 사용하여 각 응답을 전송합니다. Cloud App Security는 이를 백분율로 계산하고 항상 사용 가능한 API 호출의 10%를 남깁니다. 
 
 > [!NOTE]
 > Cloud App Security 제한은 Salesforce를 통해 API 호출을 하는 다른 애플리케이션의 호출이 아니라, Salesforce를 통한 고유한 API 호출에 대해서만 계산됩니다.

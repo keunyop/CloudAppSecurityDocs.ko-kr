@@ -1,11 +1,11 @@
 ---
-title: 클라우드 앱에서 파일을 모니터링하고 보호하기 위한 정책 만들기 | Microsoft 문서
+title: 클라우드 앱에서 파일 모니터링 및 보호 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 조직의 클라우드 앱 사용에서 데이터 및 파일을 모니터링하고 제어하는 데이터 정책을 설정하는 절차에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0a92453831cad191b2c69ebdf5b45deaf7c0b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4ab929752a0e90026104f0451932c6a89a50ad2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124624"
+ms.locfileid: "53177371"
 ---
 # <a name="file-policies"></a>파일 정책  
 

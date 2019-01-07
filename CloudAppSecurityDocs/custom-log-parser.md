@@ -1,11 +1,11 @@
 ---
-title: 지원되지 않는 로그에 대해 사용자 지정 로그 파서 사용 | Microsoft 문서
+title: 지원되지 않는 로그에 대한 Cloud App Security 사용자 지정 로그 파서
 description: 이 문서에서는 사용자 지정 로그 파서를 사용하여 지원되지 않는 디바이스의 로그를 Cloud App Security로 업로드하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10d6e40ef8b2634fbcac3677ce37bd695141507a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 80eef93d11e11025d9e6cf01138bc9fab6a6fc19
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123735"
+ms.locfileid: "53177218"
 ---
 # <a name="use-a-custom-log-parser"></a>사용자 지정 로그 파서 사용
 

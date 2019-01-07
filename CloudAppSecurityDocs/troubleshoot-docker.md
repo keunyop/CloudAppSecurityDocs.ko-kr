@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery Docker 배포 문제 해결 | Microsoft Docs
+title: Cloud Discovery Docker 배포 문제 해결
 description: 이 문서에서는 Cloud App Security Cloud Discovery Docker에서 구성을 수정하는 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 69ff240426b86a254128e241c66c59fff1a10c36
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a87212e475360fa20fcc6712e7b44dfd69667dc5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122998"
+ms.locfileid: "53175417"
 ---
 # <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Microsoft Cloud App Security Cloud Discovery 배포 문제 해결
 

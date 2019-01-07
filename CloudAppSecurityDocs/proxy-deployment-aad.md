@@ -1,11 +1,11 @@
 ---
-title: Azure AD 앱용 Microsoft Cloud App Security 조건부 액세스 앱 제어 배포| Microsoft Docs
+title: Azure AD 앱용 Cloud App Security 조건부 액세스 앱 제어 배포
 description: 이 문서에서는 Azure AD 앱용 Microsoft Cloud App Security 조건부 액세스 앱 제어 역방향 프록시 기능을 배포하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 890d5600ab97e66735b5db277755c5567ff494dc
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d7f0041a385a60cde5bc714312435dd2cd6ac389
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124386"
+ms.locfileid: "53177133"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
 
@@ -31,11 +32,11 @@ ms.locfileid: "53124386"
 
 다음 단계에 따라 Microsoft Cloud App Security 조건부 액세스 앱 제어에서 Azure AD 앱을 제어하도록 구성합니다.
 
-**1단계: [Azure Active Directory 포털로 이동하여 앱에 대한 조건부 액세스 정책을 만들고 세션을 Cloud App Security ](#add-azure-ad)로 라우팅합니다.**
+**1단계: [Azure AD 포털로 이동하여 앱에 대한 조건부 액세스 정책을 만들고 세션을 Cloud App Security](#add-azure-ad)로 라우팅합니다.**
 
-**2단계: [앱](#sign-in-scoped)에서 정책 범위에 속한 사용자로 로그인합니다.**
+**2단계: [앱에서 정책 범위에 속한 사용자로 로그인합니다](#sign-in-scoped).**
 
-**3 단계 [Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱을](#banner-notification)추가합니다.**
+**3단계: [Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱을 추가합니다](#banner-notification).**
 
 **4단계: [액세스 정책](access-policy-aad.md)을 만들거나 Cloud App Security에 대한 [세션 정책](session-policy-aad.md)을 만듭니다.**
 
@@ -43,7 +44,7 @@ ms.locfileid: "53124386"
 > [!NOTE]
 > Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)가 필요합니다.
 
-## 1단계: Cloud App Security에 Azure Active Directory 앱 추가 <a name="add-azure-ad"></a>  
+## 1단계: Cloud App Security에 Azure AD 앱 추가 <a name="add-azure-ad"></a>  
 
 1. Azure AD 조건부 액세스 테스트 정책을 만듭니다.
 

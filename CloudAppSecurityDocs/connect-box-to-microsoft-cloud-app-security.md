@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Box 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 Box 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 Box 앱을 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b8acf7427b399a0eccb5229798a589e6370ef02e
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8053ce650f3a37338d29ff10b025a4b1297a8483
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123061"
+ms.locfileid: "53175928"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Box 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 앱 커넥터 API를 사용하여 기존 Box 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 Box 사용에 대한 표시 유형과 제어를 제공합니다.
   
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>Cloud App Security에 Box를 연결하는 방법  
   
@@ -41,7 +42,7 @@ ms.locfileid: "53123061"
   
          ![box 앱](./media/box-apps.png "box 앱")  
   
-    -   **Unpublished Applications**(게시되지 않은 응용 프로그램)이 선택된 경우 **Except for**(제외) 텍스트 상자에서 Cloud App Security 앱 일련 번호를 추가합니다.
+    -   **Unpublished Applications**(게시되지 않은 애플리케이션)이 선택된 경우 **Except for**(제외) 텍스트 상자에서 Cloud App Security 앱 일련 번호를 추가합니다.
      
          |데이터 센터|Microsoft Cloud App Security 일련 번호|
          |----|----|    

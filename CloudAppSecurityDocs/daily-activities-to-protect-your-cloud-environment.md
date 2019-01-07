@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 대시보드 사용 | Microsoft 문서
+title: Cloud App Security 대시보드 작업
 description: 이 문서는 Cloud App Security 대시보드의 기초적인 사용 방법을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c261adfbec2044ae2625f7ffb3b851907e2e223
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 480ac5273eaca15252c0a216147c1d6d3711a266
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123015"
+ms.locfileid: "53175229"
 ---
 # <a name="working-with-the-dashboard"></a>대시보드 사용
 

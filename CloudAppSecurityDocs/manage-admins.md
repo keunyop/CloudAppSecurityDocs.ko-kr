@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 포털에 대한 관리자 액세스 관리 | Microsoft 문서
+title: Cloud App Security 포털에 대한 관리자 액세스 관리
 description: 이 문서에서는 Cloud App Security 포털에 대한 관리자 액세스를 설정하는 지침을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe11600fc802e0c4f4d8024b78fa2713cc4a63
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123961"
+ms.locfileid: "53175705"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
@@ -30,11 +31,11 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
 
 기본적으로 다음 Office 365 및 Azure AD 관리자 역할은 Microsoft Cloud App Security에 액세스할 수 있습니다.
 
-- **글로벌 관리자 및 보안 관리자:** **전체 액세스 권한**이 있는 관리자는 Cloud App Security에서 모든 권한을 가집니다. 그들은 관리자 추가, 정책 및 설정 추가, 로그 업로드, 거버넌스 작업을 수행할 수 있습니다.
+- **글로벌 관리자 및 보안 관리자:** **모든 권한**이 있는 관지라는 Cloud App Security에서 모든 권한을 가집니다. 그들은 관리자 추가, 정책 및 설정 추가, 로그 업로드, 거버넌스 작업을 수행할 수 있습니다.
 
 - **준수 관리자:** 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 파일 정책을 생성 및 수정하고 파일 관리 작업을 허용하며 데이터 관리에서 모든 기본 보고서를 볼 수 있습니다. 
 
-- **보안 reader:** 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 보안 reader는 다음 작업을 수행할 수 없습니다.
+- **보안 독자:** 읽기 전용 권한을 가지며 경고를 관리할 수 있습니다. 보안 reader는 다음 작업을 수행할 수 없습니다.
 
   - 정책 만들기 또는 기존 정책 편집/변경 
   - 거버넌스 작업 수행 
@@ -60,7 +61,7 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - 보안 확장 - 사용자 권한이 있는 API 토큰에 대한 사용 권한만
   - 거버넌스 작업 - 특정 앱/인스턴스에 대해서만 
 
-- **그룹 관리자**: 여기에서 선택한 특정 그룹에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어, 사용자에게 “독일 - 모든 사용자” 그룹에 대한 관리자 권한을 부여하면 관리자는 다음과 같이 해당 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다.
+- **그룹 관리자:** 여기에서 선택한 특정 그룹에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어, 사용자에게 “독일 - 모든 사용자” 그룹에 대한 관리자 권한을 부여하면 관리자는 다음과 같이 해당 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다.
 
   - 활동 페이지 - 그룹의 사용자에 대한 활동만
   - 경고 - 그룹의 사용자와 관련된 경고만

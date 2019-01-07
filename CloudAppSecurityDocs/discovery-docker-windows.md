@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eab4a159d0791f5cc84a42eb7db3da4797ff92
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124403"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450650"
 ---
 # <a name="docker-on-windows-on-premises"></a>Windows의 Docker 온-프레미스
 
@@ -48,7 +48,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 - 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
 
 1. **자동 로그 업로드** 설정 페이지로 이동합니다. 
 
@@ -126,7 +126,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
    ![로그 수집기 만들기](./media/windows7.png)
 8. `docker logs <collector_name>` 명령을 사용하여 수집기가 정상적으로 실행되고 있는지 확인합니다.
 
-**Finished successfully!** 라는 메시지가 표시되어야 합니다
+다음 메시지가 표시됩니다. **완료되었습니다.**
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -160,12 +160,12 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
 Docker 설치 프로그램이 Microsoft에서 서명되었는지 확인하려면:
 1. 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
-2. **일반**을 클릭하여 **이 디지털 서명이 유효함**이 표시되는지 확인합니다.  
-3. **디지털 서명**을 클릭하고 Microsoft가 **서명 목록**에 나열되어 있는지 확인합니다.  
+2. **디지털 서명**을 클릭하여 **이 디지털 서명이 유효함**이 표시되는지 확인합니다.  
+3. **Microsoft Corporation**이 **서명자 이름** 아래에 유일한 항목으로 나열되는지 확인합니다.  
 
 ![유효한 디지털 서명](./media/digital-signature-successful.png)
 
-디지털 서명이 유효하지 않으면 다음과 같이 나타납니다.
+디지털 서명이 유효하지 않으면 **이 디지털 서명이 유효하지 않음**이 표시됩니다.
 
 ![잘못된 디지털 서명](./media/digital-signature-unsuccessful.png)
 

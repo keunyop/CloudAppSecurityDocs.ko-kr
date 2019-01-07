@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 네트워크 요구 사항 | Microsoft Docs
+title: 네트워크 요구 사항 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security를 사용하기 위해 열어야 하는 IP 주소와 포트에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06de1b58f2a9a13559f4ac04a594ac681376e696
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: df90f8a2b2a52f9dbaacac3e317b1354bdbe1d8a
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124369"
+ms.locfileid: "53176606"
 ---
 # <a name="network-requirements"></a>네트워크 요구 사항
 
@@ -152,7 +153,7 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송할
 
 보낸 사람 ID를 사용자 지정하지 않으면 모든 기본 설정을 사용하여 이메일 알림이 전송됩니다.
 
-MailChimp를 사용하려면 IP 주소 198.2.134.139(mail1.cloudappsecurity.com)를 스팸 방지 허용 목록에 추가하여 알림이 전송될 수 있도록 합니다.
+MailChimp를 사용하려면 다음 IP 주소를 스팸 방지 허용 목록에 추가하여 알림이 전송될 수 있도록 합니다. 198.2.134.139(mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>로그 수집기 

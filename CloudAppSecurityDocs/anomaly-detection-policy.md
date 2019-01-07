@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 변칙 검색 정책 만들기 | Microsoft 문서
+title: Cloud App Security에서 변칙 검색 정책 만들기
 description: 이 문서에서는 변칙 검색 정책에 대해 설명하고 변칙 검색 정책의 구성 요소에 대한 참조 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 91733a1219befb3aac5ac48a4a3fe19368ea4d10
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124709"
+ms.locfileid: "53176800"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>즉각적인 동작 분석 및 변칙 검색 이용
 

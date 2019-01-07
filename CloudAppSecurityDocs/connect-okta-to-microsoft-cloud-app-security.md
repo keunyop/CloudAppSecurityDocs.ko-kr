@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Okta 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Okta를 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 Okta 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 Okta를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46e9439ae4157976385db40ee7c89e968cd690c0
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 5217328b86147a8b4be404a845437beddcdb9a95
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122774"
+ms.locfileid: "53176389"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Okta 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 커넥터 API를 사용하여 기존 Okta 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 커넥터 API를 사용하여 기존 Okta 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 Okta 사용에 대한 표시 유형과 제어를 제공합니다.
+  
   
 ## <a name="how-to-connect-okta-to-cloud-app-security"></a>Cloud App Security에 Okta를 연결하는 방법  
   

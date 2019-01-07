@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 보안 구성 권장 사항 가져오기 | Microsoft Docs
+title: 보안 구성 권장 사항 가져오기 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Azure Security Center와 통합하여 Cloud App Security에서 보안 구성 권장 사항을 가져오는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3f5517acc0cf829983d65f7680a237066949c75d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 0cd5567c1f89375109a97be00c1053fe0da64833
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124301"
+ms.locfileid: "53175739"
 ---
 # <a name="security-configuration"></a>보안 구성
 

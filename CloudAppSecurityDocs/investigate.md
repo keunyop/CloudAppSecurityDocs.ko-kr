@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security를 사용하여 클라우드 앱 위험 및 의심스러운 활동 조사 | Microsoft 문서
+title: 클라우드 앱 위험 및 의심스러운 활동 조사 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security를 사용하여 경고, 문제 및 의심스러운 활동을 조사하는 프로세스에 대해 간략하게 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a285943125d3973089f21e522924e4e2b428d753
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 12bb0604e776f9ff8df61c784d3d8597dc05ed32
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123944"
+ms.locfileid: "53176640"
 ---
 # <a name="investigate"></a>조사
 

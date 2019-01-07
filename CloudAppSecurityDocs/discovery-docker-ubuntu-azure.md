@@ -1,11 +1,11 @@
 ---
-title: 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
+title: Azure에서 Docker를 사용하여 자동 로그 업로드 구성
 description: 이 문서에서는 Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124726"
+ms.locfileid: "53177354"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -48,7 +49,7 @@ Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 - 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
 
 1. **자동 로그 업로드** 설정 페이지로 이동합니다. 
 
@@ -150,7 +151,7 @@ Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고
 
      ![Ubuntu 프록시](./media/ubuntu-proxy.png)
 
-8. 로그 수집기가 정상적으로 실행 중인지 확인하려면 다음 명령을 실행합니다. `Docker logs <collector_name>`. **성공적으로 완료되었습니다.** 라는 결과가 표시되어야 합니다.
+8. 로그 수집기가 정상적으로 실행 중인지 확인하려면 다음 명령을 실행합니다. `Docker logs <collector_name>`. 다음과 같은 결과를 얻게 됩니다. **완료되었습니다.**
 
    ![ubuntu8](./media/ubuntu8.png)
 

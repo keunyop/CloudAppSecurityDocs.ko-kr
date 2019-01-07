@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security 및 Azure AD 검색 기능 간의 차이점은 무엇인가요? | Microsoft 문서
+title: Cloud App Security와 Azure AD의 검색 기능 차이점
 description: 이 문서에서는 Microsoft Cloud App Security 및 Azure AD의 검색 기능 간의 차이점을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d5a3a552e256fe20c1dcfe6896f373e8902599ea
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 279617cf38a70d5a5ecf78c6e3c19013b7fd45aa
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123604"
+ms.locfileid: "53175650"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory 및 Microsoft Cloud App Security에 대한 검색 기능의 차이점은 무엇인가요?
 

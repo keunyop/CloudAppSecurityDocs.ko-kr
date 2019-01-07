@@ -1,11 +1,11 @@
 ---
-title: 위협 방지 시나리오 개요 | Microsoft 문서
+title: 위협 방지 시나리오 개요 - Cloud App Security | Microsoft Docs
 description: 이 항목에서는 조직이 클라우드 환경에서 발생할 수 있는 위험 요소를 방지하기 위한 시나리오를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf9da01f896b1f9509918bca73c3d189e9d4557e
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 65135d0afa0074b9cd3ac944e62de15eb030e17e
+ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123587"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53347288"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="protecting-your-organization-from-ransomware"></a>랜섬웨어로부터 조직 보호
+
+*적용 대상: Microsoft Cloud App Security*
 
 최근 대규모의 랜섬웨어 공격에서 WannaCry가 사이버 세계를 심각하게 공격하여 150여 개 국가에 200,000대의 컴퓨터가 감염된 것으로 추정됩니다. 지난 몇 년 동안 랜섬웨어 공격이 증가하면서 2015년 매월 평균 25,000회 공격이, 2016년 56,000회 공격이 발생하여 네트워크와 클라우드가 위험에 처하지 않도록 사전에 대처하는 사이버 보안이 필수가 되고 있습니다. 이 문서에서는 Cloud App Security를 사용하여 클라우드를 모니터링하고, 위협을 검색 및 완화하고, 랜섬웨어로부터 환경을 보호하기 위한 모범 사례를 적용하는 방법을 설명합니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "53123587"
 > 이 사용 사례는 Office 365, G Suite, Box 및 Dropbox에 적용됩니다.
 
 ## <a name="the-threat"></a>위협
-조직의 사용자는 랜섬웨어 공격의 대상입니다. 사용자는 모르고 감염된 메일 열고 클라우드에 동기화된 파일을 포함하여 모든 파일을 감염시키는 랜섬웨어를 실행할 수 있습니다.
+조직의 사용자는 랜섬웨어 공격의 대상입니다. 사용자는 모르고 감염된 이메일을 열고 클라우드에 동기화된 파일을 포함하여 모든 파일을 감염시키는 랜섬웨어를 실행할 수 있습니다.
 
 ## <a name="the-solution"></a>해결 방법
 의심스러운 활동이 검색될 때 업데이트하는 정책을 만들어 클라우드 환경에서 잠재적인 랜섬웨어를 검색하고 랜섬웨어 파일이 클라우드에 저장되지 않도록 방지하는 자동화된 작업을 설정합니다.
@@ -50,8 +50,9 @@ ms.locfileid: "53123587"
 
 
 
-   ## <a name="see-also"></a>참고 항목  
-   [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>다음 단계 
+
+[클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   

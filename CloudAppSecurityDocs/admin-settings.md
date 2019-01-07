@@ -1,11 +1,11 @@
 ---
-title: 관리자 기본 설정 지정 | Microsoft 문서
+title: 관리자 기본 설정 지정 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security에서 관리자 기본 설정 지정에 대한 지침을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b975907e6a2d1b78a61fd5e1960496b44ade234
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 09b9be9508f6dcb1f76bed691695050ab7d43a66
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122822"
+ms.locfileid: "53176811"
 ---
 # <a name="admin-user-settings"></a>관리 사용자 설정
 

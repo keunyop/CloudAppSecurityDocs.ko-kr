@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 Office 365 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 Office 365 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 Office 365를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974754e72fd6392930eab740d48790b4d5156c59
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 5954299b0efaca3f4406abf925daad33fa1a61b7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124165"
+ms.locfileid: "53176324"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 앱 커넥터 API를 사용하여 기존 Microsoft Office 365 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  이 연결은 Office 365 사용에 대한 표시 유형과 제어를 제공합니다.
   
 Cloud App Security는 Office 365 서비스의 최신 제공(Office 365의 vNext 릴리스 제품군)뿐만 아니라 레거시 Office 365 전용 플랫폼을 지원합니다.  Cloud App Security는 레거시 Microsoft Business Productivity Online Standard Suite(BPOS)를 지원하지 않습니다. 
 
@@ -45,7 +46,7 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
   
 > [!NOTE]
 >- Cloud App Security에 Office 365를 연결하려면 Office 365 라이선스가 하나 이상 할당되어 있어야 합니다.
->-  Office 365에서 기본적으로 사용되는 Exchange 관리자 감사 로깅은 관리자(또는 관리자 권한이 할당된 사용자)가 Exchange Online 조직에서 변경 작업을 수행하면 Office 365 감사 로그에 이벤트를 기록합니다. Exchange 관리 센터를 사용하거나 Windows PowerShell에서 cmdlet을 실행하여 수행된 변경 작업이 Exchange 관리자 감사 로그에 기록됩니다. Exchange의 관리자 감사 로깅에 대한 자세한 내용은 [관리자 감사 로깅](http://go.microsoft.com/fwlink/p/?LinkID=619225)을 참조하세요.
+>-  Office 365에서 기본적으로 사용되는 Exchange 관리자 감사 로깅은 관리자(또는 관리자 권한이 할당된 사용자)가 Exchange Online 조직에서 변경 작업을 수행하면 Office 365 감사 로그에 이벤트를 기록합니다. Exchange 관리 센터를 사용하거나 Windows PowerShell에서 cmdlet을 실행하여 수행된 변경 작업이 Exchange 관리자 감사 로그에 기록됩니다. Exchange의 관리자 감사 로깅에 대한 자세한 내용은 [관리자 감사 로깅](https://go.microsoft.com/fwlink/p/?LinkID=619225)을 참조하세요.
 >- Exchange Online의 사용자 활동을 기록하기 전에 각 사용자 사서함에 대해 Exchange 사서함 감사 로깅을 켜야 합니다. [Exchange 사서함 활동](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)을 참조하세요.
 >- Office 앱을 사용하는 경우 Office 365의 일부인 그룹도 특정 Office 앱에서 Cloud App Security로 가져오게 됩니다. 예를 들어 SharePoint를 사용하면 Office 365 그룹이 SharePoint 그룹으로도 가져오게 됩니다.
 >- 해당 위치에서 로그를 가져오려면 [Power BI에서 감사를 사용하도록 설정](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)해야 합니다. 감사 기능을 사용하도록 설정하면 Cloud App Security에서 로그 가져오기가 시작됩니다(24~72시간 지연 있음).

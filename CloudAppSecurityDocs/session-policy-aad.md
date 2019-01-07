@@ -1,11 +1,11 @@
 ---
-title: 세션 정책을 만들어서 사용자 세션에 대한 심층적인 가시성을 확보하고 다운로드를 차단 | Microsoft Docs
+title: Cloud App Security에서 세션 정책 만들기
 description: 이 문서에서는 사용자의 세션 활동에 대한 심층적인 가시성을 확보하고 역방향 프록시 기능을 사용하여 다운로드를 차단하기 위해 Cloud App Security 조건부 액세스 앱 제어 세션 정책을 설정하는 절차를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0019609036b222da25eede8b1ca3a34d0617ebe4
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 50230751efbc9dfcbd203d130c6e1d3e7489eb03
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124539"
+ms.locfileid: "53176997"
 ---
 # <a name="session-policies"></a>세션 정책 
 
@@ -77,7 +78,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 5. **다음 항목 모두와 일치하는 활동** 섹션의 **활동 원본** 아래에서 정책에 적용할 추가 활동 필터를 선택합니다. 이러한 필터에는 다음 옵션이 포함될 수 있습니다. 
 
-   - **장치 태그**: 관리되지 않는 장치를 식별하려면 이 필터를 사용합니다.
+   - **디바이스 태그**: 관리되지 않는 디바이스를 식별하려면 이 필터를 사용합니다.
 
    - **위치**: 알 수 없는(이에 따라 위험한) 위치를 식별하려면 이 필터를 사용합니다. 
 
@@ -103,11 +104,11 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
  
    3. **작업** 아래에서 다음 항목 중 하나를 선택합니다. 
 
-      - **테스트(모든 활동 모니터링)**: 설정한 정책 필터에 따라 다운로드를 명시적으로 허용하려면 이 작업을 설정합니다.
+      - **테스트(모든 활동 모니터링)**: 명시적으로 설정한 정책 필터에 따라 다운로드를 허용하려면 이 작업을 설정합니다.
 
-      - **차단(파일 다운로드 차단 및 모든 활동 모니터링)**: 설정한 정책 필터에 따라 다운로드를 명시적으로 차단하려면 이 작업을 설정합니다. 자세한 내용은 [다운로드 차단 작동 방식](#block-download)을 참조하세요.
+      - **차단(파일 다운로드 차단 및 모든 활동 모니터링)**: 명시적으로 설정한 정책 필터에 따라 다운로드를 차단하려면 이 작업을 설정합니다. 자세한 내용은 [다운로드 차단 작동 방식](#block-download)을 참조하세요.
 
-      - **보호(다운로드에 분류 레이블 적용 및 모든 활동 모니터링)**: 이 옵션은 **세션 정책**에서 **파일 다운로드 제어(DLP 포함)** 를 선택한 경우에만 사용할 수 있습니다. 조직에서 Azure Information Protection을 사용하는 경우 Azure Information Protection의 분류 레이블 설정을 파일에 적용하도록 **작업**을 설정할 수 있습니다. 자세한 내용은 [다운로드 보호 작동 방식](#protect-download)을 참조하세요.
+      - **보호(분류 레이블을 다운로드에 적용 및 모든 활동 모니터링)**: 이 옵션은 **세션 정책** 아래에서 **파일 다운로드 제어(DLP 포함)** 를 선택한 경우에만 사용할 수 있습니다. 조직에서 Azure Information Protection을 사용하는 경우 Azure Information Protection의 분류 레이블 설정을 파일에 적용하도록 **작업**을 설정할 수 있습니다. 자세한 내용은 [다운로드 보호 작동 방식](#protect-download)을 참조하세요.
 
 7. **정책의 심각도로 각 일치 이벤트에 대한 경고 만들기** 및 경고 제한을 설정할 수 있습니다. 경고를 이메일, 문자 메시지 또는 둘 다로 보낼지를 선택합니다.
 
@@ -164,7 +165,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
 ## <a name="next-steps"></a>다음 단계
  
-[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
+[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 디바이스에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   

@@ -1,11 +1,11 @@
 ---
-title: 액세스 허용 및 차단을 위한 Cloud App Security 액세스 정책 만들기 | Microsoft Docs
+title: 액세스 허용 및 차단을 위한 Cloud App Security 액세스 정책 만들기
 description: 이 문서에서는 역방향 프록시 기능을 사용하여 Azure AD를 통해 연결된 앱에 대한 액세스를 허용하고 차단하도록 Cloud App Security 조건부 액세스 앱 제어 액세스 정책을 설정하는 절차를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,21 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 60d85d25400386161dacd09e359353e96dac6b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124131"
+ms.locfileid: "53176181"
 ---
-# <a name="access-policies"></a>액세스 정책 
+# <a name="access-policies"></a>액세스 정책
 
 *적용 대상: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 이전: 세션 정책을 만드는 방법](session-policy-aad.md)<br>
 [다음: 인기 있는 사용 사례 탐색 »](use-case-proxy-block-session-aad.md)
-
 
 Microsoft Cloud App Security 액세스 정책을 통해 사용자, 위치, 디바이스 및 앱을 기반으로 클라우드 앱에 대한 액세스를 실시간으로 모니터링하고 제어할 수 있습니다. 클라이언트 인증서를 관리되는 디바이스로 롤아웃하거나 타사 MDM 인증서와 같은 기존 인증서를 사용하여 도메인에 가입하지 않은 디바이스 및 Windows Intune으로 관리되지 않는 디바이스를 비롯한 모든 디바이스에 대한 액세스 정책을 만들 수 있습니다. 예를 들어 관리되는 디바이스에 클라이언트 인증서를 배포한 다음 인증서 없이 디바이스에서 액세스할 수 없도록 차단할 수 있습니다. 
 
@@ -61,11 +61,11 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 1. 포털에서 **제어**, **정책**을 차례로 선택합니다.
 2. **정책** 페이지에서 **정책 만들기**를 클릭하고 **액세스 정책**을 선택합니다.  
 
-3. **액세스 정책** 창에서 정책의 이름(예: *관리되지 않는 장치의 액세스 차단*)을 할당합니다.
+3. **액세스 정책** 창에서 정책의 이름(예: *관리되지 않는 디바이스의 액세스 차단*)을 할당합니다.
 
 4. **다음 항목 모두와 일치하는 활동** 섹션의 **활동 원본** 아래에서 정책에 적용할 추가 활동 필터를 선택합니다. 필터에는 다음 옵션이 포함됩니다. 
      
-   - **장치 태그**: 관리되지 않는 장치를 식별하려면 이 필터를 사용합니다.
+   - **디바이스 태그**: 관리되지 않는 디바이스를 식별하려면 이 필터를 사용합니다.
 
    - **위치**: 알 수 없는(이에 따라 위험한) 위치를 식별하려면 이 필터를 사용합니다. 
 
@@ -89,7 +89,7 @@ Azure Active Directory 조건부 액세스 정책과 Cloud App Security 세션 �
 
  
 ## <a name="next-steps"></a>다음 단계  
-[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 장치에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
+[Azure AD 조건부 액세스 앱 제어 기능을 사용하여 관리되지 않는 디바이스에서 다운로드 차단](use-case-proxy-block-session-aad.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  
   

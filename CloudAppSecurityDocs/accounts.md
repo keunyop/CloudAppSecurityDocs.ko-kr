@@ -1,11 +1,11 @@
 ---
-title: 클라우드 앱 계정 보기 | Microsoft 문서
+title: 클라우드 앱 계정 보기 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 연결된 앱에서 계정을 검토하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a48077187ace1980cf819a32514c9fbbb930c444
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7b04724605eba07b2adbd952f634bd92496d772e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123638"
+ms.locfileid: "53175671"
 ---
 # <a name="accounts"></a>계정
 
@@ -26,7 +27,7 @@ ms.locfileid: "53123638"
 
 Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 있습니다. 앱 커넥터를 사용하여 앱에 Cloud App Security를 연결하면 Cloud App Security는 연결된 앱과 관련된 계정 정보를 읽습니다. [계정] 페이지에서 해당 계정, 사용 권한, 계정이 속한 그룹, 계정 별칭 및 사용하는 앱을 조사할 수 있습니다. 또한 Cloud App Security가 활동이나 파일 공유 등의 연결된 앱 중 하나에서 이전에 보이지 않던 새 계정을 검색하는 경우 이 계정이 해당 앱의 계정 목록에 추가됩니다. 따라서 클라우드 앱을 조작하는 외부 사용자의 활동을 파악할 수 있습니다.
 
-관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. **사용자 및 계정** 페이지는 연결된 클라우드 응용 프로그램에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.
+관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. **사용자 및 계정** 페이지는 연결된 클라우드 애플리케이션에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -54,7 +55,7 @@ Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 �
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **Affiliation**(소속): 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이와 함께 표시됩니다. ![계정 관리자 아이콘](./media/accounts-admin-icon.png)
+- **소속**: 소속은 **내부** 또는 **외부**가 됩니다. 내부에 있는 사용자 및 계정을 설정하려면 **설정**에서 내부 조직의 **IP 주소 범위**를 설정합니다. 계정에 관리자 권한이 있는 경우 [계정] 테이블의 아이콘이 빨간색 타이와 함께 표시됩니다. ![계정 관리자 아이콘](./media/accounts-admin-icon.png)
 
 - **앱**: 조직의 계정에서 사용하는 모든 API 연결 앱을 필터링할 수 있습니다.
 
@@ -64,7 +65,7 @@ Microsoft Cloud App Security에서는 연결된 앱의 계정을 파악할 수 �
 
 - **인스턴스**: 특정 앱 인스턴스의 멤버를 필터링할 수 있습니다. 
 
-- **Last seen**(마지막 확인): **last seen**(마지막 확인) 필터를 사용하면 유휴 상태이고 한동안 아무런 활동도 하지 않은 사용자의 계정을 찾을 수 있습니다.
+- **마지막 확인**: **마지막 확인** 필터를 사용하면 유휴 상태이고 한동안 아무런 활동도 하지 않은 사용자의 계정을 찾을 수 있습니다.
 
 - **조직**: 연결된 앱에서 정의한 특정 조직 그룹의 멤버를 필터링할 수 있습니다.
 

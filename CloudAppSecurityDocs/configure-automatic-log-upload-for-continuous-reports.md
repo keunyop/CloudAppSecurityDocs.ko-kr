@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
-description: 이 항목에서는 자동 Cloud Discovery 보고서를 만들기 위해 로그를 업로드하는 방법에 대한 정보를 제공합니다.
+title: 연속 보고서에 대한 자동 로그 업로드 구성 - Cloud App Security | Microsoft Docs
+description: 이 문서에서는 자동 Cloud Discovery 보고서를 만들기 위해 로그를 업로드하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 331ae314d77cbc2ea85d8b714823a392d40fa209
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 389760b6e5279668ec2b2fe389dccdbe647b7f5b
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124573"
+ms.locfileid: "53176980"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>가상 어플라이언스에서 연속 보고서에 대한 자동 로그 업로드 구성 - 사용되지 않음
 
@@ -44,7 +45,7 @@ ms.locfileid: "53124573"
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
   
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 - 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결  
   
 1. 자동화된 업로드 설정 페이지로 이동합니다.  
    Cloud App Security 포털에서 설정 아이콘 ![설정 아이콘](./media/settings-icon.png "설정 아이콘"), **로그 수집기**를 차례로 클릭합니다.  
@@ -119,9 +120,9 @@ ms.locfileid: "53124573"
 
 1.  포털에서 제공된 대화형 관리자 자격 증명을 사용하여 SSH를 통해 로그 수집기에 로그인합니다. (처음으로 콘솔에 로그인하는 경우 암호를 변경해야 하며 암호를 변경한 후에는 다시 로그인해야 합니다. 터미널 세션을 사용하는 경우 터미널 세션을 다시 시작해야 합니다. )
 2.  로그 수집기를 만들 때 제공된 액세스 토큰을 사용하여 수집기 구성 유틸리티를 실행합니다.```sudo collector_config <access token> ```
-3. 콘솔 도메인을 입력합니다. 예를 들면 다음과 같습니다. ```contoso.portal.cloudappsecurity.com``` 이 값은 Cloud App Security 포털에 로그인한 후에 보이는 URL에서 사용할 수 있습니다. 
+3. 콘솔 도메인을 입력합니다. 예를 들면 다음과 같습니다. ```contoso.portal.cloudappsecurity.com``` 이 도메인은 Cloud App Security 포털에 로그인한 후 표시되는 URL에서 사용할 수 있습니다. 
 
-4. 예를 들어, 앞 그림의 **CloudAppSecurityLogCollector01** 또는 **NewYork**과 같이 구성할 로그 수집기의 이름을 입력합니다.
+4. 구성하려는 로그 수집기의 이름을 입력합니다. 예를 들면 다음과 같습니다. 위의 그림에서 **CloudAppSecurityLogCollector01** 또는 **NewYork**
 
 5.  다음과 같이 포털에서 로그 수집기의 구성을 가져옵니다.  
   

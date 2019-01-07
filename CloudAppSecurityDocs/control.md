@@ -1,11 +1,11 @@
 ---
-title: 거버넌스 작업을 사용하여 클라우드 앱 사용을 제어하는 방법 | Microsoft 문서
+title: Cloud App Security에서 거버넌스 작업을 사용하는 방법
 description: 이 문서에서는 Cloud App Security에서 조직의 클라우드 앱 사용을 제어하기 위해 수행할 수 있는 거버넌스 작업에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e2662ab98f5214f2843570c01c8f76e08799b347
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8b39db869b9f11b0894fde71569f6872f2ddfaa3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124080"
+ms.locfileid: "53176383"
 ---
 # <a name="control"></a>컨트롤
 

@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security를 사용하여 Cloud Discovery 배포 | Microsoft 문서
+title: Cloud Discovery 배포 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud Discovery 작업을 시작하기 위한 설정 절차에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f751968094b2605dea2477345324f9825346feba
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 0ad041c73f1bb8871e08357e6d85269ef20f3903
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124777"
+ms.locfileid: "53175909"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery 설정
 
@@ -38,7 +39,7 @@ Cloud Discovery는 16,000개 이상의 클라우드 앱이 포함된 Microsoft C
   - [로그 수집기](discovery-docker.md): 로그 수집기를 사용하여 네트워크에서 로그 업로드를 쉽게 자동화할 수 있습니다. 로그 수집기는 네트워크에서 실행되며 Syslog 또는 FTP를 통해 로그를 받습니다.
   - [Zscaler 통합](zscaler-integration.md): Cloud App Security와 Zscaler를 모두 사용하는 경우 두 제품을 통합하여 보안 Cloud Discovery 환경을 향상할 수 있습니다. Cloud App Security와 Zscaler는 함께 Zscaler 포털에서 Cloud Discovery의 원활한 배포, 비사용 권한 앱의 자동 차단 및 위험 평가를 직접 제공합니다.
 
-## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>로그인 프로세스 흐름: 원시 데이터에서 위험 평가로
+## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>로그 프로세스 흐름: 원시 데이터에서 위험 평가로
 
 위험 평가 생성 프로세스는 다음과 같은 단계로 구성됩니다. 이 프로세스는 처리되는 데이터의 양에 따라 몇 분에서 몇 시간이 걸립니다.  
 

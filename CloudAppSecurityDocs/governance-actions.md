@@ -1,11 +1,11 @@
 ---
-title: 연결된 앱을 제어하기 위해 거버넌스 작업을 적용하는 방법| Microsoft 문서
+title: 연결된 앱을 제어하도록 거버넌스 작업 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security에서 수행할 수 있는 모든 거버넌스 작업 및 이 작업을 추적하는 로그 메시지를 나열하고 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124641"
+ms.locfileid: "53177473"
 ---
 # <a name="governing-connected-apps"></a>연결된 앱을 제어합니다.
 
@@ -50,7 +51,7 @@ ms.locfileid: "53124641"
 
      - **공유 변경** 
 
-        - **공용 공유 제거** – 명명된 공동 작업자에게만 액세스를 허용합니다(예: G Suite에 대한 공용 액세스 제거 및 Box에 대한 직접 공유 링크 제거). 
+        - **공용 공유 제거** – 명명된 협력자에게만 액세스를 허용합니다. 예를 들어 다음과 같습니다. G Suite에 대한 공용 액세스를 제거하고 Box에 대한 직접 공유 링크를 제거합니다. 
 
        - **외부 사용자 제거** – 회사 사용자에게만 액세스를 허용합니다. 
 

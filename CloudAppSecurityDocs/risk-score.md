@@ -1,11 +1,11 @@
 ---
-title: 위험 점수 사용 | Microsoft 문서
+title: 위험 점수 사용 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security 앱 위험 점수를 사용하고 사용자 지정하는 방법에 관한 지침을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124505"
+ms.locfileid: "53177442"
 ---
 # <a name="working-with-the-risk-score"></a>위험 점수 사용
 
@@ -59,7 +60,7 @@ ms.locfileid: "53124505"
   **사용 권한** 또는 **미사용 권한** 중에서 선택하거나 앱의 사용자 지정 태그를 만들 수 있습니다. 이러한 태그는 필터로 사용할 수 있습니다. 필터는 조사하려는 앱의 특정 유형을 심층 분석하는 데 유용합니다. 
 - **앱 및 도메인**: 특정 앱 또는 특정 도메인에서 사용되는 앱을 검색할 수 있습니다. 
 - **범주**: 페이지 왼쪽에 있는 범주 필터를 사용하여 앱 범주에 따라 앱 유형을 검색할 수 있습니다. 예: 소셜 네트워크 앱, 클라우드 스토리지 앱 및 더 다양한 유형의 앱. 한 번에 둘 이상의 범주를 선택하거나 단일 범주를 선택할 수 있습니다. 그런 다음, 범주 상단에 기본 또는 고급 필터를 적용합니다.
-- **위험 요인 준수**: 앱이 준수할 수 있는 특정 표준, 인증 및 규정 준수를 검색할 수 있습니다. 예로는 HIPAA, ISO 27001, SOC 2 및 PCI-DSS가 있습니다.
+- **위험 요인 규정 준수**: 앱이 준수할 수 있는 특정 표준, 인증 및 규정 준수를 검색할 수 있습니다. 예로는 HIPAA, ISO 27001, SOC 2 및 PCI-DSS가 있습니다.
 - **일반 위험 요인**: 소비자 인기도, 데이터 센터 로캘 등의 일반 위험 요인을 검색할 수 있습니다.
 - **법적 위험 요소**: 준비된 모든 규정 및 정책에 따라 필터링할 수 있습니다. 법적 위험 요소를 사용하면 GDPR, DMCA 및 데이터 보존 정책과 같은 앱 사용자의 데이터 보호 및 개인 정보 보호가 보장됩니다.
 - **위험 점수**: 집중할 수 있는 위험 점수를 기준으로 앱을 필터링합니다. 예를 들어 위험한 앱만 검토합니다.

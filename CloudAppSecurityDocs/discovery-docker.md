@@ -1,11 +1,11 @@
 ---
-title: 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
+title: Cloud App Security에서 연속 보고서에 대한 자동 로그 업로드 구성
 description: 이 문서에서는 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b62a5b7b3270076efd3763488d87b14b8c78632
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e1f5023c31d5f2d33573ee99c2b363535c87e085
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123757"
+ms.locfileid: "53176725"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 
@@ -43,7 +44,7 @@ ms.locfileid: "53123757"
 
 -   **컨테이너**: [Ubuntu 온-프레미스](discovery-docker-ubuntu.md), [Azure의 Ubuntu](discovery-docker-ubuntu-azure.md) 또는 [RHEL 온-프레미스](discovery-docker-ubuntu.md)에서 Docker 이미지로 실행됩니다. 
 
--   **가상 어플라이언스**: [Hyper-V 또는 VMware 하이퍼바이저에서 이미지로 실행됩니다.](configure-automatic-log-upload-for-continuous-reports.md)
+-   **가상 어플라이언스**:  [Hyper-V 또는 VMware 하이퍼바이저에서 이미지로 실행됩니다.](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 

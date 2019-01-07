@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 정책을 만들어 클라우드 앱 사용 제어 | Microsoft 문서
+title: 정책을 만들어 클라우드 앱 사용 제어 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 클라우드 앱 사용을 제어하도록 정책을 사용하고 설정하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b15e3f54b8aabe4dff37597fa78465d34ad6c144
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e73f9e3ab8de86bd2ea7a010435b93e860cf54a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124811"
+ms.locfileid: "53177065"
 ---
 # <a name="control-cloud-apps-with-policies"></a>정책을 사용하여 클라우드 앱 제어
 
@@ -75,7 +76,7 @@ Cloud App Security는 클라우드에서 다양한 위험을 완화하는 데 �
   
      파일 콘텐츠와 클라우드 콘텐츠를 검사하고 내부 및 외부 공유 정책을 적용합니다. 공동 작업을 모니터링하고 조직 외부에서 파일이 공유되지 않도록 차단하는 등의 공유 정책을 적용합니다.  
   
--   **위협 검색:** 클라우드 환경을 위협하는 의심스러운 활동이 있나요?  
+-   **위협 탐지:** 클라우드 환경을 위협하는 의심스러운 활동이 있나요?  
   
      문자 메시지 또는 메일을 통해 정책 위반이나 활동 임계값에 대한 실시간 알림을 받습니다. 기계 학습 알고리즘을 적용하여 Cloud App Security를 통해 사용자가 데이터를 오용하고 있음을 나타내는 동작을 검색할 수 있습니다.  
   
@@ -97,7 +98,7 @@ Cloud App Security의 정책 템플릿을 모든 정책에 대한 기준으로 �
   
 1. 콘솔에서 **제어**, **템플릿**을 차례로 클릭합니다.  
   
-    ![](./media/create-policy-from-template.png)  
+    ![템플릿에서 정책 만들기](./media/create-policy-from-template.png)  
   
 2. 사용하려는 템플릿 행의 오른쪽 끝에 있는 **+** 를 클릭합니다. 사전 정의된 템플릿 구성이 있는 정책 만들기 페이지가 열립니다.  
   

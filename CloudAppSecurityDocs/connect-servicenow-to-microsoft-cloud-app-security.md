@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 ServiceNow 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 ServiceNow 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 ServiceNow 앱을 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,25 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: db322502c8036e6e8d6060aa9e8f313e3893d0b7
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 773efcb800ffbd2fada86910d4393aa16143c199
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123978"
+ms.locfileid: "53176759"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 
+이 문서에서는 앱 커넥터 API를 사용하여 기존 ServiceNow 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 ServiceNow 사용에 대한 표시 유형과 제어를 제공합니다.
 
 > [!NOTE]
->  ServiceNow를 배포할 때는 Fuji 이상 릴리스에 제공되는 OAuth 앱 토큰을 사용하는 것이 좋습니다(관련 [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)(ServiceNow 설명서)을 참조하세요. 이전 릴리스의 경우 사용자/암호를 기반으로 [레거시 연결 모델](#legacy-servicenow-connection)을 사용할 수 있습니다. 제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
+>  ServiceNow를 배포할 때는 Fuji 이상 릴리스에 제공되는 OAuth 앱 토큰을 사용하는 것이 좋습니다(관련 [ServiceNow documentation](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)(ServiceNow 설명서)을 참조하세요. 이전 릴리스의 경우 사용자/암호를 기반으로 [레거시 연결 모델](#legacy-servicenow-connection)을 사용할 수 있습니다. 제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
 > 
 > [!NOTE]
->  Cloud App Security는 Eureka, Fiji, Geneva, Helsinki 및 Istanbul의 ServiceNow 버전을 지원합니다. ServiceNow를 Cloud App Security와 연결하려면 **관리자** 역할이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.  자세한 내용은 [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)(ServiceNow 제품 설명서)을 참조하세요.
+>  Cloud App Security는 Eureka, Fiji, Geneva, Helsinki 및 Istanbul의 ServiceNow 버전을 지원합니다. ServiceNow를 Cloud App Security와 연결하려면 **관리자** 역할이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.  자세한 내용은 [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)(ServiceNow 제품 설명서)을 참조하세요.
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>OAuth를 사용하여 Cloud App Security에 ServiceNow를 연결하는 방법
   
@@ -40,17 +41,17 @@ ms.locfileid: "53123978"
    > [!NOTE]
    >  제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
 
-2. **Filter navigator**(필터 탐색기) 검색 창에 **OAuth**를 입력하고 **Application Registry**(응용 프로그램 레지스트리)를 선택합니다.
+2. **Filter navigator**(필터 탐색기) 검색 창에 **OAuth**를 입력하고 **Application Registry**(애플리케이션 레지스트리)를 선택합니다.
 
-3. **Application Registries**(응용 프로그램 레지스트리) 메뉴 모음에서 **New**(새로 만들기)를 클릭하여 새 OAuth 프로필을 만듭니다.
+3. **Application Registries**(애플리케이션 레지스트리) 메뉴 모음에서 **New**(새로 만들기)를 클릭하여 새 OAuth 프로필을 만듭니다.
 
    ![ServiceNow 새 OAuth 프로필](./media/servicenow-app-registry.png)
 
-4. **What kind of OAuth application?**(OAuth 응용 프로그램 종류)에서 **Create an OAuth API endpoint for external clients**(외부 클라이언트에 대해 OAuth API 엔드포인트 만들기)를 클릭합니다.
+4. **What kind of OAuth application?**(OAuth 애플리케이션 종류)에서 **Create an OAuth API endpoint for external clients**(외부 클라이언트에 대해 OAuth API 엔드포인트 만들기)를 클릭합니다.
 
    ![ServiceNow OAuth 유형](./media/servicenow-oauth-app-type.png)
 
-5. **Application Registries New record**(응용 프로그램 레지스트리 새 레코드)에서 다음 필드를 입력합니다.
+5. **Application Registries New record**(애플리케이션 레지스트리 새 레코드)에서 다음 필드를 입력합니다.
     
     - **Name**(이름) 필드, 새 OAuth 프로필의 이름(예: CloudAppSecurity) 
     

@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 G Suite 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security에 G Suite 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 G Suite를 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48be91b9bcdd6689f5e0af138176a8bbd8033301
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124556"
+ms.locfileid: "53177269"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 G Suite 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.
+이 문서에서는 커넥터 API를 사용하여 기존 G Suite 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 G Suite 사용에 대한 표시 유형과 제어를 제공합니다. 
     
 ## <a name="configure-g-suite"></a>G Suite 구성  
   
@@ -112,9 +113,9 @@ ms.locfileid: "53124556"
 
 20. **드라이브 UI 통합** 탭을 클릭하고 다음 정보를 입력합니다.
 
-    - **응용 프로그램 이름**: Microsoft Cloud App Security.  
+    - **애플리케이션 이름**: Microsoft Cloud App Security  
   
-    - **짧은 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 응용 프로그램을 파악할 수 있으며 클라우드 응용 프로그램 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 응용 프로그램에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
+    - **간단한 설명 및 자세한 설명**(선택 사항): Microsoft Cloud App Security를 통해 클라우드 애플리케이션을 파악할 수 있으며 클라우드 애플리케이션 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 애플리케이션에 대한 의심스러운 활동을 검색하는 데 도움이 됩니다.  
   
     - Google을 사용하려면 하나 이상의 애플리케이션 아이콘을 업로드해야 합니다. [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)로 이동하여 Cloud App Security 아이콘을 포함하는 zip 파일을 다운로드합니다. 그런 다음 **애플리케이션 아이콘**에서 128x128 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다. 32x32 이미지 옆에 있는 **선택**을 클릭하고 팝업 화면으로 끌어 놓습니다.  
   
@@ -132,24 +133,24 @@ ms.locfileid: "53124556"
   
     -   나중에 사용하기 위해 맨 위에 표시되는 **프로젝트 번호(앱 ID)** 를 복사합니다.  
   
-    -   **응용 프로그램 이름** 아래에서 **Microsoft Cloud App Security**를 입력합니다.
+    -   **애플리케이션 이름** 아래에서 **Microsoft Cloud App Security**를 입력합니다.
   
-         **응용 프로그램 설명** 형식에서 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 감지하는 데 도움이 됩니다."라고 입력합니다. 
+         **애플리케이션 설명** 형식에서 "Microsoft Cloud App Security를 통해 클라우드 앱을 파악할 수 있으며 클라우드 앱 사용을 제어, 조사 및 규제하고, 회사 데이터를 보호하고, 임의 클라우드 앱에 대한 의심스러운 활동을 감지하는 데 도움이 됩니다."라고 입력합니다. 
     - **새 항목** 창에서 **완료**를 클릭합니다.      
      
        ![Google 새 항목](./media/google-new-item.png "Google 새 항목")  
 
     -   **개별 설치 사용** 확인란을 선택 취소합니다.  
   
-    -   **응용 프로그램 아이콘**에서 필수 이미지 4개를 구성합니다.  
+    -   **애플리케이션 아이콘**에서 필수 이미지 4개를 구성합니다.  
   
          [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)에서 이미지를 찾을 수 있습니다.  
   
     -   다음 **지원 URL**을 입력합니다.  
   
-        -   **서비스 약관 URL**: http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **서비스 약관 URL**: https://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **개인정보처리방침 URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **개인정보처리방침 URL**: https://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   **OAuth 2.0 scopes**(OAuth 2.0 범위)에서 다음 URL을 복사한 후 붙여넣습니다(한 번에 하나씩 복사한 후 <Enter> 키 누르기).  
   

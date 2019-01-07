@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 활동 필터 및 쿼리 사용 | Microsoft Docs
+title: Cloud App Security 활동 필터 및 쿼리 사용
 description: 이 문서에서는 Cloud App Security 활동 필터 및 쿼리 목록을 제공하고 이를 사용하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 404095a7c688a1e077bc11703c737697b5311a59
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124675"
+ms.locfileid: "53177184"
 ---
 # <a name="activity-filters-and-queries"></a>활동 필터 및 쿼리
 
@@ -46,7 +47,7 @@ ms.locfileid: "53124675"
 
 - 앱 - 특정 앱 내의 활동만 검색합니다.  
   
-- 적용된 작업 - 적용된 거버넌스 작업에 따라 차단, 프록시 우회, 해독, 암호화, 암호화 실패, 작업 없음을 기준으로 검색합니다.
+- 적용된 작업 - 적용된 거버넌스 작업으로 검색: 차단됨, 프록시 우회, 암호 해독됨, 암호화됨, 암호화 실패, 작업 없음
 
 - 날짜 - 활동이 발생한 날짜입니다. 필터는 이전/이후 날짜와 날짜 범위를 지원합니다.  
   

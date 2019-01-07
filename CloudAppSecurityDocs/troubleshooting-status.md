@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 서비스 상태 문제 해결 | Microsoft Docs
+title: Cloud App Security 서비스 상태 문제 해결
 description: 이 문서에서는 Cloud App Security 상태 페이지에 대한 링크를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 138790d8a6aed062b0ada67f1bc60b1a0d5ebc09
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: fa47fde4ae0277ab18eb478d67526e75450a87e9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123434"
+ms.locfileid: "53176623"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Microsoft Cloud App Security 상태 문제 해결
 

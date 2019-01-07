@@ -1,11 +1,11 @@
 ---
-title: 연속 보고서에 대한 자동 로그 업로드 구성 | Microsoft 문서
+title: 온-프레미스 Docker를 사용하여 자동 로그 업로드 구성
 description: 이 문서에서는 온-프레미스 서버의 Ubuntu 또는 RHEL에 있는 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124284"
+ms.locfileid: "53177116"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu 및 RHEL 온-프레미스의 Docker
 
@@ -48,7 +49,7 @@ ms.locfileid: "53124284"
 
 ## <a name="set-up-and-configuration"></a>설정 및 구성  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 – 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>1단계 - 웹 포털 구성: 데이터 원본을 정의하고 로그 수집기에 연결
 
 1. **자동 로그 업로드** 설정 페이지로 이동합니다. 
 
@@ -132,7 +133,7 @@ ms.locfileid: "53124284"
 
 6. `docker logs <collector_name>` 명령을 사용하여 수집기가 정상적으로 실행되고 있는지 확인합니다.
 
-**Finished successfully!** 라는 메시지가 표시되어야 합니다
+다음 메시지가 표시됩니다. **완료되었습니다.**
 
   ![ubuntu8](./media/ubuntu8.png)
 

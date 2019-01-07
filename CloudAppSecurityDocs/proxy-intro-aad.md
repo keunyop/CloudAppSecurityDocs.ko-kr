@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security 조건부 액세스 앱 제어로 보호| Microsoft Docs
+title: Microsoft Cloud App Security 조건부 액세스 앱 제어로 보호
 description: 이 문서에서는 Cloud App Security 조건부 액세스 앱 제어 역방향 프록시의 작동 방식에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 620bcbc8751ac782c947b2a761e8250ddc0f5807
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587837"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어로 앱 보호
 
@@ -46,7 +47,7 @@ ms.locfileid: "53124267"
 
 - **낮은 신뢰 사용자 세션 모니터링**: 위험한 사용자가 앱에 로그인하고 해당 작업이 세션 내에서 기록될 때 모니터링됩니다. 사용자 동작을 조사하고 분석하여 나중에 세션 정책을 적용해야 하는 위치와 조건을 이해할 수 있습니다. 
 
-- **액세스 차단**: 관리되지 않는 장치 또는 회사 네트워크가 아닌 곳의 사용자에 대해 특정 앱에 대한 액세스를 완전히 차단할 수 있습니다.
+- **액세스 차단**: 관리되지 않는 디바이스 또는 회사 네트워크가 아닌 곳의 사용자에 대해 특정 앱에 대한 액세스를 완전히 차단할 수 있습니다.
 
 - **읽기 전용 모드 만들기**: 사용자 지정 앱 내 작업을 모니터링하고 차단하여 특정 사용자의 특정 앱에 대한 읽기 전용 모드를 만들 수 있습니다.  
 
@@ -117,6 +118,7 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 디바�
 - SharePoint Online(미리 보기)
 - Azure DevOps(Visual Studio Team Services)(미리 보기)
 - Yammer(미리 보기)
+- Microsoft Flow(미리 보기)
 
 
 

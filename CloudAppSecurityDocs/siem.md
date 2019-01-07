@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security와 SIEM 통합 | Microsoft 문서
+title: Cloud App Security와 SIEM 통합
 description: 이 문서에서는 SIEM과 Cloud App Security의 통합에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 41143a1c953306d05f6a18f07d4083b565a77d93
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124216"
+ms.locfileid: "53177014"
 ---
 # <a name="siem-integration"></a>SIEM 통합
 
@@ -62,7 +63,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 
 ## <a name="integrating-with-your-siem"></a>SIEM과 통합
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>1단계: Cloud App Security 포털에서 설정합니다.
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>1단계: Cloud App Security 포털에서 설정
 
 1. Cloud App Security 포털의 [설정] 코그 아래에서 보안 확장을 클릭한 다음, **SIEM 에이전트** 탭을 클릭합니다.
 
@@ -93,7 +94,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 > 사용자가 만든 모든 토큰은 해당 토큰을 만든 관리자에게 바인딩됩니다. 즉, Cloud App Security에서 관리 사용자가 제거되면 토큰이 더 이상 유효하지 않게 됩니다.
 
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>2단계: JAR 파일을 다운로드하고 서버에서 실행합니다.
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>2단계: JAR 파일을 다운로드하고 서버에서 실행
 
 1. [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?linkid=838596)에서 [소프트웨어 라이선스 조건](https://go.microsoft.com/fwlink/?linkid=862491)에 동의한 후 .zip 파일을 다운로드하고 압축을 풉니다.
 
@@ -176,7 +177,7 @@ SIEM과의 통합은 세 단계로 수행됩니다.
 1. Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오류** 또는 **연결 끊김**이 아닌지, 에이전트 알림이 없는지를 확인합니다. 연결이 2시간을 초과하여 다운되면 **연결 오류**로 표시됩니다. 연결이 12시간 이상 다운되면 **연결 끊김**으로 표시됩니다.
  ![SIEM 연결 끊김](./media/siem-not-connected.png)
 
-   대신 상태는 ![SIEM connected](./media/siem-connected.png)(SIEM 연결됨)와 같이 연결된 상태여야 합니다.
+   대신 상태는 다음과 같이 연결된 상태여야 합니다.  ![SIEM 연결됨](./media/siem-connected.png)
 
 2. Syslog/SIEM 서버에서, Cloud App Security에서 오는 활동 및 경고가 표시되는지 확인합니다.
 

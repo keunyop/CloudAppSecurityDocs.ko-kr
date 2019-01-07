@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 Cloud Discovery에 사용자 지정 앱 추가 | Microsoft Docs
+title: Cloud App Security에서 Cloud Discovery에 사용자 지정 앱 추가
 description: 이 항목에서는 Cloud App Security에서 Cloud Discovery에 사용자 지정 앱을 추가하여 섀도 IT를 모니터링하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 12d7d295db014a34fc8cce847f722867580b744b
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8a55110ceaaf4ad1a512714e5d93a2de0d207384
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123469"
+ms.locfileid: "53176521"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery에 사용자 지정 앱 추가
 

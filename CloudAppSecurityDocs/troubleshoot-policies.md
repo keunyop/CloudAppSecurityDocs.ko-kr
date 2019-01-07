@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 정책 문제 해결 | Microsoft Docs
+title: Cloud App Security 정책 문제 해결
 description: 이 문서에서는 Cloud App Security에서 정책 생성 문제를 해결하기 위한 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31c07ffe1f19de86ce23cad099bd238d254c0bab
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: cd309d6997486dcd84c072c28aedba1ef75d4284
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123179"
+ms.locfileid: "53175722"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-policies"></a>Microsoft Cloud App Security 정책 문제 해결
 

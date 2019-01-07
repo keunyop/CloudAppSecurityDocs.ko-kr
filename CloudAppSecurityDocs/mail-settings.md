@@ -1,11 +1,11 @@
 ---
-title: 메일 알림 기본 설정 | Microsoft 문서
+title: 이메일 알림 기본 설정 지정 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud App Security에서 보낸 메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123553"
+ms.locfileid: "53177048"
 ---
 # <a name="email-notification-preferences"></a>이메일 알림 기본 설정
 
@@ -34,10 +35,10 @@ ms.locfileid: "53123553"
 
    ![메일 설정](./media/mail-settings-config.png)
 
-2. **이메일 보낸 사람 ID**에서: 기본 이메일 설정을 사용하려는 경우 이 섹션의 내용을 변경할 필요가 없습니다. 이메일 보낸 사람 ID를 사용자 지정하려는 경우 여기에서 설정을 지정하여 변경할 필드를 사용자 지정할 수 있습니다. **표시 이름에서**, **이메일 주소에서**, **회신 이메일 주소** 항목 중 일부 또는 모두를 변경할 수 있습니다. Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자 지정 작업을 수행합니다. 사용자 지정을 사용하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그렇지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
+2. **이메일 보낸 사람 ID**에서: 기본 이메일 설정을 사용하려는 경우 이 섹션의 내용을 변경할 필요가 없습니다. 이메일 보낸 사람 ID를 사용자 지정하려는 경우 여기에서 설정을 지정하여 변경할 필드를 사용자 지정할 수 있습니다. 다음 항목 중 일부 또는 모두를 변경할 수 있습니다. **보낸 사람 표시 이름**, **보낸 사람 이메일 주소**, **회신 이메일 주소** Microsoft Cloud App Security는 MailChimp®라는 타사 메일 서비스를 사용하여 사용자 지정 작업을 수행합니다. 사용자 지정을 사용하려면 MailChimp의 서비스 약관 및 개인정보처리방침을 검토하고 동의해야 합니다. 그렇지 않으면 Microsoft Cloud App Security에서 기본 설정을 사용하여 알림을 보냅니다.
  
    > [!NOTE]
-   > [rfc822 표준](http://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
+   > [rfc822 표준](https://www.rfc-editor.org/rfc/rfc822.txt)에 따라 표시 이름 및 메일 주소에서 유니코드 문자만 지원됩니다.
 
   
 3. **메일 디자인**의 경우, html 파일을 사용하여 시스템에서 보내는 메일 메시지를 사용자 지정하고 디자인할 수 있습니다. 템플릿에 사용되는 html 파일에는 다음 사항이 포함되어야 합니다.  
@@ -66,7 +67,7 @@ ms.locfileid: "53123553"
 다음은 샘플 이메일 템플릿입니다.
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
        <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  

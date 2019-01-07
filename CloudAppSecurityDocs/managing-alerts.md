@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 포털에서 트리거된 경고 관리 | Microsoft 문서
+title: Cloud App Security에서 발생한 경고 관리
 description: 이 문서에서는 Cloud App Security 포털에서 발생한 경고를 사용하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97cc1a6bee2c8264b7dfc430f555219ccd40ffd9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 34fe83d4d6300037d31f577029f0b4887c7108e2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124488"
+ms.locfileid: "53176838"
 ---
 # <a name="manage-alerts"></a>경고 관리
 
@@ -58,11 +59,17 @@ ms.locfileid: "53124488"
          - 사용자 또는 사용자의 관리자에게 활동의 특성을 문의할 수 있습니다.
          - 추가 정보를 받을 때까지 활동을 미해결 상태로 둡니다.  
 
-       - **승인된 위반 또는 비정상적인 동작** - 승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다.  
+       - **승인된 위반 또는 비정상적인 동작** - 승인된 위반 또는 비정상적인 동작은 합법적인 사용에서 발생할 수 있습니다. <br>
+         - 경고를 해제할 수 있습니다.
 
-   - 경고를 해제합니다.  
 
-3. 이 프로세스를 완료하면 경고를 해결된 것으로 표시합니다.  
+3. 경고를 해제할 때마다 경고를 해제하는 이유에 대한 피드백을 제출하는 것이 중요합니다. Cloud App Security 팀은 경고의 정확도의 표시로 이 피드백을 사용합니다. 그런 다음, 이 정보는 향후 경고를 위해 기계 학습 모델을 미세 조정하는 데 사용됩니다. 경고를 분류하는 방법을 결정할 때 다음 지침을 따를 수 있습니다.
+   - 합법적인 사용으로 경고가 트리거되고 보안 문제가 아닌 경우 다음 유형 중 하나일 수 있습니다. 
+
+     - 무해한 긍정: 경고는 정확하지만 작업은 합법적입니다. 경고를 해제하고 이유를 **실제 심각도 낮음** 또는 **관심 없음**으로 설정할 수 있습니다.
+     -  거짓 긍정: 경고가 정확하지 않습니다. 경고를 해제하고 **경고가 정확하지 않음**으로 설정합니다.
+   - 경고의 적법성과 정확도를 결정하는 데 너무 많은 노이즈가 있는 경우 경고를 해제하고 이유를 **유사한 경고가 너무 많음**으로 설정합니다.
+   - 참 긍정: 경고가 내부자나 외부인에 의해 악의적으로 또는 의도하지 않게 커밋된 실제 위험 이벤트와 관련된 경우, 이벤트를 수정하기 위해 모든 적절한 작업이 수행된 후 **해결**로 설정합니다.
 
 ## <a name="alert-types"></a>경고 유형
 

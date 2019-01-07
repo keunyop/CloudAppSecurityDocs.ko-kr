@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security 배포 범위 지정 | Microsoft Docs
+title: Microsoft Cloud App Security 배포 범위 지정
 description: 이 문서에서는 특정 사용자 또는 그룹의 포함 및 제외를 비롯하여 Cloud App Security 배포 범위를 지원하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf0a19b89d79b6bc6f3bb6edf51cf4392621ab68
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 899a6000674163f250dc981c58a800133902973f
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124754"
+ms.locfileid: "53176399"
 ---
 # 범위 지정 배포 <a name="scoped-deployment"></a> 
 

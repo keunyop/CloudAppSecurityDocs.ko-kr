@@ -1,11 +1,11 @@
 ---
-title: ICAP를 통한 Cloud App Security 외부 DLP 통합 | Microsoft Docs
+title: ICAP를 통한 Cloud App Security 외부 DLP 통합
 description: 이 문서에서는 Cloud App Security 및 stunnel 설정에서 ICAP 연결을 구성하는 데 필요한 단계를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 006d9eaa2bb7a71c6661931724344ca55166ba61
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 86ef20ca985213a369035505232d4bf594a47caf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124471"
+ms.locfileid: "53177235"
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
@@ -44,18 +45,18 @@ Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하
 1.  원본 주소: [필수 구성 요소에 따라 앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites) 참조
 2.  원본 TCP 포트: 동적
 3.  대상 주소: 다음 단계에서 구성할 외부 ICAP 서버에 연결된 stunnel의 하나 또는 두 개의 IP 주소
-4.  대상 TCP 포트: 네트워크에 정의된 대로
+4.  대상 TCP 포트: 네트워크에서 정의된 대로
 
 > [!NOTE] 
 > 기본적으로 stunnel 포트 번호는 11344로 설정됩니다. 필요한 경우 다른 포트로 변경할 수 있지만 새 포트 번호를 기록해 두어야 합니다. 다음 단계에서 해당 포트 번호를 입력해야 합니다.
 
-## <a name="step-1--set-up-icap-server"></a>1단계: ICAP 서버 설정
+## <a name="step-1--set-up-icap-server"></a>1단계:  ICAP 서버 설정
 
 ICAP 서버를 설정하여 포트 번호를 적어 두고 **모드**를 **차단**으로 설정했는지 확인합니다. 차단 모드는 분류 verdict를 다시 Cloud App Security로 릴레이하도록 ICAP 서버를 설정합니다.
 
 이 설치를 수행하는 방법에 대한 지침은 외부 DLP 제품 설명서를 참조하세요. 예를 들어 [부록 A: Forcepoint ICAP 서버 설정](#forcepoint) 및 [부록 B: Symantec 배포 가이드](#symantec)를 참조하세요.
 
-## <a name="step-2--set-up-your-stunnel-server"></a>2단계: stunnel 서버 설정 
+## <a name="step-2--set-up-your-stunnel-server"></a>2단계:  stunnel 서버 설정 
 
 이 단계에서 ICAP 서버에 연결된 stunnel을 설정합니다. 
 
@@ -102,7 +103,7 @@ stunnel 설치를 지원하는 서버 유형에 대한 자세한 내용은 [stun
        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-10. `c:\Program Files (x86)\stunnel\bin\stunnel.exe`를 실행하여 stunnel 응용 프로그램을 엽니다. 
+10. `c:\Program Files (x86)\stunnel\bin\stunnel.exe`를 실행하여 stunnel 애플리케이션을 엽니다. 
 
 11. **구성**, **구성 편집**을 차례로 클릭합니다.
 
@@ -209,7 +210,7 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 프로세스가 실행되고 있지 않으면 [stunnel 설명서](https://www.stunnel.org/docs.html)를 참조하여 문제를 해결하세요.
 
 
-## <a name="step-3--connect-to-cloud-app-security"></a>3단계: Cloud App Security에 연결
+## <a name="step-3--connect-to-cloud-app-security"></a>3단계:  Cloud App Security에 연결
 
 1. Cloud App Security의 **설정**에서 **보안 확장**을 선택하고 **외부 DLP** 탭을 선택합니다.
 
@@ -314,7 +315,7 @@ Vontu에 구성 변경 내용 추가:
 이 규칙은 모든 기존 정책에 추가되어야 합니다.
 
 >[!NOTE]
-> Symantec vontu를 사용하여 Dropbox의 파일을 검색하는 경우 CAS는 자동으로 파일이 URL http://misc/filename에서 시작된 것으로 표시합니다. 이 자리 표시자 URL은 실제로 어디로도 이동하지 않지만, 로깅 목적으로 사용됩니다.
+> Symantec vontu를 사용하여 Dropbox에서 파일을 검색하는 경우 CAS는 파일을 다음 URL에서 발생한 것으로 자동으로 표시합니다. http://misc/filename 이 자리 표시자 url은 실제로 이동되지 않지만 로깅 용도로 사용됩니다.
 
 
 ## <a name="next-steps"></a>다음 단계 

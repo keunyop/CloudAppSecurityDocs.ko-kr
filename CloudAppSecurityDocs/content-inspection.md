@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 콘텐츠 검사를 수행하는 방법 | Microsoft 문서
+title: Cloud App Security에서 콘텐츠 검사를 수행하는 방법
 description: 이 문서에서는 클라우드의 데이터에 대해 DLP 콘텐츠 검사를 수행할 때 Cloud App Security에서 수행하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af28086c6ef7fdf389bbea29b0fcac31271a7002
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 10af8ae009e425f2795818dd2d9089c76814685b
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123842"
+ms.locfileid: "53177168"
 ---
 # <a name="built-in-content-inspection"></a>기본 제공 콘텐츠 검사
 

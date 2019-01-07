@@ -1,11 +1,11 @@
 ---
-title: 표시 유형 및 사용 제어를 위해 Cloud App Security에 AWS 연결 | Microsoft 문서
-description: 이 문서에서는 API 커넥터를 사용하여 Cloud App Security에 AWS 앱을 연결하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security와 AWS 연결
+description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 위해 API 커넥터를 사용하여 Cloud App Security에 AWS 앱을 연결하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 358d7a8398a213664e4fae3be9f1515ebbbfc6c1
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: c85b55d52de91d58fccaba2241008ef5be6beca2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124318"
+ms.locfileid: "53176130"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 AWS 연결
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 커넥터 API를 사용하여 기존 Amazon Web Services 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다.  
+이 문서에서는 커넥터 API를 사용하여 기존 Amazon Web Services 계정에 Microsoft Cloud App Security를 연결하기 위한 지침을 제공합니다. 이 연결은 AWS 앱 사용에 대한 표시 유형과 제어를 제공합니다. 
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Cloud App Security에 Amazon 웹 서비스 비교를 연결하는 방법  
   

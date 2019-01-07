@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security와 Flow를 통합하여 사용자 지정 경고 자동화 | Microsoft Docs
+title: Cloud App Security와 Flow를 통합하여 사용자 지정 경고 자동화
 description: 이 문서에서는 Cloud App Security와 Flow를 통합하여 사용자 지정 경고를 자동화하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea109073ef6bab3520073272224da65589627960
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 558559463df0bcb4e008d75115501c23d27cd878
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124938"
+ms.locfileid: "53175773"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>사용자 지정 경고 자동화를 위해 Flow와 통합 - 미리 보기
 

@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security의 새로운 기능 | Microsoft Docs
-description: 이 항목은 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+title: Cloud App Security의 새로운 기능
+description: 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,19 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124828"
+ms.locfileid: "53177423"
 ---
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+
 *적용 대상: Microsoft Cloud App Security*
 
-
-# <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
+이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security 릴리스 138
@@ -54,7 +56,7 @@ ms.locfileid: "53124828"
 - **Cloud Discovery 업데이트**<br>
 사용자 지정 로그 파서는 추가적인 더 복잡한 웹 트래픽 로그 형식을 지원하도록 향상되었습니다. 이러한 향상된 기능의 일부로 사용자는 이제 헤더 없는 CSV 로그 파일에 대한 사용자 지정 헤더를 입력하고, 키-값 파일에 대한 특수 구분 기호를 사용하고, Syslog 파일 형식 등을 처리할 수 있습니다.
 - **새 변칙 검색 정책**<br>
-의심스러운 받은 편지함 조작 규칙: 이 정책은 사용자 환경을 프로파일링하고 메시지나 폴더를 삭제하거나 이동하는 의심스러운 규칙이 사용자의 받은 편지함에 설정된 경우 경고를 트리거합니다. 이는 사용자 계정이 손상되었으며, 메시지가 의도적으로 숨겨져 있으며, 조직에 스팸 또는 맬웨이를 배포하는 데 사서함이 사용되고 있음을 나타낼 수 있습니다.
+의심스러운 받은 편지함 조작 규칙: 이 정책은 사용자 환경을 프로파일링하여 메시지나 폴더를 삭제하거나 이동하는 의심스러운 규칙이 사용자의 받은 편지함에 설정된 경우 경고를 트리거합니다. 이는 사용자 계정이 손상되었으며, 메시지가 의도적으로 숨겨져 있으며, 조직에 스팸 또는 맬웨이를 배포하는 데 사서함이 사용되고 있음을 나타낼 수 있습니다.
 - **앱 사용 권한 정책의 그룹 지원**<br>
 Cloud App Security는 이제 앱 권한이 있는 사용자의 그룹 멤버 자격을 기반으로 앱 사용 권한 정책을 보다 세밀하게 정의할 수 있는 기능을 제공합니다. 예를 들어, 관리자는 권한이 있는 사용자가 관리자 그룹의 구성원인 경우에만 높은 권한을 요청할 때 일반적이지 않은 앱을 취소하는 정책을 설정할 수 있습니다.
 - **이제 Azure Active Directory 애플리케이션 프록시를 통해 조건부 액세스 앱 제어와 온-프레미스 앱 통합**
@@ -128,7 +130,7 @@ Microsoft 365 제품에서 더 일관된 관리자 환경을 제공하고 Micros
 
 -   **여러 앱에서 OAuth 앱 작업**<br>
 앱 권한이 부여된 OAuth 앱의 경우 한 번의 작업으로 여러 앱을 금지하거나 승인할 수 있습니다. 예를 들어 조직의 사용자가 권한을 부여한 모든 앱을 검토하고, 금지하려는 모든 앱을 선택한 다음, 앱 금지를 클릭하고 부여된 모든 동의를 취소하여 사용자가 해당 앱에 대한 권한을 더 이상 부여할 수 없도록 할 수 있습니다.  자세한 내용은 [OAuth 앱 관리](manage-app-permissions.md)를 참조하세요.
--   **Azure 응용 프로그램에 대한 지원 향상**<br>
+-   **Azure 애플리케이션에 대한 지원 향상**<br>
 Azure의 경우 Azure 애플리케이션(내부 및 외부 모두)에서 수행되는 사용자 계정 활동으로 애플리케이션을 검색하는 기능이 점차적으로 출시되고 있습니다. 이를 통해 애플리케이션에서 예기치 않게 권한이 없는 작업을 수행할 경우 이를 경고하는 정책을 만들 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security에 Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)을 참조하세요.
 -   **새로운 GDPR 감지 유형으로 데이터 분류 엔진 업데이트**<br>
 파일에서 GDPR 관련 콘텐츠를 검색할 수 있도록 [Cloud App Security 데이터 분류 서비스](dcs-inspection.md)에서 데이터 분류 엔진에 새로운 GDPR 감지 유형이 추가되었습니다.
@@ -190,7 +192,7 @@ Microsoft Cloud App Security에서는 열린 위협 검색 경고 수를 기준�
 - **AWS S3 버킷에 대한 지원:**<br>
 Microsoft Cloud App Security는 이제 AWS S3 버킷 및 해당 공유 수준을 검색할 수 있습니다. 이 기능은 공개적으로 액세스할 수 있는 AWS 버킷에 대한 경고 및 가시성을 제공합니다. 또한 버킷을 기반으로 정책을 만들고 자동 거버넌스를 적용할 수 있습니다. 또한 AWS 저장소를 제어하기 위한 정책을 쉽게 만드는 데 사용할 수 있는 **공개적으로 액세스할 수 있는 S3 버킷(AWS)** 이라는 새 정책 템플릿이 있습니다. 이러한 새 기능을 사용하려면 [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)에 설명된 새 권한을 추가하여 AWS에 연결된 앱을 업데이트해야 합니다.
 
-- **사용자 그룹에 따른 관리자 권한**: 이제 사용자 그룹별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 독일에 있는 사용자 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 “독일 - 모든 사용자” 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
+- **사용자 그룹을 기반으로 한 관리자 권한**: 이제 사용자 그룹별 Microsoft Cloud App Security 관리자의 관리 권한을 설정할 수 있습니다. 예를 들어, 특정 사용자를 독일에 있는 사용자 전용 관리자로 설정할 수 있습니다. 이렇게 하면 사용자가 “독일 - 모든 사용자” 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다. 자세한 내용은 [관리자 액세스 관리](manage-admins.md)를 참조하세요.
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security 릴리스 124
@@ -227,7 +229,7 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
  이제 테넌트의 검색된 앱이 위반했을 때 알려주는 기본 제공 경고가 있습니다. 경고는 위반 날짜 및 시간, 앱을 사용한 사용자 및 위반에 대한 정보를 제공하는 공개적으로 사용할 수 있는 소스의 링크에 대한 정보를 제공합니다.
 
 -   **새 메일 서버**<br>
- Cloud App Security의 메일 서버가 변경되었으며 다른 IP 주소 범위를 사용합니다. 알림을 받으려면 새 IP 주소를 스팸 방지 허용 목록에 추가합니다. 알림을 사용자 지정하려는 사용자의 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 메일 서버 IP 주소 목록 및 MailChimp를 사용하기 위한 지침은 [네트워크 요구 사항](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) 및 [메일 설정](mail-settings.md)을 참조하세요.
+ Cloud App Security의 메일 서버가 변경되었으며 다른 IP 주소 범위를 사용합니다. 알림을 받으려면 새 IP 주소를 스팸 방지 허용 목록에 추가합니다. 알림을 사용자 지정하려는 사용자의 경우 Microsoft Cloud App Security에서 타사 메일 서비스인 MailChimp®를 사용하여 사용자를 위해 사용자 지정해 줍니다. 메일 서버 IP 주소 목록 및 MailChimp를 사용하기 위한 지침은 [네트워크 요구 사항](network-requirements.md#mail-server) 및 [메일 설정](mail-settings.md)을 참조하세요.
 
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security 릴리스 123
@@ -248,8 +250,8 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security 릴리스 121
 릴리스 날짜: 2018년 4월 22일
 
--   **조건부 액세스 앱 제어(이전의 Cloud App Security 프록시)** 의 공개 미리 보기는 다양한 응용 프로그램에 대한 가시성과 제어력을 높일 수 있는 기능으로 향상되었습니다. 이제 *활동 유형* 필터로 세션 정책을 만들어 다양한 앱별 활동을 모니터링하고 차단할 수 있습니다. 이 새 필터는 기존의 파일 다운로드 제어 기능을 보강하여 조직의 응용 프로그램에 대한 포괄적인 제어를 제공하며 Azure Active Directory 조건부 액세스와 함께 사용되어 위험한 사용자 세션(예: B2B 공동 작업 사용자 세션 또는 관리되지 않는 디바이스의 사용자 세션)에 대한 실시간 가시성 및 제어를 제공합니다. 자세한 내용은 [세션 정책](session-policy-aad.md)을 참조하세요.
--   점진적 출시: Cloud App Security의 **변칙 검색 정책**은 랜섬웨어 활동 및 종료된 사용자 활동이라는 두 가지 새로운 유형의 위협 검색을 포함하도록 개선되었습니다. Cloud App Security는 정교한 랜섬웨어 공격으로부터 보다 포괄적인 보호를 보장하기 위해 변칙 검색으로 랜섬웨어 검색 기능을 확장했습니다. 보안 연구 전문 지식을 통해 랜섬웨어 활동을 반영하는 동작 패턴을 식별하는 Cloud App Security는 전체적이고 강력한 보호를 보장합니다. 종료된 사용자 활동을 사용하면 회사 앱에서 프로비전이 해제되지만 대부분의 경우 특정 회사 리소스에 대한 액세스 권한은 계속 유지되는 종료된 사용자의 계정을 모니터링할 수 있습니다. 자세한 내용은 [즉각적인 동작 분석 및 변칙 검색 이용](anomaly-detection-policy.md)을 참조하세요.
+-   **조건부 액세스 앱 제어(이전의 Cloud App Security 프록시)** 의 공개 미리 보기는 다양한 애플리케이션에 대한 가시성과 제어력을 높일 수 있는 기능으로 향상되었습니다. 이제 *활동 유형* 필터로 세션 정책을 만들어 다양한 앱별 활동을 모니터링하고 차단할 수 있습니다. 이 새 필터는 기존의 파일 다운로드 제어 기능을 보강하여 조직의 애플리케이션에 대한 포괄적인 제어를 제공하며 Azure Active Directory 조건부 액세스와 함께 사용되어 위험한 사용자 세션(예: B2B 공동 작업 사용자 세션 또는 관리되지 않는 장치의 사용자 세션)에 대한 실시간 가시성 및 제어를 제공합니다. 자세한 내용은 [세션 정책](session-policy-aad.md)을 참조하세요.
+-   점진적 출시: Cloud App Security의 **변칙 검색 정책**은 다음의 두 가지 새로운 유형의 위협 탐지를 포함하도록 개선되었습니다. 랜섬웨어 활동 및 종료된 사용자 활동 Cloud App Security는 정교한 랜섬웨어 공격으로부터 보다 포괄적인 보호를 보장하기 위해 변칙 검색으로 랜섬웨어 검색 기능을 확장했습니다. 보안 연구 전문 지식을 통해 랜섬웨어 활동을 반영하는 동작 패턴을 식별하는 Cloud App Security는 전체적이고 강력한 보호를 보장합니다. 종료된 사용자 활동을 사용하면 회사 앱에서 프로비전이 해제되지만 대부분의 경우 특정 회사 리소스에 대한 액세스 권한은 계속 유지되는 종료된 사용자의 계정을 모니터링할 수 있습니다. 자세한 내용은 [즉각적인 동작 분석 및 변칙 검색 이용](anomaly-detection-policy.md)을 참조하세요.
 
 
 ## <a name="cloud-app-security-release-120"></a>Cloud App Security 릴리스 120
@@ -284,7 +286,7 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 
 -   Cloud App Security가 Azure Information Protection과 심층 통합되어 이제 G Suite에서 파일을 보호할 수 있습니다. 공개 미리 보기 기능을 사용하면 G Suite에서 파일을 검색 및 분류할 수 있고 Azure Information Protection 레이블을 자동으로 적용하여 보호할 수 있습니다. 자세한 내용은 [Azure Information Protection 통합](azip-integration.md)을 참조하세요.
 
--   이제 Cloud Discovery는 [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/)를 지원합니다.
+-   이제 Cloud Discovery는 [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/)를 지원합니다.
 
 -   이제 SIEM 에이전트 표에 더 쉬운 관리를 위한 자세한 정보가 포함됩니다.
 
@@ -294,7 +296,7 @@ Microsoft Cloud App Security는 그룹 구성원 자격을 기반으로 모니�
 
 - 점진적 출시: Cloud App Security는 이제 SaaS 앱 전체에서 사용자와 해당 계정 간의 상관 관계를 지정합니다. 따라서 사용자가 사용한 앱 또는 계정과 관계없이 해당 사용자의 모든 다양한, 상관 관계가 지정된 SaaS 앱에서 사용자의 모든 활동을 쉽게 조사할 수 있습니다.  
 
--   점진적 출시: Cloud App Security는 이제 같은 연결된 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 
+-   점진적 출시: Cloud App Security는 이제 연결된 동일한 앱의 여러 인스턴스를 지원합니다. 예를 들어 Salesforce의 여러 인스턴스가 있는 경우(영업용 인스턴스 하나, 마케팅용 인스턴스 하나) 이러한 인스턴스를 모두 Cloud App Security에 연결하고 같은 콘솔에서 관리하여 세분화된 정책을 만들고 더 깊이 있는 조사를 수행할 수 있습니다. 
 
 - Cloud Discovery 파서는 이제 두 가지 추가 검사점 형식 XML 및 KPC를 지원합니다.
 

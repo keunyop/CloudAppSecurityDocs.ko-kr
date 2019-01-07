@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 Cloud Discovery 오류 문제 해결 | Microsoft Docs
+title: Cloud Discovery 오류 문제 해결 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 Cloud Discovery에서 자주 발생하는 오류 목록 및 각각에 대한 권장 해결 방법을 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8229eec0452cbb6c34a9c16ab7711455e63f01af
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 17890e4b54b4ed6447b274dc7e266011f8be236d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124658"
+ms.locfileid: "53176929"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>Cloud Discovery 문제 해결
 
@@ -47,8 +48,8 @@ ms.locfileid: "53124658"
 |FTP를 통해 로그 수집기에 연결할 수 없습니다.| 1. SSH 자격 증명이 아니라 FTP 자격 증명을 사용하고 있는지 확인합니다. <br />2. 사용 중인 FTP 클라이언트가 SFTP로 설정되지 않았는지 확인합니다.  |
 |수집기 구성을 업데이트하지 못했습니다. | 1. 최신 액세스 토큰을 입력했는지 확인합니다. <br />2. 로그 수집기가 포트 443에서 아웃바운드 트래픽을 시작하도록 허용되는지 방화벽에서 확인합니다.|
 |수집기로 전송된 로그가 포털에 표시되지 않습니다. | 1.  거버넌스 로그에서 실패한 구문 분석 작업이 있는지 확인합니다.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;그렇다면 위의 로그 구문 분석 오류 표를 사용하여 오류를 해결합니다.<br /> 2. 그렇지 않을 경우 포털에서 데이터 원본 및 로그 수집기 구성을 확인합니다. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. 데이터 원본 페이지에서 사용 중인 데이터 원본이 정확하게 구성되었는지 확인합니다. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. 로그 수집기 페이지에서 데이터 원본이 올바른 로그 수집기에 연결되어 있는지 확인합니다. <br /> 3. 온-프레미스 로그 수집기 컴퓨터의 로컬 구성을 확인합니다.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH를 통해 로그 수집기에 로그인하고 collector_config 유틸리티를 실행합니다.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 방화벽 또는 프록시가 정의한 프로토콜(Syslog/TCP, Syslog/UDP 또는 FTP)을 사용하여 로그를 로그 수집기로 보내고 있는지, 올바른 포트 및 디렉터리로 보내고 있는지 확인합니다.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. 컴퓨터에서 netstat를 실행하고 방화벽 또는 프록시에서 들어오는 연결을 받는지 확인합니다. <br /> 4.   로그 수집기가 포트 443에서 아웃바운드 트래픽을 시작하도록 허용되는지 확인합니다. |
-|로그 수집기 상태: 작성됨 | 로그 수집기 배포가 완료되지 않았습니다. 배포 가이드에 따라 온-프레미스 배포 단계를 완료합니다.|
-|로그 수집기 상태: 연결 끊김 | 지난 24시간 동안 연결된 데이터 원본에서 데이터가 수신되지 않았습니다. |
+|로그 수집기 상태: 만든 날짜 | 로그 수집기 배포가 완료되지 않았습니다. 배포 가이드에 따라 온-프레미스 배포 단계를 완료합니다.|
+|로그 수집기 상태: Disconnected | 지난 24시간 동안 연결된 데이터 원본에서 데이터가 수신되지 않았습니다. |
 
 
 ## <a name="discovery-dashboard-errors"></a>검색 대시보드 오류

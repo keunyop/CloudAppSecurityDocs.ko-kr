@@ -1,11 +1,11 @@
 ---
-title: Azure AD 사용자 이름을 사용하여 Cloud App Security Discovery 데이터 보강 | Microsoft Docs
+title: Azure AD 사용자 이름을 사용하여 Cloud App Security Discovery 데이터 보강
 description: 이 문서에서는 Azure AD 사용자 이름을 사용하여 Cloud App Security Discovery 데이터를 보강하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d57d1eccdc1d835fb828388b422ce12b211172df
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: deb458a218080220e1dc1e49f6de0f5470150282
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123910"
+ms.locfileid: "53175093"
 ---
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery 보강
 

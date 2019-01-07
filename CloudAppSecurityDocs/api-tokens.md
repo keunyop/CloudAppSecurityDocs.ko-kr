@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security의 API 토큰 관리 | Microsoft Docs
+title: Cloud App Security의 API 토큰 관리
 description: 이 문서에서는 Cloud App Security용 API 토큰을 생성하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b20d5bd3f2379c26e0e1262c9a5f57295ec939
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 871ad62cf4daf7a84bfc65724fb61413d70fafa3
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123451"
+ms.locfileid: "53176351"
 ---
 # <a name="api-tokens"></a>API 토큰
 
@@ -47,7 +48,7 @@ API에 액세스하려면 API 토큰을 만들고 소프트웨어에서 이 토�
 
 3. 토큰 값을 복사하고 복구를 위해 임의 위치에 저장해 둡니다. 토큰을 분실하면 토큰을 다시 생성해야 합니다. 토큰에는 토큰을 발급한 사용자의 권한이 포함됩니다. 예를 들어 보안 독자는 데이터에 대해 경고할 수 있는 토큰을 발급할 수 없습니다.
 
-4. 활성, 비활성 또는 생성됨 상태별로 토큰을 필터링할 수 있습니다. 
+4. 상태별로 토큰을 필터링할 수 있습니다. 활성, 비활성 또는 생성됨 
 
    - 생성됨은 사용된 적이 없는 토큰입니다. 
    - 활성은 생성되었고 지난 7일 이내에 사용된 토큰입니다. 

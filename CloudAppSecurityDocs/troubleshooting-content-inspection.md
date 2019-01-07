@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 콘텐츠 검사 오류 문제 해결 | Microsoft 문서
+title: 콘텐츠 검사 오류 문제 해결 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 콘텐츠 검사 상태 목록과 해당 상태의 의미에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5656b08aa4a15161fa57c6584dac15b978396997
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 5ace5a7288caea8bad9fbda0e5ac3e524a6210e5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124029"
+ms.locfileid: "53177303"
 ---
 # <a name="troubleshooting-content-inspection"></a>콘텐츠 검사 문제 해결
 

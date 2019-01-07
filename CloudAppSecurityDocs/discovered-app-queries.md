@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 검색되는 앱 필터 및 쿼리 사용 | Microsoft Docs
+title: Cloud App Security에서 검색되는 앱 필터 및 쿼리
 description: 이 문서에서는 Cloud App Security에서 검색되는 앱 필터 및 쿼리 목록을 제공하고 이를 사용하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e62fca426ddd1d3a6ec1adde6ccbdb5f2d0bf0f8
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a91520a7334694b0e5a4416a9db5f22877ec55d9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123859"
+ms.locfileid: "53175790"
 ---
 # <a name="discovered-app-filters-and-queries"></a>검색된 앱 필터 및 쿼리
 
@@ -36,10 +37,10 @@ ms.locfileid: "53123859"
 - **앱 태그**: 앱의 사용 권한이 부여 또는 취소되었거나 태그가 지정되었는지 선택합니다. 또한 앱에 대한 사용자 지정 태그를 만든 다음, 이를 사용하여 특정 유형의 앱을 필터링할 수 있습니다. 
 - **앱 및 도메인**: 특정 앱 또는 특정 도메인에서 사용되는 앱을 검색할 수 있습니다. 
 - **범주**: 페이지 왼쪽에 있는 범주 필터를 사용하여 앱 범주에 따라 앱 유형을 검색할 수 있습니다. 예제 범주에는 소셜 네트워크 앱, 클라우드 저장소 앱 및 호스팅 서비스가 포함됩니다. 한 번에 여러 범주를 선택하거나 단일 범주를 선택한 다음, 위에 기본 필터와 고급 필터를 적용할 수 있습니다.
-- **위험 요인 준수**: 앱이 준수할 수 있는 특정 표준, 인증 및 준수(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)를 검색할 수 있습니다.
+- **위험 요인 규정 준수**: 앱이 준수할 수 있는 특정 표준, 인증 및 준수(HIPAA, ISO 27001, SOC 2, PCI-DSS 등)를 검색할 수 있습니다.
 - **일반 위험 요인**: 소비자 인기도, 데이터 센터 로캘 등의 일반 위험 요인을 검색할 수 있습니다.
 - **위험 점수**: 예를 들어 매우 위험한 앱만 검토하는 데 집중할 수 있도록 위험 점수별로 앱을 필터링할 수 있습니다. Cloud App Security에서 설정된 위험 점수를 재정의할 수도 있습니다. 자세한 내용은 [위험 점수 사용](risk-score.md)을 참조하세요.
-- **보안 위험 요인**: 특정 보안 조치(예: 미사용 암호화, 다단계 인증 등)를 기준으로 필터링할 수 있습니다.
+- **보안 위험 요인**: 특정 보안 조치(예: 저장 데이터 암호화, 다단계 인증 등)를 기준으로 필터링할 수 있습니다.
 - **사용량**: 이 앱의 사용량 통계를 기반으로 필터링할 수 있습니다. 지정된 **데이터 업로드** 수보다 적거나 많은 앱, 지정된 **사용자** 수보다 많거나 적은 앱과 같은 사용량.
 - **법적 위험 요소**: 데이터 보호 및 앱 사용자의 개인 정보 보호를 보장하기 위해 준비된 모든 규정 및 정책에 따라 필터링할 수 있습니다. 예를 들면 GDPR 지원 클라우드 앱, DMCA 및 데이터 보존 정책이 있습니다.
 

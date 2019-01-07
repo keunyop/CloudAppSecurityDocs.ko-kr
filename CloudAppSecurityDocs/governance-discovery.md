@@ -1,11 +1,11 @@
 ---
-title: 검색된 앱 차단 | Microsoft 문서
+title: 검색된 앱 차단 - Cloud App Security | Microsoft Docs
 description: 이 문서에서는 검색된 앱에 대한 차단 스크립트를 내보내기 위한 절차를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31924884b3bf49e499491a50c0181bc87602fb71
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 00c5063d93f469d91512e6bb37338855093e6bdf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123808"
+ms.locfileid: "53175570"
 ---
 # <a name="govern-discovered-apps"></a>검색된 앱 제어
 

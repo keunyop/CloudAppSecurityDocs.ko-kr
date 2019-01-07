@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 검색된 앱 사용 | Microsoft Docs
+title: Cloud App Security에서 검색된 앱 사용
 description: 이 문서에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122839"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450592"
 ---
 # <a name="working-with-discovered-apps"></a>검색된 앱 사용
 
@@ -44,6 +45,7 @@ Cloud Discovery 앱의 일반적인 그림을 가져오려면 먼저 Cloud Disco
 6. 마지막으로 **앱 위험 개요**에서 검색된 앱의 위험 점수를 검토하세요. **검색 경고 상태**를 점검하여 조사해야 하는 미해결 경고가 얼마나 되는지 확인하세요.
 
 ## <a name="deep-dive-into-discovered-apps"></a>검색된 앱 심층 분석
+
 Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를 사용하여 위험한 앱과 일반적으로 사용되는 앱을 검토합니다.
 
 
@@ -62,7 +64,7 @@ Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를
      
 예를 들어 서로 다른 SharePoint 사이트를 구분할 수 있습니다.
 
-Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. [지원되는 방화벽 및 프록시](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
+Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. 자세한 내용은 [지원되는 방화벽 및 프록시](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
 
  ![하위 도메인 정보](./media/discovery-domains.png) 
 
@@ -75,21 +77,20 @@ Cloud Discovery 임원 보고서를 생성하려면:
 **Cloud Discovery 대시보드**에서 메뉴의 오른쪽 위 모서리에 있는 세 개의 점을 클릭하고 **Cloud Discovery 임원 보고서 생성**을 선택합니다.
 
 ## <a name="exclude-entities"></a>엔터티 제외
+
 시스템 사용자, IP 주소나 노이즈가 많고 관심 없는 머신 또는 관련 없는 앱이 있는 경우, 분석되는 클라우드 검색 데이터에서 해당 데이터를 제외하는 것이 좋습니다. 예를 들어 127.0.0.1 또는 로컬 호스트에서 발생하는 모든 정보를 제외할 수 있습니다.  
   
 제외 항목을 만들려면  
   
 1. 포털의 설정 아이콘에서 **클라우드 검색 설정**을 선택합니다.  
-  
 2. **엔터티 제외** 탭을 클릭합니다.  
-  
-3. **제외된 사용자**, **제외된 IP 주소** 또는 **제외된 머신** 탭을 선택하고 + 단추를 클릭하여 제외 항목을 추가합니다.  
-  
-4. 사용자 별칭, IP 주소 또는 머신 이름을 추가합니다. 제외된 이유에 대한 정보를 추가하는 것이 좋습니다.  
+3. **제외된 사용자**, **제외된 IP 주소** 또는 **제외된 머신** 탭을 선택하고 + 단추를 클릭하여 제외 항목을 추가합니다.
+4. 사용자 별칭, IP 주소 또는 머신 이름을 추가합니다. 제외된 이유에 대한 정보를 추가하는 것이 좋습니다.
   
      ![사용자 제외](./media/exclude-user.png "사용자 제외")  
   
-## <a name="manage-continuous-reports"></a>연속 보고서 관리  
+## <a name="manage-continuous-reports"></a>연속 보고서 관리
+
 사용자 지정 연속 보고서는 조직의 Cloud Discovery 로그 데이터를 모니터링할 때 더 많은 세분성을 제공합니다. 사용자 지정 보고서를 만들면 특정 지리적 위치, 네트워크 및 사이트 또는 조직 구성 단위를 기준으로 필터링할 수 있습니다. 기본적으로 다음과 같은 보고서만 Cloud Discovery 보고서 선택기에 표시 됩니다.  
   
 - **전역 보고서**는 로그에 포함한 모든 데이터 원본의 모든 정보를 포털에서 통합합니다.  
@@ -116,7 +117,8 @@ Cloud Discovery 임원 보고서를 생성하려면:
 > 모든 사용자 지정 보고서는 최대 1GB의 압축되지 않은 데이터로 제한됩니다. 데이터가 1GB를 초과하면 데이터의 처음 1GB를 보고서로 내보냅니다.
 
 
-## <a name="deleting-cloud-discovery-data"></a>클라우드 검색 데이터 삭제  
+## <a name="deleting-cloud-discovery-data"></a>클라우드 검색 데이터 삭제
+
 다양한 이유로 클라우드 검색 데이터를 삭제할 수 있습니다. 다음과 같은 경우 삭제하는 것이 좋습니다.  
   
 - 로그 파일을 수동으로 업로드했으며 시스템을 새 로그 파일로 업데이트하기 전에 오랜 시간이 경과하여 이전 데이터가 결과에 영향을 주지 않도록 하려는 경우  
@@ -138,10 +140,7 @@ Cloud Discovery 임원 보고서를 생성하려면:
     ![데이터 삭제](./media/delete-data.png "데이터 삭제")  
   
    > [!NOTE]  
-   >  삭제 프로세스는 몇 분 정도 걸리며 즉시 적용되지 않습니다.  
-
-
-
+   >  삭제 프로세스는 몇 분 정도 걸리며 즉시 적용되지 않습니다.
 
 ## <a name="next-steps"></a>다음 단계
  

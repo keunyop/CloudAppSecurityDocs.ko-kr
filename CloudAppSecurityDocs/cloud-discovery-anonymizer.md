@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 데이터를 익명화하여 사용자 개인 정보 보호 | Microsoft 문서
-description: 이 문서에서는 Cloud Discovery 데이터의 사용자 이름을 익명화하는 방법에 대한 정보를 제공합니다.
+title: Cloud App Security의 사용자 데이터 익명화
+description: 이 문서에서는 Cloud Discovery 데이터의 사용자 이름을 익명화하여 사용자 개인 정보를 보호하는 방법에 대한 정보를 제공합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfb7463e20f0756a08a7df1169996911908c8cd3
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: b1eceacb47e8339bb0b7162d27f13866188d10e7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123485"
+ms.locfileid: "53176436"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 데이터 익명화
 

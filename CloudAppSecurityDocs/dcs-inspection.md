@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security에서 Microsoft 데이터 분류 서비스를 사용하여 콘텐츠 검사를 수행하는 방법 | Microsoft Docs
+title: Microsoft 데이터 분류 서비스를 사용하여 Cloud App Security 콘텐츠 검사
 description: 이 문서에서는 Microsoft 데이터 분류 서비스를 사용하여 DLP 콘텐츠 검사를 수행할 때 Cloud App Security에서 수행하는 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df9e1c91efd5120168fcc918b949dad7519578f4
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d060980768426cbabe0f3c7cb976aadf88037b7d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123621"
+ms.locfileid: "53174991"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft 데이터 분류 서비스 통합
 
@@ -31,6 +32,7 @@ Microsoft Cloud App Security를 통해 기본적으로 Microsoft 데이터 분�
 
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>데이터 분류 서비스를 통한 콘텐츠 검사 사용
+
 추가 구성 없이 **Microsoft 데이터 분류 서비스**를 사용하도록 **검사 방법**을 설정할 수 있는 옵션이 있습니다. 이 옵션은 Microsoft Cloud App Security에서 파일에 대한 데이터 유출 방지 정책을 만들 때 유용합니다.
 
 

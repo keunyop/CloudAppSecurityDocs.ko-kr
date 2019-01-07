@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security 준수, 데이터 보안, 개인 정보, 신뢰 | Microsoft Docs
-description: 이 항목에서는 Cloud App Security 준수 제품, 신뢰 센터, 개인 정보 및 데이터 보안에 대해 설명합니다.
+title: Cloud App Security 규정 준수, 데이터 보안, 개인 정보, 신뢰
+description: 이 문서에서는 Cloud App Security 규정 준수 제품, 신뢰 센터, 개인 정보 및 데이터 보안에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54b58aa5b8aa098addbb2f10b7615da91676befe
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 75480c8e243573922864845ffea617b49b22404c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124012"
+ms.locfileid: "53177286"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security 데이터 보안 및 개인 정보
 
@@ -63,9 +64,9 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 
 ### <a name="youre-the-owner-of-your-data"></a>고객은 데이터의 소유자입니다.
 - Microsoft Cloud App Security에서 관리자는 검색 창을 사용하여 포털의 서비스에 저장된 식별이 가능한 개인 데이터를 볼 수 있습니다.
-- 관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. 엔터티를 클릭하면 [**사용자 및 계정**](accounts.md)이 열립니다. **사용자 및 계정** 페이지는 연결된 클라우드 응용 프로그램에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.
+- 관리자는 특정 사용자의 메타데이터 또는 사용자의 활동을 검색할 수 있습니다. 엔터티를 클릭하면 [**사용자 및 계정**](accounts.md)이 열립니다. **사용자 및 계정** 페이지는 연결된 클라우드 애플리케이션에서 풀된 엔터티에 대한 포괄적인 세부 정보를 제공합니다. 사용자의 활동 기록 및 사용자와 관련된 보안 경고도 제공합니다.
 
-- 고객은 데이터를 소유하고 언제든지 구독을 취소하고 데이터 삭제를 요청할 수 있습니다. 구독을 갱신하지 않으면  [온라인 서비스 약관](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)에 지정된 타임라인 내에 데이터가 삭제됩니다.
+- 고객은 데이터를 소유하고 언제든지 구독을 취소하고 데이터 삭제를 요청할 수 있습니다. 구독을 갱신하지 않으면  [온라인 서비스 약관](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)에 지정된 타임라인 내에 데이터가 삭제됩니다.
 
 - 서비스를 종료하기로 선택한 경우에도 고객은 데이터를 사용할 수 있습니다.
 
@@ -113,7 +114,7 @@ Microsoft Cloud App Security에서는 다음과 같이 데이터를 유지합니
 
 - 경고: 180일
 
- [온라인 서비스 약관](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)을 참고하여 Microsoft 데이터 사례에 대해 자세히 알아볼 수 있습니다.
+ [온라인 서비스 약관](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)을 참고하여 Microsoft 데이터 사례에 대해 자세히 알아볼 수 있습니다.
 
 [투명성에 대한 자세한 정보](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
