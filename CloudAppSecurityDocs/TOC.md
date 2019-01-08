@@ -1,21 +1,13 @@
-# 이해 및 탐색
-## [Cloud App Security란?](what-is-cloud-app-security.md)
+# Microsoft Cloud App Security
+# [개요](what-is-cloud-app-security.md)
 ## [Cloud App Security 데이터 보안 및 개인 정보](cas-compliance-trust.md)
 ## [새로운 기능은 무엇인가요?](release-notes.md)
 ### [이전 릴리스 아카이브](release-note-archive.md)
 ## 비교
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# 배포 게스트 클러스터에
+# 빠른 시작
 ## [시작](getting-started-with-cloud-app-security.md)
-## [기본 설정](general-setup.md)
-### [네트워크 요구 사항](network-requirements.md)
-### [관리자 관리](manage-admins.md)
-#### [관리 설정](admin-settings.md)
-### [메일 설정](mail-settings.md)
-### [사용자 그룹](user-groups.md)
-### [범위 지정 배포](scoped-deployment.md)
-### [IP 태그 및 범위](ip-tags.md)
 ## [Cloud Discovery 설정](set-up-cloud-discovery.md)
 ### [Windows Defender ATP와 통합](wdatp-integration.md)
 ### [Zscaler와 통합](zscaler-integration.md)
@@ -28,6 +20,20 @@
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
 ### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
+# 자습서
+## [섀도 IT 검색 및 관리](tutorial-shadow-it.md)
+## [중요한 정보의 다운로드 차단](use-case-proxy-block-session-aad.md)
+## [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
+## [Azure Information Protection 레이블을 자동으로 적용](use-case-information-protection.md)
+# 방법 가이드
+## [기본 설정](general-setup.md)
+### [네트워크 요구 사항](network-requirements.md)
+### [관리자 관리](manage-admins.md)
+#### [관리 설정](admin-settings.md)
+### [메일 설정](mail-settings.md)
+### [사용자 그룹](user-groups.md)
+### [범위 지정 배포](scoped-deployment.md)
+### [IP 태그 및 범위](ip-tags.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)
 ### [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)
@@ -40,12 +46,7 @@
 ### [ServiceNow 연결](connect-servicenow-to-microsoft-cloud-app-security.md)
 ## [조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)
 ### [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)
-# Windows Server Update Services와 함께
 ## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
-## 시나리오
-### [중요한 정보의 다운로드 차단](use-case-proxy-block-session-aad.md)
-### [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
-### [Azure Information Protection 레이블을 자동으로 적용](use-case-information-protection.md)
 ## 검색
 ### [검색된 앱 사용](discovered-apps.md)
 #### [Cloud Discovery에 사용자 지정 앱 추가](cloud-discovery-custom-apps.md)
@@ -69,8 +70,8 @@
 #### [변칙 검색 정책](anomaly-detection-policy.md)
 #### [OAuth 정책](app-permission-policy.md)
 #### [파일 정책](data-protection-policies.md)
-##### 콘텐츠 검사
-###### [기본 제공 콘텐츠 검사](content-inspection.md)
+##### [콘텐츠 검사](content-inspection.md)
+###### [기본 제공 콘텐츠 검사](content-inspection-built-in.md)
 ###### [데이터 분류 서비스 통합](dcs-inspection.md)
 ##### [RegEx 엔진 작업](working-with-the-regex-engine.md)
 #### 조건부 액세스 앱 제어 정책
@@ -84,7 +85,7 @@
 ### [SIEM 통합](siem.md)
 ### [외부 DLP 통합](icap-stunnel.md)
 ### [API 토큰](api-tokens.md)
-# 문제 해결
+## 문제 해결
 ## [서비스 상태 문제 해결](troubleshooting-status.md)
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
@@ -92,3 +93,8 @@
 ## [SIEM 통합 문제 해결](troubleshooting-siem.md)
 ## [Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
 ## [문제 해결 정책](troubleshoot-policies.md)
+# 참조
+# 리소스
+## [프리미어 지원 포털](https://premier.microsoft.com/)
+## [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+## [Cloud App Security 구입 방법](https://www.microsoft.com/cloud-platform/cloud-app-security)
