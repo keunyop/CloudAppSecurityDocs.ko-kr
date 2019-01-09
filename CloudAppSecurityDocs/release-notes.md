@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177423"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059498"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -27,6 +27,29 @@ ms.locfileid: "53177423"
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
+
+## <a name="cloud-app-security-release-139-140"></a>Cloud App Security 릴리스 139, 140
+
+릴리스 날짜: 2019년 1월 6일
+
+- **파일 검색 변경**<br>
+SharePoint 및 Onedrive의 모든 사용자와 공유한 파일은 이제 간주 [SharePoint 및 Onedrive의 변경 사항으로 인해](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365) **내부**로 간주됩니다. 따라서 모든 사용자와 공유하는 파일이 검색되면 이제 내부 파일로 처리됩니다. 이는 파일이 정책에 의해 처리되고 파일 페이지에 표시되는 방식에 영향을 줍니다.
+
+- **파일 모니터링 변경**<br>
+신규 및 유휴 고객에 대한 기본 파일 모니터링 동작이 변경되었습니다. 이제 **설정** > **파일**을 통해 이 기능을 사용하도록 설정하려면 파일 모니터링을 켜야합니다. 기존의 활동적인 고객들은 이 변경 내용의 영향을 받지 않습니다. 
+
+- **변칙 검색 정책에 대한 고급 튜닝**<br>
+이제 변칙 검색 엔진에 영향을 주어 기본 설정에 따라 경고를 억제하거나 표시할 수 있습니다. 
+   - 불가능한 이동 정책에서는 민감도 슬라이더를 설정하여 경고가 트리거되기 전에 필요한 비정상적인 동작의 수준을 확인할 수 있습니다. 
+   - 자주 발생하지 않는 국가, 익명 IP 주소, 의심스러운 IP 주소 및 불가능한 이동 활동에 대한 경고가 실패한 로그인과 성공한 로그인을 모두 분석해야 하는지 여부를 구성할 수도 있습니다. 
+
+-   **여러 신뢰 체인 지원** 조건부 액세스 앱 제어는 이제 여러 신뢰할 수 있는 루트 또는 중간 인증서를 디바이스 관리 양식으로 추가 및 사용을 지원합니다.
+
+- **새 Cloud Discovery 역할** (점진적 배포) Cloud App Security는 이제 Cloud Discovery 사용자를 위해 새로운 관리자 역할을 제공합니다. 이 역할은 관리 사용자가 Cloud App Security 포털 내의 Cloud Discovery 설정 및 데이터만 액세스할 수 있도록 범위를 지정하는 데 사용할 수 있습니다.
+
+- **Microsoft Information Protection 통합 레이블 지원** Cloud App Security는 이제 Microsoft Information Protection 통합 레이블을 지원합니다. 이미 [Office 365 보안 및 규정 준수 센터에 대한 분류 레이블 마이그레이션](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)한 고객의 경우, Cloud App Security는 [Azure Information Protecion과의 통합](azip-integration.md)에서 설명된 대로 이러한 레이블을 식별하고 작업합니다. 
+
+**PDF 파일 레이블 지정 지원** 통합 레이블을 사용하는 고객의 경우 Cloud App Security는 이제 PDF 파일에 대한 자동 레이블링을 지원합니다.
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security 릴리스 138
 

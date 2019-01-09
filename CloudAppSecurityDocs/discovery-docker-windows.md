@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450650"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059479"
 ---
 # <a name="docker-on-windows-on-premises"></a>Windows의 Docker 온-프레미스
 
@@ -146,7 +146,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
 배포하는 동안 문제가 발생한 경우  [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 
-### <a name="optional---create-custom-continuous-reports"></a>선택 사항 - 사용자 지정 연속 보고서 만들기
+### 선택 사항 - 사용자 지정 연속 보고서 만들기 <a name="continuous-reports"></a>
 
 로그가 Cloud App Security에 업로드 되고 보고서가 생성되었는지 확인합니다. 확인 후 사용자 지정 보고서를 만듭니다. Azure Active Directory 사용자 그룹을 기반으로 사용자 지정 검색 보고서를 만들 수 있습니다. 예를 들어 마케팅 부서의 클라우드 사용을 확인하려면 사용자 그룹 가져오기 기능을 사용하여 마케팅 그룹을 가져옵니다. 그런 다음, 이 그룹에 대한 사용자 지정 보고서를 만듭니다. IP 주소 태그 또는 IP 주소 범위를 기반으로 보고서를 사용자 지정할 수도 있습니다.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c0e3ac17aa5bc8d3cb5d7b32d4556c3d5cd0a33
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176800"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059371"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>즉각적인 동작 분석 및 변칙 검색 이용
 
@@ -71,6 +71,8 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 - 이 검색을 통해 해고된 직원이 SaaS 앱에서 계속 작업을 수행하는 경우를 식별할 수 있습니다. 데이터는 내부자 위협의 가장 큰 위험이 불편한 관계로 퇴사한 직원을 통해 제공됨을 보여 주므로 해고된 직원의 계정에서 활동을 계속 감시해야 합니다. 경우에 따라 퇴사한 직원의 계정은 회사 앱에서 프로비전이 해제되지만 대부분의 경우 특정 회사 리소스에 대한 액세스 권한은 계속 유지됩니다. 이전 관리자가 수행할 수 있는 잠재적 손상이 본질적으로 더 크기 때문에 권한 있는 계정을 고려할 때 훨씬 더 중요합니다.
 이 검색에서는 앱 전체에서 사용자 동작을 모니터링하는 Cloud App Security의 기능을 활용하여 사용자의 일반 활동, 계정이 종료되었다는 사실 및 다른 앱에서의 실제 활동을 식별할 수 있습니다. 예를 들어 Azure AD 계정은 종료되었지만 회사 AWS 인프라에 계속 액세스할 수 있는 직원은 대규모 손상을 일으킬 가능성이 있습니다.  
 
+이 검색은 Azure AD에서 계정이 종료된 사용자를 찾지만 AWS 또는 Salesforce와 같은 다른 플랫폼에서 여전히 작업을 수행합니다. 특히 사용자가 회사를 떠날 때 이러한 계정이 종료되지 않는 경우가 많으므로 다른 계정(해당 기본 단일 로그온 계정이 아님)을 사용하여 리소스를 관리하는 사용자에게 적합합니다.
+
 **의심스러운 IP 주소에서의 활동**
 - 이 검색은 Microsoft Threat Intelligence에서 위험한 것으로 식별된 IP 주소에서 사용자가 활동했음을 나타냅니다. 이러한 IP 주소는 봇네트 C&C와 같은 악성 활동에 관여하며, 손상된 계정을 나타낼 수도 있습니다. 이 검색은 조직의 사용자가 널리 사용하는 태그가 잘못된 IP 주소와 같은 “거짓 긍정”을 줄이는 기계 학습 알고리즘을 사용합니다.
 
@@ -114,7 +116,14 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 2. **변칙 검색 정책 편집** 창이 열리면 **거버넌스** 아래에서 모든 앱 또는 연결된 각 앱에서 원하는 수정 작업을 설정합니다. 
 3. **업데이트**를 클릭합니다.
 
- 
+## <a name="tune-anomaly-detection-policies"></a>변칙 검색 정책 조정
+
+기본 설정에 따라 경고를 표시하거나 표면에 표시하도록 변칙 검색 엔진에 영향을 미치려면:
+   - 불가능한 이동 정책에서는 민감도 슬라이더를 설정하여 경고가 트리거되기 전에 필요한 비정상적인 동작의 수준을 확인할 수 있습니다. 예를 들어 낮게 설정하면 사용자의 공통 위치에서 불가능한 이동 경고가 표시되지 않으며, 높게 설정하면 해당 경고가 표시됩니다. 
+
+   - 자주 발생하지 않는 국가, 익명 IP 주소, 의심스러운 IP 주소 및 불가능한 이동 활동에 대한 경고가 실패한 로그인과 성공한 로그인을 모두 분석해야 하는지 여부를 구성할 수도 있습니다. 
+   
+   
 ## <a name="scope-anomaly-detection-policies"></a>변칙 검색 정책 범위 지정
 
 정책에서 포함하고 제외할 사용자 및 그룹에만 정책이 적용되도록 각 변칙 검색 정책의 범위를 독립적으로 지정할 수 있습니다.

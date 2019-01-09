@@ -1,12 +1,12 @@
 ---
 title: Azure Information Protection 분류 레이블 자동 적용
-description: 이 문서에서는 Microsoft Cloud App Security에서 Azure Information Protection 분류 레이블을 자동으로 적용하는 방법을 설명합니다.
+description: 이 자습서에서는 Microsoft Cloud App Security에서 Azure Information Protection 분류 레이블을 자동으로 적용하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,27 +14,25 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85dd32e95cfa866b7ac1f75f87685466b1bcb3db
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347333"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059392"
 ---
-# <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 분류 레이블 자동 적용
+# <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>자습서: Azure Information Protection 분류 레이블 자동 적용
 
 *적용 대상: Microsoft Cloud App Security*
 
-이상적인 세계에서 모든 직원은 정보 보호의 중요성을 이해하고 정책을 준수하며 작업합니다. 하지만 실제로는 계정을 가진 파트너가 잘못된 사용 권한으로 Box 리포지토리에 문서를 업로드할 가능성이 높습니다. 한 주 후에 기업의 기밀 정보가 경쟁사에게 유출되었음을 알게되었습니다.
+이상적인 세계에서 모든 직원은 정보 보호의 중요성을 이해하고 정책을 준수하며 작업합니다. 하지만 실제로는 계정을 가진 파트너가 잘못된 사용 권한으로 Box 리포지토리에 문서를 업로드할 가능성이 높습니다. 한 주 후에 기업의 기밀 정보가 경쟁사에게 유출되었음을 알게되었습니다. Microsoft Cloud App Security는 이러한 종류의 재해를 사전에 방지할 수 있습니다. 이 기능은 비즈니스용 Box, SharePoint 및 OneDrive에서 사용할 수 있습니다. Azure Information Protection 레이블 적용은 사용 가능하고 긴 [거버넌스 작업](governance-actions.md) 목록 중 하나입니다.
 
-Microsoft Cloud App Security는 이러한 종류의 재해를 사전에 방지할 수 있습니다.
+이 자습서는 클라우드 스토리지에 저장된 문서에 설정된 공용 권한을 식별하도록 지원하므로 위반 발생 시 경고가 표시됩니다. 또한 Azure Information Protection **기밀** 분류 레이블을 자동으로 적용하여 파일에 추가 암호화를 제공할 수 있습니다.
 
-Microsoft Cloud App Security는 Box 계정에 저장된 문서에 대한 공용 사용 권한이 있는지를 식별하고 해당 문서에 기밀 정보가 있는지를 식별하는 분류 엔진을 사용합니다. 이 문제가 발생했음을 알 수 있도록 경고가 전송됩니다. 그런 다음, Cloud App Security는 Azure Information Protection **기밀** 분류 레이블을 자동으로 적용하여 파일에 대한 추가 암호화를 제공합니다.
+> [!div class="checklist"]
+> * 데이터 보호 설정 
+> * 정책 유효성 검사
 
->[!NOTE]
->
-> - Azure Information Protection 레이블 적용은 사용 가능하고 긴 [거버넌스 작업](governance-actions.md) 목록 중 하나입니다.
-> - 이 기능은 비즈니스용 Box, SharePoint 및 OneDrive에서 사용할 수 있습니다.
 
 ## <a name="enhanced-data-level-encryption-protection"></a>향상된 데이터 수준 암호화 보호
 
@@ -55,7 +53,7 @@ Azure Information Protection과 함께 Cloud App Security를 사용하여 데이
 - 테넌트에서 [Cloud App Security 및 Azure Information Protection을 사용하도록 설정](azip-integration.md)합니다.
 - Cloud App Security에 [Box를 연결](connect-box-to-microsoft-cloud-app-security.md)합니다.
 
-## <a name="setting-up-data-protection"></a>데이터 보호 설정
+## <a name="set-up-data-protection"></a>데이터 보호 설정
 
 Box 계정에 저장된 파일에서 신용 카드 번호를 찾는 정책을 설정해 보겠습니다. 파일이 있는 경우 자동으로 Azure Information Protection 레이블을 적용하고 해당 레이블이 있는 모든 파일에 발생한 결과를 제어합니다.
 
@@ -86,7 +84,7 @@ Box 계정에 저장된 파일에서 신용 카드 번호를 찾는 정책을 �
 
     2. 특정 일치 항목을 클릭하여 파일 서랍을 열어서 일치를 조사할 수 있습니다. 서랍에서 이 파일이 일치하는 다른 정책을 확인할 수 있습니다.
 
-## <a name="validating-your-policy"></a>정책 유효성 검사
+## <a name="validate-your-policy"></a>정책 유효성 검사
 
 1. 경고를 시뮬레이트하려면 Box 계정으로 이동하고 **Customer data** 폴더의 파일에 액세스를 시도합니다.
 2. 정책 보고서로 이동합니다. 파일 정책 일치 항목이 곧 표시됩니다. 

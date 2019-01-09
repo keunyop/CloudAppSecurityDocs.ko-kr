@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security 관리자 격리를 사용하여 파일 보호
-description: 이 문서에서는 관리자 격리를 사용하여 데이터 위반을 제어하는 시나리오를 설명합니다.
+description: 이 자습서에서는 관리자 격리를 사용하여 데이터 위반을 제어하는 시나리오를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/6/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,24 +14,33 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82398a5fad8f2d5b3da67a7932b9df6857dd9355
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 825645f44ff2d7dd0d6ba289608f10a23ff62dea
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347252"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059347"
 ---
-# <a name="protecting-your-files-with-admin-quarantine"></a>관리자 격리를 사용하여 파일 보호
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>자습서: 관리자 격리를 사용하여 파일 보호
 
 *적용 대상: Microsoft Cloud App Security*
 
-[파일 정책](data-protection-policies.md)은 정보 보호 정책에 대한 위협을 찾는 데 유용한 도구입니다. 예를 들어 사용자가 클라우드에서 중요한 정보, 신용 카드 번호 및 타사 ICAP 파일을 저장한 위치를 찾는 파일 정책을 만듭니다. Microsoft Cloud App Security를 사용하여 취약한 상태를 지속시키는 클라우드에 저장된 이러한 원하지 않는 파일을 검색할 수 있고 즉각적인 작업을 수행하여 파일을 즉시 중지하고 위협이 되는 파일을 잠글 수도 있습니다. **관리자 격리**를 사용하여 클라우드에서 파일을 보호하고 문제를 해결하고, 미래의 누수 발생을 방지할 수 있습니다.
+[파일 정책](data-protection-policies.md)은 정보 보호 정책에 대한 위협을 찾는 데 유용한 도구입니다. 예를 들어 사용자가 클라우드에서 중요한 정보, 신용 카드 번호 및 타사 ICAP 파일을 저장한 위치를 찾는 파일 정책을 만듭니다. 
+
+이 자습서는 Microsoft Cloud App Security를 사용하여 클라우드에 저장된 원하지 않는 파일을 검색하여 취약한 상태로 만드는 것을 돕고, **관리자 격리**를 사용하여 클라우드에서 파일을 보호하고, 문제를 해결하며, 향후 누출이 발생하지 않도록 함으로써 즉각적인 조치를 취하고 위협에 처한 파일을 추적하고 잠급니다.
+
+
+
+> [!div class="checklist"]
+> * 격리 작동 방식 이해 
+> * 관리자 격리 설정
+
+
+## <a name="understand-how-quarantine-works"></a>격리 작동 방식 이해 
 
 >[!NOTE] 
 > - 이것은 미리 보기 기능입니다.
 > - 관리자 격리를 지원하는 앱 목록은 [거버넌스 작업](governance-actions.md) 목록을 참조하세요.
- 
-## <a name="how-quarantine-works"></a>작업을 격리하는 방법 
 
 1. 파일이 정책과 일치하는 경우 파일에 **관리자 격리** 옵션을 사용할 수 있습니다.
 

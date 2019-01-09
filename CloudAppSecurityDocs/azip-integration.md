@@ -14,18 +14,22 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 590027f7769637188fc77aad882cedbc41158012
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177337"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059450"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
 *적용 대상: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security를 통해 Azure Information Protection 분류 레이블을 보호 여부와 상관없이 파일 정책 거버넌스 작업으로 파일에 자동 적용할 수 있습니다. Cloud App Security 포털 내에서 적용된 분류 레이블을 필터링하여 파일을 조사할 수도 있습니다. 분류를 사용하면 클라우드에서 중요한 데이터를 더 잘 볼 수 있고 제어할 수 있습니다. Azure Information Protection을 Cloud App Security와 통합하는 작업은 확인란 하나를 선택하는 것만큼 쉽습니다. 
+
+> [!NOTE]
+> [Office 365 보안 및 규정 준수 센터에 대한 분류 레이블을 마이그레이션](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)한 경우, 이 문서는 Microsoft Information Protection 통합 레이블과도 관련이 있습니다. 기존 분류 레이블을 마이그레이션하지 않고 Office 365 보안 및 규정 준수 센터에서 새 레이블을 만들기 시작하면 Cloud App Security는 Azure Information Protection 포털에 구성된 기존 레이블만 사용합니다.
+
 
 Azure Information Protection을 Cloud App Security에 통합하여 다음과 같이 클라우드에서 서비스와 안전한 파일의 전체 성능을 모두 사용할 수 있습니다.
 - 특정 정책과 일치하는 파일에 분류 레이블을 거버넌스 작업으로 적용할 수 있는 기능

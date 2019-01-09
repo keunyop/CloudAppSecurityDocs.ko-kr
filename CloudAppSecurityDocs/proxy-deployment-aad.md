@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d7f0041a385a60cde5bc714312435dd2cd6ac389
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 3c05c00ae3b6ef7354d568d6b1e4ab0c5806d5e3
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177133"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059534"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
 
@@ -36,13 +36,12 @@ ms.locfileid: "53177133"
 
 **2단계: [앱에서 정책 범위에 속한 사용자로 로그인합니다](#sign-in-scoped).**
 
-**3단계: [Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱을 추가합니다](#banner-notification).**
+**3단계: Azure AD에서 기본 제공 Cloud App Security 정책을 선택하지 않았거나 기능이 없는 앱에 정책을 적용하려는 경우, [Cloud App Security 포털로 이동](#portal)**
 
-**4단계: [액세스 정책](access-policy-aad.md)을 만들거나 Cloud App Security에 대한 [세션 정책](session-policy-aad.md)을 만듭니다.**
-
+[**4단계: 배포 테스트**](#test)
 
 > [!NOTE]
-> Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)가 필요합니다.
+> Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)와 Cloud App Security 라이선스가 필요합니다.
 
 ## 1단계: Cloud App Security에 Azure AD 앱 추가 <a name="add-azure-ad"></a>  
 
@@ -52,56 +51,75 @@ ms.locfileid: "53177133"
 
       ![Azure AD 조건부 액세스](./media/aad-conditional-access.png)
 
-   2. **새 정책**을 클릭하고 새 정책을 만듭니다. **세션**에서 **조건부 액세스 앱 제어 적용 제한 사용**을 선택해야 합니다.
-
-      ![Azure AD 조건부 액세스](./media/proxy-deploy-restrictions-aad.png)
-
-   3. 테스트 정책의 **사용자** 아래에서 초기 로그온에 사용할 수 있는 테스트 사용자 또는 사용자를 지정합니다.
+   2. **새 정책**을 클릭하여 새 정책을 만들고 **세션**에서 **조건부 액세스 앱 제어 사용**을 선택합니다.
+   
+   3. 테스트 정책의 **사용자** 아래에서 초기 로그온 및 인증에 사용할 수 있는 테스트 사용자 또는 사용자를 할당합니다.
     
    4. 테스트 정책의 **클라우드 앱** 아래에서 조건부 액세스 앱 제어로 제어하려는 앱을 할당합니다. 
 
+    
+   5. 기본 제공 정책 **모니터 전용** 또는 **다운로드 차단** 중 하나를 사용하도록 정책을 설정합니다. 또는 **사용자 지정 정책 사용**을 선택하여 Cloud App Security 포털에서 고급 정책을 설정합니다. 
+
+      ![Azure AD 조건부 액세스](./media/azure-ad-caac-policy.png)
+
+  
       > [!NOTE]
-      >조건부 액세스 앱 제어에서 지원하는 앱을 선택해야 합니다. 조건부 액세스 앱 제어는 Azure AD에서 SAML로 구성된 앱과 Single Sign-On으로 구성된 열린 ID 연결 앱을 지원합니다. 
+      >조건부 액세스 앱 제어는 이러한 추천 앱을 포함하여 Azure AD에서 Single Sign-On으로 구성된 SAML 또는 Open ID 연결 앱을 지원합니다. 비추천 앱은 세션 제어와 함께 온보드로 요청하여 Cloud App Security 포털에서 액세스 제어로 구성할 수 있습니다. 
 
 ## 2단계: 앱에서 정책 범위에 속한 사용자로 로그인 <a name="sign-in-scoped"></a>
 
 정책을 만든 후에는 해당 정책에 구성된 각 앱에 로그인합니다. 정책에 구성된 사용자를 사용하여 로그인했는지 확인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
 
-## 3단계: Cloud App Security 포털로 돌아가 배너 알림을 선택하여 앱 추가 <a name="banner-notification"></a>
+Cloud App Security는 로그인하는 각 새 앱에 대한 정책 세부 정보를 해당 서버에 동기화합니다.  여기에는 최대 1분이 소요될 수 있습니다.
 
-1. Cloud App Security 포털에서 설정 코그로 이동하고 **Conditional Access App Control**(조건부 액세스 앱 제어)을 선택합니다. 
-    
-     ![프록시 메뉴](./media/proxy-menu.png)
+## 3단계: Cloud App Security 포털에서 고급 컨트롤 및 비추천 앱 구성 <a name="portal"></a>
 
-2. ‘새 Azure AD 앱이 조건부 액세스 앱 제어에 의해 검색되었습니다.’라고 알려주는 메시지가 표시됩니다. **새 앱을 확인하세요** 링크를 클릭합니다.
+위의 지침을 따르면 Azure AD에서 직접 추천 앱에 대한 기본 제공 Cloud App Security 정책을 만들 수 있습니다.
 
-   ![조건부 액세스 앱 제어 보기 새 앱](./media/proxy-view-new-apps.png)
+고급 정책을 구성하려면 Cloud App Security 포털에서 액세스 정책 또는 세션 정책을 만듭니다.
 
-3. 열린 대화 상자에서 이전 단계에서 로그인한 모든 앱을 볼 수 있습니다. 각 앱에 대해 + 기호를 클릭한 다음 **추가**를 클릭합니다.
+비추천 애플리케이션에 대한 지원을 요청하려면:
 
-   ![조건부 액세스 앱 제어 새 앱](./media/proxy-new-app.png)
+1.  Cloud App Security 포털에서 설정 코그로 이동하고 **Conditional Access App Control**(조건부 액세스 앱 제어)을 선택합니다. ‘새 Azure AD 앱이 조건부 액세스 앱 제어에 의해 검색되었습니다.’라고 알려주는 메시지가 표시됩니다. 
+
+     ![조건부 액세스 앱 제어 메뉴](./media/caac-menu.png)
+
+2. **새 앱 보기**를 클릭합니다.
+
+    ![조건부 액세스 앱 제어 보기 새 앱](./media/caac-view-apps.png)
+     
+
+3. 열린 화면에서 이전 단계에서 로그인한 모든 앱을 볼 수 있습니다. 각 앱에 대해 + 기호를 클릭한 다음 **추가**를 클릭합니다.
 
    > [!NOTE]
-   > 앱이 Cloud App Security 앱 카탈로그에 표시되지 않으면 로그인 URL과 함께 알 수 없는 앱 아래의 대화 상자에 나타납니다. 이러한 앱에 대한 + 기호를 클릭하면 카탈로그에 해당 앱을 추가하도록 제안할 수 있습니다. 앱이 카탈로그에 있으면 단계를 다시 수행하여 해당 앱을 배포합니다. 
+   > 앱이 Cloud App Security 앱 카탈로그에 표시되지 않으면 로그인 URL과 함께 알 수 없는 앱 아래의 대화 상자에 나타납니다. 이러한 앱의 + 기호를 클릭하면 애플리케이션을 사용자 지정 앱으로 온보드할 수 있습니다.
 
-4. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 Azure AD 조건부 액세스와 세션 제어가 모두 표시되는지 확인합니다. <br></br>앱에 대해 세션 제어가 표시되지 않으면 특정 앱에서 세션 제어를 아직 사용할 수 없다는 것을 의미합니다. 대신 **세션 제어 요청** 링크가 표시됩니다. 이 링크를 클릭하여 대화 상자를 열고 세션 제어에 대한 앱 온보딩을 요청합니다. 이 시나리오에서 온보딩 프로세스는 Cloud App Security 팀에서 함께 수행합니다.
+   ![조건부 액세스 앱 제어가 검색된 Azure AD 앱](./media/caac-discovered-aad-apps.png)
+
+4. 조건부 액세스 앱 제어 앱 테이블에서 **사용 가능한 제어** 열을 살펴보고 **Azure AD 조건부 액세스**와 **세션 제어**가 모두 표시되는지 확인합니다. 
+   
+   > [!NOTE]
+   > 앱에 대해 세션 제어가 표시되지 않으면 특정 앱에서 세션 제어를 사용할 수 없습니다. 대신 **세션 제어 요청** 링크가 표시됩니다. 
   
-   ![세션 제어 요청](./media/proxy-view-new-apps.png)
+     ![조건부 액세스 앱 제어 요청](./media/caac-request.png)
+   
 
-5. 선택 사항 - 클라이언트 인증서를 사용하여 디바이스를 식별합니다.
-
-   1. 설정 코그로 이동하고 **디바이스 식별**을 선택합니다.
-
-   2. 루트 인증서를 업로드합니다.
-
-      ![디바이스 식별](./media/device-identification.png)
+5. **세션 제어 요청**을 클릭하여 앱을 세션 제어에 온보딩하도록 요청합니다. 온보딩 프로세스는 Microsoft Cloud App Security 팀에서 수행합니다.
  
-      인증서가 업로드되면 **디바이스 태그** 및 **유효한 클라이언트 인증서**를 기반으로 액세스 정책 및 세션 정책을 만들 수 있습니다.
- 
-      > [!NOTE]
-      >세션이 유효한 클라이언트 인증서 필터를 사용하는 정책과 일치하는 경우에만 사용자에게 인증서를 요청합니다. 
 
-## <a name="test-the-deployment"></a>배포 테스트
+6.  클라이언트 인증서를 사용하여 디바이스를 식별합니다(선택 사항).
+    1.  설정 코그로 이동하고 **디바이스 식별**을 선택합니다.
+    2.  루트 인증서를 업로드합니다.
+   
+    3. 인증서가 업로드되면 **디바이스 태그** 및 **유효한 클라이언트 인증서**를 기반으로 액세스 정책 및 세션 정책을 만들 수 있습니다.
+
+       ![조건부 액세스 앱 제어 디바이스 ID](./media/caac-device-id.png)
+
+> [!NOTE]
+> 세션이 유효한 클라이언트 인증서 필터를 사용하는 정책과 일치하는 경우에만 사용자에게 인증서를 요청합니다.
+
+
+## 4단계: 배포 테스트 <a name="test"></a>
 
 1. 먼저 기존 세션에서 로그아웃합니다. 그런 다음, 성공적으로 배포된 각 앱에 로그인합니다. Azure AD에 구성된 정책과 일치하는 사용자를 사용하여 로그인합니다. 
 
@@ -116,8 +134,6 @@ ms.locfileid: "53177133"
  
    ![사용자 에이전트 태그 테스트](./media/domain-joined.png)
 
-
-이제 조건부 액세스 앱 제어 앱을 제어할 [액세스 정책](access-policy-aad.md) 및 [세션 정책](session-policy-aad.md)을 만들 준비가 되었습니다.
 
 
 >[!div class="step-by-step"]
