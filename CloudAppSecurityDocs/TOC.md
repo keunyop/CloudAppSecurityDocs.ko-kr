@@ -6,25 +6,23 @@
 ## 비교
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
+
 # 빠른 시작
 ## [시작](getting-started-with-cloud-app-security.md)
-## [Cloud Discovery 설정](set-up-cloud-discovery.md)
-### [Windows Defender ATP와 통합](wdatp-integration.md)
-### [Zscaler와 통합](zscaler-integration.md)
-### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
-### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
-#### [Windows의 Docker](discovery-docker-windows.md)
-#### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
-#### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
-#### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
-### [사용자 지정 로그 파서 사용](custom-log-parser.md)
-### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
-### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
+## [검색된 앱 사용](discovered-apps.md)
+
+
 # 자습서
 ## [섀도 IT 검색 및 관리](tutorial-shadow-it.md)
 ## [중요한 정보의 다운로드 차단](use-case-proxy-block-session-aad.md)
 ## [관리자 격리를 사용하여 파일 보호](use-case-admin-quarantine.md)
 ## [Azure Information Protection 레이블을 자동으로 적용](use-case-information-protection.md)
+
+# 개념
+## [조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)
+## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
+## [위험 점수 사용](risk-score.md)
+
 # 방법 가이드
 ## [기본 설정](general-setup.md)
 ### [네트워크 요구 사항](network-requirements.md)
@@ -34,6 +32,20 @@
 ### [사용자 그룹](user-groups.md)
 ### [범위 지정 배포](scoped-deployment.md)
 ### [IP 태그 및 범위](ip-tags.md)
+## [Cloud Discovery 설정](set-up-cloud-discovery.md)
+### [Windows Defender ATP와 통합](wdatp-integration.md)
+### [Zscaler와 통합](zscaler-integration.md)
+### [Microsoft Flow와 통합](flow-integration.md)
+### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
+### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
+#### [Windows의 Docker](discovery-docker-windows.md)
+#### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
+#### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
+#### [프록시 뒤의 로그 수집기](log-collector-proxy.md)
+#### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
+### [사용자 지정 로그 파서 사용](custom-log-parser.md)
+### [Cloud Discovery 보강](cloud-discovery-aad-enrichment.md)
+### [Cloud Discovery 데이터 익명화](cloud-discovery-anonymizer.md)
 ## [앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Azure 연결](connect-azure-to-microsoft-cloud-app-security.md)
 ### [AWS 연결](connect-aws-to-microsoft-cloud-app-security.md)
@@ -44,14 +56,10 @@
 ### [Okta 연결](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Salesforce 연결](connect-salesforce-to-microsoft-cloud-app-security.md)
 ### [ServiceNow 연결](connect-servicenow-to-microsoft-cloud-app-security.md)
-## [조건부 액세스 앱 제어로 앱 보호](proxy-intro-aad.md)
-### [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)
-## [대시보드 사용](daily-activities-to-protect-your-cloud-environment.md)
+## [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)
 ## 검색
-### [검색된 앱 사용](discovered-apps.md)
-#### [Cloud Discovery에 사용자 지정 앱 추가](cloud-discovery-custom-apps.md)
-#### [검색된 앱 필터 및 쿼리](discovered-app-queries.md)
-### [위험 점수 사용](risk-score.md)
+### [Cloud Discovery에 사용자 지정 앱 추가](cloud-discovery-custom-apps.md)
+### [검색된 앱 필터 및 쿼리](discovered-app-queries.md)
 ## [조사](investigate.md)
 ### [활동](activity-filters.md)
 #### [활동 필터 및 쿼리](activity-filters-queries.md)
@@ -85,7 +93,7 @@
 ### [SIEM 통합](siem.md)
 ### [외부 DLP 통합](icap-stunnel.md)
 ### [API 토큰](api-tokens.md)
-## 문제 해결
+# 참조
 ## [서비스 상태 문제 해결](troubleshooting-status.md)
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
@@ -93,8 +101,7 @@
 ## [SIEM 통합 문제 해결](troubleshooting-siem.md)
 ## [Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
 ## [문제 해결 정책](troubleshoot-policies.md)
-# 참조
 # 리소스
 ## [프리미어 지원 포털](https://premier.microsoft.com/)
-## [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+## [Cloud Apps Security 포털](https://portal.cloudappsecurity.com)
 ## [Cloud App Security 구입 방법](https://www.microsoft.com/cloud-platform/cloud-app-security)
