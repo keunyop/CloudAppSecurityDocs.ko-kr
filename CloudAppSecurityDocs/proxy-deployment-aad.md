@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 1/7/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3c05c00ae3b6ef7354d568d6b1e4ab0c5806d5e3
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3f758d4c0602a2c5c716d7395e3bb79a8bf928d0
+ms.sourcegitcommit: 8ed1a81e3e27c4fd0e1e131a7c8527fbb264b9fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059534"
+ms.locfileid: "54059835"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
 
@@ -43,24 +43,21 @@ ms.locfileid: "54059534"
 > [!NOTE]
 > Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)와 Cloud App Security 라이선스가 필요합니다.
 
-## 1단계: Cloud App Security에 Azure AD 앱 추가 <a name="add-azure-ad"></a>  
+## 1단계: Azure AD 조건부 액세스 테스트 정책 만들기<a name="add-azure-ad"></a>  
 
-1. Azure AD 조건부 액세스 테스트 정책을 만듭니다.
+1. Azure Active Directory에서 **보안** 아래에 있는 **조건부 액세스**를 클릭합니다.
 
-   1. Azure Active Directory에서 **보안** 아래에 있는 **조건부 액세스**를 클릭합니다.
-
-      ![Azure AD 조건부 액세스](./media/aad-conditional-access.png)
-
-   2. **새 정책**을 클릭하여 새 정책을 만들고 **세션**에서 **조건부 액세스 앱 제어 사용**을 선택합니다.
+2. **새 정책**을 클릭하고 새 정책을 만듭니다.
    
-   3. 테스트 정책의 **사용자** 아래에서 초기 로그온 및 인증에 사용할 수 있는 테스트 사용자 또는 사용자를 할당합니다.
+3. 테스트 정책의 **사용자** 아래에서 초기 로그온 및 인증에 사용할 수 있는 테스트 사용자 또는 사용자를 할당합니다.
     
-   4. 테스트 정책의 **클라우드 앱** 아래에서 조건부 액세스 앱 제어로 제어하려는 앱을 할당합니다. 
-
+4. 테스트 정책의 **클라우드 앱** 아래에서 조건부 액세스 앱 제어로 제어하려는 앱을 할당합니다. 
     
-   5. 기본 제공 정책 **모니터 전용** 또는 **다운로드 차단** 중 하나를 사용하도록 정책을 설정합니다. 또는 **사용자 지정 정책 사용**을 선택하여 Cloud App Security 포털에서 고급 정책을 설정합니다. 
+5. **세션**에서 기본 제공 정책인 **모니터 전용**과 **다운로드 차단** 중 하나를 적용하도록 설정합니다. 또는 **사용자 지정 정책 사용**을 선택하여 Cloud App Security 포털에서 고급 정책을 설정합니다. 
 
-      ![Azure AD 조건부 액세스](./media/azure-ad-caac-policy.png)
+6. 해당되는 **조건 할당** 또는 **제어권 승인**(선택 사항)을 추가합니다.
+
+   ![Azure AD 조건부 액세스](./media/azure-ad-caac-policy.png)
 
   
       > [!NOTE]
@@ -76,7 +73,7 @@ Cloud App Security는 로그인하는 각 새 앱에 대한 정책 세부 정보
 
 위의 지침을 따르면 Azure AD에서 직접 추천 앱에 대한 기본 제공 Cloud App Security 정책을 만들 수 있습니다.
 
-고급 정책을 구성하려면 Cloud App Security 포털에서 액세스 정책 또는 세션 정책을 만듭니다.
+고급 정책을 구성하려면 Cloud App Security 포털에서 [액세스 정책](access-policy-aad.md)이나 [세션 정책](session-policy-aad.md)을 만듭니다.
 
 비추천 애플리케이션에 대한 지원을 요청하려면:
 
@@ -109,7 +106,7 @@ Cloud App Security는 로그인하는 각 새 앱에 대한 정책 세부 정보
 
 6.  클라이언트 인증서를 사용하여 디바이스를 식별합니다(선택 사항).
     1.  설정 코그로 이동하고 **디바이스 식별**을 선택합니다.
-    2.  루트 인증서를 업로드합니다.
+    2.  하나 이상의 루트 또는 중간 인증서를 업로드 합니다.
    
     3. 인증서가 업로드되면 **디바이스 태그** 및 **유효한 클라이언트 인증서**를 기반으로 액세스 정책 및 세션 정책을 만들 수 있습니다.
 
@@ -125,16 +122,13 @@ Cloud App Security는 로그인하는 각 새 앱에 대한 정책 세부 정보
 
 2. Cloud App Security 포털의 **조사** 아래에서 **활동 로그**를 선택하고 각 앱에 대해 로그인 활동이 캡처되는지 확인합니다.
 
-3. **고급**을 클릭한 다음 **원본이 Azure Active Directory 조건부 액세스와 같음**을 사용하여 필터링할 수 있습니다.
+3. **고급**을 클릭한 다음, **원본이 액세스 제어와 같음**을 사용하여 필터링할 수 있습니다.
 
     ![Azure AD 조건부 액세스를 사용하여 필터링](./media/sso-logon.png)
 
 4. 관리되는 디바이스와 관리되지 않는 디바이스에서 모바일 및 데스크톱 앱에 로그인하는 것이 좋습니다. 이는 활동이 활동 로그에 제대로 캡처되었는지 확인하기 위한 것입니다.<br></br>
    활동이 제대로 캡처되었는지 확인하려면 활동의 Single Sign-On 로그를 클릭하여 활동 서럽을 엽니다. **사용자 에이전트 태그**에서 디바이스가 네이티브 클라이언트(모바일 또는 데스크톱 앱)인지 또는 디바이스가 관리 디바이스(준수, 도메인 가입 또는 유효한 클라이언트 인증서)인지 여부를 제대로 반영하는지 확인합니다.
  
-   ![사용자 에이전트 태그 테스트](./media/domain-joined.png)
-
-
 
 >[!div class="step-by-step"]
 [« 이전: 조건부 액세스 앱 제어 소개](proxy-intro-aad.md)<br>
