@@ -70,7 +70,7 @@ Cloud App Security의 기본 제공 DLP 엔진은 일반적인 파일 형식에�
         -  공개 - 인터넷을 검색하여 찾을 수 있는 파일입니다. 
 
       > [!NOTE]
-      >  외부 사용자에 의해 연결된 저장소 응용 프로그램에 공유된 파일은 Cloud App Security에서 다음과 같이 처리됩니다.
+      >  외부 사용자에 의해 연결된 스토리지 응용 프로그램에 공유된 파일은 Cloud App Security에서 다음과 같이 처리됩니다.
       > - **OneDrive:** OneDrive는 외부 사용자가 OneDrive에 넣는 모든 파일의 소유자로 내부 사용자를 할당합니다. 그러면 이러한 파일은 조직의 소유로 간주되므로 Cloud App Security에서 이러한 파일을 검색하고 OneDrive의 다른 모든 파일에서처럼 정책을 적용합니다.
       > - **Google Drive:** Google Drive에서는 이런 파일을 외부 사용자가 소유한 것으로 간주하며, 조직에서 소유하지 않은 파일 및 데이터의 법적 제한 때문에 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다.
       > - **Box:** Box에서는 외부에서 소유한 파일을 개인 정보로 간주하므로 Box 글로벌 관리자가 파일의 내용을 볼 수 없습니다. 이러한 이유로 Cloud App Security에서 이러한 파일에 액세스할 수 없습니다. 
