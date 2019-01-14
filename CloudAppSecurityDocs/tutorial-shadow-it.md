@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: ccf52abaad217c257bbab14b886f6af120721c8c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059566"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142287"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -93,8 +93,9 @@ IT 관리자에게 직원이 사용하는 클라우드 앱의 수를 질문할 �
 
 ### <a name="phase-4-control-sanctioned-apps"></a>4단계: 사용 권한 앱 제어
 
-    1. API를 통해 앱 제어를 사용하도록 설정하려면 연속 모니터링에 대해 [API 통해 앱을 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)합니다.
-    2. [조건부 액세스 앱 제어](proxy-intro-aad.md)를 사용하여 앱을 보호합니다.
+1. API를 통해 앱 제어를 사용하도록 설정하려면 연속 모니터링에 대해 [API 통해 앱을 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)합니다.
+
+2. [조건부 액세스 앱 제어](proxy-intro-aad.md)를 사용하여 앱을 보호합니다.
 
 
 클라우드 앱의 특성은 매일 업데이트되고 새 앱이 항상 표시된다는 것을 의미합니다. 이러한 이유로 직원은 지속적으로 새 앱을 사용하고 있으며 정책 추적, 검토 및 업데이트하고 사용자가 사용 중인 앱과 사용 패턴 및 동작 패턴을 확인하는 것이 중요합니다. 항상 Cloud Discovery 대시보드로 이동하여 사용 중인 새 앱을 확인하고 이 문서의 지침에 따라 조직과 데이터가 보호되는지 다시 확인할 수 있습니다.
