@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security에서 검색된 앱 사용
-description: 이 문서에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
+description: 이 빠른 시작에서는 Cloud App Security에서 위험한 클라우드 검색 앱을 식별 및 해결하기 위한 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450592"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060176"
 ---
-# <a name="working-with-discovered-apps"></a>검색된 앱 사용
+# <a name="quickstart-work-with-discovered-apps"></a>빠른 시작: 검색된 앱 사용
 
 *적용 대상: Microsoft Cloud App Security*
 
-Cloud Discovery 대시보드는 조직에서 클라우드 앱이 어떻게 사용되는지를 효과적으로 파악할 수 있도록 설계되었습니다. 이 대시보드에서는 사용되고 있는 앱의 종류, 미해결 경고 및 조직에서 앱의 위험 수준을 한눈에 파악할 수 있습니다. 또한 최고의 앱 사용자를 확인할 수 있으며 앱 본사 위치 지도를 제공합니다. Cloud Discovery 대시보드에는 데이터를 필터링하는 여러 가지 옵션이 있습니다. 필터링을 사용하면 이해하기 쉬운 그래픽을 사용하여 한 눈에 전체 그림을 그릴 수 있는 가장 관심 있는 항목에 따라 특정 보기를 생성할 수 있습니다.
+이 빠른 시작에서는 검색된 앱을 모니터링하고 관리하는 방법에 관한 시작하기 정보를 제공합니다. Cloud Discovery 대시보드는 조직에서 클라우드 앱이 어떻게 사용되는지를 효과적으로 파악할 수 있도록 설계되었습니다. 이 대시보드에서는 사용되고 있는 앱의 종류, 미해결 경고 및 조직에서 앱의 위험 수준을 한눈에 파악할 수 있습니다. 또한 최고의 앱 사용자를 확인할 수 있으며 앱 본사 위치 지도를 제공합니다. Cloud Discovery 대시보드에는 데이터를 필터링하는 여러 가지 옵션이 있습니다. 필터링을 사용하면 이해하기 쉬운 그래픽을 사용하여 한 눈에 전체 그림을 그릴 수 있는 가장 관심 있는 항목에 따라 특정 보기를 생성할 수 있습니다.
 
 ![cloud discovery 대시보드](./media/cloud-discovery-dashboard.png)
 
@@ -51,7 +51,7 @@ Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를
 
 예를 들어 일반적으로 사용되는 위험한 클라우드 스토리지 및 공동 작업 앱을 식별하려면 검색된 앱 페이지를 사용하여 원하는 앱을 필터링합니다. 그런 후에, 다음과 같이 [사용 권한을 취소하거나 앱을 차단](governance-discovery.md)할 수 있습니다.
 
-1. **검색된 앱** 페이지의 **범주별로 찾아보기**에서 **클라우드 저장소** 및 **공동 작업**을 둘 다 선택합니다.
+1. **검색된 앱** 페이지의 **범주별로 찾아보기**에서 **클라우드 스토리지** 및 **공동 작업**을 둘 다 선택합니다.
 2. 그런 다음, 고급 필터를 사용하여 **위험 요인 준수**를 **SOC 2**로 설정하면 **False**가 됩니다.
 3. **사용량**의 경우 **사용자**를 50명 초과의 사용자로, **트랜잭션**에 대해 **사용량**을 100을 초과하도록 설정합니다.
 4. **미사용 데이터 암호화**에 대한 **보안 위험 요인**을 **지원되지 않음**과 동일하게 설정합니다. 그런 다음, **위험 점수**를 6 이하로 설정합니다.

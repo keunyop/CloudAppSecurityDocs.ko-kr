@@ -14,22 +14,22 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c0387aaaf2bfc9de3a560c53c4b0e822e26e57d
-ms.sourcegitcommit: 8ed1a81e3e27c4fd0e1e131a7c8527fbb264b9fe
+ms.openlocfilehash: 37cf8aef54b1d44d3036530544d9ffe25acf2073
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059869"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142270"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
 *적용 대상: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니다. 기본적으로 [Azure AD(Azure Active Directory) 관리자 역할](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)은 Microsoft Cloud App Security에 액세스할 수 있습니다. 이 문서에서는 Cloud App Security 포털에 대한 관리자 액세스를 설정하는 지침을 제공합니다. 관리자 역할 할당에 대한 자세한 내용은 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) 및 [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)에 대한 문서를 참조하세요.
+Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니다. 이 문서에서는 Cloud App Security 포털에 대한 관리자 액세스를 설정하는 지침을 제공합니다. 관리자 역할 할당에 대한 자세한 내용은 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) 및 [Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)에 대한 문서를 참조하세요.
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Cloud App Security에 액세스할 수 있는 Office 365 및 Azure AD 역할
 
-기본적으로 다음 Office 365 및 Azure AD 관리자 역할은 Microsoft Cloud App Security에 액세스할 수 있습니다.
+기본적으로 다음 Office 365 및 [Azure AD(Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 관리자 역할은 Microsoft Cloud App Security에 액세스할 수 있습니다.
 
 - **글로벌 관리자 및 보안 관리자:** **모든 권한**이 있는 관지라는 Cloud App Security에서 모든 권한을 가집니다. 그들은 관리자 추가, 정책 및 설정 추가, 로그 업로드, 거버넌스 작업을 수행할 수 있습니다.
 
