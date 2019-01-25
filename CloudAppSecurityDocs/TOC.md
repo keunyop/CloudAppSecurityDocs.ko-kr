@@ -35,7 +35,6 @@
 ## [Cloud Discovery 설정](set-up-cloud-discovery.md)
 ### [Windows Defender ATP와 통합](wdatp-integration.md)
 ### [Zscaler와 통합](zscaler-integration.md)
-### [Microsoft Flow와 통합](flow-integration.md)
 ### [Cloud Discovery 스냅숏 보고서 만들기](create-snapshot-cloud-discovery-reports.md)
 ### [연속 보고서에 대한 자동 로그 업로드 구성](discovery-docker.md)
 #### [Windows의 Docker](discovery-docker-windows.md)
@@ -92,6 +91,7 @@
 ### [Azure Information Protection 통합](azip-integration.md)
 ### [SIEM 통합](siem.md)
 ### [외부 DLP 통합](icap-stunnel.md)
+### [Microsoft Flow와 통합](flow-integration.md)
 ### [API 토큰](api-tokens.md)
 # 참조
 ## [서비스 상태 문제 해결](troubleshooting-status.md)
