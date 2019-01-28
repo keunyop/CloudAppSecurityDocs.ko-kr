@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 1/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 8ac0c4816664912f05e45cd93466f168527f9387
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142304"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086552"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -32,7 +32,7 @@ ms.locfileid: "54142304"
 다음 단계에 따라 Microsoft Cloud App Security 조건부 액세스 앱 제어에서 Azure AD 앱을 제어하도록 구성합니다.
 
 > [!NOTE]
-> Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P2 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)가 필요합니다.
+> Azure AD 앱용 조건부 액세스 앱 제어를 배포하려면 유효한 [Azure AD Premium P1 라이선스](https://docs.microsoft.com/azure/active-directory/license-users-groups)가 필요합니다.
 
 ## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>1단계: Cloud App Security에 Azure Active Directory 앱 추가  
 

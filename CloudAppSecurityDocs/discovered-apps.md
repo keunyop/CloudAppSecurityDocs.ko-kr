@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/10/2019
+ms.date: 1/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
-ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
+ms.openlocfilehash: 2fd3acfb60e65a75b0ce964a70c612330a79ff79
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060176"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086017"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>빠른 시작: 검색된 앱 사용
 
@@ -64,7 +64,7 @@ Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를
      
 예를 들어 서로 다른 SharePoint 사이트를 구분할 수 있습니다.
 
-Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. 자세한 내용은 [지원되는 방화벽 및 프록시](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
+Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. 자세한 내용은 [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
 
  ![하위 도메인 정보](./media/discovery-domains.png) 
 
