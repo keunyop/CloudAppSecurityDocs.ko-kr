@@ -14,12 +14,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
+ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460024"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
 
@@ -163,13 +163,13 @@ Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>4단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
- **로그 수집기** 표에서 수집기 상태를 확인하고 상태가  **연결됨**인지 확인합니다.  **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
+**로그 수집기** 표에서 수집기 상태를 확인하고 상태가 **연결됨**인지 확인합니다. **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 **거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인할 수도 있습니다.
 
-배포하는 동안 문제가 발생한 경우  [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
+배포하는 동안 문제가 발생한 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 
 ### <a name="optional---create-custom-continuous-reports"></a>선택 사항 - 사용자 지정 연속 보고서 만들기
 

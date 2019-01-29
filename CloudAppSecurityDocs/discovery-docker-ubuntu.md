@@ -14,12 +14,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: e1ac4a86306ecd5262dc066e770eedeae448cf3b
+ms.sourcegitcommit: 7cda3fb3fac6bf1452582f20596f5b6c6a995a68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751637"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu 및 RHEL 온-프레미스의 Docker
 
@@ -145,13 +145,13 @@ ms.locfileid: "53177116"
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>4단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
- **로그 수집기** 표에서 수집기 상태를 확인하고 상태가  **연결됨**인지 확인합니다.  **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
+**로그 수집기** 표에서 수집기 상태를 확인하고 상태가 **연결됨**인지 확인합니다. **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 **거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인할 수도 있습니다.
 
-배포하는 동안 문제가 발생한 경우  [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
+배포하는 동안 문제가 발생한 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 
 ### <a name="optional---create-custom-continuous-reports"></a>선택 사항 - 사용자 지정 연속 보고서 만들기
 
