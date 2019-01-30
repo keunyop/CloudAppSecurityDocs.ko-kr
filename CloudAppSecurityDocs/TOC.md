@@ -40,6 +40,7 @@
 #### [Windows의 Docker](discovery-docker-windows.md)
 #### [Ubuntu 및 RHEL 온-프레미스의 Docker](discovery-docker-ubuntu.md)
 #### [Azure에서 Ubuntu의 Docker](discovery-docker-ubuntu-azure.md)
+#### [Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
 #### [프록시 뒤의 로그 수집기](log-collector-proxy.md)
 #### [가상 어플라이언스 사용 - 사용되지 않음](configure-automatic-log-upload-for-continuous-reports.md)
 ### [사용자 지정 로그 파서 사용](custom-log-parser.md)
@@ -94,7 +95,6 @@
 ### [Microsoft Flow와 통합](flow-integration.md)
 ### [API 토큰](api-tokens.md)
 # 참조
-## [서비스 상태 문제 해결](troubleshooting-status.md)
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)
 ## [오류 메시지를 사용하여 API 커넥터 문제 해결](troubleshooting-api-connectors-using-error-messages.md)
 ## [콘텐츠 검사 문제 해결](troubleshooting-content-inspection.md)
@@ -102,6 +102,7 @@
 ## [Cloud Discovery docker 배포 문제 해결](troubleshoot-docker.md)
 ## [문제 해결 정책](troubleshoot-policies.md)
 # 리소스
+## [지원 및 문제 해결](support-and-ts.md)
 ## [프리미어 지원 포털](https://premier.microsoft.com/)
-## [Cloud Apps Security 포털](https://portal.cloudappsecurity.com)
+## [Cloud App Security 포털](https://portal.cloudappsecurity.com)
 ## [Cloud App Security 구입 방법](https://www.microsoft.com/cloud-platform/cloud-app-security)
