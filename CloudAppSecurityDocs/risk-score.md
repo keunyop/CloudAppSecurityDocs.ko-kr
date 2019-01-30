@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b58ab490123824a0e0ba211cc1382a750985a0a0
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177442"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086348"
 ---
 # <a name="working-with-the-risk-score"></a>위험 점수 사용
 
@@ -104,7 +104,7 @@ Cloud Discovery는 환경에서 사용되는 클라우드 앱의 신뢰도 및 �
   
 - **규정 준수** - 이 범주는 앱을 생산하는 회사에서 유지하는 일반적인 모범 사례 규정 준수 표준을 표시합니다. 사양 목록에는 HIPAA, CSA, PCI-DSS 등의 표준이 포함됩니다.  
 
-- **법적**: 이 범주는 GDPR, DMCA 및 데이터 보존 정책 등 데이터 보호 및 앱 사용자의 개인 정보를 확인하기 위해 준비된 모든 규정 및 정책을 표시합니다.
+- **법적**: 이 범주는 데이터 보호와 앱 사용자의 개인 정보 보호를 위해 보호하기 위해 확립된 규정(GDPR, DMCA, 데이터 보존 정책 등) 중 어느 것이 어느 앱에 적용되어 있는지 표시합니다.
   
 각 범주는 많은 특정 속성으로 구성됩니다. Cloud App Security 점수 매기기 알고리즘에 따라 각 속성은 값을 기준으로 0과 10 사이의 예비 점수를 받습니다. True/False 값은 각각 10 또는 0을 받게 됩니다. 그러나 도메인 사용 기간 등의 연속 속성은 스펙트럼 내의 특정 값을 받게 됩니다. 각 속성의 점수는 범주의 하위 점수를 만들기 위해 범주의 다른 모든 기존 필드를 기준으로 가중 처리됩니다. 점수가 없는 앱을 발견할 경우 일반적으로 속성을 알 수 없어 점수가 매겨지지 않은 앱을 나타냅니다.  
   

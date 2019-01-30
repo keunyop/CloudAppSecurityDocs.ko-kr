@@ -1,11 +1,11 @@
 ---
 title: Azure에서 Docker를 사용하여 자동 로그 업로드 구성
-description: 이 문서에서는 Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
+description: 이 문서에서는 Azure의 Ubuntu 또는 RHEL에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성하는 프로세스에 대해 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,22 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
-ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
+ms.openlocfilehash: 9d3d0aad417050011a5a5780e5563ac3d040eb37
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54460024"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086450"
 ---
-# <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu에서 설정 및 구성
+# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure의 Ubuntu 또는 RHEL에서 설정 및 구성
 
 *적용 대상: Microsoft Cloud App Security*
 
-Azure의 Ubuntu에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성할 수 있습니다. 이 문서에서는 자동 로그 업로드를 설정하는 방법을 설명합니다. 
+Azure의 Ubuntu 또는 Red Hat Enterprise Linux(RHEL)에서 Docker를 사용하여 Cloud App Security의 연속 보고서용 자동 로그 업로드를 구성할 수 있습니다. 이 문서에서는 자동 로그 업로드를 설정하는 방법을 설명합니다. 
 
 ## <a name="technical-requirements"></a>기술 요구 사항
 
-- OS: Ubuntu 14.04 및 16.04(최신 버전은 지원 센터에 문의)
+- OS: Ubuntu 14.04 및 16.04(최신 버전은 지원 센터에 문의) 또는 RHEL 7.2 이상
 
 - 디스크 공간: 250GB
 

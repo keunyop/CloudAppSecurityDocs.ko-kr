@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5954299b0efaca3f4406abf925daad33fa1a61b7
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 00ddf2bcb51b5d64f2d072192f04d718ea06ab92
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176324"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086246"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
 
@@ -40,7 +40,7 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
 - Teams(Teams의 활동이 포털에서 검색된 후에만 나타남)
 - Power BI(Power BI의 활동이 포털에서 검색된 후에만 나타나고 감사 기능을 켜야 함)
 - Exchange(Exchange의 활동이 포털에서 검색된 후에만 나타나고 감사 기능을 켜야 함)
-
+- Dynamics 365
  
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Cloud App Security에 Office 365를 연결하는 방법  
   

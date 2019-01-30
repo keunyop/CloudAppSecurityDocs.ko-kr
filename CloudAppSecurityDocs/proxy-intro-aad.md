@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/18/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
-ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
+ms.openlocfilehash: 319fa2395e972d79b3d010a88b0758752103c345
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587837"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086144"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security 조건부 액세스 앱 제어로 앱 보호
 
@@ -92,33 +92,36 @@ Azure AD 조건부 액세스를 사용하면 준수 및 도메인 가입 디바�
 > [!NOTE]
 > 조건부 액세스 앱 제어는 Azure AD 이외의 ID 공급자로 구성된 앱도 지원합니다. 이 시나리오에 대한 자세한 내용은 mcaspreview@microsoft.com으로 이메일을 보내주세요.
 
-세션 제어는 주요 플랫폼의 모든 브라우저에서 사용할 수 있습니다. 모바일 앱과 데스크톱 앱도 차단되거나 허용될 수 있습니다. 기본적으로 Azure AD와 통합하면 Azure AD에서 Single Sign-On을 통해 SAML 및 Open ID Connect 앱으로 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
+**세션 제어는 모든 운영 체제의 모든 주요 플랫폼에서 모든 브라우저를 통해 사용할 수 있습니다**. 모바일 앱과 데스크톱 앱도 차단되거나 허용될 수 있습니다. 기본적으로 Azure AD와 통합하면 Azure AD에서 Single Sign-On을 통해 SAML 및 Open ID Connect 앱으로 구성된 모든 앱이 지원될 수 있습니다. 추천 앱은 다음과 같습니다.
 
 - AWS
+- Azure DevOps(Visual Studio Team Services)(미리 보기)
+- Azure Portal(미리 보기)
 - 상자
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Egnyte
+- Exchange Online(미리 보기)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
+- 비즈니스용 OneDrive(미리 보기)
+- LinkedIn Learning
+- Power BI(미리 보기)
 - Salesforce
 - ServiceNow
+- SharePoint Online(미리 보기)
 - Slack
 - Tableau
+- Microsoft Teams(미리 보기)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online(미리 보기)
-- 비즈니스용 OneDrive(미리 보기)
-- Power BI(미리 보기)
-- SharePoint Online(미리 보기)
-- Azure DevOps(Visual Studio Team Services)(미리 보기)
 - Yammer(미리 보기)
-- Microsoft Flow(미리 보기)
+
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,33 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142338"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086365"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+
+## <a name="cloud-app-security-release-141"></a>Cloud App Security 릴리스 141
+
+릴리스 날짜: 2019년 1월 20일
+
+**클라우드 위험 평가의 향상된 기능**
+- 클라우드 앱 위험 평가에 두 가지 새로운 경험이 추가되었습니다. 
+    - 새로운 **데이터 형식** 특성은 사용자가 앱으로 업로드할 수 있는 콘텐츠의 유형을 평가합니다. 이 특성을 사용하여 조직에서 사용하는 각 데이터 형식의 민감도에 따라 앱을 평가할 수 있습니다. 
+    - **호스팅 회사** 특성을 클릭하면 앱의 위험 평가에서 호스팅 회사의 위험 평가로 간편하게 전환하여 앱의 보다 종합적인 위험 개요를 확인할 수 있습니다.
+
+**변칙 검색 경고 조사를 위한 파일 컨텍스트 개선**
+- 경고와 관련 있는 파일에 대한 추가적인 인사이트를 확인할 수 있도록 변칙 검사 조사가 개선되었습니다. 파일 관련 이상 활동(다운로드, 공유, 삭제)을 알리는 경고가 트리거되면 추가적인 심층 인사이트를 확인할 수 있습니다. 예를 들어, 영향을 받는 파일 중 대다수가 동일한 폴더에 있거나 파일 확장자가 같은 경우, 경고의 추가 위험 섹션에서 이러한 인사이트를 확인할 수 있습니다.
+
+**파일 조사를 위한 쿼리**
+- 맞춤형 쿼리를 만들고 저장하는 Cloud App Security의 기능이 **파일** 페이지로 확대되었습니다. **파일** 페이지에서 쿼리를 사용하여 심층적인 조사를 위해 다시 사용할 수 있는 쿼리 템플릿을 만들 수 있습니다. 
 
 
 ## <a name="cloud-app-security-release-139-140"></a>Cloud App Security 릴리스 139, 140

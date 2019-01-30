@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security와 Zscaler 통합
-description: 이 문서에서는 원활한 Cloud Discovery 및 사용 권한 앱의 자동 차단을 위해 Cloud App Security와 Zscaler를 통합하는 방법을 설명합니다.
+description: 이 문서에서는 원활한 Cloud Discovery 및 승인되지 않은 앱의 자동 차단을 위해 Microsoft Cloud App Security와 Zscaler를 통합하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0acb52d2a22fe05a293db6158df13d174bad3e49
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: d26ba74ff95df4fc2def9cfff0acd41dcef358a4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450548"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086399"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Cloud App Security와 Zscaler 통합
 

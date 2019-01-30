@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142287"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086620"
 ---
 *적용 대상: Microsoft Cloud App Security*
 
@@ -44,15 +44,15 @@ IT 관리자에게 직원이 사용하는 클라우드 앱의 수를 질문할 �
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>1단계: 섀도 IT 검색 및 식별
     
 1. **섀도 IT 검색**: 조직에서 Cloud Discovery를 실행하여 네트워크의 실제 상황을 확인함으로써 조직의 보안 상태를 식별합니다. 자세한 내용은 [클라우드 검색 설정](set-up-cloud-discovery.md)을 참조하세요. 이는 다음 방법 중 하나를 사용하여 수행할 수 있습니다.
-  
-    - Cloud App Security를 프록시와 통합합니다. Cloud App Security는 기본적으로 [Zscaler](zscaler-integration.md)를 비롯한 일부 타사 프록시와 통합됩니다.
-    
+   
     - [Windows Defender ATP](wdatp-integration.md)와의 통합을 통해 Cloud Discovery를 빠르게 시작하고 실행할 수 있습니다. 이 네이티브 통합을 통해 네트워크 켜고 끄기, Windows 10 디바이스 전반의 클라우드 트래픽에 대한 데이터 수집을 즉시 시작할 수 있습니다.
    
     - 네트워크에 연결된 모든 디바이스의 범위를 보려면 방화벽 및 기타 프록시에 [Cloud App Security 로그 수집기](discovery-docker.md)를 배포하여 엔드포인트에서 데이터 수집 및 분석을 위해 Cloud App Security로 보내는 것이 중요합니다.
 
-
-정책은 사용자 그룹, 지역 및 비즈니스 그룹에 따라 다르므로 이러한 각 단위에 대한 섀도 IT 보고서를 만드는 것이 좋습니다. 자세한 내용은 (discovery-docker-windows#continuous-reports)를 참조하세요.
+   - Cloud App Security를 프록시와 통합합니다. Cloud App Security는 기본적으로 [Zscaler](zscaler-integration.md)를 비롯한 일부 타사 프록시와 통합됩니다.
+   
+ 
+정책은 사용자 그룹, 지역 및 비즈니스 그룹에 따라 다르므로 이러한 각 단위에 대한 섀도 IT 보고서를 만드는 것이 좋습니다. 자세한 내용은 [Windows의 Docker 온-프레미스](discovery-docker-windows.md#continuous-reports)를 참조하세요.
 
 
 이제 네트워크에서 Cloud Discovery가 실행 중이므로 생성된 연속 보고서를 살펴보고 [Cloud Discovery 대시보드](working-with-cloud-discovery-data.md)를 확인하여 조직에서 사용 중인 앱의 전체 그림을 가져옵니다. 범주별로 확인하는 것이 좋습니다. 사용 권한 없는 앱이 사용 권한 앱으로 해결되지 않은 합법적인 업무 관련 목적에 사용되는 경우가 종종 있기 때문입니다. 
@@ -79,10 +79,10 @@ IT 관리자에게 직원이 사용하는 클라우드 앱의 수를 질문할 �
     
 - **클라우드 앱 관리**: Cloud App Security는 조직에서 앱 사용을 관리하는 프로세스를 지원합니다. 조직에서 사용되는 다양한 패턴과 동작을 식별한 후에는 해당 비즈니스 상태 또는 근거에 따라 각 앱을 분류하기 위해 새 사용자 지정 앱 태그를 만들 수 있습니다.
 그런 다음, 이러한 태그를 특정 목적으로 사용할 수 있습니다(예: 위험한 클라우드 스토리지 앱으로 태그가 지정된 앱으로 이동하는 높은 트랙픽 식별). 앱 태그는 **Cloud Discovery 설정** > **앱 태그**에서 관리할 수 있습니다. 그런 다음, 이러한 태그를 나중에 Cloud Discovery 페이지에서 필터링하고 이를 사용하여 정책을 생성하는 데 사용할 수 있습니다.
-    
-이제 정책을 만들어 걱정되는 사항이 발생하면 자동으로 경고를 받을 수 있도록 합니다. 예를 들어 우려되는 앱의 다운로드 또는 트래픽이 급증하는 시기를 알 수 있도록 **앱 검색 정책**을 만들 수 있습니다. 이메일 또는 문자 메시지로 알리는 정책을 설정할 수 있습니다. 자세한 내용은 [정책 템플릿 참조](policy-template-reference.md) 및 [Cloud Discovery 정책](cloud-discovery-policies.md)에 대한 추가 정보를 참조하세요.
 
 - **연속 모니터링**: 이제 앱에 대해 자세히 조사했으므로, 앱을 모니터링하고 필요한 경우 제어 기능을 제공하는 정책을 설정할 수 있습니다.
+
+이제 정책을 만들어 걱정되는 사항이 발생하면 자동으로 경고를 받을 수 있도록 합니다. 예를 들어, 관심 있는 앱의 다운로드 또는 트래픽이 급증할 때 알려주는 **앱 검색 정책**을 만들 수 있습니다. 이메일 또는 문자 메시지로 알리는 정책을 설정할 수 있습니다. 자세한 내용은 [정책 템플릿 참조](policy-template-reference.md) 및 [Cloud Discovery 정책](cloud-discovery-policies.md)에 대한 추가 정보를 참조하세요.
 
 
 [**앱 검색 정책**](cloud-discovery-policies.md)을 구성합니다. 예를 들어 **검색된 사용자의 비정상 동작**, **클라우드 스토리지 앱 규정 준수 확인** 및 **위험한 새 앱**을 사용하도록 설정해야 합니다.

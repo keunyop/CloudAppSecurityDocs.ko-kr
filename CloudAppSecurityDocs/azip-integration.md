@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: d0858c2cadf3e36ed70ae59b715cfa9b7c7469c4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059450"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086297"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -116,6 +116,9 @@ Azure Information Protection을 사용하도록 설정하고 나면 Cloud App Se
 3. 분류 레이블을 선택하고 적용을 클릭하면 Cloud App Security가 분류 레이블을 원본 파일에 적용합니다.
 
 4. **분류 레이블 제거** 옵션을 선택하여 분류 레이블을 제거할 수도 있습니다. 
+
+> [!NOTE]
+> 보호를 포함하지 않으며 Cloud App Security 내에서 적용된 레이블만 제거할 수 있으며, Information Protection에서 직접 적용된 레이블은 제거할 수 없습니다.
 
 
 Cloud App Security와 Azure Information Protection이 함께 작동하는 방식에 관한 자세한 내용은 [사용자 실수로부터 데이터 보호](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)를 참조하세요.
