@@ -126,7 +126,7 @@ Cloud App Security는 이제 앱 권한이 있는 사용자의 그룹 멤버 자
 
 
 - **회사 외부의 Shadow IT Discovery를 위해 Windows Defender ATP와 네이티브 통합**
-    - 이제 Microsoft Cloud App Security는 회사 네트워크 내부 및 외부에서 클라우드 앱을 사용할 수 있도록 하는 배포 없는 Shadow IT Discovery 기능을 제공하기 위해 Windows Defender ATP(Advanced Threat Protection)와 기본적으로 통합됩니다.  이렇게 하면 회사 네트워크 외부에 있을 때도 머신에서 Cloud Discovery를 수행할 수 있습니다. 또한 머신 기반 조사도 사용할 수 있습니다. 위험한 사용자를 식별한 후에는 해당 사용자가 액세스한 모든 머신에서 잠재적인 위험을 확인할 수 있습니다. 위험한 머신을 식별한 후에는 해당 머신을 사용한 모든 사용자의 잠재적 위험을 조시할 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security에 Windows Defender Advanced Threat Protection 통합](wdatp-integration.md)을 참조하세요.
+    - 이제 Microsoft Cloud App Security는 회사 네트워크 내부 및 외부에서 클라우드 앱을 사용할 수 있도록 하는 배포 없는 Shadow IT Discovery 기능을 제공하기 위해 Windows Defender ATP(Advanced Threat Protection)와 기본적으로 통합됩니다.  이렇게 하면 회사 네트워크 외부에 있을 때도 머신에서 Cloud Discovery를 수행할 수 있습니다. 또한 머신 기반 조사도 사용할 수 있습니다. 위험한 사용자를 식별한 후에는 해당 사용자가 액세스한 모든 머신에서 잠재적인 위험을 확인할 수 있습니다. 위험한 머신을 식별한 후에는 해당 머신을 사용한 모든 사용자의 잠재적 위험을 조시할 수 있습니다. 자세한 내용은 Microsoft Cloud App Security에 [Windows Defender Advanced Threat Protection 통합](wdatp-integration.md) 을 참조하세요.
 - **암호화된 파일에 대한 콘텐츠 검사**
     - 이제 Cloud App Security는 콘텐츠에서 Azure Information Protection을 사용하여 보호된 암호화된 파일을 조사하도록 지원합니다. 이제 재분류를 제안하기 위해 이러한 암호화된 파일을 조사하고, 추가적인 DLP 노출 및 보안 정책 위반을 식별할 수 있습니다. 
 
