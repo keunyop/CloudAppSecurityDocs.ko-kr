@@ -93,6 +93,7 @@
 ### [SIEM 통합](siem.md)
 ### [외부 DLP 통합](icap-stunnel.md)
 ### [Microsoft Flow와 통합](flow-integration.md)
+### [iboss와 통합](iboss-integration.md)
 ### [API 토큰](api-tokens.md)
 # 참조
 ## [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)

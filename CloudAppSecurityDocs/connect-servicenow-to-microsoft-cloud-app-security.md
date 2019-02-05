@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 773efcb800ffbd2fada86910d4393aa16143c199
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: d913ae97b4231e12bd8fe44f1de646992b736354
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176759"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668948"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 
@@ -31,7 +31,7 @@ ms.locfileid: "53176759"
 >  ServiceNow를 배포할 때는 Fuji 이상 릴리스에 제공되는 OAuth 앱 토큰을 사용하는 것이 좋습니다(관련 [ServiceNow documentation](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)(ServiceNow 설명서)을 참조하세요. 이전 릴리스의 경우 사용자/암호를 기반으로 [레거시 연결 모델](#legacy-servicenow-connection)을 사용할 수 있습니다. 제공된 사용자 이름/암호는 API 토큰 생성에만 사용되고 초기 연결 프로세스 후에 저장되지 않습니다.
 > 
 > [!NOTE]
->  Cloud App Security는 Eureka, Fiji, Geneva, Helsinki 및 Istanbul의 ServiceNow 버전을 지원합니다. ServiceNow를 Cloud App Security와 연결하려면 **관리자** 역할이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.  자세한 내용은 [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)(ServiceNow 제품 설명서)을 참조하세요.
+>  Cloud App Security는 Jakarta, Kingston, Eureka, Fiji, Geneva, Helsinki 및 Istanbul의 ServiceNow 버전을 지원합니다. ServiceNow를 Cloud App Security와 연결하려면 **관리자** 역할이 있어야 하며 ServiceNow 인스턴스가 API 액세스를 지원해야 합니다.  자세한 내용은 [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)(ServiceNow 제품 설명서)을 참조하세요.
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>OAuth를 사용하여 Cloud App Security에 ServiceNow를 연결하는 방법
   

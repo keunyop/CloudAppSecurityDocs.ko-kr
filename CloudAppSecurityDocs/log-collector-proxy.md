@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/29/2019
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d69444a4baa4e861c1ffa14c081f77a584911431
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: b256affd64705b874e68359c51af118b355330df
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086586"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668931"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>프록시 뒤에서 로그 수집기 사용
 
@@ -46,7 +46,7 @@ Windows 또는 Linux 머신에서 Docker를 실행하는 데 필요한 단계를
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>프록시 루트 CA 인증서를 컨테이너에 복사
 
 가상 머신에서 CA 인증서를 Cloud App Security 컨테이너에 복사합니다. 다음 예에서 컨테이너는 *Ubuntu LogCollector*로 명명되고 CA 인증서는 *Proxy-CA.crt*로 명명됩니다.
-Ubuntu 호스트에서 명령을 실행하고 실행 중인 컨테이너의 폴더에 인증서를 복사합니다.
+Ubuntu 호스트에서 명령을 실행합니다. 인증서를 실행 중인 컨테이너의 폴더에 복사합니다.
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery

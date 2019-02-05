@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c207fb951a1bd8120da694e07232c3851486b9c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 40b514ce50cf03bd111adcd615dff5616908d933
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059371"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689180"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>즉각적인 동작 분석 및 변칙 검색 이용
 
@@ -51,7 +51,9 @@ Microsoft Cloud App Security의 변칙 검색 정책은 클라우드 환경에�
 다음과 같은 변칙 검색 정책을 사용할 수 있습니다.
 
 **이동 불가능**
--  이 검색은 사용자가 첫 번째 위치에서 두 번째 위치로 이동할 때 걸리는 시간보다 짧은 시간 내에 지리적으로 먼 위치에서 발생하는 두 개의 사용자 활동(단일 또는 다중 세션)을 식별합니다. 이는 다른 사용자가 같은 자격 증명을 사용하고 있음을 나타냅니다. 이 검색은 조직의 다른 사용자가 정기적으로 사용하는 VPN 및 위치와 같이 불가능한 여행 조건에 부합하는 명백한 “가양성”을 무시하는 기계 학습 알고리즘을 사용합니다. 검색은 7일간의 초기 학습 기간에는 새로운 사용자의 활동 패턴을 학습합니다.
+-  이 검색은 사용자가 첫 번째 위치에서 두 번째 위치로 이동할 때 걸리는 시간보다 짧은 시간 내에 지리적으로 먼 위치에서 발생하는 두 개의 사용자 활동(단일 또는 다중 세션)을 식별합니다. 이는 다른 사용자가 같은 자격 증명을 사용하고 있음을 나타냅니다. 이 검색은 조직의 다른 사용자가 정기적으로 사용하는 VPN 및 위치와 같이 불가능한 여행 조건에 부합하는 명백한 “가양성”을 무시하는 기계 학습 알고리즘을 사용합니다. 검색은 7일간의 초기 학습 기간에는 새로운 사용자의 활동 패턴을 학습합니다. 불가능한 이동 검색 기능은 두 위치 간의 비정상적이고 불가능한 사용자 활동을 식별합니다. 이 활동은 손상 표시로 간주되고 경고할 가치가 있을 정도로 충분히 비정상적이어야 합니다. 이 작업을 수행하기 위해 검색 논리는 VPN 활동과 같이 거짓 긍정을 트리거할 수 있는 시나리오를 해결하기 위한 비표시 오류를 포함합니다. 민감도 슬라이더를 사용하면 알고리즘에 영향을 주고 검색 논리가 얼마나 엄격한지 정의할 수 있습니다.
+민감도 수준이 높을수록 검색 논리의 일부로 적용되는 비표시 오류가 낮아집니다. 이러한 방식으로 검사 요구 사항 및 SNR 대상에 따라 검색을 조정할 수 있습니다.
+
 
 
 **자주 사용되지 않는 국가에서의 활동**

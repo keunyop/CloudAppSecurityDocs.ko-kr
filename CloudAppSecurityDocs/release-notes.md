@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,42 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086365"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689214"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+
+- **Azure AD의 세션 정책 구성**<br>
+이제 Azure AD 조건부 액세스에서 직접 세션 정책을 구성하여 실시간으로 사용자를 모니터링하거나 다운로드를 차단할 수 있습니다. Cloud App Security에서 직접 고급 세션 정책을 계속 구성할 수 있습니다. 이 배포를 살펴보려면 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)를 참조하세요. 
+
+- **OAuth 앱에 대해 제안되고 저장된 쿼리** <br>
+제안된 쿼리가 OAuth 앱 페이지에 추가되어 OAuth 앱을 필터링하는 기본 조사 템플릿을 제공합니다. 제안된 쿼리에는 관리자가 권한을 부여한 앱과 같은 위험한 앱을 식별하는 사용자 지정 필터가 포함되어 있습니다. 저장된 쿼리를 사용하면 현재 활동 로그 및 검색 페이지에서 사용 가능한 저장된 쿼리와 유사하게 나중에 사용할 수 있도록 사용자 지정 쿼리를 저장할 수 있습니다. 
+
+- **Office 365 감사 기본 구성**<br>
+Cloud App Security에서 Office 365 활동 모니터링을 사용하도록 설정하려는 경우 [Office 보안 및 규정 준수 센터]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins)에서 감사를 활성화해야 합니다. 이는 [Office 365 감사 변경]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api)의 결과입니다. 이 변경은 Cloud App Security에서 아직 Office 365 활동 모니터링을 사용하도록 설정하지 않은 경우에만 수행하면 됩니다.
+
+- **향상된 Box 지원**<br>
+Cloud App Security는 이제 Box에 대해 다음과 같은 두 가지 새로운 거버넌스 작업을 지원합니다.
+
+   - **공유 링크 만료 설정** - 이 거버넌스 작업은 공유 링크의 만료 날짜를 설정하는 기능을 제공하며, 지정한 만료 날짜가 지나면 링크를 활성화할 수 없습니다. 
+
+   - **공유 링크 액세스 수준 변경** - 이 거버런스 작업은 회사 전용, 협력자 전용 및 공개 간에 공유 링크의 액세스 수준을 변경할 수 있는 기능을 제공합니다.
+
+- **OneDrive의 다중 위치 지원**<br>
+이제 OneDrive 파일이 여러 지리적 위치에 분산되어 있더라도 Cloud App Security에서 완벽한 가시성이 제공됩니다. 이제 기본 위치뿐만 아니라 추가 위치에 있는 파일에 대해서도 보호 기능을 사용할 수 있습니다.
+
+- **포털 탐색 향상**<br>
+Cloud App Security 포털은 더 나은 탐색 기능을 제공하고 Microsoft의 다른 보안 서비스와 Cloud App Security를 더 잘 연계하여 사용 편의성을 간소화하도록 개선되었습니다.
+
+
 
 ## <a name="cloud-app-security-release-141"></a>Cloud App Security 릴리스 141
 
@@ -126,7 +150,7 @@ Cloud App Security는 이제 앱 권한이 있는 사용자의 그룹 멤버 자
 
 
 - **회사 외부의 Shadow IT Discovery를 위해 Windows Defender ATP와 네이티브 통합**
-    - 이제 Microsoft Cloud App Security는 회사 네트워크 내부 및 외부에서 클라우드 앱을 사용할 수 있도록 하는 배포 없는 Shadow IT Discovery 기능을 제공하기 위해 Windows Defender ATP(Advanced Threat Protection)와 기본적으로 통합됩니다.  이렇게 하면 회사 네트워크 외부에 있을 때도 머신에서 Cloud Discovery를 수행할 수 있습니다. 또한 머신 기반 조사도 사용할 수 있습니다. 위험한 사용자를 식별한 후에는 해당 사용자가 액세스한 모든 머신에서 잠재적인 위험을 확인할 수 있습니다. 위험한 머신을 식별한 후에는 해당 머신을 사용한 모든 사용자의 잠재적 위험을 조시할 수 있습니다. 자세한 내용은 Microsoft Cloud App Security에 [Windows Defender Advanced Threat Protection 통합](wdatp-integration.md) 을 참조하세요.
+    - 이제 Microsoft Cloud App Security는 회사 네트워크 내부 및 외부에서 클라우드 앱을 사용할 수 있도록 하는 배포 없는 Shadow IT Discovery 기능을 제공하기 위해 Windows Defender ATP(Advanced Threat Protection)와 기본적으로 통합됩니다.  이렇게 하면 회사 네트워크 외부에 있을 때도 머신에서 Cloud Discovery를 수행할 수 있습니다. 또한 머신 기반 조사도 사용할 수 있습니다. 위험한 사용자를 식별한 후에는 해당 사용자가 액세스한 모든 머신에서 잠재적인 위험을 확인할 수 있습니다. 위험한 머신을 식별한 후에는 해당 머신을 사용한 모든 사용자의 잠재적 위험을 조시할 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security](wdatp-integration.md) 에 Windows Defender Advanced Threat Protection 통합 을 참조하세요.
 - **암호화된 파일에 대한 콘텐츠 검사**
     - 이제 Cloud App Security는 콘텐츠에서 Azure Information Protection을 사용하여 보호된 암호화된 파일을 조사하도록 지원합니다. 이제 재분류를 제안하기 위해 이러한 암호화된 파일을 조사하고, 추가적인 DLP 노출 및 보안 정책 위반을 식별할 수 있습니다. 
 
