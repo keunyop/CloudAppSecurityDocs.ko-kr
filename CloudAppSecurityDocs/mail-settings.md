@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,25 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
+ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177048"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55740068"
 ---
 # <a name="email-notification-preferences"></a>이메일 알림 기본 설정
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서에서는 Cloud App Security에서 보낸 메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다.
+이 문서에서는 위반이 검색될 때 Cloud App Security에서 사용자에게 보낸 이메일 알림을 개인 설정하는 방법에 대한 정보를 제공합니다.
+
+> [!NOTE]
+> 이러한 사용자 지정은 Cloud App Security 관리자에게 보낸 알림이 아닌 최종 사용자에게 보낸 알림에만 적용됩니다.
 
 ## <a name="mailsettings"></a> 메일 알림 기본 설정 설정  
 
- Microsoft Cloud App Security는 경고를 요청하는 관리자 및 위반에 관련된 최종 사용자에게 이메일 알림을 보냅니다. 이메일 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Microsoft Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요.
+ Microsoft Cloud App Security를 사용하면 위반에 관련하여 최종 사용자에게 보낸 이메일 알림을 사용자 지정할 수 있습니다. 이메일 알림에 대한 매개 변수를 설정하려면 이 절차를 따릅니다. 스팸 방지 서비스에서 허용 목록에 포함해야 하는 Microsoft Cloud App Security 메일 서버 IP 주소에 대한 자세한 내용은 [네트워크 요구 사항](network-requirements.md)을 참조하세요.
 
 1. 메뉴 모음에서 설정 코그를 클릭하고 **설정**을 선택한 다음, **메일 설정** 탭을 선택합니다.  
 
