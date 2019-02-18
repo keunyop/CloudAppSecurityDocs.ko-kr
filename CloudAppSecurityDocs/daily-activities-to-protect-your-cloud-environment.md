@@ -4,9 +4,10 @@ description: 이 문서는 Cloud App Security 대시보드의 기초적인 사�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 480ac5273eaca15252c0a216147c1d6d3711a266
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 05858bd4e026208b9a93912a905292014e65c967
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53175229"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281001"
 ---
 # <a name="working-with-the-dashboard"></a>대시보드 사용
 

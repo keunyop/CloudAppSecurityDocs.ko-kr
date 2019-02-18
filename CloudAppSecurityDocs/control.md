@@ -4,9 +4,10 @@ description: 이 문서에서는 Cloud App Security에서 조직의 클라우드
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8b39db869b9f11b0894fde71569f6872f2ddfaa3
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b884901c044f55ce0868be4df495d81e823d597e
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176383"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281358"
 ---
 # <a name="control"></a>컨트롤
 
@@ -79,7 +80,7 @@ Cloud App Security는 조직에서 누가 어떤 앱을 사용 중인지를 알�
 ### <a name="migrate-your-users-to-a-new-app"></a>사용자를 새 응용 프로그램으로 마이그레이션  
 최근에 Office 365를 구입했으며 조직의 모든 사용자가 다른 모든 클라우드 스토리지 앱의 사용을 중지하고 OneDrive 사용을 시작하도록 하는 시나리오를 가정해 보겠습니다. 수행할 수 있는 작업은 다음과 같습니다.  
 
-1. **Cloud Discovery 대시보드**로 이동하고 **앱 범주**에서 **클라우드 저장소**별로 앱을 필터링합니다. **사용자** 또는 **IP 주소**별로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
+1. **Cloud Discovery 대시보드**로 이동하고 **앱 범주**에서 **클라우드 스토리지**별로 앱을 필터링합니다. **사용자** 또는 **IP 주소**별로 결과를 정렬하고 가장 많이 사용하는 앱을 확인합니다.  
 
 2. 다른 앱을 사용하는 사용자를 확인할 수 있습니다. 또한 다음과 같이 이러한 응용 프로그램을 드릴다운하고 다음과 같이 사용자에게 OneDrive로 마이그레이션하도록 알릴 수 있습니다.
 

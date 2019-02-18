@@ -4,21 +4,22 @@ description: 이 문서에서는 온-프레미스 서버에서 Windows의 Docker
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086110"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282242"
 ---
 # <a name="docker-on-windows-on-premises"></a>Windows의 Docker 온-프레미스
 
@@ -140,13 +141,13 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>4단계 - Cloud App Security 포털에서 배포의 성공 여부 확인
 
- **로그 수집기** 표에서 수집기 상태를 확인하고 상태가  **연결됨**인지 확인합니다.  **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
+**로그 수집기** 표에서 수집기 상태를 확인하고 상태가 **연결됨**인지 확인합니다. **생성됨**인 경우 로그 수집기 연결 및 구문 분석이 완료되지 않았을 수 있습니다.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 **거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인할 수도 있습니다.
 
-배포하는 동안 문제가 발생한 경우  [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
+배포하는 동안 문제가 발생한 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 
 ### 선택 사항 - 사용자 지정 연속 보고서 만들기 <a name="continuous-reports"></a>
 

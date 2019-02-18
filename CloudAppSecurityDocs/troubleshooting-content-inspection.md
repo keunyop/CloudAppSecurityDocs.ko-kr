@@ -4,9 +4,10 @@ description: 이 문서에서는 콘텐츠 검사 상태 목록과 해당 상태
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5ace5a7288caea8bad9fbda0e5ac3e524a6210e5
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b3e3866b8cef8ae5b711145ffa104de88aed419e
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177303"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281375"
 ---
 # <a name="troubleshooting-content-inspection"></a>콘텐츠 검사 문제 해결
 

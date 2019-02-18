@@ -4,9 +4,10 @@ description: 이 문서에서는 사용자의 세션 활동에 대한 심층적�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 50230751efbc9dfcbd203d130c6e1d3e7489eb03
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 18b81bc9ff35929cb6c34637c0fa0c4f869284df
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176997"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282259"
 ---
 # <a name="session-policies"></a>세션 정책 
 

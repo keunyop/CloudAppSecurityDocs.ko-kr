@@ -4,9 +4,10 @@ description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/2/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d913ae97b4231e12bd8fe44f1de646992b736354
-ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
+ms.openlocfilehash: 10a379e25089d9026e3d8a0293a5ea88c5982318
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "55668948"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281936"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 ServiceNow 연결
 

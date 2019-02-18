@@ -4,9 +4,10 @@ description: 이 문서에서는 자동 Cloud Discovery 보고서를 만들기 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 389760b6e5279668ec2b2fe389dccdbe647b7f5b
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 88e84e64bb93d39f83296b77ce83bde4738ba715
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53176980"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282004"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>가상 어플라이언스에서 연속 보고서에 대한 자동 로그 업로드 구성 - 사용되지 않음
 
