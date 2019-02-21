@@ -1,0 +1,232 @@
+items:
+- name: Microsoft Cloud App Security 설명서
+  href: index.yml
+- name: 개요
+  items:
+  - name: Microsoft Cloud App Security란?
+    href: what-is-cloud-app-security.md
+  - name: Cloud App Security 데이터 보안 및 개인 정보
+    href: cas-compliance-trust.md
+  - name: 새로운 기능은 무엇입니까?
+    href: release-notes.md
+    items:
+    - name: 릴리스 정보 보관
+      href: release-note-archive.md
+  - name: 비교
+    items:
+    - name: Office 365
+      href: editions-cloud-app-security-o365.md
+    - name: Azure AD
+      href: editions-cloud-app-security-aad.md
+- name: 빠른 시작
+  items:
+  - name: 시작
+    href: getting-started-with-cloud-app-security.md
+  - name: 검색된 앱 사용
+    href: discovered-apps.md
+  expanded: true
+- name: 자습서
+  items:
+  - name: 섀도 IT 검색 및 관리
+    href: tutorial-shadow-it.md
+  - name: 중요한 정보의 다운로드 차단
+    href: use-case-proxy-block-session-aad.md
+  - name: 관리자 격리를 사용하여 파일 보호
+    href: use-case-admin-quarantine.md
+  - name: Azure Information Protection 레이블을 자동으로 적용
+    href: use-case-information-protection.md
+- name: 개념
+  items:
+  - name: 조건부 액세스 앱 제어로 앱 보호
+    href: proxy-intro-aad.md
+  - name: 대시보드 사용
+    href: daily-activities-to-protect-your-cloud-environment.md
+  - name: 위험 점수 사용
+    href: risk-score.md
+- name: 방법 가이드
+  items:
+  - name: 기본 설정
+    href: general-setup.md
+    items:
+    - name: 네트워크 요구 사항
+      href: network-requirements.md
+    - name: 관리자 관리
+      href: manage-admins.md
+      items:
+      - name: 관리자 설정
+        href: admin-settings.md
+    - name: 메일 설정
+      href: mail-settings.md
+    - name: 사용자 그룹
+      href: user-groups.md
+    - name: 범위 지정 배포
+      href: scoped-deployment.md
+    - name: IP 태그 및 범위
+      href: ip-tags.md
+  - name: Cloud Discovery 설정
+    href: set-up-cloud-discovery.md
+    items:
+    - name: Windows Defender ATP와 통합
+      href: wdatp-integration.md
+    - name: Zscaler와 통합
+      href: zscaler-integration.md
+    - name: Cloud Discovery 스냅숏 보고서 만들기
+      href: create-snapshot-cloud-discovery-reports.md
+    - name: 연속 보고서에 대한 자동 로그 업로드 구성
+      href: discovery-docker.md
+      items:
+      - name: Windows의 Docker
+        href: discovery-docker-windows.md
+      - name: Ubuntu 및 RHEL 온-프레미스의 Docker
+        href: discovery-docker-ubuntu.md
+      - name: Azure에서 Ubuntu의 Docker
+        href: discovery-docker-ubuntu-azure.md
+      - name: Cloud Discovery Docker 배포 문제 해결
+        href: troubleshoot-docker.md
+      - name: 프록시 뒤의 로그 수집기
+        href: log-collector-proxy.md
+      - name: 가상 어플라이언스 사용 - 사용되지 않음
+        href: configure-automatic-log-upload-for-continuous-reports.md
+    - name: 사용자 지정 로그 파서 사용
+      href: custom-log-parser.md
+    - name: Cloud Discovery 보강
+      href: cloud-discovery-aad-enrichment.md
+    - name: Cloud Discovery 데이터 익명화
+      href: cloud-discovery-anonymizer.md
+  - name: 앱 연결
+    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    items:
+    - name: Azure 연결
+      href: connect-azure-to-microsoft-cloud-app-security.md
+    - name: AWS 연결
+      href: connect-aws-to-microsoft-cloud-app-security.md
+    - name: Box 연결
+      href: connect-box-to-microsoft-cloud-app-security.md
+    - name: Dropbox 연결
+      href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: G Suite 연결
+      href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Office 365 연결
+      href: connect-office-365-to-microsoft-cloud-app-security.md
+    - name: Okta 연결
+      href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Salesforce 연결
+      href: connect-salesforce-to-microsoft-cloud-app-security.md
+    - name: ServiceNow 연결
+      href: connect-servicenow-to-microsoft-cloud-app-security.md
+  - name: Azure AD 앱용 조건부 액세스 앱 제어 배포
+    href: proxy-deployment-aad.md
+  - name: 검색
+    items:
+    - name: Cloud Discovery에 사용자 지정 앱 추가
+      href: cloud-discovery-custom-apps.md
+    - name: 검색된 앱 필터 및 쿼리
+      href: discovered-app-queries.md
+  - name: 조사
+    href: investigate.md
+    items:
+    - name: 활동
+      href: activity-filters.md
+      items:
+      - name: 활동 필터 및 쿼리
+        href: activity-filters-queries.md
+    - name: 파일
+      href: file-filters.md
+      items:
+      - name: 데이터 관리 보고서 생성
+        href: built-in-reports.md
+    - name: 계정
+      href: accounts.md
+    - name: OAuth 앱 관리
+      href: manage-app-permissions.md
+    - name: 보안 구성
+      href: security-config.md
+    - name: 앱 모니터링
+      href: monitor-alerts.md
+      items:
+      - name: 경고 관리
+        href: managing-alerts.md
+  - name: 컨트롤
+    href: control.md
+    items:
+    - name: 정책을 사용하여 클라우드 앱 제어
+      href: control-cloud-apps-with-policies.md
+      items:
+      - name: 클라우드 검색 정책
+        href: cloud-discovery-policies.md
+        items:
+        - name: 클라우드 검색 변칙 검색 정책
+          href: cloud-discovery-anomaly-detection-policy.md
+      - name: 활동 정책
+        href: user-activity-policies.md
+      - name: 변칙 검색 정책
+        href: anomaly-detection-policy.md
+      - name: OAuth 정책
+        href: app-permission-policy.md
+      - name: 파일 정책
+        href: working-with-the-regex-engine.md
+        items:
+        - name: 콘텐츠 검사
+          href: content-inspection.md
+          items:
+          - name: 기본 제공 콘텐츠 검사
+            href: content-inspection-built-in.md
+          - name: 데이터 분류 서비스 통합
+            href: dcs-inspection.md
+        - name: RegEx 엔진 작업
+      - name: 조건부 액세스 앱 제어 정책
+        items:
+        - name: 액세스 정책
+          href: access-policy-aad.md
+        - name: 세션 정책
+          href: session-policy-aad.md
+      - name: 정책 템플릿 참조
+        href: policy-template-reference.md
+    - name: 연결된 앱 제어
+      href: governance-actions.md
+    - name: 검색된 앱 제어
+      href: governance-discovery.md
+    - name: 보안 확장을 사용하여 통합
+      items:
+      - name: Azure Information Protection 통합
+        href: azip-integration.md
+      - name: SIEM 통합
+        href: siem.md
+      - name: 외부 DLP 통합
+        href: icap-stunnel.md
+      - name: Microsoft Flow와 통합
+        href: flow-integration.md
+      - name: iboss와 통합
+        href: iboss-integration.md
+      - name: API 토큰
+        href: api-tokens.md
+- name: 참조
+  items:
+  - name: Cloud Discovery 문제 해결
+    href: troubleshooting-cloud-discovery.md
+  - name: 오류 메시지를 사용하여 API 커넥터 문제 해결
+    href: troubleshooting-api-connectors-using-error-messages.md
+  - name: 콘텐츠 검사 문제 해결
+    href: troubleshooting-content-inspection.md
+  - name: SIEM 통합 문제 해결
+    href: troubleshooting-siem.md
+  - name: Cloud Discovery Docker 배포 문제 해결
+    href: troubleshoot-docker.md
+  - name: 문제 해결 정책
+    href: troubleshoot-policies.md
+- name: 리소스
+  items:
+  - name: 지원 및 문제 해결
+    href: support-and-ts.md
+  - name: 프리미어 지원 포털
+    href: https://premier.microsoft.com/
+  - name: Cloud App Security 포털
+    href: https://portal.cloudappsecurity.com
+  - name: Cloud App Security 구입 방법
+    href: https://www.microsoft.com/cloud-platform/cloud-app-security
+ms.openlocfilehash: 564eaaa5992f0f212f23c8979e8db0fe4fc4972f
+ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56409640"
