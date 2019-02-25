@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb8d8e4c8990b246e78679687e9b1bfd383b91dc
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d6e6206b9d361ad9a5b47c3ec76ecc8dac4a1e20
+ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282514"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56409616"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>빠른 시작: Microsoft Cloud App Security 시작하기
 
@@ -161,7 +161,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 이러한 설정은 콘솔의 기능을 보다 효율적으로 제어하는 데 도움이 됩니다. IP 태그를 사용하면 더 쉽게 요구에 맞는 정책을 만들고 정확하게 데이터를 필터링할 수 있습니다. 데이터 뷰를 사용하여 데이터를 논리적 범주로 그룹화할 수 있습니다.
   
 
-## <a name="see-also"></a>참고 항목
+## <a name="next-steps"></a>다음 단계
 
 정책 설정 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md)    
 
