@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/4/2019
+ms.date: 2/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4d1e430469acb737a4f64884211c6e875c04cc59
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
+ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282123"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444058"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+
+## <a name="cloud-app-security-release-143"></a>Cloud App Security 릴리스 143
+
+2019년 2월 17일에 출시됨
+
+- **앱 인스턴스의 범위 배포**<br> 범위 배포는 이제 앱 인스턴스 수준에서 구성할 수 있으므로 더 세분화되고 제어할 수 있습니다.
+-  **새 역할 지원**
+   - 데이터 관리자 및 보안 운영자인 Office 365 역할은 이제 Cloud App Security에서 지원됩니다. 데이터 관리자 역할을 통해 사용자는 관련된 모든 파일을 관리하고 검색 보고서를 볼 수 있습니다. 보안 운영자는 경고를 관리하고 정책 구성을 볼 수 있는 권한이 있습니다.
+    
+   - 이제 보안 읽기 권한자 역할에는 SIEM 에이전트를 구성할 수 있는 기능이 있어 더 넓은 권한 범위가 허용됩니다.
+- **Microsoft Flow 지원**<br>이제 Cloud App Security에서 Office 365 감사 로그에서 지원되는 Microsoft Flow 활동도 지원합니다.
+-  **엔터티 그룹화 경고** <br>**경고** 페이지는 이제 조사에 도움이 되는 경고와 관련된 엔터티를 그룹화합니다.
+
+## <a name="cloud-app-security-release-142"></a>Cloud App Security 릴리스 142
+
+2019년 2월 3일에 출시됨
 
 - **Azure AD의 세션 정책 구성**<br>
 이제 Azure AD 조건부 액세스에서 직접 세션 정책을 구성하여 실시간으로 사용자를 모니터링하거나 다운로드를 차단할 수 있습니다. Cloud App Security에서 직접 고급 세션 정책을 계속 구성할 수 있습니다. 이 배포를 살펴보려면 [Azure AD 앱용 조건부 액세스 앱 제어 배포](proxy-deployment-aad.md)를 참조하세요. 
