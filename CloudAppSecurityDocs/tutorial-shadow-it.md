@@ -14,17 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281787"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014850"
 ---
-*적용 대상: Microsoft Cloud App Security*
-
-
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>자습서: 네트워크의 섀도 IT 검색 및 관리
+
+*적용 대상: Microsoft Cloud App Security*
 
 IT 관리자에게 직원이 사용하는 클라우드 앱의 수를 질문할 때, 평균 30, 40개로 답하면 실제로는 조직의 직원이 평균 1,000개가 넘는 별도 앱을 사용하고 있습니다. 섀도 IT를 통해 사용 중인 앱과 위험 수준을 파악하고 식별할 수 있습니다. 직원의 80%는 아무도 검토한 적이 없는 사용 권한 없는 앱을 사용하며 보안 및 규정 준수 정책을 준수하지 않을 수 있습니다. 또한 직원이 회사 네트워크 외부에서 리소스 및 앱에 액세스할 수 있기 때문에 더 이상 방화벽에 규칙과 정책을 적용하는 것만으로는 충분하지 않습니다. 
 
