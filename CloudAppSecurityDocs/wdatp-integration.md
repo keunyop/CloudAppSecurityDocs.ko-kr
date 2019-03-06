@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2312ee7cdb7ab7f7e4f9a132442fac397614189b
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: ea58971cfa8ca79d61bd6a660edf4d34cf38055a
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281324"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254388"
 ---
 # <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Windows Defender Advanced Threat Protection 통합
 
@@ -44,7 +44,7 @@ Microsoft Cloud App Security는 Windows Defender ATP와의 네이티브 통합�
 - Microsoft Cloud App Security 라이선스
 - Windows Defender ATP 라이선스
 - 버전 1809 이상을 실행하는 Windows 10 머신
-
+- Cloud App Security에서 이 기능을 사용하려면 **미리보기능** 켜세요.
 
 ## <a name="how-it-works"></a>작동 방식
 
