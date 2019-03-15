@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6269c121552a310646e02da21771bbea12aa1c18
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282157"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830458"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 지원 및 문제 해결
 
@@ -30,7 +30,7 @@ ms.locfileid: "56282157"
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Cloud App Security의 지원 요청 관리
 
-Microsoft는 전 세계에서 Microsoft Cloud App Security를 위한 기술 지원, 판매 전 지원, 대금 청구 및 구독 지원을 제공하고 있습니다. 유료 및 평가판 구독에 대한 지원은 온라인 및 전화로 제공됩니다. 온라인 기술 지원은 영어와 일본어로 제공됩니다. 전화 지원 및 온라인 대금 청구 지원은 그 밖의 언어로도 제공됩니다.
+Microsoft는 전 세계에서 Microsoft Cloud App Security를 위한 기술 지원, 판매 전 지원, 대금 청구 및 구독 지원을 제공하고 있습니다. 유료 및 평가판 구독에 대한 지원은 온라인 및 전화로 제공됩니다. 온라인 기술 지원은 영어와 일본어로 제공됩니다. 전화 지원과 온라인 대금 청구 지원은 추가 언어로 제공됩니다.
 
 관리자는 Azure Portal에서 **도움말 + 지원** 옵션을 사용하여 Cloud App Security의 온라인 지원 요청을 제출할 수 있습니다. 지원 요청을 만들려면 계정에 다음과 같은 [Azure Active Directory 관리자 역할](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나가 부여되어 있어야 합니다.
 
@@ -68,11 +68,11 @@ Microsoft는 전 세계에서 Microsoft Cloud App Security를 위한 기술 지�
 
 5.  입력한 정보가 올바른지 검토한 다음, **만들기**를 선택하여 지원 요청을 제출합니다.
 
-**참고:** 대금 청구 또는 구독 관련 질문은 [Office 관리 센터](https://portal.office.com/Support/SupportEntry.aspx)를 통해 지원을 받을 수 있도록 케이스를 제출하세요.
+**참고:** 질문이 있는 대금 청구 또는 구독을 지원을 받는 경우 열 수 있습니다 합니다 [Microsoft 365 관리 센터](https://portal.office.com/Support/SupportEntry.aspx)합니다.
 
 ### <a name="view-open-support-requests"></a>진행 중인 지원 요청 보기
 
-지원 요청은 Azure Portal에서 확인할 수 있습니다. 이렇게 하려면
+지원 요청은 Azure Portal에서 확인할 수 있습니다. 이를 수행하려면:
 
 1.  관리자 자격 증명을 사용하여 Azure [https://portal.azure.com](https://portal.azure.com/)에 로그인하고 포털 상단 오른쪽 모서리에서 **?** 아이콘을 선택한 후 **도움말 + 지원**을 선택하여 [Azure 도움말 + 지원](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) 페이지로 이동합니다.
 
@@ -83,7 +83,7 @@ Microsoft는 전 세계에서 Microsoft Cloud App Security를 위한 기술 지�
 [Microsoft Cloud App Security의 현재 상태](https://status.cloudappsecurity.com/)를 확인하세요.
 
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 
 - [프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수 있습니다.](https://premier.microsoft.com/)
 

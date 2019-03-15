@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/6/2019
+ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2a0d2f550deb598fc565210bf0d1addf7b9cfad9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281018"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830407"
 ---
 # <a name="file-policies"></a>파일 정책  
 
@@ -108,7 +108,19 @@ Cloud App Security의 기본 제공 DLP 엔진은 Office, Open Office, 압축된
 
 - **확장** - 향상된 DLP 또는 맬웨어 방지 기능을 위해 콘텐츠 검사는 타사 엔진을 통해 수행할 수 있습니다.  
 
-  
+## <a name="file-queries"></a>파일 쿼리
+
+조사를 간소화하기 위해 사용자 지정 쿼리를 만들어서 나중에 사용할 수 있도록 저장할 수 있습니다. 
+
+1. 에 **파일** 페이지에서 필요에 따라 앱으로 드릴 다운 하려면 위에서 설명한 대로 필터를 사용 합니다. 
+
+2. 쿼리 빌드를 완료한 후 필터의 오른쪽 위 모서리에서 **다른 이름으로 저장** 단추를 클릭합니다. 
+
+3. **쿼리 저장** 팝업에 쿼리 이름을 지정합니다.
+
+4. 나중에 쿼리를 사용하려면 **쿼리**에서 **저장된 쿼리**까지 아래로 스크롤하여 쿼리를 선택합니다. 
+
+ 
 ## <a name="next-steps"></a>다음 단계 
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
