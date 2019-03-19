@@ -15,18 +15,20 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10b5b4d4402230aef2f9538b6e10a312248e430f
-ms.sourcegitcommit: e5c09b9f9da0354e6c25e4d325dbd1457c94e5d4
+ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57346921"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830509"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
 *적용 대상: Microsoft Cloud App Security*
 
-이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다. 이전 업데이트는 [릴리스 정보 보관](release-note-archive.md)에서 사용할 수 있습니다.
+이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
+
+RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us` URL을 복사하여 피드 reader에 붙여넣어 이 페이지가 업데이트되면 알림을 받습니다.
 
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security 릴리스 143

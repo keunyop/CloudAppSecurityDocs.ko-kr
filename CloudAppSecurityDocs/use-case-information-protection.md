@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9da835fc1f1a9c3fc85035d83a0b2e8415ebc337
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 9f5b07951f96481198244dbcdc9d7025d89cc845
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281851"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830441"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>자습서: Azure Information Protection 분류 레이블 자동 적용
 
@@ -93,7 +93,7 @@ Box 계정에 저장된 파일에서 신용 카드 번호를 찾는 정책을 �
 
 >[!NOTE]
 >
-> - Cloud App Security는 현재 비즈니스용 Box, SharePoint 및 OneDrive에서 Azure Information Protection 레이블을 자동으로 적용할 수 있도록 지원합니다.
+> - Cloud App Security는 현재 비즈니스용 Box, GSuite, SharePoint 및 OneDrive에서 Azure Information Protection 레이블을 자동으로 적용할 수 있도록 지원합니다.
 > - Cloud App Security를 사용하여 문서에 레이블을 지정하면 시각적 표시가 즉시 적용되지는 않지만 해당 문서를 Office 응용프로그램에서 열고 문서를 처음 저장할 때 적용됩니다. 자세한 내용은 [Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)의 시각적 표시에 레이블을 구성하는 방법을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계

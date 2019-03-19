@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d6e6206b9d361ad9a5b47c3ec76ecc8dac4a1e20
-ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
+ms.openlocfilehash: 3e8730d21e2d924782f1aa8965aef1ad2bded9d0
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56409616"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830492"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>빠른 시작: Microsoft Cloud App Security 시작하기
 
@@ -40,14 +40,14 @@ ms.locfileid: "56409616"
      테넌트 정품 인증 지원에 대한 자세한 내용은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요.  
 - Cloud App Security에 대한 라이선스가 있으면 정품 인증 정보와 Cloud App Security 포털에 대한 링크가 포함된 이메일을 받게 됩니다.  
   
-- Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 글로벌 관리자, 준수 관리자 또는 보안 읽기 권한자여야 합니다. 관리자 역할이 할당된 사용자는 조직에서 구독한 모든 클라우드 앱에서 동일한 권한을 갖게 됨을 이해하는 것이 중요합니다. 이는 Office 365 포털 또는 Azure 클래식 포털에서 역할을 할당하거나 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx)에 Azure AD 모듈을 사용하는지 여부와 무관합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
+- Cloud App Security를 설정하려면 Azure Active Directory 또는 Office 365에서 글로벌 관리자, 준수 관리자 또는 보안 읽기 권한자여야 합니다. 관리자 역할이 할당된 사용자는 조직에서 구독한 모든 클라우드 앱에서 동일한 권한을 갖게 됨을 이해하는 것이 중요합니다. 이는 Microsoft 365 관리 센터 또는 Azure 클래식 포털에서 역할을 할당하거나 또는 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx)에 Azure AD 모듈을 사용하는지 여부와 무관합니다. 자세한 내용은 [Office 365에서 관리자 역할 할당](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) 및 [Azure Active Directory에서 관리자 역할 할당](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)을 참조하세요.  
   
 - Cloud App Security 포털을 실행하려면 Internet Explorer 11, Microsoft Edge(최신 버전), Google Chrome(최신 버전), Mozilla Firefox(최신 버전) 또는 Apple Safari(최신 버전)을 사용합니다.  
 
 ## <a name="to-access-the-portal"></a>포털에 액세스하려면
 
 Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)으로 이동하세요.  
-관리 센터 아이콘을 클릭하여 **Office 365 관리 센터**를 통해 포털에 액세스할 수도 있습니다. ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘") 그런 다음, **Cloud App Security**를 선택합니다.  
+관리 센터 아이콘을 클릭하여 **Microsoft 365 관리 센터**를 통해 포털에 액세스할 수도 있습니다. ![O365 관리 센터 아이콘](./media/o365-admin-centers-icon.png "O365 관리 센터 아이콘") 그런 다음, **Cloud App Security**를 선택합니다.  
   
 ![O365에서 액세스](./media/access-from-o365.png "O365에서 액세스")  
   
