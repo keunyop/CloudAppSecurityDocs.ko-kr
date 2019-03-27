@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281664"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476674"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection 통합
 
@@ -59,7 +59,7 @@ Cloud App Security는 현재 다음 파일 형식에 Azure Information Protectio
 Cloud App Security 외부에서 보호 레이블이 지정된 파일은 현재 Cloud App Security에서 검사하거나 변경할 수 없습니다. Cloud App Security 외부로 레이블이 지정된(보호되지 않은) 파일은 검사가 가능하며 Cloud App Security에서 Cloud App Security 정책에 정의된 대로 다른 레이블(보호 여부와 상관없이)을 적용할 수 있습니다.
 
 
-## <a name="how-it-works"></a>작동 방식
+## <a name="how-it-works"></a>작동 방법
 사용자는 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)의 파일 분류 레이블에 익숙할 것입니다. Cloud App Security에서 Azure Information Protection 분류 태그를 볼 수 있습니다. Cloud App Security를 Azure Information Protection과 통합하는 즉시 Cloud App Security는 다음과 같이 파일을 검색합니다.
 
 1. Cloud App Security는 테넌트에서 사용되는 모든 분류 레이블의 목록을 검색합니다. 이 작업은 목록을 최신 상태로 유지하기 위해 매시간 수행됩니다.
@@ -92,7 +92,7 @@ Azure Information Protection을 사용하도록 설정하고 나면 Cloud App Se
 
 
 > [!NOTE] 
-> 자동 검색에서는 다시 수정되지 않는 한 기존 파일을 검색하지 않습니다. Azure Information Protection 분류 레이블에 대한 기존 파일을 검색하려면 **콘텐츠 검사 파일 정책**이 하나 이상 있어야 합니다. 한 개도 없으면, 새 **파일 정책**을 만들고, 미리 설정된 필터를 모두 삭제한 후 **콘텐츠 검사** 옵션을 선택합니다. 그런 다음 **콘텐츠 검사** 아래의 **미리 설정된 식과 일치하는 파일 포함하기**를 클릭한 후 미리 정의된 값을 선택하고 정책을 저장합니다. 이렇게 하면 Azure Information Protection 분류 레이블을 자동으로 감지하는 콘텐츠 검사를 할 수 있습니다.
+> 자동 검색에서는 다시 수정되지 않는 한 기존 파일을 검색하지 않습니다. Azure Information Protection 분류 레이블에 대 한 기존 파일을 검색할 경우 하나 이상의 **파일 정책** 콘텐츠 검사를 포함 하는 합니다. 없는 경우 새로 만듭니다 **파일 정책**, 아래에 있는 미리 설정 된 필터를 모두 삭제 **검사 방법** 선택 **기본 제공 DLP**합니다. 에 **콘텐츠 검사** 필드를 선택한 **미리 설정 된 식과 일치 하는 파일 포함** 미리 정의 된 값을 선택 하 고 정책을 저장 합니다. 이렇게 하면 Azure Information Protection 분류 레이블을 자동으로 감지하는 콘텐츠 검사를 할 수 있습니다.
 
 #### <a name="set-internal-and-external-tags"></a>내부 및 외부 태그 설정
 기본적으로 Cloud App Security에서는 조직에 정의된 분류 레이블과 다른 조직에서 정의된 외부 레이블을 검색합니다. 

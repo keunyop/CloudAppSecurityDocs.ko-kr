@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,23 +15,25 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 233df1cf7f01266bbca6c122a6908811e4c6649b
-ms.sourcegitcommit: 57bad4dc9b28326c93ee480d308d52ea23c42089
+ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163878"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476453"
 ---
 # <a name="investigate-activities-using-the-api"></a>API를 사용 하 여 활동 조사
 
 *적용 대상: Microsoft Cloud App Security*
+
+Microsoft Cloud App Security를 완벽 하 게 지원 되는 REST API 서비스를 사용 하 여 프로그래밍 방식으로 상호 작용할 수를 제공 합니다.
 
 연결 된 클라우드 앱에서 사용자가 수행한 활동 조사에 Microsoft Cloud App Security Api를 사용할 수 있습니다. 
 
 Cloud App Security 활동 API 모드 검색 및 많은 양의 데이터 (5,000 명 이상의 활동)의 검색을 위해 최적화 됩니다. 모든 결과 검색 될 때까지 쿼리 활동 데이터를 반복적으로 검색 하는 API입니다. 
 
 > [!NOTE] 
-> 많은 양의 작업과 대규모 배포에 대 한에서는 사용할 recommendedthat 합니다 [SIEM 에이전트](siem.md) 활동 검색에 대 한 합니다.
+> 사용 하는 좋습니다 대량의 활동 및 대규모 배포에는 [SIEM 에이전트](siem.md) 활동 검색에 대 한 합니다.
 
 **에 활동 검색 API를 사용 합니다.**
 
@@ -53,7 +55,7 @@ Cloud App Security 활동 API 모드 검색 및 많은 양의 데이터 (5,000 �
 - "hasNext": Boolean입니다. 데이터에 다른 반복 필요한 지 여부를 나타냅니다.
 - “nextQueryFilters”: 다른 반복 필요한 경우 연속 JSON 쿼리 실행 수를 포함 합니다. 다음 요청에서 "필터" 매개 변수로 사용 합니다.
 
-
+다음 Python 예제에서는 Exchange Online에서 지난 날의 모든 활동을 가져옵니다.
 
       import requests
       import json

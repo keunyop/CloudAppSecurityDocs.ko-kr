@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/3/2019
+ms.date: 3/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffb0a07daba385f000094273cb0afd9c85eda1f8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281647"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476623"
 ---
 # <a name="manage-oauth-apps"></a>OAuth 앱 관리
 
@@ -88,7 +88,7 @@ OAuth 앱 페이지는 사용 권한이 사용 권한이 부여된 각 OAuth 앱
 
 ## <a name="revoke-app-and-notify-user"></a>앱 철회 및 사용자에게 알림
 
-G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 권한을 변경해야 함을 사용자에게 알릴 수 있습니다. 
+G Suite 및 Salesforce의 경우 앱에 대한 사용 권한을 철회하거나 권한을 변경해야 함을 사용자에게 알릴 수 있습니다. 사용 권한을 취소 하는 경우에 "엔터프라이즈 응용 프로그램"에서 Azure AD에서 응용 프로그램에 부여 된 모든 사용 권한을 제거 합니다.
 
 1. **OAuth 앱** 페이지에서 앱 행의 끝에 있는 점 세 개를 클릭하고 **사용자에게 알림**을 선택합니다. 기본적으로 사용자에게 다음과 같은 알림이 표시됩니다. *G Suite 계정에 액세스하는 권한을 앱에 부여했습니다. 이 앱은 조직의 보안 정책과 충돌합니다. G Suite 계정에서 이 앱에 제공한 사용 권한의 부여 또는 취소를 다시 고려하세요. 앱 액세스를 취소하려면 다음으로 이동합니다. https://security.google.com/settings/security/permissions?hl=en&pli=1  앱을 선택하고 오른쪽 메뉴 모음에서 ‘액세스 취소’를 클릭합니다.* 보내는 메시지를 사용자 지정할 수 있습니다.
 2. 사용자에게 앱을 사용할 권한을 해지할 수도 있습니다. 표에 앱 행의 끝에 있는 아이콘을 클릭하고 **앱 철회**를 선택합니다. 
