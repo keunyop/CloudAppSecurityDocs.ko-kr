@@ -67,6 +67,8 @@ items:
       href: wdatp-integration.md
     - name: Zscaler와 통합
       href: zscaler-integration.md
+    - name: iboss와 통합
+      href: iboss-integration.md
     - name: Cloud Discovery 스냅숏 보고서 만들기
       href: create-snapshot-cloud-discovery-reports.md
     - name: 연속 보고서에 대한 자동 로그 업로드 구성
@@ -161,7 +163,7 @@ items:
       - name: OAuth 정책
         href: app-permission-policy.md
       - name: 파일 정책
-        href: working-with-the-regex-engine.md
+        href: data-protection-policies.md
         items:
         - name: 콘텐츠 검사
           href: content-inspection.md
@@ -170,7 +172,8 @@ items:
             href: content-inspection-built-in.md
           - name: 데이터 분류 서비스 통합
             href: dcs-inspection.md
-        - name: RegEx 엔진 작업
+          - name: RegEx 엔진 작업
+            href: working-with-the-regex-engine.md
       - name: 조건부 액세스 앱 제어 정책
         items:
         - name: 액세스 정책
@@ -183,20 +186,22 @@ items:
       href: governance-actions.md
     - name: 검색된 앱 제어
       href: governance-discovery.md
-    - name: 보안 확장을 사용하여 통합
+    - name: Azure Information Protection 통합
+      href: azip-integration.md
+    - name: 외부 솔루션과 통합
       items:
-      - name: Azure Information Protection 통합
-        href: azip-integration.md
       - name: SIEM 통합
         href: siem.md
       - name: 외부 DLP 통합
         href: icap-stunnel.md
-      - name: Microsoft Flow와 통합
-        href: flow-integration.md
-      - name: iboss와 통합
-        href: iboss-integration.md
-      - name: API 토큰
+    - name: 프로세스 및 워크플로 자동화
+      items:
+      - name: REST API 사용
         href: api-tokens.md
+      - name: API를 사용하여 작업 조사
+        href: investigate-activities-api.md
+      - name: Microsoft Flow 사용
+        href: flow-integration.md
 - name: 참조
   items:
   - name: Cloud Discovery 문제 해결
@@ -215,6 +220,8 @@ items:
   items:
   - name: 릴리스 정보 보관
     href: release-note-archive.md
+  - name: 라이선싱 데이터 시트
+    href: https://aka.ms/mcaslicensing
   - name: 지원 및 문제 해결
     href: support-and-ts.md
   - name: 프리미어 지원 포털
@@ -223,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Cloud App Security 구입 방법
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 7bda89d1d13dd10ab2c9ea981edf16959437bb2f
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014841"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476538"
