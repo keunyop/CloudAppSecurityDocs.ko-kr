@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb693bfc58d74a64dd178e961f8d42ffd5ce1273
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: f432393c6e60a360f2acae6c35cc79a239469b41
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830373"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543640"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Office 365 연결
 
@@ -47,7 +47,7 @@ Cloud App Security에서는 다음 Office 365 앱을 지원합니다.
   
 > [!NOTE]
 >- Cloud App Security에 Office 365를 연결하려면 Office 365 라이선스가 하나 이상 할당되어 있어야 합니다.
->- 감사를 활성화 하는 데 필요한는 Cloud App Security에 Office 365 활동의 모니터링을 사용 하 여 [Office 보안 및 규정 준수 센터]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins)합니다.
+>- 감사를 활성화 하는 데 필요한는 Cloud App Security에 Office 365 활동의 모니터링을 사용 하 여 [Office 보안 및 규정 준수 센터](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins)합니다.
 >-  Office 365에서 기본적으로 사용되는 Exchange 관리자 감사 로깅은 관리자(또는 관리자 권한이 할당된 사용자)가 Exchange Online 조직에서 변경 작업을 수행하면 Office 365 감사 로그에 이벤트를 기록합니다. Exchange 관리 센터를 사용하거나 Windows PowerShell에서 cmdlet을 실행하여 수행된 변경 작업이 Exchange 관리자 감사 로그에 기록됩니다. Exchange의 관리자 감사 로깅에 대한 자세한 내용은 [관리자 감사 로깅](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)을 참조하세요.
 >- Exchange Online의 사용자 활동을 기록하기 전에 각 사용자 사서함에 대해 Exchange 사서함 감사 로깅을 켜야 합니다. [Exchange 사서함 활동](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)을 참조하세요.
 >- Office 앱을 사용하는 경우 Office 365의 일부인 그룹도 특정 Office 앱에서 Cloud App Security로 가져오게 됩니다. 예를 들어 SharePoint를 사용하면 Office 365 그룹이 SharePoint 그룹으로도 가져오게 됩니다.

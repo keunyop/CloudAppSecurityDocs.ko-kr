@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 5c3cd5a1583260fa06a5f00805a7695cda8d44eb
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830458"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543623"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 지원 및 문제 해결
 
@@ -68,7 +68,7 @@ Microsoft는 전 세계에서 Microsoft Cloud App Security를 위한 기술 지�
 
 5.  입력한 정보가 올바른지 검토한 다음, **만들기**를 선택하여 지원 요청을 제출합니다.
 
-**참고:** 질문이 있는 대금 청구 또는 구독을 지원을 받는 경우 열 수 있습니다 합니다 [Microsoft 365 관리 센터](https://portal.office.com/Support/SupportEntry.aspx)합니다.
+**참고:** 질문이 있는 대금 청구 또는 구독을 지원을 받는 경우 열 수 있습니다 합니다 [Microsoft 365 관리 센터](https://admin.microsoft.com/Support/SupportEntry.aspx)합니다.
 
 ### <a name="view-open-support-requests"></a>진행 중인 지원 요청 보기
 
