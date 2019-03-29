@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a8d632a2fb78f3fa9cec36fb752e08843e3a97a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 12e1ea59e4d8f99b57f6ba494430aef6082d4204
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281715"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476708"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Microsoft Cloud App Security 개요
 
@@ -32,6 +32,8 @@ ms.locfileid: "56281715"
 클라우드로 전환하면 직원의 유연성이 증가하고 IT 비용이 감소합니다. 그러나 조직을 보호하기 위한 새로운 과제 및 복잡성에 대해서도 소개합니다. 클라우드 애플리케이션의 모든 혜택을 받으려면 IT 팀에서 제어를 유지하는 동시에 액세스를 허용하는 적절한 균형 지점을 찾아 중요한 데이터를 보호해야 합니다.  
 
 Cloud App Security는 Microsoft Cloud Security 스택의 주요 구성 요소입니다. 조직이 클라우드 애플리케이션의 기능을 모두 활용하는 방향으로 발전할 수 있게 도우면서도 활동에 대한 가시성을 향상시켜 제어를 유지하는 포괄적인 솔루션입니다. 또한 클라우드 애플리케이션에서 중요한 데이터의 보호를 강화하는 데에도 도움이 됩니다. 섀도 IT를 찾는 데 유용한 도구를 사용하여 위험 평가, 정책 적용, 활동 조사 및 위협을 중지합니다. 조직은 중요한 데이터의 제어를 유지하면서도 더 안전하게 클라우드로 이동할 수 있습니다. 
+
+라이선싱에 대한 정보는 [Microsoft Cloud App Security 라이선싱 데이터 시트](https://aka.ms/mcaslicensing)를 참조하세요.
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 프레임워크  
 

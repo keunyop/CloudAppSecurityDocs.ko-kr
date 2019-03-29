@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/17/2019
+ms.date: 3/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830509"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476657"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -28,7 +28,34 @@ ms.locfileid: "57830509"
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
-RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us` URL을 복사하여 피드 reader에 붙여넣어 이 페이지가 업데이트되면 알림을 받습니다.
+RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us` URL을 복사하여 피드 reader에 붙여넣어 이 페이지가 업데이트되면 알림을 받습니다.
+
+
+## <a name="cloud-app-security-release-145"></a>Cloud App Security 릴리스 145
+
+릴리스 날짜: 2019년 3월 17일
+
+- **Windows Defender ATP 통합이 이제 출시되었습니다.**: <br>
+작년에 조직의 섀도 IT 검색을 향상시키며 회사 네트워크를 넘어 확장하는 [Windows Defender Advanced Threat Protection 확장](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)을 발표했습니다. [한 번의 클릭으로 사용할 수 있으며](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), 이 고유한 통합 출시를 발표하게 되어 기쁩니다.
+- **Dynamics 365 지원** <br>Cloud App Security는 사용자가 비즈니스 애플리케이션과 이 앱에 저장된 중요 콘텐츠를 보호할 수 있도록 실시간 모니터링 및 Dynamics 365를 위한 컨트롤을 추가했습니다. 
+
+## <a name="cloud-app-security-release-144"></a>Cloud App Security 릴리스 144
+
+릴리스 날짜: 2019년 3월 3일
+
+- **하이브리드 환경의 통합된 SecOps 조사**<br> 대부분의 조직이 하이브리드 환경을 보유하고 있으므로 클라우드에서 공격이 시작된 후 온-프레미스에 피벗됩니다. 따라서 SecOps 팀은 여러 위치에서 이 공격을 조사해야 합니다. Microsoft는 Microsoft Cloud App Security, Azure ATP, Azure AD ID 보호를 포함한 클라우드 및 온-프레미스 소스에서 신호를 결합하여 보안 분석가에게 보안 솔루션 간을 전환할 필요 없이 통합된 ID와 사용자 정보를 단일 콘솔에서 제공합니다. 이렇게 하면 SecOps 팀이 더 많은 시간과 올바른 정보를 확보하여 더 나은 결정을 내리고 실제 ID 위협 및 위험을 적극적으로 수정할 수 있습니다. 자세한 내용은 [하이브리드 환경의 통합된 SecOps 조사](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)를 참조하세요.
+
+
+- **맬웨어 검색을 위한 샌드박싱 기능**(점진적 출시)<br>
+고급 샌드박싱 기술을 통해 제로 데이 맬웨어를 식별하는 데 필요한 기능을 포함하기 위해 Cloud App Security의 맬웨어 검색 기능을 확장하는 중입니다.<br>
+이 기능의 일부로 Cloud App Security가 자동으로 의심스러운 파일을 식별하고 해당 파일을 폭발시켜 의심스러운 파일 동작 및 파일에 악의적인 의도(맬웨어)가 있음을 나타내는 표시기를 찾습니다. <br>
+이 변경의 일환으로 이제 맬웨어 검색 정책에 사용자가 샌드박싱 뿐만 아니라 위협 인텔리전스별로 필터링할 수 있는 검색 유형 필드가 포함됩니다.
+- **조건부 액세스 업데이트**<br> 조건부 액세스 앱 제어가 다음 활동을 모니터링하고 차단할 수 있는 기능을 추가했습니다.
+    - 앱에서의 파일 업로드 - 알려진 맬웨어 확장의 업로드 방지와 같은 시나리오를 사용하도록 설정하고, 사용자가 업로드하기 전에 AIP로 파일을 보호할 수 있도록 합니다.
+    - 앱에서의 복사 및 붙여넣기 - 다운로드, 인쇄 및 공유와 같은 사용자 지정 활동을 이미 포함한 데이터 반출의 강력한 제어를 완성합니다.
+    - 메시지 보내기 - 암호 등의 PII 데이터가 Slack, Salesforce, Workplace by Facebook 등의 자주 사용하는 공동 작업 도구에 공유되지 않도록 합니다.
+- 이제 세션 정책에는 기본 제공 템플릿이 포함되어 사용자의 조직이 손쉽게 자주 사용하는 **실시간 콘텐츠 조사를 기반으로한 업로드 차단** 등의 실시간 모니터링 및 제어를 사용 권한 앱에 실행할 수 있습니다.
+
 
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security 릴리스 143

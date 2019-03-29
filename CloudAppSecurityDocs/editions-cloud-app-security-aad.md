@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 03/25/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,20 @@ ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed1c5b4a9b6fd02e0ab198a7171902c14fe81c1f
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 8c06489e5f7dbaf32d815bd548558f09a9447afb
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014799"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476504"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory 및 Microsoft Cloud App Security에 대한 검색 기능의 차이점은 무엇인가요?
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서에서는 Microsoft Cloud App Security 및 Azure AD(Azure Active Directory)의 검색 기능 간의 차이점을 설명합니다.
+
+라이선싱에 대한 정보는 [Microsoft Cloud App Security 라이선싱 데이터 시트](https://aka.ms/mcaslicensing)를 참조하세요.
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 

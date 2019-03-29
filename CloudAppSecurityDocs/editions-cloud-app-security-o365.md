@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 03/6/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,20 @@ ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f729b20ca88b204793fc28b40fc7249864bd9006
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: c0a8d0b119806522f46636a94d594322d516a8b0
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014816"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476691"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security와 Office 365 Cloud App Security의 차이점은 무엇인가요?
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서에서는 Cloud App Security와 Office 365 Cloud App Security의 차이점을 설명합니다. Office 365 Cloud App Security에 대한 자세한 내용은 [Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)을 참조하세요.
+
+라이선싱에 대한 정보는 [Microsoft Cloud App Security 라이선싱 데이터 시트](https://aka.ms/mcaslicensing)를 참조하세요.
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 
