@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 3/31/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ba30d7e563b7b36c8be6bfcb30eccbe93cba1cd2
+ms.sourcegitcommit: 465b386d56f64d81a72fa03326c9ad19079362cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476657"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763701"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -30,6 +30,19 @@ ms.locfileid: "58476657"
 
 RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us` URL을 복사하여 피드 reader에 붙여넣어 이 페이지가 업데이트되면 알림을 받습니다.
 
+
+## <a name="cloud-app-security-release-146"></a>Cloud App Security 릴리스 146
+
+릴리스 날짜: 2019년 3월 31일
+
+- **불가능한 이동 향상**<br>
+인접 국가에 대한 전용 지원을 통해 불가능한 이동 검색이 향상되었습니다.
+- **일반 CEF 파서에 대한 추가 특성 지원**<br>
+일반 CEF 형식에 대한 Cloud Discovery 로그 파서 지원이 추가 특성을 지원하도록 향상되었습니다.
+- **Cloud Discovery 보고서에 대해 범위가 지정된 액세스**<br>
+검색 관리자 역할과 함께, 이제 특정 Discovery 보고서에 대한 액세스 범위를 지정할 수 있습니다. 이 향상된 기능을 통해 특정 사이트 및 사업부의 데이터에 대한 권한을 구성할 수 있습니다.
+- **새 역할 지원: Global Reader**<br>
+Microsoft Cloud App Security는 이제 Azure AD Global Reader 역할을 지원합니다. Global Reader는 Microsoft Cloud App Security의 모든 항목에 대한 전체 읽기 전용 권한을 가지지만, 설정을 변경하거나 작업을 수행할 수는 없습니다.
 
 ## <a name="cloud-app-security-release-145"></a>Cloud App Security 릴리스 145
 
@@ -60,7 +73,7 @@ RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security 릴리스 143
 
-2019년 2월 17일에 출시됨
+릴리스 날짜: 2019년 2월 17일
 
 - **앱 인스턴스의 범위 배포**범위 배포는 이제 앱 인스턴스 수준에서 구성할 수 있으므로 더 세분화되고 제어할 수 있습니다.
 - **역할의 향상된 기능** 
