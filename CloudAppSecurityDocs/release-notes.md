@@ -28,7 +28,7 @@ ms.locfileid: "59233584"
 
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
-RSS 피드: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us` URL을 복사하여 피드 reader에 붙여넣어 이 페이지가 업데이트되면 알림을 받습니다.
+RSS 피드: 다음 URL을 복사하여 피드 판독기에 붙여넣으면 이 페이지가 업데이트될 때 알림을 받을 수 있습니다. `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
 ## <a name="cloud-app-security-release-146"></a>Cloud App Security 릴리스 146
 
