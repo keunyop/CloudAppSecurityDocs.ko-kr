@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c819aa1e9b71007a158a388272d1f37cf9412df
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4381c872d9e17294e1a5b8767243f9afc6e797b0
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281341"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233567"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery 스냅숏 보고서 만들기
 
@@ -91,7 +91,7 @@ Cloud Discovery에서는 로그에 포함되지 않은 특성을 표시하거나
 
 
 Cloud Discovery 보고서를 성공적으로 생성하려면 트래픽 로그가 다음 조건을 충족해야 합니다.
-1. 데이터 원본이 지원됩니다(아래 목록 참조).
+1. [데이터 원본이 지원 됩니다](set-up-cloud-discovery.md#supported-firewalls-and-proxies)합니다.
 2. 로그 형식은 예상되는 표준 형식과 일치합니다(로그 도구로 업로드 시 확인되는 형식).
 3. 이벤트가 90일보다 오래되지 않았습니다.
 4. 로그 파일이 유효하며 아웃바운드 트래픽 정보를 포함합니다.

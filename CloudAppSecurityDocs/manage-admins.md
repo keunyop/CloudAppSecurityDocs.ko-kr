@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281233"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233550"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
@@ -62,7 +62,7 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - 보안 확장 - 사용자 권한이 있는 API 토큰에 대한 사용 권한만
   - 거버넌스 작업 - 특정 앱/인스턴스에 대해서만 
 
-- **그룹 관리자:** 여기에서 선택한 특정 그룹에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어, 사용자에게 “독일 - 모든 사용자” 그룹에 대한 관리자 권한을 부여하면 관리자는 해당 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다.
+- **사용자 그룹 관리:** 여기에서 선택한 특정 그룹에서만 처리되는 Microsoft Cloud App Security의 모든 데이터에 대한 권한을 가집니다. 예를 들어, 사용자에게 “독일 - 모든 사용자” 그룹에 대한 관리자 권한을 부여하면 관리자는 해당 사용자 그룹에 대해서만 Microsoft Cloud App Security에서 정보를 보고 수정할 수 있습니다.
 
   - 활동 페이지 - 그룹의 사용자에 대한 활동만
   - 경고 - 그룹의 사용자와 관련된 경고만
@@ -75,7 +75,7 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - 보안 확장 - 그룹의 사용자가 있는 API 토큰에 대한 사용 권한만
   - 거버넌스 작업 - 그룹의 특정 사용자에 대해서만
 
-- **전역 검색 관리자:**  모든 Cloud Discovery 설정 및 데이터를 보고 편집할 수 있는 권한이 있습니다. 전역 검색 관리자는 다음에 액세스할 수 있습니다.
+- **클라우드 검색 전역 관리자:**  모든 Cloud Discovery 설정 및 데이터를 보고 편집할 수 있는 권한이 있습니다. 전역 검색 관리자는 다음에 액세스할 수 있습니다.
 
   - 설정 - 
      -  시스템 설정 - 보기 전용
@@ -91,6 +91,11 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - 보안 확장 - 권한 없음
   - 거버넌스 작업 - Cloud Discovery 관련 작업만
 
+- **Cloud Discovery 보고서 관리자:** 선택한 특정 Cloud Discovery 보고서를 단독으로 처리 하는 Microsoft Cloud App Security에서 모든 데이터를 보려는 권한이 부여 됩니다. 예를 들어 권한을 제공할 수 있습니다 누군가가 관리 연속 보고서에 Windows Defender ATP에서. 검색 관리자 앱 카탈로그에 해당 데이터 원본에 연결 하는 Cloud Discovery 데이터만 표시 됩니다.
+이 관리자에는에 대 한 액세스를 사용 해야 합니다.는 **활동** 또는 **파일** 페이지 및 정책에 대 한 액세스를 제한 합니다.
+
+- **전역 판독기:** Microsoft Cloud App Security의 모든 측면에 전체 읽기 전용으로 액세스할 수 있습니다. 설정을 변경 하거나 어떠한 작업도 수행할 수 없습니다.
+ 
 ## <a name="override-admin-permissions"></a>관리자 사용 권한 재정의
 
 Azure Active Directory 또는 Office 365의 관리자 권한을 재정의하려면 Cloud App Security에 사용자를 수동으로 추가하고 사용자에게 권한을 할당하면 됩니다.

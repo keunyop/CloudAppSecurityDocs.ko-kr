@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3f4971f72ddc81b932df5ed992ce706e5a64b502
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 99cca2a7a5fbc8bf57eb7a211bd32a28b102a78a
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282684"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233499"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 
@@ -41,11 +41,11 @@ ms.locfileid: "56282684"
 
 ## <a name="deployment-modes"></a>배포 모드
 
-로그 수집기는 두 가지 배포 모드를 지원합니다.
+로그 수집기에서는 다음 두 가지 배포 모드를 지원합니다.
 
 -   **컨테이너**: [Ubuntu 온-프레미스](discovery-docker-ubuntu.md), [Azure의 Ubuntu](discovery-docker-ubuntu-azure.md) 또는 [RHEL 온-프레미스](discovery-docker-ubuntu.md)에서 Docker 이미지로 실행됩니다. 
 
--   **가상 어플라이언스**:  [Hyper-V 또는 VMware 하이퍼바이저에서 이미지로 실행됩니다.](configure-automatic-log-upload-for-continuous-reports.md)
+-   **가상 어플라이언스**:  (사용 되지 않음) 하는 Hyper-v 또는 VMware 하이퍼바이저에서 이미지로 실행 됩니다
 
 
 
