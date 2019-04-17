@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/22/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09555165697ee66a84c99d4f3a5790f22b4d17d6
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 764ca55b076c837b784ddc82ef3b4337bc9a8fcd
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476981"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622357"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco WebEx Microsoft Cloud App Security에 연결
 
@@ -30,7 +30,9 @@ ms.locfileid: "58476981"
  
 ## <a name="prerequisites"></a>필수 구성 요소
 
-연결에 대 한 전용된 서비스 계정을 만들어야 하는 것이 좋습니다. 이 통해 같은이 계정에서 수행 중인으로 WebEx에서 수행 된 거 버 넌 스 작업 WebEx에 전송 된 메시지를 삭제 하도록 확인할 수 있습니다. 그렇지 않으면 WebEx에 Cloud App Security를 연결 하는 관리자의 이름을 작업을 수행 하는 사용자로 표시 됩니다.  
+- 연결에 대 한 전용된 서비스 계정을 만들어야 하는 것이 좋습니다. 그러면 같은이 계정에서 수행 중인으로 WebEx에서 수행 된 거 버 넌 스 작업 WebEx에 전송 된 메시지를 삭제 하도록 확인할 수 있습니다. 그렇지 않으면 WebEx에 Cloud App Security를 연결 하는 관리자의 이름을 작업을 수행 하는 사용자로 표시 됩니다.  
+- 전체 관리자 **및** WebEx에 대 한 규정 준수 관리자 권한이 있습니다.
+
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>WebEx Cloud App Security에 연결 하는 방법  
   

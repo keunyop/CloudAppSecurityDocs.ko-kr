@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/20/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,20 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 445c8ac7d535e349ed3c8bee7af100062c76d184
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476623"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622391"
 ---
 # <a name="manage-oauth-apps"></a>OAuth 앱 관리
 
 *적용 대상: Microsoft Cloud App Security*
 
 조직의 비즈니스 사용자가 설치하는 타사 생산성 앱 중에는 사용자 정보와 데이터의 사용 권한을 요청하고 사용자 대신 Office 365, G Suite, Salesforce 등의 다른 클라우드 앱에 로그인하는 것도 많습니다. 사용자가 이러한 응용 프로그램을 설치할 때, 응용 프로그램에 사용 권한을 부여하는 내용을 포함한 메시지의 세부 정보를 검토하지 않고 승인을 클릭하는 경우도 많습니다. 이 문제는 IT 직원이 애플리케이션의 생산성 향상 효과와 보안 위험을 신중하게 비교하지 못하기 때문에 발생합니다. 타사 앱의 사용 권한을 승인하면 조직에 보안 위험이 생길 수 있으므로, 사용자가 부여하는 앱 사용 권한을 모니터링하면 사용자와 애플리케이션을 보호하는 데 필요한 정보를 얻고 상황을 통제할 수 있습니다. Microsoft Cloud App Security 앱 권한을 통해 사용자가 설치한 OAuth 애플리케이션이 Office 365 데이터, G Suite 데이터 및 Salesforce 데이터에 액세스할 수 있는지 확인할 수 있습니다. Cloud App Security는 앱이 가지고 있는 권한과 이러한 앱에 Office 365, G Suite 및 Salesforce 계정에 액세스 권한을 부여한 사용자를 알려줍니다. 앱 사용 권한은 사용자가 액세스할 수 있는 앱과 금지할 앱을 결정하는 데 도움이 됩니다.
+
+Oauth 앱 조사에 대 한 자세한 내용은 참조 하세요. 
 
 ## <a name="working-with-the-oauth-apps-page"></a>OAuth 앱 페이지 사용
 
