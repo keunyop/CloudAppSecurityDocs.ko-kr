@@ -16,11 +16,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 99cca2a7a5fbc8bf57eb7a211bd32a28b102a78a
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233499"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745969"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>연속 보고서에 대한 자동 로그 업로드 구성
 
