@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/31/2019
+ms.date: 04/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 277be79d2d9621f84b97c7fca84b56e0110d27ae
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233584"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622442"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -29,6 +29,18 @@ ms.locfileid: "59233584"
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
 RSS 피드: 다음 URL을 복사하여 피드 판독기에 붙여넣으면 이 페이지가 업데이트될 때 알림을 받을 수 있습니다. `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-147"></a>Cloud App Security 릴리스 147
+
+릴리스 날짜: 2019년 4월 14일
+
+- **새 Cloud Discovery 로그 파서**<br>이제 Cloud App Security Cloud Discovery에는 Palo Alto LEEF 로그 형식을 지원하는 내장 로그 파서가 포함되어 있습니다. 
+
+- **세션 정책 업데이트**
+    - **세션 정책에 대한 추가 콘텐츠 검사 방법**:<br>세션 정책을 설정할 때 이제 파일에 대한 콘텐츠 검사 방법으로 데이터 분류 서비스를 선택할 수 있습니다. 데이터 분류 서비스는 사용자에게 중요한 정보를 식별하는 데 사용할 수 있는 다양한 유형의 기본 제공 서비스를 제공합니다.
+    - **세션 정책에서 파일 사용 권한 제어 강화**:<br>Cloud App Security를 사용하여 다운로드를 제어하는 세션 정책을 생성할 때 이제 클라우드 앱에서 다운로드할 때 사용자당 읽기 전용 등의 사용 권한을 문서에 자동으로 적용할 수 있습니다. 따라서 사전 구성된 회사 레이블을 넘어 훨씬 높은 수준의 유연성과 정보를 보호할 수 있습니다.
+    - **대용량 파일 다운로드 제어**:<br>세션 정책에서 콘텐츠 검사를 사용하도록 설정하면 사용자가 매우 큰 파일을 다운로드하려고 할 때 제어할 수 있습니다. 파일이 너무 커서 다운로드를 검색할 수 없는 경우 차단할지 또는 허용할지 선택할 수 있습니다.
+
 
 ## <a name="cloud-app-security-release-146"></a>Cloud App Security 릴리스 146
 

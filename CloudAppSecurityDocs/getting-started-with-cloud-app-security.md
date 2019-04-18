@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3e8730d21e2d924782f1aa8965aef1ad2bded9d0
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 977afbb5126e2f225ff4f89b2f6c353b166c2d27
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830492"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622408"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>빠른 시작: Microsoft Cloud App Security 시작하기
 
