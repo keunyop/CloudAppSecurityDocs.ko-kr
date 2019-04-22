@@ -65,7 +65,7 @@ items:
   - name: Cloud Discovery 설정
     href: set-up-cloud-discovery.md
     items:
-    - name: Windows Defender ATP와 통합
+    - name: Microsoft Defender ATP와 통합
       href: wdatp-integration.md
     - name: Zscaler와 통합
       href: zscaler-integration.md
@@ -86,8 +86,6 @@ items:
         href: troubleshoot-docker.md
       - name: 프록시 뒤의 로그 수집기
         href: log-collector-proxy.md
-      - name: 가상 어플라이언스 사용 - 사용되지 않음
-        href: configure-automatic-log-upload-for-continuous-reports.md
     - name: 사용자 지정 로그 파서 사용
       href: custom-log-parser.md
     - name: Cloud Discovery 보강
@@ -232,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Cloud App Security 구입 방법
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: d8ffcb45236d42317c4ca0f0fde899f7b0c1d4ac
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 6c32aec83ffcb4f3ddada0307b2b6f8ea32fe3e7
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904229"

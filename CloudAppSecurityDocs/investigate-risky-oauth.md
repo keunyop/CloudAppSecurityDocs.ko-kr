@@ -16,11 +16,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: a781b31f4816011dbbb988d947daf109cbc21c0b
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233516"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745952"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>자습서: 위험한 OAuth 앱 조사
 
