@@ -1,11 +1,11 @@
 ---
-title: Cloud Discovery Docker 배포 문제 해결
+title: FTP 설정 수정
 description: 이 문서에서는 Cloud App Security Cloud Discovery Docker에서 구성을 수정하는 프로세스를 설명합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,22 +15,18 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01fa2f69422bd3c1c272a76c113254f819b90137
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 305281ec527f605951d4d0c7f720c054ac444cf3
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56280882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904212"
 ---
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Microsoft Cloud App Security Cloud Discovery 배포 문제 해결
+# <a name="log-collector-ftp-configuration"></a>로그 수집기 FTP 구성
 
 *적용 대상: Microsoft Cloud App Security*
 
 이 문서에서는 Cloud App Security Cloud Discovery Docker에서 구성을 수정하는 방법을 설명합니다.
-
-## <a name="windows-defender-atp-integration"></a>Windows Defender ATP 통합
-
-Cloud App Security와 Windows Defender ATP를 통합했으나 통합 결과가 표시되지 않는 경우에는 **Win10 엔드포인트 사용자** 보고서가 없는 것입니다. 연결 중인 머신이 Windows 10 버전 1809 이상인지 확인하고 데이터에 액세스하기 전에 2시간 동안 충분히 기다렸는지 확인하세요.
 
 ## <a name="docker-deployment"></a>Docker 배포
 

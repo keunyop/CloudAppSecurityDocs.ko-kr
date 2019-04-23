@@ -1,5 +1,5 @@
 ---
-title: Windows Defender ATP를 Cloud App Security와 통합
+title: Cloud App Security를 사용 하 여 Microsoft Defender ATP 통합
 description: 이 문서에서는 Shadow IT 및 위험 관리에 대한 가시성을 향상시키기 위해 Cloud App Security와 Windows Defender Advanced Threat Protection을 통합하는 방법을 설명합니다.
 keywords: ''
 author: rkarlin
@@ -15,48 +15,48 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ea58971cfa8ca79d61bd6a660edf4d34cf38055a
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 7c704f492212befcf8678d7a74e2b8492807cf7b
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904246"
 ---
 # <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Windows Defender Advanced Threat Protection 통합
 
 *적용 대상: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security는 기본적으로 Windows Defender ATP(Advanced Threat Protection)와 통합됩니다. 통합을 통해 Cloud Discovery의 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 외부로 확장하고, 머신 기반 조사를 사용하도록 설정합니다. [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)는 지능적인 보호, 감지, 조사 및 대응을 위한 보안 플랫폼입니다. Windows Defender ATP는 사이버 위협으로부터 엔드포인트를 보호하고, 고급 공격 및 데이터 위반을 감지하고, 보안 인시던트를 자동화하고, 보안 태세를 강화합니다.
+Microsoft Cloud App Security는 기본적으로 Windows Defender ATP(Advanced Threat Protection)와 통합됩니다. 통합을 통해 Cloud Discovery의 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 외부로 확장하고, 머신 기반 조사를 사용하도록 설정합니다. [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)는 지능적인 보호, 감지, 조사 및 대응을 위한 보안 플랫폼입니다. Microsoft Defender ATP 사이버 위협 으로부터 보호 하는 끝점, 고급 공격 및 데이터 위반을 검색, 보안 인시던트, 자동화 및 보안 상태를 개선 합니다.
 
-Microsoft Cloud App Security는 IT 관리 Windows 10 머신에서 액세스하는 클라우드 앱 및 서비스에 대해 Windows Defender ATP에서 수집한 트래픽 정보를 사용합니다. 이 통합을 통해 회사 네트워크의 머신에서 Cloud Discovery를 실행하고, 로밍하는 동안 원격 액세스를 통해 공용 Wi-Fi를 사용할 수 있습니다. 머신 기반 조사를 사용할 수도 있습니다.
+Microsoft Cloud App Security는 클라우드 앱 및 Windows 10 IT 관리 컴퓨터에서 액세스 하는 서비스에 대 한 Microsoft Defender ATP에서 수집 되는 트래픽 정보를 사용 합니다. 이 통합을 통해 회사 네트워크의 머신에서 Cloud Discovery를 실행하고, 로밍하는 동안 원격 액세스를 통해 공용 Wi-Fi를 사용할 수 있습니다. 머신 기반 조사를 사용할 수도 있습니다.
 
-위험한 사용자를 식별하면 잠재적인 위험을 감지하기 위해 사용자가 액세스한 모든 머신을 확인할 수 있습니다. 위험한 머신을 식별하면 잠재적인 위험을 감지하기 위해 사용된 모든 사용자를 확인하세요. 엔드포인트에서 Cloud App Security로 라우팅된 로그는 트래픽 활동에 대한 사용자 정보를 제공합니다. Windows Defender ATP 네트워크 작업은 디바이스 컨텍스트를 제공합니다. 사용자 이름을 포함한 디바이스 컨텍스트를 페어링하여 어떤 사용자가 어떤 머신에서 어떤 작업을 수행하는지 네트워크를 통해 전체적인 내용을 제공합니다.
+위험한 사용자를 식별하면 잠재적인 위험을 감지하기 위해 사용자가 액세스한 모든 머신을 확인할 수 있습니다. 위험한 머신을 식별하면 잠재적인 위험을 감지하기 위해 사용된 모든 사용자를 확인하세요. 엔드포인트에서 Cloud App Security로 라우팅된 로그는 트래픽 활동에 대한 사용자 정보를 제공합니다. Microsoft Defender ATP 네트워크 활동 장치 컨텍스트를 제공합니다. 사용자 이름을 포함한 디바이스 컨텍스트를 페어링하여 어떤 사용자가 어떤 머신에서 어떤 작업을 수행하는지 네트워크를 통해 전체적인 내용을 제공합니다.
 
-Microsoft Cloud App Security는 Windows Defender ATP와의 네이티브 통합을 통해 Windows 관리 디바이스의 클라우드 앱 및 서비스 트래픽 데이터를 사용합니다. 이 통합에는 추가 배포가 필요하지 않으며 기본 상태로 작동합니다. 엔드포인트에서 트래픽을 라우팅 또는 미러링하거나 복잡한 통합 단계를 수행할 필요가 없습니다.
+Microsoft Cloud App Security 관리 되는 Windows 장치에서 클라우드 앱 및 서비스 트래픽에 대 한 데이터를 Microsoft Defender ATP를 사용 하 여 네이티브 통합을 사용 합니다. 이 통합에는 추가 배포가 필요하지 않으며 기본 상태로 작동합니다. 엔드포인트에서 트래픽을 라우팅 또는 미러링하거나 복잡한 통합 단계를 수행할 필요가 없습니다.
 
 > [!NOTE]
-> Windows Defender ATP를 사용해 보고 싶나요? [평가판 등록](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Microsoft Defender ATP를 경험 하 시겠습니까? [평가판 등록](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 >
 
 
 ## <a name="prerequisites"></a>필수 구성 요소
 
 - Microsoft Cloud App Security 라이선스
-- Windows Defender ATP 라이선스
+- Microsoft Defender ATP 라이선스
 - 버전 1809 이상을 실행하는 Windows 10 머신
 - Cloud App Security에서 이 기능을 사용하려면 **미리보기능** 켜세요.
 
-## <a name="how-it-works"></a>작동 방식
+## <a name="how-it-works"></a>작동 방법
 
-자체적으로 Cloud App Security는 [사용자가 업로드하는 로그](create-snapshot-cloud-discovery-reports.md)를 사용하여 또는 [자동 로그 업로드를 구성](discovery-docker.md)하여 엔드포인트에서 로그를 수집합니다. 네이티브 통합을 사용하면 Windows Defender ATP 에이전트가 Windows에서 실행되고 네트워크 트랜잭션을 모니터링할 때 만든 로그를 활용할 수 있습니다. 이러한 정보를 네트워크의 Windows 머신 간에 수행되는 Shadow IT Discovery에 사용합니다.
+자체적으로 Cloud App Security는 [사용자가 업로드하는 로그](create-snapshot-cloud-discovery-reports.md)를 사용하여 또는 [자동 로그 업로드를 구성](discovery-docker.md)하여 엔드포인트에서 로그를 수집합니다. 네이티브 통합을 사용 하면 Microsoft Defender ATP 에이전트 만듭니다 Windows에서 실행 될 때 로그를 활용할 수 있습니다 하 고 모니터 네트워크 트랜잭션. 이러한 정보를 네트워크의 Windows 머신 간에 수행되는 Shadow IT Discovery에 사용합니다.
 
-다른 플랫폼에서 Cloud Discovery를 수행할 수 있도록 하려면 Windows Defender ATP 통합과 함께 Cloud App Security [로그 수집기](discovery-docker.md)를 모두 사용하여 Windows 10 머신을 모니터링하는 것이 가장 좋습니다.
+을 다른 플랫폼에서 Cloud Discovery를 수행할 수 있도록 하는 것이 좋습니다 모두 Cloud App Security를 사용 하도록 [로그 수집기](discovery-docker.md), Windows 10 컴퓨터를 모니터링 하려면 Microsoft Defender ATP 통합 함께 합니다.
 
-## <a name="how-to-integrate-windows-defender-atp-with-cloud-app-security"></a>Windows Defender ATP를 Cloud App Security와 통합하는 방법
+## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Cloud App Security를 사용 하 여 Microsoft Defender ATP를 통합 하는 방법
 
-Windows Defender ATP에서 Cloud App Security와 통합하려면:
+사용 하려면 Microsoft Defender ATP에서 Cloud App Security와 통합:
 
-1. Windows Defender ATP 포털의 탐색 창에서 **기본 설정**을 선택합니다.
+1. Microsoft Defender ATP 포털의 탐색 창에서 선택 **기본 설정 설치**합니다.
 2. **설정** 메뉴의 **일반**에서 **고급 기능**을 선택합니다.
 3. **Microsoft Cloud App Security**를 **켜짐**으로 전환합니다.
 4. **기본 설정 저장**을 클릭합니다.
@@ -69,7 +69,7 @@ Windows Defender ATP에서 Cloud App Security와 통합하려면:
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Cloud App Security에서 머신 조사
 
-Windows Defender ATP를 Cloud App Security와 통합하면 Cloud Discovery 대시보드에서 검색된 머신 데이터를 조사할 수 있습니다.
+Cloud App Security를 사용 하 여 Microsoft Defender ATP를 통합 한 후에 Cloud Discovery 대시보드에서 검색 된 컴퓨터 데이터를 조사할 수 있습니다.
 
 1. Cloud App Security 포털에서 **Cloud Discovery**, **Cloud Discovery 대시보드**를 차례로 클릭합니다.
 2. 위의 탐색 모음에 있는 **연속 보고서**에서 **Win10 엔드포인트 사용자**를 선택합니다.
@@ -95,7 +95,7 @@ Windows Defender ATP를 Cloud App Security와 통합하면 Cloud Discovery 대�
 
 ## <a name="related-videos"></a>관련 동영상
 
-[Windows Defender ATP 및 Cloud App Security를 사용하여 회사 네트워크를 벗어난 Shadow IT Discovery](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+[Microsoft Defender ATP와 Cloud App Security를 사용 하 여 회사 네트워크 이외의 섀도 IT 검색](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
 ## <a name="next-steps"></a>다음 단계 
 [정책을 사용하여 클라우드 앱 제어](control-cloud-apps-with-policies.md) 

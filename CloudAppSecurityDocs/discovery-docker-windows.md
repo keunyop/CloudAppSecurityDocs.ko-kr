@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/29/2019
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 6f97426e1e1c18e2be3adb61ad5b3df95fb2c9c4
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904280"
 ---
 # <a name="docker-on-windows-on-premises"></a>Windows의 Docker 온-프레미스
 
@@ -90,7 +90,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
    c. Docker를 배포하는 데 사용할 머신의 **호스트 IP 주소**를 입력합니다. 호스트 이름을 확인할 DNS 서버(또는 이와 동등한)가 있으면 호스트 IP 주소를 컴퓨터 이름으로 바꿀 수 있습니다.
 
-   d. 수집기에 연결할 모든 **데이터 원본**을 선택하고 **업데이트**를 클릭하여 구성을 저장한 후 다음 배포 단계를 확인합니다.
+   d. 수집기에 연결할 **데이터 소스**를 모두 선택하고 **업데이트**를 클릭하여 구성을 저장한 후, 다음 배포 단계를 확인합니다.
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -100,11 +100,11 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
 4. 추가 배포 정보가 표시됩니다. 대화 상자의 실행 명령을 **복사**합니다. 클립보드에 복사 아이콘을 사용할 수 있습니다. ![클립보드 아이콘으로 복사](./media/copy-icon.png) 이 항목이 나중에 필요합니다.
 
-5. 예상 데이터 원본 구성 **내보내기**를 수행합니다. 이 구성에서는 어플라이언스에서 로그 내보내기를 설정하는 방법을 설명합니다.
+5. 예상 데이터 소스 구성 **내보내기**를 수행합니다. 이 구성에서는 어플라이언스에서 로그 내보내기를 설정하는 방법을 설명합니다.
 
    ![로그 수집기 만들기](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>2단계 - 컴퓨터의 온-프레미스 배포
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>2단계 - 컴퓨터 온-프레미스 배포
 다음 단계에서는 Windows에서 배포를 설명합니다. 다른 플랫폼의 경우 배포 단계가 약간 다릅니다.
 
 1. Windows 머신에서 관리자 권한으로 PowerShell 터미널을 엽니다.
@@ -116,7 +116,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 3. PowerShell 스크립트를 실행하도록 설정하려면 `Set-ExecutionPolicy RemoteSigned`를 실행합니다.
 
 4. `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`을 실행합니다.<br>
-그러면 머신에 Docker 클라이언트를 설치합니다. 로그 수집기 컨테이너가 설치되는 동안 머신을 두 번 다시 시작하고 다시 로그인해야 합니다.
+그러면 머신에 Docker 클라이언트를 설치합니다. 로그 수집기 컨테이너가 설치되는 동안 머신을 두 번 다시 시작하고 다시 로그인해야 합니다. **Docker 클라이언트를 Linux 컨테이너를 사용 하도록 설정 되어 있는지 확인 합니다.**
 
 5. 설치 관리자를 저장한 디렉터리에서 다시 시작할 때마다 `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`을 다시 실행합니다.<br>  
 
@@ -145,7 +145,7 @@ Windows의 Docker를 사용하여 Cloud App Security의 연속 보고서용 자�
 
  ![ubuntu9](./media/ubuntu9.png)
 
-**거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인할 수도 있습니다.
+**거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되는지 확인합니다.
 
 배포하는 동안 문제가 발생한 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 

@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: ad619e9d8d1503fc91b4e52b0b11bfaf22b8124e
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904314"
 ---
 # <a name="manage-admin-access"></a>관리자 액세스 관리
 
@@ -91,7 +91,7 @@ Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니�
   - 보안 확장 - 권한 없음
   - 거버넌스 작업 - Cloud Discovery 관련 작업만
 
-- **Cloud Discovery 보고서 관리자:** 선택한 특정 Cloud Discovery 보고서를 단독으로 처리 하는 Microsoft Cloud App Security에서 모든 데이터를 보려는 권한이 부여 됩니다. 예를 들어 권한을 제공할 수 있습니다 누군가가 관리 연속 보고서에 Windows Defender ATP에서. 검색 관리자 앱 카탈로그에 해당 데이터 원본에 연결 하는 Cloud Discovery 데이터만 표시 됩니다.
+- **Cloud Discovery 보고서 관리자:** 선택한 특정 Cloud Discovery 보고서를 단독으로 처리 하는 Microsoft Cloud App Security에서 모든 데이터를 보려는 권한이 부여 됩니다. 예를 들어 권한을 제공할 수 있습니다 누군가가 관리 연속 보고서에 Microsoft Defender ATP에서. 검색 관리자 앱 카탈로그에 해당 데이터 원본에 연결 하는 Cloud Discovery 데이터만 표시 됩니다.
 이 관리자에는에 대 한 액세스를 사용 해야 합니다.는 **활동** 또는 **파일** 페이지 및 정책에 대 한 액세스를 제한 합니다.
 
 - **전역 판독기:** Microsoft Cloud App Security의 모든 측면에 전체 읽기 전용으로 액세스할 수 있습니다. 설정을 변경 하거나 어떠한 작업도 수행할 수 없습니다.
