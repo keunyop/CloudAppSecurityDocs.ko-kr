@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/28/2019
+ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 48ec0ce810023dde3bd4866e23ec0c5078a158dc
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904263"
 ---
-# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>자습서: 네트워크의 섀도 IT 검색 및 관리
+# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>자습서: 네트워크의 섀도 IT 검색 및 관리 
 
 *적용 대상: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ IT 관리자에게 직원이 사용하는 클라우드 앱의 수를 질문할 �
     
 1. **섀도 IT 검색**: 조직에서 Cloud Discovery를 실행하여 네트워크의 실제 상황을 확인함으로써 조직의 보안 상태를 식별합니다. 자세한 내용은 [클라우드 검색 설정](set-up-cloud-discovery.md)을 참조하세요. 이는 다음 방법 중 하나를 사용하여 수행할 수 있습니다.
    
-    - [Windows Defender ATP](wdatp-integration.md)와의 통합을 통해 Cloud Discovery를 빠르게 시작하고 실행할 수 있습니다. 이 네이티브 통합을 통해 네트워크 켜고 끄기, Windows 10 디바이스 전반의 클라우드 트래픽에 대한 데이터 수집을 즉시 시작할 수 있습니다.
+    - [Microsoft Defender ATP](wdatp-integration.md)와의 통합을 통해 Cloud Discovery를 빠르게 시작하고 실행할 수 있습니다. 이 네이티브 통합을 통해 네트워크 켜고 끄기, Windows 10 디바이스 전반의 클라우드 트래픽에 대한 데이터 수집을 즉시 시작할 수 있습니다.
    
     - 네트워크에 연결된 모든 디바이스의 범위를 보려면 방화벽 및 기타 프록시에 [Cloud App Security 로그 수집기](discovery-docker.md)를 배포하여 엔드포인트에서 데이터 수집 및 분석을 위해 Cloud App Security로 보내는 것이 중요합니다.
 

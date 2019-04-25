@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 977afbb5126e2f225ff4f89b2f6c353b166c2d27
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 568bfa46ec52bc4f20a3981fc627467d2bb3cab0
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904382"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>빠른 시작: Microsoft Cloud App Security 시작하기
 
@@ -84,7 +84,7 @@ Cloud App Security 포털에 액세스하려면 [https://portal.cloudappsecurity
 
 필요한 작업: 클라우드 앱 사용을 볼 수 있도록 Cloud App Security 설정
 
-1. Cloud App Security가 자동으로 회사 내부 및 외부에서 Windows 10 장치를 모니터링할 수 있도록 [Windows Defender ATP와 통합](wdatp-integration.md)합니다.
+1. Cloud App Security가 자동으로 회사 내부 및 외부에서 Windows 10 디바이스를 모니터링할 수 있도록 [Microsoft Defender ATP와 통합](wdatp-integration.md)합니다.
 2. Zscaler를 사용하는 경우 Cloud App Security와 [Zscaler를 통합](zscaler-integration.md)합니다.
 3. 전체적으로 적용하려면 연속 Cloud Discovery 보고서를 만듭니다.
 

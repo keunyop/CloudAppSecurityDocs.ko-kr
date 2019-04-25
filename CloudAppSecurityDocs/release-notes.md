@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: eecaede1b31fd6bebab6d877a81ec582328fff5b
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904348"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -59,7 +59,7 @@ Microsoft Cloud App Security는 이제 Azure AD Global Reader 역할을 지원�
 
 릴리스 날짜: 2019년 3월 17일
 
-- **Windows Defender ATP 통합이 이제 출시되었습니다.**: <br>
+- **Microsoft Defender ATP 통합이 이제 GA임** <br>
 작년에 조직의 섀도 IT 검색을 향상시키며 회사 네트워크를 넘어 확장하는 [Windows Defender Advanced Threat Protection 확장](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)을 발표했습니다. [한 번의 클릭으로 사용할 수 있으며](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), 이 고유한 통합 출시를 발표하게 되어 기쁩니다.
 - **Dynamics 365 지원** <br>Cloud App Security는 사용자가 비즈니스 애플리케이션과 이 앱에 저장된 중요 콘텐츠를 보호할 수 있도록 실시간 모니터링 및 Dynamics 365를 위한 컨트롤을 추가했습니다. 
 
@@ -219,7 +219,7 @@ Cloud App Security는 이제 앱 권한이 있는 사용자의 그룹 멤버 자
     - 세션 내에서 사용자 의견 제공: 이 새로운 도구를 사용하면 세션 내에서 직접 세션 제어 중인 애플리케이션 성능에 대한 의견을 Cloud App Security 팀에 제공할 수 있습니다.
 
 
-- **회사 외부의 Shadow IT Discovery를 위해 Windows Defender ATP와 네이티브 통합**
+- **회사 외부의 Shadow IT Discovery를 위해 Microsoft Defender ATP와 네이티브 통합**
     - 이제 Microsoft Cloud App Security는 회사 네트워크 내부 및 외부에서 클라우드 앱을 사용할 수 있도록 하는 배포 없는 Shadow IT Discovery 기능을 제공하기 위해 Windows Defender ATP(Advanced Threat Protection)와 기본적으로 통합됩니다.  이렇게 하면 회사 네트워크 외부에 있을 때도 머신에서 Cloud Discovery를 수행할 수 있습니다. 또한 머신 기반 조사도 사용할 수 있습니다. 위험한 사용자를 식별한 후에는 해당 사용자가 액세스한 모든 머신에서 잠재적인 위험을 확인할 수 있습니다. 위험한 머신을 식별한 후에는 해당 머신을 사용한 모든 사용자의 잠재적 위험을 조시할 수 있습니다. 자세한 내용은 [Microsoft Cloud App Security](wdatp-integration.md) 에 Windows Defender Advanced Threat Protection 통합 을 참조하세요.
 - **암호화된 파일에 대한 콘텐츠 검사**
     - 이제 Cloud App Security는 콘텐츠에서 Azure Information Protection을 사용하여 보호된 암호화된 파일을 조사하도록 지원합니다. 이제 재분류를 제안하기 위해 이러한 암호화된 파일을 조사하고, 추가적인 DLP 노출 및 보안 정책 위반을 식별할 수 있습니다. 
