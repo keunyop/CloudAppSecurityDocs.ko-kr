@@ -1,76 +1,70 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: a2120eeec08bd7be58d883c87a039ab2d7733a87
-ms.sourcegitcommit: a592f734a803493e9dd10e632922e68f9760b93e
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56090973"
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
-  description: 심층적 가시성, 포괄적인 제어 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 Microsoft Cloud App Security를 통해 클라우드 앱에 엔터프라이즈급 보안을 제공합니다.
-  author: msmbaldwin
-  manager: barbkess
+  description: '심층적 가시성, 포괄적인 제어 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 Microsoft Cloud App Security를 통해 클라우드 앱에 엔터프라이즈급 보안을 제공합니다.'
+  author: rkarlin
+  manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
+  ms.date: 06/05/2019
+  ms.author: rkarlin
   layout: LandingPage
 abstract:
-  description: 심층적 가시성, 포괄적인 컨트롤 및 클라우드 보안 문제에 대해 강화된 보호 기능을 위해 MCAS(Microsoft Cloud App Security)는 클라우드 앱에 엔터프라이즈급 보안을 제공하여 클라우드 애플리케이션에 온-프레미스 시스템의 보안을 가져옵니다.
+  description: 'Microsoft Cloud App Security는 클라우드 액세스 보안 브로커 (CASB) 여러 클라우드에서 작동 하는 경우 다양 한 표시 유형, 데이터 이동 및 정교한 분석을 식별 하 여 모든 클라우드 서비스에서 사이버 위협 방지에 대 한 제어를 제공 합니다.'
 sections:
-- title: 자세한 정보
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
+  - title: 자세한 정보
     items:
-    - title: Microsoft Cloud App Security에 대해 자세히 알아봅니다.
-      href: what-is-cloud-app-security.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        href: what-is-cloud-app-security.md
-    - title: MCAS 데이터 보안 및 개인 정보
-      href: cas-compliance-trust.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-        href: cas-compliance-trust.md
-    - title: MCAS의 새로운 기능
-      href: release-notes.md
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        href: release-notes.md
-    - title: Cloud App Security를 포함하는 완전한 솔루션인 Microsoft 365 탐색
-      href: https://docs.microsoft.com/microsoft-365/
-      image:
-        src: /office/media/icons/caret-right-blue.svg
-        href: https://docs.microsoft.com/microsoft-365/
-- title: 5분 빠른 시작
-  items:
-  - type: paragraph
-    text: Microsoft Cloud App Security의 기본 사항에 대해 알아봅니다.
-  - type: list
-    style: icon48
+      - type: list
+        style: cards
+        className: cardsFTitle
+        items:
+          - title: Microsoft Cloud App Security에 대해 자세히 알아봅니다.
+            href: what-is-cloud-app-security.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+              href: what-is-cloud-app-security.md
+          - title: MCAS 데이터 보안 및 개인 정보
+            href: cas-compliance-trust.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+              href: cas-compliance-trust.md
+          - title: MCAS의 새로운 기능
+            href: release-notes.md
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+              href: release-notes.md
+          - title: Cloud App Security를 포함하는 완전한 솔루션인 Microsoft 365 탐색
+            href: 'https://docs.microsoft.com/microsoft-365/'
+            image:
+              src: /office/media/icons/caret-right-blue.svg
+              href: 'https://docs.microsoft.com/microsoft-365/'
+  - title: 5분 빠른 시작
     items:
-    - image:
-        src: https://docs.microsoft.com/media/common/i_design.svg
-      text: Microsoft Cloud App Security 시작하기
-      href: getting-started-with-cloud-app-security.md
-    - image:
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: 검색된 앱 사용
-      href: discovered-apps.md
-- title: 단계별 자습서
-  items:
-  - type: paragraph
-    text: 이러한 자습서를 사용하여 경고를 이해하고 조사를 수행하는 방법을 알아봅니다.
-  - type: list
-    style: unordered
+      - type: paragraph
+        text: Microsoft Cloud App Security의 기본 사항에 대해 알아봅니다.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_design.svg'
+            text: Microsoft Cloud App Security 시작하기
+            href: getting-started-with-cloud-app-security.md
+          - image:
+              src: 'https://docs.microsoft.com/media/common/i_event.svg'
+            text: 검색된 앱 사용
+            href: discovered-apps.md
+  - title: 단계별 자습서
     items:
-    - html: <a href="/cloud-app-security/tutorial-shadow-it">네트워크의 섀도 IT 검색 및 관리</a>
-    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">중요한 정보의 다운로드 차단</a>
-    - html: <a href="/cloud-app-security/use-case-admin-quarantine">관리자 격리를 사용하여 파일 보호</a>
-    - html: <a href="/cloud-app-security/use-case-information-protection">Azure Information Protection 분류 레이블 적용</a>
+      - type: paragraph
+        text: 이러한 자습서를 사용하여 경고를 이해하고 조사를 수행하는 방법을 알아봅니다.
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/cloud-app-security/tutorial-shadow-it">네트워크의 섀도 IT 검색 및 관리</a>
+          - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">중요한 정보의 다운로드 차단</a>
+          - html: <a href="/cloud-app-security/use-case-admin-quarantine">관리자 격리를 사용하여 파일 보호</a>
+          - html: <a href="/cloud-app-security/use-case-information-protection">Azure Information Protection 분류 레이블 적용</a>

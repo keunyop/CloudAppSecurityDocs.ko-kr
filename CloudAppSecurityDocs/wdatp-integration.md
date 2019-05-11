@@ -1,6 +1,6 @@
 ---
 title: Cloud App Security를 사용 하 여 Microsoft Defender ATP 통합
-description: 이 문서에서는 Shadow IT 및 위험 관리에 대한 가시성을 향상시키기 위해 Cloud App Security와 Windows Defender Advanced Threat Protection을 통합하는 방법을 설명합니다.
+description: 이 문서에서는 Cloud App Security를 사용 하 여 섀도 IT 및 위험 관리에 대 한 향상 된 가시성에 대 한 Microsoft Defender Advanced Threat Protection을 통합 하는 방법을 설명 합니다.
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -15,18 +15,18 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7c704f492212befcf8678d7a74e2b8492807cf7b
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: 73626047f44a5b50538d37a34c45e251186410cc
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904246"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047770"
 ---
-# <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Windows Defender Advanced Threat Protection 통합
+# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security를 사용 하 여 Microsoft Defender Advanced Threat Protection 통합
 
 *적용 대상: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security는 기본적으로 Windows Defender ATP(Advanced Threat Protection)와 통합됩니다. 통합을 통해 Cloud Discovery의 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 외부로 확장하고, 머신 기반 조사를 사용하도록 설정합니다. [Windows Defender ATP(Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)는 지능적인 보호, 감지, 조사 및 대응을 위한 보안 플랫폼입니다. Microsoft Defender ATP 사이버 위협 으로부터 보호 하는 끝점, 고급 공격 및 데이터 위반을 검색, 보안 인시던트, 자동화 및 보안 상태를 개선 합니다.
+Microsoft Cloud App Security는 기본적으로 사용 하 여 Microsoft Defender ATP Advanced Threat Protection ()를 통합합니다. 통합을 통해 Cloud Discovery의 롤아웃을 간소화하고, Cloud Discovery 기능을 회사 네트워크 외부로 확장하고, 머신 기반 조사를 사용하도록 설정합니다. [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 는 지능형 보호, 검색, 조사 및 응답에 대 한 보안 플랫폼입니다. Microsoft Defender ATP 사이버 위협 으로부터 보호 하는 끝점, 고급 공격 및 데이터 위반을 검색, 보안 인시던트, 자동화 및 보안 상태를 개선 합니다.
 
 Microsoft Cloud App Security는 클라우드 앱 및 Windows 10 IT 관리 컴퓨터에서 액세스 하는 서비스에 대 한 Microsoft Defender ATP에서 수집 되는 트래픽 정보를 사용 합니다. 이 통합을 통해 회사 네트워크의 머신에서 Cloud Discovery를 실행하고, 로밍하는 동안 원격 액세스를 통해 공용 Wi-Fi를 사용할 수 있습니다. 머신 기반 조사를 사용할 수도 있습니다.
 

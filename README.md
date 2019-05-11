@@ -1,7 +1,15 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 오픈 소스 규정
+---
+ms.openlocfilehash: 91e5db9c6bc17854c7edbbf6bb0581e5e4b30712
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047850"
+---
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source Code of Conduct(Microsoft 오픈 소스 규정)
 
-이 프로젝트에서는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정)를 채택했습니다.
-자세한 내용은 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)(규정 FAQ)를 참조하세요. 또는 추가 질문이나 의견은 [opencode@microsoft.com](mailto:opencode@microsoft.com)으로 문의하세요.
+이 프로젝트는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정)를 채택합니다.
+자세한 내용은 [규정 FAQ](https://opensource.microsoft.com/codeofconduct/faq/)을 참조하고 추가 질문이나 의견은 [ opencode@microsoft.com ](mailto:opencode@microsoft.com)으로 보내주세요.
 
 # <a name="docsmicrosoftcom-github-repository"></a>Docs.microsoft.com Github 리포지토리
 

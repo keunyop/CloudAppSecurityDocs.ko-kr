@@ -4,8 +4,8 @@ description: 이 항목에서는 앱 위험 점수 작업을 포함하여 Cloud 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282310"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047783"
 ---
 # <a name="working-with-discovery-data"></a>검색 데이터 작업
 
@@ -62,7 +62,7 @@ Cloud Discovery 앱의 일반적인 그림을 가져오려면 먼저 Cloud Disco
 
 사용자 지정 연속 보고서는 조직의 Cloud Discovery 로그 데이터를 모니터링할 때 더 많은 세분성을 제공합니다. 사용자 지정 보고서를 만들면 특정 지리적 위치, 네트워크 및 사이트 또는 조직 구성 단위를 기준으로 필터링할 수 있습니다. 기본적으로 다음과 같은 보고서만 Cloud Discovery 보고서 선택기에 표시 됩니다.  
   
-- **전역 보고서**는 로그에 포함한 모든 데이터 원본의 모든 정보를 포털에서 통합합니다.  
+- **전역 보고서**는 로그에 포함한 모든 데이터 원본의 모든 정보를 포털에서 통합합니다.  전역 보고서는 Microsoft Defender ATP에서 데이터를 포함 하지 않습니다.
   
 - **데이터 원본 특정 보고서**는 특정 데이터 원본의 정보만 표시합니다.  
   

@@ -1,7 +1,7 @@
 ---
- title: include file description: include file services: active-directory author: eross-msft
+ 제목: 파일 설명 포함: 파일 서비스 포함: active-directory 작성자: eross-msft
  
-ms.service: active-directory ms.topic: include ms.date: 04/24/2018 ms.author: lizross ms.custom: include file
+ms.service: active directory ms.topic: 포함 ms.date: 04/24/2018 ms.author: lizross ms.custom: include file
 ---
 
 >[!Note] 
