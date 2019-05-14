@@ -4,7 +4,7 @@ description: 이 자습서에서는 Azure AD 역방향 프록시 기능을 사�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2aa85bd282344143cd360c35e229ea51edc96a65
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282701"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568453"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>자습서: 중요한 정보의 다운로드 차단 
 
@@ -44,7 +44,7 @@ ms.locfileid: "56282701"
 
 Azure AD 조건부 액세스와 Microsoft Cloud App Security 조건부 액세스 앱 제어를 사용하여 클라우드 앱 사용을 모니터링하고 제어하여 조직을 보호합니다.  
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 유효한 Azure AD Premium P1 라이선스
 - Azure AD에서 클라우드 앱에 대한 SSO 구성  

@@ -4,7 +4,7 @@ description: 이 문서에서는 Azure AD 사용자 이름을 사용하여 Cloud
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67917683d40763be574a20398fe7b5919fef0f5e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: f7e1e2b9035711d0f12f23da8809f470bb2da557
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281426"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567713"
 ---
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery 보강
 
@@ -32,7 +32,7 @@ Azure Active Directory 사용자 이름 데이터를 사용하여 Cloud Discover
 - Azure AD 사용자 그룹을 기반으로 사용자 지정 로그를 만들 수 있습니다. 예를 들어 특정 마케팅 부서에 대한 섀도 IT 보고서를 만들 수 있습니다.
 
 
-## <a name="prerequisites"></a>필수 구성 요소:
+## <a name="prerequisites"></a>필수 조건:
 - 데이터 원본은 사용자 이름 정보를 제공해야 합니다.
 - Office 365 앱 커넥터가 연결되어야 합니다.
 

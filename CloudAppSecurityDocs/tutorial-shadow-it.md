@@ -4,7 +4,7 @@ description: 이 자습서에서는 Microsoft Cloud App Security에서 Azure Inf
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 48ec0ce810023dde3bd4866e23ec0c5078a158dc
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: 669dad9c8ee0fc99f523fe43349ce6b5f2044398
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904263"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568954"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>자습서: 네트워크의 섀도 IT 검색 및 관리 
 

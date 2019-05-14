@@ -4,7 +4,7 @@ description: 이 문서에서는 Azure의 Ubuntu 또는 RHEL에서 Docker를 사
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5acd24e9cd99abaed17c0bdb88f1a4e9825b0b16
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282718"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567988"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure의 Ubuntu 또는 RHEL에서 설정 및 구성
 
@@ -90,7 +90,7 @@ Azure의 Ubuntu 또는 Red Hat Enterprise Linux(RHEL)에서 Docker를 사용하�
 
      c. Docker를 배포하는 데 사용할 머신의 **호스트 IP 주소**를 입력합니다. 호스트 이름을 확인할 DNS 서버(또는 이와 동등한)가 있으면 호스트 IP 주소를 컴퓨터 이름으로 바꿀 수 있습니다.
 
-     d. 수집기에 연결할 모든 **데이터 원본**을 선택하고 **업데이트**를 클릭하여 구성을 저장한 후 다음 배포 단계를 확인합니다.
+     d. 수집기에 연결할 **데이터 소스**를 모두 선택하고 **업데이트**를 클릭하여 구성을 저장한 후, 다음 배포 단계를 확인합니다.
 
       ![ubuntu2](./media/ubuntu2.png)
 
@@ -168,7 +168,7 @@ Azure의 Ubuntu 또는 Red Hat Enterprise Linux(RHEL)에서 Docker를 사용하�
 
  ![ubuntu9](./media/ubuntu9.png)
 
-**거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되고 있는지 확인할 수도 있습니다.
+**거버넌스 로그**로 이동하여 로그가 주기적으로 포털에 업로드되는지 확인합니다.
 
 배포하는 동안 문제가 발생한 경우 [Cloud Discovery 문제 해결](troubleshooting-cloud-discovery.md)을 참조하세요.
 

@@ -4,7 +4,7 @@ description: 이 문서에서는 모든 경고에 대해 목록 및 설명을 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7d11bb2f91142e04d7f9f3df3cd38e8966a5fcce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: e5b144b4c260aa55f3bd6546f76c1802c10631e0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281987"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568905"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Cloud App Security의 경고 모니터링
 
@@ -52,7 +52,7 @@ ms.locfileid: "56281987"
 
 다음과 같은 경고 유형이 표시됩니다. 
 
-|경고 이름|AlertID|설명|
+|경고 이름|AlertID|Description|
 |----|----|----|
 |새 위치|ALERT_GEOLOCATION_NEW_COUNTRY|검색이 시작된 이후(최대 6개월) 새 위치가 검색되었습니다. 이 경고는 전체 조직의 각 국가에 대해 한 번만 표시됩니다. |
 |새 관리자|ALERT_ADMIN_USER|특정 앱에 대해 새 관리자가 검색되었습니다. 이는 한 애플리케이션에서 관리자이면서 이제 다른 애플리케이션에서도 관리자인 사람일 수 있습니다. 이 경고는 특정 관리 유형과 관련되므로 관리 유형이 변경될 때마다 표시됩니다. 사용자가 관리자 권한을 잃었다가 다시 얻게 되면 이 경고가 표시됩니다.|
@@ -64,7 +64,7 @@ ms.locfileid: "56281987"
 
 다음과 같은 경고 유형이 표시됩니다. 
 
-|경고 이름|AlertID|설명|
+|경고 이름|AlertID|Description|
 |----|----|----|
 |의심스러운 활동 경고|ALERT_SUSPICIOUS_ACTIVITY|의심스러운 활동은 비정상적인 활동이 얼마나 의심스러운지 즉, 비활성 계정이 관련되어 있는지, 새 위치에서 시작되는지 등에 따라서 점수가 매겨집니다. 이러한 조건은 모두 함께 계산되어 다음과 같은 위험 요소를 기준으로 위험 점수를 제공합니다. <br>사용자가 관리자임 <br>엄격한 원격 사용자<br>익명 프록시<br> 전체 세션이 실패한 로그인임<br>다양한 실패한 로그인<br>새 요소(관리자)<br>IP/ISP/국가/사용자에 대한 사용자 에이전트/테넌트<br> IP/ISP/국가/(관리자) 사용자만 사용하는 사용자 에이전트<br>잠시 동안의 첫 번째 (관리자) 사용자 활동<br>이 특정 관리 활동이 처음으로 잠시 수행된 경우<br>이 특정 관리 활동이 일반적이지 않은 경우/이전에 수행되지 않은 경우<br>이전에 이 IP에 실패한 로그인만 있는 경우<br>이동 불가능|
 |의심스러운 클라우드 사용 경고|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery 변칙 검색에서는 일반적인 동작의 패턴을 확인하고 비정상적인 방식으로 사용되는 사용자나 앱을 찾습니다. |

@@ -4,7 +4,7 @@ description: 이 문서에서는 조직의 클라우드에서 앱에 대해 API 
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c0c01b0de154528413f05caed780b7995420ba1
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: e03503727b6e79f652c9d3b4ef1df4df57aae816
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830475"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567738"
 ---
 # <a name="connect-apps"></a>앱 연결 
 
@@ -75,7 +75,7 @@ Cloud App Security는 사용자 환경의 모든 개체에 대한 모든 권한�
 > |**권한**|✔|✔|공급자가 지원하지 않음|✔|✔|✔|✔||  
 > |**사용자 거버넌스**|✔|✔||✔|서비스 예정|서비스 예정|서비스 예정||  
 > |**로그온 활동**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**사용자 작업**|✔*|✔|✔|✔-Google Business 또는 Enterprise 필요|부분|Salesforce Shield에서 지원됨|✔|해당 없음|  
+> |**사용자 작업**|✔*|✔|✔|✔-Google Business 또는 Enterprise 필요|부분적으로 지원됨|Salesforce Shield에서 지원됨|✔|해당 없음|  
 > |**관리 활동**|✔|✔|✔|✔|부분|✔|✔|✔|  
 > |**정기적인 파일 검색**|✔|✔|해당 없음|✔|✔|✔|✔|해당 없음|  
 > |**근 실시간 파일 검색**|✔|✔|해당 사항 없음|✔-Google Business 또는 Enterprise 필요|||서비스 예정||  

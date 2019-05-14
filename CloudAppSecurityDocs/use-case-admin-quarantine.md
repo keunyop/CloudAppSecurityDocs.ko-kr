@@ -4,7 +4,7 @@ description: 이 자습서에서는 관리자 격리를 사용하여 데이터 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 71bb83bfbd40f39ebbd58dba6c630a2fee02927c
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282480"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047812"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>자습서: 관리자 격리를 사용하여 파일 보호
 
@@ -42,6 +42,7 @@ ms.locfileid: "56282480"
 >[!NOTE] 
 > - 이것은 미리 보기 기능입니다.
 > - 관리자 격리를 지원하는 앱 목록은 [거버넌스 작업](governance-actions.md) 목록을 참조하세요.
+> - SharePoint 또는 OneDrive의 파일이 멜웨어로 감지되면 Cloud App Security 포털에 격리되지 않습니다. 
 
 1. 파일이 정책과 일치하는 경우 파일에 **관리자 격리** 옵션을 사용할 수 있습니다.
 

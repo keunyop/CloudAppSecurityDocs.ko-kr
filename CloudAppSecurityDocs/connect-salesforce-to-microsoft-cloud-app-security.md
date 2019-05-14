@@ -4,7 +4,7 @@ description: 이 문서에서는 사용에 대한 표시 유형 및 제어를 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3ac3ffcef0dfaaad492c0794eee9841a899b0eb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 16e149d5b79d22c512cd1c318e69b89b2880cace
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281885"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567209"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Microsoft Cloud App Security에 Salesforce 연결
 
@@ -56,7 +56,7 @@ ms.locfileid: "56281885"
     -   다음 확인란이 사용하도록 설정되었는지 확인합니다.   
         - **API 사용**
         - **모든 데이터 보기** 
-        - **Manage Salesforce CRM Content**(Salesforce CRM 콘텐츠 관리)
+        - **Salesforce CRM 콘텐츠 관리**
         - **사용자 관리**
         
         이러한 확인란이 선택되지 않은 경우 Salesforce에 연락하여 계정에 추가해야 할 수 있습니다.  
@@ -115,7 +115,7 @@ Salesforce 이벤트는 Cloud App Security에서 다음과 같이 처리합니�
   
 - 15분마다 로그인 이벤트
 - 15분마다 감사 추적 설정
-- Salesforce 로그가 UTC 시간으로 오전 12시부터 오후 11시 59분까지 24시간 동안 사용 활동을 추적합니다. Salesforce의 이벤트는 실시간으로 로그 데이터를 생성합니다. 그러나 Salesforce는 이벤트가 발생한 그다음 날 사용률이 낮은 시간에 로그 파일을 생성합니다. 따라서 로그 파일 데이터는 이벤트 발생 후 적어도 하루 동안은 사용할 수 없습니다. Salesforce 이벤트에 대한 자세한 내용은 [Using Event Monitoring(이벤트 모니터링 사용)](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)을 참조하세요.
+- Salesforce 로그가 UTC 시간으로 오전 12시부터 사용 활동을 추적합니다. Salesforce의 이벤트는 실시간으로 로그 데이터를 생성합니다. 그러나 사용률이 낮은 시간에는 이벤트가 발생한 그다음 날 Salesforce에 의해 로그 파일이 생성됩니다. 따라서 로그 파일 데이터는 이벤트가 발생한 후 적어도 하루 동안 사용할 수 없습니다. Salesforce 이벤트에 대한 자세한 내용은 [Using Event Monitoring(이벤트 모니터링 사용)](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)을 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계  

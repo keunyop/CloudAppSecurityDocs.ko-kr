@@ -4,7 +4,7 @@ description: 이 문서에서는 Cloud App Security로 연결된 앱의 사용�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb823e9aa13df6710ee3d07ced6b6db97d442eb0
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 7b5ec7e2ce37442b81838f7577cf4e11b260b09d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282225"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568758"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>연결된 앱에서 사용자 그룹 가져오기
 
@@ -54,7 +54,7 @@ API 커넥터를 사용하여 앱을 연결할 때 Microsoft Cloud App Security�
 3. 사용자 그룹을 가져올 앱을 선택합니다. 앱 목록은 배포한 앱 커넥터에 따라 달라집니다.
 4. 가져올 그룹을 선택합니다. 사용 가능한 그룹 목록은 앱 자체의 모든 기존 사용자 그룹 목록이 됩니다. 새 그룹을 추가하려는 경우 앱 자체에서 직접 추가해야 합니다. 그런 다음, 그룹이 여기의 목록에 표시되면 선택합니다.
 5. 그룹의 크기에 따라 가져오는 데 최대 1시간이 걸릴 수 있습니다. 가져오기 프로세스가 완료되면 메일 알림을 받는 옵션을 선택할 수 있습니다.
-6. 클릭 **가져오기**합니다. 그룹을 가져온 후 Cloud App Security에서 Active Directory Connect처럼 자동으로 그룹 구성원을 동기화합니다.
+6. **가져오기**를 클릭합니다. 그룹을 가져온 후 Cloud App Security에서 Active Directory Connect처럼 자동으로 그룹 구성원을 동기화합니다.
 7. 가져오기가 완료되면 **User groups**(사용자 그룹) 페이지에서 특정 그룹을 클릭하여 그룹의 모든 구성원 목록을 볼 수 있습니다. 그룹의 멤버를 클릭하여 특정 계정의 세부 정보를 드릴다운합니다. 사용하는 앱 및 사용자 및 해당 작업의 그래프 등 계정의 요약을 볼 수 있습니다.
 
 그룹을 가져오면 **활동 로그**에서 조사하고 정책을 만들 때 해당 그룹을 필터로 선택할 수 있습니다. 

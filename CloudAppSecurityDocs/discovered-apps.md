@@ -4,7 +4,7 @@ description: 이 빠른 시작에서는 Cloud App Security에서 위험한 클�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 61e1c434c6726c58f4abffe190ce0911ec03730e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 364099f030e2f921c03ce7c47ea26dd14f5a25af
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281267"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047727"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>빠른 시작: 검색된 앱 사용
 
@@ -94,7 +94,7 @@ Cloud Discovery 임원 보고서를 생성하려면:
 
 사용자 지정 연속 보고서는 조직의 Cloud Discovery 로그 데이터를 모니터링할 때 더 많은 세분성을 제공합니다. 사용자 지정 보고서를 만들면 특정 지리적 위치, 네트워크 및 사이트 또는 조직 구성 단위를 기준으로 필터링할 수 있습니다. 기본적으로 다음과 같은 보고서만 Cloud Discovery 보고서 선택기에 표시 됩니다.  
   
-- **전역 보고서**는 로그에 포함한 모든 데이터 원본의 모든 정보를 포털에서 통합합니다.  
+- **전역 보고서**는 로그에 포함한 모든 데이터 원본의 모든 정보를 포털에서 통합합니다.  전역 보고서는 Microsoft Defender ATP의 데이터를 포함하지 않습니다.
   
 - **데이터 원본 특정 보고서**는 특정 데이터 원본의 정보만 표시합니다.  
   

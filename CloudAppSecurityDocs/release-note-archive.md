@@ -4,7 +4,7 @@ description: 이 문서는 Cloud App Security의 이전 릴리스에서 만들�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e274776fce369037e3688c1ef66f0002ca121c6
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 30cf7145006156cddce444fb2365f8691fe3eb07
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282276"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568586"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 이전 릴리스 아카이브
 
@@ -176,7 +176,7 @@ ms.locfileid: "56282276"
 
 **알림:**
 
-- 클라우드 앱 카탈로그가 이제 15,000개가 넘는 검색 가능한 앱 지원
+- 클라우드 앱 카탈로그는 이제 15,000개 이상의 검색 가능한 앱을 지원합니다.
 - 규정 준수: Cloud App Security는 Azure에서 공식적으로 SOC1/2/3 인증을 했습니다. 전체 인증 목록을 보려면 [규정 준수 제안](https://www.microsoft.com/trustcenter/compliance/complianceofferings)을 참조하거나 Cloud App Security 결과를 필터링하세요.
 
 **기타 향상된 기능:** 

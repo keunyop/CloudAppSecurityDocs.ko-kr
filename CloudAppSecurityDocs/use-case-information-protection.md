@@ -4,7 +4,7 @@ description: 이 자습서에서는 Microsoft Cloud App Security에서 Azure Inf
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9f5b07951f96481198244dbcdc9d7025d89cc845
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: f3c3afbf03acca812b47388c956ab22dbffd5dd0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830441"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568742"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>자습서: Azure Information Protection 분류 레이블 자동 적용
 
@@ -49,7 +49,7 @@ Cloud App Security와 Azure Information Protection을 통합하면 파일을 자
 
 Azure Information Protection과 함께 Cloud App Security를 사용하여 데이터에 수반되는 영구 보호에 대한 분류 및 보호 정보가 포함되게 함으로써 저장 위치 또는 공유 대상에 관계 없이 해당 데이터를 보호합니다. 이 보호를 사용하면 동료, 고객 및 파트너와도 안전하게 데이터를 공유할 수 있습니다. 데이터에 액세스할 수 있는 사용자 및 수행할 수 있는 내용을 정의합니다. 예를 들어, 사용자가 파일을 보고 편집할 수 있지만 인쇄하거나 전달할 수 없게 합니다. 제거 협력자 및 제거 공유 기능 등 Cloud App Security에서 파일에 지원되는 다른 [거버넌스 작업](governance-actions.md)을 추가할 수도 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - 테넌트에서 [Cloud App Security 및 Azure Information Protection을 사용하도록 설정](azip-integration.md)합니다.
 - Cloud App Security에 [Box를 연결](connect-box-to-microsoft-cloud-app-security.md)합니다.

@@ -4,7 +4,7 @@ description: 이 문서에서는 콘텐츠 검사 상태 목록과 해당 상태
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3e3866b8cef8ae5b711145ffa104de88aed419e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 8e7c4de4407c476282db832f6d4aa60b0e987e1c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281375"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568423"
 ---
 # <a name="troubleshooting-content-inspection"></a>콘텐츠 검사 문제 해결
 
@@ -32,10 +32,10 @@ ms.locfileid: "56281375"
 
 표에서는 각 콘텐츠 검사 상태 및 해당 설명을 나열합니다.
 
-|콘텐츠 검사 상태|설명|
+|콘텐츠 검사 상태|Description|
 |----|----|
 |완료|콘텐츠 검사가 완료되었습니다.|
-|해당 없음|이 파일에는 콘텐츠 검사가 적용되지 않습니다. 정책에 이 파일의 콘텐츠 검사가 필요하지 않거나 파일 형식이 지원되지 않기 때문에 이 상태가 표시될 수 있습니다.|
+|해당 사항 없음|이 파일에는 콘텐츠 검사가 적용되지 않습니다. 정책에 이 파일의 콘텐츠 검사가 필요하지 않거나 파일 형식이 지원되지 않기 때문에 이 상태가 표시될 수 있습니다.|
 |Pending|파일이 현재 콘텐츠 검사 큐에 있습니다.|
 |실패: 다운로드 오류|Microsoft Cloud App Security에서 검사할 파일을 다운로드하지 못했습니다.|
 |실패: 파일이 암호화됨|파일의 암호를 해독할 수 없습니다.|
@@ -50,7 +50,7 @@ ms.locfileid: "56281375"
 > [!NOTE]
 > 검색 상태에 대시가 표시되는 경우 검색할 파일이 큐에 대기 되지 않은 것입니다. 콘텐츠 검사 정책을 설정하는 방법에 대한 자세한 내용은 [파일 정책](data-protection-policies.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [클라우드 환경을 보호하는 일상적인 활동](daily-activities-to-protect-your-cloud-environment.md)   
 
 [프리미어 고객은 프리미어 포털에서 직접 새 지원 요청을 만들 수도 있습니다.](https://premier.microsoft.com/)  

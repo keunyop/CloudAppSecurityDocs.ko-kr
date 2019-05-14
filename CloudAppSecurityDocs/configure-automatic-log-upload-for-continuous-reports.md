@@ -4,7 +4,7 @@ description: 이 문서에서는 자동 Cloud Discovery 보고서를 만들기 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88e84e64bb93d39f83296b77ce83bde4738ba715
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 5cd93f4a98572af44b17515ac6bd0c4ed94e789f
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282004"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567691"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>가상 어플라이언스에서 연속 보고서에 대한 자동 로그 업로드 구성 - 사용되지 않음
 
@@ -101,7 +101,7 @@ ms.locfileid: "56282004"
   
 8. **기존 가상 하드 디스크 사용**을 선택합니다. 다운로드한 Zip 파일에 포함된 **.vhd** 파일을 선택합니다.  
   
-9. **다음** 을 클릭하고 **마침**을 클릭합니다.  
+9. **다음** , **마침**을 차례로 클릭합니다.  
    컴퓨터가 Hyper-V 환경에 추가됩니다.  
   
 10. **Virtual Machines** 테이블에서 컴퓨터를 클릭한 다음 **시작**을 클릭합니다.   

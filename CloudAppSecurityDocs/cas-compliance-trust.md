@@ -4,7 +4,7 @@ description: 이 문서에서는 Cloud App Security 규정 준수 제품, 신뢰
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/01/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26a199d0e92c48258b49ef69ddf0473584c54287
-ms.sourcegitcommit: 0b913d3a91e236d60ac8aede566cfd9a4f757abd
+ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305884"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568136"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security 데이터 보안 및 개인 정보
 
@@ -48,7 +48,7 @@ Microsoft Cloud App Security는 다음을 비롯한 대부분의 국제 및 산�
 |![로고 csa](./media/csastar-attest.png)|CSA STAR 증명|Azure 및 Intune은 독립적인 감사에 따라 Cloud Security Alliance STAR 증명을 획득했습니다.|
 |![로고 csa](./media/csastar.png)|CSA STAR 인증|Azure, Intune 및 Power BI는 Cloud Security Alliance STAR 인증의 골드 레벨을 획득했습니다.|
 |![로고 EU 모범 조항](./media/eu-model-icon.png)|[EU 모범 조항](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft는 EU 표준 계약 조항을 제공하며, 개인 데이터의 전송을 보장합니다.|
-|![로고 개인 정보 보호](./media/privacy_shield.png)|EU-U.S. 개인 정보 보호|Microsoft는 EU에서 미국으로 전송되는 개인 데이터를 보호하기 위해 이 체계를 준수합니다.|
+|![로고 개인 정보 보호](./media/privacy_shield.png)|EU-미국 개인 정보 보호|Microsoft는 EU에서 미국으로 전송되는 개인 데이터를 보호하기 위한 이 체계를 준수합니다.|
 |![로고 FISC](./media/logo_fisc.png)|FISC|Microsoft는 일본의 FISC(Financial Industry Information Systems) v8 표준 요구 사항을 충족합니다.|
 |![로고 HIPAA](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft는 HIPAA(Health Insurance Portability &amp; Accountability Act) BAA(Business Associate Agreement)를 제공합니다.|
 |![로고 iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft는 이러한 품질 관리 표준의 구현에 대한 인증을 받았습니다.|

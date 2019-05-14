@@ -4,7 +4,7 @@ description: 이 문서에서는 Cloud App Security에서 더 이상 사용되�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 332b345f818e3b43846f29f1bb0952cd6dae4987
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: e662c7fecbc20a16b3709e6e603954d74771a6fd
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281868"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567488"
 ---
 # <a name="how-to-find-built-in-deprecating-reports"></a>더 이상 사용되지 않는 기본 제공 보고서를 찾는 방법
 

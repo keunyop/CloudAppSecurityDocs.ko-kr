@@ -4,7 +4,7 @@ description: 이 문서에서는 API 앱 커넥터 오류 메시지 목록과 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: abb1622c3cd88120dc9ad748ef8fa0c5fa2d9b43
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: acdb5bee55a296af2886c39010ce524a39de5f2d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282089"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568503"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>오류 메시지를 사용하여 앱 커넥터 문제 해결
 
@@ -35,7 +35,7 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 
 > [!div class="mx-tableFixed"]
 > 
-> |오류 메시지|관련 앱|설명|해결 방법|
+> |오류 메시지|관련 앱|Description|해결 방법|
 > |----|----|----|------------|
 > |HttpRequestFailure: 서버에서 반환함: 400 잘못된 요청: {"error":{"code":"AF20012","message":"지정된 테넌트 ID(Tenant_ID 위치)가 시스템에서 잘못 구성되었습니다."|Office 365 |할당된 Office 365 라이선스가 없습니다. |테넌트에 하나 이상의 Office 365 라이선스를 할당하세요.| 
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"잘못된 새로 고침 토큰"}|상자|Box 새로 고침 토큰이 잘못되었습니다.|프로세스에 따라 Box를 Cloud App Security에 다시 연결하세요.|
@@ -63,7 +63,7 @@ API 앱 커넥터를 사용하여 클라우드 앱에 연결하려고 할 때 �
 > |HttpRequestFailure: 서버에서 반환함: 404 찾을 수 없음|Exchange Online|Exchange Online에 로그인하는 데 사용하는 사용자에게 Exchange Online의 기본 사서함이 없습니다(예: Azure AD에 존재하지 않는 사용자 또는 Azure AD에 존재하지만 Exchange Online 라이선스가 없는 사용자).|프로세스에 따라 새 관리자 계정을 사용하여 Exchange Online을 Cloud App Security에 다시 연결하세요.|
 > |NullPointerException|AWS|내부 오류|기술 지원 서비스에 문의하십시오.|
 > |HttpRequestFailure: 서버에서 반환함: 500 내부 서버 오류|모든 앱|앱에서 오류가 발생했습니다.|앱의 상태를 확인하세요.|
-> |서비스 시간 초과|모든 앱|Cloud App Security와 앱 간의 연결에서 시간 초과가 검색되었습니다. 이 오류는 앱의 문제 때문일 수 있습니다.|나중에 다시 시도하세요.|
+> |서비스 시간 초과|모든 앱|Cloud App Security와 앱 간의 연결에서 시간 초과가 검색되었습니다. 이 오류는 앱의 문제 때문일 수 있습니다.|나중에 다시 시도하십시오.|
 
 ## <a name="next-steps"></a>다음 단계
 

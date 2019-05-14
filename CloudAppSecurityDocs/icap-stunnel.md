@@ -4,7 +4,7 @@ description: 이 문서에서는 Cloud App Security 및 stunnel 설정에서 ICA
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5eb92181f0c05b0659b4e157c1e5188103ae680e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 731a2593972754ac95dd39b16b0c7529783c2636
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281681"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568247"
 ---
 # <a name="external-dlp-integration"></a>외부 DLP 통합
 
@@ -44,7 +44,7 @@ Cloud App Security는 Azure에서 실행되므로 Azure에 배포하면 성능�
 Cloud App Security에서 stunnel을 통해 데이터를 ICAP 서버에 전송하려면 동적 소스 포트 번호를 통해 Cloud App Security에서 사용되는 외부 IP 주소로 DMZ 방화벽을 엽니다. 
 
 1.  원본 주소: [필수 구성 요소에 따라 앱 연결](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites) 참조
-2.  원본 TCP 포트: 동적
+2.  원본 TCP 포트: Dynamic
 3.  대상 주소: 다음 단계에서 구성할 외부 ICAP 서버에 연결된 stunnel의 하나 또는 두 개의 IP 주소
 4.  대상 TCP 포트: 네트워크에서 정의된 대로
 
@@ -217,7 +217,7 @@ IP 테이블에 대한 업데이트를 영구적으로 설정하려면 다음 �
 
 2. 더하기를 클릭하여 새 연결을 추가합니다. 
 
-3. **Add new external DLP**(새 외부 DLP 추가) 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
+3. **새 외부 DLP 추가** 마법사에서 커넥터를 식별하는 데 사용할 **연결 이름**(예: 내 Forcepoint 커넥터)을 제공합니다.
 
 4. **연결 형식**을 선택합니다.
     - **Symantec Vontu** – Vontu DLP 어플라이언스에 사용자 지정 통합을 사용합니다.
@@ -247,7 +247,7 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
 
     ![ICAP 배포](./media/icap-system-modules.png)
 
-2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **Allow connection to this ICAP Server from the following IP addresses**(다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용)에서 **모든 IP 주소**를 선택합니다.
+2.  **일반** 탭에서 **ICAP 서버**가 **사용**으로 설정되고 기본 **포트**가 **1344**로 설정되어 있는지 확인합니다. 또한 **다음 IP 주소에서 이 ICAP 서버에 대한 연결 허용**에서 **모든 IP 주소**를 선택합니다.
  
     ![ICAP 구성](./media/icap-ip-address.png)
 
@@ -256,16 +256,16 @@ ForcePoint에서 다음 단계를 사용하여 어플라이언스를 설정합�
     ![ICAP 차단](./media/icap-blocking.png)
  
 
-## 부록 B: Symantec 배포 가이드 <a name="symantec"></a>
+## 부록 b: Symantec 배포 가이드 <a name="symantec"></a>
 
 지원되는 Symantec DLP 버전은 11 이상입니다. 
 
 위에서 언급한 대로 Cloud App Security 테넌트가 있는 동일한 Azure 데이터 센터에 검색 서버를 배포해야 합니다. 검색 서버는 전용 IPSec 터널을 통해 적용 서버와 동기화됩니다. 
  
 ### <a name="detection-server-installation"></a>검색 서버 설치 
-Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent for Web 서버입니다. 여러 구성 옵션을 변경해야 합니다.
-1. **평가 모드** 사용 안 함:
-   1. **시스템** > **서버 및 탐지기** 아래에서 ICAP 대상을 클릭합니다. 
+Cloud App Security에서 사용되는 검색 서버는 표준 Network Prevent for Web 서버입니다. 다음과 같이 여러 구성 옵션이 변경되어야 합니다.
+1. **평가판 모드**를 사용하지 않도록 설정합니다.
+   1. **시스템** > **서버 및 탐지기**에서 ICAP 대상을 클릭합니다. 
     
       ![ICAP 대상](./media/icap-target.png)
     
@@ -273,9 +273,9 @@ Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent fo
     
       ![ICAP 대상 구성](./media/configure-icap-target.png)
     
-   3. **평가 모드**를 사용하지 않도록 구성합니다.
+   3. **평가판 모드**를 사용하지 않도록 설정합니다.
     
-      ![평가 모드 사용 안 함](./media/icap-disable-trial-mode.png)
+      ![평가판 모드를 사용하지 않도록 설정](./media/icap-disable-trial-mode.png)
     
 2. **ICAP** > **응답 필터링** 아래에서 **다음보다 적은 응답 무시** 값을 1로 변경합니다.
 
@@ -289,21 +289,21 @@ Cloud App Security에서 사용하는 검색 서버는 표준 Network Prevent fo
 ### <a name="policy-configuration"></a>정책 구성
 Cloud App Security는 Symantec DLP에 포함된 모든 검색 규칙 형식을 원활하게 지원하므로 기존 규칙을 바꿀 필요가 없습니다. 하지만 전체 통합을 사용하려면 모든 기존 및 새 정책에 적용되어야 하는 구성 변경 내용이 있습니다. 이 변경 내용은 모든 정책에 대한 특정 응답 규칙의 추가입니다. 
 
-Vontu에 구성 변경 내용 추가:
+Vontu에 구성 변경을 추가하려면 다음을 수행합니다.
 
-1.  **관리** > **정책** > **응답 규칙**으로 이동해서 **응답 규칙 추가**를 클릭합니다.
+1.  **관리** > **정책** > **응답 규칙**으로 이동하여 **응답 규칙 추가**를 클릭합니다.
     
     ![응답 규칙 추가](./media/icap-add-response-rule.png)
 
-2.  **자동화된 응답**을 선택했는지 확인하고 **다음**을 클릭합니다.
+2.  **자동 응답**이 선택되었는지 확인하고 **다음**을 클릭합니다.
 
-    ![자동화된 응답](./media/icap-automated-response.png)
+    ![자동 응답](./media/icap-automated-response.png)
 
 3. 예를 들어 **Block HTTP/HTTPS**와 같은 규칙 이름을 입력합니다. **작업** 아래에서 **Block HTTP/HTTPS**를 선택하고 **저장**을 클릭합니다.
 
     ![http 차단](./media/icap-block-http.png)
 
-만든 규칙을 원하는 기존 정책에 추가합니다.
+만든 규칙을 다음과 같이 모든 기존 정책에 추가합니다.
 
 1. 각 정책에서 **응답** 탭으로 전환합니다.
 

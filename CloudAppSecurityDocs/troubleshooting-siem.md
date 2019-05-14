@@ -4,7 +4,7 @@ description: 이 문서에서는 SIEM을 Cloud App Security에 연결할 때 발
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd9f5ffff1208a3fd6e24954c02b7ba1574d6022
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 47158a4fba1027f4e1ac3bfe0a73b2b1014375e8
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281545"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568797"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>SIEM 에이전트 문제 해결
 
@@ -34,7 +34,7 @@ Microsoft Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오�
 
 에이전트를 실행하는 동안 cmd 프롬프트에 다음 오류 중 하나가 표시되는 경우 다음 단계를 사용하여 문제를 해결하세요.
 
-|Error|설명|해결 방법|
+|Error|Description|해결 방법|
 |----|----|----|
 |부트스트랩 중 일반 오류 발생|에이전트 부트스트랩 중 예기치 않은 오류가 발생했습니다.|지원 담당자에게 문의하세요.|
 |너무 많은 중요한 오류 발생|콘솔을 연결하는 동안 너무 많은 중요한 오류가 발생했습니다. 종료합니다.|지원 담당자에게 문의하세요.|
@@ -44,7 +44,7 @@ Microsoft Cloud App Security 포털의 SIEM 에이전트 상태가 **연결 오�
 
 에이전트를 만든 후에 Cloud App Security 포털에서 SIEM 에이전트 페이지를 확인합니다. 다음 **에이전트 알림** 중 하나가 표시되는 경우 다음 단계를 사용하여 문제를 해결하세요.
 
-|Error|설명|해결 방법|
+|Error|Description|해결 방법|
 |----|----|----|
 |**내부 오류**|SIEM 에이전트에 알 수 없는 오류가 발생했습니다.|지원 담당자에게 문의하세요.|
 |**데이터 서버 보내기 오류**|TCP를 통해 Syslog 서버로 작업하는 경우 이 오류가 발생할 수 있습니다. SIEM 에이전트가 Syslog 서버에 연결할 수 없습니다.  이 오류가 발생할 경우 해결될 때까지 에이전트는 새 작업을 끌어오는 것을 중지합니다. 오류 표시가 중지될 때까지 수정 단계를 수행해야 합니다.|1. Syslog 서버를 올바르게 정의했는지 확인합니다. Cloud App Security UI에서 위에 설명된 대로 SIEM 에이전트를 편집합니다. 서버의 이름을 올바르게 작성하고 정확한 포트를 설정해야 합니다. </br>2. Syslog 서버에 대한 연결을 확인합니다. 방화벽이 통신을 차단하지 않는지 확인합니다.| 
