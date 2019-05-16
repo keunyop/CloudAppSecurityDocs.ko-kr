@@ -4,8 +4,8 @@ description: 이 문서에서는 Azure AD 앱용 Microsoft Cloud App Security �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 14e5f822c5075f1d59dc7ecef350b46e3c8c0f0c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 6a3b96a75bb76d548f0371fd9c98eff071312c67
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629534"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD 앱용 조건부 액세스 앱 제어 배포
 
@@ -64,6 +64,8 @@ ms.locfileid: "65568673"
       > [!NOTE]
       >조건부 액세스 앱 제어는 이러한 추천 앱을 포함하여 Azure AD에서 Single Sign-On으로 구성된 SAML 또는 Open ID 연결 앱을 지원합니다. 비추천 앱은 세션 제어와 함께 온보드로 요청하여 Cloud App Security 포털에서 액세스 제어로 구성할 수 있습니다. 
 
+7. 클릭 **을 사용 하도록 설정** 하 고 **저장**합니다.
+ 
 ## 2단계: 앱에서 정책 범위에 속한 사용자로 로그인 <a name="sign-in-scoped"></a>
 
 정책을 만든 후에는 해당 정책에 구성된 각 앱에 로그인합니다. 정책에 구성된 사용자를 사용하여 로그인했는지 확인합니다. 먼저 기존 세션에서 로그아웃해야 합니다.
