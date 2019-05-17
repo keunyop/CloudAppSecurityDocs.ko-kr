@@ -4,8 +4,8 @@ description: 이 문서는 자주 업데이트되어 Cloud App Security 최신 �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ae0c0ee16c36127b124115917aa8640387835795
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568729"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629530"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security의 새로운 기능
 
@@ -29,6 +29,23 @@ ms.locfileid: "65568729"
 이 문서는 자주 업데이트되어 Cloud App Security 최신 릴리스의 새로운 기능을 소개합니다.
 
 RSS 피드: 다음 URL을 복사하여 피드 판독기에 붙여넣으면 이 페이지가 업데이트될 때 알림을 받을 수 있습니다. `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security 릴리스 148 및 149
+
+릴리스 날짜: 2019년 5월 12일
+
+- **WebEx 앱 커넥터 사용 가능**<br>이제 공개 미리 보기의 Cisco WebEx Teams에 새 앱 커넥터를 사용할 수 있습니다. 이제 Microsoft Cloud App Security를 Cisco WebEx Teams에 연결하여 사용자, 활동 및 파일을 모니터링하고 보호할 수 있습니다. 자세한 내용은 [WebEx 연결](connect-webex-to-microsoft-cloud-app-security.md)을 참조하세요.
+
+- **Microsoft 데이터 분류 서비스 새 위치**<br>[Microsoft 데이터 분류 서비스](dcs-inspection.md)는 이제 호주, 인도, 캐나다 및 일본에서 사용할 수 있습니다. Office 테넌트가 이러한 위치에 있는 경우, Microsoft Cloud App Security 파일 정책의 콘텐츠 검사로 Microsoft 데이터 분류 서비스를 사용할 수 있습니다.
+
+- **섀도 PaaS 및 IaaS 검색**<br> Microsoft Cloud App Security는 Cloud Discovery 기능을 확장했으며 이제 Microsoft Azure, Amazon Web Services 및 Google Cloud Platform과 같은 IaaS 및 PaaS 솔루션에서 호스팅되는 리소스에 Shadow IT를 제공하고 있습니다. 이제 Cloud Discovery는 IaaS 및 PaaS를 기반으로 실행되는 사용자 지정 앱, 생성 중인 스토리지 계정 등에 대한 가시성을 제공합니다. 이 새로운 기능을 사용하여 존재하는 리소스 종류와 각 리소스에 액세스하는 사용자 및 전송되는 트래픽 양을 파악할 수 있습니다.
+
+- **앱 인증**<br>Microsoft Cloud App Security 규정 준수 및 위험 평가를 통해 클라우드 공급자는 이제 자신의 앱이 클라우드 앱 카탈로그에서 최신 상태임을 인증할 수 있습니다. 이 파일럿을 통해 클라우드 공급자는 클라우드 앱 카탈로그의 위험 특성을 기반으로 자체 인증 설문지를 작성하여 Cloud App Security의 위험 평가가 정확하고 최신 상태인지 확인할 수 있습니다. 그런 다음 사용자는 Cloud App Security 팀이 평가하지 않고 공급업체에서 인증한 위험 속성과 공급업체가 각 속성을 제출한 시기를 파악할 수 있습니다. 자세한 내용은 [앱 인증](attest-your-app.md)을 참조하세요. 
+
+- **Office 365 워크로드 세분화**<br>Office 365를 Microsoft Cloud App Security에 연결하면 연결할 워크로드를 제어해야 합니다. 예를 들어, 이제 작업 모니터링을 위해 Office 365를 연결하는 데만 관심이 있는 고객은 연결 프로세스 중에 또는 기존 Office 365 커넥터를 편집하여 연결할 수 있습니다. 기존 Office 365 커넥터가 있는 고객은 이 변경의 영향을 받지 않습니다.
+
+- **향상된 Teams 지원**<br>이제 중요한 내용을 기반으로 세션 정책을 구성하여 Teams 웹앱에서 실시간으로 메시지 전송을 모니터링하고 차단할 수 있습니다. 
 
 ## <a name="cloud-app-security-release-147"></a>Cloud App Security 릴리스 147
 
