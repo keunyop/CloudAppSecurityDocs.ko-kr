@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 1/27/2019
+ms.date: 05/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8324b5584cc49edcb15f356e6d255333f153b5bc
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ac3ec9e33f017c655c174d7304b4de4ac364c0fa
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567921"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173474"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>빠른 시작: 검색된 앱 사용
 
@@ -68,6 +68,28 @@ Cloud Discovery에서 제공하는 데이터를 심층 분석하려면 필터를
 Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. 자세한 내용은 [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
 
  ![하위 도메인 정보](./media/discovery-domains.png) 
+
+## <a name="discover-resources-and-custom-apps"></a>리소스 및 사용자 지정 앱 검색
+
+또한 Cloud Discovery를 통해 IaaS 및 PaaS 리소스에 대해 심층적으로 파악할 수 있습니다. Azure, Google Cloud Platform 및 AWS에서 호스팅되는 스토리지 계정, 인프라 및 사용자 지정 앱을 포함하여 자체 호스팅된 앱 및 리소스에서 데이터에 대한 액세스를 확인하고 리소스 호스팅 플랫폼 전반의 활동을 검색할 수 있습니다. IaaS 솔루션의 전반적인 사용량을 볼 수 있을 뿐만 아니라 각각에서 호스팅되는 특정 리소스와 리소스의 전체 사용량에 대한 가시성을 확보하여 리소스별 위험을 완화할 수 있습니다.
+
+예를 들어 Cloud App Security에서 많은 양의 데이터가 업로드되는 것과 같은 활동을 모리터링할 수 있으며, 업로드된 리소스를 검색하고 드릴다운하여 작업을 수행한 사용자를 검색할 수 있습니다.
+
+> [!NOTE]
+> Cloud Discovery는 대상 URL 데이터를 포함하는 방화벽 및 프록시에서만 지원됩니다. 자세한 내용은 [지원되는 방화벽 및 프록시](set-up-cloud-discovery.md#supported-firewalls-and-proxies)에서 지원되는 어플라이언스 목록을 참조하세요.
+
+검색된 리소스를 보려면 다음을 수행합니다.
+
+1. Cloud App Security 포털에서 **검색**을 선택한 다음, **검색된 리소스**를 선택합니다.
+
+  ![검색된 리소스 메뉴](./media/discovered-resources-menu.png) 
+
+2. 검색된 리소스 페이지에서 각 리소스를 드릴다운하여 발생한 트랜잭션의 종류, 액세스한 사용자를 확인한 다음, 드릴다운하여 사용자를 더 자세히 조사할 수 있습니다.
+ 
+  ![검색 리소스](./media/discovery-resources.png) 
+
+3. 사용자 지정 앱의 경우 행 끝에 있는 세 개의 단추를 클릭하고 **사용자 지정 앱 추가**를 선택합니다. 이렇게 하면 Cloud Discovery 대시보드에 포함될 수 있도록 앱의 이름을 지정하고 식별할 수 있는 **사용자 지정 앱 추가** 창이 열립니다.
+
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Cloud Discovery 임원 보고서 생성
 

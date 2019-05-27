@@ -61,20 +61,22 @@
           href: scoped-deployment.md
         - name: IP 태그 및 범위
           href: ip-tags.md
-    - name: Cloud Discovery 설정
-      href: set-up-cloud-discovery.md
+    - name: 클라우드 검색
       items:
-        - name: Microsoft Defender ATP와 통합
-          href: wdatp-integration.md
-        - name: Zscaler와 통합
-          href: zscaler-integration.md
-        - name: iboss와 통합
-          href: iboss-integration.md
-        - name: Cloud Discovery 스냅숏 보고서 만들기
-          href: create-snapshot-cloud-discovery-reports.md
-        - name: 연속 보고서에 대한 자동 로그 업로드 구성
-          href: discovery-docker.md
+        - name: 설정
           items:
+            - name: Cloud Discovery 설정
+              href: set-up-cloud-discovery.md
+            - name: Microsoft Defender ATP와 통합
+              href: wdatp-integration.md
+            - name: Zscaler와 통합
+              href: zscaler-integration.md
+            - name: iboss와 통합
+              href: iboss-integration.md
+            - name: Cloud Discovery 스냅숏 보고서 만들기
+              href: create-snapshot-cloud-discovery-reports.md
+            - name: 연속 보고서에 대한 자동 로그 업로드 구성
+              href: discovery-docker.md
             - name: Windows의 Docker
               href: discovery-docker-windows.md
             - name: Ubuntu 및 RHEL 온-프레미스의 Docker
@@ -85,14 +87,19 @@
               href: troubleshoot-docker.md
             - name: 프록시 뒤의 로그 수집기
               href: log-collector-proxy.md
-        - name: 사용자 지정 로그 파서 사용
-          href: custom-log-parser.md
-        - name: Cloud Discovery 보강
-          href: cloud-discovery-aad-enrichment.md
-        - name: Cloud Discovery 데이터 익명화
-          href: cloud-discovery-anonymizer.md
-    - name: 앱 연결
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+            - name: 사용자 지정 로그 파서 사용
+              href: custom-log-parser.md
+    - name: Cloud Discovery 보강
+      href: cloud-discovery-aad-enrichment.md
+    - name: Cloud Discovery 데이터 익명화
+      href: cloud-discovery-anonymizer.md
+    - name: Cloud Discovery 사용
+      items:
+        - name: Cloud Discovery에 사용자 지정 앱 추가
+          href: cloud-discovery-custom-apps.md
+        - name: 검색된 앱 필터 및 쿼리
+          href: discovered-app-queries.md
+    - name: 연속 보고서에 대한 자동 로그 업로드 구성
       items:
         - name: Azure 연결
           href: connect-azure-to-microsoft-cloud-app-security.md
@@ -112,14 +119,11 @@
           href: connect-salesforce-to-microsoft-cloud-app-security.md
         - name: ServiceNow 연결
           href: connect-servicenow-to-microsoft-cloud-app-security.md
+        - name: WebEx 연결
+          href: connect-webex-to-microsoft-cloud-app-security.md
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Azure AD 앱용 조건부 액세스 앱 제어 배포
       href: proxy-deployment-aad.md
-    - name: 검색
-      items:
-        - name: Cloud Discovery에 사용자 지정 앱 추가
-          href: cloud-discovery-custom-apps.md
-        - name: 검색된 앱 필터 및 쿼리
-          href: discovered-app-queries.md
     - name: 조사
       href: investigate.md
       items:

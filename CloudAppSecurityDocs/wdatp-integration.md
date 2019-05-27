@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a23a081ece3e6aa94995e688ec2163b36441e60
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b49ab77b33548d6fd188eadde97294ceb6c62ca5
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568405"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173524"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security를 사용 하 여 Microsoft Defender Advanced Threat Protection 통합
 
@@ -92,6 +92,9 @@ Cloud App Security를 사용 하 여 Microsoft Defender ATP를 통합 한 후에
  
 다른 Cloud Discovery 원본과 마찬가지로, 추가 조사를 위해 Win10 엔드포인트 사용자 보고서에서 데이터를 내보낼 수 있습니다. 
 
+> [!NOTE]
+> - Defender ATP ~ 4MB((트랜잭션 ~ 4000 개 끝점)의 청크를 Cloud App Security 데이터 전달
+> - 4MB 제한 되지 않습니다 1 시간 내에 도달 하면 지난 시간 동안의 Defender ATP 보고서 모든 트랜잭션을 수행 합니다.
 
 ## <a name="related-videos"></a>관련 동영상
 
