@@ -89,18 +89,18 @@
               href: log-collector-proxy.md
             - name: 사용자 지정 로그 파서 사용
               href: custom-log-parser.md
-    - name: Cloud Discovery 보강
-      href: cloud-discovery-aad-enrichment.md
-    - name: Cloud Discovery 데이터 익명화
-      href: cloud-discovery-anonymizer.md
-    - name: Cloud Discovery 사용
-      items:
+        - name: Cloud Discovery 보강
+          href: cloud-discovery-aad-enrichment.md
+        - name: Cloud Discovery 데이터 익명화
+          href: cloud-discovery-anonymizer.md
         - name: Cloud Discovery에 사용자 지정 앱 추가
           href: cloud-discovery-custom-apps.md
         - name: 검색된 앱 필터 및 쿼리
           href: discovered-app-queries.md
-    - name: 연속 보고서에 대한 자동 로그 업로드 구성
+    - name: 앱 연결
       items:
+        - name: 앱을 연결해 시안성을 확보하고 데이터 보호
+          href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
         - name: Azure 연결
           href: connect-azure-to-microsoft-cloud-app-security.md
         - name: AWS 연결
@@ -121,7 +121,6 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: WebEx 연결
           href: connect-webex-to-microsoft-cloud-app-security.md
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Azure AD 앱용 조건부 액세스 앱 제어 배포
       href: proxy-deployment-aad.md
     - name: 조사
