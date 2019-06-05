@@ -15,12 +15,12 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b0fcd13550d62d5ff96462b7d3f9f4a7437c1a44
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7b0cdcca52b8be95e146af09595849b7c9dc1129
+ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568063"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491581"
 ---
 # <a name="content-inspection"></a>콘텐츠 검사
 
@@ -42,8 +42,8 @@ ms.locfileid: "65568063"
 
 클라우드 앱 보안에 필요한 권한을 부여하려면 다음 단계를 따릅니다.
 
-1.  **설정**으로 이동한 다음, **Azure Information Protection**으로 이동합니다.
-2.  **보호된 파일 검사**를 활성화합니다.
+1. **설정**으로 이동한 다음, **Azure Information Protection**으로 이동합니다.
+2. **보호된 파일 검사**를 활성화합니다.
 3. 프롬프트에 따라 Azure Active Directory에서 필요한 권한을 허용하세요.
 4. 파일별 정책 설정을 구성하여 보호된 파일을 검색할 정책을 결정할 수 있습니다.
 
