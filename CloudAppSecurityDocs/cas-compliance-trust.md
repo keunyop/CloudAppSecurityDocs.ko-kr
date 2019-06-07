@@ -34,7 +34,7 @@ Microsoft Cloud 앱 보안에는 섀도 IT를 찾고 위험을 평가하는 동�
 
 ## <a name="cloud-app-security-compliance"></a>Cloud App Security 준수
 
-데이터 보안 위반과 공격이 매일 발생하는 세계에서는 조직이 데이터를 보호하기 위해 최선을 다하는 클라우드 앱 보안 브로커를 선택하는 것이 중요합니다. 모든 Microsoft 클라우드 제품 및 서비스처럼 Microsoft Cloud App Security는 고객의 엄격한 보안 및 개인 정보 보호 요구 사항을 해결하도록 빌드되었습니다.
+데이터 보안 위반과 공격이 매일 발생하는 세계에서는 조직이 데이터를 보호하기 위해 최선을 다하는 클라우드 앱 보안 브로커를 선택하는 것이 중요합니다. 모든 Microsoft 클라우드 제품 및 서비스처럼 Microsoft Cloud App Security는 고객의 엄격한 보안 및 개인 정보 보호 요구 사항을 해결하도록 빌드 되었습니다.
 
 조직이 개인 데이터의 수집 및 사용을 제어하는 국가, 지역 및 산업 관련 요구 사항을 준수하도록 지원하기 위해 Microsoft Cloud App Security는 포괄적인 규정 준수 제품 집합을 제공합니다. 규정 준수 제안에는 인증 및 증명이 포함됩니다.
 
@@ -137,7 +137,7 @@ Microsoft Cloud App Security를 사용하면 Azure Active Directory를 사용하
 
 ### <a name="permissions"></a>사용 권한
 
-Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니다. Office 365 및 Azure Active Directory 전역 관리자 및 보안 관리자 역할에는 Cloud App Security에 대한 전체 액세스 권한이 있으며 보안 읽기 권한자에는 읽기 권한이 있습니다. [자세한 정보](https://docs.microsoft.com/cloud-app-security/manage-admins).
+Microsoft Cloud App Security는 역할 기반 액세스 제어를 지원합니다. Office 365 및 Azure Active Directory 전역 관리자 및 보안 관리자 역할에는 Cloud App Security에 대한 전체 액세스 권한이 있으며 보안 읽기 권한 자에게는 읽기 권한이 있습니다. [자세한 정보](https://docs.microsoft.com/cloud-app-security/manage-admins).
 
 ## <a name="customer-controls-for-organizational-compliance"></a>조직 준수에 대한 고객 제어
 
